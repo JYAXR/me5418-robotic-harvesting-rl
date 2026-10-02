@@ -1,4 +1,4 @@
-"""Episode-level metrics shared by every method."""
+"""所有方法共用的 episode 级评估指标。"""
 
 from dataclasses import asdict, dataclass
 
@@ -22,7 +22,7 @@ class EpisodeMetrics:
 
 def summarize(episodes: list[EpisodeMetrics]) -> dict[str, float]:
     if not episodes:
-        raise ValueError("at least one episode is required")
+        raise ValueError("至少需要一个 episode")
     numeric = {
         key: np.asarray([float(getattr(item, key)) for item in episodes])
         for key in episodes[0].to_dict()
@@ -32,4 +32,3 @@ def summarize(episodes: list[EpisodeMetrics]) -> dict[str, float]:
         summary[f"{key}_mean"] = float(values.mean())
         summary[f"{key}_std"] = float(values.std(ddof=1)) if len(values) > 1 else 0.0
     return summary
-

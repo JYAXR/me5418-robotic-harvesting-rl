@@ -1,4 +1,4 @@
-"""Generic receding-horizon planner with optional beam search."""
+"""支持可选束搜索的通用滚动时域规划器。"""
 
 from collections.abc import Callable
 from dataclasses import dataclass
@@ -17,7 +17,7 @@ class PlanResult:
 class RecedingHorizonPlanner:
     def __init__(self, action_count: int = 8, depth: int = 3, beam_width: int | None = None):
         if depth < 1:
-            raise ValueError("depth must be positive")
+            raise ValueError("规划深度必须为正整数")
         self.action_count = action_count
         self.depth = depth
         self.beam_width = beam_width
@@ -40,5 +40,5 @@ class RecedingHorizonPlanner:
             beam = candidates[: self.beam_width] if self.beam_width else candidates
         best_score, _, best_action, _ = beam[0]
         if best_action is None:
-            raise RuntimeError("planner did not evaluate an action")
+            raise RuntimeError("规划器没有评估任何动作")
         return PlanResult(best_action, best_score, evaluations)

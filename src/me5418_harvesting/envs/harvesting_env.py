@@ -1,4 +1,4 @@
-"""Gymnasium environment contract for flexible-obstacle harvesting."""
+"""面向柔性障碍物采摘任务的 Gymnasium 环境接口。"""
 
 from __future__ import annotations
 
@@ -12,7 +12,7 @@ from me5418_harvesting.envs.scene_generator import Scene, generate_scene
 
 
 class HarvestingEnv(gym.Env[np.ndarray, int]):
-    """Fully observed deterministic or stochastic Markov environment."""
+    """完全可观测的确定性或随机马尔可夫环境。"""
 
     metadata: ClassVar[dict[str, list[str]]] = {"render_modes": ["ansi"]}
 
@@ -65,9 +65,9 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
 
     def step(self, action: int) -> tuple[np.ndarray, float, bool, bool, dict[str, Any]]:
         if self.scene is None:
-            raise RuntimeError("reset() must be called before step()")
+            raise RuntimeError("调用 step() 前必须先调用 reset()")
         if not self.action_space.contains(action):
-            raise ValueError(f"invalid action {action}")
+            raise ValueError(f"无效动作：{action}")
 
         direction = self._DIRECTIONS[action % 4]
         step_size = self.small_step if action < 4 else self.large_step
@@ -122,7 +122,7 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
 
     def _observation(self) -> np.ndarray:
         if self.scene is None:
-            raise RuntimeError("scene is not initialized")
+            raise RuntimeError("场景尚未初始化")
         features: list[float] = [
             *self.scene.end_effector,
             *(self.scene.target - self.scene.end_effector),

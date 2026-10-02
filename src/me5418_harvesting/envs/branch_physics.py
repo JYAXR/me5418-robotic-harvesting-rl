@@ -1,4 +1,4 @@
-"""Lightweight branch model used by the initial environment scaffold."""
+"""初始环境骨架使用的轻量枝条模型。"""
 
 from dataclasses import dataclass
 
@@ -17,11 +17,11 @@ class Branch:
         self.rest_nodes = np.asarray(self.rest_nodes, dtype=np.float32)
         self.current_nodes = np.asarray(self.current_nodes, dtype=np.float32)
         if self.rest_nodes.shape != self.current_nodes.shape:
-            raise ValueError("rest_nodes and current_nodes must have the same shape")
+            raise ValueError("静止节点与当前节点必须具有相同形状")
         if self.rest_nodes.ndim != 2 or self.rest_nodes.shape[1] != 2:
-            raise ValueError("branch nodes must have shape (n_nodes, 2)")
+            raise ValueError("枝条节点形状必须为 (n_nodes, 2)")
         if self.stiffness <= 0 or self.safe_limit <= 0:
-            raise ValueError("stiffness and safe_limit must be positive")
+            raise ValueError("刚度和安全形变上限必须为正数")
 
     @property
     def max_displacement(self) -> float:
@@ -39,10 +39,10 @@ class Branch:
         contact_radius: float,
         relaxation_rate: float,
     ) -> None:
-        """Apply a simple contact displacement followed by elastic relaxation.
+        """施加简化的接触位移，然后执行弹性恢复。
 
-        This is an intentionally transparent MVP approximation. It should be
-        replaced by the validated quasi-static solver used for final results.
+        这是一个刻意保持透明的 MVP 近似。最终实验应将其替换为经过验证的
+        准静态求解器。
         """
         distances = np.linalg.norm(self.current_nodes - end_effector, axis=1)
         nearest = int(np.argmin(distances))
@@ -56,4 +56,3 @@ class Branch:
             self.rest_nodes[1:] - self.current_nodes[1:]
         )
         self.current_nodes[0] = self.rest_nodes[0]
-

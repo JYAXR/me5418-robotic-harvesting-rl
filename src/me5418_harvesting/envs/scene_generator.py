@@ -1,4 +1,4 @@
-"""Seeded scene generation for train, validation, and test splits."""
+"""为训练集、验证集和测试集生成带随机种子的场景。"""
 
 from dataclasses import dataclass
 
@@ -19,7 +19,7 @@ def generate_scene(
     max_branches: int = 5,
     nodes_per_branch: int = 5,
 ) -> Scene:
-    """Generate a reproducible obstructed scene with a feasible outer detour."""
+    """生成可复现的受阻场景，并保留可行的外围绕行路径。"""
     branch_count = int(rng.integers(2, max_branches + 1))
     end_effector = np.array([0.10, 0.50], dtype=np.float32)
     target = np.array([0.90, rng.uniform(0.40, 0.60)], dtype=np.float32)

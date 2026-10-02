@@ -1,4 +1,4 @@
-"""DQN configuration and network factory."""
+"""DQN 配置与网络构建函数。"""
 
 from dataclasses import dataclass
 
@@ -14,11 +14,11 @@ class DQNConfig:
 
 
 def build_q_network(input_dim: int, action_count: int, config: DQNConfig):
-    """Create the two-hidden-layer MLP described in the proposal."""
+    """创建 proposal 中定义的双隐藏层 MLP。"""
     try:
         from torch import nn
     except ImportError as exc:
-        raise RuntimeError('Install training dependencies with: pip install -e ".[train]"') from exc
+        raise RuntimeError('请先安装训练依赖：pip install -e ".[train]"') from exc
 
     return nn.Sequential(
         nn.Linear(input_dim, config.hidden_sizes[0]),

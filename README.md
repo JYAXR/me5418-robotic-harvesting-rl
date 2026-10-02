@@ -1,27 +1,27 @@
-# ME5418 Robotic Harvesting RL
+# ME5418 机器人采摘强化学习项目
 
-Course project scaffold for studying reinforcement learning and model-based planning for contact-aware motion through flexible branches.
+本课程项目研究机器人在柔性枝条环境中的接触感知运动，比较强化学习与基于模型的规划方法。
 
-## Research questions
+## 研究问题
 
-1. Can deeper receding-horizon planning match or outperform DQN in a deterministic simulator?
-2. How do planning and learned policies degrade under bounded execution noise?
-3. Which method gives the best performance versus online-computation trade-off?
+1. 在确定性仿真器中，增加滚动时域规划深度后，规划器能否达到或超过 DQN？
+2. 加入有界执行噪声后，规划方法和学习策略的性能如何下降？
+3. 哪种方法能够实现最优的任务性能与在线计算成本权衡？
 
-## Project structure
+## 项目结构
 
 ```text
-configs/                      Experiment configuration
-src/me5418_harvesting/envs/   Scene generation, branch physics, Gymnasium environment
-src/me5418_harvesting/agents/ DQN configuration and network
-src/me5418_harvesting/planners/ Planning baselines
-src/me5418_harvesting/evaluation/ Metrics and summaries
-scripts/                      Entry points for smoke tests, training, and evaluation
-tests/                        Contract and reproducibility tests
-results/                      Generated outputs, ignored except for .gitkeep
+configs/                         实验配置
+src/me5418_harvesting/envs/      场景生成、枝条物理和 Gymnasium 环境
+src/me5418_harvesting/agents/    DQN 配置与网络
+src/me5418_harvesting/planners/  规划基线
+src/me5418_harvesting/evaluation/ 指标与统计汇总
+scripts/                         快速测试、训练和评估入口
+tests/                           接口与可复现性测试
+results/                         生成的实验结果，仅保留目录占位文件
 ```
 
-## Quick start
+## 快速开始
 
 ```bash
 python -m venv .venv
@@ -31,22 +31,29 @@ python scripts/run_smoke.py
 pytest
 ```
 
-Install the training dependencies when the DQN training loop is added:
+加入 DQN 训练循环后，可以安装训练依赖：
 
 ```bash
 python -m pip install -e ".[train]"
 ```
 
-## Current scope
+## 当前范围
 
-The repository contains a runnable environment scaffold with an eight-action interface, deterministic and noisy transition modes, padded observations for up to five branches, reward accounting, planner interfaces, and evaluation metrics. The branch-contact update is deliberately lightweight and must be replaced or calibrated before final experiments.
+仓库当前提供一个可运行的环境骨架，包括八动作接口、确定性与随机转移模式、最多五根枝条的定长观测、奖励计算、规划器接口和评估指标。现有枝条接触更新是透明且简化的初始近似，在最终实验前需要替换为经过验证的准静态求解器，或使用实验数据完成校准。
 
-## Development order
+## 开发顺序
 
-1. Freeze the state, action, reward, termination, and noise contracts.
-2. Validate branch deformation, collision handling, and scene feasibility.
-3. Implement collision-free, myopic, and receding-horizon baselines.
-4. Add DQN training with replay, target network, and epsilon-greedy exploration.
-5. Run planning-depth and noise-level ablations with independent seeds.
-6. Produce reproducible tables, plots, and failure-case visualizations.
+1. 固定状态、动作、奖励、终止条件和噪声定义。
+2. 验证枝条形变、碰撞处理和场景可行性。
+3. 实现无碰撞规划、短视控制器和滚动时域规划器。
+4. 加入经验回放、目标网络和 epsilon-greedy 探索的 DQN 训练流程。
+5. 使用独立随机种子完成规划深度和噪声等级消融实验。
+6. 生成可复现的表格、曲线和失败案例可视化。
 
+## 实验原则
+
+- 训练集、验证集和测试集使用互不重叠的随机种子。
+- 所有方法使用相同的八动作集合、奖励函数和安全约束。
+- 确定性场景随机化与单次 episode 内的执行噪声分别设置和报告。
+- 同时报告任务表现、模型调用次数、每步决策时间和 DQN 训练成本。
+- 结论保持中性，允许深层规划器在确定性环境中胜过 DQN。
