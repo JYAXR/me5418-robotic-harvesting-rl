@@ -1,0 +1,18 @@
+max_branches: 5
+nodes_per_branch: 5
+max_steps: 100
+workspace_low: [0.0, 0.0]
+workspace_high: [1.0, 1.0]
+small_step: 0.025
+large_step: 0.060
+target_radius: 0.050
+contact_radius: 0.035
+relaxation_rate: 0.10
+execution_noise_fraction: 0.0
+reward:
+  progress: 10.0
+  deformation: 1.0
+  travel: 0.2
+  damage: 50.0
+  success: 100.0
+

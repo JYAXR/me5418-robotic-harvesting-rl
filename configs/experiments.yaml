@@ -1,0 +1,17 @@
+train_seeds: [0, 1, 2, 3, 4]
+validation_seeds: [100, 101, 102]
+test_seeds: [1000, 1001, 1002, 1003, 1004]
+noise_fractions: [0.0, 0.05, 0.10, 0.20]
+planner_depths: [1, 3, 5, 7]
+beam_widths: [32, 128]
+evaluation_episodes_per_seed: 100
+metrics:
+  - success
+  - damage
+  - action_count
+  - travel_distance
+  - max_normalized_deformation
+  - return
+  - model_evaluations
+  - decision_time_seconds
+

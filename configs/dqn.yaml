@@ -1,0 +1,12 @@
+hidden_sizes: [256, 256]
+learning_rate: 0.0003
+gamma: 0.99
+batch_size: 128
+replay_capacity: 200000
+learning_starts: 5000
+target_update_interval: 1000
+epsilon_start: 1.0
+epsilon_end: 0.05
+epsilon_decay_steps: 100000
+gradient_clip_norm: 10.0
+
