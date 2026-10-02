@@ -1,8 +1,8 @@
 """Generic receding-horizon planner with optional beam search."""
 
+from collections.abc import Callable
 from dataclasses import dataclass
-from typing import Any, Callable
-
+from typing import Any
 
 TransitionModel = Callable[[Any, int], tuple[Any, float, bool]]
 

@@ -16,7 +16,7 @@ class DQNConfig:
 def build_q_network(input_dim: int, action_count: int, config: DQNConfig):
     """Create the two-hidden-layer MLP described in the proposal."""
     try:
-        import torch.nn as nn
+        from torch import nn
     except ImportError as exc:
         raise RuntimeError('Install training dependencies with: pip install -e ".[train]"') from exc
 
@@ -27,4 +27,3 @@ def build_q_network(input_dim: int, action_count: int, config: DQNConfig):
         nn.ReLU(),
         nn.Linear(config.hidden_sizes[1], action_count),
     )
-

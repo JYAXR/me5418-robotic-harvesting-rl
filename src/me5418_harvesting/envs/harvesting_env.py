@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import Any, ClassVar
 
 import gymnasium as gym
 import numpy as np
@@ -14,7 +14,7 @@ from me5418_harvesting.envs.scene_generator import Scene, generate_scene
 class HarvestingEnv(gym.Env[np.ndarray, int]):
     """Fully observed deterministic or stochastic Markov environment."""
 
-    metadata = {"render_modes": ["ansi"]}
+    metadata: ClassVar[dict[str, list[str]]] = {"render_modes": ["ansi"]}
 
     _DIRECTIONS = np.array(
         [[0, 1], [0, -1], [1, 0], [-1, 0]], dtype=np.float32
