@@ -1,0 +1,522 @@
+[
+  {
+    "seed": 0,
+    "policy": "push",
+    "steps": 30,
+    "return": 90.12568765472818,
+    "minimum_clearance_over_episode": 0.034999970346689224,
+    "maximum_segment_strain": 0.03009819984436035,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.036265429109334946,
+    "travel_distance": 0.9993741735816002,
+    "max_normalized_deformation": 0.6810758099650529,
+    "peak_normalized_deformation": 0.9445934476979869,
+    "contact_steps": 12,
+    "minimum_substep_clearance": 0.13833817839622498,
+    "minimum_clearance": 0.16267035901546478,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      -0.05999999865889549
+    ],
+    "executed_motion": [
+      0.0,
+      -0.059999942779541016
+    ]
+  },
+  {
+    "seed": 0,
+    "policy": "detour",
+    "steps": 45,
+    "return": 107.08655901253223,
+    "minimum_clearance_over_episode": 0.03966784477233887,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04858629032969475,
+    "travel_distance": 2.1399980410933495,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.149455726146698,
+    "minimum_clearance": 0.20889915525913239,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 1,
+    "policy": "push",
+    "steps": 28,
+    "return": 90.64344412670928,
+    "minimum_clearance_over_episode": 0.03499996289610863,
+    "maximum_segment_strain": 0.030083537101745605,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.02731839008629322,
+    "travel_distance": 0.9624995216727257,
+    "max_normalized_deformation": 0.3017125406188024,
+    "peak_normalized_deformation": 0.7052706746487675,
+    "contact_steps": 10,
+    "minimum_substep_clearance": 0.19289518892765045,
+    "minimum_clearance": 0.19298870861530304,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      -0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      -0.02499997615814209
+    ]
+  },
+  {
+    "seed": 1,
+    "policy": "detour",
+    "steps": 56,
+    "return": 107.06006792336701,
+    "minimum_clearance_over_episode": 0.038614511489868164,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04989349842071533,
+    "travel_distance": 2.204997979104519,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.1431102752685547,
+    "minimum_clearance": 0.20297633111476898,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 2,
+    "policy": "push",
+    "steps": 23,
+    "return": 97.09874110051366,
+    "minimum_clearance_over_episode": 0.034999970346689224,
+    "maximum_segment_strain": 0.03000420331954956,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04721904918551445,
+    "travel_distance": 0.854999266564846,
+    "max_normalized_deformation": 0.5763049807237948,
+    "peak_normalized_deformation": 0.7189446564505722,
+    "contact_steps": 9,
+    "minimum_substep_clearance": 0.07681307196617126,
+    "minimum_clearance": 0.13684199750423431,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 2,
+    "policy": "detour",
+    "steps": 51,
+    "return": 107.07834875583649,
+    "minimum_clearance_over_episode": 0.038987454026937485,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.049992967396974564,
+    "travel_distance": 2.1149980649352074,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.1322181671857834,
+    "minimum_clearance": 0.19212882220745087,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 3,
+    "policy": "push",
+    "steps": 22,
+    "return": 98.36576419341628,
+    "minimum_clearance_over_episode": 0.03499997407197952,
+    "maximum_segment_strain": 0.030023694038391113,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.010001610964536667,
+    "travel_distance": 0.8649992570281029,
+    "max_normalized_deformation": 0.23753403973568324,
+    "peak_normalized_deformation": 0.3779989805851661,
+    "contact_steps": 7,
+    "minimum_substep_clearance": 0.13821429014205933,
+    "minimum_clearance": 0.19918444752693176,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 3,
+    "policy": "detour",
+    "steps": 49,
+    "return": 107.08089994341134,
+    "minimum_clearance_over_episode": 0.041047096252441406,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.049596235156059265,
+    "travel_distance": 2.134998045861721,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.1342863291501999,
+    "minimum_clearance": 0.19425617158412933,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 4,
+    "policy": "push",
+    "steps": 32,
+    "return": 90.88989958321439,
+    "minimum_clearance_over_episode": 0.03499995917081833,
+    "maximum_segment_strain": 0.03009974956512451,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.030795520171523094,
+    "travel_distance": 0.8799991831183434,
+    "max_normalized_deformation": 0.2804466095499055,
+    "peak_normalized_deformation": 0.5605399239121597,
+    "contact_steps": 15,
+    "minimum_substep_clearance": 0.1600552201271057,
+    "minimum_clearance": 0.1876489222049713,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 4,
+    "policy": "detour",
+    "steps": 58,
+    "return": 107.07521370351314,
+    "minimum_clearance_over_episode": 0.03870430588722229,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.048520173877477646,
+    "travel_distance": 2.219997964799404,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.13858002424240112,
+    "minimum_clearance": 0.19840222597122192,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 5,
+    "policy": "push",
+    "steps": 22,
+    "return": 94.4461478844685,
+    "minimum_clearance_over_episode": 0.034999966621398926,
+    "maximum_segment_strain": 0.03002798557281494,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.0454966239631176,
+    "travel_distance": 0.829999290406704,
+    "max_normalized_deformation": 0.36270935548892,
+    "peak_normalized_deformation": 0.7021943772594836,
+    "contact_steps": 11,
+    "minimum_substep_clearance": 0.09116290509700775,
+    "minimum_clearance": 0.1526779979467392,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 5,
+    "policy": "detour",
+    "steps": 49,
+    "return": 107.06809915155172,
+    "minimum_clearance_over_episode": 0.03879984840750694,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04999934881925583,
+    "travel_distance": 2.16999801248312,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.13779912889003754,
+    "minimum_clearance": 0.19717803597450256,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 6,
+    "policy": "push",
+    "steps": 25,
+    "return": 95.47200378091156,
+    "minimum_clearance_over_episode": 0.034999970346689224,
+    "maximum_segment_strain": 0.03000164031982422,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.046780895441770554,
+    "travel_distance": 0.9399991855025291,
+    "max_normalized_deformation": 0.29590872419630443,
+    "peak_normalized_deformation": 0.5829785638482968,
+    "contact_steps": 8,
+    "minimum_substep_clearance": 0.17455917596817017,
+    "minimum_clearance": 0.1987377554178238,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 6,
+    "policy": "detour",
+    "steps": 47,
+    "return": 107.07080312371254,
+    "minimum_clearance_over_episode": 0.03860260173678398,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.048422958701848984,
+    "travel_distance": 2.2249979749321938,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.1900007128715515,
+    "minimum_clearance": 0.1929490566253662,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.05999999865889549
+    ],
+    "executed_motion": [
+      0.0,
+      0.059999942779541016
+    ]
+  },
+  {
+    "seed": 7,
+    "policy": "push",
+    "steps": 37,
+    "return": 92.37479553373362,
+    "minimum_clearance_over_episode": 0.034999970346689224,
+    "maximum_segment_strain": 0.03009927272796631,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.036202698945999146,
+    "travel_distance": 1.0090618953108788,
+    "max_normalized_deformation": 0.38624136696852884,
+    "peak_normalized_deformation": 0.5985150489762401,
+    "contact_steps": 15,
+    "minimum_substep_clearance": 0.16186442971229553,
+    "minimum_clearance": 0.18760187923908234,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 7,
+    "policy": "detour",
+    "steps": 52,
+    "return": 107.07922294735909,
+    "minimum_clearance_over_episode": 0.03924007713794708,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04931292310357094,
+    "travel_distance": 2.1399980410933495,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.14545246958732605,
+    "minimum_clearance": 0.2051754593849182,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 8,
+    "policy": "push",
+    "steps": 29,
+    "return": 94.5738614036083,
+    "minimum_clearance_over_episode": 0.03499997407197952,
+    "maximum_segment_strain": 0.03000253438949585,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04086099937558174,
+    "travel_distance": 1.0399990901350975,
+    "max_normalized_deformation": 0.27356879450044025,
+    "peak_normalized_deformation": 0.3991346276609226,
+    "contact_steps": 8,
+    "minimum_substep_clearance": 0.13927078247070312,
+    "minimum_clearance": 0.1999443918466568,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 8,
+    "policy": "detour",
+    "steps": 43,
+    "return": 107.07171812355517,
+    "minimum_clearance_over_episode": 0.038105547428131104,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04969553276896477,
+    "travel_distance": 2.159998022019863,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.14071759581565857,
+    "minimum_clearance": 0.20050272345542908,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 9,
+    "policy": "push",
+    "steps": 26,
+    "return": 93.01476737418699,
+    "minimum_clearance_over_episode": 0.03499996289610863,
+    "maximum_segment_strain": 0.030076265335083008,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.03161916881799698,
+    "travel_distance": 0.877499483525753,
+    "max_normalized_deformation": 0.33903095845742004,
+    "peak_normalized_deformation": 0.5437999268631516,
+    "contact_steps": 11,
+    "minimum_substep_clearance": 0.15737812221050262,
+    "minimum_clearance": 0.1841602474451065,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 9,
+    "policy": "detour",
+    "steps": 57,
+    "return": 107.07439008802174,
+    "minimum_clearance_over_episode": 0.0381225124001503,
+    "maximum_segment_strain": 0.0,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04756937921047211,
+    "travel_distance": 2.264997936785221,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.18848827481269836,
+    "minimum_clearance": 0.1947229951620102,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.05999999865889549
+    ],
+    "executed_motion": [
+      0.0,
+      0.059999942779541016
+    ]
+  }
+]

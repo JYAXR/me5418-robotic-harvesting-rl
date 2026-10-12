@@ -1,0 +1,26 @@
+{
+  "seed": 0,
+  "policy": "push",
+  "steps": 30,
+  "return": 90.12568765472818,
+  "minimum_clearance_over_episode": 0.034999970346689224,
+  "maximum_segment_strain": 0.03009819984436035,
+  "success": true,
+  "damage": false,
+  "distance_to_target": 0.036265429109334946,
+  "travel_distance": 0.9993741735816002,
+  "max_normalized_deformation": 0.6810758099650529,
+  "peak_normalized_deformation": 0.9445934476979869,
+  "contact_steps": 12,
+  "minimum_substep_clearance": 0.13833817839622498,
+  "minimum_clearance": 0.16267035901546478,
+  "collision_blocked": false,
+  "commanded_motion": [
+    0.0,
+    -0.05999999865889549
+  ],
+  "executed_motion": [
+    0.0,
+    -0.059999942779541016
+  ]
+}

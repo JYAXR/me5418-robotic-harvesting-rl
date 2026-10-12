@@ -1,0 +1,24 @@
+# Mixed scene: wide openings, deformable gaps, rigid closed gaps, and local twigs.
+max_branches: 14
+nodes_per_branch: 5
+max_steps: 200
+workspace_low: [0.0, 0.0]
+workspace_high: [1.0, 1.0]
+small_step: 0.025
+large_step: 0.060
+target_radius: 0.050
+contact_radius: 0.035
+relaxation_rate: 0.10
+execution_noise_fraction: 0.0
+show_gate_detail: false
+scene:
+  layout: mixed_canopy
+  tip_gap_range: [0.028, 0.043]
+  stiffness_range: [0.35, 1.10]
+  safe_limit_range: [0.075, 0.110]
+reward:
+  progress: 10.0
+  deformation: 1.0
+  travel: 0.2
+  damage: 50.0
+  success: 100.0

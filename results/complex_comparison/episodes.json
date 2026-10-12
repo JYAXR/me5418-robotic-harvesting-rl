@@ -1,0 +1,542 @@
+[
+  {
+    "seed": 0,
+    "policy": "hybrid",
+    "steps": 53,
+    "return": 94.34424338746419,
+    "minimum_clearance_over_episode": 0.03499996289610863,
+    "maximum_segment_strain": 0.030040860176086426,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.044352442026138306,
+    "travel_distance": 1.6749985665082932,
+    "max_normalized_deformation": 0.28845864968207807,
+    "peak_normalized_deformation": 0.42035046423159933,
+    "contact_steps": 8,
+    "minimum_substep_clearance": 0.07746551930904388,
+    "minimum_clearance": 0.07768731564283371,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      -0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      -0.02499997615814209
+    ]
+  },
+  {
+    "seed": 0,
+    "policy": "detour",
+    "steps": 82,
+    "return": 107.29019820094109,
+    "minimum_clearance_over_episode": 0.038305945694446564,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04870244860649109,
+    "travel_distance": 3.134997218847275,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.07327452301979065,
+    "minimum_clearance": 0.09207932651042938,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 1,
+    "policy": "hybrid",
+    "steps": 58,
+    "return": 94.49296679539572,
+    "minimum_clearance_over_episode": 0.03499997407197952,
+    "maximum_segment_strain": 0.030018329620361328,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.035875268280506134,
+    "travel_distance": 1.8349983841180801,
+    "max_normalized_deformation": 0.38983696589002437,
+    "peak_normalized_deformation": 0.4758417417420269,
+    "contact_steps": 8,
+    "minimum_substep_clearance": 0.0527925044298172,
+    "minimum_clearance": 0.07459750771522522,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 1,
+    "policy": "detour",
+    "steps": 78,
+    "return": 107.31712363362311,
+    "minimum_clearance_over_episode": 0.03828069195151329,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04973027855157852,
+    "travel_distance": 2.9649973064661026,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.09249333292245865,
+    "minimum_clearance": 0.09459434449672699,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.05999999865889549
+    ],
+    "executed_motion": [
+      0.0,
+      0.059999942779541016
+    ]
+  },
+  {
+    "seed": 2,
+    "policy": "hybrid",
+    "steps": 15,
+    "return": -3.2753897780508927,
+    "minimum_clearance_over_episode": 0.03499998152256012,
+    "maximum_segment_strain": 0.030098021030426025,
+    "planning_failure": "No collision-free action-grid route found at required clearance",
+    "success": false,
+    "damage": false,
+    "distance_to_target": 0.5889395475387573,
+    "travel_distance": 0.330624982714653,
+    "max_normalized_deformation": 0.36197958581234996,
+    "peak_normalized_deformation": 0.4152794255148492,
+    "contact_steps": 7,
+    "minimum_substep_clearance": 0.056338317692279816,
+    "minimum_clearance": 0.07863779366016388,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 2,
+    "policy": "detour",
+    "steps": 0,
+    "return": 0.0,
+    "minimum_clearance_over_episode": 0.1615895926952362,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": "No collision-free action-grid route found at required clearance",
+    "success": false,
+    "damage": false,
+    "distance_to_target": 0.8400020003318787,
+    "travel_distance": 0.0,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.1615895926952362,
+    "minimum_clearance": 0.1615895926952362,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.0
+    ],
+    "executed_motion": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "seed": 3,
+    "policy": "hybrid",
+    "steps": 64,
+    "return": 83.0355991396103,
+    "minimum_clearance_over_episode": 0.034999966621398926,
+    "maximum_segment_strain": 0.03008115291595459,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04181394353508949,
+    "travel_distance": 1.9790610522031784,
+    "max_normalized_deformation": 0.30041238951911403,
+    "peak_normalized_deformation": 0.570811589081444,
+    "contact_steps": 16,
+    "minimum_substep_clearance": 0.08323673903942108,
+    "minimum_clearance": 0.09341070055961609,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      -0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      -0.02499997615814209
+    ]
+  },
+  {
+    "seed": 3,
+    "policy": "detour",
+    "steps": 66,
+    "return": 107.33847832083703,
+    "minimum_clearance_over_episode": 0.038111474364995956,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.048660896718502045,
+    "travel_distance": 2.8749973624944687,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.07257106900215149,
+    "minimum_clearance": 0.09354056417942047,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      0.02499997615814209
+    ]
+  },
+  {
+    "seed": 4,
+    "policy": "hybrid",
+    "steps": 55,
+    "return": 88.66544350229887,
+    "minimum_clearance_over_episode": 0.034999970346689224,
+    "maximum_segment_strain": 0.03009885549545288,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.03721124306321144,
+    "travel_distance": 1.7640615552663803,
+    "max_normalized_deformation": 0.45214226771905425,
+    "peak_normalized_deformation": 0.5652026805300341,
+    "contact_steps": 16,
+    "minimum_substep_clearance": 0.050147537142038345,
+    "minimum_clearance": 0.07317189127206802,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 4,
+    "policy": "detour",
+    "steps": 71,
+    "return": 107.3627101227641,
+    "minimum_clearance_over_episode": 0.03890061378479004,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04902144894003868,
+    "travel_distance": 2.7549974769353867,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.05414901301264763,
+    "minimum_clearance": 0.09318597614765167,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.05999999865889549
+    ],
+    "executed_motion": [
+      0.0,
+      0.059999942779541016
+    ]
+  },
+  {
+    "seed": 5,
+    "policy": "hybrid",
+    "steps": 53,
+    "return": 83.97650359109412,
+    "minimum_clearance_over_episode": 0.03499995917081833,
+    "maximum_segment_strain": 0.0300905704498291,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04147603362798691,
+    "travel_distance": 1.709998533129692,
+    "max_normalized_deformation": 0.37732775498428084,
+    "peak_normalized_deformation": 0.6565109131465152,
+    "contact_steps": 10,
+    "minimum_substep_clearance": 0.06349486112594604,
+    "minimum_clearance": 0.08811437338590622,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 5,
+    "policy": "detour",
+    "steps": 85,
+    "return": 107.26116434037685,
+    "minimum_clearance_over_episode": 0.03838537260890007,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04830756038427353,
+    "travel_distance": 3.279997020959854,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.04677291586995125,
+    "minimum_clearance": 0.10577153414487839,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  },
+  {
+    "seed": 6,
+    "policy": "hybrid",
+    "steps": 49,
+    "return": 94.9587990180516,
+    "minimum_clearance_over_episode": 0.034999966621398926,
+    "maximum_segment_strain": 0.030079185962677002,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04142852872610092,
+    "travel_distance": 1.616248533129692,
+    "max_normalized_deformation": 0.38855392911760916,
+    "peak_normalized_deformation": 0.6665500633572281,
+    "contact_steps": 9,
+    "minimum_substep_clearance": 0.09274078160524368,
+    "minimum_clearance": 0.09443718940019608,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      -0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      -0.02499997615814209
+    ]
+  },
+  {
+    "seed": 6,
+    "policy": "detour",
+    "steps": 75,
+    "return": 107.35014955699444,
+    "minimum_clearance_over_episode": 0.038547564297914505,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04731602221727371,
+    "travel_distance": 2.889997363090515,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.07133986055850983,
+    "minimum_clearance": 0.09629302471876144,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 7,
+    "policy": "hybrid",
+    "steps": 67,
+    "return": 82.16776920907185,
+    "minimum_clearance_over_episode": 0.034999970346689224,
+    "maximum_segment_strain": 0.030094623565673828,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.0449647381901741,
+    "travel_distance": 1.9543732851743698,
+    "max_normalized_deformation": 0.26491573098181986,
+    "peak_normalized_deformation": 0.44897441053945275,
+    "contact_steps": 16,
+    "minimum_substep_clearance": 0.0688139796257019,
+    "minimum_clearance": 0.07517348974943161,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      0.02499997615814209
+    ]
+  },
+  {
+    "seed": 7,
+    "policy": "detour",
+    "steps": 73,
+    "return": 107.29665239453315,
+    "minimum_clearance_over_episode": 0.03879933804273605,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04898544400930405,
+    "travel_distance": 3.084997221827507,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.08959053456783295,
+    "minimum_clearance": 0.09423743933439255,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.05999999865889549
+    ],
+    "executed_motion": [
+      0.0,
+      0.059999942779541016
+    ]
+  },
+  {
+    "seed": 8,
+    "policy": "hybrid",
+    "steps": 58,
+    "return": 94.26427266277277,
+    "minimum_clearance_over_episode": 0.03499997407197952,
+    "maximum_segment_strain": 0.030017077922821045,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04197945445775986,
+    "travel_distance": 1.729998528957367,
+    "max_normalized_deformation": 0.3062519423897646,
+    "peak_normalized_deformation": 0.45072754590418346,
+    "contact_steps": 7,
+    "minimum_substep_clearance": 0.08275313675403595,
+    "minimum_clearance": 0.08629642426967621,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      0.02499997615814209
+    ]
+  },
+  {
+    "seed": 8,
+    "policy": "detour",
+    "steps": 81,
+    "return": 107.31156385093928,
+    "minimum_clearance_over_episode": 0.03883736580610275,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04949292913079262,
+    "travel_distance": 3.039997324347496,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.07502363622188568,
+    "minimum_clearance": 0.10002356767654419,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.02500000037252903,
+      0.0
+    ],
+    "executed_motion": [
+      0.02499997615814209,
+      0.0
+    ]
+  },
+  {
+    "seed": 9,
+    "policy": "hybrid",
+    "steps": 64,
+    "return": 87.6388581918681,
+    "minimum_clearance_over_episode": 0.034999970346689224,
+    "maximum_segment_strain": 0.03009134531021118,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04723536968231201,
+    "travel_distance": 1.8637486547231674,
+    "max_normalized_deformation": 0.366154161857929,
+    "peak_normalized_deformation": 0.5224381084739838,
+    "contact_steps": 16,
+    "minimum_substep_clearance": 0.0860859826207161,
+    "minimum_clearance": 0.09835190325975418,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.0,
+      -0.02500000037252903
+    ],
+    "executed_motion": [
+      0.0,
+      -0.02499997615814209
+    ]
+  },
+  {
+    "seed": 9,
+    "policy": "detour",
+    "steps": 84,
+    "return": 107.27304670214653,
+    "minimum_clearance_over_episode": 0.03919847682118416,
+    "maximum_segment_strain": 0.0,
+    "planning_failure": null,
+    "success": true,
+    "damage": false,
+    "distance_to_target": 0.04991285502910614,
+    "travel_distance": 3.1849971413612366,
+    "max_normalized_deformation": 0.0,
+    "peak_normalized_deformation": 0.0,
+    "contact_steps": 0,
+    "minimum_substep_clearance": 0.05067048966884613,
+    "minimum_clearance": 0.08971701562404633,
+    "collision_blocked": false,
+    "commanded_motion": [
+      0.05999999865889549,
+      0.0
+    ],
+    "executed_motion": [
+      0.059999942779541016,
+      0.0
+    ]
+  }
+]

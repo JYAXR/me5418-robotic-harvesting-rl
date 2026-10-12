@@ -14,7 +14,10 @@ from me5418_harvesting.envs.scene_generator import Scene, generate_scene
 class HarvestingEnv(gym.Env[np.ndarray, int]):
     """完全可观测的确定性或随机马尔可夫环境。"""
 
-    metadata: ClassVar[dict[str, list[str]]] = {"render_modes": ["ansi"]}
+    metadata: ClassVar[dict[str, Any]] = {
+        "render_modes": ["human", "rgb_array", "ansi"],
+        "render_fps": 8,
+    }
 
     _DIRECTIONS = np.array(
         [[0, 1], [0, -1], [1, 0], [-1, 0]], dtype=np.float32
@@ -42,6 +45,8 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
             "success": 100.0,
             **cfg.get("reward", {}),
         }
+        self.scene_parameters = cfg.get("scene", {})
+        self.show_gate_detail = bool(cfg.get("show_gate_detail", True))
         self.render_mode = render_mode
 
         branch_features = 4 * self.nodes_per_branch + 4
@@ -53,14 +58,25 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         self.scene: Scene | None = None
         self.step_count = 0
         self.total_travel = 0.0
+        self.peak_deformation = 0.0
+        self.contact_steps = 0
+        self.trajectory: list[np.ndarray] = []
+        self._figure: Any | None = None
+        self._axes: Any | None = None
+        self.demo_policy = ""
 
     def reset(
         self, *, seed: int | None = None, options: dict[str, Any] | None = None
     ) -> tuple[np.ndarray, dict[str, Any]]:
         super().reset(seed=seed)
-        self.scene = generate_scene(self.np_random, self.max_branches, self.nodes_per_branch)
+        self.scene = generate_scene(
+            self.np_random, self.max_branches, self.nodes_per_branch, **self.scene_parameters
+        )
         self.step_count = 0
         self.total_travel = 0.0
+        self.peak_deformation = 0.0
+        self.contact_steps = 0
+        self.trajectory = [self.scene.end_effector.copy()]
         return self._observation(), {"seed": seed}
 
     def step(self, action: int) -> tuple[np.ndarray, float, bool, bool, dict[str, Any]]:
@@ -76,30 +92,114 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         noise = self.np_random.uniform(-noise_bound, noise_bound, size=2).astype(np.float32)
         executed_motion = commanded_motion + noise
 
-        old_distance = float(np.linalg.norm(self.scene.target - self.scene.end_effector))
-        new_position = np.clip(
-            self.scene.end_effector + executed_motion, self.workspace_low, self.workspace_high
-        )
-        actual_motion = new_position - self.scene.end_effector
-        self.scene.end_effector = new_position
+        old_position = self.scene.end_effector.copy()
+        old_distance = float(np.linalg.norm(self.scene.target - old_position))
 
-        for branch in self.scene.branches:
-            branch.update_contact(
-                self.scene.end_effector,
-                actual_motion,
-                self.contact_radius,
-                self.relaxation_rate,
+        # Resolve each action as a sequence of short motions.  This prevents a
+        # large discrete step from tunnelling through a thin branch.  When a
+        # candidate position still overlaps a branch after stiffness-dependent
+        # deformation, the end effector is blocked at its previous position.
+        substep_limit = max(1e-4, self.contact_radius * 0.15)
+        substep_count = max(
+            1,
+            int(np.ceil(float(np.linalg.norm(executed_motion)) / substep_limit)),
+        )
+        substep_motion = executed_motion / substep_count
+        collision_blocked = False
+        contact_occurred = False
+        current_position = old_position.copy()
+        step_minimum_clearance = min(
+            branch.minimum_distance_to(current_position) for branch in self.scene.branches
+        )
+        for _ in range(substep_count):
+            previous_shapes = [branch.current_nodes.copy() for branch in self.scene.branches]
+            # Reduce a difficult substep until the contact and length
+            # projections can agree. Rejecting every full substep would trap
+            # the robot at a numerical constraint boundary despite a feasible
+            # elastic path through the tip gap.
+            for attempt in range(8):
+                fraction = 0.5**attempt
+                candidate_position = np.clip(
+                    current_position + fraction * substep_motion,
+                    self.workspace_low + self.contact_radius,
+                    self.workspace_high - self.contact_radius,
+                )
+                candidate_motion = candidate_position - current_position
+                for branch, shape in zip(self.scene.branches, previous_shapes):
+                    branch.current_nodes = shape.copy()
+                    branch.update_contact(
+                        candidate_position,
+                        candidate_motion,
+                        self.contact_radius,
+                        fraction * self.relaxation_rate / substep_count,
+                    )
+                    contact_occurred |= branch.in_contact
+                if all(branch.max_segment_strain <= 0.0301 for branch in self.scene.branches):
+                    break
+            else:
+                for branch, shape in zip(self.scene.branches, previous_shapes):
+                    branch.current_nodes = shape
+                collision_blocked = True
+                break
+
+            overlapping = any(
+                branch.minimum_distance_to(candidate_position)
+                < self.contact_radius - 1e-5
+                for branch in self.scene.branches
             )
+            if overlapping:
+                collision_blocked = True
+                # If finite compliance cannot make room for the full substep,
+                # accept only its collision-free fraction. Keep the same side
+                # of the obstacle; a contact update must not displace material
+                # through the robot's previously valid position either.
+                if any(
+                    branch.minimum_distance_to(current_position) < self.contact_radius - 1e-5
+                    for branch in self.scene.branches
+                ):
+                    for branch, shape in zip(self.scene.branches, previous_shapes):
+                        branch.current_nodes = shape
+                    break
+                lower_fraction, upper_fraction = 0.0, 1.0
+                for _ in range(12):
+                    middle_fraction = 0.5 * (lower_fraction + upper_fraction)
+                    middle_position = current_position + middle_fraction * candidate_motion
+                    if all(
+                        branch.minimum_distance_to(middle_position)
+                        >= self.contact_radius - 1e-5
+                        for branch in self.scene.branches
+                    ):
+                        lower_fraction = middle_fraction
+                    else:
+                        upper_fraction = middle_fraction
+                current_position += lower_fraction * candidate_motion
+            else:
+                current_position = candidate_position
+            self.peak_deformation = max(
+                self.peak_deformation,
+                max(branch.normalized_deformation for branch in self.scene.branches),
+            )
+            step_minimum_clearance = min(
+                step_minimum_clearance,
+                min(branch.minimum_distance_to(current_position) for branch in self.scene.branches),
+            )
+            if self.peak_deformation > 1.0:
+                break
+
+        self.scene.end_effector = current_position
+        actual_motion = current_position - old_position
+        self.trajectory.append(current_position.copy())
 
         self.step_count += 1
+        self.contact_steps += int(contact_occurred)
         travel = float(np.linalg.norm(actual_motion))
         self.total_travel += travel
         new_distance = float(np.linalg.norm(self.scene.target - self.scene.end_effector))
         deformations = [branch.normalized_deformation for branch in self.scene.branches]
         total_deformation = float(sum(deformations))
         max_deformation = float(max(deformations, default=0.0))
-        success = new_distance <= self.target_radius
-        damage = max_deformation > 1.0
+        damage = self.peak_deformation > 1.0
+        success = new_distance <= self.target_radius and not damage
         terminated = success or damage
         truncated = self.step_count >= self.max_steps and not terminated
 
@@ -116,6 +216,15 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
             "distance_to_target": new_distance,
             "travel_distance": self.total_travel,
             "max_normalized_deformation": max_deformation,
+            "peak_normalized_deformation": self.peak_deformation,
+            "contact_steps": self.contact_steps,
+            "minimum_substep_clearance": step_minimum_clearance,
+            "minimum_clearance": min(
+                branch.minimum_distance_to(self.scene.end_effector)
+                for branch in self.scene.branches
+            ),
+            "collision_blocked": collision_blocked,
+            "commanded_motion": commanded_motion.copy(),
             "executed_motion": actual_motion.copy(),
         }
         return self._observation(), float(reward), terminated, truncated, info
@@ -140,8 +249,191 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         features.append(1.0 - self.step_count / self.max_steps)
         return np.asarray(features, dtype=np.float32)
 
-    def render(self) -> str | None:
-        if self.render_mode != "ansi" or self.scene is None:
+    def render(self) -> str | np.ndarray | None:
+        """Render a textual status, an RGB frame, or an interactive window."""
+        if self.scene is None:
             return None
-        distance = np.linalg.norm(self.scene.target - self.scene.end_effector)
-        return f"step={self.step_count} distance={distance:.3f} branches={len(self.scene.branches)}"
+        if self.render_mode == "ansi":
+            distance = np.linalg.norm(self.scene.target - self.scene.end_effector)
+            return (
+                f"step={self.step_count} distance={distance:.3f} "
+                f"branches={len(self.scene.branches)}"
+            )
+        if self.render_mode == "rgb_array":
+            return self._render_rgb_array()
+        if self.render_mode == "human":
+            self._render_human()
+            return None
+        return None
+
+    def _draw_scene(self, axes: Any) -> None:
+        if self.scene is None:
+            return
+
+        from matplotlib.patches import Circle
+
+        axes.set_xlim(float(self.workspace_low[0]), float(self.workspace_high[0]))
+        axes.set_ylim(float(self.workspace_low[1]), float(self.workspace_high[1]))
+        axes.set_aspect("equal", adjustable="box")
+        axes.set_xlabel("x position")
+        axes.set_ylabel("y position")
+        label = f" | {self.demo_policy}" if self.demo_policy else ""
+        title = "Mixed-canopy harvesting" if self.scene.layout == "mixed_canopy" else "Deformable tip-gap harvesting"
+        axes.set_title(f"{title} | step {self.step_count}{label}", fontsize=12)
+        axes.grid(alpha=0.15)
+
+        for index, branch in enumerate(self.scene.branches):
+            label = "rest shape" if index == 0 else None
+            axes.plot(
+                branch.rest_nodes[:, 0],
+                branch.rest_nodes[:, 1],
+                linestyle="--",
+                color="#9ca3af",
+                linewidth=1.2,
+                label=label,
+            )
+            axes.scatter(
+                branch.current_nodes[0, 0],
+                branch.current_nodes[0, 1],
+                marker="s",
+                s=28,
+                color="#111827",
+                zorder=4,
+                label="fixed anchor" if index == 0 else None,
+            )
+            label = "flexible branch" if index == 0 else None
+            color = "#dc2626" if branch.in_contact else (
+                "#92400e" if branch.stiffness >= 1e4 else "#2f855a"
+            )
+            axes.plot(
+                branch.current_nodes[:, 0],
+                branch.current_nodes[:, 1],
+                marker="o",
+                markersize=4,
+                color=color,
+                linewidth=2.2,
+                label=label,
+            )
+
+        if self.trajectory:
+            trajectory = np.asarray(self.trajectory)
+            axes.plot(
+                trajectory[:, 0],
+                trajectory[:, 1],
+                color="#2563eb",
+                linewidth=1.4,
+                alpha=0.75,
+                label="trajectory",
+            )
+
+        axes.add_patch(
+            Circle(
+                self.scene.target,
+                self.target_radius,
+                facecolor="#f59e0b",
+                edgecolor="#92400e",
+                alpha=0.75,
+                label="target region",
+            )
+        )
+        axes.add_patch(
+            Circle(
+                self.scene.end_effector,
+                self.contact_radius,
+                facecolor="#2563eb",
+                edgecolor="#1e3a8a",
+                label="end effector",
+            )
+        )
+        axes.legend(loc="lower right", fontsize=7)
+        axes.text(
+            0.02,
+            0.03,
+            f"travel = {self.total_travel:.2f}\npeak deformation / limit = {self.peak_deformation:.2f}",
+            transform=axes.transAxes,
+            fontsize=8,
+            color="#374151",
+        )
+        if self.scene.layout == "mixed_canopy":
+            for number, ((first, second), kind) in enumerate(
+                zip(self.scene.passage_pairs, self.scene.passage_kinds), start=1
+            ):
+                center = 0.5 * (
+                    self.scene.branches[first].rest_nodes[-1]
+                    + self.scene.branches[second].rest_nodes[-1]
+                )
+                color = {"pushable": "#1d4ed8", "closed": "#92400e", "open": "#047857"}[kind]
+                axes.text(
+                    center[0] + 0.012, center[1] + 0.025,
+                    f"P{number}: {kind}", fontsize=6.5, color=color,
+                    bbox={"facecolor": "white", "alpha": 0.85, "edgecolor": "none", "pad": 1},
+                )
+        if self.show_gate_detail and self.scene.passage_pairs:
+            self._draw_gate_detail(axes)
+
+    def _draw_gate_detail(self, axes: Any) -> None:
+        """Magnify the closest opposing tips so the opening is observable."""
+        from matplotlib.patches import Circle
+
+        pairs = [
+            (self.scene.branches[first], self.scene.branches[second])
+            for first, second in self.scene.passage_pairs
+        ]
+        gate_index = min(
+            range(len(pairs)),
+            key=lambda index: abs(
+                pairs[index][0].rest_nodes[-1, 0] - self.scene.end_effector[0]
+            ),
+        )
+        lower, upper = pairs[gate_index]
+        center = 0.5 * (lower.rest_nodes[-1] + upper.rest_nodes[-1])
+        detail = axes.inset_axes([0.04, 0.69, 0.29, 0.27])
+        detail.set_xlim(center[0] - 0.09, center[0] + 0.09)
+        detail.set_ylim(center[1] - 0.085, center[1] + 0.085)
+        detail.set_aspect("equal")
+        for branch in (lower, upper):
+            detail.plot(
+                *branch.rest_nodes.T, "--", color="#9ca3af", linewidth=1.3
+            )
+            detail.plot(
+                *branch.current_nodes.T,
+                "-o",
+                color="#dc2626" if branch.in_contact else "#2f855a",
+                linewidth=2.0,
+                markersize=3,
+            )
+        detail.add_patch(Circle(self.scene.end_effector, self.contact_radius, color="#2563eb"))
+        gap = float(np.linalg.norm(upper.current_nodes[-1] - lower.current_nodes[-1]))
+        detail.set_title(f"Gate {gate_index + 1} detail | gap={gap:.3f}", fontsize=7.3)
+        detail.tick_params(labelsize=6)
+        detail.grid(alpha=0.15)
+
+    def _render_rgb_array(self) -> np.ndarray:
+        from matplotlib.backends.backend_agg import FigureCanvasAgg
+        from matplotlib.figure import Figure
+
+        figure = Figure(figsize=(6, 6), dpi=100, layout="tight")
+        canvas = FigureCanvasAgg(figure)
+        axes = figure.add_subplot(111)
+        self._draw_scene(axes)
+        canvas.draw()
+        return np.asarray(canvas.buffer_rgba(), dtype=np.uint8)[..., :3].copy()
+
+    def _render_human(self) -> None:
+        import matplotlib.pyplot as plt
+
+        if self._figure is None:
+            self._figure, self._axes = plt.subplots(figsize=(6, 6), layout="tight")
+            plt.show(block=False)
+        self._axes.clear()
+        self._draw_scene(self._axes)
+        self._figure.canvas.draw_idle()
+        plt.pause(1.0 / float(self.metadata["render_fps"]))
+
+    def close(self) -> None:
+        if self._figure is not None:
+            import matplotlib.pyplot as plt
+
+            plt.close(self._figure)
+            self._figure = None
+            self._axes = None

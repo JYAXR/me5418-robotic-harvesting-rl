@@ -1,0 +1,15 @@
+name: me5418-harvesting
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.10
+  - pip
+  - pip:
+      - gymnasium==1.4.0
+      - matplotlib==3.11.2
+      - numpy==2.5.3
+      - Pillow==12.3.0
+      - PyYAML==6.0.3
+      - pytest==9.1.1
+      - ruff==0.17.0
+      - -e .

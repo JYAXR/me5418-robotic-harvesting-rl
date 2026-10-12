@@ -9,6 +9,11 @@ target_radius: 0.050
 contact_radius: 0.035
 relaxation_rate: 0.10
 execution_noise_fraction: 0.0
+scene:
+  gap_height_range: [0.40, 0.60]
+  tip_gap_range: [0.028, 0.043]
+  stiffness_range: [0.35, 1.10]
+  safe_limit_range: [0.075, 0.110]
 reward:
   progress: 10.0
   deformation: 1.0
