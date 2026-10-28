@@ -2,9 +2,11 @@ name: me5418-harvesting
 channels:
   - conda-forge
 dependencies:
-  - python=3.12.10
+  - python=3.13.13
   - pip
   - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cpu
+      - torch==2.15.0+cpu
       - gymnasium==1.4.0
       - matplotlib==3.11.2
       - numpy==2.5.3

@@ -22,6 +22,42 @@ Use `--output path/to/submission.zip` to choose another destination. Even after
 running demos, the archive excludes their GIFs, images, traces, and metrics.
 All code comments, docstrings, exception messages, and console output use English.
 
+## Neural-network forward/backward demo
+
+The Q network is a fully connected MLP with two 256-unit ReLU hidden layers
+and eight action-value outputs. The input size is read from the environment:
+125 for the default scene and 341 for the mixed canopy.
+
+The Conda environment includes CPU PyTorch for Windows and Linux. Alternatively,
+install the CPU wheel and the project in an existing Python 3.11+ environment:
+
+```bash
+python -m pip install torch==2.15.0 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -e ".[dev,network]"
+python scripts/run_network_demo.py
+python scripts/run_network_demo.py --config configs/environment_complex.yaml
+```
+
+The demo collects 128 actual random-policy transitions and performs three Adam
+updates with the settings in `configs/dqn.yaml`. It prints JSON containing a
+sample observation, the eight Q values, a selected action, a Bellman target,
+Huber loss before/after each update, gradient norm before clipping, and the
+parameter-change norm. Both losses for an update use the same detached targets.
+The frozen target network receives no gradients and is synchronized at the
+configured update interval. Success/damage stops bootstrapping; time-limit
+truncation uses the final observation before reset and continues bootstrapping.
+Finally, the updated network selects and executes one action in the environment.
+
+Use `--seed 7`, `--batch-size 16 --transitions 32`, or `--updates 5` to vary the
+demonstration. Defaults for both YAML paths are resolved relative to the project,
+so the script also works when invoked from another directory. Output is printed
+to the console; no checkpoints or result files are written.
+
+This demonstrates inference, backpropagation, and parameter updates. It does not
+establish a trained harvesting policy or a performance advantage. Replay-buffer
+training, warmup, and epsilon schedules remain future full-training work; the
+short demo samples minibatches from a fixed collection of real transitions.
+
 ## Quick start without Conda (Windows PowerShell)
 
 Run from the extracted project directory:
@@ -223,12 +259,13 @@ python scripts/build_comparison_figure.py
 ```text
 configs/                          Environment and experiment settings
 src/me5418_harvesting/envs/       Scene generation, branch model, Gym environment
-src/me5418_harvesting/agents/     DQN configuration and Q-network builder
+src/me5418_harvesting/agents/     Q-network construction and DQN update utilities
 src/me5418_harvesting/planners/   Collision-free A* and receding-horizon interface
 src/me5418_harvesting/evaluation/ Episode metrics and summaries
 scripts/run_demo.py               Graded graphical demonstration
 scripts/compare_demo.py           Same-scene push versus detour comparison
 scripts/run_smoke.py              Minimal text-only smoke test
+scripts/run_network_demo.py       Q-network forward/backward and environment action demo
 tests/                            Interface, reproducibility, and render tests
 results/                          Empty output directory; files generated locally
 ```
@@ -251,17 +288,23 @@ env = HarvestingEnv(config, render_mode="human")
 observation, info = env.reset(seed=0)
 ```
 
-The DQN and experiment configuration files document the intended final-project
-comparison with receding-horizon planning. This assignment submission focuses
-on the environment, its reproducible interface, and the required visual demo;
-it does not claim that the placeholder DQN network has already been trained.
+The network demo exercises DQN updates on real environment transitions.
+The DQN and experiment configurations also document the intended final-project
+comparison with receding-horizon planning; full policy training and evaluation
+remain outstanding.
 
 ## Testing
 
 ```bash
+python -m pip install -e ".[dev,network]"
 pytest -q
 ruff check .
 ```
+
+The network tests check both observation sizes, terminal versus time-limit
+Bellman targets, final-observation handling, frozen target-network parameters,
+gradient clipping, parameter updates, seeded reproducibility, and the CLI demo.
+CI runs the tests and both network-demo layouts on Windows and Linux.
 
 The tests check the Gymnasium interface, seeded reproducibility, RGB rendering,
 trajectory bookkeeping, narrow-gap geometry, fixed anchors, segment strain,
