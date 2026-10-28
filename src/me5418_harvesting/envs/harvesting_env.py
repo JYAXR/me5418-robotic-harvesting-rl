@@ -1,7 +1,8 @@
-"""面向柔性障碍物采摘任务的 Gymnasium 环境接口。"""
+"""Gymnasium environment for harvesting among flexible obstacles."""
 
 from __future__ import annotations
 
+from dataclasses import dataclass
 from typing import Any, ClassVar
 
 import gymnasium as gym
@@ -11,8 +12,18 @@ from gymnasium import spaces
 from me5418_harvesting.envs.scene_generator import Scene, generate_scene
 
 
+@dataclass(frozen=True)
+class _MotionResult:
+    """Executed displacement and diagnostics for one action."""
+
+    executed_motion: np.ndarray
+    collision_blocked: bool
+    contact_occurred: bool
+    minimum_clearance: float
+
+
 class HarvestingEnv(gym.Env[np.ndarray, int]):
-    """完全可观测的确定性或随机马尔可夫环境。"""
+    """Fully observable Markov environment with deterministic or stochastic transitions."""
 
     metadata: ClassVar[dict[str, Any]] = {
         "render_modes": ["human", "rgb_array", "ansi"],
@@ -80,11 +91,19 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         return self._observation(), {"seed": seed}
 
     def step(self, action: int) -> tuple[np.ndarray, float, bool, bool, dict[str, Any]]:
+        """Apply an action, resolve contact, and evaluate the transition."""
         if self.scene is None:
-            raise RuntimeError("调用 step() 前必须先调用 reset()")
+            raise RuntimeError("Call reset() before calling step().")
         if not self.action_space.contains(action):
-            raise ValueError(f"无效动作：{action}")
+            raise ValueError(f"Invalid action: {action}")
 
+        commanded_motion, executed_motion = self._action_motion(action)
+        old_distance = float(np.linalg.norm(self.scene.target - self.scene.end_effector))
+        motion = self._simulate_motion(executed_motion)
+        return self._finish_step(old_distance, commanded_motion, motion)
+
+    def _action_motion(self, action: int) -> tuple[np.ndarray, np.ndarray]:
+        """Decode the action and sample bounded execution noise."""
         direction = self._DIRECTIONS[action % 4]
         step_size = self.small_step if action < 4 else self.large_step
         commanded_motion = direction * step_size
@@ -92,13 +111,11 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         noise = self.np_random.uniform(-noise_bound, noise_bound, size=2).astype(np.float32)
         executed_motion = commanded_motion + noise
 
-        old_position = self.scene.end_effector.copy()
-        old_distance = float(np.linalg.norm(self.scene.target - old_position))
+        return commanded_motion, executed_motion
 
-        # Resolve each action as a sequence of short motions.  This prevents a
-        # large discrete step from tunnelling through a thin branch.  When a
-        # candidate position still overlaps a branch after stiffness-dependent
-        # deformation, the end effector is blocked at its previous position.
+    def _simulate_motion(self, executed_motion: np.ndarray) -> _MotionResult:
+        """Resolve short motions to prevent tunnelling through thin branches."""
+        old_position = self.scene.end_effector.copy()
         substep_limit = max(1e-4, self.contact_radius * 0.15)
         substep_count = max(
             1,
@@ -113,65 +130,26 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         )
         for _ in range(substep_count):
             previous_shapes = [branch.current_nodes.copy() for branch in self.scene.branches]
-            # Reduce a difficult substep until the contact and length
-            # projections can agree. Rejecting every full substep would trap
-            # the robot at a numerical constraint boundary despite a feasible
-            # elastic path through the tip gap.
-            for attempt in range(8):
-                fraction = 0.5**attempt
-                candidate_position = np.clip(
-                    current_position + fraction * substep_motion,
-                    self.workspace_low + self.contact_radius,
-                    self.workspace_high - self.contact_radius,
-                )
-                candidate_motion = candidate_position - current_position
-                for branch, shape in zip(self.scene.branches, previous_shapes):
-                    branch.current_nodes = shape.copy()
-                    branch.update_contact(
-                        candidate_position,
-                        candidate_motion,
-                        self.contact_radius,
-                        fraction * self.relaxation_rate / substep_count,
-                    )
-                    contact_occurred |= branch.in_contact
-                if all(branch.max_segment_strain <= 0.0301 for branch in self.scene.branches):
-                    break
-            else:
-                for branch, shape in zip(self.scene.branches, previous_shapes):
-                    branch.current_nodes = shape
+            candidate_position, substep_contact = self._try_contact_substep(
+                current_position, substep_motion, substep_count, previous_shapes
+            )
+            contact_occurred |= substep_contact
+            if candidate_position is None:
                 collision_blocked = True
                 break
 
-            overlapping = any(
-                branch.minimum_distance_to(candidate_position)
-                < self.contact_radius - 1e-5
-                for branch in self.scene.branches
-            )
+            candidate_motion = candidate_position - current_position
+            overlapping = self._overlaps_branch(candidate_position)
             if overlapping:
                 collision_blocked = True
                 # If finite compliance cannot make room for the full substep,
                 # accept only its collision-free fraction. Keep the same side
                 # of the obstacle; a contact update must not displace material
                 # through the robot's previously valid position either.
-                if any(
-                    branch.minimum_distance_to(current_position) < self.contact_radius - 1e-5
-                    for branch in self.scene.branches
-                ):
-                    for branch, shape in zip(self.scene.branches, previous_shapes):
-                        branch.current_nodes = shape
+                if self._overlaps_branch(current_position):
+                    self._restore_branch_shapes(previous_shapes)
                     break
-                lower_fraction, upper_fraction = 0.0, 1.0
-                for _ in range(12):
-                    middle_fraction = 0.5 * (lower_fraction + upper_fraction)
-                    middle_position = current_position + middle_fraction * candidate_motion
-                    if all(
-                        branch.minimum_distance_to(middle_position)
-                        >= self.contact_radius - 1e-5
-                        for branch in self.scene.branches
-                    ):
-                        lower_fraction = middle_fraction
-                    else:
-                        upper_fraction = middle_fraction
+                lower_fraction = self._collision_free_fraction(current_position, candidate_motion)
                 current_position += lower_fraction * candidate_motion
             else:
                 current_position = candidate_position
@@ -190,9 +168,77 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         actual_motion = current_position - old_position
         self.trajectory.append(current_position.copy())
 
+        return _MotionResult(
+            actual_motion, collision_blocked, contact_occurred, step_minimum_clearance
+        )
+
+    def _try_contact_substep(
+        self,
+        current_position: np.ndarray,
+        substep_motion: np.ndarray,
+        substep_count: int,
+        previous_shapes: list[np.ndarray],
+    ) -> tuple[np.ndarray | None, bool]:
+        """Halve difficult substeps until contact and segment strain agree."""
+        contact_occurred = False
+        for attempt in range(8):
+            fraction = 0.5**attempt
+            candidate_position = np.clip(
+                current_position + fraction * substep_motion,
+                self.workspace_low + self.contact_radius,
+                self.workspace_high - self.contact_radius,
+            )
+            candidate_motion = candidate_position - current_position
+            for branch, shape in zip(self.scene.branches, previous_shapes):
+                branch.current_nodes = shape.copy()
+                branch.update_contact(
+                    candidate_position,
+                    candidate_motion,
+                    self.contact_radius,
+                    fraction * self.relaxation_rate / substep_count,
+                )
+                contact_occurred |= branch.in_contact
+            if all(branch.max_segment_strain <= 0.0301 for branch in self.scene.branches):
+                return candidate_position, contact_occurred
+        self._restore_branch_shapes(previous_shapes)
+        return None, contact_occurred
+
+    def _restore_branch_shapes(self, previous_shapes: list[np.ndarray]) -> None:
+        """Restore node positions after an infeasible contact update."""
+        for branch, shape in zip(self.scene.branches, previous_shapes):
+            branch.current_nodes = shape
+
+    def _overlaps_branch(self, position: np.ndarray) -> bool:
+        """Check penetration using the same tolerance as the contact solver."""
+        return any(
+            branch.minimum_distance_to(position) < self.contact_radius - 1e-5
+            for branch in self.scene.branches
+        )
+
+    def _collision_free_fraction(
+        self, current_position: np.ndarray, candidate_motion: np.ndarray
+    ) -> float:
+        """Bisect a blocked substep to retain its collision-free fraction."""
+        lower_fraction, upper_fraction = 0.0, 1.0
+        for _ in range(12):
+            middle_fraction = 0.5 * (lower_fraction + upper_fraction)
+            middle_position = current_position + middle_fraction * candidate_motion
+            if all(
+                branch.minimum_distance_to(middle_position) >= self.contact_radius - 1e-5
+                for branch in self.scene.branches
+            ):
+                lower_fraction = middle_fraction
+            else:
+                upper_fraction = middle_fraction
+        return lower_fraction
+
+    def _finish_step(
+        self, old_distance: float, commanded_motion: np.ndarray, motion: _MotionResult
+    ) -> tuple[np.ndarray, float, bool, bool, dict[str, Any]]:
+        """Update episode counters, reward, termination, and diagnostics."""
         self.step_count += 1
-        self.contact_steps += int(contact_occurred)
-        travel = float(np.linalg.norm(actual_motion))
+        self.contact_steps += int(motion.contact_occurred)
+        travel = float(np.linalg.norm(motion.executed_motion))
         self.total_travel += travel
         new_distance = float(np.linalg.norm(self.scene.target - self.scene.end_effector))
         deformations = [branch.normalized_deformation for branch in self.scene.branches]
@@ -218,20 +264,20 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
             "max_normalized_deformation": max_deformation,
             "peak_normalized_deformation": self.peak_deformation,
             "contact_steps": self.contact_steps,
-            "minimum_substep_clearance": step_minimum_clearance,
+            "minimum_substep_clearance": motion.minimum_clearance,
             "minimum_clearance": min(
                 branch.minimum_distance_to(self.scene.end_effector)
                 for branch in self.scene.branches
             ),
-            "collision_blocked": collision_blocked,
+            "collision_blocked": motion.collision_blocked,
             "commanded_motion": commanded_motion.copy(),
-            "executed_motion": actual_motion.copy(),
+            "executed_motion": motion.executed_motion.copy(),
         }
         return self._observation(), float(reward), terminated, truncated, info
 
     def _observation(self) -> np.ndarray:
         if self.scene is None:
-            raise RuntimeError("场景尚未初始化")
+            raise RuntimeError("The scene has not been initialized.")
         features: list[float] = [
             *self.scene.end_effector,
             *(self.scene.target - self.scene.end_effector),

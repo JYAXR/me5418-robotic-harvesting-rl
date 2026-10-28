@@ -22,13 +22,13 @@ class Branch:
         self.rest_nodes = np.asarray(self.rest_nodes, dtype=np.float32)
         self.current_nodes = np.asarray(self.current_nodes, dtype=np.float32)
         if self.rest_nodes.shape != self.current_nodes.shape:
-            raise ValueError("静止节点与当前节点必须具有相同形状")
+            raise ValueError("Rest and current nodes must have the same shape.")
         if self.rest_nodes.ndim != 2 or self.rest_nodes.shape[1] != 2:
-            raise ValueError("枝条节点形状必须为 (n_nodes, 2)")
+            raise ValueError("Branch nodes must have shape (n_nodes, 2).")
         if len(self.rest_nodes) < 2:
-            raise ValueError("枝条至少需要两个节点")
+            raise ValueError("A branch must have at least two nodes.")
         if self.stiffness <= 0 or self.safe_limit <= 0:
-            raise ValueError("刚度和安全形变上限必须为正数")
+            raise ValueError("Stiffness and the safe deformation limit must be positive.")
 
     @property
     def max_displacement(self) -> float:

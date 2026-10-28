@@ -1,4 +1,4 @@
-"""ME5418 机器人采摘研究包。"""
+"""ME5418 robotic harvesting research package."""
 
 from me5418_harvesting.envs.harvesting_env import HarvestingEnv
 

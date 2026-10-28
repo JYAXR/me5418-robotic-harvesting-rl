@@ -6,6 +6,22 @@ fruit while choosing between detours and controlled contact with flexible
 branches. The same environment supports deterministic transitions and bounded
 execution noise.
 
+## Clean submission
+
+Run outputs are generated locally and are not included in the repository or
+submission archive. The tracked `results/` directory contains only `.gitkeep`.
+Running a demo creates its output directory and files as needed.
+
+To build a submission containing source, configuration, tests, and the report:
+
+```bash
+python scripts/build_submission.py
+```
+
+Use `--output path/to/submission.zip` to choose another destination. Even after
+running demos, the archive excludes their GIFs, images, traces, and metrics.
+All code comments, docstrings, exception messages, and console output use English.
+
 ## Quick start without Conda (Windows PowerShell)
 
 Run from the extracted project directory:
@@ -118,13 +134,13 @@ The old `push` policy cannot handle closed passages because it tries every gap.
 Planning failure is recorded separately from damage rather than raising an
 unhandled error or claiming arrival.
 
-The paired diagnostic covers seeds 0-9. Both hybrid and non-contact A* succeed
+An earlier paired diagnostic covered seeds 0-9. Both hybrid and non-contact A* succeeded
 on nine scenes; seed 2 remains a recorded planning failure for both. No checked
 episode triggers damage. This does not prove that seed 2 is physically
 unsolvable or establish learned-policy performance. Seed 0 demonstrates both
 routes: the hybrid opens soft gaps and detours around the closed region, while
-non-contact A* takes a longer route. Existing simple/inclined results and the
-previous submission archive are preserved for comparison.
+non-contact A* takes a longer route. Re-run the commands above to generate
+local diagnostic files; previous run outputs are not bundled.
 
 ## Experimental inclined-branch layout
 
@@ -134,7 +150,7 @@ changes the actual resting/current nodes used by the contact solver, not just
 the drawing. The tip gaps are still narrower than the robot diameter. With a
 matched seed, target, gap heights, gap widths, stiffness, and safety limits are
 identical to the upright layout; only horizontal branch geometry changes.
-The original default configuration and demonstration files remain unchanged.
+The original default configuration remains available.
 
 Run a successful inclined contact example and its same-scene detour:
 
@@ -147,8 +163,9 @@ python scripts/build_comparison_figure.py --seed 1 --demo-dir results/inclined_d
 
 The unmodified handwritten contact controller succeeds on 6/10 inclined scenes
 (seeds 0-9), triggers damage on three, and times out on one. Collision-free A*
-succeeds on all ten. Seed 0's failed contact animation is retained alongside
-seed 1's successful example. Inclination exposes limitations of aligning to
+succeeds on all ten in the earlier diagnostic. Re-run the demo with seed 0 to
+generate the failed contact example or seed 1 for the successful example.
+Inclination exposes limitations of aligning to
 resting tips and then pushing horizontally; these results are not trained RL
 evaluation. Contact physics and safety thresholds were not relaxed for this
 variant. Recorded metrics include clearance and segment-strain checks.
@@ -213,10 +230,7 @@ scripts/run_demo.py               Graded graphical demonstration
 scripts/compare_demo.py           Same-scene push versus detour comparison
 scripts/run_smoke.py              Minimal text-only smoke test
 tests/                            Interface, reproducibility, and render tests
-results/demo/                     Generated demonstration files
-results/comparison/               Paired episode metrics and comparison image
-results/complex_demo/             Mixed-canopy animations and state traces
-results/complex_comparison/       Hybrid versus non-contact diagnostics
+results/                          Empty output directory; files generated locally
 ```
 
 ## Configuration

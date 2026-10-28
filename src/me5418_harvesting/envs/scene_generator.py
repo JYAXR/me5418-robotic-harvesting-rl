@@ -1,4 +1,4 @@
-"""为训练集、验证集和测试集生成带随机种子的场景。"""
+"""Generate seeded scenes for training, validation, and testing."""
 
 from dataclasses import dataclass
 

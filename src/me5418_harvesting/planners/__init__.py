@@ -1,4 +1,4 @@
-"""基于模型的规划基线。"""
+"""Model-based planning baselines."""
 
 from me5418_harvesting.planners.receding_horizon import RecedingHorizonPlanner
 

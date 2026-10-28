@@ -5,3 +5,13 @@ __pycache__/
 .ruff_cache/
 .venv/
 report/rendered/
+
+# Keep generated run outputs out of the repository and submission.
+results/*
+!results/.gitkeep
+checkpoints/
+wandb/
+dist/
+build/
+*.zip
+.venv*/
