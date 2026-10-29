@@ -18,7 +18,8 @@ def load_packager():
 def make_project(root):
     for name in (
         "README.md", "environment.yml", "pyproject.toml", ".gitignore", ".gitattributes",
-        "report/ME5418_Group18_Environment_Report.pdf", "src/package/__init__.py",
+        "report/ME5418_Group18_Neural_Network_Report_Revised.docx",
+        "src/package/__init__.py",
         "scripts/run_demo.py", "configs/environment.yaml", "tests/test_example.py",
     ):
         path = root / name
@@ -32,6 +33,9 @@ def test_archive_excludes_stale_results_and_caches(tmp_path):
     for name in (
         "results/demo/old.gif", "results/comparison/episodes.csv",
         "results/complex_demo/trace.json", "report/rendered/page.png",
+        "report/ME5418_Group18_Environment_Report.pdf",
+        "report/ME5418_Group18_Neural_Network_Report.docx",
+        "report/ME5418_Group18_Neural_Network_Report_Chinese.docx",
         "src/package/__pycache__/module.pyc", "src/package/module.pyo",
         "src/package.egg-info/PKG-INFO", "src/.venv-local/ignored.py",
     ):
@@ -45,10 +49,12 @@ def test_archive_excludes_stale_results_and_caches(tmp_path):
         assert count == len(names)
         assert archive.testzip() is None
         assert {name for name in names if "/results/" in name} == {
-            "project/results/.gitkeep"
+            "ME5418_Group18/results/.gitkeep"
         }
-        assert "project/src/package/__init__.py" in names
-        assert "project/report/ME5418_Group18_Environment_Report.pdf" in names
+        assert "ME5418_Group18/src/package/__init__.py" in names
+        assert {name for name in names if "/report/" in name} == {
+            "ME5418_Group18/report/ME5418_Group18_Neural_Network_Report_Revised.docx"
+        }
         assert not any("__pycache__" in name or ".egg-info" in name for name in names)
         assert not any(name.endswith((".pyc", ".pyo")) or ".venv" in name for name in names)
         assert not any("/rendered/" in name for name in names)
@@ -58,7 +64,7 @@ def test_archive_excludes_stale_results_and_caches(tmp_path):
 def test_missing_report_does_not_replace_existing_archive(tmp_path):
     root = tmp_path / "project"
     make_project(root)
-    (root / "report/ME5418_Group18_Environment_Report.pdf").unlink()
+    (root / "report/ME5418_Group18_Neural_Network_Report_Revised.docx").unlink()
     output = tmp_path / "submission.zip"
     output.write_bytes(b"previous archive")
     with pytest.raises(ValueError, match="Missing"):

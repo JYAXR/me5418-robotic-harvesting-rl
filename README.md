@@ -12,7 +12,8 @@ Run outputs are generated locally and are not included in the repository or
 submission archive. The tracked `results/` directory contains only `.gitkeep`.
 Running a demo creates its output directory and files as needed.
 
-To build a submission containing source, configuration, tests, and the report:
+To build a submission containing source, configuration, tests, and the current
+two-page English Word report:
 
 ```bash
 python scripts/build_submission.py
@@ -21,6 +22,17 @@ python scripts/build_submission.py
 Use `--output path/to/submission.zip` to choose another destination. Even after
 running demos, the archive excludes their GIFs, images, traces, and metrics.
 All code comments, docstrings, exception messages, and console output use English.
+
+The default archive is `ME5418_Group18_Submission.zip`, with a single
+`ME5418_Group18/` project folder. Its report is
+`report/ME5418_Group18_Neural_Network_Report_Revised.docx`. Older reports,
+the Chinese reference translation, local environments, and rendering previews
+are excluded.
+
+## Reports
+
+- [English report (two pages)](report/ME5418_Group18_Neural_Network_Report_Revised.docx): the current submission report.
+- [Chinese reference (three pages)](report/ME5418_Group18_Neural_Network_Report_Chinese.docx): the matching translation for review, excluded from the submission archive.
 
 ## Neural-network forward/backward demo
 
@@ -81,13 +93,16 @@ Run these commands from the repository root:
 ```bash
 conda env create -f environment.yml
 conda activate me5418-harvesting
+python scripts/run_network_demo.py
+python scripts/run_network_demo.py --config configs/environment_complex.yaml
 python scripts/run_demo.py --policy push --seed 0
 python scripts/run_demo.py --policy detour --seed 0
 pytest -q
 ```
 
-The demo writes an animated GIF to `results/demo/`. A random-policy episode can
-be generated with:
+The network demo prints its forward/backward and update diagnostics to the
+console. The optional environment demos write animated GIFs to `results/demo/`.
+A random-policy episode can be generated with:
 
 ```bash
 python scripts/run_demo.py --policy random --seed 7
@@ -170,13 +185,10 @@ The old `push` policy cannot handle closed passages because it tries every gap.
 Planning failure is recorded separately from damage rather than raising an
 unhandled error or claiming arrival.
 
-An earlier paired diagnostic covered seeds 0-9. Both hybrid and non-contact A* succeeded
-on nine scenes; seed 2 remains a recorded planning failure for both. No checked
-episode triggers damage. This does not prove that seed 2 is physically
-unsolvable or establish learned-policy performance. Seed 0 demonstrates both
-routes: the hybrid opens soft gaps and detours around the closed region, while
-non-contact A* takes a longer route. Re-run the commands above to generate
-local diagnostic files; previous run outputs are not bundled.
+Run the commands above to generate local diagnostic files and compare the
+controllers on matched scenes. Check planning failure separately from damage
+and inspect the trajectories to see where contact or detours occur. These
+controllers are environment demonstrations rather than trained policies.
 
 ## Experimental inclined-branch layout
 
@@ -188,7 +200,7 @@ matched seed, target, gap heights, gap widths, stiffness, and safety limits are
 identical to the upright layout; only horizontal branch geometry changes.
 The original default configuration remains available.
 
-Run a successful inclined contact example and its same-scene detour:
+Run the inclined contact controller and its same-scene detour:
 
 ```powershell
 python scripts/run_demo.py --policy push --seed 1 --config configs/environment_inclined.yaml --output-dir results/inclined_demo
@@ -197,14 +209,10 @@ python scripts/compare_demo.py --seeds 10 --config configs/environment_inclined.
 python scripts/build_comparison_figure.py --seed 1 --demo-dir results/inclined_demo --output-dir results/inclined_comparison --title "Inclined branches, seed 1"
 ```
 
-The unmodified handwritten contact controller succeeds on 6/10 inclined scenes
-(seeds 0-9), triggers damage on three, and times out on one. Collision-free A*
-succeeds on all ten in the earlier diagnostic. Re-run the demo with seed 0 to
-generate the failed contact example or seed 1 for the successful example.
-Inclination exposes limitations of aligning to
-resting tips and then pushing horizontally; these results are not trained RL
-evaluation. Contact physics and safety thresholds were not relaxed for this
-variant. Recorded metrics include clearance and segment-strain checks.
+Inclination changes how horizontal pushing interacts with the branches. Use the
+comparison command to inspect success, damage and timeout outcomes across seeds.
+Contact physics and safety thresholds are the same as for the upright layout.
+Generated metrics include clearance and segment-strain checks.
 
 ## Environment definition
 
@@ -216,8 +224,8 @@ variant. Recorded metrics include clearance and segment-strain checks.
   small or large step size.
 - **Reward:** target progress minus normalized deformation and travel cost,
   with a large damage penalty and a success bonus.
-- **Termination:** the episode ends after success, unsafe deformation, or the
-  configured step limit.
+- **Termination:** success or unsafe deformation terminates the episode;
+  reaching the configured step limit truncates it.
 - **Randomness:** `reset(seed=...)` controls scene generation. The
   `execution_noise_fraction` configuration adds bounded, zero-mean action
   perturbations while preserving full state observability.
@@ -315,7 +323,6 @@ Mixed-layout tests check all three passage types, diverse branch geometry,
 complete observations, rigid blocking, and the different actual contact
 behaviour of natural openings versus soft gaps.
 
-The paired diagnostic set covers seeds 0-9. These checks demonstrate that both
-routes are available in the chosen surrogate. They do not establish a learned
-policy advantage; final experiments still require a trained DQN, held-out seeds,
-noise tests, and sensitivity to gap width, stiffness, and damage thresholds.
+The comparison scripts can generate paired diagnostics across matched seeds.
+Final experiments still require a trained DQN, held-out seeds, noise tests, and
+sensitivity to gap width, stiffness, and damage thresholds.
