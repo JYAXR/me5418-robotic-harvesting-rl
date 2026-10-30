@@ -56,8 +56,12 @@ sample observation, the eight Q values, a selected action, a Bellman target,
 Huber loss before/after each update, gradient norm before clipping, and the
 parameter-change norm. Both losses for an update use the same detached targets.
 The frozen target network receives no gradients and is synchronized at the
-configured update interval. Success/damage stops bootstrapping; time-limit
-truncation uses the final observation before reset and continues bootstrapping.
+configured update interval. Success, damage and exhaustion of the task's action
+budget stop bootstrapping: their Bellman target is the immediate reward alone.
+The budget is 100 actions by default and 200 in the mixed canopy; remaining
+budget is part of the observation. Only an external interruption before task
+termination, such as a shorter `TimeLimit` wrapper, continues bootstrapping from
+the final observation before reset.
 Finally, the updated network selects and executes one action in the environment.
 
 Use `--seed 7`, `--batch-size 16 --transitions 32`, or `--updates 5` to vary the
@@ -224,8 +228,10 @@ Generated metrics include clearance and segment-strain checks.
   small or large step size.
 - **Reward:** target progress minus normalized deformation and travel cost,
   with a large damage penalty and a success bonus.
-- **Termination:** success or unsafe deformation terminates the episode;
-  reaching the configured step limit truncates it.
+- **Termination:** success, unsafe deformation or exhaustion of the configured
+  action budget terminates the task (`terminated=True`, `truncated=False`).
+  `info["budget_exhausted"]` records whether the budget was used up. External
+  wrappers may truncate an unfinished task earlier.
 - **Randomness:** `reset(seed=...)` controls scene generation. The
   `execution_noise_fraction` configuration adds bounded, zero-mean action
   perturbations while preserving full state observability.
@@ -309,8 +315,10 @@ pytest -q
 ruff check .
 ```
 
-The network tests check both observation sizes, terminal versus time-limit
-Bellman targets, final-observation handling, frozen target-network parameters,
+The tests check both 100- and 200-action task boundaries, reward-only Bellman
+targets after budget exhaustion, and continued bootstrapping after genuine
+external truncation. Network checks also cover both observation sizes,
+final-observation handling, frozen target-network parameters,
 gradient clipping, parameter updates, seeded reproducibility, and the CLI demo.
 CI runs the tests and both network-demo layouts on Windows and Linux.
 

@@ -1,9 +1,35 @@
+from pathlib import Path
+
 import numpy as np
 import pytest
+import yaml
 
 from me5418_harvesting import HarvestingEnv
 from me5418_harvesting.envs.branch_physics import Branch
 from me5418_harvesting.envs.scene_generator import Scene, generate_scene
+
+
+@pytest.mark.parametrize(
+    ("configuration", "budget"),
+    [("environment.yaml", 100), ("environment_complex.yaml", 200)],
+)
+def test_task_budget_terminates_on_the_last_allowed_action(configuration, budget) -> None:
+    config_path = Path(__file__).resolve().parents[1] / "configs" / configuration
+    env = HarvestingEnv(yaml.safe_load(config_path.read_text(encoding="utf-8")))
+    try:
+        env.reset(seed=0)
+        assert env.max_steps == budget
+        for step in range(1, budget + 1):
+            # Move left, then stay at the boundary, without reaching the fruit.
+            observation, _, terminated, truncated, info = env.step(3)
+            assert not info["success"] and not info["damage"]
+            assert env.step_count == step
+            assert observation[-1] == pytest.approx(1.0 - step / budget)
+            assert terminated is (step == budget)
+            assert not truncated
+        assert info["budget_exhausted"]
+    finally:
+        env.close()
 
 
 def test_reset_and_step_follow_gymnasium_contract() -> None:

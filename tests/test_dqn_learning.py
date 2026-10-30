@@ -9,6 +9,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 import torch
+from gymnasium.wrappers import TimeLimit
 from torch import nn
 
 from me5418_harvesting import HarvestingEnv
@@ -44,7 +45,7 @@ def test_q_network_accepts_real_observations_and_backpropagates(environment_conf
     env.close()
 
 
-def test_td_targets_distinguish_termination_from_truncation_and_detach_target():
+def test_td_targets_distinguish_task_termination_from_external_truncation_and_detach_target():
     online = nn.Linear(2, 2)
     target = nn.Linear(2, 2)
     with torch.no_grad():
@@ -76,15 +77,41 @@ def test_collector_preserves_final_observation_and_seed_across_episode_resets():
     repeated = collect_transitions(env, count=4, seed=7)
     for field in fields(TransitionBatch):
         torch.testing.assert_close(getattr(first, field.name), getattr(repeated, field.name))
-    assert first.truncated.all()
-    assert not first.terminated.any()
+    assert first.terminated.all()
+    assert not first.truncated.any()
     assert first.actions.dtype == torch.long
     assert first.observations.dtype == torch.float32
     assert first.observations[:, -1].tolist() == [1.0] * 4
     assert first.next_observations[:, -1].tolist() == [0.0] * 4
     # A reset observation has a full budget, so it cannot replace a final next state.
     assert not torch.equal(first.next_observations[0], first.observations[1])
+    online = nn.Linear(125, 8)
+    target = nn.Linear(125, 8)
+    with torch.no_grad():
+        target.weight.zero_()
+        target.bias.fill_(5.0)
+    _, _, targets = td_loss(online, target, first, gamma=0.99)
+    # A nonzero target network must not add value beyond the task budget.
+    torch.testing.assert_close(targets, first.rewards)
     env.close()
+
+
+def test_external_time_limit_before_task_budget_still_bootstraps():
+    env = TimeLimit(HarvestingEnv({"max_steps": 5}), max_episode_steps=1)
+    try:
+        batch = collect_transitions(env, count=2, seed=7)
+        assert not batch.terminated.any()
+        assert batch.truncated.all()
+        torch.testing.assert_close(batch.next_observations[:, -1], torch.full((2,), 0.8))
+        online = nn.Linear(125, 8)
+        target = nn.Linear(125, 8)
+        with torch.no_grad():
+            target.weight.zero_()
+            target.bias.fill_(5.0)
+        _, _, targets = td_loss(online, target, batch, gamma=0.99)
+        torch.testing.assert_close(targets, batch.rewards + 0.99 * 5.0)
+    finally:
+        env.close()
 
 
 def test_update_clips_gradients_changes_online_weights_and_syncs_only_on_schedule():

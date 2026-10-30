@@ -246,8 +246,11 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         max_deformation = float(max(deformations, default=0.0))
         damage = self.peak_deformation > 1.0
         success = new_distance <= self.target_radius and not damage
-        terminated = success or damage
-        truncated = self.step_count >= self.max_steps and not terminated
+        budget_exhausted = self.step_count >= self.max_steps
+        # The observed action budget defines the task's finite horizon.
+        terminated = success or damage or budget_exhausted
+        # External wrappers may truncate an unfinished task before this horizon.
+        truncated = False
 
         reward = (
             self.reward_weights["progress"] * (old_distance - new_distance)
@@ -259,6 +262,7 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         info = {
             "success": success,
             "damage": damage,
+            "budget_exhausted": budget_exhausted,
             "distance_to_target": new_distance,
             "travel_distance": self.total_travel,
             "max_normalized_deformation": max_deformation,

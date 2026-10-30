@@ -16,7 +16,7 @@ from me5418_harvesting.envs.harvesting_env import HarvestingEnv
 
 @dataclass(frozen=True)
 class TransitionBatch:
-    """Keep terminal and time-limit flags separate for correct bootstrapping."""
+    """Keep task termination and external truncation separate for bootstrapping."""
 
     observations: torch.Tensor
     actions: torch.Tensor
@@ -71,7 +71,8 @@ def td_loss(
     chosen_q = online(batch.observations).gather(1, batch.actions[:, None]).squeeze(1)
     with torch.no_grad():
         next_q = target(batch.next_observations).max(dim=1).values
-        # Success/damage ends the task. A time-limit truncation still bootstraps.
+        # Success, damage, or task-budget exhaustion ends future reward.
+        # Only an external truncation of an unfinished task still bootstraps.
         next_q = torch.where(batch.terminated, torch.zeros_like(next_q), next_q)
         targets = batch.rewards + gamma * next_q
     return F.smooth_l1_loss(chosen_q, targets), chosen_q, targets
