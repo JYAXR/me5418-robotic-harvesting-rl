@@ -5,6 +5,7 @@ from dataclasses import dataclass
 import numpy as np
 
 from me5418_harvesting.envs.branch_physics import Branch
+from me5418_harvesting.envs.scene_validation import scene_issues
 
 
 @dataclass
@@ -15,6 +16,7 @@ class Scene:
     passage_pairs: tuple[tuple[int, int], ...] = ()
     passage_kinds: tuple[str, ...] = ()
     layout: str = "tip_gates"
+    generation_attempts: int = 1
 
 
 def _generate_mixed_canopy(
@@ -97,7 +99,7 @@ def _generate_mixed_canopy(
     )
 
 
-def generate_scene(
+def _sample_scene(
     rng: np.random.Generator,
     max_branches: int = 5,
     nodes_per_branch: int = 5,
@@ -123,13 +125,13 @@ def generate_scene(
         return _generate_mixed_canopy(
             rng, max_branches, nodes_per_branch, tip_gap_range, stiffness_range, safe_limit_range
         )
-    if layout != "tip_gates":
+    if layout not in {"tip_gates", "easy_gate"}:
         raise ValueError(f"Unknown scene layout: {layout}")
     end_effector = np.array([0.10, 0.50], dtype=np.float32)
     target = np.array([0.90, rng.uniform(0.47, 0.53)], dtype=np.float32)
     branches: list[Branch] = []
 
-    gate_count = min(2, max_branches // 2)
+    gate_count = 1 if layout == "easy_gate" else min(2, max_branches // 2)
     gate_positions = [0.50] if gate_count == 1 else [0.33, 0.67]
     for gate_index, x_coord in enumerate(gate_positions):
         center_y = float(rng.uniform(*gap_height_range))
@@ -155,21 +157,130 @@ def generate_scene(
             safe_limit = float(rng.uniform(*safe_limit_range))
             branches.append(Branch(nodes.copy(), nodes.copy(), stiffness, safe_limit))
 
-    # Draw tilt only after the base scene is complete. With a matched seed,
-    # the inclined and upright variants retain identical gaps, stiffness,
-    # safety limits, and target; only the branch x geometry changes.
-    if tilt_high > 0.0:
-        parameter = np.linspace(0.0, 1.0, nodes_per_branch)
-        for branch in branches:
-            tilt = np.deg2rad(rng.uniform(tilt_low, tilt_high))
-            lean_direction = float(rng.choice((-1.0, 1.0)))
-            height = abs(float(branch.rest_nodes[-1, 1] - branch.rest_nodes[0, 1]))
-            offset = lean_direction * height * np.tan(tilt)
-            branch.rest_nodes[:, 0] += offset * (1.0 - parameter)
-            branch.current_nodes = branch.rest_nodes.copy()
-
     return Scene(
         end_effector=end_effector, target=target, branches=branches,
         passage_pairs=tuple((2 * index, 2 * index + 1) for index in range(gate_count)),
-        passage_kinds=("pushable",) * gate_count,
+        passage_kinds=("open" if layout == "easy_gate" else "pushable",) * gate_count,
+        layout=layout,
+    )
+
+
+def _tilt_branches(scene: Scene, rng: np.random.Generator, tilt_range) -> None:
+    """Draw tilt after position jitter to retain matched upright/inclined scenes."""
+    if scene.layout == "mixed_canopy" or tilt_range[1] == 0:
+        return
+    for branch in scene.branches:
+        parameter = np.linspace(0.0, 1.0, len(branch.rest_nodes))
+        tilt = np.deg2rad(rng.uniform(*tilt_range))
+        lean_direction = float(rng.choice((-1.0, 1.0)))
+        height = abs(float(branch.rest_nodes[-1, 1] - branch.rest_nodes[0, 1]))
+        offset = lean_direction * height * np.tan(tilt)
+        branch.rest_nodes[:, 0] += offset * (1.0 - parameter)
+        branch.current_nodes = branch.rest_nodes.copy()
+
+
+def _jitter_positions(
+    scene: Scene, rng: np.random.Generator, start_jitter, target_jitter,
+    gate_x_jitter: float, twig_jitter,
+) -> None:
+    """Translate complete branch pairs together, preserving their gap and shape.
+
+    Zero amplitudes consume no random draws, preserving legacy seeded scenes.
+    All changes precede validity checks; rejection sampling handles collisions.
+    """
+    for position, amplitude in (
+        (scene.end_effector, start_jitter), (scene.target, target_jitter),
+    ):
+        if np.any(amplitude):
+            position += rng.uniform(-amplitude, amplitude).astype(np.float32)
+    paired = set()
+    for pair in scene.passage_pairs:
+        paired.update(pair)
+        if gate_x_jitter > 0:
+            offset = np.float32(rng.uniform(-gate_x_jitter, gate_x_jitter))
+            for index in pair:
+                branch = scene.branches[index]
+                branch.rest_nodes[:, 0] += offset
+                branch.current_nodes = branch.rest_nodes.copy()
+    if np.any(twig_jitter):
+        for index, branch in enumerate(scene.branches):
+            if index not in paired:
+                offset = rng.uniform(-twig_jitter, twig_jitter).astype(np.float32)
+                branch.rest_nodes += offset
+                branch.current_nodes = branch.rest_nodes.copy()
+
+
+def generate_scene(
+    rng: np.random.Generator,
+    max_branches: int = 5,
+    nodes_per_branch: int = 5,
+    gap_height_range: tuple[float, float] = (0.40, 0.60),
+    tip_gap_range: tuple[float, float] = (0.028, 0.043),
+    stiffness_range: tuple[float, float] = (0.35, 1.10),
+    safe_limit_range: tuple[float, float] = (0.075, 0.110),
+    branch_tilt_degrees_range: tuple[float, float] = (0.0, 0.0),
+    layout: str = "tip_gates",
+    *,
+    workspace_low=(0.0, 0.0),
+    workspace_high=(1.0, 1.0),
+    contact_radius: float = 0.035,
+    target_radius: float = 0.050,
+    max_attempts: int = 100,
+    start_jitter: tuple[float, float] = (0.0, 0.0),
+    target_jitter: tuple[float, float] = (0.0, 0.0),
+    gate_x_jitter: float = 0.0,
+    twig_jitter: tuple[float, float] = (0.0, 0.0),
+) -> Scene:
+    """Sample valid initial geometry, with deterministic bounded rejection sampling.
+
+    Validation does not establish that a collision-free or deformable route exists.
+    Geometry rejected on one attempt consumes RNG draws before the next attempt.
+    """
+    low, high = np.asarray(workspace_low), np.asarray(workspace_high)
+    if (low.shape != (2,) or high.shape != (2,)
+            or not np.isfinite([low, high]).all() or np.any(high <= low)):
+        raise ValueError("Workspace bounds must be finite increasing coordinate pairs.")
+    if (not np.isfinite([contact_radius, target_radius]).all()
+            or contact_radius <= 0 or target_radius <= 0):
+        raise ValueError("Contact and target radii must be finite and positive.")
+    if type(max_attempts) is not int or max_attempts <= 0:
+        raise ValueError("max_attempts must be a positive integer.")
+    amplitudes = []
+    for name, values in (
+        ("start_jitter", start_jitter), ("target_jitter", target_jitter),
+        ("twig_jitter", twig_jitter),
+    ):
+        amplitude = np.asarray(values, dtype=float)
+        if (amplitude.shape != (2,) or not np.isfinite(amplitude).all()
+                or np.any(amplitude < 0)):
+            raise ValueError(f"{name} must contain two finite nonnegative amplitudes.")
+        amplitudes.append(amplitude)
+    if not np.isfinite(gate_x_jitter) or gate_x_jitter < 0:
+        raise ValueError("gate_x_jitter must be finite and nonnegative.")
+    for name, bounds, positive in (
+        ("gap_height_range", gap_height_range, False),
+        ("tip_gap_range", tip_gap_range, True),
+        ("stiffness_range", stiffness_range, True),
+        ("safe_limit_range", safe_limit_range, True),
+        ("branch_tilt_degrees_range", branch_tilt_degrees_range, False),
+    ):
+        if (len(bounds) != 2 or not np.isfinite(bounds).all() or bounds[1] < bounds[0]
+                or (positive and bounds[0] <= 0)):
+            raise ValueError(f"Invalid finite ordered range: {name}")
+    if layout == "easy_gate" and tip_gap_range[0] <= 2 * contact_radius:
+        raise ValueError("easy_gate requires a tip gap wider than the robot diameter.")
+    for attempt in range(1, max_attempts + 1):
+        scene = _sample_scene(
+            rng, max_branches, nodes_per_branch, gap_height_range, tip_gap_range,
+            stiffness_range, safe_limit_range, branch_tilt_degrees_range, layout,
+        )
+        _jitter_positions(scene, rng, amplitudes[0], amplitudes[1], gate_x_jitter, amplitudes[2])
+        _tilt_branches(scene, rng, branch_tilt_degrees_range)
+        issues = scene_issues(scene, low, high, contact_radius, target_radius)
+        if not issues:
+            scene.generation_attempts = attempt
+            return scene
+    raise ValueError(
+        f"Could not generate valid scene geometry after {max_attempts} attempts. "
+        f"Last rejection: {'; '.join(issues[:4])}"
     )

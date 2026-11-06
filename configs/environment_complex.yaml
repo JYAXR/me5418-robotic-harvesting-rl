@@ -13,6 +13,10 @@ execution_noise_fraction: 0.0
 show_gate_detail: false
 scene:
   layout: mixed_canopy
+  start_jitter: [0.015, 0.030]
+  target_jitter: [0.015, 0.020]
+  gate_x_jitter: 0.015
+  twig_jitter: [0.010, 0.010]
   tip_gap_range: [0.028, 0.043]
   stiffness_range: [0.35, 1.10]
   safe_limit_range: [0.075, 0.110]

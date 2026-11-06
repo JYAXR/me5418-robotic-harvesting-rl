@@ -21,4 +21,10 @@ jobs:
       - run: pytest
       - run: python scripts/run_network_demo.py
       - run: python scripts/run_network_demo.py --config configs/environment_complex.yaml
+      - run: python scripts/train_dqn.py --smoke --output-dir results/ci_default
+      - run: python scripts/evaluate_dqn.py --checkpoint results/ci_default/latest.pt --episodes 2
+      - run: python scripts/train_dqn.py --smoke --config configs/environment_complex.yaml --output-dir results/ci_complex
+      - run: python scripts/evaluate_dqn.py --checkpoint results/ci_complex/latest.pt --episodes 2
+      - run: python scripts/train_dqn.py --smoke --config configs/environment_easy.yaml --output-dir results/ci_easy
+      - run: python scripts/evaluate_dqn.py --checkpoint results/ci_easy/latest.pt --episodes 2
 

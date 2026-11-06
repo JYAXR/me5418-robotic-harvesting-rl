@@ -11,6 +11,9 @@ contact_radius: 0.035
 relaxation_rate: 0.10
 execution_noise_fraction: 0.0
 scene:
+  start_jitter: [0.015, 0.030]
+  target_jitter: [0.015, 0.020]
+  gate_x_jitter: 0.025
   gap_height_range: [0.40, 0.60]
   tip_gap_range: [0.028, 0.043]
   stiffness_range: [0.35, 1.10]

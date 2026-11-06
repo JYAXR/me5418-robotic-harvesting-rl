@@ -1,0 +1,7 @@
+# Network, replay capacity, warmup, and exploration settings are in dqn.yaml.
+# Episodes reset local counters; replay and update counters persist.
+episodes: 200
+train_frequency: 4
+evaluation_interval: 20
+evaluation_episodes: 5
+seed: 0

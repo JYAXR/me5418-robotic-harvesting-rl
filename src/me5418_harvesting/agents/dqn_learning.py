@@ -1,4 +1,4 @@
-"""CPU data collection and DQN updates for the neural-network demonstration."""
+"""CPU data collection and DQN updates shared by demonstration and training."""
 
 from __future__ import annotations
 

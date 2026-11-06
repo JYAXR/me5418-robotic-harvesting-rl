@@ -81,14 +81,19 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
     ) -> tuple[np.ndarray, dict[str, Any]]:
         super().reset(seed=seed)
         self.scene = generate_scene(
-            self.np_random, self.max_branches, self.nodes_per_branch, **self.scene_parameters
+            self.np_random, self.max_branches, self.nodes_per_branch,
+            workspace_low=self.workspace_low, workspace_high=self.workspace_high,
+            contact_radius=self.contact_radius, target_radius=self.target_radius,
+            **self.scene_parameters,
         )
         self.step_count = 0
         self.total_travel = 0.0
         self.peak_deformation = 0.0
         self.contact_steps = 0
         self.trajectory = [self.scene.end_effector.copy()]
-        return self._observation(), {"seed": seed}
+        return self._observation(), {
+            "seed": seed, "scene_generation_attempts": self.scene.generation_attempts,
+        }
 
     def step(self, action: int) -> tuple[np.ndarray, float, bool, bool, dict[str, Any]]:
         """Apply an action, resolve contact, and evaluate the transition."""
@@ -328,7 +333,10 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         axes.set_xlabel("x position")
         axes.set_ylabel("y position")
         label = f" | {self.demo_policy}" if self.demo_policy else ""
-        title = "Mixed-canopy harvesting" if self.scene.layout == "mixed_canopy" else "Deformable tip-gap harvesting"
+        title = {
+            "mixed_canopy": "Mixed-canopy harvesting",
+            "easy_gate": "Easy wide-passage harvesting",
+        }.get(self.scene.layout, "Deformable tip-gap harvesting")
         axes.set_title(f"{title} | step {self.step_count}{label}", fontsize=12)
         axes.grid(alpha=0.15)
 
