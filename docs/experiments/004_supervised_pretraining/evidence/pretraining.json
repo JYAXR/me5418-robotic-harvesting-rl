@@ -1,0 +1,20 @@
+{
+  "method": "demonstration_dqn_td_and_margin_updates",
+  "demonstration_weight": 1.0,
+  "demonstration_margin": 0.8,
+  "status": "completed",
+  "requested_updates": 2000,
+  "completed_updates": 2000,
+  "input_transitions": 421,
+  "batch_size": 64,
+  "sampler_seed_sequence": [
+    0,
+    1
+  ],
+  "environment_steps": 0,
+  "first_loss": 2.6573948860168457,
+  "last_loss": 2.371748447418213,
+  "target_synchronizations": 10,
+  "initial_total_updates": 0,
+  "total_updates": 2000
+}

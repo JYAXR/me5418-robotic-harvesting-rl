@@ -1,0 +1,133 @@
+{
+  "production_code_commit": "52e45db",
+  "automated_tests_passed": 211,
+  "ruff": "passed",
+  "checkpoints": {
+    "pretrained.pt": {
+      "episode": 0,
+      "total_updates": 2000,
+      "sha256": "1e3cf9fb4d7001640f45058db18a945d4b1ca843303f2ce1be80c28e920c0621",
+      "reloaded_validation_matches_saved_record": true,
+      "validation": {
+        "episodes": 3,
+        "seed": 100000,
+        "mean_return": -41.74323402078024,
+        "success_rate": 0.0,
+        "damage_rate": 0.3333333333333333,
+        "budget_exhaustion_rate": 0.6666666666666666,
+        "mean_success_steps": null,
+        "mean_travel_distance": 1.9007878477374713,
+        "mean_peak_deformation": 0.48333508791601926,
+        "mean_distance_to_target": 0.7083540558815002,
+        "mean_stationary_fraction": 0.31,
+        "mean_blocked_fraction": 0.3133333333333333,
+        "records": [
+          {
+            "seed": 100000,
+            "return": -74.44388092365023,
+            "steps": 200,
+            "success": false,
+            "damage": false,
+            "budget_exhausted": true,
+            "travel_distance": 0.1536186933517456,
+            "peak_deformation": 0.4195163565263172,
+            "distance_to_target": 0.6974193453788757,
+            "stationary_steps": 186,
+            "blocked_steps": 188
+          },
+          {
+            "seed": 100001,
+            "return": -0.6870937705039978,
+            "steps": 200,
+            "success": false,
+            "damage": false,
+            "budget_exhausted": true,
+            "travel_distance": 5.034995257854462,
+            "peak_deformation": 0.0,
+            "distance_to_target": 0.7966271638870239,
+            "stationary_steps": 0,
+            "blocked_steps": 0
+          },
+          {
+            "seed": 100002,
+            "return": -50.09872736818651,
+            "steps": 17,
+            "success": false,
+            "damage": true,
+            "budget_exhausted": false,
+            "travel_distance": 0.5137495920062065,
+            "peak_deformation": 1.0304889072217407,
+            "distance_to_target": 0.6310156583786011,
+            "stationary_steps": 0,
+            "blocked_steps": 0
+          }
+        ]
+      }
+    },
+    "best.pt": {
+      "episode": 20,
+      "total_updates": 2599,
+      "sha256": "ce300da0402aa54e36e5c07bc9bf43aea891ed6ff5306025491530d92167d464",
+      "reloaded_validation_matches_saved_record": true,
+      "validation": {
+        "episodes": 3,
+        "seed": 100000,
+        "mean_return": -49.863739674000556,
+        "success_rate": 0.0,
+        "damage_rate": 0.0,
+        "budget_exhaustion_rate": 1.0,
+        "mean_success_steps": null,
+        "mean_travel_distance": 2.1039550925294557,
+        "mean_peak_deformation": 0.4605779882040257,
+        "mean_distance_to_target": 0.5259315272172292,
+        "mean_stationary_fraction": 0.62,
+        "mean_blocked_fraction": 0.32666666666666666,
+        "records": [
+          {
+            "seed": 100000,
+            "return": -12.707255139053004,
+            "steps": 200,
+            "success": false,
+            "damage": false,
+            "budget_exhausted": true,
+            "travel_distance": 1.0684331953525543,
+            "peak_deformation": 0.6547073810224977,
+            "distance_to_target": 0.21415653824806213,
+            "stationary_steps": 178,
+            "blocked_steps": 1
+          },
+          {
+            "seed": 100001,
+            "return": -71.79050090040137,
+            "steps": 200,
+            "success": false,
+            "damage": false,
+            "budget_exhausted": true,
+            "travel_distance": 5.045467033982277,
+            "peak_deformation": 0.3892313153270179,
+            "distance_to_target": 0.683175265789032,
+            "stationary_steps": 0,
+            "blocked_steps": 0
+          },
+          {
+            "seed": 100002,
+            "return": -65.09346298254731,
+            "steps": 200,
+            "success": false,
+            "damage": false,
+            "budget_exhausted": true,
+            "travel_distance": 0.19796504825353622,
+            "peak_deformation": 0.33779526826256134,
+            "distance_to_target": 0.6804627776145935,
+            "stationary_steps": 194,
+            "blocked_steps": 195
+          }
+        ]
+      }
+    }
+  },
+  "source_hashes_unchanged_since_launch": true,
+  "demonstration_records_identical_to_attempt_003": true,
+  "initial_validation_identical_to_attempt_003": true,
+  "update_accounting_verified": true
+}

@@ -1,0 +1,65 @@
+{
+  "format_version": 1,
+  "archived_at_utc": "2026-11-10T09:12:06.422873+00:00",
+  "source_run_dir": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\multiroute_supervised_20261110",
+  "status": "completed",
+  "status_source": "run_status.json",
+  "files": {
+    "settings.json": {
+      "sha256": "c5073866ae960910ac81604d7a6d7c8f7efdb7b14e4ca21d11bf985032b3e799",
+      "bytes": 1956
+    },
+    "summary.json": {
+      "sha256": "8dffc612ac8ea82d1b12fe6bfa8724e5263e90d674bfeafac10b43eb3c25755b",
+      "bytes": 11082
+    },
+    "analysis.json": {
+      "sha256": "243657e1ba34e339911a412b9755ad81a99cd23d84b0a73739df6c58e55e53ff",
+      "bytes": 16799
+    },
+    "initial_validation.json": {
+      "sha256": "aa3d7f9aa9066aeb7007afffed34b2dfc76f04b49cf70543fa92f729c49ead03",
+      "bytes": 1523
+    },
+    "pretraining.json": {
+      "sha256": "a157e3287e083f3b212e2b52e51a0e73a560a4a246c2b7f809880209797c8a58",
+      "bytes": 500
+    },
+    "pretraining_metrics.jsonl": {
+      "sha256": "1bb2e690612fab7af9a8a75fcfb74cdc1eae84d622f91f66e905ffc3ffd29c5a",
+      "bytes": 891796
+    },
+    "pretraining_validation.json": {
+      "sha256": "5705e99b18c4206af6f312b472151403a227da877a100ef2ec3bcd00b7aab8ed",
+      "bytes": 1588
+    },
+    "demonstrations.json": {
+      "sha256": "570d91803d5204782e271ba5c88d8acdfca88fa931ead88f6ffe7acc5a106d5a",
+      "bytes": 4764
+    },
+    "provenance.json": {
+      "sha256": "c07b63aee6bc007b74118a7c828fe002878214e71ff3333442a1683f4775eccb",
+      "bytes": 6174
+    },
+    "run_status.json": {
+      "sha256": "c033749af69258cd212e7d6d6bf9d42c7487e3bf357d30400fbeb633adc10e82",
+      "bytes": 579
+    },
+    "metrics.jsonl": {
+      "sha256": "9d19ab73b52cc3809680aa7d1d78aee03a1e74713e4660c3b59ae849e52f7dcc",
+      "bytes": 18427
+    },
+    "learning_diagnostics.png": {
+      "sha256": "4bdea6a5e4205f6021d0ed1b81b26bcc62def871c0527dd52763c63ffcd284e9",
+      "bytes": 329530
+    }
+  },
+  "missing_evidence_files": [
+    "source_manifest.json"
+  ],
+  "notes": [
+    "Missing evidence files may be optional or unavailable in older or incomplete runs.",
+    "Completed describes execution status, not policy performance or successful learning.",
+    "Checkpoints and raw console logs remain in the local run directory."
+  ]
+}

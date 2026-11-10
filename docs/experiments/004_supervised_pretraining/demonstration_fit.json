@@ -1,0 +1,124 @@
+{
+  "training_only": true,
+  "post_hoc_diagnostic": true,
+  "generated_at_utc": "2026-11-10T09:09:10.564078+00:00",
+  "run_dir": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\multiroute_supervised_20261110",
+  "checkpoint": "pretrained.pt",
+  "checkpoint_sha256": "1e3cf9fb4d7001640f45058db18a945d4b1ca843303f2ce1be80c28e920c0621",
+  "checkpoint_updates": 2000,
+  "training_git_head": "52e45db8b48e0dc54d46d69d96ce54f6429bc84c",
+  "script_sha256": "a651bac5f2b173f562dc1184f6a3ffe29f277c8210be9aa38f05c83273cb5885",
+  "settings_sha256": "c5073866ae960910ac81604d7a6d7c8f7efdb7b14e4ca21d11bf985032b3e799",
+  "saved_demonstrations_sha256": "570d91803d5204782e271ba5c88d8acdfca88fa931ead88f6ffe7acc5a106d5a",
+  "training_provenance_sha256": "c07b63aee6bc007b74118a7c828fe002878214e71ff3333442a1683f4775eccb",
+  "sources_match_training_provenance": true,
+  "collection_records_match_exactly": true,
+  "dataset_transitions": 421,
+  "demonstration_seed": 10000,
+  "demonstration_episodes": 10,
+  "action_order": [
+    "north_small",
+    "south_small",
+    "east_small",
+    "west_small",
+    "north_large",
+    "south_large",
+    "east_large",
+    "west_large"
+  ],
+  "demonstration_action_counts": [
+    79,
+    99,
+    57,
+    0,
+    40,
+    35,
+    111,
+    0
+  ],
+  "majority_class_action": 6,
+  "majority_class_baseline_accuracy": 0.26365795724465557,
+  "predicted_action_counts": [
+    24,
+    356,
+    41,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "greedy_action_agreement": 0.2969121038913727,
+  "per_action": [
+    {
+      "action": 0,
+      "name": "north_small",
+      "label_count": 79,
+      "correct": 10,
+      "accuracy": 0.12658227848101267
+    },
+    {
+      "action": 1,
+      "name": "south_small",
+      "label_count": 99,
+      "correct": 91,
+      "accuracy": 0.9191919191919192
+    },
+    {
+      "action": 2,
+      "name": "east_small",
+      "label_count": 57,
+      "correct": 24,
+      "accuracy": 0.42105263157894735
+    },
+    {
+      "action": 3,
+      "name": "west_small",
+      "label_count": 0,
+      "correct": 0,
+      "accuracy": null
+    },
+    {
+      "action": 4,
+      "name": "north_large",
+      "label_count": 40,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    {
+      "action": 5,
+      "name": "south_large",
+      "label_count": 35,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    {
+      "action": 6,
+      "name": "east_large",
+      "label_count": 111,
+      "correct": 0,
+      "accuracy": 0.0
+    },
+    {
+      "action": 7,
+      "name": "west_large",
+      "label_count": 0,
+      "correct": 0,
+      "accuracy": null
+    }
+  ],
+  "margin": 0.8,
+  "mean_margin_violation": 0.8096051216125488,
+  "margin_satisfied_fraction": 0.0,
+  "mean_demonstrated_action_q": 2.1168997287750244,
+  "mean_max_action_q": 2.134922981262207,
+  "diagnostic_regeneration_actions": 421,
+  "optimizer_updates_performed": 0,
+  "notes": [
+    "Full-dataset agreement is measured on the same states used for training.",
+    "No validation or final test scenes are accessed; this is not a task-success rate.",
+    "Regeneration actions are additional post-hoc diagnostic work, not online training.",
+    "Regeneration counts exclude planner search and reset-time feasibility probes.",
+    "No inference checkpoint, training log, model weight or optimizer is modified."
+  ]
+}
