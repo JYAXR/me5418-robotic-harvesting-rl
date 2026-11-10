@@ -8,9 +8,11 @@ import numpy as np
 import torch
 import yaml
 
+from me5418_harvesting.agents.demonstrations import seed_replay_from_reference
 from me5418_harvesting.agents.dqn import DQNConfig
 from me5418_harvesting.agents.dqn_agent import DQNAgent
 from me5418_harvesting.agents.replay_buffer import ReplayBuffer
+from me5418_harvesting.agents.run_record import begin_run, finish_run
 from me5418_harvesting.envs.harvesting_env import HarvestingEnv
 
 
@@ -27,6 +29,8 @@ class TrainingConfig:
     seed: int = 0
     validation_seed: int | None = None
     evaluate_before_training: bool = False
+    demonstration_episodes: int = 0
+    demonstration_seed: int = 10000
 
     def __post_init__(self):
         for name in (
@@ -36,7 +40,7 @@ class TrainingConfig:
             value = getattr(self, name)
             if type(value) is not int or value <= 0:
                 raise ValueError(f"{name} must be a positive integer.")
-        for name in ("learning_starts", "seed"):
+        for name in ("learning_starts", "seed", "demonstration_episodes", "demonstration_seed"):
             value = getattr(self, name)
             if type(value) is not int or value < 0:
                 raise ValueError(f"{name} must be a nonnegative integer.")
@@ -52,6 +56,17 @@ class TrainingConfig:
                 and self.seed < self.validation_seed + self.evaluation_episodes
             ):
                 raise ValueError("Training and validation seed ranges must not overlap.")
+        if self.demonstration_episodes:
+            validation_seed = (
+                self.seed + self.episodes if self.validation_seed is None else self.validation_seed
+            )
+            for start, count, name in (
+                (self.seed, self.episodes, "online training"),
+                (validation_seed, self.evaluation_episodes, "validation"),
+            ):
+                if (self.demonstration_seed < start + count
+                        and start < self.demonstration_seed + self.demonstration_episodes):
+                    raise ValueError(f"Demonstration and {name} seed ranges must not overlap.")
 
     def epsilon(self, steps: int) -> float:
         fraction = min(max(steps, 0) / self.epsilon_decay_steps, 1.0)
@@ -140,11 +155,22 @@ def evaluate(agent: DQNAgent, env: HarvestingEnv, episodes: int, seed: int) -> d
 
 
 def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, output: Path):
-    """Follow the lecture loop, preserving replay and global counters across episodes."""
+    """Record provenance and completion or failure for every started training run."""
     if dqn.replay_capacity < dqn.batch_size:
         raise ValueError("Replay capacity must be at least the batch size.")
-    # Refuse to mix new logs/checkpoints with an earlier run.
     output.mkdir(parents=True, exist_ok=False)
+    try:
+        begin_run(output, environment_config, asdict(dqn), asdict(config))
+        summary = _train(environment_config, dqn, config, output)
+    except BaseException as exc:
+        finish_run(output, "interrupted" if isinstance(exc, KeyboardInterrupt) else "failed", exc)
+        raise
+    finish_run(output, "completed")
+    return summary
+
+
+def _train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, output: Path):
+    """Follow the lecture loop, preserving replay and global counters across episodes."""
     torch.manual_seed(config.seed)
     torch.set_num_threads(1)
     rng = np.random.default_rng(config.seed)
@@ -165,6 +191,7 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
     global_steps, best_score = 0, (-1.0, -float("inf"))
     last_loss = None
     initial_validation = None
+    demonstrations = None
     try:
         if config.evaluate_before_training:
             initial_validation = evaluate(
@@ -174,6 +201,20 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
                 json.dumps(initial_validation, indent=2, allow_nan=False), encoding="utf-8",
             )
             print(json.dumps({"initial_validation": initial_validation}, allow_nan=False), flush=True)
+        if config.demonstration_episodes:
+            def save_demonstrations(snapshot):
+                (output / "demonstrations.json").write_text(
+                    json.dumps(snapshot, indent=2, allow_nan=False), encoding="utf-8",
+                )
+
+            demonstrations = seed_replay_from_reference(
+                environment_config, agent.encoder, replay,
+                config.demonstration_episodes, config.demonstration_seed,
+                progress=save_demonstrations,
+            )
+            print(json.dumps({"demonstrations": demonstrations}, allow_nan=False), flush=True)
+            if demonstrations["accepted_transitions"] == 0:
+                raise RuntimeError("No successful demonstration transitions were collected.")
         with (output / "metrics.jsonl").open("w", encoding="utf-8") as log:
             for episode in range(1, config.episodes + 1):
                 observation, _ = env.reset(seed=config.seed + episode - 1)
@@ -232,6 +273,11 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
         }
         if initial_validation is not None:
             summary["initial_validation"] = initial_validation
+        if demonstrations is not None:
+            summary["demonstrations"] = demonstrations
+            summary["total_collection_steps"] = (
+                global_steps + demonstrations["collection_environment_steps"]
+            )
         (output / "summary.json").write_text(
             json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8",
         )

@@ -559,6 +559,42 @@ The experiment configuration documents the intended final-project comparison
 with receding-horizon planning; convergence and comparative performance still
 require dedicated experiments.
 
+## Experiment records and reference replay initialization
+
+The [experiment index](docs/experiments/README.md) retains each development
+attempt, including unsuccessful runs. Every new training run saves resolved
+settings, source SHA-256 hashes, Git revision, package versions and a completion,
+failure or interruption status. A process killed without cleanup may leave a
+`running` status; that is not evidence of completion. Checkpoint hashes are saved
+when the process exits normally or handles an exception.
+
+To compare a small amount of reference data against the from-scratch pilot:
+
+```bash
+python scripts/train_dqn.py --config configs/environment_multiroute.yaml --dqn-config configs/dqn_multiroute_pilot.yaml --training-config configs/training_multiroute_replay_seeded.yaml --output-dir results/training/multiroute_replay_seeded_20261110
+python scripts/summarize_training.py --run-dir results/training/multiroute_replay_seeded_20261110
+python scripts/archive_training_attempt.py --run-dir results/training/multiroute_replay_seeded_20261110 --output-dir docs/experiments/002_reference_replay/evidence
+```
+
+The optional initializer runs collision-free A* in a separate environment and
+stores only successful complete trajectories obtained from real `env.step`
+calls. Every attempted demonstration seed is recorded, including failures.
+There is no supervised loss, pretraining update, changed reward or changed
+exploration clock. Demonstrations are additional privileged training data;
+their collection actions are reported separately from online interactions.
+Planner search and reset feasibility probes are excluded from those counts.
+
+For this pilot, online scenes use seeds 0--29, demonstration scenes use
+10000--10009 and development validation uses 100000--100002. These validation
+scenes are used to select checkpoints and must not be reported as final tests.
+Demonstrations are disabled by default. `--smoke` limits an enabled initializer
+to one demonstration while also shortening the existing training schedule.
+
+Archive small evidence files and a written interpretation after each attempt,
+then commit and push them with the matching source/configuration changes.
+The archive command also accepts failed or incomplete runs and refuses to
+overwrite previous evidence. Model weights and raw outputs stay in `results/`.
+
 ## Testing
 
 ```bash

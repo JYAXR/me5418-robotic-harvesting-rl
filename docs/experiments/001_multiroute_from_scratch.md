@@ -1,7 +1,8 @@
 # Attempt 001: DQN from scratch in the multi-route scene
 
-**Status:** completed, unsuccessful at learning the task.  
-**Run identifier:** `multiroute_pilot_20261110`.  
+**Status:** completed, unsuccessful at learning the task.
+
+**Run identifier:** `multiroute_pilot_20261110`.
 **Record date:** 10 November 2026. This note was reconstructed from retained
 artifacts; a precise launch timestamp was not saved.
 
