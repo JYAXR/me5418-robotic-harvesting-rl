@@ -1,0 +1,52 @@
+{
+  "sources_match": true,
+  "encoded_dataset_hash_matches": true,
+  "phases": {
+    "pretraining": {
+      "all_checkpoint_hashes_match": true,
+      "checkpoints_verified": 4,
+      "update_records_verified": 20000,
+      "target_synchronizations": 0,
+      "final_fit_matches_exactly": true,
+      "final_rollout_matches_exactly": true,
+      "reload_environment_steps": 35,
+      "checkpoint_sha256": "3a715e972626c19e3d198f0d8ffb7d79f3bcc26fdbfa93f150b93c515de4819f"
+    },
+    "margin_only": {
+      "all_checkpoint_hashes_match": true,
+      "checkpoints_verified": 9,
+      "update_records_verified": 2000,
+      "target_synchronizations": 0,
+      "final_fit_matches_exactly": true,
+      "final_rollout_matches_exactly": true,
+      "reload_environment_steps": 35,
+      "checkpoint_sha256": "6ccc84a45b47bf0f1a4b1cc942b164c6aa13a94ef9b24f96a0fb67a2c441c13c"
+    },
+    "td_only": {
+      "all_checkpoint_hashes_match": true,
+      "checkpoints_verified": 9,
+      "update_records_verified": 2000,
+      "target_synchronizations": 10,
+      "final_fit_matches_exactly": true,
+      "final_rollout_matches_exactly": true,
+      "reload_environment_steps": 200,
+      "checkpoint_sha256": "4c572bb1e8a28c2d7819f313c6db96890a4dddc829d830bd09e10bcca165f486"
+    },
+    "td_margin": {
+      "all_checkpoint_hashes_match": true,
+      "checkpoints_verified": 9,
+      "update_records_verified": 2000,
+      "target_synchronizations": 10,
+      "final_fit_matches_exactly": true,
+      "final_rollout_matches_exactly": true,
+      "reload_environment_steps": 55,
+      "checkpoint_sha256": "49bc0efdee39a0d974fc5bc1caa6c14bb914d82f91eb4d27698f5053bd78115a"
+    }
+  },
+  "optimizer_updates_performed": 0,
+  "additional_verification_environment_steps": 325,
+  "training_scene_only": true,
+  "note": "Additional post-run verification; reset feasibility probes are not counted.",
+  "target_metric_limit": "Inference checkpoints omit the training target and optimizer. Reload verifies action fits and rollouts, not intermediate value metrics against the historical target.",
+  "verifier_sha256": "491d652745175a2964fde031f28ec01c905b8694dc8c4caf1da6350ab231d74b"
+}

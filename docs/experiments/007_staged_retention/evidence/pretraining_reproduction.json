@@ -1,0 +1,9 @@
+{
+  "dataset_matches": true,
+  "collection_matches": true,
+  "initial_parameters_match": true,
+  "final_parameters_match": true,
+  "fit_matches": true,
+  "rollout_matches": true,
+  "pretraining_success": true
+}

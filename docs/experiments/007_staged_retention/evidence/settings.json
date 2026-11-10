@@ -1,0 +1,112 @@
+{
+  "environment": {
+    "max_branches": 14,
+    "nodes_per_branch": 5,
+    "max_steps": 200,
+    "workspace_low": [
+      0.0,
+      0.0
+    ],
+    "workspace_high": [
+      1.0,
+      1.0
+    ],
+    "small_step": 0.025,
+    "large_step": 0.06,
+    "target_radius": 0.05,
+    "contact_radius": 0.035,
+    "relaxation_rate": 0.1,
+    "execution_noise_fraction": 0.0,
+    "show_gate_detail": false,
+    "verify_reference_route": true,
+    "reference_max_attempts": 10,
+    "scene": {
+      "layout": "multi_route",
+      "tip_gap_range": [
+        0.028,
+        0.043
+      ],
+      "stiffness_range": [
+        0.35,
+        1.1
+      ],
+      "safe_limit_range": [
+        0.075,
+        0.11
+      ],
+      "start_jitter": [
+        0.01,
+        0.02
+      ],
+      "target_jitter": [
+        0.01,
+        0.02
+      ],
+      "gate_x_jitter": 0.01,
+      "twig_jitter": [
+        0.005,
+        0.005
+      ]
+    },
+    "reward": {
+      "progress": 10.0,
+      "deformation": 1.0,
+      "travel": 0.2,
+      "damage": 50.0,
+      "success": 100.0
+    }
+  },
+  "dqn": {
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "batch_size": 64,
+    "replay_capacity": 20000,
+    "target_update_interval": 200,
+    "gradient_clip_norm": 10.0
+  },
+  "training": {
+    "kind": "supervised_pretraining_then_offline_td_retention",
+    "scene_seed": 10000,
+    "initialization_seed": 0,
+    "pretraining_objective": "margin_only",
+    "pretraining_updates": 20000,
+    "pretraining_checkpoints": [
+      0,
+      5000,
+      10000,
+      20000
+    ],
+    "arms": [
+      "margin_only",
+      "td_only",
+      "td_margin"
+    ],
+    "phase_updates": 2000,
+    "phase_checkpoints": [
+      0,
+      1,
+      10,
+      50,
+      100,
+      200,
+      500,
+      1000,
+      2000
+    ],
+    "margin": 0.8,
+    "td_margin_weight": 1.0,
+    "batch_mode": "full_single_demonstration",
+    "phase_boundary": "identical_weights_fresh_adam_synced_target_zero_phase_clock",
+    "online_training_steps": 0,
+    "held_out_scenes_accessed": 0,
+    "early_stopping": false,
+    "script_sha256": "98f9f807a614e3b23066ba21482ab23253eb17f7a4c846595651b224bae22dca",
+    "fit_runner_sha256": "7caa0d935e996d665a4ae164cd54945506fe4836bfdfd1dc0a491c5aeb1c34e9",
+    "reference_summary_sha256": "a44575d7f007f886f1e2c9525d3e1590830e1636eaac98173adc9b3dc5661936",
+    "reference_demonstrations_sha256": "f0774c06f9d1ee746faf4654f4466c34a99aef77e8f62bda5b1e99a201632518"
+  }
+}

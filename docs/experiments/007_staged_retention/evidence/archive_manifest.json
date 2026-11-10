@@ -1,0 +1,123 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\staged_retention_20261111",
+  "status": "completed",
+  "files": {
+    "settings.json": {
+      "sha256": "6ab41b11bd0b35f1097663b70d75499acd8456b86fa03cf3431cd204f9f83902",
+      "bytes": 2607
+    },
+    "provenance.json": {
+      "sha256": "55c32cfdc9c708541da25cc4f351ff56b67fb1c19c50203b5db3885606c8a379",
+      "bytes": 6132
+    },
+    "run_status.json": {
+      "sha256": "e13b9a7c1c66fade8ca8ef053aa93d3158d97b3e46b113376d2af94f6c8d3067",
+      "bytes": 166
+    },
+    "summary.json": {
+      "sha256": "d2bf46e1a2e2abd3103e1d6a69ee0de9e54b1f1d04dc41ce0f397b6bf1275d9a",
+      "bytes": 50939
+    },
+    "demonstrations.json": {
+      "sha256": "f0774c06f9d1ee746faf4654f4466c34a99aef77e8f62bda5b1e99a201632518",
+      "bytes": 859
+    },
+    "dataset.json": {
+      "sha256": "a1b7838435d11912ff6550479fd731e56f92962286300e10497203314d13e385",
+      "bytes": 745
+    },
+    "pretraining_reproduction.json": {
+      "sha256": "13da10286cf98d897fb3ea9fb0d1401fda71d8fcaeb8ba9efc59d69ecbdef75d",
+      "bytes": 220
+    },
+    "phase_boundaries.json": {
+      "sha256": "c74a627eb5cbfb1321150f5c915f9919789212ecd2d29905bf36a342d7cba4a5",
+      "bytes": 959
+    },
+    "reload_checks.json": {
+      "sha256": "a532ec02de6719b2bd9d5dbba1528a2a1e2be80e3ceeb6b7327e2ac939b8fb8a",
+      "bytes": 2215
+    },
+    "retention_diagnostic.png": {
+      "sha256": "f88d0662d923ecbec15744597d510aaf8fc0af6b9f38bd3dc711ee26096c7909",
+      "bytes": 247398
+    },
+    "pretraining/observations.json": {
+      "sha256": "327cf7c166b1bca59dfa1ef58454da5a0fe16447c0f8ec8cc2aa315624907fb2",
+      "bytes": 56145
+    },
+    "pretraining/summary.json": {
+      "sha256": "14c282365a296eb7aba53d236e5970daff16676d58a10d57bacfdc99f6913a1e",
+      "bytes": 5637
+    },
+    "margin_only/observations.json": {
+      "sha256": "f745b4d012b02ce1f00fc4c899db82483537b4207cb9c515a942422ff1950401",
+      "bytes": 52617
+    },
+    "margin_only/summary.json": {
+      "sha256": "935879c90f1e542c36119dff9b6cb73f90b3985afb077768fbedb3f6e26e50a7",
+      "bytes": 6081
+    },
+    "td_only/observations.json": {
+      "sha256": "3d8e5168cb8719dbe67c272f9d9cacfd353fe87e75afdd847197d1b6c180876c",
+      "bytes": 136671
+    },
+    "td_only/summary.json": {
+      "sha256": "829f75e25ae8ba6fa23b8972be0176cb7c341c263d7f95a391798b276abb8669",
+      "bytes": 20752
+    },
+    "td_margin/observations.json": {
+      "sha256": "16864318bcf33396b234b4f2a60f3ee610220fcba9edfb4c62e15aab51cc55e1",
+      "bytes": 86699
+    },
+    "td_margin/summary.json": {
+      "sha256": "ac27868fcf523bf9c461fe3c4339f5505405440a9b8ee10369c207f649a49771",
+      "bytes": 7894
+    },
+    "pretraining/update_samples.jsonl": {
+      "sha256": "bb1f99c70f5dec08a3677117d52ac1a0b7ee2957f29f8e21a7a20fd226e9380f",
+      "bytes": 68323
+    },
+    "margin_only/update_samples.jsonl": {
+      "sha256": "507607fc971e92e34f7e08360c09319b4749ca5fc82a3e28bd9bd904c30a4714",
+      "bytes": 8292
+    },
+    "td_only/update_samples.jsonl": {
+      "sha256": "c57a02d6d7da06185251e9bdba2d3140df373d946c8dd6a39c003cce226423bc",
+      "bytes": 18885
+    },
+    "td_margin/update_samples.jsonl": {
+      "sha256": "9134e79b58a73d7d7b09bf9e756c5077d0763b9a9e0252760cbc38724b0bfc4e",
+      "bytes": 21074
+    }
+  },
+  "update_log_coverage": {
+    "pretraining": {
+      "raw_sha256": "839120873a86a3f5debc723f3903eb153b40fde4fb7a3dd65550478b96dd9713",
+      "raw_records": 20000,
+      "archived_records": 410,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "margin_only": {
+      "raw_sha256": "e4684fd1fd8c4f37f6dcfc78db9bc41e7b04a22e1f7ba62f5a83855f224d9d5d",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "td_only": {
+      "raw_sha256": "1559deeae8600102eaa47ed16f6799d16e13a72ca86de3e71e8dce69f996a0c6",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "td_margin": {
+      "raw_sha256": "2fc8b043308a41b699973a85651ecff6f61c064d706be5b0574f1c78fc97f3ec",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    }
+  },
+  "archive_script_sha256": "fa7c954629819cd7ff8d4fc6d532e382a39d69597e6780eb7ec2e29027edaadd",
+  "excluded": "Weights, encoded demonstration arrays and full update logs remain in results.",
+  "note": "All scheduled neural rollout action sequences and paths are retained."
+}
