@@ -1,0 +1,38 @@
+{
+  "sources_match": true,
+  "reference_inputs_match": true,
+  "encoded_dataset_matches": true,
+  "historical_baseline_not_reexecuted": true,
+  "arms": {
+    "lr_3e_5": {
+      "learning_rate": 3e-05,
+      "phase_zero_matches_reference": true,
+      "checkpoint_hashes_verified": 9,
+      "update_records_verified": 2000,
+      "target_synchronizations": 10,
+      "parameter_change_l2": 1.780151128768921,
+      "final_fit_matches_exactly": true,
+      "final_rollout_matches_exactly": true,
+      "additional_evaluation_steps": 200,
+      "final_checkpoint_sha256": "8d3ee3f7e211b691ebd12d690687ef267948ecd64a8835890d0dc55327ae3fd8"
+    },
+    "lr_3e_6": {
+      "learning_rate": 3e-06,
+      "phase_zero_matches_reference": true,
+      "checkpoint_hashes_verified": 9,
+      "update_records_verified": 2000,
+      "target_synchronizations": 10,
+      "parameter_change_l2": 0.36957618594169617,
+      "final_fit_matches_exactly": true,
+      "final_rollout_matches_exactly": true,
+      "additional_evaluation_steps": 200,
+      "final_checkpoint_sha256": "b5927668755c5b52f7bc30df079bd64c7eec04739101fb1342301c1c84368671"
+    }
+  },
+  "additional_verification_environment_steps": 400,
+  "optimizer_updates_performed": 0,
+  "training_scene_only": true,
+  "note": "Additional post-run verification; reset feasibility probes are excluded.",
+  "target_metric_limit": "Inference checkpoints omit training targets. Verify action fits and full rollouts, not historical value metrics against unsaved target-network weights.",
+  "verifier_sha256": "2a9a803939bb27de05a2002db6dc09985ad678a20c09da7feb35ab40e30cca48"
+}

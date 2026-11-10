@@ -1,0 +1,110 @@
+{
+  "environment": {
+    "max_branches": 14,
+    "nodes_per_branch": 5,
+    "max_steps": 200,
+    "workspace_low": [
+      0.0,
+      0.0
+    ],
+    "workspace_high": [
+      1.0,
+      1.0
+    ],
+    "small_step": 0.025,
+    "large_step": 0.06,
+    "target_radius": 0.05,
+    "contact_radius": 0.035,
+    "relaxation_rate": 0.1,
+    "execution_noise_fraction": 0.0,
+    "show_gate_detail": false,
+    "verify_reference_route": true,
+    "reference_max_attempts": 10,
+    "scene": {
+      "layout": "multi_route",
+      "tip_gap_range": [
+        0.028,
+        0.043
+      ],
+      "stiffness_range": [
+        0.35,
+        1.1
+      ],
+      "safe_limit_range": [
+        0.075,
+        0.11
+      ],
+      "start_jitter": [
+        0.01,
+        0.02
+      ],
+      "target_jitter": [
+        0.01,
+        0.02
+      ],
+      "gate_x_jitter": 0.01,
+      "twig_jitter": [
+        0.005,
+        0.005
+      ]
+    },
+    "reward": {
+      "progress": 10.0,
+      "deformation": 1.0,
+      "travel": 0.2,
+      "damage": 50.0,
+      "success": 100.0
+    }
+  },
+  "dqn": {
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "batch_size": 64,
+    "replay_capacity": 20000,
+    "target_update_interval": 200,
+    "gradient_clip_norm": 10.0
+  },
+  "training": {
+    "kind": "smaller_learning_rates_after_supervised_pretraining",
+    "scene_seed": 10000,
+    "objective": "td_margin",
+    "learning_rates": {
+      "lr_3e_5": 3e-05,
+      "lr_3e_6": 3e-06
+    },
+    "historical_learning_rate": 0.0003,
+    "phase_updates": 2000,
+    "phase_checkpoints": [
+      0,
+      1,
+      10,
+      50,
+      100,
+      200,
+      500,
+      1000,
+      2000
+    ],
+    "pretraining_updates": 20000,
+    "pretraining_updates_reused": 20000,
+    "pretraining_updates_performed": 0,
+    "margin": 0.8,
+    "demonstration_weight": 1.0,
+    "phase_boundary": "identical_frozen_weights_fresh_adam_synced_target_zero_phase_clock",
+    "batch_mode": "same_frozen_single_demonstration",
+    "early_stopping": false,
+    "reference_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\staged_retention_20261111",
+    "reference_git_head": "c5d5dfbc2691daf236414543a81872a9b51e6fd5",
+    "reference_checkpoint_sha256": "3a715e972626c19e3d198f0d8ffb7d79f3bcc26fdbfa93f150b93c515de4819f",
+    "reference_dataset_sha256": "9cf50273dde5fd8c42064417ede1790bf40559eae880e6f85ead76e98f7b392a",
+    "script_sha256": "89263f850d95f55e6ad4503dafda9fc51b683a6fa0d159805cdb9af2c6a3ef61",
+    "staged_runner_sha256": "98f9f807a614e3b23066ba21482ab23253eb17f7a4c846595651b224bae22dca",
+    "fit_runner_sha256": "7caa0d935e996d665a4ae164cd54945506fe4836bfdfd1dc0a491c5aeb1c34e9",
+    "online_training_steps": 0,
+    "held_out_scenes_accessed": 0
+  }
+}

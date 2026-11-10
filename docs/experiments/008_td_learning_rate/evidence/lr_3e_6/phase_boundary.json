@@ -1,0 +1,10 @@
+{
+  "pretraining_updates": 20000,
+  "phase_updates": 0,
+  "optimizer_reset": true,
+  "target_synchronized": true,
+  "learning_rate": 3e-06,
+  "policy_parameter_sha256": "2d31c837ecb7c90d3b35a6ae4a7dbbb7ec8c9b12bc91215d926ed15d91d88dbf",
+  "target_equals_online": true,
+  "optimizer_state_empty": true
+}

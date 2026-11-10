@@ -1,0 +1,99 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_learning_rate_20261111",
+  "status": "completed",
+  "files": {
+    "settings.json": {
+      "sha256": "cb80aef4cd836ca2383ff22e8ac9fd87c8f4dda26b44f0192d1ca5c69fec9f38",
+      "bytes": 2942
+    },
+    "provenance.json": {
+      "sha256": "affe30cd8ebb46244facfe6d0a7a468bcf8476a3a924ee6bebe4a93fe3b1a831",
+      "bytes": 6214
+    },
+    "run_status.json": {
+      "sha256": "ed9a6e1fb6820c65452f2090317da962802c532c2da9f2ab0a2c7073b16f7142",
+      "bytes": 166
+    },
+    "summary.json": {
+      "sha256": "4b47bc387a8f627d8c1893dccad121911fc851dfb7fe9a92adc9536692fef3d6",
+      "bytes": 173502
+    },
+    "input_manifest.json": {
+      "sha256": "88e127f7cc5ec289c510414cdaddba4075f776f8036e7884ca1aae4f2c48a2e1",
+      "bytes": 1570
+    },
+    "dataset.json": {
+      "sha256": "a1b7838435d11912ff6550479fd731e56f92962286300e10497203314d13e385",
+      "bytes": 745
+    },
+    "historical_td_margin.json": {
+      "sha256": "6dfe32b237d5a9e07bdaf00fec12bf7a9dfd10b2d065d6ce456b467bf1625bb5",
+      "bytes": 104655
+    },
+    "reload_checks.json": {
+      "sha256": "b26abde962c271b5fa685178a7c4ae212f18f2cf7072d4e442a1037287d3ddff",
+      "bytes": 1651
+    },
+    "learning_rate_retention.png": {
+      "sha256": "09da9e4cbe0dba62e8a52415dff2a8d9476e8cafd0e0d5416a7d67c64a2b995c",
+      "bytes": 243098
+    },
+    "lr_3e_5/settings.json": {
+      "sha256": "a7e14a6d7575a4f9057a32a5d8f24eb6fd406401ba91ba74676a16fb6fa45c33",
+      "bytes": 1539
+    },
+    "lr_3e_5/phase_boundary.json": {
+      "sha256": "77a44ed2091f9c14a5567ae2cfcddddaebef99cf23a55159a58ab1f2776bb988",
+      "bytes": 313
+    },
+    "lr_3e_5/td_margin/observations.json": {
+      "sha256": "9c9dffc75d0e467d2f0ba0a94d58d0fd8e681c25179b008fcdaeb663b48f2bcb",
+      "bytes": 94774
+    },
+    "lr_3e_5/td_margin/summary.json": {
+      "sha256": "624e0a2c0a97eec4dd2d9280c7ff89f801a6612ac683a40ec332f44db4c5fee8",
+      "bytes": 20359
+    },
+    "lr_3e_6/settings.json": {
+      "sha256": "f62292f4804a24f7456de6fba9134d026691840b7ac5fa2f7a045bc3a11d41d4",
+      "bytes": 1539
+    },
+    "lr_3e_6/phase_boundary.json": {
+      "sha256": "cfd8c71f8374c16ac0718ca817c2107ad3f274fb7c98b7b4823c61006c4bae43",
+      "bytes": 313
+    },
+    "lr_3e_6/td_margin/observations.json": {
+      "sha256": "2b538087abaf7546fc925041b9d5a58177dff216c8a7b2477bd80c199c7c8560",
+      "bytes": 100623
+    },
+    "lr_3e_6/td_margin/summary.json": {
+      "sha256": "f9fd6e3087c7b7409f3dca25de3fa7289fa303baca5ad04b92acc06d254b99f1",
+      "bytes": 20361
+    },
+    "lr_3e_5/td_margin/update_samples.jsonl": {
+      "sha256": "c5944ac46d252307cfd7f41c7c0ce14903aa700aa0c480b9d9298e225ffc744d",
+      "bytes": 21060
+    },
+    "lr_3e_6/td_margin/update_samples.jsonl": {
+      "sha256": "04c900fda3dee743976c64d7f357243ed5d6afbe30dc6f75348477d9a3be438b",
+      "bytes": 21022
+    }
+  },
+  "update_log_coverage": {
+    "lr_3e_5": {
+      "raw_sha256": "89002fc031ea7c025707e3d936a530489637b7b19a6a4379958f97c1de5cf01e",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "lr_3e_6": {
+      "raw_sha256": "440938540473f436a623f866584358b668ab7540ee71cf226fd0fb38d0a65824",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    }
+  },
+  "archive_script_sha256": "ff609ce6a3b964c5444635a935ba1c076f010a122bfa6423148c85ab42883b75",
+  "excluded": "Weights, encoded inputs and full update logs remain in ignored results.",
+  "note": "All sampled rollouts and the clearly labeled historical baseline are retained."
+}

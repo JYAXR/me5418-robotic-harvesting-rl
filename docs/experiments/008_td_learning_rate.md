@@ -58,4 +58,84 @@ rate, improvement on new tasks, online learning or multi-scene generalization.
 
 ## Outcomes
 
-Pending the predeclared run. Preserve both rates regardless of outcomes.
+Executed from commit `12ae932` on **11 November 2026, 02:31:27--02:33:33
+Asia/Shanghai**. Evidence timestamps use UTC. Both lower-rate branches started
+from the exact verified supervised weights, with the same 35 training states,
+fresh Adam state, synchronized targets and identical phase-zero action metrics
+and 35-step successful rollout.
+
+| TD+margin learning rate | First sampled failed checkpoint | Final action agreement | Final rollout after 2000 updates |
+| --- | --- | --- | --- |
+| 0.0003, historical attempt 007 | 1 | 32/35 (91.4%) | Damage after 55 steps |
+| 0.00003, new branch | 500 | 34/35 (97.1%) | Budget exhausted at 200 steps |
+| 0.000003, new branch | 500 | 33/35 (94.3%) | Budget exhausted at 200 steps |
+
+Both lower rates succeeded at checkpoints **0, 1, 10, 50, 100 and 200**. Both
+failed at **500, 1000 and 2000**. The 0.00003 branch damaged a branch after 141
+steps at checkpoint 500, then timed out at the later checkpoints. The 0.000003
+branch timed out at all three later checkpoints. Final returns were -8.2960 and
+-8.2179, respectively. Both final policies first deviated from the reference at
+action 5, choosing north-small instead of east-small.
+
+Reducing the rate prevented the immediate one-update collapse seen in 007, but
+**neither rate preserved success throughout the 2000-update comparison**. The
+first observed failure shifted to checkpoint 500, so the actual onset between
+200 and 500 is not known. This experiment does not establish convergence,
+stable retention beyond the observed horizon or an optimal rate. In particular,
+97.1% demonstration-action agreement still accompanied a failed closed-loop
+episode; agreement alone is not a sufficient model-selection criterion.
+
+The updates were real: final parameter-vector L2 changes from the supervised
+starting model were **1.780151** at 0.00003 and **0.369576** at 0.000003. Both
+branches performed all 2000 updates and ten periodic target synchronizations.
+The smaller-rate policies were not frozen or replaced with the pretrained model.
+
+New accounting: **4000 TD+margin optimizer updates**, **1561 scheduled neural
+evaluation actions**, and **400 additional actions** for independent final-model
+reload verification. New demonstration collection, online exploration and
+pretraining counts are all **zero**. The original 20000 pretraining updates and
+35 collected demonstration actions are explicitly reused from attempt 007.
+Counts exclude reset feasibility probes. No held-out scene was accessed.
+
+## Interpretation and next question
+
+Supervised acquisition followed by TD adaptation remains unstable on the known
+route under all tested rates. Lowering the step size alone did not resolve this
+over the matched adaptation budget. The continuing-supervision control in 007
+still identifies TD introduction as the experimental difference associated with
+the loss, but these comparisons do not identify its sole internal cause.
+
+The next useful hypothesis is value calibration: action-margin pretraining
+learns action preferences without forcing scores to equal discounted returns.
+Test supervised return-target calibration before bootstrapping, while measuring
+whether the existing action choices survive that calibration. Keep it a separate
+controlled attempt; no such calibration has been implemented or shown to solve
+the problem in the present records. Broader scene exposure and online replay
+should be assessed separately from this fixed-data retention diagnostic.
+
+## Verification and retained evidence
+
+The shared learner and phase runner passed **235 tests** in attempt 007; they
+were unchanged for 008. The new runner and analysis helpers passed Ruff.
+Verification checked all 49 launch source hashes, 11 reference-input hashes,
+18 saved checkpoints and their actual learning-rate configurations, all 4000
+update records, target counts and exact phase-zero behavior. Both final policies
+were independently reloaded and reproduced their full fitting metrics and
+200-step rollout traces exactly.
+
+The first reload-checker invocation stopped before inference because its field
+lookup used an earlier draft protocol key (`phase_updates_per_arm`). The helper
+was corrected to the recorded `phase_updates`/`pretraining_updates` schema and
+verification passed. That failed analysis invocation performed **zero actions
+and zero optimizer updates** and did not change any training artifact. Preserve
+this note rather than presenting the first verification invocation as successful.
+
+Evidence: [figure](008_td_learning_rate/evidence/learning_rate_retention.png),
+[summary](008_td_learning_rate/evidence/summary.json),
+[input manifest](008_td_learning_rate/evidence/input_manifest.json),
+[historical baseline](008_td_learning_rate/evidence/historical_td_margin.json),
+[reload verification](008_td_learning_rate/evidence/reload_checks.json), and
+[archive manifest](008_td_learning_rate/evidence/archive_manifest.json).
+All scheduled observations are retained; update samples include the first ten,
+every 50th and final update, with hashes of the complete local logs. Model
+weights, encoded data and full logs remain in the ignored local results tree.

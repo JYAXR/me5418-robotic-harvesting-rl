@@ -1,0 +1,23 @@
+{
+  "reference_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\staged_retention_20261111",
+  "reference_git_head": "c5d5dfbc2691daf236414543a81872a9b51e6fd5",
+  "reference_files_sha256": {
+    "run_status.json": "e13b9a7c1c66fade8ca8ef053aa93d3158d97b3e46b113376d2af94f6c8d3067",
+    "summary.json": "d2bf46e1a2e2abd3103e1d6a69ee0de9e54b1f1d04dc41ce0f397b6bf1275d9a",
+    "settings.json": "6ab41b11bd0b35f1097663b70d75499acd8456b86fa03cf3431cd204f9f83902",
+    "provenance.json": "55c32cfdc9c708541da25cc4f351ff56b67fb1c19c50203b5db3885606c8a379",
+    "pretraining_reproduction.json": "13da10286cf98d897fb3ea9fb0d1401fda71d8fcaeb8ba9efc59d69ecbdef75d",
+    "dataset.json": "a1b7838435d11912ff6550479fd731e56f92962286300e10497203314d13e385",
+    "demonstration.npz": "9cf50273dde5fd8c42064417ede1790bf40559eae880e6f85ead76e98f7b392a",
+    "pretraining/update_20000.pt": "3a715e972626c19e3d198f0d8ffb7d79f3bcc26fdbfa93f150b93c515de4819f",
+    "pretraining/updates.jsonl": "839120873a86a3f5debc723f3903eb153b40fde4fb7a3dd65550478b96dd9713",
+    "td_margin/observations.json": "16864318bcf33396b234b4f2a60f3ee610220fcba9edfb4c62e15aab51cc55e1",
+    "td_margin/updates.jsonl": "2fc8b043308a41b699973a85651ecff6f61c064d706be5b0574f1c78fc97f3ec"
+  },
+  "reference_source_files_verified": 49,
+  "historical_baseline_reexecuted": false,
+  "optimizer_state_reused": false,
+  "weights_and_data_reused": true,
+  "pretraining_optimizer_updates_performed": 0,
+  "new_collection_steps": 0
+}
