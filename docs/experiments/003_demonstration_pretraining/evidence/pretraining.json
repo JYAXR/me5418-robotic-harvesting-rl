@@ -1,0 +1,18 @@
+{
+  "method": "demonstration_only_dqn_td_updates",
+  "status": "completed",
+  "requested_updates": 2000,
+  "completed_updates": 2000,
+  "input_transitions": 421,
+  "batch_size": 64,
+  "sampler_seed_sequence": [
+    0,
+    1
+  ],
+  "environment_steps": 0,
+  "first_loss": 1.6554702520370483,
+  "last_loss": 1.4755433797836304,
+  "target_synchronizations": 10,
+  "initial_total_updates": 0,
+  "total_updates": 2000
+}

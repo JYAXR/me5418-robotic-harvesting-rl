@@ -9,7 +9,7 @@ evidence for the final report, not a claim that a final trained model is ready.
 | --- | --- | --- |
 | [001: multi-route DQN from scratch](001_multiroute_from_scratch.md) | Can the unchanged DQN and reward solve the new multi-route scene in a bounded pilot? | 0/30 training successes; 0/3 final validation successes; reference planner 3/3. |
 | [002: reference replay initialization](002_reference_replay.md) | Do ten training-only reference trajectories help with the same online episode budget? | 421 demonstration transitions; 2/30 online training successes; 0/3 final validation successes, with damage in 1/3. No reliable improvement established. |
-| [003: demonstration TD pretraining](003_demonstration_pretraining.md) | Do 2000 additional DQN updates on the same demonstrations help before online training? | Protocol prepared; results pending execution. |
+| [003: demonstration TD pretraining](003_demonstration_pretraining.md) | Do 2000 additional DQN updates on the same demonstrations help before online training? | 2000 pretraining + 880 online updates; 3/30 training successes; post-pretraining and final validation both 0/3 successes and 2/3 damage. No benefit established; final return deteriorated. |
 
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,

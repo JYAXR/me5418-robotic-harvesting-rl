@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-11-10T08:37:35.574524+00:00",
+  "finished_at_utc": "2026-11-10T08:47:01.393110+00:00",
+  "checkpoints": {
+    "best.pt": {
+      "sha256": "a43ea9981ca58bcfb22a26258ce773a3fcc24238db6f4a1b36da95989b4277c0",
+      "bytes": 626545
+    },
+    "latest.pt": {
+      "sha256": "da6154ae1ad5d35d1feb2e1fe4bf11676fb81d6f83aca679c5abdf323da7b1be",
+      "bytes": 626569
+    },
+    "pretrained.pt": {
+      "sha256": "b8f3eea55cd6691981f2f6ab86d5cb967196f9c45015890effa4119403c5ccd5",
+      "bytes": 626809
+    }
+  }
+}
