@@ -1,0 +1,73 @@
+{
+  "reference": "collision_free_astar_actual_dynamics",
+  "interpretation": "Reference feasibility rollouts, not learned-policy performance.",
+  "seeds": [
+    100000,
+    100001,
+    100002
+  ],
+  "episodes": 3,
+  "successful_episodes": 3,
+  "success_rate": 1.0,
+  "damage_rate": 0.0,
+  "total_steps": 128,
+  "mean_steps": 42.666666666666664,
+  "mean_return": 107.58889280905326,
+  "mean_travel_distance": 1.6733318244417508,
+  "records": [
+    {
+      "seed": 100000,
+      "generation_attempts": 1,
+      "reference": "collision_free_astar",
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "planning_failure": false,
+      "reason": "success",
+      "steps": 51,
+      "planned_actions": 51,
+      "initial_step_count": 0,
+      "remaining_budget": 200,
+      "travel_distance": 1.9749982059001923,
+      "return": 107.64557976722716,
+      "contact_steps": 0,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "seed": 100001,
+      "generation_attempts": 1,
+      "reference": "collision_free_astar",
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "planning_failure": false,
+      "reason": "success",
+      "steps": 42,
+      "planned_actions": 42,
+      "initial_step_count": 0,
+      "remaining_budget": 200,
+      "travel_distance": 1.5749985873699188,
+      "return": 107.48256965428591,
+      "contact_steps": 0,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "seed": 100002,
+      "generation_attempts": 1,
+      "reference": "collision_free_astar",
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "planning_failure": false,
+      "reason": "success",
+      "steps": 35,
+      "planned_actions": 35,
+      "initial_step_count": 0,
+      "remaining_budget": 200,
+      "travel_distance": 1.4699986800551414,
+      "return": 107.6385290056467,
+      "contact_steps": 0,
+      "peak_normalized_deformation": 0.0
+    }
+  ]
+}

@@ -99,6 +99,65 @@ def _generate_mixed_canopy(
     )
 
 
+def _generate_multi_route(
+    rng: np.random.Generator, max_branches: int, nodes_per_branch: int,
+    tip_gap_range, stiffness_range, safe_limit_range,
+) -> Scene:
+    """Create three two-lane decisions with open detours and material-dependent gaps.
+
+    Each region contains four branches. The fixed central anchors leave less
+    than one robot diameter between them, preventing a straight central bypass.
+    An open lane always exists; its side changes at least once across regions.
+    Passage labels are diagnostic metadata, not additional agent observations.
+    """
+    if max_branches < 14:
+        raise ValueError("multi_route requires max_branches >= 14")
+    position = np.array([0.08, rng.uniform(0.42, 0.58)], dtype=np.float32)
+    target = np.array([0.92, rng.uniform(0.42, 0.58)], dtype=np.float32)
+    branches = []
+    kinds = []
+    open_sides = rng.permutation([0, 1, int(rng.integers(2))])
+    alternatives = rng.permutation(["pushable", "closed", "pushable"])
+    parameter = np.linspace(0.0, 1.0, nodes_per_branch)
+
+    def add_branch(anchor, tip, stiffness, safe_limit):
+        anchor, tip = np.asarray(anchor), np.asarray(tip)
+        nodes = anchor + parameter[:, None] * (tip - anchor)
+        nodes[:, 0] += rng.uniform(-0.006, 0.006) * np.sin(np.pi * parameter)
+        nodes = nodes.astype(np.float32)
+        branches.append(Branch(nodes.copy(), nodes.copy(), stiffness, safe_limit))
+
+    for region, base_x in enumerate((0.25, 0.50, 0.75)):
+        x = base_x + rng.uniform(-0.015, 0.015)
+        for lane in (0, 1):
+            kind = "open" if lane == open_sides[region] else str(alternatives[region])
+            kinds.append(kind)
+            center = rng.uniform(0.255, 0.285) if lane == 0 else rng.uniform(0.715, 0.745)
+            gap = (0.0 if kind == "closed" else rng.uniform(0.13, 0.17)
+                   if kind == "open" else rng.uniform(*tip_gap_range))
+            anchors = (0.0, 0.48) if lane == 0 else (0.52, 1.0)
+            for side, anchor_y in enumerate(anchors):
+                stiffness = 1e6 if kind == "closed" else float(rng.uniform(*stiffness_range))
+                tip_y = center + (-0.5 if side == 0 else 0.5) * gap
+                add_branch((x, anchor_y), (x, tip_y), stiffness,
+                           float(rng.uniform(*safe_limit_range)))
+
+    # Short corridor twigs penalize careless transfers between upper/lower lanes.
+    # They remain separated from the region walls and do not span a whole corridor.
+    for base_x in (0.375, 0.625):
+        x = base_x + rng.uniform(-0.008, 0.008)
+        y = rng.uniform(0.44, 0.56)
+        direction = float(rng.choice((-1, 1)))
+        add_branch((x - 0.02, y - 0.025 * direction),
+                   (x + 0.02, y + 0.025 * direction),
+                   float(rng.uniform(0.6, 2.5)), float(rng.uniform(0.035, 0.065)))
+    return Scene(
+        position, target, branches,
+        passage_pairs=tuple((index, index + 1) for index in range(0, 12, 2)),
+        passage_kinds=tuple(kinds), layout="multi_route",
+    )
+
+
 def _sample_scene(
     rng: np.random.Generator,
     max_branches: int = 5,
@@ -124,6 +183,10 @@ def _sample_scene(
     if layout == "mixed_canopy":
         return _generate_mixed_canopy(
             rng, max_branches, nodes_per_branch, tip_gap_range, stiffness_range, safe_limit_range
+        )
+    if layout == "multi_route":
+        return _generate_multi_route(
+            rng, max_branches, nodes_per_branch, tip_gap_range, stiffness_range, safe_limit_range,
         )
     if layout not in {"tip_gates", "easy_gate"}:
         raise ValueError(f"Unknown scene layout: {layout}")
@@ -167,7 +230,7 @@ def _sample_scene(
 
 def _tilt_branches(scene: Scene, rng: np.random.Generator, tilt_range) -> None:
     """Draw tilt after position jitter to retain matched upright/inclined scenes."""
-    if scene.layout == "mixed_canopy" or tilt_range[1] == 0:
+    if scene.layout in {"mixed_canopy", "multi_route"} or tilt_range[1] == 0:
         return
     for branch in scene.branches:
         parameter = np.linspace(0.0, 1.0, len(branch.rest_nodes))
@@ -194,10 +257,12 @@ def _jitter_positions(
         if np.any(amplitude):
             position += rng.uniform(-amplitude, amplitude).astype(np.float32)
     paired = set()
-    for pair in scene.passage_pairs:
+    for pair_index, pair in enumerate(scene.passage_pairs):
         paired.update(pair)
         if gate_x_jitter > 0:
-            offset = np.float32(rng.uniform(-gate_x_jitter, gate_x_jitter))
+            # Keep both lanes and their central anchors aligned within each region.
+            if scene.layout != "multi_route" or pair_index % 2 == 0:
+                offset = np.float32(rng.uniform(-gate_x_jitter, gate_x_jitter))
             for index in pair:
                 branch = scene.branches[index]
                 branch.rest_nodes[:, 0] += offset
@@ -269,6 +334,10 @@ def generate_scene(
             raise ValueError(f"Invalid finite ordered range: {name}")
     if layout == "easy_gate" and tip_gap_range[0] <= 2 * contact_radius:
         raise ValueError("easy_gate requires a tip gap wider than the robot diameter.")
+    if layout == "multi_route" and not (
+        0.04 < 2 * contact_radius < 0.13 and tip_gap_range[1] < 2 * contact_radius
+    ):
+        raise ValueError("multi_route requires blocked central anchors and open/narrow lane gaps.")
     for attempt in range(1, max_attempts + 1):
         scene = _sample_scene(
             rng, max_branches, nodes_per_branch, gap_height_range, tip_gap_range,

@@ -1,0 +1,86 @@
+{
+  "environment": {
+    "max_branches": 14,
+    "nodes_per_branch": 5,
+    "max_steps": 200,
+    "workspace_low": [
+      0.0,
+      0.0
+    ],
+    "workspace_high": [
+      1.0,
+      1.0
+    ],
+    "small_step": 0.025,
+    "large_step": 0.06,
+    "target_radius": 0.05,
+    "contact_radius": 0.035,
+    "relaxation_rate": 0.1,
+    "execution_noise_fraction": 0.0,
+    "show_gate_detail": false,
+    "verify_reference_route": true,
+    "reference_max_attempts": 10,
+    "scene": {
+      "layout": "multi_route",
+      "tip_gap_range": [
+        0.028,
+        0.043
+      ],
+      "stiffness_range": [
+        0.35,
+        1.1
+      ],
+      "safe_limit_range": [
+        0.075,
+        0.11
+      ],
+      "start_jitter": [
+        0.01,
+        0.02
+      ],
+      "target_jitter": [
+        0.01,
+        0.02
+      ],
+      "gate_x_jitter": 0.01,
+      "twig_jitter": [
+        0.005,
+        0.005
+      ]
+    },
+    "reward": {
+      "progress": 10.0,
+      "deformation": 1.0,
+      "travel": 0.2,
+      "damage": 50.0,
+      "success": 100.0
+    }
+  },
+  "dqn": {
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "batch_size": 64,
+    "replay_capacity": 20000,
+    "target_update_interval": 200,
+    "gradient_clip_norm": 10.0
+  },
+  "training": {
+    "episodes": 30,
+    "learning_starts": 256,
+    "train_frequency": 4,
+    "epsilon_start": 1.0,
+    "epsilon_end": 0.1,
+    "epsilon_decay_steps": 4000,
+    "evaluation_interval": 10,
+    "evaluation_episodes": 3,
+    "seed": 0,
+    "validation_seed": 100000,
+    "evaluate_before_training": true
+  },
+  "validation_seed": 100000,
+  "encoder_version": 1
+}

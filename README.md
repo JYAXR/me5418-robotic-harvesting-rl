@@ -326,6 +326,92 @@ controllers on matched scenes. Check planning failure separately from damage
 and inspect the trajectories to see where contact or detours occur. These
 controllers are environment demonstrations rather than trained policies.
 
+## Multi-region route-choice layout
+
+`configs/environment_multiroute.yaml` adds three consecutive decision regions.
+Each region has lower and upper lanes formed by four branches. One lane is open;
+the other is either a deformable narrow gap or a rigid closed gap. Across the
+three regions there are two soft alternatives and one rigid alternative, with
+their order randomized. Open lanes change sides at least once per scene.
+Two short corridor twigs bring the total to fourteen branches and 341 features.
+The action set, rewards and 200-action task budget are unchanged.
+
+The open gaps are 0.13-0.17 wide; soft gaps are 0.028-0.043 wide, below the robot's
+0.07 diameter. Closed tips touch and have stiffness 1e6. Central anchors leave
+only 0.04 between them, preventing a straight middle shortcut. Whole regions
+move horizontally while their two lanes remain aligned. Start/target positions,
+gap heights, material properties and local twigs are also seeded. Passage labels
+are visual diagnostics; the agent receives geometry/material observations, not
+route-type labels. Contact can shorten some routes, but the best choice depends
+on neighbouring regions and damage costs.
+
+This configuration enables `verify_reference_route: true`. Each reset first
+passes the existing geometry checks, then plans a collision-free route and
+executes it through the actual contact solver on an isolated simulation copy.
+The candidate is accepted only if the reference reaches the fruit within the
+task budget without damage. Certification leaves the agent's state, RNG,
+trajectory and budget untouched. It is a feasibility witness, not learned-policy
+performance or proof that the reference route is optimal.
+
+`reference_max_attempts` bounds the candidate retries (ten by default).
+Reset diagnostics include `reference_route`, `reference_route_attempts` and
+`reference_route_checks`, preserving failed checks before acceptance. A failed
+reference check is not proof of infeasibility: the planner uses a discrete grid
+and does not intentionally push branches. The new layout explicitly retains open
+routes, making this conservative filter appropriate. Older layouts keep their
+existing reset behaviour unless reference checking is explicitly enabled.
+For nonzero execution noise, the certificate covers the copied RNG realization,
+not every possible noisy rollout. Certification adds planning work to each reset.
+
+Audit unfiltered, geometrically valid candidates across seeds:
+
+```bash
+python scripts/check_scene_feasibility.py --config configs/environment_multiroute.yaml --count 30 --output results/multiroute/feasibility.json
+```
+
+The audit disables reset-time reference filtering on a copied configuration and
+records every requested seed, including generation and reference failures. It
+therefore exposes failures rather than reporting only accepted candidates.
+
+Run training checks and inspect reference controllers:
+
+```bash
+python scripts/train_dqn.py --smoke --config configs/environment_multiroute.yaml --output-dir results/training/multiroute_smoke
+python scripts/evaluate_dqn.py --checkpoint results/training/multiroute_smoke/latest.pt --episodes 3
+python scripts/run_demo.py --policy detour --config configs/environment_multiroute.yaml --seed 0 --output-dir results/multiroute
+python scripts/run_demo.py --policy hybrid --config configs/environment_multiroute.yaml --seed 0 --output-dir results/multiroute
+```
+
+The existing hybrid controller visits soft gaps using geometry and A*. It is a
+handwritten reference, not an optimal route selector or a trained RL policy.
+Existing configurations remain available for paired comparisons. New formal
+training results, reports and final submission artifacts must be regenerated
+before claiming results for this layout.
+
+For schedule calibration, a separate bounded pilot configuration runs 30 episodes
+(at most 6000 training actions). It uses a 64-transition batch, 256-step warmup,
+updates every four steps and target synchronization every 200 optimizer updates.
+Epsilon decreases from 1.0 to 0.10 over 4000 environment steps. These are pilot
+settings, not a validated final training recipe. The reward and network architecture
+are unchanged. An initial greedy evaluation and evaluations every ten episodes use
+the same three validation seeds starting at 100000, outside training seeds 0-29.
+
+```bash
+python scripts/train_dqn.py --config configs/environment_multiroute.yaml --dqn-config configs/dqn_multiroute_pilot.yaml --training-config configs/training_multiroute_pilot.yaml --output-dir results/training/multiroute_pilot
+python scripts/summarize_training.py --run-dir results/training/multiroute_pilot
+```
+
+`evaluate_before_training` enables the initial evaluation. An explicit
+`validation_seed` fixes the validation range across experiments; overlapping
+training/validation ranges are rejected. Omit it to retain the previous derived
+validation range. Logs now record final distance to target, blocked steps and
+stationary steps (executed displacement no larger than 1e-6). Validation averages
+the within-episode blocked/stationary fractions. These indicators distinguish task
+progress from a policy that avoids movement or repeatedly presses against an
+obstacle. The summary script saves `analysis.json` and `learning_diagnostics.png`
+under the run directory. Validation is used for calibration; final test scenes
+must remain separate from parameter selection.
+
 ## Experimental inclined-branch layout
 
 `configs/environment_inclined.yaml` adds independently left/right inclined

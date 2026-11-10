@@ -1,0 +1,8 @@
+# Bounded pilot settings; performance must be measured before longer runs.
+hidden_sizes: [256, 256]
+learning_rate: 0.0003
+gamma: 0.99
+batch_size: 64
+replay_capacity: 20000
+target_update_interval: 200
+gradient_clip_norm: 10.0

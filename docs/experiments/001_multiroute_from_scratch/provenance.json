@@ -1,0 +1,27 @@
+{
+  "recorded_date": "2026-11-10",
+  "historical_run_directory": "results/training/multiroute_pilot_20261110",
+  "date_evidence": "The existing run directory is dated 20261110; no precise launch timestamp was captured in the settings.",
+  "run_source_sha256": "source_manifest.json",
+  "base_git_commit": "344cbb142c331abc0dfbadd0e687afec31afc70a",
+  "source_state": "The multi-route and diagnostic changes were not yet committed when this historical run executed. Consult source_manifest.json and the commit that first adds this record.",
+  "files": {
+    "diagnostics.json": "2f3997451c5be565b9fa9b94ccad494ba9e8617e74218ba4f658adab690c2f28",
+    "learning_diagnostics.png": "f489f225ad85c1c8bf4057d16699eb5ee0be2930c7e0fd362e990b9bae3b4c75",
+    "reference_validation.json": "a85e0f927b2524ef51405bf360a037f68fc5b1c0ded8ed1cebdee43887618df7",
+    "scene_feasibility.json": "9dbb108dcb59bdec228bd65d80b071c9374ce8eeb86cd0d856a263c12c68ef3b",
+    "settings.json": "5cbd43e61201696bc2ccbdfe1693c00ac42340c3926eea392d9ddc9dff190541",
+    "source_manifest.json": "3b07b30e5291e48f1d7f6f0301316a6be5835c81ab6bc384aa7f9f0e73f45f6a",
+    "summary.json": "dd3eb5959e852f1b9072a541a29cf4b49b1f726195e6971a58fd9fdede721080"
+  },
+  "local_checkpoint_sha256": {
+    "best.pt": "b00c79ab45b3e69bb91a1e24277341a70e7728267f8b528bcd4d50361434d6c3",
+    "latest.pt": "2a6b0f9042a63d4ccc0799e6c25b237f685f289f480bd2d5eba0af7f3958548b"
+  },
+  "not_in_git": [
+    "Raw checkpoint weights",
+    "Full position traces",
+    "Console log"
+  ],
+  "reference_command_provenance": "The validation reference and behavior summaries were produced by ad hoc Python checks; their exact command text was not retained. Equivalent reference-check and policy-evaluation commands are documented in the experiment note."
+}

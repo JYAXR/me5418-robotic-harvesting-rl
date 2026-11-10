@@ -57,6 +57,12 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
             **cfg.get("reward", {}),
         }
         self.scene_parameters = cfg.get("scene", {})
+        self.verify_reference_route = cfg.get("verify_reference_route", False)
+        self.reference_max_attempts = cfg.get("reference_max_attempts", 10)
+        if type(self.verify_reference_route) is not bool:
+            raise TypeError("verify_reference_route must be a boolean.")
+        if type(self.reference_max_attempts) is not int or self.reference_max_attempts <= 0:
+            raise ValueError("reference_max_attempts must be a positive integer.")
         self.show_gate_detail = bool(cfg.get("show_gate_detail", True))
         self.render_mode = render_mode
 
@@ -80,20 +86,43 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         self, *, seed: int | None = None, options: dict[str, Any] | None = None
     ) -> tuple[np.ndarray, dict[str, Any]]:
         super().reset(seed=seed)
-        self.scene = generate_scene(
-            self.np_random, self.max_branches, self.nodes_per_branch,
-            workspace_low=self.workspace_low, workspace_high=self.workspace_high,
-            contact_radius=self.contact_radius, target_radius=self.target_radius,
-            **self.scene_parameters,
+        reference_checks = []
+        attempts = self.reference_max_attempts if self.verify_reference_route else 1
+        self.scene = None
+        for _ in range(attempts):
+            self.scene = generate_scene(
+                self.np_random, self.max_branches, self.nodes_per_branch,
+                workspace_low=self.workspace_low, workspace_high=self.workspace_high,
+                contact_radius=self.contact_radius, target_radius=self.target_radius,
+                **self.scene_parameters,
+            )
+            self._initialize_episode()
+            info = {"seed": seed, "scene_generation_attempts": self.scene.generation_attempts}
+            if self.verify_reference_route:
+                # The probe executes physics on a separate copy, without consuming this RNG.
+                from me5418_harvesting.evaluation.scene_feasibility import verify_reference_route
+
+                check = verify_reference_route(self)
+                reference_checks.append(check)
+                if not check["success"]:
+                    continue
+                info.update(reference_route=check, reference_route_checks=reference_checks,
+                            reference_route_attempts=len(reference_checks))
+            return self._observation(), info
+        self.scene = None
+        raise ValueError(
+            f"Could not certify a reference route after {attempts} candidates. "
+            f"Last check: {reference_checks[-1]['reason']}. "
+            "This does not prove that the candidate scenes are infeasible."
         )
+
+    def _initialize_episode(self) -> None:
+        """Initialize episode statistics before certification or agent interaction."""
         self.step_count = 0
         self.total_travel = 0.0
         self.peak_deformation = 0.0
         self.contact_steps = 0
         self.trajectory = [self.scene.end_effector.copy()]
-        return self._observation(), {
-            "seed": seed, "scene_generation_attempts": self.scene.generation_attempts,
-        }
 
     def step(self, action: int) -> tuple[np.ndarray, float, bool, bool, dict[str, Any]]:
         """Apply an action, resolve contact, and evaluate the transition."""
@@ -335,6 +364,7 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         label = f" | {self.demo_policy}" if self.demo_policy else ""
         title = {
             "mixed_canopy": "Mixed-canopy harvesting",
+            "multi_route": "Multi-route harvesting",
             "easy_gate": "Easy wide-passage harvesting",
         }.get(self.scene.layout, "Deformable tip-gap harvesting")
         axes.set_title(f"{title} | step {self.step_count}{label}", fontsize=12)
@@ -412,7 +442,7 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
             fontsize=8,
             color="#374151",
         )
-        if self.scene.layout == "mixed_canopy":
+        if self.scene.layout in {"mixed_canopy", "multi_route"}:
             for number, ((first, second), kind) in enumerate(
                 zip(self.scene.passage_pairs, self.scene.passage_kinds), start=1
             ):
@@ -423,7 +453,9 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
                 color = {"pushable": "#1d4ed8", "closed": "#92400e", "open": "#047857"}[kind]
                 axes.text(
                     center[0] + 0.012, center[1] + 0.025,
-                    f"P{number}: {kind}", fontsize=6.5, color=color,
+                    (f"R{(number - 1) // 2 + 1} {'lower' if number % 2 else 'upper'}: {kind}"
+                     if self.scene.layout == "multi_route" else f"P{number}: {kind}"),
+                    fontsize=6.5, color=color,
                     bbox={"facecolor": "white", "alpha": 0.85, "edgecolor": "none", "pad": 1},
                 )
         if self.show_gate_detail and self.scene.passage_pairs:

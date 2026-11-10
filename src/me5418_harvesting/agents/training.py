@@ -25,6 +25,8 @@ class TrainingConfig:
     evaluation_interval: int = 20
     evaluation_episodes: int = 5
     seed: int = 0
+    validation_seed: int | None = None
+    evaluate_before_training: bool = False
 
     def __post_init__(self):
         for name in (
@@ -40,6 +42,16 @@ class TrainingConfig:
                 raise ValueError(f"{name} must be a nonnegative integer.")
         if not 0 <= self.epsilon_end <= self.epsilon_start <= 1:
             raise ValueError("Require 0 <= epsilon_end <= epsilon_start <= 1.")
+        if type(self.evaluate_before_training) is not bool:
+            raise TypeError("evaluate_before_training must be a boolean.")
+        if self.validation_seed is not None:
+            if type(self.validation_seed) is not int or self.validation_seed < 0:
+                raise ValueError("validation_seed must be a nonnegative integer or null.")
+            if (
+                self.validation_seed < self.seed + self.episodes
+                and self.seed < self.validation_seed + self.evaluation_episodes
+            ):
+                raise ValueError("Training and validation seed ranges must not overlap.")
 
     def epsilon(self, steps: int) -> float:
         fraction = min(max(steps, 0) / self.epsilon_decay_steps, 1.0)
@@ -69,13 +81,18 @@ def load_settings(dqn_path: Path, training_path: Path):
     return DQNConfig(**network), TrainingConfig(**training)
 
 
-def episode_metrics(reward: float, steps: int, info: dict) -> dict:
+def episode_metrics(
+    reward: float, steps: int, info: dict, stationary_steps: int = 0, blocked_steps: int = 0,
+) -> dict:
     return {
         "return": reward, "steps": steps,
         "success": bool(info["success"]), "damage": bool(info["damage"]),
         "budget_exhausted": bool(info["budget_exhausted"]),
         "travel_distance": float(info["travel_distance"]),
         "peak_deformation": float(info["peak_normalized_deformation"]),
+        "distance_to_target": float(info["distance_to_target"]),
+        "stationary_steps": stationary_steps,
+        "blocked_steps": blocked_steps,
     }
 
 
@@ -87,14 +104,20 @@ def evaluate(agent: DQNAgent, env: HarvestingEnv, episodes: int, seed: int) -> d
     for index in range(episodes):
         observation, _ = env.reset(seed=seed + index)
         total_reward, steps = 0.0, 0
+        stationary_steps, blocked_steps = 0, 0
         while True:
             action = agent.act(observation)
             observation, reward, terminated, truncated, info = env.step(action)
             total_reward += reward
             steps += 1
+            stationary_steps += int(np.linalg.norm(info["executed_motion"]) <= 1e-6)
+            blocked_steps += int(info["collision_blocked"])
             if terminated or truncated:
                 break
-        records.append({"seed": seed + index, **episode_metrics(total_reward, steps, info)})
+        records.append({
+            "seed": seed + index,
+            **episode_metrics(total_reward, steps, info, stationary_steps, blocked_steps),
+        })
     successful_steps = [row["steps"] for row in records if row["success"]]
     return {
         "episodes": episodes, "seed": seed,
@@ -105,6 +128,13 @@ def evaluate(agent: DQNAgent, env: HarvestingEnv, episodes: int, seed: int) -> d
         "mean_success_steps": float(np.mean(successful_steps)) if successful_steps else None,
         "mean_travel_distance": float(np.mean([row["travel_distance"] for row in records])),
         "mean_peak_deformation": float(np.mean([row["peak_deformation"] for row in records])),
+        "mean_distance_to_target": float(np.mean([row["distance_to_target"] for row in records])),
+        "mean_stationary_fraction": float(np.mean([
+            row["stationary_steps"] / row["steps"] for row in records
+        ])),
+        "mean_blocked_fraction": float(np.mean([
+            row["blocked_steps"] / row["steps"] for row in records
+        ])),
         "records": records,
     }
 
@@ -123,7 +153,9 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
     agent = DQNAgent(env, dqn, config.seed)
     replay = ReplayBuffer(dqn.replay_capacity)
     # Fixed validation scenes are disjoint from this run's training scenes.
-    validation_seed = config.seed + config.episodes
+    validation_seed = (
+        config.seed + config.episodes if config.validation_seed is None else config.validation_seed
+    )
     settings = {
         "environment": environment_config, "dqn": asdict(dqn),
         "training": asdict(config), "validation_seed": validation_seed,
@@ -132,11 +164,21 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
     (output / "settings.json").write_text(json.dumps(settings, indent=2), encoding="utf-8")
     global_steps, best_score = 0, (-1.0, -float("inf"))
     last_loss = None
+    initial_validation = None
     try:
+        if config.evaluate_before_training:
+            initial_validation = evaluate(
+                agent, evaluation_env, config.evaluation_episodes, validation_seed,
+            )
+            (output / "initial_validation.json").write_text(
+                json.dumps(initial_validation, indent=2, allow_nan=False), encoding="utf-8",
+            )
+            print(json.dumps({"initial_validation": initial_validation}, allow_nan=False), flush=True)
         with (output / "metrics.jsonl").open("w", encoding="utf-8") as log:
             for episode in range(1, config.episodes + 1):
                 observation, _ = env.reset(seed=config.seed + episode - 1)
                 total_reward, steps, episode_updates = 0.0, 0, 0
+                stationary_steps, blocked_steps = 0, 0
                 while True:
                     epsilon = config.epsilon(global_steps)
                     action = agent.act(observation, epsilon)
@@ -149,6 +191,8 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
                     global_steps += 1
                     steps += 1
                     total_reward += reward
+                    stationary_steps += int(np.linalg.norm(info["executed_motion"]) <= 1e-6)
+                    blocked_steps += int(info["collision_blocked"])
                     if (
                         global_steps >= config.learning_starts
                         and len(replay) >= dqn.batch_size
@@ -164,7 +208,7 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
                     "episode": episode, "environment_steps": global_steps,
                     "updates": agent.learner.update_count, "episode_updates": episode_updates,
                     "epsilon": epsilon, "replay_size": len(replay), "last_loss": last_loss,
-                    **episode_metrics(total_reward, steps, info),
+                    **episode_metrics(total_reward, steps, info, stationary_steps, blocked_steps),
                 }
                 if episode % config.evaluation_interval == 0 or episode == config.episodes:
                     validation = evaluate(
@@ -186,6 +230,8 @@ def train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, outp
             "last_loss": last_loss, "validation": validation,
             "checkpoint": str(output / "latest.pt"),
         }
+        if initial_validation is not None:
+            summary["initial_validation"] = initial_validation
         (output / "summary.json").write_text(
             json.dumps(summary, indent=2, allow_nan=False), encoding="utf-8",
         )
