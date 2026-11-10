@@ -13,6 +13,7 @@ evidence for the final report, not a claim that a final trained model is ready.
 | [004: supervised demonstration pretraining](004_supervised_pretraining.md) | Does an action-margin objective improve the same pretraining and online schedule? | 2000 pretraining + 1033 online updates; 2/30 training successes; all greedy validation stages 0/3 successes. Final damage 1/3; no task-success benefit established. |
 | [005: fixed-scene fitting diagnostic](005_fixed_scene_fit.md) | Can the existing encoder and MLP fit one fixed multi-route demonstration under TD+margin, margin-only or cross-entropy? | After 2000 updates each: 19/35, 25/35 and 25/35 action matches; all same-scene rollouts time out. Underfitting persists without TD. |
 | [006: fixed-scene optimization budget](006_fixed_scene_budget.md) | Does ten times the update budget resolve the single-scene underfitting with otherwise identical settings? | At 20000 updates, margin-only and CE fit 35/35 actions and succeed in 35 steps. TD+margin fits 33/35 but fails by damage. Fixed-scene memorization demonstrated; generalization untested. |
+| [007: staged supervision and TD retention](007_staged_retention.md) | After supervised fitting succeeds, do TD-only or TD-plus-margin updates preserve the known route? | Protocol recorded before execution; outcomes pending. |
 
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
