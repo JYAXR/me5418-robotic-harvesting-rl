@@ -616,6 +616,28 @@ The summarizer displays all stages separately, and the archive includes
 `pretraining.json`, `pretraining_metrics.jsonl` and `pretraining_validation.json`.
 See the [attempt 003 protocol and results](docs/experiments/003_demonstration_pretraining.md).
 
+To test supervised action margins in the pretraining stage:
+
+```bash
+python scripts/train_dqn.py --config configs/environment_multiroute.yaml --dqn-config configs/dqn_multiroute_pilot.yaml --training-config configs/training_multiroute_supervised.yaml --output-dir results/training/multiroute_supervised_20261110
+```
+
+This configuration adds a supervised margin objective with weight 1.0 and
+margin 0.8 during the same 2000 demonstration-only updates. The margin is a
+soft penalty encouraging the demonstrated action to outrank alternatives;
+it does not guarantee that separation. `demonstration_pretrain_weight` defaults
+to zero, preserving the original TD-only updates. A positive weight requires
+enabled pretraining. Online updates remain ordinary DQN and never treat
+exploratory actions as expert labels.
+
+The loss follows the large-margin objective in
+[Hester et al., AAAI 2018](https://arxiv.org/abs/1704.03732), implemented within
+this project's learner. This limited objective is not a full DQfD implementation.
+TD, supervised and total losses are logged separately; demonstration minibatch
+action agreement is a training diagnostic, not held-out task performance.
+The [attempt 004 record](docs/experiments/004_supervised_pretraining.md)
+declares the configuration, costs, source and results.
+
 ## Testing
 
 ```bash

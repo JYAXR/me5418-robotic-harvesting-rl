@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from copy import deepcopy
 from dataclasses import dataclass
+from math import isfinite
+from numbers import Real
 
 import numpy as np
 import torch
@@ -78,6 +80,33 @@ def td_loss(
     return F.smooth_l1_loss(chosen_q, targets), chosen_q, targets
 
 
+def validate_demonstration_loss(weight: float, margin: float) -> None:
+    """Reject invalid supervision settings before updating model or optimizer state."""
+    if isinstance(weight, bool) or not isinstance(weight, Real) or not isfinite(weight) or weight < 0:
+        raise ValueError("Demonstration weight must be finite and nonnegative.")
+    if isinstance(margin, bool) or not isinstance(margin, Real) or not isfinite(margin) or margin <= 0:
+        raise ValueError("Demonstration margin must be finite and positive.")
+
+
+def demonstration_margin_loss(
+    q_values: torch.Tensor, actions: torch.Tensor, margin: float,
+) -> torch.Tensor:
+    """Prefer each demonstrated action by a fixed Q-value margin.
+
+    Uses the large-margin objective described by Hester et al., AAAI 2018:
+    https://arxiv.org/abs/1704.03732. The surrounding learner remains ordinary
+    one-step DQN; this objective alone does not implement the full DQfD method.
+    """
+    validate_demonstration_loss(0.0, margin)
+    if (q_values.ndim != 2 or q_values.shape[0] == 0 or actions.ndim != 1
+            or actions.shape[0] != q_values.shape[0]):
+        raise ValueError("Expected nonempty batched Q values and one demonstration action per row.")
+    offsets = torch.full_like(q_values, margin)
+    offsets.scatter_(1, actions[:, None], 0.0)
+    demonstrated_q = q_values.gather(1, actions[:, None]).squeeze(1)
+    return ((q_values + offsets).max(dim=1).values - demonstrated_q).mean()
+
+
 @dataclass(frozen=True)
 class UpdateStats:
     """Diagnostics for one update; both losses use the same Bellman targets."""
@@ -87,6 +116,11 @@ class UpdateStats:
     gradient_norm: float
     parameter_delta_norm: float
     target_synchronized: bool
+    td_loss_before: float = 0.0
+    td_loss_after: float = 0.0
+    demonstration_loss_before: float = 0.0
+    demonstration_loss_after: float = 0.0
+    demonstration_action_accuracy: float | None = None
 
 
 class DQNUpdater:
@@ -100,12 +134,26 @@ class DQNUpdater:
         self.optimizer = torch.optim.Adam(self.online.parameters(), lr=config.learning_rate)
         self.update_count = 0
 
-    def update(self, batch: TransitionBatch) -> UpdateStats:
-        """Backpropagate, clip gradients, update parameters, and periodically sync."""
+    def update(
+        self, batch: TransitionBatch, *,
+        demonstration_weight: float = 0.0, demonstration_margin: float = 0.8,
+    ) -> UpdateStats:
+        """Update DQN; positive supervision weight requires a demonstration-only batch."""
+        validate_demonstration_loss(demonstration_weight, demonstration_margin)
         self.online.train()
         self.optimizer.zero_grad(set_to_none=True)
         parameters_before = nn.utils.parameters_to_vector(self.online.parameters()).detach().clone()
         loss, _, targets = td_loss(self.online, self.target, batch, self.config.gamma)
+        td_before = loss
+        demonstration_before = loss.new_zeros(())
+        accuracy = None
+        if demonstration_weight > 0:
+            q_values = self.online(batch.observations)
+            demonstration_before = demonstration_margin_loss(
+                q_values, batch.actions, demonstration_margin,
+            )
+            accuracy = float((q_values.detach().argmax(dim=1) == batch.actions).float().mean())
+            loss = loss + demonstration_weight * demonstration_before
         if not torch.isfinite(loss):
             raise FloatingPointError("The DQN loss is not finite.")
         loss.backward()
@@ -114,8 +162,16 @@ class DQNUpdater:
         )
         self.optimizer.step()
         with torch.no_grad():
-            chosen_q = self.online(batch.observations).gather(1, batch.actions[:, None]).squeeze(1)
-            loss_after = F.smooth_l1_loss(chosen_q, targets)
+            q_values_after = self.online(batch.observations)
+            chosen_q = q_values_after.gather(1, batch.actions[:, None]).squeeze(1)
+            td_after = F.smooth_l1_loss(chosen_q, targets)
+            loss_after = td_after
+            demonstration_after = loss_after.new_zeros(())
+            if demonstration_weight > 0:
+                demonstration_after = demonstration_margin_loss(
+                    q_values_after, batch.actions, demonstration_margin,
+                )
+                loss_after = loss_after + demonstration_weight * demonstration_after
             parameters_after = nn.utils.parameters_to_vector(self.online.parameters())
             delta = torch.linalg.vector_norm(parameters_after - parameters_before)
             if not torch.isfinite(parameters_after).all() or not torch.isfinite(loss_after):
@@ -125,5 +181,7 @@ class DQNUpdater:
         if synchronize:
             self.target.load_state_dict(self.online.state_dict())
         return UpdateStats(
-            loss.item(), loss_after.item(), gradient_norm.item(), delta.item(), synchronize
+            loss.item(), loss_after.item(), gradient_norm.item(), delta.item(), synchronize,
+            td_before.item(), td_after.item(),
+            demonstration_before.item(), demonstration_after.item(), accuracy,
         )

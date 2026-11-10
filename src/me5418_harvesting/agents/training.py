@@ -11,6 +11,7 @@ import yaml
 from me5418_harvesting.agents.demonstrations import seed_replay_from_reference
 from me5418_harvesting.agents.dqn import DQNConfig
 from me5418_harvesting.agents.dqn_agent import DQNAgent
+from me5418_harvesting.agents.dqn_learning import validate_demonstration_loss
 from me5418_harvesting.agents.pretraining import pretrain_on_replay
 from me5418_harvesting.agents.replay_buffer import ReplayBuffer
 from me5418_harvesting.agents.run_record import begin_run, finish_run
@@ -33,6 +34,8 @@ class TrainingConfig:
     demonstration_episodes: int = 0
     demonstration_seed: int = 10000
     demonstration_pretrain_updates: int = 0
+    demonstration_pretrain_weight: float = 0.0
+    demonstration_pretrain_margin: float = 0.8
 
     def __post_init__(self):
         for name in (
@@ -51,6 +54,11 @@ class TrainingConfig:
                 raise ValueError(f"{name} must be a nonnegative integer.")
         if self.demonstration_pretrain_updates and not self.demonstration_episodes:
             raise ValueError("Demonstration pretraining requires demonstration episodes.")
+        validate_demonstration_loss(
+            self.demonstration_pretrain_weight, self.demonstration_pretrain_margin,
+        )
+        if self.demonstration_pretrain_weight > 0 and not self.demonstration_pretrain_updates:
+            raise ValueError("Supervised demonstration loss requires pretraining updates.")
         if not 0 <= self.epsilon_end <= self.epsilon_start <= 1:
             raise ValueError("Require 0 <= epsilon_end <= epsilon_start <= 1.")
         if type(self.evaluate_before_training) is not bool:
@@ -228,6 +236,8 @@ def _train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, out
         if config.demonstration_pretrain_updates:
             pretraining = pretrain_on_replay(
                 agent, replay, config.demonstration_pretrain_updates, config.seed, output,
+                demonstration_weight=config.demonstration_pretrain_weight,
+                demonstration_margin=config.demonstration_pretrain_margin,
             )
             pretraining_updates = pretraining["completed_updates"]
             pretraining_validation = evaluate(

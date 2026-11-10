@@ -3,6 +3,7 @@
 import argparse
 import json
 from pathlib import Path
+from statistics import fmean
 
 import matplotlib
 
@@ -10,7 +11,40 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 
-def plot_pretraining_run(run_dir: Path, records: list[dict], checkpoints: list[dict], seed: int):
+def trailing_mean(values: list[float], window: int = 50) -> list[float]:
+    """Use the available prefix until a full trailing window is available."""
+    return [fmean(values[max(0, index + 1 - window):index + 1])
+            for index in range(len(values))]
+
+
+def supervision_diagnostics(pretraining: dict, losses: list[dict]) -> dict | None:
+    """Summarize sampled demonstration agreement without labeling it validation."""
+    weight = pretraining.get("demonstration_weight", 0.0)
+    if weight <= 0:
+        return None
+    if not losses:
+        raise ValueError("Supervised pretraining needs per-update diagnostic records.")
+    accuracies = [row["demonstration_action_accuracy"] for row in losses]
+    if any(value is None or not 0 <= value <= 1 for value in accuracies):
+        raise ValueError("Demonstration batch accuracy must be between zero and one.")
+    return {
+        "weight": weight,
+        "margin": pretraining["demonstration_margin"],
+        "mean_first_100_batch_accuracy": fmean(accuracies[:100]),
+        "mean_last_100_batch_accuracy": fmean(accuracies[-100:]),
+        "batch_accuracy_window_updates": min(100, len(accuracies)),
+        "loss_plot_trailing_window_updates": 50,
+        "batch_accuracy_note": (
+            "Agreement on sampled training demonstrations before each update; "
+            "not held-out task success. Windows use all available updates if fewer than 100."
+        ),
+    }
+
+
+def plot_pretraining_run(
+    run_dir: Path, records: list[dict], checkpoints: list[dict], seed: int,
+    supervision: dict | None = None,
+):
     """Keep pretraining updates, online episodes and validation stages on separate axes."""
     fig, axes = plt.subplots(3, 2, figsize=(12, 10), constrained_layout=True)
     episodes = [row["episode"] for row in records]
@@ -26,14 +60,29 @@ def plot_pretraining_run(run_dir: Path, records: list[dict], checkpoints: list[d
     loss_path = run_dir / "pretraining_metrics.jsonl"
     losses = [json.loads(line) for line in loss_path.read_text(encoding="utf-8").splitlines()
               if line.strip()] if loss_path.exists() else []
-    if losses:
+    if losses and supervision is not None:
+        updates = [row["pretraining_update"] for row in losses]
+        components = (
+            ([row["loss_before"] for row in losses], "Total", "black", "-"),
+            ([row["td_loss_before"] for row in losses], "TD", "0.55", "--"),
+            ([supervision["weight"] * row["demonstration_loss_before"] for row in losses],
+             "Weighted supervision", "black", ":"),
+        )
+        for values, label, color, style in components:
+            axes[2, 0].plot(updates, trailing_mean(values), label=label,
+                            color=color, linestyle=style, linewidth=1.1)
+        axes[2, 0].set(title="Pretraining loss components (50-update mean)",
+                       ylabel="Smoothed batch loss", xlabel="Pretraining optimizer update")
+        axes[2, 0].legend(fontsize=8)
+    elif losses:
         axes[2, 0].plot([row["pretraining_update"] for row in losses],
                         [row["loss_before"] for row in losses], color="black", linewidth=0.7)
     else:
         axes[2, 0].text(0.5, 0.5, "No per-update loss record", ha="center", va="center",
                         transform=axes[2, 0].transAxes)
-    axes[2, 0].set(title="Demonstration pretraining loss", ylabel="Batch Huber loss",
-                   xlabel="Pretraining optimizer update")
+    if supervision is None:
+        axes[2, 0].set(title="Demonstration pretraining loss", ylabel="Batch Huber loss",
+                       xlabel="Pretraining optimizer update")
     for key, label, style in (("success_rate", "Success", "-o"),
                               ("damage_rate", "Damage", "--s")):
         axes[0, 1].plot(positions, [row[key] for row in validations], style,
@@ -147,7 +196,14 @@ def summarize(run_dir: Path) -> dict:
             "pretraining_validation": pretraining_validation,
             "pretraining": summary["pretraining"], "validation_checkpoints": checkpoints,
         })
-        plot_pretraining_run(run_dir, records, checkpoints, settings["training"]["seed"])
+        loss_path = run_dir / "pretraining_metrics.jsonl"
+        losses = [json.loads(line) for line in loss_path.read_text(encoding="utf-8").splitlines()
+                  if line.strip()] if loss_path.exists() else []
+        supervision = supervision_diagnostics(summary["pretraining"], losses)
+        if supervision is not None:
+            result["pretraining_supervision"] = supervision
+        plot_pretraining_run(run_dir, records, checkpoints, settings["training"]["seed"],
+                             supervision)
     (run_dir / "analysis.json").write_text(
         json.dumps(result, indent=2, allow_nan=False), encoding="utf-8",
     )
