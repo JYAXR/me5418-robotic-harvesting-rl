@@ -1,0 +1,53 @@
+{
+  "format_version": 1,
+  "archived_at_utc": "2026-11-10T08:21:53.208578+00:00",
+  "source_run_dir": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\multiroute_replay_seeded_20261110",
+  "status": "completed",
+  "status_source": "run_status.json",
+  "files": {
+    "settings.json": {
+      "sha256": "353cb67457c6651ced0e29370d003b16bc98575c2cbbf3a941a36abcc3be63e6",
+      "bytes": 1825
+    },
+    "summary.json": {
+      "sha256": "3d664233939e833ce6cefff85661ded418989edffc6397b9f690fef457126946",
+      "bytes": 8763
+    },
+    "analysis.json": {
+      "sha256": "2968e534d990e1ea98f31edd72a207a9258fe37d83879f08dacf658bb69beb5a",
+      "bytes": 3712
+    },
+    "initial_validation.json": {
+      "sha256": "aa3d7f9aa9066aeb7007afffed34b2dfc76f04b49cf70543fa92f729c49ead03",
+      "bytes": 1523
+    },
+    "demonstrations.json": {
+      "sha256": "570d91803d5204782e271ba5c88d8acdfca88fa931ead88f6ffe7acc5a106d5a",
+      "bytes": 4764
+    },
+    "provenance.json": {
+      "sha256": "be1ed89bb9e5bd4e58ed735d1f8118678879d5a70fc0b3c3710a9ce2c9be179d",
+      "bytes": 5820
+    },
+    "run_status.json": {
+      "sha256": "d6feb22475c0d8a92c1b51a7738e66ca02d8f8208008235c5cf04195be2290b0",
+      "bytes": 439
+    },
+    "metrics.jsonl": {
+      "sha256": "0fb7883db3aa66c52db2c5d75ba1bf8283da08f57c10937b246e36f0d05fdfe8",
+      "bytes": 16898
+    },
+    "learning_diagnostics.png": {
+      "sha256": "879720987ffca9c9b24c8f162def2dd479d72c4c8a1783fe0294481fa5c1a91f",
+      "bytes": 187113
+    }
+  },
+  "missing_evidence_files": [
+    "source_manifest.json"
+  ],
+  "notes": [
+    "Missing evidence files may be optional or unavailable in older or incomplete runs.",
+    "Completed describes execution status, not policy performance or successful learning.",
+    "Checkpoints and raw console logs remain in the local run directory."
+  ]
+}

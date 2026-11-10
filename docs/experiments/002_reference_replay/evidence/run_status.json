@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "started_at_utc": "2026-11-10T08:14:05.469069+00:00",
+  "finished_at_utc": "2026-11-10T08:20:49.095204+00:00",
+  "checkpoints": {
+    "best.pt": {
+      "sha256": "432fe71cc09e8c91b61ce15dfde7b1e37df375e324918fe653a3bfd3f8bedc5a",
+      "bytes": 626481
+    },
+    "latest.pt": {
+      "sha256": "40ec4a7c6ecd234bf3e76ea4404c25b736bc72953d7373e1a12704a0a9b69928",
+      "bytes": 626505
+    }
+  }
+}

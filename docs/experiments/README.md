@@ -8,7 +8,7 @@ evidence for the final report, not a claim that a final trained model is ready.
 | Attempt | Question | Observed outcome |
 | --- | --- | --- |
 | [001: multi-route DQN from scratch](001_multiroute_from_scratch.md) | Can the unchanged DQN and reward solve the new multi-route scene in a bounded pilot? | 0/30 training successes; 0/3 final validation successes; reference planner 3/3. |
-| [002: reference replay initialization](002_reference_replay.md) | Do ten training-only reference trajectories help with the same online episode budget? | Running; outcome will be recorded after completion. |
+| [002: reference replay initialization](002_reference_replay.md) | Do ten training-only reference trajectories help with the same online episode budget? | 421 demonstration transitions; 2/30 online training successes; 0/3 final validation successes, with damage in 1/3. No reliable improvement established. |
 
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
