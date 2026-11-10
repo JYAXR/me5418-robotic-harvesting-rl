@@ -11,6 +11,7 @@ import yaml
 from me5418_harvesting.agents.demonstrations import seed_replay_from_reference
 from me5418_harvesting.agents.dqn import DQNConfig
 from me5418_harvesting.agents.dqn_agent import DQNAgent
+from me5418_harvesting.agents.pretraining import pretrain_on_replay
 from me5418_harvesting.agents.replay_buffer import ReplayBuffer
 from me5418_harvesting.agents.run_record import begin_run, finish_run
 from me5418_harvesting.envs.harvesting_env import HarvestingEnv
@@ -31,6 +32,7 @@ class TrainingConfig:
     evaluate_before_training: bool = False
     demonstration_episodes: int = 0
     demonstration_seed: int = 10000
+    demonstration_pretrain_updates: int = 0
 
     def __post_init__(self):
         for name in (
@@ -40,10 +42,15 @@ class TrainingConfig:
             value = getattr(self, name)
             if type(value) is not int or value <= 0:
                 raise ValueError(f"{name} must be a positive integer.")
-        for name in ("learning_starts", "seed", "demonstration_episodes", "demonstration_seed"):
+        for name in (
+            "learning_starts", "seed", "demonstration_episodes", "demonstration_seed",
+            "demonstration_pretrain_updates",
+        ):
             value = getattr(self, name)
             if type(value) is not int or value < 0:
                 raise ValueError(f"{name} must be a nonnegative integer.")
+        if self.demonstration_pretrain_updates and not self.demonstration_episodes:
+            raise ValueError("Demonstration pretraining requires demonstration episodes.")
         if not 0 <= self.epsilon_end <= self.epsilon_start <= 1:
             raise ValueError("Require 0 <= epsilon_end <= epsilon_start <= 1.")
         if type(self.evaluate_before_training) is not bool:
@@ -192,8 +199,11 @@ def _train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, out
     last_loss = None
     initial_validation = None
     demonstrations = None
+    pretraining = None
+    pretraining_validation = None
+    pretraining_updates = 0
     try:
-        if config.evaluate_before_training:
+        if config.evaluate_before_training or config.demonstration_pretrain_updates:
             initial_validation = evaluate(
                 agent, evaluation_env, config.evaluation_episodes, validation_seed,
             )
@@ -215,6 +225,25 @@ def _train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, out
             print(json.dumps({"demonstrations": demonstrations}, allow_nan=False), flush=True)
             if demonstrations["accepted_transitions"] == 0:
                 raise RuntimeError("No successful demonstration transitions were collected.")
+        if config.demonstration_pretrain_updates:
+            pretraining = pretrain_on_replay(
+                agent, replay, config.demonstration_pretrain_updates, config.seed, output,
+            )
+            pretraining_updates = pretraining["completed_updates"]
+            pretraining_validation = evaluate(
+                agent, evaluation_env, config.evaluation_episodes, validation_seed,
+            )
+            (output / "pretraining_validation.json").write_text(
+                json.dumps(pretraining_validation, indent=2, allow_nan=False), encoding="utf-8",
+            )
+            print(json.dumps({"pretraining_validation": pretraining_validation},
+                             allow_nan=False), flush=True)
+            # Keep a separate snapshot; best.pt still compares online checkpoints only.
+            agent.save(output / "pretrained.pt", environment_config, {
+                "phase": "pretraining", "episode": 0, "environment_steps": 0,
+                "updates": agent.learner.update_count, "pretraining_updates": pretraining_updates,
+                "online_updates": 0, "validation": pretraining_validation,
+            })
         with (output / "metrics.jsonl").open("w", encoding="utf-8") as log:
             for episode in range(1, config.episodes + 1):
                 observation, _ = env.reset(seed=config.seed + episode - 1)
@@ -248,6 +277,8 @@ def _train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, out
                 record = {
                     "episode": episode, "environment_steps": global_steps,
                     "updates": agent.learner.update_count, "episode_updates": episode_updates,
+                    "pretraining_updates": pretraining_updates,
+                    "online_updates": agent.learner.update_count - pretraining_updates,
                     "epsilon": epsilon, "replay_size": len(replay), "last_loss": last_loss,
                     **episode_metrics(total_reward, steps, info, stationary_steps, blocked_steps),
                 }
@@ -268,11 +299,16 @@ def _train(environment_config: dict, dqn: DQNConfig, config: TrainingConfig, out
         summary = {
             "episodes": config.episodes, "environment_steps": global_steps,
             "updates": agent.learner.update_count, "replay_size": len(replay),
+            "pretraining_updates": pretraining_updates,
+            "online_updates": agent.learner.update_count - pretraining_updates,
             "last_loss": last_loss, "validation": validation,
             "checkpoint": str(output / "latest.pt"),
         }
         if initial_validation is not None:
             summary["initial_validation"] = initial_validation
+        if pretraining is not None:
+            summary["pretraining"] = pretraining
+            summary["pretraining_validation"] = pretraining_validation
         if demonstrations is not None:
             summary["demonstrations"] = demonstrations
             summary["total_collection_steps"] = (

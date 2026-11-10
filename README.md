@@ -595,6 +595,27 @@ then commit and push them with the matching source/configuration changes.
 The archive command also accepts failed or incomplete runs and refuses to
 overwrite previous evidence. Model weights and raw outputs stay in `results/`.
 
+The next controlled configuration adds demonstration-only TD pretraining:
+
+```bash
+python scripts/train_dqn.py --config configs/environment_multiroute.yaml --dqn-config configs/dqn_multiroute_pilot.yaml --training-config configs/training_multiroute_pretrained.yaml --output-dir results/training/multiroute_pretrained_20261110
+```
+
+`demonstration_pretrain_updates` defaults to zero and requires enabled
+demonstration collection. This configuration performs 2000 extra DQN updates
+with an independent sampler before the unchanged online schedule. It preserves
+the optimizer and target-network state for online learning, and separately
+records pretraining and online update counts. Pretraining uses the existing
+TD loss; it does not add supervised imitation learning. `--smoke` limits an
+enabled pretraining stage to ten updates.
+
+Initial and post-pretraining validation are always recorded for an enabled
+pretraining stage. `pretrained.pt` preserves the post-pretraining policy;
+`best.pt` continues to select among online validation checkpoints only.
+The summarizer displays all stages separately, and the archive includes
+`pretraining.json`, `pretraining_metrics.jsonl` and `pretraining_validation.json`.
+See the [attempt 003 protocol and results](docs/experiments/003_demonstration_pretraining.md).
+
 ## Testing
 
 ```bash

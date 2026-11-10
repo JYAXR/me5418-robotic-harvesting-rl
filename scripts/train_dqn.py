@@ -30,6 +30,7 @@ def main():
                 config, episodes=3, learning_starts=16, epsilon_decay_steps=200,
                 evaluation_interval=3, evaluation_episodes=1,
                 demonstration_episodes=min(config.demonstration_episodes, 1),
+                demonstration_pretrain_updates=min(config.demonstration_pretrain_updates, 10),
             )
         if args.episodes is not None:
             config = replace(config, episodes=args.episodes)

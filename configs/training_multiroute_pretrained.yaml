@@ -1,0 +1,15 @@
+# Match attempt 002; add only demonstration-only DQN pretraining updates.
+episodes: 30
+learning_starts: 256
+train_frequency: 4
+epsilon_start: 1.0
+epsilon_end: 0.10
+epsilon_decay_steps: 4000
+evaluation_interval: 10
+evaluation_episodes: 3
+seed: 0
+validation_seed: 100000
+evaluate_before_training: true
+demonstration_episodes: 10
+demonstration_seed: 10000
+demonstration_pretrain_updates: 2000

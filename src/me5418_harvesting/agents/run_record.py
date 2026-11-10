@@ -67,7 +67,7 @@ def finish_run(output: Path, status: str, error: BaseException | None = None) ->
     record["checkpoints"] = {
         name: {"sha256": hashlib.sha256(path.read_bytes()).hexdigest(),
                "bytes": path.stat().st_size}
-        for name in ("best.pt", "latest.pt") if (path := output / name).is_file()
+        for name in ("best.pt", "latest.pt", "pretrained.pt") if (path := output / name).is_file()
     }
     (output / "run_status.json").write_text(
         json.dumps(record, indent=2, allow_nan=False), encoding="utf-8",
