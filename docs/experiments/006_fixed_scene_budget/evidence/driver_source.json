@@ -1,0 +1,15 @@
+{
+  "driver_sha256": "df7d02b8318582d921b98c2792cf45746a1ccea15570f9c1d4370a60dfabe4ca",
+  "runner_sha256": "7caa0d935e996d665a4ae164cd54945506fe4836bfdfd1dc0a491c5aeb1c34e9",
+  "updates_per_arm": 20000,
+  "evaluation_updates": [
+    0,
+    500,
+    1000,
+    2000,
+    5000,
+    10000,
+    20000
+  ],
+  "note": "Fresh identical initialization; no optimizer or weights resumed from attempt 005."
+}

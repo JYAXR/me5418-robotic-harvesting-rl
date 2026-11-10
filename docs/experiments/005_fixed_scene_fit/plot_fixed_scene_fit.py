@@ -15,7 +15,7 @@ ARMS = (
     ("margin_only", "Margin only", "--", "s"),
     ("cross_entropy", "Cross-entropy only", ":", "^"),
 )
-CHECKPOINTS = (0, 500, 1000, 2000)
+DEFAULT_TITLE = "Attempt 005: fixed-scene fitting diagnostic"
 
 
 def outcome_text(rollout):
@@ -30,16 +30,20 @@ def outcome_text(rollout):
     return f"{outcome}\n{rollout['steps']} steps"
 
 
-def plot(run_dir: Path, output: Path):
+def plot(run_dir: Path, output: Path, title=DEFAULT_TITLE):
     """Read completed observation snapshots only; never load or change model weights."""
     if output.exists():
         raise FileExistsError(f"Refusing to overwrite the diagnostic figure: {output}")
     if output.suffix.lower() != ".png":
         raise ValueError("The diagnostic figure output must have a .png extension.")
+    summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+    checkpoints = tuple(summary["protocol"]["evaluation_updates"])
+    if not checkpoints or tuple(sorted(set(checkpoints))) != checkpoints:
+        raise ValueError("The recorded checkpoint schedule must be nonempty, sorted, and unique.")
     observations = {}
     for name, _, _, _ in ARMS:
         rows = json.loads((run_dir / name / "observations.json").read_text(encoding="utf-8"))
-        if tuple(row["update"] for row in rows) != CHECKPOINTS:
+        if tuple(row["update"] for row in rows) != checkpoints:
             raise ValueError(f"All scheduled checkpoints must be complete before plotting: {name}")
         observations[name] = rows
     transition_counts = {
@@ -57,22 +61,24 @@ def plot(run_dir: Path, output: Path):
         "text.color": "black", "axes.labelcolor": "black", "figure.facecolor": "white",
         "axes.spines.top": False, "axes.spines.right": False,
     })
-    figure = plt.figure(figsize=(13.2, 5.8))
-    grid = figure.add_gridspec(1, 2, width_ratios=(1.0, 1.55), wspace=0.22,
+    columns = len(checkpoints)
+    figure = plt.figure(figsize=(13.2 + 1.4 * max(0, columns - 4), 5.8))
+    grid = figure.add_gridspec(1, 2, width_ratios=(1.0, 0.5 + 0.26 * columns), wspace=0.18,
                               left=0.065, right=0.98, top=0.76, bottom=0.20)
     accuracy_axis = figure.add_subplot(grid[0, 0])
     outcome_axis = figure.add_subplot(grid[0, 1])
     for name, label, line, marker in ARMS:
         rows = observations[name]
         accuracy_axis.plot(
-            CHECKPOINTS, [100 * row["fit"]["action_agreement"] for row in rows],
+            range(columns), [100 * row["fit"]["action_agreement"] for row in rows],
             color="black", linestyle=line, marker=marker, markersize=5,
             markerfacecolor="white", linewidth=1.5, label=label,
         )
     accuracy_axis.set_title("A. Demonstration action agreement", loc="left", fontsize=11, pad=13)
-    accuracy_axis.set_xlabel("Optimizer updates per arm")
+    accuracy_axis.set_xlabel("Optimizer updates (equally spaced checkpoints)", fontsize=9)
     accuracy_axis.set_ylabel("Agreement on all demonstration states (%)")
-    accuracy_axis.set_xticks(CHECKPOINTS)
+    accuracy_axis.set_xticks(range(columns), labels=[str(step) for step in checkpoints])
+    accuracy_axis.tick_params(axis="x", labelsize=9)
     accuracy_axis.set_ylim(-3, 104)
     accuracy_axis.set_yticks(range(0, 101, 20))
     accuracy_axis.grid(axis="y", color="0.85", linewidth=0.5)
@@ -87,8 +93,9 @@ def plot(run_dir: Path, output: Path):
         for index, (name, _, _, _) in enumerate(ARMS)
     ]
     table = outcome_axis.table(
-        cellText=cell_text, colLabels=["Objective"] + [str(step) for step in CHECKPOINTS],
-        cellLoc="center", colLoc="center", colWidths=[0.27, 0.18, 0.18, 0.18, 0.19],
+        cellText=cell_text, colLabels=["Objective"] + [str(step) for step in checkpoints],
+        cellLoc="center", colLoc="center",
+        colWidths=[1.6 / (columns + 1.6)] + [1.0 / (columns + 1.6)] * columns,
         bbox=[0.0, 0.13, 1.0, 0.77],
     )
     table.auto_set_font_size(False)
@@ -110,7 +117,7 @@ def plot(run_dir: Path, output: Path):
                       transform=outcome_axis.transAxes, fontsize=9)
 
     count, seed = next(iter(transition_counts)), next(iter(scene_seeds))
-    figure.suptitle("Attempt 005: fixed-scene fitting diagnostic", fontsize=15, y=0.96)
+    figure.suptitle(title, fontsize=15, y=0.96)
     figure.text(0.5, 0.885,
                 f"One multi-route training scene (seed {seed}); {count} demonstration states; "
                 "identical network initialization",
@@ -131,8 +138,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-dir", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--title", default=DEFAULT_TITLE)
     args = parser.parse_args()
-    print(plot(args.run_dir.resolve(), args.output.resolve()))
+    print(plot(args.run_dir.resolve(), args.output.resolve(), title=args.title))
 
 
 if __name__ == "__main__":

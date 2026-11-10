@@ -1,0 +1,27 @@
+{
+  "method": "collision_free_astar_replay_initialization",
+  "requested_episodes": 1,
+  "seed": 10000,
+  "successful_episodes": 1,
+  "collection_environment_steps": 35,
+  "accepted_transitions": 35,
+  "optimizer_updates": 0,
+  "records": [
+    {
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "steps": 35,
+      "return": 107.61081182360648,
+      "accepted_transitions": 35,
+      "reason": "success",
+      "scene_generation_attempts": 1,
+      "reference_route_attempts": 1,
+      "planned_actions": 35,
+      "travel_distance": 1.5399986431002617,
+      "peak_normalized_deformation": 0.0
+    }
+  ],
+  "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+}

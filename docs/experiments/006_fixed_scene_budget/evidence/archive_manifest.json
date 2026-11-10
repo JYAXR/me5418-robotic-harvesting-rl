@@ -1,0 +1,105 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\fixed_scene_budget_20261110",
+  "status": "completed",
+  "files": {
+    "settings.json": {
+      "sha256": "6ce157a2615fc3cbe877e9a92a96cf24cae99b398355ade3b46c4c35bc1a438d",
+      "bytes": 2051
+    },
+    "provenance.json": {
+      "sha256": "c122b0b5dd9476fc9079c93a112da2e3bd5330031bb5e5643d49c9029bdb87e3",
+      "bytes": 6008
+    },
+    "run_status.json": {
+      "sha256": "6c8eb522eb9c62a09e874524b282e91d750e4a4892f99123d614581d2e51951e",
+      "bytes": 166
+    },
+    "summary.json": {
+      "sha256": "a44575d7f007f886f1e2c9525d3e1590830e1636eaac98173adc9b3dc5661936",
+      "bytes": 25126
+    },
+    "demonstrations.json": {
+      "sha256": "f0774c06f9d1ee746faf4654f4466c34a99aef77e8f62bda5b1e99a201632518",
+      "bytes": 859
+    },
+    "dataset.json": {
+      "sha256": "a1b7838435d11912ff6550479fd731e56f92962286300e10497203314d13e385",
+      "bytes": 745
+    },
+    "reload_checks.json": {
+      "sha256": "0b02747bb2ace32a5f2c2beb086d60a104d6c1e464cb965626e11f3f69f57ac8",
+      "bytes": 1162
+    },
+    "fitting_diagnostic.png": {
+      "sha256": "a0fc5779e6f041dab0232544953fac27a16ec91c7124c5ed9cda70c19084b482",
+      "bytes": 229689
+    },
+    "driver_source.json": {
+      "sha256": "c4c2b2732b348409bfd6ab0fe201e52c0397e1206c856815a0ac32263cb12276",
+      "bytes": 413
+    },
+    "prefix_comparison.json": {
+      "sha256": "e4b13d3dca3389c5dc0229a7b0ae32a5f90da03d7c138260f473e2787bd242fa",
+      "bytes": 7770
+    },
+    "td_margin/observations.json": {
+      "sha256": "1b2a29ada61d86d751b0a2231767f3ebee10fb6b1aec920b07793a660b75081f",
+      "bytes": 121733
+    },
+    "td_margin/summary.json": {
+      "sha256": "e0973ef1e5116cfbe99863b473faa563bb1603ace3a32a0b1fe2fb779f03e0c7",
+      "bytes": 7152
+    },
+    "margin_only/observations.json": {
+      "sha256": "e3579b39d76fe922f94d4ebed988a50923f5ac0126f6c5ca0acbcb62bb1b28b7",
+      "bytes": 119372
+    },
+    "margin_only/summary.json": {
+      "sha256": "f4de1cb1190a4bf6250f8d427a2b32dec10378d209f932e8d9a9c0f0257423b3",
+      "bytes": 5823
+    },
+    "cross_entropy/observations.json": {
+      "sha256": "d3d3b73ffd7582e98216f688748c48000da0777d620c7b40d6a109193573c4c6",
+      "bytes": 102835
+    },
+    "cross_entropy/summary.json": {
+      "sha256": "5477cb8b480c47bda776aab7f0447a67f46b8bf355e1404befce289747ee3019",
+      "bytes": 5807
+    },
+    "td_margin/update_samples.jsonl": {
+      "sha256": "127f137c6b612d9b07b685e709dca3d9912c04778243a908a5e98e3882ac7428",
+      "bytes": 85182
+    },
+    "margin_only/update_samples.jsonl": {
+      "sha256": "c0d59cf140d40f5b45c000400b3915e12f3d9e9689305049e25dac2ac6a379e7",
+      "bytes": 33501
+    },
+    "cross_entropy/update_samples.jsonl": {
+      "sha256": "3444c34ca0103ac62793066ffd98fd3e41104f287e57a404550a84b689780e87",
+      "bytes": 34007
+    }
+  },
+  "update_log_coverage": {
+    "td_margin": {
+      "raw_sha256": "ad51cd0f1ff951c580365aabe40812f3d0da279d9d622935b26c2f1e62461501",
+      "raw_records": 20000,
+      "archived_records": 201,
+      "sampling": "first, every 100th, and last update"
+    },
+    "margin_only": {
+      "raw_sha256": "839120873a86a3f5debc723f3903eb153b40fde4fb7a3dd65550478b96dd9713",
+      "raw_records": 20000,
+      "archived_records": 201,
+      "sampling": "first, every 100th, and last update"
+    },
+    "cross_entropy": {
+      "raw_sha256": "2f1e088bb936ed84b7529c9c34c00e1f485d1d8e98da4aee6126e1813473ff9f",
+      "raw_records": 20000,
+      "archived_records": 201,
+      "sampling": "first, every 100th, and last update"
+    }
+  },
+  "archive_script_sha256": "949615762ef7c77069a39cf5ce10108ce5a9149937d63680f1ff2615469543ce",
+  "excluded": "Checkpoints, full encoded data and full update logs stay in ignored results.",
+  "note": "Observation snapshots include greedy robot paths as compact failure evidence."
+}
