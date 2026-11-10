@@ -1,0 +1,32 @@
+{
+  "sources_match": true,
+  "dataset_hash_matches": true,
+  "arms": {
+    "td_margin": {
+      "checkpoint_sha256": "927185fdc0bf55ce99af45c216ce9239e67792d600dfc2484b845c9b164b3f1a",
+      "metadata_matches": true,
+      "fit_matches_exactly": true,
+      "rollout_matches_exactly": true,
+      "evaluation_steps": 200
+    },
+    "margin_only": {
+      "checkpoint_sha256": "b9a9c7cbf02e54e703b5dd4f6c0d50581c5d51bd62786775c50fca5f944357db",
+      "metadata_matches": true,
+      "fit_matches_exactly": true,
+      "rollout_matches_exactly": true,
+      "evaluation_steps": 200
+    },
+    "cross_entropy": {
+      "checkpoint_sha256": "d52511b207fbcc96dae06983eb10248de57544217efa692fe11e53a05971d63e",
+      "metadata_matches": true,
+      "fit_matches_exactly": true,
+      "rollout_matches_exactly": true,
+      "evaluation_steps": 200
+    }
+  },
+  "additional_verification_environment_steps": 600,
+  "optimizer_updates": 0,
+  "training_scene_only": true,
+  "note": "Additional post-run verification; excludes reset feasibility probes.",
+  "verifier_sha256": "89c7e9855b17a6362fc2a4730a118300796f86abc5236ff3792f8a925b4f806f"
+}

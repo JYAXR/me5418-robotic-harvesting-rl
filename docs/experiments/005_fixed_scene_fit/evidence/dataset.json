@@ -1,0 +1,32 @@
+{
+  "sha256": "9cf50273dde5fd8c42064417ede1790bf40559eae880e6f85ead76e98f7b392a",
+  "transitions": 35,
+  "effective_batch_size": 35,
+  "configured_batch_size_unused": 64,
+  "observation_size": 341,
+  "action_order": [
+    "north_small",
+    "south_small",
+    "east_small",
+    "west_small",
+    "north_large",
+    "south_large",
+    "east_large",
+    "west_large"
+  ],
+  "label_counts": [
+    6,
+    4,
+    6,
+    0,
+    3,
+    5,
+    11,
+    0
+  ],
+  "majority_label_agreement": 0.3142857142857143,
+  "duplicate_input_groups_with_conflicting_actions": 0,
+  "varying_input_dimensions": 5,
+  "budget_input_retained": true,
+  "note": "The budget feature and fixed geometry can support route-order memorization."
+}

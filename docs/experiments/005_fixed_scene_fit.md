@@ -65,5 +65,43 @@ python docs/experiments/005_fixed_scene_fit/run_fixed_scene_fit.py --output-dir 
 
 ## Outcomes
 
-Pending the predeclared diagnostic run. Retain unsuccessful arms alongside any
-successful arm; do not replace them with tuned reruns.
+Executed from commit `c90b0a6` on 10 November 2026, 09:38:02--09:39:19 UTC.
+The single reference route succeeded in **35 steps**, return **107.6108**, without
+deformation or damage. All arms used those same 35 transitions and identical
+initial parameter hashes. There were no contradictory duplicate input labels.
+
+| Arm | Final full-data agreement | Neural rollout | First wrong reference action |
+| --- | --- | --- | --- |
+| TD + margin | 19/35 (54.3%) | Budget exhausted at 200 steps | Step 6: east-small instead of north-small |
+| Margin only | 25/35 (71.4%) | Budget exhausted at 200 steps | Step 6: east-small instead of north-small |
+| Cross-entropy | 25/35 (71.4%) | Budget exhausted at 200 steps | Step 6: east-small instead of north-small |
+
+All twelve scheduled rollouts failed without damage. At the final checkpoint the
+policies stalled near the first gate, with 192--193 stationary actions out of 200.
+Final returns were approximately 1.5953 and the target remained about 0.679 away.
+The three arms made **6000 optimizer updates** in total; collection used **35
+actions** and scheduled neural evaluation used **2400 actions**. An additional
+**600 actions** independently verified the three reloaded final checkpoints;
+their metrics, full trajectories and saved hashes matched exactly.
+
+This is underfitting even on a known scene, not merely a failure on new layouts.
+Adding TD reduced agreement relative to the identical margin-only control in
+this particular run, but neither supervised control solved the route either.
+All curves were still improving at the tested checkpoints. Only five input
+dimensions varied along the collision-free demonstration (robot position, target
+offset and remaining budget); this observation does not prove an encoding bug.
+The next recorded diagnostic will change only the update budget, to test whether
+the present fitting failure persists with more optimization.
+
+Verification: **218 tests passed**, Ruff passed, all 48 launch source hashes and
+the runner hash matched, all 12 scheduled checkpoint hashes were checked, and
+the final policies were independently reloaded. No production learning defaults,
+reward rules, environment generation or submitted reports were changed.
+
+Evidence: [figure](005_fixed_scene_fit/evidence/fitting_diagnostic.png),
+[summary](005_fixed_scene_fit/evidence/summary.json),
+[reload verification](005_fixed_scene_fit/evidence/reload_checks.json), and
+[archive manifest](005_fixed_scene_fit/evidence/archive_manifest.json).
+The archive includes every checkpoint observation and first/every-100th/last
+update samples; full update logs, encoded data and weights remain in the local
+ignored run directory. The manifest records full-log hashes and sample coverage.

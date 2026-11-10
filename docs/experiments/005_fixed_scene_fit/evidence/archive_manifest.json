@@ -1,0 +1,97 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\fixed_scene_fit_20261110",
+  "status": "completed",
+  "files": {
+    "settings.json": {
+      "sha256": "2789409445291e7b912df6525267ea9248f099f07b5532f6893712fb0f34a998",
+      "bytes": 2009
+    },
+    "provenance.json": {
+      "sha256": "1025a636f83e49b131ec65dbea3c369f74e304ce7a6096a3025083bf13eeeb69",
+      "bytes": 6005
+    },
+    "run_status.json": {
+      "sha256": "d091255b3e206bfc683b67818bdaca76628dc4b8893cc6360973f4768752db44",
+      "bytes": 166
+    },
+    "summary.json": {
+      "sha256": "4bde436994c3db49aef29a403428357a4219e1090fe569be359a576fce549b2e",
+      "bytes": 75978
+    },
+    "demonstrations.json": {
+      "sha256": "f0774c06f9d1ee746faf4654f4466c34a99aef77e8f62bda5b1e99a201632518",
+      "bytes": 859
+    },
+    "dataset.json": {
+      "sha256": "a1b7838435d11912ff6550479fd731e56f92962286300e10497203314d13e385",
+      "bytes": 745
+    },
+    "reload_checks.json": {
+      "sha256": "1e5fbca35253fead380b5a983a840d871b861aaa09c6e8dc3d026c6833e07602",
+      "bytes": 1165
+    },
+    "fitting_diagnostic.png": {
+      "sha256": "915e7db5f5de34e147896ae96dcb4182bd9bff35b17edfd96d1ac5f74edaf757",
+      "bytes": 183666
+    },
+    "td_margin/observations.json": {
+      "sha256": "0501fcd7672ffd4e73117199fbdacae7924384fa6943aa5ed94cd1117a436531",
+      "bytes": 86360
+    },
+    "td_margin/summary.json": {
+      "sha256": "0e8a8fb53c72df92a854c768fb5f9b23ac3768d6168b5953e0329ef48edc6136",
+      "bytes": 20022
+    },
+    "margin_only/observations.json": {
+      "sha256": "9cc06cead413843f51151088bb6ad4313c39a8fc1febaab9d56b5b2184f3a43a",
+      "bytes": 86360
+    },
+    "margin_only/summary.json": {
+      "sha256": "f18520b13fee7d2aac22f3dfbf53ff67deec1a504c1b15e2fcc9cd4e29c4582e",
+      "bytes": 20021
+    },
+    "cross_entropy/observations.json": {
+      "sha256": "a40adb2a220787ca84a6494ab2d7fdc3e8889a2ee6955c8dd9a80c1d400a4b0b",
+      "bytes": 86368
+    },
+    "cross_entropy/summary.json": {
+      "sha256": "f9197b0a80338cbe4e69880ad48f3a60b5fc406a942834b41761fa4500863e50",
+      "bytes": 20018
+    },
+    "td_margin/update_samples.jsonl": {
+      "sha256": "c64af532b597d9d1a70d0e7daa756cbdd4ddfb50299fca37700e94989ab9bbfe",
+      "bytes": 8834
+    },
+    "margin_only/update_samples.jsonl": {
+      "sha256": "8969dab3ee53ca94a849cf68258c0d31c96cd6c3073b43aeb712c0f9bd56b8e8",
+      "bytes": 3462
+    },
+    "cross_entropy/update_samples.jsonl": {
+      "sha256": "249ac5949ba24ec4e6311c2cef9e6a9569532a37edf7c8078d19baac49d22807",
+      "bytes": 3471
+    }
+  },
+  "update_log_coverage": {
+    "td_margin": {
+      "raw_sha256": "e2ea394aade9a10882deadaebb9f931bd4a9063d25e3d653b7427b08a3750029",
+      "raw_records": 2000,
+      "archived_records": 21,
+      "sampling": "first, every 100th, and last update"
+    },
+    "margin_only": {
+      "raw_sha256": "1029ba8eee6e8e5e8ccaf0bf309d6dda09a4ab295a935349702694a50fe44c54",
+      "raw_records": 2000,
+      "archived_records": 21,
+      "sampling": "first, every 100th, and last update"
+    },
+    "cross_entropy": {
+      "raw_sha256": "4b584117ea91f563154a05724fa79b5bfa5d996e99e494ca70225be84dc27720",
+      "raw_records": 2000,
+      "archived_records": 21,
+      "sampling": "first, every 100th, and last update"
+    }
+  },
+  "archive_script_sha256": "949615762ef7c77069a39cf5ce10108ce5a9149937d63680f1ff2615469543ce",
+  "excluded": "Checkpoints, full encoded data and full update logs stay in ignored results.",
+  "note": "Observation snapshots include greedy robot paths as compact failure evidence."
+}
