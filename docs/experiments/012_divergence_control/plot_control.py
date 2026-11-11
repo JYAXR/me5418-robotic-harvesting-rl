@@ -28,6 +28,7 @@ def plot(run_dir, output):
     status = json.loads((run_dir / "run_status.json").read_text(encoding="utf-8"))
     if status["status"] != "completed":
         raise ValueError("The comparison must finish before plotting.")
+    protocol = json.loads((run_dir / "settings.json").read_text(encoding="utf-8"))["training"]
     arms = {
         arm: previous.load_observations(run_dir, f"{arm}/td", previous.TD_CHECKS)
         for arm in ("baseline", "treatment")
@@ -57,7 +58,8 @@ def plot(run_dir, output):
                 "Both arms reuse the same calibrated network, 117 transitions and accumulated Adam state.",
                 ha="center")
     figure.text(0.5, 0.876,
-                "All 108 scheduled episodes are shown, including failures; columns are TD update counts.",
+                f"{protocol['factor'].replace('_', ' ').title()}: baseline {protocol['baseline_value']:g}, "
+                f"treatment {protocol['treatment_value']:g}. All 108 scheduled episodes are shown; columns are TD updates.",
                 ha="center")
     figure.text(0.045, 0.075,
                 "These are repeated checks of three known training scenes from one network initialization.\n"
