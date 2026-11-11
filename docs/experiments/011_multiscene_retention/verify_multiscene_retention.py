@@ -102,7 +102,8 @@ def verify_aggregate(row, episodes):
             "pooled action agreement covers every transition")
     chosen = [value for scene in row["scenes"] for value in scene["return_fit"]["chosen_values"]]
     targets = [value for scene in row["scenes"] for value in scene["return_fit"]["mc_targets"]]
-    require(np.allclose(row["return_fit"]["chosen_values"], chosen, rtol=1e-6, atol=1e-6)
+    # Different GEMM batch shapes can round differently; reloads use exact shapes.
+    require(np.allclose(row["return_fit"]["chosen_values"], chosen, rtol=1e-5, atol=1e-5)
             and row["return_fit"]["mc_targets"] == targets,
             "pooled value errors preserve episode ordering")
 
