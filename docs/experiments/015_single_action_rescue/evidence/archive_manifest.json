@@ -1,0 +1,81 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\single_action_rescue_20261112",
+  "status": "completed",
+  "files": {
+    "accounting.json": {
+      "sha256": "3ca3fa6c6c099e508245dcd9f1345127df3756355713623f7100609090cb88b3",
+      "bytes": 600
+    },
+    "input_manifest.json": {
+      "sha256": "8cd2bbab87f820746805681f546594986f62f9e93252689d54a539bcdef4dd27",
+      "bytes": 45048
+    },
+    "provenance.json": {
+      "sha256": "17137b03f8fde43e17f0f8d4a83bc0b76e65a48323dc483878ce5e8193c98be1",
+      "bytes": 6684
+    },
+    "replays.json": {
+      "sha256": "9338329af2847a5636f4c507b2e7c5e8ecec3acb8558f6f7e9bde94b116ee510",
+      "bytes": 66723
+    },
+    "run_status.json": {
+      "sha256": "d12c69b3dd6b8a91ec45c0d0ab9909930f473964ccf45a2f612d86cc6aeabfc2",
+      "bytes": 166
+    },
+    "settings.json": {
+      "sha256": "b48ab45c77ccbe5bfec3941b18d1558a2940ba52e1897bb8442df21fbf5932cc",
+      "bytes": 4000
+    },
+    "single_action_outcomes.png": {
+      "sha256": "bb0ee9ad5abf33c548b3061d53623311b97d5233527fd8de8cdfa71f5e927a4b",
+      "bytes": 113444
+    },
+    "source_unchanged.json": {
+      "sha256": "f4e3b44df33c512ea8c24d8d5f66d8fd9e6509ffdfceeff14e860abccb2c7009",
+      "bytes": 129
+    },
+    "summary.json": {
+      "sha256": "8a97f93d9e9b08bbe92240fcca581fca01a30f166bc5862697b869b90ae7e01b",
+      "bytes": 76040
+    },
+    "update_10000_counterfactual.json": {
+      "sha256": "d36faee2ae342c99b668e35398861aebfd7341a07cf10d1d938f401df73c2d21",
+      "bytes": 51166
+    },
+    "update_10000_counterfactual_steps.jsonl": {
+      "sha256": "c77c378af4e2df67dc6f475f9802b3636bd83a703bd576d0102263607d5fa753",
+      "bytes": 32468
+    },
+    "update_10000_greedy.json": {
+      "sha256": "82bc1142b508770bef3b208f2b964de8534339468f5df18e2cef31999f096d14",
+      "bytes": 232734
+    },
+    "update_10000_greedy_steps.jsonl": {
+      "sha256": "3fa70e5ebaff738413d686e427087caa4623d6c5e2d2f6c4b4e9f008498ec542",
+      "bytes": 152335
+    },
+    "update_2009_counterfactual.json": {
+      "sha256": "b5793ccbf6ad84011ea2822131e93130081f60fb97a7e480430d3f08948f4e76",
+      "bytes": 51127
+    },
+    "update_2009_counterfactual_steps.jsonl": {
+      "sha256": "e90eb0f8e7d56ca0eec65356146f7abe193bfbb31b9af4a7e16af32e8536f007",
+      "bytes": 32430
+    },
+    "update_2009_greedy.json": {
+      "sha256": "d074f6f308d750c96908267d47a4816dc7bf419e0c3cc2e271924d82df6d1a60",
+      "bytes": 232698
+    },
+    "update_2009_greedy_steps.jsonl": {
+      "sha256": "4f0f5bf84afeb50e7db163dc3d3f81f8f952f26bbac5c17c7f0cc7d3dda58842",
+      "bytes": 152300
+    },
+    "verification.json": {
+      "sha256": "c072318a2c58330f598c027ad487b523bd90fcad1748b1e0ffb2a8560ab64517",
+      "bytes": 3010
+    }
+  },
+  "archive_script_sha256": "04d2b016776cc2090978200c83c34fd86fbf038422a29711e327c0f448d7a4f2",
+  "coverage": "Every original and corrected episode, every action record, all failures and read-only verification are retained without sampling.",
+  "excluded": "Original model/data binaries and console output remain in ignored results."
+}

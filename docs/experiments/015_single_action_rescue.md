@@ -97,4 +97,109 @@ python docs/experiments/015_single_action_rescue/archive_single_action_rescue.py
 Local execution uses `.venv/Scripts/python.exe`. Original binary checkpoints and
 the immutable demonstration data are required locally; the Git evidence archive
 does not contain those binaries. The runner refuses to overwrite a run directory.
-Results are pending at the pre-execution commit.
+The protocol and implementation were committed and pushed before execution as
+`c9754713ad0ee008c3537d019e0b0b9075a80c7e`.
+
+## Execution and results
+
+The diagnostic completed from 2026-11-11 18:27:43.796083 UTC to
+18:30:24.641948 UTC (12 November, 02:27:43--02:30:24 in Asia/Shanghai).
+Both unmodified greedy episodes reproduced the attempt 014 failures exactly.
+**Replacing only step 21 with north_small rescued both frozen models.**
+
+| Source TD update | Episode | Success | Actions | Return | Blocked / stationary steps | Forced actions |
+| --- | --- | --- | ---: | ---: | ---: | ---: |
+| 2009 | Original greedy | No, budget exhausted | 200 | 2.479857 | 178 / 177 | 0 |
+| 2009 | Step 21 corrected | Yes | 41 | 107.585050 | 0 / 0 | 1 |
+| 10000 | Original greedy | No, budget exhausted | 200 | 2.479857 | 178 / 177 | 0 |
+| 10000 | Step 21 corrected | Yes | 41 | 107.585050 | 0 / 0 | 1 |
+
+All four episodes have zero damage. Both corrected episodes execute the same
+41-action sequence as the demonstration, with no later reference-action
+divergence. This agreement is observed after the intervention; later actions
+are not supplied from the demonstration. The network independently selects each
+action from step 22 onward.
+
+Each pair has identical first-20-step transition records and identical state,
+proposed action and Q scores at step 21. The unchanged models still propose
+`north_large (4)` at the fork. The demonstration-minus-competitor Q gaps remain
+**-0.0167160034** at TD 2009 and **-0.0598907471** at TD 10000; the diagnostic
+does not change those scores. Only the executed action becomes `north_small (0)`.
+The corrected next state matches the demonstrated step-22 state, and at step 22
+both models autonomously select and execute `north_large (4)` without another
+override.
+
+The physical sequence explains why this decision matters. At step 21, the
+original large northward action is not itself blocked; it moves about 0.06,
+instead of the corrected 0.025. In the original replay, the subsequent eastward
+turn at step 23 is partially blocked, followed by stationary pushing. The
+corrected replay makes two autonomous large northward moves at steps 22 and 23
+before turning east at step 24, and completes the route without blockage.
+The recorded positions and actions support this sequence; it is not inferred
+from the Q margin alone.
+
+## State preservation and accounting
+
+The runner freshly restores the complete source snapshot for every episode.
+Exact equality checks before and after each episode pass for online and target
+weights, Adam state, the absolute update counter and both RNG states.
+TD counters remain 2009 and 10000; Adam parameter steps remain 22009 and 30000.
+The original binary checkpoints, immutable inputs and production source hashes
+also pass a second check after the diagnostic.
+
+The actual new work is **four episodes and 482 policy actions**: 400 unmodified
+actions plus 82 corrected-episode actions. Exactly two actions are externally
+replaced, one per corrected episode. There are **zero optimizer updates**,
+new demonstration-collection actions or held-out scene evaluations. The two
+models' shared historical training is not rerun or summed as a new budget.
+
+The full traces retain every action, Q vector, state hash, reward and outcome
+without sampling. The original failures remain unchanged in attempt 014 and
+are reproduced in this attempt's control arms.
+
+## Verification
+
+- **50 targeted tests passed**: 20 new runner tests plus 12 existing
+  action-diagnostic regression tests (32 tests in 10.07 seconds), and
+  18 new read-only verification tests in 4.23 seconds. They cover fixed
+  one-based indexing/action selection, extra-override rejection, unchanged
+  full-state checks, paired-prefix checks and continued neural decisions.
+  Ruff and whitespace checks pass. No production training code changed.
+- Independent read-only verification passed all four traces and all
+  **482 action records**, including exact original outcomes, the two identical
+  prefixes, exactly one replacement per corrected episode, and the complete
+  recorded greedy-selection rules.
+- It independently recomputed **84 Q vectors**: prefix steps 1--21 for each
+  of the four episodes. Later recorded Q argmax/action rules were audited,
+  without claiming an independent off-route physics or full off-route Q replay.
+  Verification added **zero episodes, resets, environment actions or updates**.
+- An additional read-only review reconciled the raw trace logs, demonstration,
+  source outcomes and summary. The black-and-white three-line outcome table
+  was visually checked.
+
+See the [outcome table](015_single_action_rescue/evidence/single_action_outcomes.png),
+[paired results](015_single_action_rescue/evidence/replays.json),
+[independent verification](015_single_action_rescue/evidence/verification.json),
+and [archive manifest](015_single_action_rescue/evidence/archive_manifest.json).
+All four complete JSON traces and JSONL action logs are archived in Git, with
+hashes, resolved settings and source provenance. Models remain in their original
+ignored result directories. No report or submission archive is modified.
+
+The launch provenance marks the working tree dirty because of the existing
+untracked report document. The experiment code was committed before launch;
+its source and helper hash checks pass.
+
+## Conclusion and next question
+
+A single correction at step 21 is sufficient to restore success for **both**
+tested models on scene 10001. Their downstream greedy behavior can complete
+the demonstrated route once this critical decision is corrected. The tested
+failure therefore has a concrete, locally correctable action-selection point.
+
+This is **2/2 assisted diagnostic rescues**, not a new learned-policy success
+rate. Neither model's parameters or original unassisted performance changed.
+The result does not establish behavior on unseen scenes or exclude other failure
+points at other checkpoints. A next separately recorded training experiment
+can focus on maintaining the small-versus-large northward action ordering at
+this state and nearby decisions, while checking all three scenes for new
+regressions. No such training change is made in this attempt.

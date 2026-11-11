@@ -1,0 +1,77 @@
+{
+  "passed": true,
+  "attempt": 15,
+  "verifier_sha256": "380f32944a93b979924988d8c4ac46e47c2ad62e60028dbc94088075ee3ea682",
+  "prior_verifier_sha256": "ef38d500eb465eb2549070d33147bb14ddbb8983787f83a61b957454edf2b177",
+  "input_manifest_sha256": "8cd2bbab87f820746805681f546594986f62f9e93252689d54a539bcdef4dd27",
+  "reference_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_extension_10000_20261112",
+  "checked_pairs": [
+    {
+      "update": 2009,
+      "fork": {
+        "step": 21,
+        "prefix_records_equal_before_intervention": true,
+        "decision_state_and_q_equal": true,
+        "policy_action": 4,
+        "greedy_executed_action": 4,
+        "counterfactual_executed_action": 0,
+        "signed_demonstration_gap": -0.01671600341796875
+      },
+      "arms": {
+        "greedy": {
+          "steps": 200,
+          "success": false,
+          "forced_actions": 0,
+          "prefix_q_vectors_recomputed": 21,
+          "all_logged_argmax_and_action_rules_valid": true
+        },
+        "counterfactual": {
+          "steps": 41,
+          "success": true,
+          "forced_actions": 1,
+          "prefix_q_vectors_recomputed": 21,
+          "all_logged_argmax_and_action_rules_valid": true
+        }
+      },
+      "single_action_rescued_success": true
+    },
+    {
+      "update": 10000,
+      "fork": {
+        "step": 21,
+        "prefix_records_equal_before_intervention": true,
+        "decision_state_and_q_equal": true,
+        "policy_action": 4,
+        "greedy_executed_action": 4,
+        "counterfactual_executed_action": 0,
+        "signed_demonstration_gap": -0.0598907470703125
+      },
+      "arms": {
+        "greedy": {
+          "steps": 200,
+          "success": false,
+          "forced_actions": 0,
+          "prefix_q_vectors_recomputed": 21,
+          "all_logged_argmax_and_action_rules_valid": true
+        },
+        "counterfactual": {
+          "steps": 41,
+          "success": true,
+          "forced_actions": 1,
+          "prefix_q_vectors_recomputed": 21,
+          "all_logged_argmax_and_action_rules_valid": true
+        }
+      },
+      "single_action_rescued_success": true
+    }
+  ],
+  "main_episodes_checked": 4,
+  "main_environment_actions_checked": 482,
+  "independent_prefix_q_vectors": 84,
+  "additional_optimizer_updates": 0,
+  "additional_evaluation_episodes": 0,
+  "additional_environment_steps": 0,
+  "additional_environment_resets": 0,
+  "scope": "All recorded argmax/actions, paired prefix, source hashes and accounting audited. Only demonstration-prefix steps 1-21 receive independent Q inference; no off-route physics or full off-route Q replay is performed.",
+  "state_invariance_scope": "The committed runner asserted exact full-state equality before and after every arm. Recorded assertions are checked against the immutable source snapshot; no additional episode is executed."
+}

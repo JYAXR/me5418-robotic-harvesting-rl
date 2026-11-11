@@ -1,0 +1,17 @@
+{
+  "optimizer_updates": 0,
+  "started_episodes": 4,
+  "completed_episodes": 4,
+  "greedy_environment_steps": 400,
+  "counterfactual_environment_steps": 82,
+  "environment_steps": 482,
+  "forced_actions": 2,
+  "online_training_steps": 0,
+  "demonstration_collection_steps": 0,
+  "held_out_scenes_accessed": 0,
+  "inherited_optimizer_updates_by_checkpoint": {
+    "2009": 42009,
+    "10000": 50000
+  },
+  "note": "Historical model training is reused, not rerun or summed across checkpoints. Each actual diagnostic env.step action is counted; reset feasibility probes are excluded."
+}

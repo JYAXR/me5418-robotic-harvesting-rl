@@ -1,0 +1,114 @@
+{
+  "environment": {
+    "max_branches": 14,
+    "nodes_per_branch": 5,
+    "max_steps": 200,
+    "workspace_low": [
+      0.0,
+      0.0
+    ],
+    "workspace_high": [
+      1.0,
+      1.0
+    ],
+    "small_step": 0.025,
+    "large_step": 0.06,
+    "target_radius": 0.05,
+    "contact_radius": 0.035,
+    "relaxation_rate": 0.1,
+    "execution_noise_fraction": 0.0,
+    "show_gate_detail": false,
+    "verify_reference_route": true,
+    "reference_max_attempts": 10,
+    "scene": {
+      "layout": "multi_route",
+      "tip_gap_range": [
+        0.028,
+        0.043
+      ],
+      "stiffness_range": [
+        0.35,
+        1.1
+      ],
+      "safe_limit_range": [
+        0.075,
+        0.11
+      ],
+      "start_jitter": [
+        0.01,
+        0.02
+      ],
+      "target_jitter": [
+        0.01,
+        0.02
+      ],
+      "gate_x_jitter": 0.01,
+      "twig_jitter": [
+        0.005,
+        0.005
+      ]
+    },
+    "reward": {
+      "progress": 10.0,
+      "deformation": 1.0,
+      "travel": 0.2,
+      "damage": 50.0,
+      "success": 100.0
+    }
+  },
+  "dqn": {
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "learning_rate": 0.0001,
+    "gamma": 0.99,
+    "batch_size": 64,
+    "replay_capacity": 20000,
+    "target_update_interval": 200,
+    "gradient_clip_norm": 10.0
+  },
+  "training": {
+    "attempt": 15,
+    "kind": "fixed_step_single_action_rescue",
+    "scene_seed": 10001,
+    "td_updates": [
+      2009,
+      10000
+    ],
+    "intervention_step": 21,
+    "intervention_action": 0,
+    "intervention_action_name": "north_small",
+    "original_policy_action": 4,
+    "original_policy_action_name": "north_large",
+    "episode_order": [
+      "2009/greedy",
+      "2009/counterfactual",
+      "10000/greedy",
+      "10000/counterfactual"
+    ],
+    "episodes": 4,
+    "optimizer_updates": 0,
+    "online_training_steps": 0,
+    "held_out_scenes_accessed": 0,
+    "fresh_full_restore_for_each_arm": true,
+    "same_environment_reset_seed": true,
+    "epsilon": 0.0,
+    "intervention_rule": "Override only one-based step 21 with action 0, then immediately resume the unchanged greedy neural policy.",
+    "script_sha256": "0e3090a8700e4aad377ee692f965c8e95bbfe353d53d781d4ce98d8eb9c02281",
+    "helper_sha256": {
+      "docs/experiments/010_adam_state/run_adam_state.py": "f937196f6b067848308f117bc382ca55262cbb440d1dd6dd2f0c0b47370145ab",
+      "docs/experiments/009_return_calibration/run_return_calibration.py": "2fd32e4ad4fdfb7dfecc3439f92abf76b19c34095ea2f93c57136c9fd5da3f4a",
+      "docs/experiments/008_td_learning_rate/run_learning_rate_retention.py": "89263f850d95f55e6ad4503dafda9fc51b683a6fa0d159805cdb9af2c6a3ef61",
+      "docs/experiments/007_staged_retention/run_staged_retention.py": "98f9f807a614e3b23066ba21482ab23253eb17f7a4c846595651b224bae22dca",
+      "docs/experiments/005_fixed_scene_fit/run_fixed_scene_fit.py": "7caa0d935e996d665a4ae164cd54945506fe4836bfdfd1dc0a491c5aeb1c34e9",
+      "docs/experiments/011_multiscene_retention/run_multiscene_retention.py": "1528b2b31a9d0baef8a665a69e70e432614c5ab8a0f9fe7ca3f687f752a423ee",
+      "docs/experiments/013_td_learning_rate/run_learning_rate_control.py": "46095bf64efaad9c42f8b04df4d7d58e58c862967d4de4b9056807c0a2d3c0ca",
+      "docs/experiments/012_divergence_control/run_control.py": "53a110a59a71eeea48bb418d6e7e62f7786d413346666a2503e4700b9a925c1e",
+      "docs/experiments/014_td_extension/run_td_extension.py": "aca8226fae5325c5b4febe3e7d773eb1616818c9370edf00743db4337bf48a8b",
+      "docs/experiments/012_divergence_control/diagnose_divergence.py": "e9dffc6aa6b940c9335358dd0189f394db55d4721c7cadc993560ee363698d31",
+      "docs/experiments/014_td_extension/verify_td_extension.py": "ef38d500eb465eb2549070d33147bb14ddbb8983787f83a61b957454edf2b177"
+    },
+    "verification_scope": "Read-only trace, source, and shared-prefix Q audit; zero additional physical episodes."
+  }
+}
