@@ -1,0 +1,35 @@
+{
+  "arms": {
+    "baseline": {
+      "optimizer_updates": 8000,
+      "inherited_optimizer_updates": 42000,
+      "absolute_td_update": 10000,
+      "total_updates_on_branch": 50000,
+      "scheduled_evaluation_episodes": 87,
+      "evaluation_environment_steps": 3711,
+      "sentinel_records": 8001,
+      "sentinel_forward_passes": 56007
+    },
+    "treatment": {
+      "optimizer_updates": 8000,
+      "inherited_optimizer_updates": 42000,
+      "absolute_td_update": 10000,
+      "total_updates_on_branch": 50000,
+      "scheduled_evaluation_episodes": 87,
+      "evaluation_environment_steps": 3871,
+      "sentinel_records": 8001,
+      "sentinel_forward_passes": 56007
+    }
+  },
+  "optimizer_updates_total": 16000,
+  "inherited_shared_optimizer_updates": 42000,
+  "scheduled_evaluation_episodes": 174,
+  "evaluation_environment_steps": 7582,
+  "sentinel_records": 16002,
+  "sentinel_forward_passes": 112014,
+  "sentinel_environment_steps": 0,
+  "online_training_steps": 0,
+  "demonstration_collection_steps": 0,
+  "held_out_scenes_accessed": 0,
+  "note": "Completed updates and completed physical checkpoint evaluations only; shared inherited training is counted once, and independent verification is separate."
+}

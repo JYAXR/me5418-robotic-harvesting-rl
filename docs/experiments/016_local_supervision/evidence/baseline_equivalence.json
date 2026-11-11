@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "exact_update_records": 8000,
+  "exact_observations": 29,
+  "exact_checkpoint_payloads": 67,
+  "exact_inherited_sentinel_rows": 8001,
+  "treatment_started_before_gate": false
+}

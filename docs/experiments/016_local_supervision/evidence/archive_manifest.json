@@ -1,0 +1,167 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\local_supervision_20261112",
+  "status": "completed",
+  "files": {
+    "accounting.json": {
+      "sha256": "9423ca5977b8be11a918a367e71f447823decd046f204fc7f475946e54065064",
+      "bytes": 1259
+    },
+    "baseline/initial_equivalence.json": {
+      "sha256": "2d142602bd15653a3010b708aa3bf5c6394275f901589076af4969dbf3439d60",
+      "bytes": 133
+    },
+    "baseline/restore_checks.json": {
+      "sha256": "d64256f60fd0455a66d73e379baf32978cdbe4c83045dd045a8129a33bb49137",
+      "bytes": 1359
+    },
+    "baseline/td/observations.json": {
+      "sha256": "d01b9285373058d0f6b13c320184978fe79f386ca1117512855d131259aee0fe",
+      "bytes": 1193964
+    },
+    "baseline/td/summary.json": {
+      "sha256": "f86fe7bfc581d57abc1ddf2acc7108ef3434c0a04d52243a5ebe4f298b2f2036",
+      "bytes": 107756
+    },
+    "baseline_equivalence.json": {
+      "sha256": "296b073011528adf1b7ecf803281c15bfe73cc85f2f4759ab30ae315d4f7d876",
+      "bytes": 207
+    },
+    "dataset.json": {
+      "sha256": "eeca314e59fce96bdd522338a742f13a18ad409e3f41c9cade0904322675b069",
+      "bytes": 2250
+    },
+    "input_manifest.json": {
+      "sha256": "8b52b967cbb79242a5ac76bb7ff622b8f56291a4c8e54551952a6eaa1aab0fa3",
+      "bytes": 82269
+    },
+    "local_supervision_outcomes.png": {
+      "sha256": "d0998aa88d1fe9a6290bc68b1c5d0f98901ac24448a6c2b100d319c8efa9db25",
+      "bytes": 593039
+    },
+    "mc_targets.json": {
+      "sha256": "913677678e647a5bd80054edc621940a418b197dd3c2605af57922cbe2bf5305",
+      "bytes": 20188
+    },
+    "neighbor_q_gaps.png": {
+      "sha256": "ad61194e74e481d1e47bfaed3826e8df18f98430b8b9c900cfc922a59c247ab4",
+      "bytes": 443569
+    },
+    "provenance.json": {
+      "sha256": "7e5d6d7acc8a0ecfe9ef21dfc630f5d3d6dada7368a1be44b1d6b96d291eaabf",
+      "bytes": 6675
+    },
+    "q_analysis.json": {
+      "sha256": "26ad6411e3f0d024e3a6463d99ccad317357ed6ac8af7c1ff715ba941869c222",
+      "bytes": 1686313
+    },
+    "q_analysis_baseline_dense.json": {
+      "sha256": "362bd0254e52f0029c4384e9a0dfc348ed78e726e884cf879461a2e2bee96690",
+      "bytes": 1273942
+    },
+    "q_analysis_treatment_dense.json": {
+      "sha256": "52844552817c1411e51125f355ee1f8c33332a170782da05c4cd20a8b1691509",
+      "bytes": 1246941
+    },
+    "reload_checks.json": {
+      "sha256": "05810a0a7becf43c3b943e08d263d1f1164988b00016d294939aa4bbcddde21f",
+      "bytes": 13665
+    },
+    "run_status.json": {
+      "sha256": "36120d4f937a70f1e5a4f800da45ffbb9e50e957f0cb630de1ff1fd6833aa856",
+      "bytes": 166
+    },
+    "settings.json": {
+      "sha256": "b363ae6644cd723f71abb1ae15ec5023a2cacd21ea7f489277f83eb131e35a10",
+      "bytes": 5539
+    },
+    "summary.json": {
+      "sha256": "012cb2da626c24dcfd69907458757e702000c45c8f4ee19a18dd79ed8fb7b2ee",
+      "bytes": 235933
+    },
+    "supervision_weights.json": {
+      "sha256": "4a2fe37629ac91c03c116a4c254c6f9f0502a1dc060856bad39201612ad69ad7",
+      "bytes": 3209
+    },
+    "treatment/initial_equivalence.json": {
+      "sha256": "2d142602bd15653a3010b708aa3bf5c6394275f901589076af4969dbf3439d60",
+      "bytes": 133
+    },
+    "treatment/restore_checks.json": {
+      "sha256": "d64256f60fd0455a66d73e379baf32978cdbe4c83045dd045a8129a33bb49137",
+      "bytes": 1359
+    },
+    "treatment/td/observations.json": {
+      "sha256": "ddf52dc0665262e6824ecdbbfa9d5a896a89c15b92da172ccec48ecb94232a39",
+      "bytes": 1213943
+    },
+    "treatment/td/summary.json": {
+      "sha256": "da8a32b2daea9d3c75d06ce7e90d89287c87f674c50bfed3c1bccbb46cf0686a",
+      "bytes": 88920
+    },
+    "baseline/td/update_samples.jsonl": {
+      "sha256": "376debc63c861f45c591dd27448e9aa6c765fa1af9fb9eb98ae98431678cbbc1",
+      "bytes": 75870
+    },
+    "baseline/td/supervision_samples.jsonl": {
+      "sha256": "476dbbafc87e06c3453277f80c38321a1c46eb8ef10430b63500d891ac20f1c8",
+      "bytes": 65908
+    },
+    "baseline/td/sentinel_q_samples.jsonl": {
+      "sha256": "509b67c02788546e38f279745c07188649ebb6c7c74bc088121b0a9ba5636e3b",
+      "bytes": 391905
+    },
+    "treatment/td/update_samples.jsonl": {
+      "sha256": "0f174c282d2a286d45d5a0483c7f58538b58aefa003255521ebfb52f316c1609",
+      "bytes": 75901
+    },
+    "treatment/td/supervision_samples.jsonl": {
+      "sha256": "993c4ae36c4f9dbc617940e451f14a8abb845b6310549415cd2f82e207ee9c8d",
+      "bytes": 65943
+    },
+    "treatment/td/sentinel_q_samples.jsonl": {
+      "sha256": "41ee94a8f8229ea7051fb1c68b94a315441b6a67cff7ed0e0cff81607bd383c4",
+      "bytes": 391928
+    }
+  },
+  "raw_log_coverage": {
+    "baseline/td/updates.jsonl": {
+      "raw_sha256": "c4874c126e9f967581d2aec19812a226e0cab0752213160e635a9d9602f03b67",
+      "raw_records": 8000,
+      "archived_records": 170,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    },
+    "baseline/td/supervision.jsonl": {
+      "raw_sha256": "a47ae83ad05b87cfc8997499954c3550dacdc423c67df9e62e60ab77f342a542",
+      "raw_records": 8000,
+      "archived_records": 170,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    },
+    "baseline/td/sentinel_q.jsonl": {
+      "raw_sha256": "3406212ec8adb67a376d1c42dbc8081bb87aaeda5b65f1514f7c5876b930ae59",
+      "raw_records": 8001,
+      "archived_records": 171,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    },
+    "treatment/td/updates.jsonl": {
+      "raw_sha256": "626e73cbf9616b45f87a943d7844029b4d78b8ca9e43cfe5523d11d661c35ee6",
+      "raw_records": 8000,
+      "archived_records": 170,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    },
+    "treatment/td/supervision.jsonl": {
+      "raw_sha256": "aa3fe7f2c71a6811538b474b1b967554cd1f58ba3a4dd408607082f5111bf7a7",
+      "raw_records": 8000,
+      "archived_records": 170,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    },
+    "treatment/td/sentinel_q.jsonl": {
+      "raw_sha256": "0432bb4e509da0bd52af7bf68ec23a89e9c218316664571cdab52c59a9a03265",
+      "raw_records": 8001,
+      "archived_records": 171,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    }
+  },
+  "archive_script_sha256": "2c8806c75f0ba941c65aadb9347632d0c5cd32735208433b9dfd66c108942f5f",
+  "excluded": "Model binaries, full raw logs and console output remain in ignored results.",
+  "note": "Every scheduled outcome and failure, complete compact dense gap/action series, and independent verification are retained."
+}

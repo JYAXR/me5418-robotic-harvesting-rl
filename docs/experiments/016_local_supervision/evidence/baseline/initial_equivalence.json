@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "exact_previous_final_observation": true,
+  "absolute_td_update": 2000,
+  "new_updates_before_gate": 0
+}
