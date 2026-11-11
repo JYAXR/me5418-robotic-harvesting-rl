@@ -96,3 +96,64 @@ changing a learning rate changes update magnitude. A successful control can
 support the proposed intervention in this setting without proving a unique
 underlying cause. Calibration's temporary failures in attempt 011 remain part of
 the history and are outside this TD-only comparison.
+
+## Completed diagnosis and predeclared treatment
+
+The physical diagnostic ran from commit `c1eec38` on **12 November 2026,
+00:40:42--00:42:23 Asia/Shanghai**. All five unmodified policies exactly
+reproduced their recorded 200-step failures. Correcting only the first divergent
+choice restored success in **all five** cases, after which every action again
+came from the unchanged neural policy:
+
+| TD update | Forced action and step | Original blocked / stationary steps | Corrected rollout steps | Corrected peak deformation |
+| --- | --- | --- | --- | --- |
+| 1 | south_small at 6 | 171 / 170 | 41 | 0.000000 |
+| 6 | south_small at 6 | 171 / 170 | 41 | 0.000000 |
+| 9 | north_small at 18 | 165 / 164 | 41 | 0.075780 |
+| 10 | north_small at 18 | 165 / 164 | 42 | 0.685353 |
+| 200 | south_small at 6 | 171 / 170 | 41 | 0.000000 |
+
+At step 6, continuing east instead of turning south starts an off-route contact
+sequence; the robot eventually keeps pushing against a branch. At step 18,
+taking another large eastward step moves the robot too far right before its
+northward turn, leading to a later prolonged blocked push. The failures are not
+two-action oscillations. Exact common-state checks and the single-action rescue
+support these choices as causally consequential on these fixed rollouts.
+
+Four corrected rollouts subsequently differ from the demonstration at step 24
+and still succeed; update 200 follows the demonstration after the intervention.
+Update 10's corrected route has appreciable deformation and
+a lower return than the other corrected routes. The intervention therefore
+restores task completion, not necessarily identical route quality. The
+calibrated policy's step-6 gap was already only 0.2810, below the desired 0.8
+margin; TD reverses that fragile ordering at the failed checkpoints.
+
+The diagnostic used **zero optimizer updates**, **10 episodes and 1206 actions**:
+1000 original-greedy and 206 counterfactual actions. All 18 Q analyses and every
+physical step are retained under `results/training/divergence_diagnostic_20261112`.
+The completed summary SHA-256 is
+`6b3d0e20f835efdbbb113db2cd98542f545e17d05a2dc148a5555494a919111f`;
+the canonical Q-analysis SHA-256 is
+`f899a4a24c552e890f5fff8b295e4231a42e15cdb42514da3d7b65b93760d98b`.
+
+Based on this diagnosis, the **only treatment change is demonstration weight
+1.0 to 2.0 during TD**. Both arms retain learning rate 0.0003, margin 0.8 and
+the same calibrated Adam moments and internal steps. Doubling is a predeclared
+moderate strengthening of the existing action-ranking objective, not a value
+selected by trying several weights. It tests whether more supervision reduces
+the observed turn-action ordering regressions. No counterfactual actions are
+used in either arm's evaluation, and no diagnostic trajectories enter training.
+
+The total objective is `TD_Huber + weight * demonstration_margin_loss`.
+Changing the weight may change both gradient direction and clipping scale, so
+we also examine component losses, gradient norms and parameter changes. This
+control does not isolate a single gradient component or guarantee retention.
+If it fails, retain that result rather than adding another intervention here.
+
+### Commands
+
+```powershell
+python docs/experiments/012_divergence_control/diagnose_divergence.py --reference-run results/training/multiscene_retention_20261112 --output-dir results/training/divergence_diagnostic_20261112
+python docs/experiments/012_divergence_control/run_control.py --reference-run results/training/multiscene_retention_20261112 --archive-dir docs/experiments/011_multiscene_retention/evidence --output-dir results/training/divergence_control_20261112 --factor demonstration_weight --value 2
+python docs/experiments/012_divergence_control/verify_control.py --run-dir results/training/divergence_control_20261112 --output results/training/divergence_control_20261112/reload_checks.json
+```
