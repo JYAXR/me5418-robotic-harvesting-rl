@@ -1,0 +1,16 @@
+{
+  "helper_record": {
+    "pretraining_updates": 20000,
+    "phase_updates": 0,
+    "optimizer_reset": true,
+    "target_synchronized": true
+  },
+  "helper_count_meaning": "The helper pretraining_updates field is the prior phase only.",
+  "inherited_pretraining_updates": 20000,
+  "completed_new_updates_before_phase": 20000,
+  "updates_on_branch_before_phase": 40000,
+  "policy_parameter_sha256": "62b528001c83e3a44d801d0c6a4647c1ac80c3a2bd6fee21235735e55cfe152c",
+  "target_equals_online": true,
+  "optimizer_state_empty": true,
+  "learning_rate": 0.0003
+}

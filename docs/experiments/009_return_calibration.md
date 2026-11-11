@@ -93,4 +93,88 @@ online replay, exploration and final project readiness are outside this test.
 
 ## Outcomes
 
-Pending the predeclared run. Keep the equal-budget control and all failures.
+Executed from commit `42396a0` on **11 November 2026, 22:39:53--22:46:14
+Asia/Shanghai**. Evidence timestamps use UTC. Both branches started from exactly
+the same successful supervised weights and data. The independently checked fixed
+returns spanned 77.4551--100.4807; float32 recurrence differed from the float64
+reference by at most 0.0000214, within the predeclared 0.0001 tolerance.
+
+| Measurement | Equal-budget margin-only continuation | Return calibration + margin |
+| --- | --- | --- |
+| Initial RMSE against demonstrated returns | 83.1175 | 83.1175 |
+| RMSE after the additional 20000 updates | 80.8141 | 0.2747 |
+| Episode at the end of that phase | Success, 35 steps | Success, 35 steps |
+| First sampled failure after starting TD | Update 1 | Update 1 |
+| Successful positive-update TD checkpoints | 100, 200 | 50, 100, 200, 500, 1000, 2000 |
+| Final TD action agreement | 33/35 (94.3%) | 35/35 (100%) |
+| Final TD episode | Timeout, 200 steps; return -17.1309 | Success, 35 steps; return 107.6108 |
+| Final RMSE after 2000 TD updates | 79.3237 | 0.4311 |
+
+Both branches were eligible for a retention comparison because both entered TD
+with a successful policy. **Neither retained success at every sampled TD
+checkpoint**. Calibrating returns reduced persistent later deterioration in this
+test, but did not prevent the initial loss of behavior at the phase switch.
+
+The calibration process itself was not uniformly successful: its checkpoints
+1, 10, 100 and 1000 failed, including branch damage at update 10. By update 5000,
+RMSE had fallen to 0.5218 and the policy completed the route in 35 steps. At
+20000, all 35 demonstrated actions matched; MAE was 0.2277 and maximum absolute
+return error was 0.6161. The continuation control succeeded at all pre-TD
+checkpoints, including a 36-step alternative route at update 10000.
+
+After TD began, the calibrated policy first dropped to 24/35 action matches and
+timed out at update 1. At update 10 it matched 31/35 and damaged a branch after
+61 steps. It then completed the reference route in 35 steps with 35/35 agreement
+at **every sampled checkpoint from 50 through 2000**. In comparison, the control
+recovered only at the sampled 100- and 200-update checkpoints and ended in a
+timeout. These are repeated checkpoints of one deterministic training scene,
+not independent test episodes or a generalization success-rate estimate.
+
+The first calibrated TD update increased the same-batch combined loss from
+0.08268 to 1.53547 against the same frozen targets. Its parameter-vector change
+was 0.05727, compared with 0.05860 in the control's first update. This observation
+motivates a separate test of the phase transition and optimizer reset; it does
+not establish that resetting Adam is the sole cause. Each branch deliberately
+used the fresh-Adam boundary stated in the protocol.
+
+## Conclusion and next controlled question
+
+Fixed-return calibration substantially reduced numerical value error and improved
+the later TD checkpoints over the matched additional-supervision control. It is
+therefore a useful component to investigate further under this single-scene
+setup. It is not yet a complete solution to capability retention: both strict
+all-checkpoint retention flags remain false, and no new scene was tested.
+
+A next isolated comparison could keep versus reset the calibration optimizer's
+state when TD begins, holding the calibrated weights and all other settings
+fixed. This has **not** been implemented or tested here. Existing inference
+checkpoints do not contain Adam moments; a valid comparison must retain or
+reproduce the calibration optimizer state rather than pretend that an inference
+checkpoint resumes it. Expansion to multiple scenes remains a separate task.
+
+## Verification and retained evidence
+
+**269 tests passed**, including 34 new unit/integration cases; Ruff passed.
+Verification checked 50 launch source hashes, all input/helper hashes, all 44000
+update records and 34 checkpoint hashes/configurations. The four phase-end
+models were independently reloaded and exactly reproduced action metrics,
+per-state MC errors and complete rollout traces. Historical target-network
+metrics are not claimed to survive inference-only loading.
+
+New accounting: **44000 optimizer updates**, including **4000 TD updates**;
+**2724 scheduled neural evaluation actions**; and **305 additional actions** for
+independent reload verification. No demonstration was recollected and no online
+exploration, original warmup rerun or held-out access occurred. The shared
+20000-update warmup and 35 demonstration transitions were reused from attempt
+007. Interaction counts exclude reset feasibility probes.
+
+Evidence: [figure](009_return_calibration/evidence/return_calibration.png),
+[summary](009_return_calibration/evidence/summary.json),
+[fixed targets and numerical check](009_return_calibration/evidence/mc_targets.json),
+[input manifest](009_return_calibration/evidence/input_manifest.json),
+[reload verification](009_return_calibration/evidence/reload_checks.json), and
+[archive manifest](009_return_calibration/evidence/archive_manifest.json).
+All scheduled observations and first-ten/every-50th/last update samples are
+archived, with complete-log hashes. Full logs, encoded data and model weights
+remain in the ignored local run directory. Existing production training defaults
+and reports were not modified.

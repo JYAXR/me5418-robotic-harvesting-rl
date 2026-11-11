@@ -1,0 +1,73 @@
+{
+  "source_files_verified": 50,
+  "reference_input_files_verified": 9,
+  "runner_and_helper_hashes_verified": true,
+  "dataset_hash_verified": true,
+  "mc_targets_recomputed_independently": true,
+  "mc_float32_targets_match_exactly": true,
+  "mc_float64_maximum_difference": 2.135436027117521e-05,
+  "arms": {
+    "continued_margin": {
+      "calibration": {
+        "checkpoints_verified": 8,
+        "update_records_verified": 20000,
+        "target_synchronizations": 0,
+        "checkpoint_metadata_verified": true,
+        "phase_zero_preserved": true,
+        "final_parameter_hash_matches": true,
+        "final_fit_matches_exactly": true,
+        "final_rollout_matches_exactly": true,
+        "final_return_fit_matches_exactly": true,
+        "reload_environment_steps": 35,
+        "checkpoint_sha256": "aeadaa7e77b9a3c76343523dff6e84253858e85848304824bf05f13bee2d2518"
+      },
+      "td": {
+        "checkpoints_verified": 9,
+        "update_records_verified": 2000,
+        "target_synchronizations": 10,
+        "checkpoint_metadata_verified": true,
+        "phase_zero_preserved": true,
+        "final_parameter_hash_matches": true,
+        "final_fit_matches_exactly": true,
+        "final_rollout_matches_exactly": true,
+        "final_return_fit_matches_exactly": true,
+        "reload_environment_steps": 200,
+        "checkpoint_sha256": "09b02457f87d5a7d8ab16dd04ba50f314ff769b260ea2791e38c752505467c81"
+      }
+    },
+    "calibrated": {
+      "calibration": {
+        "checkpoints_verified": 8,
+        "update_records_verified": 20000,
+        "target_synchronizations": 0,
+        "checkpoint_metadata_verified": true,
+        "phase_zero_preserved": true,
+        "final_parameter_hash_matches": true,
+        "final_fit_matches_exactly": true,
+        "final_rollout_matches_exactly": true,
+        "final_return_fit_matches_exactly": true,
+        "reload_environment_steps": 35,
+        "checkpoint_sha256": "5c8f3f1f8a18fb534701e01ab3675a7c6199da9b1eeabe6a2865b7a82e6a6f81"
+      },
+      "td": {
+        "checkpoints_verified": 9,
+        "update_records_verified": 2000,
+        "target_synchronizations": 10,
+        "checkpoint_metadata_verified": true,
+        "phase_zero_preserved": true,
+        "final_parameter_hash_matches": true,
+        "final_fit_matches_exactly": true,
+        "final_rollout_matches_exactly": true,
+        "final_return_fit_matches_exactly": true,
+        "reload_environment_steps": 35,
+        "checkpoint_sha256": "9f2fe37100d30ba632b3b412c1620ebc12b6ea9baca725a2e034c4c71125f533"
+      }
+    }
+  },
+  "optimizer_updates_performed": 0,
+  "additional_verification_environment_steps": 305,
+  "training_scene_only": true,
+  "note": "Additional post-run verification; reset feasibility probes are not counted.",
+  "target_metric_limit": "Inference checkpoints omit historical target/optimizer state. This verifies fixed MC errors, action choices and rollouts, not historical target-based value_metrics.",
+  "verifier_sha256": "e7dfdf0f75160744e0aefdcedbe4ba302773ec14469ad38ec0a4b6721a1ff3c3"
+}
