@@ -1,0 +1,202 @@
+{
+  "transition": {
+    "previous_phase_updates": 20000,
+    "phase_updates": 0,
+    "optimizer_reset": false,
+    "target_synchronized": true,
+    "optimizer_before": {
+      "sha256": "72446c464d86f3a1e82fde7525993f6b33891221c11d9424ce8c0c62d08716ee",
+      "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+      "parameter_groups": [
+        {
+          "amsgrad": false,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "capturable": false,
+          "decoupled_weight_decay": false,
+          "differentiable": false,
+          "eps": 1e-08,
+          "foreach": null,
+          "fused": null,
+          "lr": 0.0003,
+          "maximize": false,
+          "weight_decay": 0,
+          "parameters": [
+            "0.weight",
+            "0.bias",
+            "2.weight",
+            "2.bias",
+            "4.weight",
+            "4.bias"
+          ]
+        }
+      ],
+      "parameter_count": 6,
+      "initialized_parameter_count": 6,
+      "steps": {
+        "0.weight": 20000.0,
+        "0.bias": 20000.0,
+        "2.weight": 20000.0,
+        "2.bias": 20000.0,
+        "4.weight": 20000.0,
+        "4.bias": 20000.0
+      },
+      "step_min": 20000.0,
+      "step_max": 20000.0,
+      "first_moment_l2": 0.4486600222383092,
+      "second_moment_l2": 2.946835427998205
+    },
+    "optimizer_after": {
+      "sha256": "72446c464d86f3a1e82fde7525993f6b33891221c11d9424ce8c0c62d08716ee",
+      "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+      "parameter_groups": [
+        {
+          "amsgrad": false,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "capturable": false,
+          "decoupled_weight_decay": false,
+          "differentiable": false,
+          "eps": 1e-08,
+          "foreach": null,
+          "fused": null,
+          "lr": 0.0003,
+          "maximize": false,
+          "weight_decay": 0,
+          "parameters": [
+            "0.weight",
+            "0.bias",
+            "2.weight",
+            "2.bias",
+            "4.weight",
+            "4.bias"
+          ]
+        }
+      ],
+      "parameter_count": 6,
+      "initialized_parameter_count": 6,
+      "steps": {
+        "0.weight": 20000.0,
+        "0.bias": 20000.0,
+        "2.weight": 20000.0,
+        "2.bias": 20000.0,
+        "4.weight": 20000.0,
+        "4.bias": 20000.0
+      },
+      "step_min": 20000.0,
+      "step_max": 20000.0,
+      "first_moment_l2": 0.4486600222383092,
+      "second_moment_l2": 2.946835427998205
+    },
+    "policy_parameter_sha256": "94958e489cb380b49007cb3b8e4c48f8f6dda8488286bd080943949330886004",
+    "total_prior_updates_on_branch": 40000,
+    "target_equals_online": true
+  },
+  "intervention": {
+    "factor": "learning_rate",
+    "value": 0.0003,
+    "applied": false,
+    "settings_before": {
+      "learning_rate": 0.0003,
+      "demonstration_weight": 1.0
+    },
+    "settings_after": {
+      "learning_rate": 0.0003,
+      "demonstration_weight": 1.0
+    },
+    "optimizer_before": {
+      "sha256": "72446c464d86f3a1e82fde7525993f6b33891221c11d9424ce8c0c62d08716ee",
+      "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+      "parameter_groups": [
+        {
+          "amsgrad": false,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "capturable": false,
+          "decoupled_weight_decay": false,
+          "differentiable": false,
+          "eps": 1e-08,
+          "foreach": null,
+          "fused": null,
+          "lr": 0.0003,
+          "maximize": false,
+          "weight_decay": 0,
+          "parameters": [
+            "0.weight",
+            "0.bias",
+            "2.weight",
+            "2.bias",
+            "4.weight",
+            "4.bias"
+          ]
+        }
+      ],
+      "parameter_count": 6,
+      "initialized_parameter_count": 6,
+      "steps": {
+        "0.weight": 20000.0,
+        "0.bias": 20000.0,
+        "2.weight": 20000.0,
+        "2.bias": 20000.0,
+        "4.weight": 20000.0,
+        "4.bias": 20000.0
+      },
+      "step_min": 20000.0,
+      "step_max": 20000.0,
+      "first_moment_l2": 0.4486600222383092,
+      "second_moment_l2": 2.946835427998205
+    },
+    "optimizer_after": {
+      "sha256": "72446c464d86f3a1e82fde7525993f6b33891221c11d9424ce8c0c62d08716ee",
+      "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+      "parameter_groups": [
+        {
+          "amsgrad": false,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "capturable": false,
+          "decoupled_weight_decay": false,
+          "differentiable": false,
+          "eps": 1e-08,
+          "foreach": null,
+          "fused": null,
+          "lr": 0.0003,
+          "maximize": false,
+          "weight_decay": 0,
+          "parameters": [
+            "0.weight",
+            "0.bias",
+            "2.weight",
+            "2.bias",
+            "4.weight",
+            "4.bias"
+          ]
+        }
+      ],
+      "parameter_count": 6,
+      "initialized_parameter_count": 6,
+      "steps": {
+        "0.weight": 20000.0,
+        "0.bias": 20000.0,
+        "2.weight": 20000.0,
+        "2.bias": 20000.0,
+        "4.weight": 20000.0,
+        "4.bias": 20000.0
+      },
+      "step_min": 20000.0,
+      "step_max": 20000.0,
+      "first_moment_l2": 0.4486600222383092,
+      "second_moment_l2": 2.946835427998205
+    },
+    "weights_unchanged": true,
+    "adam_state_unchanged": true
+  }
+}

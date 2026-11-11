@@ -1,0 +1,17 @@
+{
+  "update_records_per_log": {
+    "treatment/td/updates.jsonl": 2000,
+    "baseline/td/updates.jsonl": 2000
+  },
+  "optimizer_updates_total": 4000,
+  "td_optimizer_updates": 4000,
+  "inherited_optimizer_updates": 40000,
+  "inherited_supervised_updates": 20000,
+  "inherited_calibration_updates": 20000,
+  "evaluation_environment_steps": 5010,
+  "scheduled_evaluation_episodes": 108,
+  "demonstration_collection_steps": 0,
+  "online_training_steps": 0,
+  "held_out_scenes_accessed": 0,
+  "note": "Inherited updates are counted once and separately from new paired TD updates."
+}

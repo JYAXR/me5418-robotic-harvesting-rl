@@ -1,0 +1,525 @@
+{
+  "source_files_verified": 52,
+  "reference_input_files_verified": 56,
+  "committed_archive_verified": true,
+  "runner_and_helper_hashes_verified": true,
+  "dataset_hash_verified": true,
+  "independent_episode_returns": [
+    {
+      "seed": 10000,
+      "transitions": 35,
+      "initial_discounted_return": 77.45508575439453,
+      "maximum_float64_difference": 2.135436027117521e-05
+    },
+    {
+      "seed": 10001,
+      "transitions": 41,
+      "initial_discounted_return": 72.81232452392578,
+      "maximum_float64_difference": 2.0148591573843078e-05
+    },
+    {
+      "seed": 10002,
+      "transitions": 41,
+      "initial_discounted_return": 73.20426177978516,
+      "maximum_float64_difference": 2.5402124634865686e-05
+    }
+  ],
+  "mc_float64_maximum_difference": 2.5402124634865686e-05,
+  "exact_baseline_reproduction_verified": true,
+  "single_scalar_boundary_verified": true,
+  "shared_calibrated_full_snapshot_verified": true,
+  "arms": {
+    "baseline": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "full_training_snapshots_verified": 19,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_target_tensors": true,
+        "exact_optimizer_tensors_and_settings": true
+      },
+      "retention_verified": {
+        "eligible_seeds": [
+          10000,
+          10001,
+          10002
+        ],
+        "per_scene": {
+          "10000": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          },
+          "10001": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [
+              1,
+              6,
+              9,
+              10,
+              200
+            ],
+            "first_sampled_failure_update": 1,
+            "retained_at_all_sampled_checkpoints": false,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 6,
+            "first_ten_updates_observation_count": 10
+          },
+          "10002": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          }
+        },
+        "all_scene_retention_eligible": true,
+        "all_scenes_retained_at_all_sampled_checkpoints": false,
+        "acquired_subset_retained_at_all_sampled_checkpoints": false
+      }
+    },
+    "treatment": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "full_training_snapshots_verified": 19,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_target_tensors": true,
+        "exact_optimizer_tensors_and_settings": true
+      },
+      "retention_verified": {
+        "eligible_seeds": [
+          10000,
+          10001,
+          10002
+        ],
+        "per_scene": {
+          "10000": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          },
+          "10001": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          },
+          "10002": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          }
+        },
+        "all_scene_retention_eligible": true,
+        "all_scenes_retained_at_all_sampled_checkpoints": true,
+        "acquired_subset_retained_at_all_sampled_checkpoints": true
+      }
+    }
+  },
+  "reloaded_policies": [
+    {
+      "directory": "baseline/td",
+      "update": 0,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "c2211801c1ae9a0ba730155f1cc9e7ded67e9eb50fed8c5cefb45c7e7c9c07cf"
+    },
+    {
+      "directory": "baseline/td",
+      "update": 1,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "0c2786c7c1543b14a1fa2d5dce8bb68eb2fc750e30cb5c90d6671534d98a9a68"
+    },
+    {
+      "directory": "baseline/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "48c5f2a8c464c9dff05c4ccfa55fb9220f59f0ecfb02f1e86becf04acbdd5647"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 0,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "db1dea44abf9f18356a4f834085bdd7c3e0bb60a36afe8e530e460f47f78d242"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 1,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "a7fbf83f5b813225d5d7828fcdfe72aaaa3bd3f21a3c43a06ffdff59c7228ca6"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "6943d9f2ad0e000e60b40efc6db4e914ae7bd002f481e1136b399992a67a1f8f"
+    }
+  ],
+  "additional_verification_optimizer_updates": 20,
+  "additional_verification_episodes": 18,
+  "additional_verification_environment_steps": 861,
+  "training_scene_only": true,
+  "verifier_sha256": "cc409a939c5df7521760fb2da220f675dd09af622dcbf9c5899bf5b2f07ff9e3",
+  "multiscene_verifier_sha256": "11a89747d29de693ccd319f9b66447af7fa3227a06bb01a82f90fc42fab051ee",
+  "independent_adam_verifier_sha256": "c7a0d8001334f58aa9c0158278e7022ba746c0aa27ec1dbadd3c9c1697db460b",
+  "target_verification_limit": "The first ten updates are independently replayed; update-500 target integrity is checked, but its unsaved update-400 source is not numerically replayed.",
+  "note": "Verification updates and actions are additional work; reset feasibility probes are excluded.",
+  "attempt": 13,
+  "strict_learning_rate_preflight": {
+    "protocol": {
+      "attempt": 13,
+      "factor": "learning_rate",
+      "baseline_value": 0.0003,
+      "treatment_value": 0.0001,
+      "baseline_settings": {
+        "learning_rate": 0.0003,
+        "demonstration_weight": 1.0
+      },
+      "treatment_settings": {
+        "learning_rate": 0.0001,
+        "demonstration_weight": 1.0
+      },
+      "arms": [
+        "baseline",
+        "treatment"
+      ],
+      "scene_seeds": [
+        10000,
+        10001,
+        10002
+      ],
+      "td_updates": 2000,
+      "td_checkpoints": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        20,
+        50,
+        100,
+        200,
+        500,
+        1000,
+        2000
+      ],
+      "margin": 0.8,
+      "effective_batch_size": 117,
+      "full_batch_weighting": "equal_per_transition",
+      "inherited_optimizer_updates": 40000,
+      "shared_start": "attempt_011_calibration_training_state",
+      "td_boundary": "synchronized_targets_zero_phase_clock_before_scalar_intervention",
+      "baseline_gate": "exact_all_updates_observations_and_final_state",
+      "online_training_steps": 0,
+      "held_out_scenes_accessed": 0,
+      "entrypoint_script": "docs/experiments/013_td_learning_rate/run_learning_rate_control.py",
+      "base_runner_script": "docs/experiments/012_divergence_control/run_control.py",
+      "entrypoint_sha256": "46095bf64efaad9c42f8b04df4d7d58e58c862967d4de4b9056807c0a2d3c0ca",
+      "base_runner_sha256": "53a110a59a71eeea48bb418d6e7e62f7786d413346666a2503e4700b9a925c1e",
+      "preserve_adam_moments_and_parameter_steps": true,
+      "early_stopping": false
+    },
+    "prior_source_anchor": {
+      "prior_control_settings_file": "docs/experiments/012_divergence_control/evidence/control/settings.json",
+      "prior_control_settings_sha256": "eed97df422dc5513d4fd716b100a65922424ae09dde18d1c24cfdd808f27db6c",
+      "committed_prior_settings_blob_sha256": "e796acecfd0ebe1ee1b9ac8bedd9a6f79000fcac73427416382dc41c4bf830da"
+    },
+    "boundaries": {
+      "baseline": {
+        "learning_rate": 0.0003,
+        "demonstration_weight": 1.0,
+        "exact_calibrated_weights_and_adam_tensors_preserved": true,
+        "optimizer_settings_and_defaults_verified": true,
+        "adam_parameter_step": 20000,
+        "td_phase_updates": 0,
+        "optimizer_summary": {
+          "sha256": "72446c464d86f3a1e82fde7525993f6b33891221c11d9424ce8c0c62d08716ee",
+          "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+          "parameter_groups": [
+            {
+              "amsgrad": false,
+              "betas": [
+                0.9,
+                0.999
+              ],
+              "capturable": false,
+              "decoupled_weight_decay": false,
+              "differentiable": false,
+              "eps": 1e-08,
+              "foreach": null,
+              "fused": null,
+              "lr": 0.0003,
+              "maximize": false,
+              "weight_decay": 0,
+              "parameters": [
+                "0.weight",
+                "0.bias",
+                "2.weight",
+                "2.bias",
+                "4.weight",
+                "4.bias"
+              ]
+            }
+          ],
+          "parameter_count": 6,
+          "initialized_parameter_count": 6,
+          "steps": {
+            "0.weight": 20000.0,
+            "0.bias": 20000.0,
+            "2.weight": 20000.0,
+            "2.bias": 20000.0,
+            "4.weight": 20000.0,
+            "4.bias": 20000.0
+          },
+          "step_min": 20000.0,
+          "step_max": 20000.0,
+          "first_moment_l2": 0.4486600222383092,
+          "second_moment_l2": 2.946835427998205
+        },
+        "optimizer_updates_performed": 0,
+        "environment_steps": 0,
+        "environment_resets": 0
+      },
+      "treatment": {
+        "learning_rate": 0.0001,
+        "demonstration_weight": 1.0,
+        "exact_calibrated_weights_and_adam_tensors_preserved": true,
+        "optimizer_settings_and_defaults_verified": true,
+        "adam_parameter_step": 20000,
+        "td_phase_updates": 0,
+        "optimizer_summary": {
+          "sha256": "c7f1d79893598614cd347d133f68feca3cea6b33e6c049f151031a13e1f343da",
+          "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+          "parameter_groups": [
+            {
+              "amsgrad": false,
+              "betas": [
+                0.9,
+                0.999
+              ],
+              "capturable": false,
+              "decoupled_weight_decay": false,
+              "differentiable": false,
+              "eps": 1e-08,
+              "foreach": null,
+              "fused": null,
+              "lr": 0.0001,
+              "maximize": false,
+              "weight_decay": 0,
+              "parameters": [
+                "0.weight",
+                "0.bias",
+                "2.weight",
+                "2.bias",
+                "4.weight",
+                "4.bias"
+              ]
+            }
+          ],
+          "parameter_count": 6,
+          "initialized_parameter_count": 6,
+          "steps": {
+            "0.weight": 20000.0,
+            "0.bias": 20000.0,
+            "2.weight": 20000.0,
+            "2.bias": 20000.0,
+            "4.weight": 20000.0,
+            "4.bias": 20000.0
+          },
+          "step_min": 20000.0,
+          "step_max": 20000.0,
+          "first_moment_l2": 0.4486600222383092,
+          "second_moment_l2": 2.946835427998205
+        },
+        "optimizer_updates_performed": 0,
+        "environment_steps": 0,
+        "environment_resets": 0
+      }
+    },
+    "optimizer_updates_performed": 0,
+    "environment_steps": 0,
+    "environment_resets": 0
+  },
+  "verification_wrapper_sha256": "b532fa6e28e7313258c2820946129ff2a2e752a9b4d9e4b601c9328d531aea23",
+  "base_verifier_sha256": "cc409a939c5df7521760fb2da220f675dd09af622dcbf9c5899bf5b2f07ff9e3",
+  "base_verification_report": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_learning_rate_preserved_20261112\\reload_checks_base.json",
+  "base_verification_report_sha256": "22cde1dc4574373ec68637c2c4a0aec203653c7ef95e6678a1bfa9d80bd31494",
+  "accounting_note": "This report and the base report describe the same 20 verification updates and 18 episodes; do not add their counts together."
+}

@@ -1,0 +1,115 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_learning_rate_preserved_20261112",
+  "status": "completed",
+  "files": {
+    "accounting.json": {
+      "sha256": "9e816f3d0373110d300e194daabe56144505edb12c63e616e5503b65cb8073af",
+      "bytes": 596
+    },
+    "baseline/td/observations.json": {
+      "sha256": "93bc2edaffc462ea995d1fba7e6169b81f93adbc1c6f2f885679fe8450fca50a",
+      "bytes": 813871
+    },
+    "baseline/td/summary.json": {
+      "sha256": "6afd83efdfaa153f67b62967de81690463a78898333d2d2b6460292297423358",
+      "bytes": 85239
+    },
+    "baseline/td_boundary.json": {
+      "sha256": "2ecc536d6aa4461e9325a7be985c9687941fcea5b74a29dea6c816b6793d78b2",
+      "bytes": 5722
+    },
+    "baseline/transition.json": {
+      "sha256": "6263d42be0674babfdba8b7f37d965e8f26d92200d70f1b65d40e62d7955f8de",
+      "bytes": 2630
+    },
+    "baseline_equivalence.json": {
+      "sha256": "e139dad6e1d74aa444a5713edb1f150ad2d230e0a516430648046ad2bfae0ec6",
+      "bytes": 156
+    },
+    "dataset.json": {
+      "sha256": "eeca314e59fce96bdd522338a742f13a18ad409e3f41c9cade0904322675b069",
+      "bytes": 2250
+    },
+    "input_manifest.json": {
+      "sha256": "dd37445e9874038a4923dfc2849c44bcdf819b060c93e2c544a402fa36c798c4",
+      "bytes": 13552
+    },
+    "learning_rate_outcomes.png": {
+      "sha256": "8bb9c25ebafd75475a1369f16812d1f4851e165acd52ea361270cf298ffdf7f0",
+      "bytes": 353855
+    },
+    "mc_targets.json": {
+      "sha256": "913677678e647a5bd80054edc621940a418b197dd3c2605af57922cbe2bf5305",
+      "bytes": 20188
+    },
+    "provenance.json": {
+      "sha256": "c07e9801c9dbaec6762b9dba7eeb45ff400cd06c61b74288f016a63d9ace51e3",
+      "bytes": 6697
+    },
+    "q_analysis.json": {
+      "sha256": "a5e7e4fc6457cf63e7e57bd153027298785b03802abebd249d099ee9fc46d574",
+      "bytes": 541448
+    },
+    "reload_checks.json": {
+      "sha256": "70ce2dfb1f000c4cd81e43d0f1adf23fbb044386f0c4b7327175cae278bdf2a4",
+      "bytes": 18189
+    },
+    "reload_checks_base.json": {
+      "sha256": "22cde1dc4574373ec68637c2c4a0aec203653c7ef95e6678a1bfa9d80bd31494",
+      "bytes": 11538
+    },
+    "run_status.json": {
+      "sha256": "023bc7c5e558c152a35a2f1fc775a0c2f12149c1877555fbf9f3361949fdfa88",
+      "bytes": 166
+    },
+    "settings.json": {
+      "sha256": "4913d662a525d1c9997db475a173f8e2f3dc8cc184e5281e4b59836e026624c5",
+      "bytes": 4443
+    },
+    "summary.json": {
+      "sha256": "5bf0bbeb041e3d107ab0b96bbf9bbb21df8fdb65992770d5df1e3576b065205b",
+      "bytes": 217422
+    },
+    "treatment/td/observations.json": {
+      "sha256": "ce2ca11bd34d621ec146809c7332ffcf5b25d61036278fdd985eb55d44d77771",
+      "bytes": 719835
+    },
+    "treatment/td/summary.json": {
+      "sha256": "1cfc2e045f85fc1bba6e8d291deab7ea9d4c0ba841bac2b716a82b94d1f16a74",
+      "bytes": 85349
+    },
+    "treatment/td_boundary.json": {
+      "sha256": "8204da1a636935a3be064b40ccdfc298b7a886a1685cc2c33a1e8710699949d5",
+      "bytes": 5721
+    },
+    "treatment/transition.json": {
+      "sha256": "6263d42be0674babfdba8b7f37d965e8f26d92200d70f1b65d40e62d7955f8de",
+      "bytes": 2630
+    },
+    "baseline/td/update_samples.jsonl": {
+      "sha256": "9b8ca69eeb7efff72a8580e46de27698ed94d4a1daf2e8fb6304a935ebee02c2",
+      "bytes": 21255
+    },
+    "treatment/td/update_samples.jsonl": {
+      "sha256": "320e82e0d44c814ebaf16425b297bd8adc5096dec09ff0a358958f2e604552f9",
+      "bytes": 21292
+    }
+  },
+  "update_log_coverage": {
+    "baseline/td/updates.jsonl": {
+      "raw_sha256": "f1752467f311f02e4d2a49d4b6e3345c7e98484cc7a543323ad30aef46940290",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "treatment/td/updates.jsonl": {
+      "raw_sha256": "adde22a76db4a5074fd3dce47087774251229e6a82ba160a8d8cad868bd88039",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    }
+  },
+  "archive_script_sha256": "05a1e1583d5a6f7638fc275bc048c7661ab553fbb9e6a0b7c7360e38f3fb8c58",
+  "excluded": "Models, encoded arrays, console output and full update logs stay in ignored results.",
+  "note": "All scheduled per-scene outcomes, failures, fixed-state Q comparisons and verification results are retained."
+}

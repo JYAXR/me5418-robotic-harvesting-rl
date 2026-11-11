@@ -1,0 +1,338 @@
+{
+  "source_files_verified": 52,
+  "reference_input_files_verified": 56,
+  "committed_archive_verified": true,
+  "runner_and_helper_hashes_verified": true,
+  "dataset_hash_verified": true,
+  "independent_episode_returns": [
+    {
+      "seed": 10000,
+      "transitions": 35,
+      "initial_discounted_return": 77.45508575439453,
+      "maximum_float64_difference": 2.135436027117521e-05
+    },
+    {
+      "seed": 10001,
+      "transitions": 41,
+      "initial_discounted_return": 72.81232452392578,
+      "maximum_float64_difference": 2.0148591573843078e-05
+    },
+    {
+      "seed": 10002,
+      "transitions": 41,
+      "initial_discounted_return": 73.20426177978516,
+      "maximum_float64_difference": 2.5402124634865686e-05
+    }
+  ],
+  "mc_float64_maximum_difference": 2.5402124634865686e-05,
+  "exact_baseline_reproduction_verified": true,
+  "single_scalar_boundary_verified": true,
+  "shared_calibrated_full_snapshot_verified": true,
+  "arms": {
+    "baseline": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "full_training_snapshots_verified": 19,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_target_tensors": true,
+        "exact_optimizer_tensors_and_settings": true
+      },
+      "retention_verified": {
+        "eligible_seeds": [
+          10000,
+          10001,
+          10002
+        ],
+        "per_scene": {
+          "10000": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          },
+          "10001": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [
+              1,
+              6,
+              9,
+              10,
+              200
+            ],
+            "first_sampled_failure_update": 1,
+            "retained_at_all_sampled_checkpoints": false,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 6,
+            "first_ten_updates_observation_count": 10
+          },
+          "10002": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          }
+        },
+        "all_scene_retention_eligible": true,
+        "all_scenes_retained_at_all_sampled_checkpoints": false,
+        "acquired_subset_retained_at_all_sampled_checkpoints": false
+      }
+    },
+    "treatment": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "full_training_snapshots_verified": 19,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_target_tensors": true,
+        "exact_optimizer_tensors_and_settings": true
+      },
+      "retention_verified": {
+        "eligible_seeds": [
+          10000,
+          10001,
+          10002
+        ],
+        "per_scene": {
+          "10000": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          },
+          "10001": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          },
+          "10002": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          }
+        },
+        "all_scene_retention_eligible": true,
+        "all_scenes_retained_at_all_sampled_checkpoints": true,
+        "acquired_subset_retained_at_all_sampled_checkpoints": true
+      }
+    }
+  },
+  "reloaded_policies": [
+    {
+      "directory": "baseline/td",
+      "update": 0,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "c2211801c1ae9a0ba730155f1cc9e7ded67e9eb50fed8c5cefb45c7e7c9c07cf"
+    },
+    {
+      "directory": "baseline/td",
+      "update": 1,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "0c2786c7c1543b14a1fa2d5dce8bb68eb2fc750e30cb5c90d6671534d98a9a68"
+    },
+    {
+      "directory": "baseline/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "48c5f2a8c464c9dff05c4ccfa55fb9220f59f0ecfb02f1e86becf04acbdd5647"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 0,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "db1dea44abf9f18356a4f834085bdd7c3e0bb60a36afe8e530e460f47f78d242"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 1,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "a7fbf83f5b813225d5d7828fcdfe72aaaa3bd3f21a3c43a06ffdff59c7228ca6"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "6943d9f2ad0e000e60b40efc6db4e914ae7bd002f481e1136b399992a67a1f8f"
+    }
+  ],
+  "additional_verification_optimizer_updates": 20,
+  "additional_verification_episodes": 18,
+  "additional_verification_environment_steps": 861,
+  "training_scene_only": true,
+  "verifier_sha256": "cc409a939c5df7521760fb2da220f675dd09af622dcbf9c5899bf5b2f07ff9e3",
+  "multiscene_verifier_sha256": "11a89747d29de693ccd319f9b66447af7fa3227a06bb01a82f90fc42fab051ee",
+  "independent_adam_verifier_sha256": "c7a0d8001334f58aa9c0158278e7022ba746c0aa27ec1dbadd3c9c1697db460b",
+  "target_verification_limit": "The first ten updates are independently replayed; update-500 target integrity is checked, but its unsaved update-400 source is not numerically replayed.",
+  "note": "Verification updates and actions are additional work; reset feasibility probes are excluded."
+}

@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "exact_update_records": 2000,
+  "exact_observations": 18,
+  "exact_final_training_state": true,
+  "treatment_started": false
+}
