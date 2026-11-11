@@ -1,0 +1,370 @@
+{
+  "source_files_verified": 52,
+  "config_input_files_verified": 2,
+  "runner_and_helper_hashes_verified": true,
+  "dataset_hash_verified": true,
+  "independently_verified_episode_returns": [
+    {
+      "seed": 10000,
+      "transitions": 35,
+      "initial_discounted_return": 77.45508575439453,
+      "maximum_float64_difference": 2.135436027117521e-05
+    },
+    {
+      "seed": 10001,
+      "transitions": 41,
+      "initial_discounted_return": 72.81232452392578,
+      "maximum_float64_difference": 2.0148591573843078e-05
+    },
+    {
+      "seed": 10002,
+      "transitions": 41,
+      "initial_discounted_return": 73.20426177978516,
+      "maximum_float64_difference": 2.5402124634865686e-05
+    }
+  ],
+  "mc_float64_maximum_difference": 2.5402124634865686e-05,
+  "fresh_initialization_verified": true,
+  "full_training_snapshots_verified": 5,
+  "pretraining_checkpoints_verified": 5,
+  "calibration_checkpoints_verified": 8,
+  "all_update_records_verified": 44000,
+  "arms": {
+    "reset": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "full_training_snapshot_verified": true,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_optimizer_summaries": true
+      },
+      "per_scene_retention_verified": {
+        "eligible_seeds": [
+          10000,
+          10001,
+          10002
+        ],
+        "per_scene": {
+          "10000": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10
+            ],
+            "first_sampled_failure_update": 1,
+            "retained_at_all_sampled_checkpoints": false,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 0,
+            "first_ten_updates_observation_count": 10
+          },
+          "10001": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [
+              1,
+              2,
+              3,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              20,
+              50,
+              1000
+            ],
+            "first_sampled_failure_update": 1,
+            "retained_at_all_sampled_checkpoints": false,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 1,
+            "first_ten_updates_observation_count": 10
+          },
+          "10002": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [
+              1,
+              2,
+              3,
+              4,
+              7,
+              8,
+              9,
+              10,
+              20
+            ],
+            "first_sampled_failure_update": 1,
+            "retained_at_all_sampled_checkpoints": false,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 2,
+            "first_ten_updates_observation_count": 10
+          }
+        },
+        "all_scene_retention_eligible": true,
+        "all_scenes_retained_at_all_sampled_checkpoints": false,
+        "acquired_subset_retained_at_all_sampled_checkpoints": false
+      }
+    },
+    "preserve": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "full_training_snapshot_verified": true,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_optimizer_summaries": true
+      },
+      "per_scene_retention_verified": {
+        "eligible_seeds": [
+          10000,
+          10001,
+          10002
+        ],
+        "per_scene": {
+          "10000": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          },
+          "10001": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [
+              1,
+              6,
+              9,
+              10,
+              200
+            ],
+            "first_sampled_failure_update": 1,
+            "retained_at_all_sampled_checkpoints": false,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 6,
+            "first_ten_updates_observation_count": 10
+          },
+          "10002": {
+            "retention_eligible": true,
+            "failed_sampled_updates": [],
+            "first_sampled_failure_update": null,
+            "retained_at_all_sampled_checkpoints": true,
+            "interpretation": "retention_of_acquired_scene",
+            "first_ten_updates_success_count": 10,
+            "first_ten_updates_observation_count": 10
+          }
+        },
+        "all_scene_retention_eligible": true,
+        "all_scenes_retained_at_all_sampled_checkpoints": false,
+        "acquired_subset_retained_at_all_sampled_checkpoints": false
+      }
+    }
+  },
+  "reloaded_policies": [
+    {
+      "directory": "pretraining",
+      "update": 20000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "6e4022d9055651b8c10ee031b384ed08e972b87ba8314a0d145951c9ba355ba4"
+    },
+    {
+      "directory": "calibration",
+      "update": 20000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "86a18e7b711f2e6de4830ff01f993be0f3534290b9216b30a79ad9eca8d4ba55"
+    },
+    {
+      "directory": "reset/td",
+      "update": 1,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        }
+      ],
+      "checkpoint_sha256": "41485a0e03c87317746db3492b86251c19c647e925f91a50d9710a32665f1545"
+    },
+    {
+      "directory": "reset/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "4066e5521afc1e5ece87922d1dd1e23183376587f987d79165ec38696aecaaf7"
+    },
+    {
+      "directory": "preserve/td",
+      "update": 1,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "a112be877b466bf1f020f70626ad1476c0bca82e211714f362d6708968c18135"
+    },
+    {
+      "directory": "preserve/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "350f4be1107c7532fcca9f11854cb97af05b4432b668c5468443251d4150d4ff"
+    }
+  ],
+  "additional_verification_optimizer_updates": 20,
+  "additional_verification_episodes": 18,
+  "additional_verification_environment_steps": 1344,
+  "training_scene_only": true,
+  "note": "Independent verification work; reset feasibility probes are excluded from action counts.",
+  "target_metric_limit": "Inference reloads verify action and MC metrics and full trajectories; historical TD targets are checked by the independent early update replay.",
+  "verifier_sha256": "11a89747d29de693ccd319f9b66447af7fa3227a06bb01a82f90fc42fab051ee",
+  "independent_adam_helper_sha256": "c7a0d8001334f58aa9c0158278e7022ba746c0aa27ec1dbadd3c9c1697db460b"
+}

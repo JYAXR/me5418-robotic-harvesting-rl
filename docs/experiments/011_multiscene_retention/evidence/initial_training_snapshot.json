@@ -1,0 +1,42 @@
+{
+  "file": "initial_training_state.pt",
+  "sha256": "db1fee1ef9ba79f8799340308f0ebc6925602c84aac793076fc123dc7ac3e6a9",
+  "parameter_sha256": "ebf0aebfb2c38df0ab847149f894288c2a096364e80a1a2f6a7c9b5232001026",
+  "optimizer_summary": {
+    "sha256": "f0c57c50ae6a28512a16dea8725ebf0b5a3c8d40101d1f8a21f8ccff794a45ed",
+    "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0003,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 0,
+    "steps": {},
+    "step_min": null,
+    "step_max": null,
+    "first_moment_l2": 0.0,
+    "second_moment_l2": 0.0
+  }
+}

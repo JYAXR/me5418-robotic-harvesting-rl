@@ -1,0 +1,16 @@
+{
+  "update_records_per_log": {
+    "calibration/updates.jsonl": 20000,
+    "pretraining/updates.jsonl": 20000,
+    "reset/td/updates.jsonl": 2000,
+    "preserve/td/updates.jsonl": 2000
+  },
+  "optimizer_updates_total": 44000,
+  "td_optimizer_updates": 4000,
+  "demonstration_collection_steps": 117,
+  "evaluation_environment_steps": 13959,
+  "inherited_optimizer_updates": 0,
+  "online_training_steps": 0,
+  "held_out_scenes_accessed": 0,
+  "note": "Actual recorded completed updates/actions; planner search and reset probes are excluded."
+}

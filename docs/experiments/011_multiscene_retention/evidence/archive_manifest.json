@@ -1,0 +1,143 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\multiscene_retention_20261112",
+  "status": "completed",
+  "files": {
+    "accounting.json": {
+      "sha256": "33b9df85d6bee03ab01a87c213a2fd3597a6bc0dfb7614948f2c32016c4ed941",
+      "bytes": 559
+    },
+    "calibration/observations.json": {
+      "sha256": "b0a49136d521fe27557486916aedb34fec18ffcdfa46ee5122b009dc278f9a91",
+      "bytes": 598736
+    },
+    "calibration/summary.json": {
+      "sha256": "1da1a0c4a304cd92e95ce5a0fbd2ecc36b6ab2cc114b2e43e31b9f6ec539c14e",
+      "bytes": 82687
+    },
+    "calibration_boundary.json": {
+      "sha256": "887311ca35595e032aac65b5f582de68feb220d010cf40937afe5d34919f1446",
+      "bytes": 2426
+    },
+    "dataset.json": {
+      "sha256": "eeca314e59fce96bdd522338a742f13a18ad409e3f41c9cade0904322675b069",
+      "bytes": 2250
+    },
+    "demonstrations.json": {
+      "sha256": "10f2d020257725c310ec9369b7a1f3c18821f504f3dcff561ea73eaddce5f13c",
+      "bytes": 3233
+    },
+    "initial_training_snapshot.json": {
+      "sha256": "4b4e0b71ea87eae90ad3a7703c98de3685321705e9fa7d8d9568f9f9d5f89897",
+      "bytes": 1182
+    },
+    "input_manifest.json": {
+      "sha256": "9ef4eff381e7caf282da82cf9c04487ce0bf7067452d78813f9b3a18054303ee",
+      "bytes": 1007
+    },
+    "mc_targets.json": {
+      "sha256": "913677678e647a5bd80054edc621940a418b197dd3c2605af57922cbe2bf5305",
+      "bytes": 20188
+    },
+    "multiscene_retention.png": {
+      "sha256": "98c77e27127542cc49476d9cda9d1ed606a811d218521a7543cc7518cd048e65",
+      "bytes": 691453
+    },
+    "preserve/td/observations.json": {
+      "sha256": "93bc2edaffc462ea995d1fba7e6169b81f93adbc1c6f2f885679fe8450fca50a",
+      "bytes": 813871
+    },
+    "preserve/td/summary.json": {
+      "sha256": "946c483974df4348b984867f88d799042e8510d33b3deb13e7e1bf90582cbab5",
+      "bytes": 83436
+    },
+    "preserve/td_boundary.json": {
+      "sha256": "6263d42be0674babfdba8b7f37d965e8f26d92200d70f1b65d40e62d7955f8de",
+      "bytes": 2630
+    },
+    "pretraining/observations.json": {
+      "sha256": "5726d9b0d63c8f14ff0d768436af321ccd232860c12eee91e4b5c5d9b4c71ffb",
+      "bytes": 336707
+    },
+    "pretraining/summary.json": {
+      "sha256": "2db1b43fbdf4c22997fd86d65e6b1fe43719fce86b7eeed51566e9ebd744e4c7",
+      "bytes": 138203
+    },
+    "provenance.json": {
+      "sha256": "06d2c94a99cc1bacac8e1f7993e214cd77a9da32e0df288686d08a47a2d29ae8",
+      "bytes": 6534
+    },
+    "reload_checks.json": {
+      "sha256": "45eac8255a0d40d13bf2f5414171f5ef57c446403bf2c435275aa34f621ad635",
+      "bytes": 11970
+    },
+    "reset/td/observations.json": {
+      "sha256": "f3bd9f84cb1520ea03440f1846771e48f8adebe12211d0ac3718cde9aaf0f410",
+      "bytes": 1175054
+    },
+    "reset/td/summary.json": {
+      "sha256": "15ac6349f684c1e630975613d61afab09ec084ed00f82d4e8a34cdf80c32db41",
+      "bytes": 83776
+    },
+    "reset/td_boundary.json": {
+      "sha256": "cfc6f8bee4149288ac582399101c1e7ce77fc42fbc8b68c926dfe10f318c35a1",
+      "bytes": 2427
+    },
+    "run_status.json": {
+      "sha256": "cadcd84607bace48f06f56773633bdf5a29a0b200bd6074696cbd78d3880b0e8",
+      "bytes": 166
+    },
+    "settings.json": {
+      "sha256": "9a73e5ba05f95ff86aa8af011ee6a2e04a91ca72c8d454c072d252061b8081c2",
+      "bytes": 3983
+    },
+    "summary.json": {
+      "sha256": "7554fbc3736ffa7eadef92250ec911c7932fc3994eaa3aef4646457b13467a22",
+      "bytes": 451307
+    },
+    "calibration/update_samples.jsonl": {
+      "sha256": "2949399d00a1a60ac9d2b669609f0a1622dc7e5212225f1c334495875cff9d42",
+      "bytes": 178196
+    },
+    "preserve/td/update_samples.jsonl": {
+      "sha256": "9b8ca69eeb7efff72a8580e46de27698ed94d4a1daf2e8fb6304a935ebee02c2",
+      "bytes": 21255
+    },
+    "pretraining/update_samples.jsonl": {
+      "sha256": "386b16e798b9cd7701752f871fa6da02429b04ac2a963f89355d1d2e5cbebbe9",
+      "bytes": 68357
+    },
+    "reset/td/update_samples.jsonl": {
+      "sha256": "00fde292ecde41b3691b7a36e47bb186544b4cf528c8039b9903d377419e806a",
+      "bytes": 21173
+    }
+  },
+  "update_log_coverage": {
+    "calibration/updates.jsonl": {
+      "raw_sha256": "eec0a943b21f0863f791696367fcb8fb5292cb165a73887ad7d58fb72327f11d",
+      "raw_records": 20000,
+      "archived_records": 410,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "preserve/td/updates.jsonl": {
+      "raw_sha256": "f1752467f311f02e4d2a49d4b6e3345c7e98484cc7a543323ad30aef46940290",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "pretraining/updates.jsonl": {
+      "raw_sha256": "d7b6c000404fcee0e2d166a162a4111299dba19f5564a8a1e8d4c6597fddc5f2",
+      "raw_records": 20000,
+      "archived_records": 410,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "reset/td/updates.jsonl": {
+      "raw_sha256": "c39c3708768ded70ecace8cf53599e28fb98a39b21abd04f255b0bc5feee084b",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    }
+  },
+  "archive_script_sha256": "75a3bda10865c16f6e525cbe924cb41681c4c28cd8c7d418208df8529d832bc3",
+  "excluded": "Model weights, encoded arrays and full update logs stay in ignored results.",
+  "note": "All scheduled per-scene supervision, calibration and TD observations are retained."
+}
