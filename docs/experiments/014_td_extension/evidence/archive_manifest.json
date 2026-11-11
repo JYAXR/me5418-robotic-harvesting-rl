@@ -1,0 +1,95 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_extension_10000_20261112",
+  "status": "completed",
+  "files": {
+    "accounting.json": {
+      "sha256": "874355de4b9773b6c323724587633ec1152a7597c9157f592ac113f42fe0ede9",
+      "bytes": 758
+    },
+    "dataset.json": {
+      "sha256": "eeca314e59fce96bdd522338a742f13a18ad409e3f41c9cade0904322675b069",
+      "bytes": 2250
+    },
+    "extension_outcomes.png": {
+      "sha256": "613c4be6fa227aff6a689d0be7ccac5ff8dd3057cff5471e378229806492bf8e",
+      "bytes": 362352
+    },
+    "initial_equivalence.json": {
+      "sha256": "2d142602bd15653a3010b708aa3bf5c6394275f901589076af4969dbf3439d60",
+      "bytes": 133
+    },
+    "input_manifest.json": {
+      "sha256": "7e5afb37f1ff28116867d0adb54633abdf3d4837735b89f288c59fc090e061ce",
+      "bytes": 24748
+    },
+    "mc_targets.json": {
+      "sha256": "913677678e647a5bd80054edc621940a418b197dd3c2605af57922cbe2bf5305",
+      "bytes": 20188
+    },
+    "provenance.json": {
+      "sha256": "bd5be16fa07b96defcd14cc8852110a1c6856cb8eeca455f1b439334a7f19631",
+      "bytes": 6678
+    },
+    "q_analysis.json": {
+      "sha256": "f36483b72647f93c8ea23c1980f30a0f50c3085dcf689fc2aedcb3bb2cf55265",
+      "bytes": 2727304
+    },
+    "reload_checks.json": {
+      "sha256": "afab415209eab422effc0b9a18e12bf4f2b069f6d28ec8bf9f1ecd73c968c2c0",
+      "bytes": 7431
+    },
+    "restore_checks.json": {
+      "sha256": "d64256f60fd0455a66d73e379baf32978cdbe4c83045dd045a8129a33bb49137",
+      "bytes": 1359
+    },
+    "run_status.json": {
+      "sha256": "2229d9cd55651ead1954d377627d93f86f9fadaf4aa1e40c040d2bd378c00afa",
+      "bytes": 166
+    },
+    "sentinel_gaps.png": {
+      "sha256": "e9c457d43d8033e1f644288111d172d475998d8f4b2915b2e19f2221439a549a",
+      "bytes": 406996
+    },
+    "settings.json": {
+      "sha256": "1e8117e934952800380fb6d27051dccebde4987006dc12c0edd26da1fa36b463",
+      "bytes": 4500
+    },
+    "summary.json": {
+      "sha256": "9a370e3482a0499d298888d901de0249010e887f28410d35a83480eab9baa8d9",
+      "bytes": 122831
+    },
+    "td/observations.json": {
+      "sha256": "d01b9285373058d0f6b13c320184978fe79f386ca1117512855d131259aee0fe",
+      "bytes": 1193964
+    },
+    "td/summary.json": {
+      "sha256": "fe0fe736e1aa14b9e1571d6055b5c19e9ff91b48778fd292a66a5f390791b7b1",
+      "bytes": 107599
+    },
+    "td/update_samples.jsonl": {
+      "sha256": "376debc63c861f45c591dd27448e9aa6c765fa1af9fb9eb98ae98431678cbbc1",
+      "bytes": 75870
+    },
+    "td/sentinel_q_samples.jsonl": {
+      "sha256": "3092958b3d323890606f13899efd146e510a8a2e0b5bc42731b53dac9990d18d",
+      "bytes": 229490
+    }
+  },
+  "raw_log_coverage": {
+    "td/updates.jsonl": {
+      "raw_sha256": "c4874c126e9f967581d2aec19812a226e0cab0752213160e635a9d9602f03b67",
+      "raw_records": 8000,
+      "archived_records": 170,
+      "sampling": "first 10 new updates, every 50th absolute update, last"
+    },
+    "td/sentinel_q.jsonl": {
+      "raw_sha256": "bf780765d82413d2eb1f0564cc98b7949abd58c2fbd30deaf23306bee7e65178",
+      "raw_records": 8001,
+      "archived_records": 171,
+      "sampling": "initial state, first 10 new updates, every 50th absolute update, last"
+    }
+  },
+  "archive_script_sha256": "028e30677bc7ce18b81354d5d259e5f2f93bcbe93497c9b29203978977379eb0",
+  "excluded": "Models, encoded arrays, console output and full raw Q/update logs remain in ignored results.",
+  "note": "All scheduled outcomes, failures, complete compact Q-gap/action series and verification results are retained."
+}

@@ -1,0 +1,19 @@
+{
+  "optimizer_updates_total": 8000,
+  "td_optimizer_updates": 8000,
+  "inherited_optimizer_updates": 42000,
+  "inherited_supervised_updates": 20000,
+  "inherited_calibration_updates": 20000,
+  "inherited_td_updates": 2000,
+  "total_updates_on_branch": 50000,
+  "absolute_td_update": 10000,
+  "evaluation_environment_steps": 3711,
+  "scheduled_evaluation_episodes": 87,
+  "sentinel_records": 8001,
+  "sentinel_forward_passes": 32004,
+  "sentinel_environment_steps": 0,
+  "demonstration_collection_steps": 0,
+  "online_training_steps": 0,
+  "held_out_scenes_accessed": 0,
+  "note": "Counts completed updates and completed physical checkpoint observations. Inherited updates are separate; independent verification is recorded separately."
+}

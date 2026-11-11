@@ -141,4 +141,163 @@ python docs/experiments/014_td_extension/archive_td_extension.py --run-dir resul
 The local execution uses `.venv/Scripts/python.exe`. The raw attempt 013
 checkpoint and original attempt 011 data must be available; compact Git evidence
 does not include model binaries. The runner rejects a reused output directory.
-Results are pending at the pre-execution commit.
+The implementation and protocol were committed and pushed before execution as
+`105a034582558764595b4d1a22660752f15ca09c`.
+
+## Execution and observed outcomes
+
+The run completed from 2026-11-11 17:59:41.508421 UTC to 18:06:07.366578 UTC
+(12 November, 01:59:41--02:06:07 in Asia/Shanghai), approximately 6 minutes
+26 seconds. The saved initial full state and the three re-evaluated update-2000
+episodes exactly matched attempt 013. Adam parameter steps advanced from 22000
+to 30000; the absolute TD clock advanced from 2000 to 10000, with 40 ordinary
+target synchronizations and no resume reset. All 8000 updates had nonzero
+parameter displacement.
+
+**Strict sampled retention fails.** The lower learning rate did not eliminate
+later degradation: scene 10001 fails at absolute TD updates **2009 and 10000**.
+The first observed continuation failure appears after only nine new updates.
+The policy recovers at 2010 and succeeds at every scheduled checkpoint from
+2200 through 9500, then fails again at the final checkpoint. This is intermittent
+loss of learned behavior, rather than a monotonic collapse.
+
+| Evaluation scope | All-three-success checkpoints | Successful individual scene checks | Failure updates |
+| --- | ---: | ---: | --- |
+| Inherited attempt 013, TD 0--2000 | 18/18 | 54/54 | None at scheduled checks |
+| First ten new updates, TD 2001--2010 | 9/10 | 29/30 | 2009, scene 10001 |
+| All attempt 014 checks, including repeated TD 2000 | 27/29 | 85/87 | 2009 and 10000, scene 10001 |
+| Combined distinct TD checkpoints, boundary counted once | 44/46 | 136/138 | 2009 and 10000, scene 10001 |
+
+Scenes 10000 and 10002 succeed at all 29 new checkpoints in 35 and 41 steps.
+Scene 10001 succeeds at 27/29 checks in 41 steps and exhausts its 200-step budget
+at the other two. There is no observed damage. The final policy therefore
+achieves **2/3 scene success and 115/117 demonstration action matches**, compared
+with **3/3 success and 116/117 matches** at the resume boundary. High aggregate
+action agreement does not guarantee a successful closed-loop route.
+The final update log's `demonstration_action_accuracy=1.0` is measured before
+that update; it must not replace the final observation's post-update 115/117.
+
+The main experiment executes 87 episodes and **3711 actual policy actions**.
+Historical evaluation actions remain inherited evidence; the combined
+deduplicated history contains 5700 actions, not 5700 newly executed actions.
+There is no new demonstration collection, online exploration or held-out test.
+The 42000 inherited optimization steps are reused once; this branch finishes
+with 50000 total steps across supervision, calibration and TD.
+
+## Both failures begin at a new step-size decision
+
+At both failed checkpoints, the first 20 actions of scene 10001 match the
+demonstration. At **step 21**, the policy selects `north_large (4)` instead of
+`north_small (0)`. The recorded state and action prefix are checked against the
+demonstration, so the Q comparison is at the actual shared state before the
+first deviation.
+
+| TD update | Q(north_small), demonstrated | Q(north_large), selected | Demonstrated minus strongest other | Episode outcome |
+| --- | ---: | ---: | ---: | --- |
+| 2009 | 84.930313 | 84.947029 | -0.016716 | Budget exhausted, 200 steps |
+| 10000 | 84.809303 | 84.869194 | -0.059891 | Budget exhausted, 200 steps |
+
+Both failed rollouts record return 2.479857, 178 blocked steps and 177 stationary
+steps. Their first deviation is a large-versus-small movement choice, rather
+than the earlier step-6 or step-18 missed turns. The original calibrated policy
+already had only a **+0.007416** demonstrated-action gap at this step-21 state.
+This identifies another fragile action boundary. No forced-action rescue was
+performed in this attempt, so this evidence locates the first deviation and its
+subsequent failure; it does not independently prove that correcting that single
+action would rescue the episode.
+
+All four predeclared sentinel gaps are positive at both physical failures.
+Step 21 was outside the fixed probe set, and reference states after the fork
+need not be visited by the deviating policy. This is a concrete limitation of
+monitoring only previously problematic states. The probe set was not changed
+after seeing either failure.
+
+## Dense Q rankings and optimization diagnostics
+
+The complete 8001 probe records include the resumed boundary and every new
+update. The compact archive retains every gap and greedy action; raw eight-score
+vectors remain locally with their hashes and sampled vectors in Git.
+
+| Reference step in scene 10001 | Negative gaps among 8000 new updates | Minimum signed gap | Update at minimum |
+| --- | ---: | ---: | ---: |
+| 6 | 394 | -0.323555 | 2784 |
+| 18 | 0 | +0.105278 | 2047 |
+| 22 | 0 | +0.224068 | 2410 |
+| 24, successful-deviation control | 102 | -0.211525 | 2053 |
+
+Step 6 first reverses at TD 2041 and has 267 negative-gap intervals, all entirely
+between physical checkpoints; its last negative gap is at 9950. These are
+**reference-state ranking reversals, not 394 measured episode failures**.
+Step 24 has 103 negative records when the inherited TD-2000 boundary is included,
+across 68 intervals, with its last at 3655. None of the four series has an exact
+zero-gap tie. Positive sampled gaps and successful sampled episodes therefore
+do not establish stability at every intervening update.
+
+Mean pre-clipping gradient norm is 17.855495; 7149/8000 updates exceed the fixed
+clip threshold of 10. Mean parameter displacement per update is 0.001959, with
+nonzero minimum 0.000811. Final net parameter displacement is **2.266949** from
+the resumed model and **2.911456** from the calibrated model. The parameters
+continue adapting; apparent retention is not caused by a frozen optimizer.
+These diagnostics do not by themselves establish the cause of either failure.
+
+Final demonstration-return RMSE is **0.499196**, versus **0.461398** at resume.
+Final action-margin loss is **0.044419**, versus **0.063221** at resume.
+Thus the aggregate supervision loss can improve while a critical action ranking
+and actual episode outcome deteriorate. Average losses over this continuation
+are descriptive because the target network changes during training.
+
+## Verification and retained evidence
+
+- The full suite passed **473 tests in 95.79 seconds**. One independent replay
+  integration test added after collection passed separately in 5.87 seconds,
+  bringing checked coverage to 474 distinct tests. Ruff and whitespace checks
+  passed. All new code, comments and runtime messages are English.
+- Independent verification passed all 8000 raw update records, 8001 sentinel
+  records, 29 physical observations and 67 model artifacts. Saved target tensors
+  match the correct historical online snapshot, including the otherwise unsaved
+  target generations at 2400, 3400, ..., 9400.
+- Independent replay reproduced **201 updates, TD 2001--2201**, with exact
+  numerical update logs, Q probes, online/target/Adam tensors and both RNG states
+  at all available compared checkpoints. Later updates are audited through
+  recorded hashes, counters and target lineage, not claimed as independently
+  retrained.
+- The fixed reload selection at 2000, 2001, 2200, 2201 and 10000 reproduces all
+  stored outcomes, including the final failure. This verification adds
+  **15 episodes and 744 actions**, separately from the main experiment. It does
+  not add an adaptive replay of update 2009.
+- Read-only Q analysis verifies 69 model files, including the two source
+  inference models, and reproduces all 117 initial state Q vectors exactly.
+  It adds no optimizer updates, resets or environment actions.
+- The black-and-white outcome table and dense-gap figure were visually checked.
+  Every failure is retained in the tables, raw observations and analysis.
+
+See [complete outcome table](014_td_extension/evidence/extension_outcomes.png),
+[dense Q gaps](014_td_extension/evidence/sentinel_gaps.png),
+[Q and retention analysis](014_td_extension/evidence/q_analysis.json),
+[independent verification](014_td_extension/evidence/reload_checks.json), and
+[archive manifest](014_td_extension/evidence/archive_manifest.json).
+The manifest retains hashes for all archived evidence and complete raw logs.
+Git receives 170 sampled update records and 171 sampled raw Q records alongside
+the complete compact gap/action series and all 87 scheduled outcomes.
+Models and full raw logs remain in the ignored run directory; no report or
+submission archive is modified.
+
+The launch provenance records a dirty working tree because of the pre-existing,
+untracked report document. Experiment code was committed before launch, and
+the recorded source hashes and independent source checks passed.
+
+## Conclusion and next question
+
+The 0.0001 learning rate with supervision weight 1 and preserved Adam improves
+the earlier sampled transition, but **does not stably retain all three scenes
+through 10000 TD updates**. The previous all-success result covered a shorter
+sampled horizon. This extension exposes both a newly observed step-21 failure
+and reference-state rank fluctuations between successful checkpoints.
+The final failed model is retained without rollback or replacement.
+
+A next separately recorded diagnostic should test whether correcting only the
+step-21 action rescues these two failures before changing the training objective.
+Broader state-margin monitoring would also cover fragile decisions that were
+absent from the four fixed probes. Neither activity is performed here. All
+results remain restricted to these three known demonstration scenes and one
+inherited initialization.

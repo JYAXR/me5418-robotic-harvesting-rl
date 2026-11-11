@@ -1,0 +1,93 @@
+{
+  "sha256": "ce972352d348461957ba36707b338f341354a81bd0d92a49127591964b48128b",
+  "transitions": 117,
+  "effective_batch_size": 117,
+  "configured_batch_size_unused": 64,
+  "observation_size": 341,
+  "seeds": [
+    10000,
+    10001,
+    10002
+  ],
+  "episodes": [
+    {
+      "seed": 10000,
+      "start": 0,
+      "stop": 35,
+      "transitions": 35,
+      "undiscounted_return": 107.61080973595381,
+      "initial_discounted_return": 77.45508575439453,
+      "minimum_return": 77.45508575439453,
+      "maximum_return": 100.48070526123047,
+      "initial_observation_sha256": "e616d1f2daba64ee46b6edf1e717f6de49c0205311c35897b01dd2e625bc1d0b",
+      "action_label_counts": [
+        6,
+        4,
+        6,
+        0,
+        3,
+        5,
+        11,
+        0
+      ]
+    },
+    {
+      "seed": 10001,
+      "start": 35,
+      "stop": 76,
+      "transitions": 41,
+      "undiscounted_return": 107.58504675887525,
+      "initial_discounted_return": 72.81232452392578,
+      "minimum_return": 72.81232452392578,
+      "maximum_return": 100.46905517578125,
+      "initial_observation_sha256": "c1ff0c523f449d64d809c47d70abcd4bbeefd9b1b39509274c30752ce67fb851",
+      "action_label_counts": [
+        6,
+        13,
+        6,
+        0,
+        4,
+        1,
+        11,
+        0
+      ]
+    },
+    {
+      "seed": 10002,
+      "start": 76,
+      "stop": 117,
+      "transitions": 41,
+      "undiscounted_return": 107.64337920956314,
+      "initial_discounted_return": 73.20426177978516,
+      "minimum_return": 73.20426177978516,
+      "maximum_return": 100.47352600097656,
+      "initial_observation_sha256": "df5a8ccf3210fe8206fdbdf3d1eae7dbdddb72d2a470ff3529f98cb4e64b7228",
+      "action_label_counts": [
+        6,
+        8,
+        11,
+        0,
+        4,
+        3,
+        9,
+        0
+      ]
+    }
+  ],
+  "full_batch_weighting": "equal_per_transition",
+  "action_label_counts": [
+    18,
+    25,
+    23,
+    0,
+    11,
+    9,
+    31,
+    0
+  ],
+  "unique_observations": 117,
+  "duplicate_observation_rows": 0,
+  "conflicting_duplicate_observation_groups": 0,
+  "distinct_initial_observations": 3,
+  "scene_seed_in_network_input": false
+}
