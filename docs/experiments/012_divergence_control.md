@@ -156,4 +156,161 @@ If it fails, retain that result rather than adding another intervention here.
 python docs/experiments/012_divergence_control/diagnose_divergence.py --reference-run results/training/multiscene_retention_20261112 --output-dir results/training/divergence_diagnostic_20261112
 python docs/experiments/012_divergence_control/run_control.py --reference-run results/training/multiscene_retention_20261112 --archive-dir docs/experiments/011_multiscene_retention/evidence --output-dir results/training/divergence_control_20261112 --factor demonstration_weight --value 2
 python docs/experiments/012_divergence_control/verify_control.py --run-dir results/training/divergence_control_20261112 --output results/training/divergence_control_20261112/reload_checks.json
+python docs/experiments/012_divergence_control/analyze_control_q.py --run-dir results/training/divergence_control_20261112 --output results/training/divergence_control_20261112/q_analysis.json
 ```
+
+## Controlled outcomes
+
+The paired run executed from commit `4d4943a` on **12 November 2026,
+00:44:35--00:54:37 Asia/Shanghai** (11 November 16:44:35--16:54:37 UTC).
+Read-only Q/component analysis and figure labeling were committed in `84078e1`
+before their execution; the running training implementation remained unchanged.
+
+The baseline exactly reproduced **all 2000 update records, all 18 observations
+and the complete final training snapshot** from attempt 011. This includes
+weights, target weights, Adam state, counters and RNG state. The gate passed
+before the treatment began. Both arms then finished their fixed budgets without
+early stopping or checkpoint selection.
+
+| Measurement | Weight 1 baseline | Weight 2 treatment |
+| --- | --- | --- |
+| All-three-scene successes during updates 1--10 | 6/10 checks | 8/10 checks |
+| Individual scene successes during updates 1--10 | 26/30 | 28/30 |
+| All-three-scene successes across all scheduled checks, including update 0 | 13/18 | 14/18 |
+| Individual scene successes across all scheduled checks | 49/54 | 48/54 |
+| Seed 10000 failed updates | None | 50 |
+| Seed 10001 failed updates | 1, 6, 9, 10, 200 | 5, 10, 50, 200 |
+| Seed 10002 failed updates | None | 50 |
+| Scenes successful at every sampled checkpoint | 10000 and 10002 | None |
+| Final demonstrated action agreement | 117/117 | 117/117 |
+| Final actual route lengths | 35/41/41 | 35/41/41 |
+| Final demonstrated-return RMSE | 0.563084 | 0.704667 |
+| Strict all-scene sampled retention | False | False |
+
+Every failure was a 200-step budget exhaustion. The treatment reduced early
+failures, but introduced a simultaneous failure of all three scenes at update
+50. It recovered all three at update 100, lost seed 10001 at 200, and recovered
+all three at 500, 1000 and 2000. Both arms ended successfully. The increase in
+all-scene checkpoint count and decrease in individual scene success count are
+compatible: the treatment concentrated three failures into one checkpoint.
+Neither count is an independent test success rate, and the evidence does not
+support an unqualified overall improvement.
+
+### Action ordering after the intervention
+
+All Q measurements use batch-of-one inference on the same recorded reference
+states. A positive signed gap means the demonstrated action ranks first. The
+analysis explicitly labels reference states that lie beyond the actual common
+trajectory prefix; those scores are not presented as states the agent visited.
+
+| TD update / reference step in seed 10001 | Baseline signed gap | Treatment signed gap | Observed difference |
+| --- | --- | --- | --- |
+| 1 / 6 | -0.016968 | +0.015060 | The treatment retains the turn and succeeds, but the gap remains very small. |
+| 5 / 6 | +0.289116 | -0.180321 | The treatment newly misses the turn and times out. |
+| 6 / 6 | -0.103065 | +0.123497 | The baseline fails; the treatment succeeds. |
+| 9 / 18 | -0.343254 | +0.385765 | The baseline fails; the treatment succeeds. |
+| 10 / 18 | -0.113281 | +0.737534 | The treatment preserves this turn but first deviates later, at step 22. |
+| 50 / 6 | +0.106476 | -0.354515 | Seed 10001 newly fails in the treatment's all-scene collapse. |
+| 200 / 6 | -0.036690 | -0.024712 | Both arms fail despite the smaller treatment reversal. |
+
+At treatment update 10, the first actual disagreement moves to step **22**:
+`north_small` outranks the demonstrated `north_large` by **0.051712**. Improving
+the earlier turn's ranking therefore does not guarantee the remaining route.
+At treatment update 50, seed 10000 first chooses `east_small` instead of
+`north_small` at step **32** (signed gap **-0.239342**), while seed 10002 chooses
+`east_small` instead of `south_small` at step **6** (gap **-0.092140**).
+These are verified first disagreements and failed rollouts; new one-action
+counterfactuals were not performed for the treatment failures.
+
+By update 2000, treatment gaps at seed 10001's reference steps 6 and 18 are
+**0.888466 and 1.109108**, compared with **0.209938 and 0.115250** in the baseline.
+This stronger final separation does not erase the treatment's intervening
+failures. Successful step-24 disagreements are also retained as controls.
+
+### Loss and update behavior
+
+Doubling the loss weight did not simply enlarge every parameter step. The first
+pre-clipping gradient norm rose from **28.1947 to 40.2989**, while the actual
+parameter-change norm fell from **0.00452334 to 0.00399864** under the retained
+Adam state and fixed clipping threshold. Both first combined losses rose
+slightly; they have different weights and must not be ranked as the same
+objective. Their initially identical unweighted TD loss fell from 0.114103 to
+0.092785 in the baseline and to 0.096026 in treatment. Their initially identical
+unweighted margin loss rose from 0.062617 to 0.086850 and 0.073886, respectively.
+
+Across 2000 updates, the mean unweighted margin loss before updating fell from
+**0.086709 to 0.068774**, but the mean pre-clipping gradient norm rose from
+**37.3744 to 57.0620**. Norms exceeded the clipping threshold of 10 on
+**1996/2000** baseline updates and **2000/2000** treatment updates. Mean actual
+parameter-change norms were 0.00562691 and 0.00581951. Later TD-loss averages use
+different evolving target networks and are descriptive, not an identical-target
+comparison. The final MC-return RMSE comparison does use the same fixed targets.
+
+The measured effect is thus a change in the TD/supervision tradeoff and update
+dynamics, not proof that gradient clipping alone caused the failures. Lower
+average action-margin loss is insufficient to guarantee correct decisions at
+every important state.
+
+## Conclusion
+
+The diagnosis identifies a concrete failure chain on the original five failed
+policies: a turn-action Q ranking reverses, the robot leaves the known route,
+and prolonged blocked pushing exhausts the budget. Correcting that first action
+alone rescues all five. However, **globally doubling TD supervision weight is
+not a stable retention fix**. It helps some early decisions, introduces other
+failures and leaves both strict retention flags false. The existing production
+defaults are unchanged; this attempt does not promote weight 2 as a validated
+replacement or claim final project readiness.
+
+All 117 training samples remain on demonstration routes, so this experiment
+does not train recovery behavior after an off-route mistake. A later experiment
+can separately examine TD step size under the calibrated, Adam-preserved setup,
+or recovery data, but should change only one of those factors at a time. Neither
+additional intervention was tested in this attempt.
+
+## Verification and evidence
+
+The full suite passed **374 tests**; Ruff passed. New experiment code, comments
+and runtime messages are in English. The read-only Q analysis checked all 74
+saved model files (36 inference checkpoints and 38 full training snapshots),
+verified identical initial Q vectors on all 117 states, and reproduced stored
+actions along every common demonstration prefix without resetting or stepping
+an environment. The outcome figure was visually inspected.
+
+Main-run work was **4000 new TD updates and 108 evaluation episodes / 5971
+actions**. The shared **40000 historical supervision/calibration updates** were
+reused, not rerun or counted twice. Diagnosis added the separately recorded
+10 episodes / 1206 actions and zero updates. No new demonstrations, online
+exploration or held-out scenes were used. Independent verification work is
+reported separately below.
+
+Independent verification passed: 52 unchanged production source hashes,
+committed reference evidence, every stored model, all 4000 update records and
+all per-scene observations were checked. The first ten updates per arm were
+independently recomputed, reproducing exact metrics, online/target tensors and
+Adam state. Initial/update-1/final policies from both arms reproduced exact
+metrics and trajectories across all three scenes, including the baseline's
+update-1 failure. This added **20 verification updates, 18 episodes and 861
+actions**, separately recorded in `reload_checks.json`. Verification does not
+numerically replay all 2000 updates: at checkpoint 500, the stored target is
+integrity-checked but its unsaved update-400 origin is not independently rerun.
+
+The original diagnostic was also independently checked against its raw step
+logs: all ten trace files agree, each counterfactual forces exactly one action,
+and every subsequent action equals the unchanged policy's argmax. The diagnostic
+and control keep separate accounting. Reset feasibility and planner probes are
+excluded consistently from executed policy-action totals.
+
+All scheduled outcomes, all first-divergence diagnostics, complete diagnostic
+traces and first-ten/every-50th/last update samples are archived, including
+unsuccessful trials. Full model checkpoints and raw update logs remain locally
+under ignored `results/training/` directories. Earlier evidence and the user's
+existing report files were not modified.
+
+Evidence: [all scheduled outcomes](012_divergence_control/evidence/control/control_outcomes.png),
+[original failure Q analysis](012_divergence_control/evidence/diagnosis/q_analysis.json),
+[one-action diagnostic outcomes](012_divergence_control/evidence/diagnosis/summary.json),
+[paired control summary](012_divergence_control/evidence/control/summary.json),
+[post-control Q and component analysis](012_divergence_control/evidence/control/q_analysis.json),
+[independent verification](012_divergence_control/evidence/control/reload_checks.json),
+and [archive manifest](012_divergence_control/evidence/archive_manifest.json).

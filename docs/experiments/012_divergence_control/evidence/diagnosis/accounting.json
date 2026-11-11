@@ -1,0 +1,9 @@
+{
+  "optimizer_updates": 0,
+  "completed_episodes": 10,
+  "greedy_environment_steps": 1000,
+  "counterfactual_environment_steps": 206,
+  "environment_steps": 1206,
+  "held_out_scenes_accessed": 0,
+  "note": "Reset feasibility/planner probes are excluded; every diagnostic env.step action is counted."
+}

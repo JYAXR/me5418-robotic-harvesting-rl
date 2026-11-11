@@ -1,0 +1,199 @@
+{
+  "source_runs": {
+    "diagnosis": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\divergence_diagnostic_20261112",
+    "control": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\divergence_control_20261112"
+  },
+  "statuses": {
+    "diagnosis": {
+      "status": "completed",
+      "started_at_utc": "2026-11-11T16:40:42.913623+00:00",
+      "finished_at_utc": "2026-11-11T16:42:23.873346+00:00",
+      "checkpoints": {}
+    },
+    "control": {
+      "status": "completed",
+      "started_at_utc": "2026-11-11T16:44:35.574013+00:00",
+      "finished_at_utc": "2026-11-11T16:54:37.466069+00:00",
+      "checkpoints": {}
+    }
+  },
+  "files": {
+    "diagnosis/accounting.json": {
+      "sha256": "cd61993bfe3bd97f4703098dcbd36919a6228dc24a22e617f9b5b244d82deaa9",
+      "bytes": 312
+    },
+    "diagnosis/provenance.json": {
+      "sha256": "5ad8589a5bcfa366809e5ef4eaf990c4a37998a981a6d9e23f8f1e28f179105c",
+      "bytes": 6607
+    },
+    "diagnosis/q_analysis.json": {
+      "sha256": "f899a4a24c552e890f5fff8b295e4231a42e15cdb42514da3d7b65b93760d98b",
+      "bytes": 2402010
+    },
+    "diagnosis/replays.json": {
+      "sha256": "4bb27e0f6bf107191ff8ed7dd0d85c91c0991ca1149ffd5830323762e15ea238",
+      "bytes": 146775
+    },
+    "diagnosis/run_status.json": {
+      "sha256": "b31430795d50ca48eee4cbcdb8f7352580ea9856b4553bca4e72f7a23779bfb2",
+      "bytes": 166
+    },
+    "diagnosis/settings.json": {
+      "sha256": "a1b353505e29ec327e82eac1f9813eaeca633fa78fe49a19435b9620278706c0",
+      "bytes": 2153
+    },
+    "diagnosis/summary.json": {
+      "sha256": "6b3d0e20f835efdbbb113db2cd98542f545e17d05a2dc148a5555494a919111f",
+      "bytes": 160547
+    },
+    "diagnosis/update_10_counterfactual.json": {
+      "sha256": "8f2de7080cc7fecd4a92c21deb2129ace01930f1e2fd23c49cf1a84544298bc7",
+      "bytes": 51092
+    },
+    "diagnosis/update_10_greedy.json": {
+      "sha256": "d5bd9cd8a18288a4f15247ebd9e99ffce3655e6b6dcce5e51f28634c6830b002",
+      "bytes": 237798
+    },
+    "diagnosis/update_1_counterfactual.json": {
+      "sha256": "cfc3cf0286e76c4ebbf47c7bd7ce96df36a5a1f2503ea58d5dafe657ee7ccb37",
+      "bytes": 49712
+    },
+    "diagnosis/update_1_greedy.json": {
+      "sha256": "41c8985c8b4f6ada14ed125b994fca99da6efdd8b07df27f571d5b6737ccc187",
+      "bytes": 237038
+    },
+    "diagnosis/update_200_counterfactual.json": {
+      "sha256": "12f1f5bcc76a5855e301e347b4ba4f748d52d5f83aee43a8ef4fb89b947b761d",
+      "bytes": 49629
+    },
+    "diagnosis/update_200_greedy.json": {
+      "sha256": "08ab9bad98faf5fea15acf309a5c46392def4817d88f294f482376a7831ca456",
+      "bytes": 237023
+    },
+    "diagnosis/update_6_counterfactual.json": {
+      "sha256": "968783b60dd1999f76d565f638f17c44cac223abdbdc7d2afc2c59195de108bd",
+      "bytes": 49712
+    },
+    "diagnosis/update_6_greedy.json": {
+      "sha256": "293cabbc0079b7cd86ac80cdb55dd25db1e16fb844a051a539bc0fb86d4caf7d",
+      "bytes": 237039
+    },
+    "diagnosis/update_9_counterfactual.json": {
+      "sha256": "6b09cd7c7f57c0acda69a72345fa7cc1629e75f2e790ece0a3875f9ce013f9d9",
+      "bytes": 49800
+    },
+    "diagnosis/update_9_greedy.json": {
+      "sha256": "85d41f3f75116d3232aa51a7281f306c966e57a47c43e8b40ce0efb3403cddcc",
+      "bytes": 237762
+    },
+    "diagnosis/verified_inputs.json": {
+      "sha256": "cd8287139da9da8d9523e0fb8384208b3b352173f3973eee6791b246d3c80744",
+      "bytes": 12434
+    },
+    "control/accounting.json": {
+      "sha256": "f1a473a78ec17986262d2cea1a7f6dd99ec94415c4454623fa48931ec6a4bb69",
+      "bytes": 596
+    },
+    "control/baseline/td/observations.json": {
+      "sha256": "93bc2edaffc462ea995d1fba7e6169b81f93adbc1c6f2f885679fe8450fca50a",
+      "bytes": 813871
+    },
+    "control/baseline/td/summary.json": {
+      "sha256": "6afd83efdfaa153f67b62967de81690463a78898333d2d2b6460292297423358",
+      "bytes": 85239
+    },
+    "control/baseline/td_boundary.json": {
+      "sha256": "b24d684a0d85387bbba15c2a30cc3678b8524e4740837c3a083f40d765c84190",
+      "bytes": 5726
+    },
+    "control/baseline/transition.json": {
+      "sha256": "6263d42be0674babfdba8b7f37d965e8f26d92200d70f1b65d40e62d7955f8de",
+      "bytes": 2630
+    },
+    "control/baseline_equivalence.json": {
+      "sha256": "e139dad6e1d74aa444a5713edb1f150ad2d230e0a516430648046ad2bfae0ec6",
+      "bytes": 156
+    },
+    "control/control_outcomes.png": {
+      "sha256": "2dd34499bbce8718ba4fb1ce4f6727b5c897229c2139f41f9bbc2e315f943800",
+      "bytes": 380259
+    },
+    "control/dataset.json": {
+      "sha256": "eeca314e59fce96bdd522338a742f13a18ad409e3f41c9cade0904322675b069",
+      "bytes": 2250
+    },
+    "control/input_manifest.json": {
+      "sha256": "dd37445e9874038a4923dfc2849c44bcdf819b060c93e2c544a402fa36c798c4",
+      "bytes": 13552
+    },
+    "control/mc_targets.json": {
+      "sha256": "913677678e647a5bd80054edc621940a418b197dd3c2605af57922cbe2bf5305",
+      "bytes": 20188
+    },
+    "control/provenance.json": {
+      "sha256": "57dc9fcdec8d5a5625d1db4b4654b2cb024aeee0a20f716fe27875b58e06ad67",
+      "bytes": 6749
+    },
+    "control/q_analysis.json": {
+      "sha256": "d69add458ce3c51bff23560280985061805895a15e3cfb8766f0e17d5783b20a",
+      "bytes": 448856
+    },
+    "control/reload_checks.json": {
+      "sha256": "cf8b7dc8a633661712be377b5a72bdba82f871fa9af0a13c982f1ac774d0403a",
+      "bytes": 11688
+    },
+    "control/run_status.json": {
+      "sha256": "5b41b09fde33bd2948b411cdabbd9838cc6e64e3ab0b0352bca4f64ffefebbea",
+      "bytes": 166
+    },
+    "control/settings.json": {
+      "sha256": "eed97df422dc5513d4fd716b100a65922424ae09dde18d1c24cfdd808f27db6c",
+      "bytes": 3725
+    },
+    "control/summary.json": {
+      "sha256": "9125c7a539d898ebacc459e60fbaa9e752da6d268f327f550ddd7a35725ecac7",
+      "bytes": 216719
+    },
+    "control/treatment/td/observations.json": {
+      "sha256": "4e595ac4a24d6e78fe5ca7bde53ce33c8e949b0c940c5246132272985047c3c6",
+      "bytes": 831839
+    },
+    "control/treatment/td/summary.json": {
+      "sha256": "6ef79f0953f7d8fe530c796328d36fa85f83c69b89b5b84b557ebc4a37a92d0a",
+      "bytes": 85336
+    },
+    "control/treatment/td_boundary.json": {
+      "sha256": "fe0b7dca3c03afddac59634436988b73ba5124dc37b91ddc4537e72d93c8f863",
+      "bytes": 5725
+    },
+    "control/treatment/transition.json": {
+      "sha256": "6263d42be0674babfdba8b7f37d965e8f26d92200d70f1b65d40e62d7955f8de",
+      "bytes": 2630
+    },
+    "control/baseline/td/update_samples.jsonl": {
+      "sha256": "9b8ca69eeb7efff72a8580e46de27698ed94d4a1daf2e8fb6304a935ebee02c2",
+      "bytes": 21255
+    },
+    "control/treatment/td/update_samples.jsonl": {
+      "sha256": "f8c1566c4fb7a6c8cda103b180cce6055b22ae19e0d65ee8bd5fc151df63cbd3",
+      "bytes": 21096
+    }
+  },
+  "update_log_coverage": {
+    "control/baseline/td/updates.jsonl": {
+      "raw_sha256": "f1752467f311f02e4d2a49d4b6e3345c7e98484cc7a543323ad30aef46940290",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    },
+    "control/treatment/td/updates.jsonl": {
+      "raw_sha256": "c159a47719baaf464a296f865b7236a5c0c2f9cf4643e31f12f73eae857c1b24",
+      "raw_records": 2000,
+      "archived_records": 50,
+      "sampling": "first 10, every 50th, and last update"
+    }
+  },
+  "archive_script_sha256": "4f1542daf97e43b0c8555bd7cb834eb254c2f0648d3d7e11abe2699446940a65",
+  "excluded": "Models, encoded arrays, console output and full update logs remain in ignored results.",
+  "note": "All first-divergence Q analyses, diagnostic replay steps and scheduled policy outcomes are retained."
+}
