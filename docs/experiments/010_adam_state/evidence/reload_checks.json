@@ -1,0 +1,104 @@
+{
+  "source_files_verified": 51,
+  "reference_input_files_verified": 16,
+  "pretraining_input_files_verified": 9,
+  "runner_and_helper_hashes_verified": true,
+  "dataset_hash_verified": true,
+  "independent_mc_returns_verified": true,
+  "mc_float64_maximum_difference": 2.135436027117521e-05,
+  "calibration_reproduction_verified": true,
+  "reset_reproduction_verified": true,
+  "full_training_snapshot_verified": true,
+  "calibration_checkpoints_verified": 8,
+  "calibration_update_records_verified": 20000,
+  "arms": {
+    "reset": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "target_synchronizations": 10,
+      "full_final_training_snapshot_verified": true,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_optimizer_summaries": true
+      },
+      "reloaded_policies": {
+        "1": {
+          "action_fit_matches_exactly": true,
+          "return_fit_matches_exactly": true,
+          "full_rollout_matches_exactly": true,
+          "reload_environment_steps": 200,
+          "success": false,
+          "damage": false,
+          "checkpoint_sha256": "d61e24e0d10d11ce909ec385f1b48eac2df26ce41ca56448167f82be0114f7b9"
+        },
+        "10": {
+          "action_fit_matches_exactly": true,
+          "return_fit_matches_exactly": true,
+          "full_rollout_matches_exactly": true,
+          "reload_environment_steps": 61,
+          "success": false,
+          "damage": true,
+          "checkpoint_sha256": "a46d7715d75bc5f6a0291279a70b8c77529782173ad8959b3607d7bc3379d9a1"
+        },
+        "2000": {
+          "action_fit_matches_exactly": true,
+          "return_fit_matches_exactly": true,
+          "full_rollout_matches_exactly": true,
+          "reload_environment_steps": 35,
+          "success": true,
+          "damage": false,
+          "checkpoint_sha256": "72857e593d983958961fcdc4ef34ac09ee97a76ac0b9549277b1cc78c38c5c23"
+        }
+      }
+    },
+    "preserve": {
+      "checkpoints_verified": 18,
+      "update_records_verified": 2000,
+      "target_synchronizations": 10,
+      "full_final_training_snapshot_verified": true,
+      "independent_early_replay": {
+        "optimizer_updates_performed": 10,
+        "exact_update_metrics": true,
+        "exact_online_tensors": true,
+        "exact_optimizer_summaries": true
+      },
+      "reloaded_policies": {
+        "1": {
+          "action_fit_matches_exactly": true,
+          "return_fit_matches_exactly": true,
+          "full_rollout_matches_exactly": true,
+          "reload_environment_steps": 35,
+          "success": true,
+          "damage": false,
+          "checkpoint_sha256": "009c5fa1e97b1dd54580d7fd3fa8cb9846f4264a4f8d6e20e54fa90966e812d7"
+        },
+        "10": {
+          "action_fit_matches_exactly": true,
+          "return_fit_matches_exactly": true,
+          "full_rollout_matches_exactly": true,
+          "reload_environment_steps": 35,
+          "success": true,
+          "damage": false,
+          "checkpoint_sha256": "5fd47cc2c140d9c1991ce9984f52f0d9b6a71d5c64ed5fe1051e8adcbc28764a"
+        },
+        "2000": {
+          "action_fit_matches_exactly": true,
+          "return_fit_matches_exactly": true,
+          "full_rollout_matches_exactly": true,
+          "reload_environment_steps": 35,
+          "success": true,
+          "damage": false,
+          "checkpoint_sha256": "e6937fc1206de2a6385fda7198f773187472c7f4c5148fbb7e67ee2e40c6ef0a"
+        }
+      }
+    }
+  },
+  "additional_verification_optimizer_updates": 20,
+  "additional_verification_environment_steps": 401,
+  "training_scene_only": true,
+  "note": "Independent post-run work; reset feasibility probes are excluded from action counts.",
+  "target_metric_limit": "Inference-only reloads verify action fit, fixed MC errors and full trajectories; historical target losses are checked in the independent early replay.",
+  "verifier_sha256": "c7a0d8001334f58aa9c0158278e7022ba746c0aa27ec1dbadd3c9c1697db460b"
+}

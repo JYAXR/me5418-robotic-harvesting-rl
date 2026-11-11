@@ -1,0 +1,94 @@
+{
+  "previous_phase_updates": 20000,
+  "phase_updates": 0,
+  "optimizer_reset": true,
+  "target_synchronized": true,
+  "optimizer_before": {
+    "sha256": "1e0a3cabebaffd2591e1808cd6ba479aee84ce6cc3ace592938a5aa0b3153177",
+    "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0003,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 6,
+    "steps": {
+      "0.weight": 20000.0,
+      "0.bias": 20000.0,
+      "2.weight": 20000.0,
+      "2.bias": 20000.0,
+      "4.weight": 20000.0,
+      "4.bias": 20000.0
+    },
+    "step_min": 20000.0,
+    "step_max": 20000.0,
+    "first_moment_l2": 0.700017298142999,
+    "second_moment_l2": 2.7766976182228
+  },
+  "optimizer_after": {
+    "sha256": "f0c57c50ae6a28512a16dea8725ebf0b5a3c8d40101d1f8a21f8ccff794a45ed",
+    "settings_sha256": "99925741b2ac5ef28342c7602c70f27d92cbed2e82e9281ea4f431fb5e7776b5",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0003,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 0,
+    "steps": {},
+    "step_min": null,
+    "step_max": null,
+    "first_moment_l2": 0.0,
+    "second_moment_l2": 0.0
+  },
+  "branch": "reset",
+  "training_snapshot_sha256": "a15786a60430c34f99848eeec20c277692047020d252fd7a77ad2a9bd250f8d2",
+  "policy_parameter_sha256": "62b528001c83e3a44d801d0c6a4647c1ac80c3a2bd6fee21235735e55cfe152c",
+  "inherited_pretraining_updates": 20000,
+  "reproduced_calibration_updates": 20000,
+  "total_prior_updates_on_branch": 40000,
+  "snapshot_optimizer_storage_disjoint": true
+}

@@ -93,4 +93,101 @@ feature remains possible.
 
 ## Outcomes
 
-Pending execution. Do not interpret the predeclared hypothesis as a result.
+Executed from commit `879ea1b` on **11 November 2026, 23:39:21--23:45:27
+Asia/Shanghai**. Evidence timestamps use UTC. Calibration reproduced all 20000
+update records, all eight scheduled observations and the final policy exactly.
+The reconstructed optimizer had six initialized parameter tensors, each with
+Adam step 20000. Both treatments started from identical calibrated weights and
+return RMSE 0.274704, with a successful 35-step greedy episode.
+
+| Measurement | Reset Adam | Preserve Adam |
+| --- | --- | --- |
+| Successful checks at TD updates 1--10 | 2/10 (updates 7 and 9) | 10/10 |
+| First sampled failure | Update 1 | None observed |
+| Success at all 18 scheduled checks, including update 0 | No (9/18) | Yes (18/18) |
+| First-update action agreement | 24/35 | 35/35 |
+| First-update episode | Budget exhausted at 200 steps | Success in 35 steps |
+| First-update parameter-change norm | 0.0572692 | 0.0040680 |
+| First-update loss before | 0.0826786 | 0.0826786 |
+| First-update loss after, against the same frozen targets | 1.5354657 | 0.0734115 |
+| Final demonstrated-return RMSE after 2000 TD updates | 0.4310585 | 0.5367391 |
+| Final action agreement | 35/35 | 35/35 |
+| Final episode | Success in 35 steps; return 107.6108 | Success in 35 steps; return 107.6108 |
+| Final internal Adam step | 2000 | 22000 |
+| Target-network synchronizations during TD | 10 | 10 |
+
+The reset control exactly reproduced all 2000 TD update records and all nine
+shared observations from attempt 009. The denser schedule additionally revealed
+timeouts at updates 2--6, a successful 35-step episode at update 7, damage after
+141 steps at update 8, a successful 38-step episode at update 9, and damage after
+102 steps at update 20. Its complete failed checkpoint list is
+**1, 2, 3, 4, 5, 6, 8, 10 and 20**. It succeeded at every sampled checkpoint from
+50 to 2000, as in the preceding experiment.
+
+The preserved-state policy matched all 35 demonstrated actions and completed the
+same route in 35 steps at **every scheduled checkpoint**, including each of the
+first ten updates. Its strict sampled-retention flag is true; the reset control's
+is false. These fractions describe scheduled checkpoints of one deterministic
+training trajectory, not independent episode success rates or held-out accuracy.
+
+Both first updates had exactly the same initial TD loss, margin loss and
+pre-clipping gradient norm (27.0190849). Retaining Adam reduced the parameter
+change norm by about a factor of 14.1 and reduced the fixed-target loss, whereas
+the reset update increased it. This supports keeping the accumulated optimizer
+state for this specific calibrated transition. It does not isolate which Adam
+moment or bias-correction component matters most. The later return RMSE was
+slightly higher in the preserved branch, so the observed benefit is early
+behavioral retention rather than improvement in every metric.
+
+## Conclusion and next controlled question
+
+Keeping Adam state eliminated the observed early TD failures in this controlled
+comparison and retained success at all sampled later checkpoints through update
+2000. The previously observed immediate failure is therefore avoidable under
+these fixed-scene settings without lowering the learning rate or changing the
+network, reward, demonstration or target synchronization schedule.
+
+The next question is whether the same supervised calibration followed by TD with
+retained Adam works across multiple training scenes and eventually unseen layouts.
+That experiment has **not** been run here. This result does not establish broad
+policy robustness, online learning performance or final project readiness.
+
+## Verification and retained evidence
+
+The full suite passed **296 tests**, including 20 new optimizer-transition tests
+and seven new snapshot/experiment integration tests. Ruff passed. The new
+implementation and the predeclared protocol were committed and pushed before
+execution. Historical input logs and key records also matched attempt 009's
+committed archive hashes before launch.
+
+Actual experiment work was **24000 new optimizer updates** (20000 calibration
+replay plus 4000 TD), with **3254 scheduled neural evaluation actions**: 802
+during calibration reproduction, 1822 for reset and 630 for preserve. The original
+20000 supervised updates were inherited. No demonstration was recollected, and
+online exploration and held-out access remained zero. Reset feasibility probes
+are excluded from action counts.
+
+Independent verification passed: 51 launch source hashes, 16 attempt-009 input
+hashes, nine inherited input hashes, all 24000 update records, 44 inference
+checkpoints and three full training snapshots were checked. Replaying the first
+ten TD updates for each treatment independently reproduced the exact update
+metrics, online weights and Adam state. All six reloaded models reproduced
+their action metrics, demonstrated-return errors and complete actual trajectories.
+This added **20 verification optimizer updates and 401 evaluation actions**,
+recorded separately in `reload_checks.json`. Historical target losses were
+verified during the independent early replay; inference-only loading does not
+restore those historical target networks.
+
+All scheduled observations and first-ten/every-50th/last update samples are
+retained, including failures and exact-reproduction checks. Complete local logs,
+encoded data, all inference checkpoints and three full training snapshots remain
+in the ignored run directory. Production training defaults and reports were not
+changed.
+
+Evidence: [figure](010_adam_state/evidence/adam_state.png),
+[summary](010_adam_state/evidence/summary.json),
+[calibration reproduction](010_adam_state/evidence/calibration_reproduction.json),
+[reset-control reproduction](010_adam_state/evidence/reset_reproduction.json),
+[optimizer snapshot record](010_adam_state/evidence/training_snapshot.json),
+[independent verification](010_adam_state/evidence/reload_checks.json), and
+[archive manifest](010_adam_state/evidence/archive_manifest.json).

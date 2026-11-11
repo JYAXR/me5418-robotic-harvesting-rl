@@ -1,0 +1,17 @@
+{
+  "all_update_records_equal": true,
+  "all_shared_observations_equal": true,
+  "final_parameters_equal": true,
+  "target_synchronizations_equal": true,
+  "shared_checkpoint_updates": [
+    0,
+    1,
+    10,
+    50,
+    100,
+    200,
+    500,
+    1000,
+    2000
+  ]
+}

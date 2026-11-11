@@ -1,0 +1,36 @@
+{
+  "reference_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\return_calibration_20261111",
+  "reference_files_sha256": {
+    "run_status.json": "d7cd714dc478a41f23064b6980bab0a71f265b0af852cdccc2e6e67ba6dc06d8",
+    "summary.json": "65a3e114208c23bf301448798011a1a52b5bff33809846cd9c4fd793985637aa",
+    "settings.json": "b5c0c4ae53dc79b060e25cb46f7ed422dce61fda6107541a5bd38a5893913f96",
+    "provenance.json": "3f9f9ac6bbc22a307680743e98ccb3fb9303ff7a615c12994abaeceb4f979da7",
+    "input_manifest.json": "2dbe389b23cf0b390bbf3aa041219bcf3dcf81513a5402e5ad44148f5e89dbda",
+    "dataset.json": "a1b7838435d11912ff6550479fd731e56f92962286300e10497203314d13e385",
+    "demonstration.npz": "9cf50273dde5fd8c42064417ede1790bf40559eae880e6f85ead76e98f7b392a",
+    "mc_targets.json": "64f80e997d34f3cb40ec30b19ce54042d71b5da18e52595b58f7261cea95a433",
+    "calibrated/calibration/updates.jsonl": "aa545c324d7e5d97a5aab06794bf470b1ba2773609f781618bb0fd20ecdd748d",
+    "calibrated/calibration/observations.json": "a74f955494d33e0b11c179feb2bc8fd9324ad724afee3295dba3c9909767ad93",
+    "calibrated/calibration/summary.json": "fba0d0cd8a142c3225262fabcd0998c538919812501ea0f765c824b6295b3c49",
+    "calibrated/calibration/update_20000.pt": "5c8f3f1f8a18fb534701e01ab3675a7c6199da9b1eeabe6a2865b7a82e6a6f81",
+    "calibrated/td/updates.jsonl": "119daceaa0d505f1f80ea08eebae30b4a3c7aed6363aa243d6e5eb2190900d1b",
+    "calibrated/td/observations.json": "ac9c635f8b48139cae207385b83660c826c8b13c44efed4c758b3b4cda1caab4",
+    "calibrated/td/summary.json": "c723d6e66a0287315f63dde66858f1157225a9c6378bbd3097f7255c48174e64",
+    "calibrated/td/update_2000.pt": "9f2fe37100d30ba632b3b412c1620ebc12b6ea9baca725a2e034c4c71125f533"
+  },
+  "pretraining_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\staged_retention_20261111",
+  "pretraining_files_sha256": {
+    "run_status.json": "e13b9a7c1c66fade8ca8ef053aa93d3158d97b3e46b113376d2af94f6c8d3067",
+    "summary.json": "d2bf46e1a2e2abd3103e1d6a69ee0de9e54b1f1d04dc41ce0f397b6bf1275d9a",
+    "settings.json": "6ab41b11bd0b35f1097663b70d75499acd8456b86fa03cf3431cd204f9f83902",
+    "provenance.json": "55c32cfdc9c708541da25cc4f351ff56b67fb1c19c50203b5db3885606c8a379",
+    "pretraining_reproduction.json": "13da10286cf98d897fb3ea9fb0d1401fda71d8fcaeb8ba9efc59d69ecbdef75d",
+    "dataset.json": "a1b7838435d11912ff6550479fd731e56f92962286300e10497203314d13e385",
+    "demonstration.npz": "9cf50273dde5fd8c42064417ede1790bf40559eae880e6f85ead76e98f7b392a",
+    "pretraining/update_20000.pt": "3a715e972626c19e3d198f0d8ffb7d79f3bcc26fdbfa93f150b93c515de4819f",
+    "pretraining/updates.jsonl": "839120873a86a3f5debc723f3903eb153b40fde4fb7a3dd65550478b96dd9713"
+  },
+  "reference_source_files_verified": 50,
+  "inference_checkpoint_optimizer_state_available": false,
+  "calibration_optimizer_state_reconstructed": true
+}

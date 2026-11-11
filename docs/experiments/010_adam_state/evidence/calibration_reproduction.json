@@ -1,0 +1,9 @@
+{
+  "all_update_records_equal": true,
+  "all_observations_equal": true,
+  "final_parameters_equal": true,
+  "final_fit_equal": true,
+  "final_rollout_equal": true,
+  "final_return_fit_equal": true,
+  "update_count_equal": true
+}

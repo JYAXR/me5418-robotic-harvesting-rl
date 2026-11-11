@@ -1,0 +1,15 @@
+{
+  "update_records_per_log": {
+    "preserve/td/updates.jsonl": 2000,
+    "reproduction/calibrated/calibration/updates.jsonl": 20000,
+    "reset/td/updates.jsonl": 2000
+  },
+  "optimizer_updates_total": 24000,
+  "td_optimizer_updates": 4000,
+  "evaluation_environment_steps": 3254,
+  "inherited_pretraining_updates": 20000,
+  "demonstration_collection_steps": 0,
+  "online_training_steps": 0,
+  "held_out_scenes_accessed": 0,
+  "note": "Counts cover recorded completed updates and evaluations; reset probes are excluded."
+}
