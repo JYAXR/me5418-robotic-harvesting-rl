@@ -1,0 +1,270 @@
+{
+  "passed": true,
+  "attempt": 17,
+  "verifier_sha256": "b12a67dd00dd1579c7264b4333aeb1bacb584ca45d19907305507aa39e133beb",
+  "prior_verifier_sha256": "efe981960281dc29006de6b649d72ac91b12438f6cf06417d6ee9135a1a15b3d",
+  "input_manifest_sha256": "dae7713347826fbfa75b19b7a577e508b48ad341d3e3b6c477c5ccd659e1cd10",
+  "reference_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\local_supervision_20261112",
+  "reference_014_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_extension_10000_20261112",
+  "reference_013_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_learning_rate_preserved_20261112",
+  "original_data_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\multiscene_retention_20261112",
+  "source_snapshot_sha256": "d80a39676dbe1a5f63e8f4d8a0cca0f43c8e4db0c06a8c31846a22257efb4576",
+  "independent_return_checks": {
+    "episodes": [
+      {
+        "seed": 10000,
+        "transitions": 35,
+        "initial_discounted_return": 77.45508575439453,
+        "maximum_float64_difference": 2.135436027117521e-05
+      },
+      {
+        "seed": 10001,
+        "transitions": 41,
+        "initial_discounted_return": 72.81232452392578,
+        "maximum_float64_difference": 2.0148591573843078e-05
+      },
+      {
+        "seed": 10002,
+        "transitions": 41,
+        "initial_discounted_return": 73.20426177978516,
+        "maximum_float64_difference": 2.5402124634865686e-05
+      }
+    ],
+    "maximum_float64_difference": 2.5402124634865686e-05,
+    "transitions": 117
+  },
+  "historical_baseline_equivalence": {
+    "passed": true,
+    "exact_updates": 8000,
+    "exact_observations": 29,
+    "exact_legacy_sentinel_rows": 8001,
+    "exact_model_payloads": 67
+  },
+  "verified_new_raw_updates": 8000,
+  "verified_historical_raw_updates": 8000,
+  "verified_new_sentinel_rows": 8001,
+  "verified_historical_sentinel_rows": 8001,
+  "verified_new_physical_checkpoints": 29,
+  "verified_historical_physical_checkpoints": 29,
+  "verified_new_model_files": 67,
+  "verified_historical_control_model_files": 67,
+  "independent_replays": [
+    {
+      "arm": "historical_control",
+      "return_anchor_weight": 0.0,
+      "first_update": 2001,
+      "last_update": 2201,
+      "additional_optimizer_updates": 201,
+      "full_snapshot_updates_compared": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2200,
+        2201
+      ],
+      "sentinel_rows_compared": 202,
+      "additional_environment_steps": 0,
+      "additional_environment_resets": 0,
+      "independent_math": "Separately reconstructed TD, equal-per-row margin and fixed-return Huber terms.",
+      "logs_sentinels_and_full_snapshots_match_exactly": true
+    },
+    {
+      "arm": "treatment",
+      "return_anchor_weight": 1.0,
+      "first_update": 2001,
+      "last_update": 2201,
+      "additional_optimizer_updates": 201,
+      "full_snapshot_updates_compared": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2200,
+        2201
+      ],
+      "sentinel_rows_compared": 202,
+      "additional_environment_steps": 0,
+      "additional_environment_resets": 0,
+      "independent_math": "Separately reconstructed TD, equal-per-row margin and fixed-return Huber terms.",
+      "logs_sentinels_and_full_snapshots_match_exactly": true
+    }
+  ],
+  "policy_reloads": [
+    {
+      "directory": "treatment/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "2df42b8d7c2d2ab542e6b935384fcb0a246f609a64ec5100f45dbabc21ff3679"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2009,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "74ee27711264ef57b8f8280dbea24b4b55f64485ab83c41e739706563fb7be9d"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2200,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "e4bfc76b3552ded23f7982573ba0f9d6de72f2b68239bfe2acbed40832d143ce"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2201,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": false,
+          "damage": false,
+          "reload_environment_steps": 200
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "94eed40153b8ead6421c40b1f7f97d5c262e0e79f7e4a922ffa0a8071e5aa006"
+    },
+    {
+      "directory": "treatment/td",
+      "update": 10000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "1980e557f322e77f6002017ee42696fb4796fabca89d50365ca264df1eff3989"
+    }
+  ],
+  "additional_optimizer_updates": 402,
+  "additional_environment_resets": 15,
+  "additional_evaluation_episodes": 15,
+  "additional_environment_steps": 903,
+  "historical_control_evaluations_rerun": false,
+  "scope": "Each branch independently replays TD 2001-2201 only. Later snapshots, logs, probes, counters and target lineage are audited without replaying all 8000 updates per branch. Only treatment policies receive new reload episodes.",
+  "loss_semantics": "All 117 supervised coefficients remain one. Treatment adds one mean fixed-return Huber term to unchanged TD and margin losses, without averaging the total or mixing targets.",
+  "sentinel_interpretation": "Reference-state rankings are distinct from measured physical failures, including adjacent steps."
+}

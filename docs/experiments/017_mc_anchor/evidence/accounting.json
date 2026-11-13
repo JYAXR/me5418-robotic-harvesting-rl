@@ -1,0 +1,23 @@
+{
+  "optimizer_updates_total": 8000,
+  "inherited_shared_optimizer_updates": 42000,
+  "absolute_td_update": 10000,
+  "total_updates_on_treatment_branch": 50000,
+  "scheduled_evaluation_episodes": 87,
+  "evaluation_environment_steps": 4347,
+  "sentinel_records": 8001,
+  "sentinel_forward_passes": 56007,
+  "sentinel_environment_steps": 0,
+  "online_training_steps": 0,
+  "demonstration_collection_steps": 0,
+  "held_out_scenes_accessed": 0,
+  "reused_historical_control": {
+    "optimizer_updates": 8000,
+    "scheduled_evaluation_episodes": 87,
+    "evaluation_environment_steps": 3711,
+    "new_optimizer_updates": 0,
+    "new_evaluation_episodes": 0,
+    "new_environment_steps": 0
+  },
+  "note": "Only completed new treatment work is counted; historical control and inherited training are reused. Independent verification is separate."
+}
