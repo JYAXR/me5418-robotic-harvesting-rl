@@ -1,0 +1,178 @@
+{
+  "environment": {
+    "max_branches": 14,
+    "nodes_per_branch": 5,
+    "max_steps": 200,
+    "workspace_low": [
+      0.0,
+      0.0
+    ],
+    "workspace_high": [
+      1.0,
+      1.0
+    ],
+    "small_step": 0.025,
+    "large_step": 0.06,
+    "target_radius": 0.05,
+    "contact_radius": 0.035,
+    "relaxation_rate": 0.1,
+    "execution_noise_fraction": 0.0,
+    "show_gate_detail": false,
+    "verify_reference_route": true,
+    "reference_max_attempts": 10,
+    "scene": {
+      "layout": "multi_route",
+      "tip_gap_range": [
+        0.028,
+        0.043
+      ],
+      "stiffness_range": [
+        0.35,
+        1.1
+      ],
+      "safe_limit_range": [
+        0.075,
+        0.11
+      ],
+      "start_jitter": [
+        0.01,
+        0.02
+      ],
+      "target_jitter": [
+        0.01,
+        0.02
+      ],
+      "gate_x_jitter": 0.01,
+      "twig_jitter": [
+        0.005,
+        0.005
+      ]
+    },
+    "reward": {
+      "progress": 10.0,
+      "deformation": 1.0,
+      "travel": 0.2,
+      "damage": 50.0,
+      "success": 100.0
+    }
+  },
+  "dqn": {
+    "hidden_sizes": [
+      256,
+      256
+    ],
+    "learning_rate": 0.0001,
+    "gamma": 0.99,
+    "batch_size": 64,
+    "replay_capacity": 20000,
+    "target_update_interval": 200,
+    "gradient_clip_norm": 10.0
+  },
+  "training": {
+    "attempt": 18,
+    "kind": "retrospective_gradient_and_adam_diagnosis",
+    "incoming_td_updates": [
+      2001,
+      2008,
+      2009,
+      2010,
+      2018,
+      2152,
+      2158,
+      2161,
+      2200,
+      2201,
+      3000,
+      4500,
+      8500,
+      10000
+    ],
+    "arms": [
+      "baseline",
+      "mc_anchor"
+    ],
+    "reference_probes": [
+      {
+        "name": "scene_10001_step_6",
+        "scene_seed": 10001,
+        "reference_step": 6,
+        "global_transition_index": 40,
+        "demonstrated_action": 1
+      },
+      {
+        "name": "scene_10001_step_18",
+        "scene_seed": 10001,
+        "reference_step": 18,
+        "global_transition_index": 52,
+        "demonstrated_action": 0
+      },
+      {
+        "name": "scene_10001_step_20",
+        "scene_seed": 10001,
+        "reference_step": 20,
+        "global_transition_index": 54,
+        "demonstrated_action": 0
+      },
+      {
+        "name": "scene_10001_step_21",
+        "scene_seed": 10001,
+        "reference_step": 21,
+        "global_transition_index": 55,
+        "demonstrated_action": 0
+      },
+      {
+        "name": "scene_10001_step_22",
+        "scene_seed": 10001,
+        "reference_step": 22,
+        "global_transition_index": 56,
+        "demonstrated_action": 4
+      },
+      {
+        "name": "scene_10001_step_23",
+        "scene_seed": 10001,
+        "reference_step": 23,
+        "global_transition_index": 57,
+        "demonstrated_action": 4
+      },
+      {
+        "name": "scene_10001_step_24",
+        "scene_seed": 10001,
+        "reference_step": 24,
+        "global_transition_index": 58,
+        "demonstrated_action": 2
+      },
+      {
+        "name": "scene_10002_step_37",
+        "scene_seed": 10002,
+        "reference_step": 37,
+        "global_transition_index": 112,
+        "demonstrated_action": 1
+      }
+    ],
+    "additional_probe": "Scene 10002 actual incoming step 40, reconstructed from the common 39-action prefix of treatment policies TD 7500, 8500 and 9000. Reference action south_small comes from the two successful policies, not a demonstration label.",
+    "selection": "Fixed before diagnostics using attempt-017 failures, early reversals, minima, target-sync adjacency and endpoint. Retrospective, not a random sample.",
+    "effective_batch_size": 117,
+    "margin": 0.8,
+    "gamma": 0.99,
+    "learning_rate": 0.0001,
+    "gradient_clip_norm": 10.0,
+    "baseline_mc_weight": 0.0,
+    "treatment_mc_weight": 1.0,
+    "supervision_weights": "All 117 coefficients remain one.",
+    "loss_target_semantics": "TD targets are frozen from the pre-update target network; MC targets are fixed actual episode returns.",
+    "gap_semantics": "Derivative uses the strongest non-demonstrated action fixed before the update; actual max-other gap is also measured after each branch.",
+    "counterfactual_semantics": "Independent one-step clones, never chained or adopted as trained policies.",
+    "adam_decomposition": "Old first moment and current objective contributions use the same actual new second-moment denominator and clip coefficient. Numerical remainder is recorded.",
+    "environment_resets": 1,
+    "environment_steps": 39,
+    "completed_evaluation_episodes": 0,
+    "new_policy_training_updates": 0,
+    "new_demonstrations": 0,
+    "held_out_scenes": 0,
+    "scripts_sha256": {
+      "docs/experiments/018_gradient_diagnostics/run_gradient_diagnostics.py": "97e4778c8dcf19d523bd413fab489b5359c2e044a12ee8d96557ea8303aaf46a",
+      "docs/experiments/018_gradient_diagnostics/gradient_core.py": "c07daad798ebad2cb9ac615d4d1e5e5fa2a97d4dce5cc2030c48877f3dfbee3e",
+      "docs/experiments/018_gradient_diagnostics/trajectory_probe.py": "e14b41781bc8df8d1662e3f2e2c6dc9860f75b10593333ef6671cb73fb66b141"
+    }
+  }
+}

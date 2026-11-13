@@ -1,0 +1,21 @@
+Auditing historical source hashes and the original demonstration chain.
+Traceback (most recent call last):
+  File "C:\Users\29470\Desktop\ME5418_Group18_Environment_Submission(1)(1)\me5418-network-demo\docs\experiments\018_gradient_diagnostics\verify_gradient_diagnostics.py", line 666, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\29470\Desktop\ME5418_Group18_Environment_Submission(1)(1)\me5418-network-demo\docs\experiments\018_gradient_diagnostics\verify_gradient_diagnostics.py", line 662, in main
+    verify(args.run_dir.resolve(), args.output.resolve())
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\29470\Desktop\ME5418_Group18_Environment_Submission(1)(1)\me5418-network-demo\docs\experiments\018_gradient_diagnostics\verify_gradient_diagnostics.py", line 585, in verify
+    branch_count += verify_case_structure(record, metadata)
+                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\29470\Desktop\ME5418_Group18_Environment_Submission(1)(1)\me5418-network-demo\docs\experiments\018_gradient_diagnostics\verify_gradient_diagnostics.py", line 426, in verify_case_structure
+    require(0 <= residual["actual_minus_mathematical_max_abs"] <= residual["actual_minus_mathematical_norm"] <= 1e-5
+    ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            and residual["actual_minus_mathematical_max_abs"] <= 2e-7,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            "bounded explicitly reported float32 Adam arithmetic residual")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\29470\Desktop\ME5418_Group18_Environment_Submission(1)(1)\me5418-network-demo\docs\experiments\010_adam_state\verify_adam_state.py", line 45, in require
+    raise ValueError(f"Verification failed: {description}")
+ValueError: Verification failed: bounded explicitly reported float32 Adam arithmetic residual

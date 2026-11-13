@@ -1,0 +1,78 @@
+[
+  {
+    "name": "scene_10001_step_6",
+    "scene_seed": 10001,
+    "reference_step": 6,
+    "global_transition_index": 40,
+    "demonstrated_action": 1
+  },
+  {
+    "name": "scene_10001_step_18",
+    "scene_seed": 10001,
+    "reference_step": 18,
+    "global_transition_index": 52,
+    "demonstrated_action": 0
+  },
+  {
+    "name": "scene_10001_step_20",
+    "scene_seed": 10001,
+    "reference_step": 20,
+    "global_transition_index": 54,
+    "demonstrated_action": 0
+  },
+  {
+    "name": "scene_10001_step_21",
+    "scene_seed": 10001,
+    "reference_step": 21,
+    "global_transition_index": 55,
+    "demonstrated_action": 0
+  },
+  {
+    "name": "scene_10001_step_22",
+    "scene_seed": 10001,
+    "reference_step": 22,
+    "global_transition_index": 56,
+    "demonstrated_action": 4
+  },
+  {
+    "name": "scene_10001_step_23",
+    "scene_seed": 10001,
+    "reference_step": 23,
+    "global_transition_index": 57,
+    "demonstrated_action": 4
+  },
+  {
+    "name": "scene_10001_step_24",
+    "scene_seed": 10001,
+    "reference_step": 24,
+    "global_transition_index": 58,
+    "demonstrated_action": 2
+  },
+  {
+    "name": "scene_10002_step_37",
+    "scene_seed": 10002,
+    "reference_step": 37,
+    "global_transition_index": 112,
+    "demonstrated_action": 1
+  },
+  {
+    "name": "scene_10002_actual_step_40",
+    "scene_seed": 10002,
+    "reference_step": 40,
+    "source_trajectory_checkpoint": 8500,
+    "demonstrated_action": 1,
+    "reference_action": 1,
+    "reference_action_kind": "successful_policy_action",
+    "reference_action_sources": [
+      7500,
+      9000
+    ],
+    "fixed_comparison_action": 6,
+    "encoded_observation_shape": [
+      1,
+      341
+    ],
+    "encoded_observation_sha256": "827e32b9427344e32b52ca119d88bc256f523a1a08dd1b0c82c31e5f538d2c5a",
+    "label_semantics": "The core API field demonstrated_action carries a successful-policy reference action; no new demonstration or optimality claim is made."
+  }
+]

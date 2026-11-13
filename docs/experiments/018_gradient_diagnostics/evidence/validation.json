@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "full_suite_before_rounding_verifier_fix": {
+    "command": ".venv/Scripts/python.exe -m pytest -q",
+    "passed": 743,
+    "seconds": 78.79,
+    "log_sha256": "fb399235ed97ec357a42fc01642ea63ab2f83bfc758e13453d027fe0a026125f"
+  },
+  "focused_verifier_suite_after_fix": {
+    "command": ".venv/Scripts/python.exe -m pytest -q tests/test_gradient_diagnostics_verification.py",
+    "passed": 37,
+    "seconds": 5.42,
+    "includes_two_new_rounding_regressions": true,
+    "test_source_sha256": "6793a045847bceff98ead924bf609c8de0e94287608d86829a8d146b93cab333"
+  },
+  "ruff": {
+    "command": ".venv/Scripts/ruff.exe check .",
+    "passed": true
+  },
+  "main_diagnostics": {
+    "optimizer_updates": 3084,
+    "new_policy_training_updates": 0,
+    "historical_replay_and_original_checks": 2790,
+    "independent_one_step_diagnostic_branches": 294,
+    "cases": 28,
+    "environment_resets": 1,
+    "environment_actions": 39,
+    "completed_episodes": 0
+  },
+  "initial_failed_verification": {
+    "record": "verification_attempts/initial.json",
+    "additional_optimizer_updates": 0,
+    "environment_actions": 0,
+    "source_probe_forwards": 3
+  },
+  "final_independent_verification": {
+    "file": "verification.json",
+    "sha256": "e927c02f6374e171137827145bff760f886d9397ccc59ed745806f415f563c23",
+    "passed": true,
+    "additional_optimizer_updates": 216,
+    "environment_actions": 0,
+    "source_probe_forwards": 3
+  },
+  "total_optimizer_updates_in_main_and_verification": 3300,
+  "new_policy_training_updates": 0,
+  "visual_qa": {
+    "file": "gradient_contexts.png",
+    "passed": true,
+    "style": "Black and white; table has top, header-bottom, and bottom rules only."
+  },
+  "analysis_qa": {
+    "case_files": 28,
+    "probe_update_pairs": 252,
+    "resolved_branch_probe_records": 2772,
+    "read_only_audit_passed": true
+  },
+  "notes": [
+    "The original verifier used an absolute residual threshold smaller than valid float32 storage rounding. Its source, console, and failure accounting are retained.",
+    "No diagnostic case, historical model, original loss log, demonstration, or production source was changed after main execution.",
+    "The figure table was restyled after the first rendering; numerical analysis was unchanged."
+  ]
+}

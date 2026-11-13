@@ -1,0 +1,32 @@
+{
+  "status": "failed",
+  "stage": "structural case audit before independent optimizer replay",
+  "verifier_source_file": "verification_attempts/initial_verifier.py",
+  "verifier_sha256": "041e1946760d6ddb2b716dd78f74297875934802baf3f2e39dd9e250f82a64e2",
+  "console_file": "verification_attempts/initial_console.txt",
+  "error": "Verification failed: bounded explicitly reported float32 Adam arithmetic residual",
+  "reason": "An absolute maximum-residual threshold of 2e-7 was smaller than half a float32 ULP for some trained weights. This was a verifier acceptance-bound error; the original numerical diagnostics and historical-update reproduction were unchanged.",
+  "independent_read_only_check": {
+    "arm": "baseline",
+    "incoming_td_update": 2010,
+    "parameter_name": "4.weight",
+    "flattened_parameter_index": 1173,
+    "before_weight": -4.734991550445557,
+    "after_weight": -4.734997272491455,
+    "float64_adam_displacement_from_saved_post_moments": -0.000005957132696165961,
+    "stored_parameter_displacement": -0.0000057220458984375,
+    "absolute_difference": 0.000000235086797728461,
+    "local_half_ulp": 0.0000002384185791015625,
+    "full_displacement_residual_norm": 0.000000838531300873410,
+    "recorded_displacement_residual_norm": 0.000000838531300873411,
+    "optimizer_updates": 0
+  },
+  "accounting": {
+    "additional_optimizer_updates": 0,
+    "environment_resets": 0,
+    "environment_steps": 0,
+    "completed_evaluation_episodes": 0,
+    "source_policy_new_probe_forward_passes": 3
+  },
+  "preservation": "The failing verifier source and complete error output are retained. The main 28 diagnostic cases are not rerun or edited. A corrected verifier must pass independently before conclusions are accepted."
+}

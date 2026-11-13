@@ -25,7 +25,9 @@ def archive(run_dir, destination):
         for row in summary["cases"]:
             if digest(run_dir / row["file"]) != row["sha256"]:
                 raise ValueError("A completed diagnostic case differs from its recorded hash.")
-    sources = sorted([*run_dir.rglob("*.json"), *run_dir.glob("*.png")])
+    sources = sorted([*run_dir.rglob("*.json"), *run_dir.glob("*.png"),
+                      *run_dir.glob("verification_attempts/*.py"),
+                      *run_dir.glob("verification_attempts/*.txt")])
     if any(path.stat().st_size > 8 * 1024 * 1024 for path in sources):
         raise ValueError("An evidence file exceeds the archive size limit.")
     destination.mkdir(parents=True, exist_ok=False)

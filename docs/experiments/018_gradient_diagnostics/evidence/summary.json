@@ -1,0 +1,302 @@
+{
+  "protocol": {
+    "attempt": 18,
+    "kind": "retrospective_gradient_and_adam_diagnosis",
+    "incoming_td_updates": [
+      2001,
+      2008,
+      2009,
+      2010,
+      2018,
+      2152,
+      2158,
+      2161,
+      2200,
+      2201,
+      3000,
+      4500,
+      8500,
+      10000
+    ],
+    "arms": [
+      "baseline",
+      "mc_anchor"
+    ],
+    "reference_probes": [
+      {
+        "name": "scene_10001_step_6",
+        "scene_seed": 10001,
+        "reference_step": 6,
+        "global_transition_index": 40,
+        "demonstrated_action": 1
+      },
+      {
+        "name": "scene_10001_step_18",
+        "scene_seed": 10001,
+        "reference_step": 18,
+        "global_transition_index": 52,
+        "demonstrated_action": 0
+      },
+      {
+        "name": "scene_10001_step_20",
+        "scene_seed": 10001,
+        "reference_step": 20,
+        "global_transition_index": 54,
+        "demonstrated_action": 0
+      },
+      {
+        "name": "scene_10001_step_21",
+        "scene_seed": 10001,
+        "reference_step": 21,
+        "global_transition_index": 55,
+        "demonstrated_action": 0
+      },
+      {
+        "name": "scene_10001_step_22",
+        "scene_seed": 10001,
+        "reference_step": 22,
+        "global_transition_index": 56,
+        "demonstrated_action": 4
+      },
+      {
+        "name": "scene_10001_step_23",
+        "scene_seed": 10001,
+        "reference_step": 23,
+        "global_transition_index": 57,
+        "demonstrated_action": 4
+      },
+      {
+        "name": "scene_10001_step_24",
+        "scene_seed": 10001,
+        "reference_step": 24,
+        "global_transition_index": 58,
+        "demonstrated_action": 2
+      },
+      {
+        "name": "scene_10002_step_37",
+        "scene_seed": 10002,
+        "reference_step": 37,
+        "global_transition_index": 112,
+        "demonstrated_action": 1
+      }
+    ],
+    "additional_probe": "Scene 10002 actual incoming step 40, reconstructed from the common 39-action prefix of treatment policies TD 7500, 8500 and 9000. Reference action south_small comes from the two successful policies, not a demonstration label.",
+    "selection": "Fixed before diagnostics using attempt-017 failures, early reversals, minima, target-sync adjacency and endpoint. Retrospective, not a random sample.",
+    "effective_batch_size": 117,
+    "margin": 0.8,
+    "gamma": 0.99,
+    "learning_rate": 0.0001,
+    "gradient_clip_norm": 10.0,
+    "baseline_mc_weight": 0.0,
+    "treatment_mc_weight": 1.0,
+    "supervision_weights": "All 117 coefficients remain one.",
+    "loss_target_semantics": "TD targets are frozen from the pre-update target network; MC targets are fixed actual episode returns.",
+    "gap_semantics": "Derivative uses the strongest non-demonstrated action fixed before the update; actual max-other gap is also measured after each branch.",
+    "counterfactual_semantics": "Independent one-step clones, never chained or adopted as trained policies.",
+    "adam_decomposition": "Old first moment and current objective contributions use the same actual new second-moment denominator and clip coefficient. Numerical remainder is recorded.",
+    "environment_resets": 1,
+    "environment_steps": 39,
+    "completed_evaluation_episodes": 0,
+    "new_policy_training_updates": 0,
+    "new_demonstrations": 0,
+    "held_out_scenes": 0,
+    "scripts_sha256": {
+      "docs/experiments/018_gradient_diagnostics/run_gradient_diagnostics.py": "97e4778c8dcf19d523bd413fab489b5359c2e044a12ee8d96557ea8303aaf46a",
+      "docs/experiments/018_gradient_diagnostics/gradient_core.py": "c07daad798ebad2cb9ac615d4d1e5e5fa2a97d4dce5cc2030c48877f3dfbee3e",
+      "docs/experiments/018_gradient_diagnostics/trajectory_probe.py": "e14b41781bc8df8d1662e3f2e2c6dc9860f75b10593333ef6671cb73fb66b141"
+    }
+  },
+  "cases": [
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2001,
+      "file": "cases/baseline_2001.json",
+      "sha256": "42bb70c929cab8ea06be56e9149b86e836d64f698e97eb42ed28c9635d052afe"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2008,
+      "file": "cases/baseline_2008.json",
+      "sha256": "da7039df3b0d51e8a339d024c039007ce03bea06eb71c5576285fb3da1aa07ad"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2009,
+      "file": "cases/baseline_2009.json",
+      "sha256": "27c2a477aa21d57a1f440c85fe9e224944833830a3baeb085f7b4707d1d1010b"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2010,
+      "file": "cases/baseline_2010.json",
+      "sha256": "5d9e144339bb07ad42732f6850830e3810aedd9f68443727c8473d74972aee54"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2018,
+      "file": "cases/baseline_2018.json",
+      "sha256": "2cbb3d7e542b8a16d16a65379887148a385001fd60bbef48aa5b7f8b22a14659"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2152,
+      "file": "cases/baseline_2152.json",
+      "sha256": "becca1e1a3716480f1aec5717bf60ad8ccc751c026529537d8316e358750a3f5"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2158,
+      "file": "cases/baseline_2158.json",
+      "sha256": "60044b2452e1cff9949b484d0bb6e2ddf468a5a96e13e4fc290c262305ca14e0"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2161,
+      "file": "cases/baseline_2161.json",
+      "sha256": "001609fca294551c17a028d15ef87b68fe462f2dafde4b43d2a4e2f9f588d927"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2200,
+      "file": "cases/baseline_2200.json",
+      "sha256": "50ad614e611833cf66fb0759bb91db411003b3dea563a4bb21214724dd589476"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 2201,
+      "file": "cases/baseline_2201.json",
+      "sha256": "097b03d3665629013a55f60d297d0e5feed5bcdc8a95d1315adf5a0bf044b8af"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 3000,
+      "file": "cases/baseline_3000.json",
+      "sha256": "d2d8fd28d30f64f87ae5e11b6ea7c53bb0e2c3f16d63ff44bf475b94c62ef203"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 4500,
+      "file": "cases/baseline_4500.json",
+      "sha256": "fa1b2f518ab612a7e13524a3a881f72f829bc0a6ab6f6a3d75b5ae501946411f"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 8500,
+      "file": "cases/baseline_8500.json",
+      "sha256": "d2f2b75a75d95c228fcc7c3a4085d67e61da20297c896172ed85231951a1012d"
+    },
+    {
+      "arm": "baseline",
+      "incoming_td_update": 10000,
+      "file": "cases/baseline_10000.json",
+      "sha256": "ecd29a4b0fa9c2c0cb98da05ba8e5c5e4d530a9c1f4eede1f3f75721b94caf19"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2001,
+      "file": "cases/mc_anchor_2001.json",
+      "sha256": "449683ff9ef9d08f710321f47994d2439a533cf3a269d8bc0875dae48ded869f"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2008,
+      "file": "cases/mc_anchor_2008.json",
+      "sha256": "19d0ad0e31ad17585c0e2d6a900a67606653bf0659d329120a013b1b7e36980a"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2009,
+      "file": "cases/mc_anchor_2009.json",
+      "sha256": "c3c803a86e156badd47977c0f51b5c1eb9f1c374bcc8134b35ad60a12def6c16"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2010,
+      "file": "cases/mc_anchor_2010.json",
+      "sha256": "d45c9891ebf7f6132f9190248c0a7e9c35993dc10d0b4ebdb0a96054244c80ac"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2018,
+      "file": "cases/mc_anchor_2018.json",
+      "sha256": "d035489b0f62ee6aee1fe43a0379babc66470c70b88738e194f19cb54a98f4df"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2152,
+      "file": "cases/mc_anchor_2152.json",
+      "sha256": "2815a3c116d85cd9696562b1c7b0d1c12824e44c215e6b95fa78071e58d7a6d1"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2158,
+      "file": "cases/mc_anchor_2158.json",
+      "sha256": "60e7886fb5e31154a82ed5455e8ed810fb338ae593d2850029a2b9924463b034"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2161,
+      "file": "cases/mc_anchor_2161.json",
+      "sha256": "740d6be567d2bff2a2cecb13888ba52f479438ea7cd3542cb7441ce147bee416"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2200,
+      "file": "cases/mc_anchor_2200.json",
+      "sha256": "ac77826ad883d19ee9beed8fcda39adc06224d6f65ba73ab35c9e03b07f4dfd3"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 2201,
+      "file": "cases/mc_anchor_2201.json",
+      "sha256": "4d789688b29024430c7f21911341821c625dd72980a331d9c9b3b978c7f2ff1f"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 3000,
+      "file": "cases/mc_anchor_3000.json",
+      "sha256": "f12e38c8e33a23f81164d136e422624b0e5691b485063054f3234c4c3bda1293"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 4500,
+      "file": "cases/mc_anchor_4500.json",
+      "sha256": "ab37f86538b0169100ae4add64d24432dd918975331523375a29e4350672ac30"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 8500,
+      "file": "cases/mc_anchor_8500.json",
+      "sha256": "a8c89b722e5787311bb796143561ba3ffa7cce1c8ed24609667dbc237c442102"
+    },
+    {
+      "arm": "mc_anchor",
+      "incoming_td_update": 10000,
+      "file": "cases/mc_anchor_10000.json",
+      "sha256": "9a392eea9cc18396279001524a4155174a99cf7c709cb07281694e814123e363"
+    }
+  ],
+  "accounting": {
+    "historical_replay_optimizer_updates": 2762,
+    "diagnostic_branch_optimizer_updates": 294,
+    "historical_post_update_verification_steps": 28,
+    "completed_cases": 28,
+    "new_policy_training_updates": 0,
+    "environment_resets": 1,
+    "environment_steps": 39,
+    "completed_evaluation_episodes": 0
+  },
+  "diagnostic_artifacts_sha256": {
+    "probe_metadata.json": "8b5f6e1c850e8834d4e01d9709ec21b52e3cf9aa1de0214e932262633f75f499",
+    "probe_observations.json": "7a138e2b680caae3702d5c07de323457a5e4dc7623cde3bb8e1a6b18d5e7289f",
+    "trajectory_probe.json": "eb2366e465bcd59b21f6b43d7477f6e2938c15cdac48ada71ad4be04153054e0"
+  },
+  "source_hashes_unchanged": true,
+  "limitations": [
+    "Retrospective, selected updates from one initialization and three known layouts.",
+    "Reference-state gaps do not establish complete rollout success.",
+    "Per-loss gradient alignment is local; Adam counterfactuals alter moments and clipping.",
+    "One-step ablations are diagnostic evidence, not tested long-term remedies.",
+    "Scene 10002 step 37 is a first divergence shared by successful runs, not a proven cause."
+  ]
+}
