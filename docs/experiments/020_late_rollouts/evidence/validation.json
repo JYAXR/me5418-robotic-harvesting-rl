@@ -1,0 +1,15 @@
+{
+  "focused_tests": {
+    "passed": 93,
+    "seconds": 9.61,
+    "exit_code": 0,
+    "scope": "Existing coefficient, replay, verification and analysis tests."
+  },
+  "ruff_passed": true,
+  "experiment_code_and_comments": "English",
+  "source_sha256": {
+    "docs\\experiments\\020_late_rollouts\\analyze_late_rollouts.py": "5a6134ea8ff6bc347664b3d9276965881b50de81774421374fd8845977f6b3e7",
+    "docs\\experiments\\020_late_rollouts\\run_late_rollouts.py": "7c30cccffb97e65da4c0ebf038c709314d5ec490f97f6cf5e79a643958634230"
+  },
+  "verification_scope": "Two exact 500-update replays, 21 matched full intermediate states, exact endpoint, unchanged full state across each evaluation, nine repeated complete trajectories. The actual decision observer is checked against uninstrumented reloads at the two negative-gap models and recovery model."
+}

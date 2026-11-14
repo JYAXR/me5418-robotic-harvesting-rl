@@ -1,0 +1,50 @@
+{
+  "files": {
+    "accounting.json": {
+      "sha256": "850bc433c7d005c047f7d20facb5844b5e4e3975f25f3eb0c13e13ff476ca8ce",
+      "bytes": 355
+    },
+    "analysis.json": {
+      "sha256": "d060f923447ee20000664b73a337643b4f98690c35905efb11cb0850a4ecc221",
+      "bytes": 99272
+    },
+    "models.json": {
+      "sha256": "780a7d0065360157852d037b4f0393267984c95f6ce4addb0d2807f8047b0917",
+      "bytes": 2042
+    },
+    "observations.json": {
+      "sha256": "12714acffc2d6f9a32d698818fda1f37d38673d6df394828762c30196b7c2b10",
+      "bytes": 2156592
+    },
+    "provenance.json": {
+      "sha256": "8843366b03c6305a0478ba54b2bc0ba9d20a1c91bf6dc2448cd4249b7a1d0b71",
+      "bytes": 106903
+    },
+    "reconstruction.json": {
+      "sha256": "aca595c7c6c61ebfb3a5e9d7b539c05944167a9ef6b2df55acd5298a70784dd0",
+      "bytes": 340
+    },
+    "reloads.json": {
+      "sha256": "b75e5c27c94d28a77d246844ccc6f3cd59f7fb48373b723d6170b0f6fc97635d",
+      "bytes": 92668
+    },
+    "reset_certification.json": {
+      "sha256": "f57a2390f85f463ce3bae3093d5eb219bdc5926420812d2f70de4723a4316006",
+      "bytes": 44462
+    },
+    "status.json": {
+      "sha256": "b87c8ed30916f0b4212f70f95a41139e12f77ba0932f28b1a2430db2d98141e5",
+      "bytes": 89
+    },
+    "validation.json": {
+      "sha256": "269505ce54190304d539243ffb66c4d5fa684efc510f688b7b73319e8493aed3",
+      "bytes": 860
+    },
+    "verification.json": {
+      "sha256": "6ff4f0fbb8fe43d346baac9e3a0f66a7e1a29763ec886929964362e6b0f4e052",
+      "bytes": 495
+    }
+  },
+  "excluded": "21 full model binaries and console/test logs remain local.",
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\late_rollouts_20261114"
+}

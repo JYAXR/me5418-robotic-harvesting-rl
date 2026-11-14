@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "exact_replays": [
+    {
+      "independent": false,
+      "updates": 500,
+      "all_logs_and_q_match": true,
+      "full_endpoint_matches": true,
+      "window_full_states_checked": 21
+    },
+    {
+      "independent": true,
+      "updates": 500,
+      "all_logs_and_q_match": true,
+      "full_endpoint_matches": true,
+      "window_full_states_checked": 21
+    }
+  ],
+  "exact_reloaded_episodes": 9,
+  "all_evaluations_preserve_full_state": true
+}

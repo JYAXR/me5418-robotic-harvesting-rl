@@ -1,0 +1,16 @@
+[
+  {
+    "independent": false,
+    "updates": 500,
+    "all_logs_and_q_match": true,
+    "full_endpoint_matches": true,
+    "window_full_states_checked": 21
+  },
+  {
+    "independent": true,
+    "updates": 500,
+    "all_logs_and_q_match": true,
+    "full_endpoint_matches": true,
+    "window_full_states_checked": 21
+  }
+]

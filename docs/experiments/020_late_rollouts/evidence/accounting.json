@@ -1,0 +1,13 @@
+{
+  "reconstruction_updates": 1000,
+  "new_training_remedy_updates": 0,
+  "main_episodes": 63,
+  "main_policy_actions": 2775,
+  "main_certification_actions": 2457,
+  "reload_episodes": 9,
+  "reload_policy_actions": 669,
+  "reload_certification_actions": 351,
+  "total_simulator_actions": 6252,
+  "held_out_scenes": 0,
+  "forced_actions": 0
+}
