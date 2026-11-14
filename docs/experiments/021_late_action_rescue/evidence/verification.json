@@ -1,0 +1,30 @@
+[
+  {
+    "update": 9955,
+    "mode": "greedy",
+    "all_transitions_match": true,
+    "full_state_unchanged": true,
+    "steps": 200
+  },
+  {
+    "update": 9955,
+    "mode": "corrected",
+    "all_transitions_match": true,
+    "full_state_unchanged": true,
+    "steps": 41
+  },
+  {
+    "update": 9956,
+    "mode": "greedy",
+    "all_transitions_match": true,
+    "full_state_unchanged": true,
+    "steps": 200
+  },
+  {
+    "update": 9956,
+    "mode": "corrected",
+    "all_transitions_match": true,
+    "full_state_unchanged": true,
+    "steps": 41
+  }
+]

@@ -1,0 +1,1808 @@
+{
+  "mode": "single_reference_action_then_neural",
+  "diagnostic_only": true,
+  "optimizer_updates": 0,
+  "forced_action_count": 1,
+  "intervention_step": 21,
+  "parameter_sha256": "c11aa88b1101210b22f32d6436e203c1b7c61169543e6416ee67aec24fa4efd0",
+  "rollout": {
+    "training_scene_only": true,
+    "seed": 10001,
+    "return": 107.58505000025033,
+    "steps": 41,
+    "success": true,
+    "damage": false,
+    "budget_exhausted": false,
+    "travel_distance": 1.5849986001849174,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.04951140284538269,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_reference_action_divergence": null,
+    "actions": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      6,
+      6,
+      0,
+      0,
+      0,
+      0,
+      4,
+      4,
+      2,
+      6,
+      0,
+      0,
+      4,
+      4,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      6,
+      1,
+      1,
+      1,
+      5,
+      6
+    ],
+    "robot_path": [
+      [
+        0.07143927365541458,
+        0.5522215962409973
+      ],
+      [
+        0.09643928706645966,
+        0.5522215962409973
+      ],
+      [
+        0.12143930047750473,
+        0.5522215962409973
+      ],
+      [
+        0.14643928408622742,
+        0.5522215962409973
+      ],
+      [
+        0.1714392602443695,
+        0.5522215962409973
+      ],
+      [
+        0.1964392364025116,
+        0.5522215962409973
+      ],
+      [
+        0.1964392364025116,
+        0.5272216200828552
+      ],
+      [
+        0.1964392364025116,
+        0.5022216439247131
+      ],
+      [
+        0.1964392364025116,
+        0.47722166776657104
+      ],
+      [
+        0.1964392364025116,
+        0.45222169160842896
+      ],
+      [
+        0.1964392364025116,
+        0.42722171545028687
+      ],
+      [
+        0.1964392364025116,
+        0.4022217392921448
+      ],
+      [
+        0.1964392364025116,
+        0.3772217631340027
+      ],
+      [
+        0.1964392364025116,
+        0.3522217869758606
+      ],
+      [
+        0.1964392364025116,
+        0.3272218108177185
+      ],
+      [
+        0.1964392364025116,
+        0.3022218346595764
+      ],
+      [
+        0.2564391791820526,
+        0.3022218346595764
+      ],
+      [
+        0.31643912196159363,
+        0.3022218346595764
+      ],
+      [
+        0.31643912196159363,
+        0.3272218108177185
+      ],
+      [
+        0.31643912196159363,
+        0.3522217869758606
+      ],
+      [
+        0.31643912196159363,
+        0.3772217631340027
+      ],
+      [
+        0.31643912196159363,
+        0.4022217392921448
+      ],
+      [
+        0.31643912196159363,
+        0.4622216820716858
+      ],
+      [
+        0.31643912196159363,
+        0.5222216248512268
+      ],
+      [
+        0.3414390981197357,
+        0.5222216248512268
+      ],
+      [
+        0.40143904089927673,
+        0.5222216248512268
+      ],
+      [
+        0.40143904089927673,
+        0.5472216010093689
+      ],
+      [
+        0.40143904089927673,
+        0.572221577167511
+      ],
+      [
+        0.40143904089927673,
+        0.632221519947052
+      ],
+      [
+        0.40143904089927673,
+        0.692221462726593
+      ],
+      [
+        0.46143898367881775,
+        0.692221462726593
+      ],
+      [
+        0.5214389562606812,
+        0.692221462726593
+      ],
+      [
+        0.5814388990402222,
+        0.692221462726593
+      ],
+      [
+        0.6414388418197632,
+        0.692221462726593
+      ],
+      [
+        0.7014387845993042,
+        0.692221462726593
+      ],
+      [
+        0.7614387273788452,
+        0.692221462726593
+      ],
+      [
+        0.8214386701583862,
+        0.692221462726593
+      ],
+      [
+        0.8214386701583862,
+        0.6672214865684509
+      ],
+      [
+        0.8214386701583862,
+        0.6422215104103088
+      ],
+      [
+        0.8214386701583862,
+        0.6172215342521667
+      ],
+      [
+        0.8214386701583862,
+        0.5572215914726257
+      ],
+      [
+        0.8814386129379272,
+        0.5572215914726257
+      ]
+    ]
+  },
+  "records": [
+    {
+      "step": 1,
+      "position": [
+        0.07143927365541458,
+        0.5522215962409973
+      ],
+      "next_position": [
+        0.09643928706645966,
+        0.5522215962409973
+      ],
+      "encoded_observation_sha256": "c1ff0c523f449d64d809c47d70abcd4bbeefd9b1b39509274c30752ce67fb851",
+      "q_values": [
+        42.22523498535156,
+        66.65460968017578,
+        72.29938507080078,
+        -10.602126121520996,
+        43.389312744140625,
+        63.518978118896484,
+        59.79092788696289,
+        -20.199798583984375
+      ],
+      "policy_action": 2,
+      "policy_action_name": "east_small",
+      "executed_action": 2,
+      "executed_action_name": "east_small",
+      "forced_reference_action": false,
+      "reward": 0.24477504938840866,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.025000013411045074,
+        0.0
+      ],
+      "distance_to_target": 0.8147388696670532,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 2,
+      "position": [
+        0.09643928706645966,
+        0.5522215962409973
+      ],
+      "next_position": [
+        0.12143930047750473,
+        0.5522215962409973
+      ],
+      "encoded_observation_sha256": "a505bd660ba9dfe9fb8ebb3f9f02faaf2ce3ba0b6c405fc329c326acedcca241",
+      "q_values": [
+        46.3603515625,
+        68.11125183105469,
+        72.58191680908203,
+        -10.677109718322754,
+        47.0076789855957,
+        65.0076904296875,
+        61.17233657836914,
+        -20.25093650817871
+      ],
+      "policy_action": 2,
+      "policy_action_name": "east_small",
+      "executed_action": 2,
+      "executed_action_name": "east_small",
+      "forced_reference_action": false,
+      "reward": 0.24475955218076706,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.025000013411045074,
+        0.0
+      ],
+      "distance_to_target": 0.7897629141807556,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 3,
+      "position": [
+        0.12143930047750473,
+        0.5522215962409973
+      ],
+      "next_position": [
+        0.14643928408622742,
+        0.5522215962409973
+      ],
+      "encoded_observation_sha256": "0b2d4bb47165ceaee691855ebbd03358e5d572bef9892ce742dc6c3b1603684c",
+      "q_values": [
+        50.505332946777344,
+        69.69343566894531,
+        73.06338500976562,
+        -10.761849403381348,
+        50.78287124633789,
+        66.51112365722656,
+        63.04982376098633,
+        -20.313251495361328
+      ],
+      "policy_action": 2,
+      "policy_action_name": "east_small",
+      "executed_action": 2,
+      "executed_action_name": "east_small",
+      "forced_reference_action": false,
+      "reward": 0.2447446569800377,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.024999983608722687,
+        0.0
+      ],
+      "distance_to_target": 0.7647884488105774,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 4,
+      "position": [
+        0.14643928408622742,
+        0.5522215962409973
+      ],
+      "next_position": [
+        0.1714392602443695,
+        0.5522215962409973
+      ],
+      "encoded_observation_sha256": "968d814b9d4e7503a7f3ab76769a875f354d9abb74d43aba809ac29fa4def383",
+      "q_values": [
+        54.65032196044922,
+        71.27562713623047,
+        73.54485321044922,
+        -10.846590042114258,
+        54.55806350708008,
+        68.01454162597656,
+        64.92730712890625,
+        -20.375568389892578
+      ],
+      "policy_action": 2,
+      "policy_action_name": "east_small",
+      "executed_action": 2,
+      "executed_action_name": "east_small",
+      "forced_reference_action": false,
+      "reward": 0.2447267770767212,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.02499997615814209,
+        0.0
+      ],
+      "distance_to_target": 0.7398157715797424,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 5,
+      "position": [
+        0.1714392602443695,
+        0.5522215962409973
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.5522215962409973
+      ],
+      "encoded_observation_sha256": "e26038fa01b5cb8c6e71c5f2eee47e155ea11787706b5ccaf4a9c74df21f9018",
+      "q_values": [
+        58.93739318847656,
+        73.0452651977539,
+        74.09075164794922,
+        -10.934913635253906,
+        58.45500564575195,
+        69.51455688476562,
+        67.25176239013672,
+        -20.440601348876953
+      ],
+      "policy_action": 2,
+      "policy_action_name": "east_small",
+      "executed_action": 2,
+      "executed_action_name": "east_small",
+      "forced_reference_action": false,
+      "reward": 0.2447071075439453,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.02499997615814209,
+        0.0
+      ],
+      "distance_to_target": 0.7148450613021851,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 6,
+      "position": [
+        0.1964392364025116,
+        0.5522215962409973
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.5272216200828552
+      ],
+      "encoded_observation_sha256": "ea01a93886770a01530e178c920fd505233ba4268b188ec14ecc1e2cda94cea0",
+      "q_values": [
+        63.53759765625,
+        75.09815216064453,
+        74.6566390991211,
+        -11.031310081481934,
+        62.624107360839844,
+        71.118896484375,
+        70.01587677001953,
+        -20.507505416870117
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": 0.002923250198364258,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7140527367591858,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 7,
+      "position": [
+        0.1964392364025116,
+        0.5272216200828552
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.5022216439247131
+      ],
+      "encoded_observation_sha256": "1e5982f279e1dc9ac379c79ff537c547b6384a253895496728161d6b9ac1c8c3",
+      "q_values": [
+        64.97169494628906,
+        75.6972427368164,
+        74.24105072021484,
+        -11.089579582214355,
+        63.28136444091797,
+        72.34713745117188,
+        70.27372741699219,
+        -20.3981876373291
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.005824923515319824,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7141352295875549,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 8,
+      "position": [
+        0.1964392364025116,
+        0.5022216439247131
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.47722166776657104
+      ],
+      "encoded_observation_sha256": "9393871f03ed3769e8df97c5bea0682ea4e7419f6c66da6aa6cf5d8357f012ae",
+      "q_values": [
+        65.89985656738281,
+        76.08882141113281,
+        74.01808166503906,
+        -11.138298988342285,
+        64.31053924560547,
+        72.92471313476562,
+        70.43846893310547,
+        -20.27895164489746
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.01457071304321289,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7150923013687134,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 9,
+      "position": [
+        0.1964392364025116,
+        0.47722166776657104
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.45222169160842896
+      ],
+      "encoded_observation_sha256": "57c5d372cb5bd399ea627b539ca103129b7925eb0e5398eaa0322e381f695a7a",
+      "q_values": [
+        66.45723724365234,
+        76.51986694335938,
+        73.94505310058594,
+        -11.178528785705566,
+        65.93507385253906,
+        72.7528076171875,
+        71.06218719482422,
+        -20.153350830078125
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.023280739784240723,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7169203758239746,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 10,
+      "position": [
+        0.1964392364025116,
+        0.45222169160842896
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.42722171545028687
+      ],
+      "encoded_observation_sha256": "907e2d3d92cefe98a3fb0e2241a52034e5eef2dd5b6d59b736ec5a4121db6077",
+      "q_values": [
+        67.15379333496094,
+        77.03197479248047,
+        73.78832244873047,
+        -11.216167449951172,
+        67.49395751953125,
+        72.54798889160156,
+        71.77069091796875,
+        -20.02094268798828
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.031925201416015625,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7196128964424133,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 11,
+      "position": [
+        0.1964392364025116,
+        0.42722171545028687
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.4022217392921448
+      ],
+      "encoded_observation_sha256": "13212e1cca694e3019105536a720963c2574cfea63f5b4f52854f0cba2692b68",
+      "q_values": [
+        68.23526000976562,
+        77.80365753173828,
+        73.77621459960938,
+        -11.259801864624023,
+        69.06874084472656,
+        72.27349853515625,
+        73.19518280029297,
+        -19.889562606811523
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.04047191143035889,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7231600880622864,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 12,
+      "position": [
+        0.1964392364025116,
+        0.4022217392921448
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.3772217631340027
+      ],
+      "encoded_observation_sha256": "c14b95941df392d24560cb00246074ba3f557c90e8c7b188914ab757f63c5740",
+      "q_values": [
+        69.41021728515625,
+        78.64318084716797,
+        73.93871307373047,
+        -11.30997085571289,
+        70.75405883789062,
+        72.01386260986328,
+        74.94176483154297,
+        -19.767662048339844
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.048894643783569336,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7275495529174805,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 13,
+      "position": [
+        0.1964392364025116,
+        0.3772217631340027
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.3522217869758606
+      ],
+      "encoded_observation_sha256": "f27f8d8ecbd8b61b2a67004fda3104c27322a52c8e6fe1b8270b20a2ad627121",
+      "q_values": [
+        70.6362533569336,
+        79.49871063232422,
+        74.13016510009766,
+        -11.361571311950684,
+        72.48934936523438,
+        71.78010559082031,
+        76.73857116699219,
+        -19.64926528930664
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.05716538429260254,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7327660918235779,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 14,
+      "position": [
+        0.1964392364025116,
+        0.3522217869758606
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.3272218108177185
+      ],
+      "encoded_observation_sha256": "2aa7d90b878af3532d71f8886687be780412cb1dd1f088dce1356f384821891c",
+      "q_values": [
+        71.86228942871094,
+        80.35424041748047,
+        74.32160186767578,
+        -11.41317081451416,
+        74.22463989257812,
+        71.54634857177734,
+        78.5353775024414,
+        -19.530868530273438
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.0652620792388916,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.7387923002243042,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 15,
+      "position": [
+        0.1964392364025116,
+        0.3272218108177185
+      ],
+      "next_position": [
+        0.1964392364025116,
+        0.3022218346595764
+      ],
+      "encoded_observation_sha256": "1d5acb0cbcee4a7b4e7dac8a9886a7c9c6ea1f5c55287bfa791c10abfb4f10df",
+      "q_values": [
+        73.08839416503906,
+        81.20332336425781,
+        74.5118408203125,
+        -11.464695930480957,
+        75.96014404296875,
+        71.31239318847656,
+        80.3327865600586,
+        -19.412397384643555
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": -0.07316088676452637,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.745608389377594,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 16,
+      "position": [
+        0.1964392364025116,
+        0.3022218346595764
+      ],
+      "next_position": [
+        0.2564391791820526,
+        0.3022218346595764
+      ],
+      "encoded_observation_sha256": "28c56cc1634c15e9605d32fc89a9de582ed77fbf168d0532d724033990274107",
+      "q_values": [
+        74.21682739257812,
+        79.28316497802734,
+        74.390625,
+        -11.500272750854492,
+        77.29369354248047,
+        70.97268676757812,
+        82.5171127319336,
+        -19.301118850708008
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.5603768587112427,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.6883707046508789,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 17,
+      "position": [
+        0.2564391791820526,
+        0.3022218346595764
+      ],
+      "next_position": [
+        0.31643912196159363,
+        0.3022218346595764
+      ],
+      "encoded_observation_sha256": "f660525c72056f561bc1902ab3f39b53bd0a8967bba36fbf79e1771a4e84c807",
+      "q_values": [
+        79.2331771850586,
+        78.66875457763672,
+        77.63835906982422,
+        -11.640862464904785,
+        79.28651428222656,
+        73.43175506591797,
+        83.24032592773438,
+        -19.36878204345703
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.5552478790283203,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.631645917892456,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 18,
+      "position": [
+        0.31643912196159363,
+        0.3022218346595764
+      ],
+      "next_position": [
+        0.31643912196159363,
+        0.3272218108177185
+      ],
+      "encoded_observation_sha256": "0dc282ac01e00a2b2c1a785332273495a4e6ad809a8e5c9c99d68d082ee0c922",
+      "q_values": [
+        83.8640365600586,
+        79.40373229980469,
+        80.18647003173828,
+        -11.749932289123535,
+        81.0848388671875,
+        75.75733184814453,
+        83.44104766845703,
+        -19.45303726196289
+      ],
+      "policy_action": 0,
+      "policy_action_name": "north_small",
+      "executed_action": 0,
+      "executed_action_name": "north_small",
+      "forced_reference_action": false,
+      "reward": 0.07560515403747559,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.02499997615814209
+      ],
+      "distance_to_target": 0.6235854029655457,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 19,
+      "position": [
+        0.31643912196159363,
+        0.3272218108177185
+      ],
+      "next_position": [
+        0.31643912196159363,
+        0.3522217869758606
+      ],
+      "encoded_observation_sha256": "f8f948e7dc7c189f57f577dfb7b56db2c0030ccb60694b3026c95f3e040b3c30",
+      "q_values": [
+        83.99784851074219,
+        81.17138671875,
+        80.86136627197266,
+        -11.752030372619629,
+        82.34809112548828,
+        76.04231262207031,
+        82.54077911376953,
+        -19.561431884765625
+      ],
+      "policy_action": 0,
+      "policy_action_name": "north_small",
+      "executed_action": 0,
+      "executed_action_name": "north_small",
+      "forced_reference_action": false,
+      "reward": 0.06651365756988525,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.02499997615814209
+      ],
+      "distance_to_target": 0.6164340376853943,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 20,
+      "position": [
+        0.31643912196159363,
+        0.3522217869758606
+      ],
+      "next_position": [
+        0.31643912196159363,
+        0.3772217631340027
+      ],
+      "encoded_observation_sha256": "f742b618b64e6822bcf036a94f11d221fc94f6506122bcecb32dcf0e43cfe922",
+      "q_values": [
+        84.22187805175781,
+        83.02095794677734,
+        81.98278045654297,
+        -11.766855239868164,
+        83.45095825195312,
+        76.36259460449219,
+        82.64083862304688,
+        -19.697071075439453
+      ],
+      "policy_action": 0,
+      "policy_action_name": "north_small",
+      "executed_action": 0,
+      "executed_action_name": "north_small",
+      "forced_reference_action": false,
+      "reward": 0.057102084159851074,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.02499997615814209
+      ],
+      "distance_to_target": 0.6102238297462463,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 21,
+      "position": [
+        0.31643912196159363,
+        0.3772217631340027
+      ],
+      "next_position": [
+        0.31643912196159363,
+        0.4022217392921448
+      ],
+      "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+      "q_values": [
+        84.526611328125,
+        84.07341003417969,
+        83.02713775634766,
+        -11.773367881774902,
+        84.55442810058594,
+        76.66429138183594,
+        83.22370910644531,
+        -19.827463150024414
+      ],
+      "policy_action": 4,
+      "policy_action_name": "north_large",
+      "executed_action": 0,
+      "executed_action_name": "north_small",
+      "forced_reference_action": true,
+      "reward": 0.04740142822265625,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.02499997615814209
+      ],
+      "distance_to_target": 0.6049836874008179,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 22,
+      "position": [
+        0.31643912196159363,
+        0.4022217392921448
+      ],
+      "next_position": [
+        0.31643912196159363,
+        0.4622216820716858
+      ],
+      "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+      "q_values": [
+        84.67266845703125,
+        84.7589111328125,
+        84.09508514404297,
+        -11.765440940856934,
+        85.58958435058594,
+        76.98870086669922,
+        83.98690795898438,
+        -19.974136352539062
+      ],
+      "policy_action": 4,
+      "policy_action_name": "north_large",
+      "executed_action": 4,
+      "executed_action_name": "north_large",
+      "forced_reference_action": false,
+      "reward": 0.07275125980377198,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.059999942779541016
+      ],
+      "distance_to_target": 0.5965085625648499,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 23,
+      "position": [
+        0.31643912196159363,
+        0.4622216820716858
+      ],
+      "next_position": [
+        0.31643912196159363,
+        0.5222216248512268
+      ],
+      "encoded_observation_sha256": "31bd829356413595ffc5c62a627833c780d90c7eb2d3422543c5fb800b4ab46e",
+      "q_values": [
+        85.03531646728516,
+        83.58328247070312,
+        86.32489013671875,
+        -11.768790245056152,
+        87.19967651367188,
+        77.5174560546875,
+        85.96208953857422,
+        -20.33167266845703
+      ],
+      "policy_action": 4,
+      "policy_action_name": "north_large",
+      "executed_action": 4,
+      "executed_action_name": "north_large",
+      "forced_reference_action": false,
+      "reward": 0.013054823875427245,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.059999942779541016
+      ],
+      "distance_to_target": 0.5940030813217163,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 24,
+      "position": [
+        0.31643912196159363,
+        0.5222216248512268
+      ],
+      "next_position": [
+        0.3414390981197357,
+        0.5222216248512268
+      ],
+      "encoded_observation_sha256": "804c13fca0d13389803987eef20f782fdafd45fe7ac819326d22b0cb19df0458",
+      "q_values": [
+        84.67282104492188,
+        82.87494659423828,
+        87.39273834228516,
+        -11.714604377746582,
+        84.61085510253906,
+        78.00656127929688,
+        86.61144256591797,
+        -20.652969360351562
+      ],
+      "policy_action": 2,
+      "policy_action_name": "east_small",
+      "executed_action": 2,
+      "executed_action_name": "east_small",
+      "forced_reference_action": false,
+      "reward": 0.24499022960662842,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.02499997615814209,
+        0.0
+      ],
+      "distance_to_target": 0.5690040588378906,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 25,
+      "position": [
+        0.3414390981197357,
+        0.5222216248512268
+      ],
+      "next_position": [
+        0.40143904089927673,
+        0.5222216248512268
+      ],
+      "encoded_observation_sha256": "c8355a92fa6de276ad894d1deaa224817ffb6a685a291d9c346e2c6f974eb229",
+      "q_values": [
+        87.67721557617188,
+        84.6136703491211,
+        88.91761779785156,
+        -11.803234100341797,
+        88.49269104003906,
+        78.60879516601562,
+        89.66999816894531,
+        -20.684749603271484
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.5879720211029053,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.5090068578720093,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 26,
+      "position": [
+        0.40143904089927673,
+        0.5222216248512268
+      ],
+      "next_position": [
+        0.40143904089927673,
+        0.5472216010093689
+      ],
+      "encoded_observation_sha256": "c43b85c906644c183e47a3f092192417061e7ddbc66f7404e7d99f96dd90ab5c",
+      "q_values": [
+        91.01724243164062,
+        87.45084381103516,
+        90.44698333740234,
+        -11.903388977050781,
+        90.21739959716797,
+        81.34906005859375,
+        89.77806854248047,
+        -20.87006378173828
+      ],
+      "policy_action": 0,
+      "policy_action_name": "north_small",
+      "executed_action": 0,
+      "executed_action_name": "north_small",
+      "forced_reference_action": false,
+      "reward": -0.01365816593170166,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.02499997615814209
+      ],
+      "distance_to_target": 0.5098726749420166,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 27,
+      "position": [
+        0.40143904089927673,
+        0.5472216010093689
+      ],
+      "next_position": [
+        0.40143904089927673,
+        0.572221577167511
+      ],
+      "encoded_observation_sha256": "cae5c89eff1f9b40eda1d7fa8d1a432e6d270dcddff7ac4d7cfea84567fa8caa",
+      "q_values": [
+        91.31526184082031,
+        86.41522216796875,
+        90.56153106689453,
+        -11.880364418029785,
+        90.54306030273438,
+        80.83872985839844,
+        90.52117156982422,
+        -21.026004791259766
+      ],
+      "policy_action": 0,
+      "policy_action_name": "north_small",
+      "executed_action": 0,
+      "executed_action_name": "north_small",
+      "forced_reference_action": false,
+      "reward": -0.025865793228149414,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.02499997615814209
+      ],
+      "distance_to_target": 0.5119592547416687,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 28,
+      "position": [
+        0.40143904089927673,
+        0.572221577167511
+      ],
+      "next_position": [
+        0.40143904089927673,
+        0.632221519947052
+      ],
+      "encoded_observation_sha256": "06ae733d474b4150a6cd20b5a3fcece6fa350d2f854e7e0e07360fc4a58831b5",
+      "q_values": [
+        90.83990478515625,
+        85.18338775634766,
+        90.46630096435547,
+        -11.83989429473877,
+        91.98292541503906,
+        79.21350860595703,
+        90.81974792480469,
+        -21.177345275878906
+      ],
+      "policy_action": 4,
+      "policy_action_name": "north_large",
+      "executed_action": 4,
+      "executed_action_name": "north_large",
+      "forced_reference_action": false,
+      "reward": -0.11083045005798339,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.059999942779541016
+      ],
+      "distance_to_target": 0.5218423008918762,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 29,
+      "position": [
+        0.40143904089927673,
+        0.632221519947052
+      ],
+      "next_position": [
+        0.40143904089927673,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "442e0571603942a37ff3643b5d068f97a43202e49047b16f9e95c7c0c7ed4a3c",
+      "q_values": [
+        87.4542236328125,
+        81.70836639404297,
+        87.87283325195312,
+        -11.67393970489502,
+        93.15491485595703,
+        75.26095581054688,
+        91.54251861572266,
+        -21.578550338745117
+      ],
+      "policy_action": 4,
+      "policy_action_name": "north_large",
+      "executed_action": 4,
+      "executed_action_name": "north_large",
+      "forced_reference_action": false,
+      "reward": -0.17629482746124267,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        0.059999942779541016
+      ],
+      "distance_to_target": 0.5382717847824097,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 30,
+      "position": [
+        0.40143904089927673,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.46143898367881775,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "0462a540e9327cb8f09242d3a80860606bc5effab3a88af2d61b63fea9e39f57",
+      "q_values": [
+        78.44601440429688,
+        74.07608795166016,
+        87.0689468383789,
+        -11.500809669494629,
+        89.4289321899414,
+        67.04866027832031,
+        94.25011444091797,
+        -21.936614990234375
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.5513929486274719,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.48193249106407166,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 31,
+      "position": [
+        0.46143898367881775,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.5214389562606812,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "b6c56003dc74c985428da0218c0a1a1e91c46727f8d8191a42010475e08621a4",
+      "q_values": [
+        81.95375061035156,
+        78.41126251220703,
+        87.02115631103516,
+        -11.5541353225708,
+        89.97804260253906,
+        71.21611022949219,
+        94.77437591552734,
+        -22.12054443359375
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.5413990318775177,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0599999725818634,
+        0.0
+      ],
+      "distance_to_target": 0.4265925884246826,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 32,
+      "position": [
+        0.5214389562606812,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.5814388990402222,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "44d9aba280099d6bb8823a51b5103affb5dbcde493cc18c5fd052738d5733dc7",
+      "q_values": [
+        83.60438537597656,
+        83.23743438720703,
+        87.07080841064453,
+        -11.570027351379395,
+        89.57722473144531,
+        75.76177215576172,
+        95.07553100585938,
+        -22.317583084106445
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.5269490838050842,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.3726976811885834,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 33,
+      "position": [
+        0.5814388990402222,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.6414388418197632,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "66d2f555e00b4944edaa8a6c00305e26fd568da97ca320f87c1272c029a0c284",
+      "q_values": [
+        84.3910903930664,
+        88.44745635986328,
+        87.56304168701172,
+        -11.583481788635254,
+        89.14227294921875,
+        80.57623291015625,
+        95.54217529296875,
+        -22.520212173461914
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.5052127599716186,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.3209764063358307,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 34,
+      "position": [
+        0.6414388418197632,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.7014387845993042,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "dbe62189260779a75c2c007930ba9be9bbf9afb4259b8cfd33e2426428f3de7a",
+      "q_values": [
+        84.33672332763672,
+        91.98560333251953,
+        89.02591705322266,
+        -11.619927406311035,
+        89.4520492553711,
+        84.26249694824219,
+        95.81864166259766,
+        -22.68128204345703
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.4710783720016479,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.2726685702800751,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 35,
+      "position": [
+        0.7014387845993042,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.7614387273788452,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "f69cac55e64d595ad11506bf33ae6d197a958325a5f73b6e75eb45ed17180684",
+      "q_values": [
+        84.38690948486328,
+        93.67987823486328,
+        90.93152618408203,
+        -11.69800090789795,
+        89.89198303222656,
+        86.79825592041016,
+        96.7279281616211,
+        -22.810565948486328
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.4153286576271057,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.22993570566177368,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 36,
+      "position": [
+        0.7614387273788452,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.8214386701583862,
+        0.692221462726593
+      ],
+      "encoded_observation_sha256": "93832065af2ae6e70b897d35688a139deb33a1f3860ea0c23f0bef70fe71a8a1",
+      "q_values": [
+        84.39985656738281,
+        95.33326721191406,
+        92.76431274414062,
+        -11.771570205688477,
+        90.21267700195312,
+        89.44413757324219,
+        97.22539520263672,
+        -22.945566177368164
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 0.32285473346710203,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.19645023345947266,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 37,
+      "position": [
+        0.8214386701583862,
+        0.692221462726593
+      ],
+      "next_position": [
+        0.8214386701583862,
+        0.6672214865684509
+      ],
+      "encoded_observation_sha256": "945baafb948dbebaf35eaf18a2d58136bcb0d6bd0127abaef13d4568a013b0d0",
+      "q_values": [
+        82.80937194824219,
+        97.5189437866211,
+        93.0444107055664,
+        -11.740422248840332,
+        92.30644989013672,
+        93.41659545898438,
+        96.60784149169922,
+        -23.16202163696289
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": 0.21420696377754211,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.1745295375585556,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 38,
+      "position": [
+        0.8214386701583862,
+        0.6672214865684509
+      ],
+      "next_position": [
+        0.8214386701583862,
+        0.6422215104103088
+      ],
+      "encoded_observation_sha256": "00574d7253b8ae6dc01d8c05740ab371a9747a602f8a1694ed0ce44913f6ae71",
+      "q_values": [
+        84.63800811767578,
+        98.29996490478516,
+        93.84567260742188,
+        -11.798544883728027,
+        93.35275268554688,
+        95.58866882324219,
+        97.16073608398438,
+        -23.05522346496582
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": 0.20476871728897095,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.15355266630649567,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 39,
+      "position": [
+        0.8214386701583862,
+        0.6422215104103088
+      ],
+      "next_position": [
+        0.8214386701583862,
+        0.6172215342521667
+      ],
+      "encoded_observation_sha256": "87cead378678b2317448797b9cf2992f451203ed5143f49da7ab6053277bb2fe",
+      "q_values": [
+        86.58924865722656,
+        98.91439056396484,
+        94.68537139892578,
+        -11.86589527130127,
+        94.35342407226562,
+        97.75508117675781,
+        97.74451446533203,
+        -22.946462631225586
+      ],
+      "policy_action": 1,
+      "policy_action_name": "south_small",
+      "executed_action": 1,
+      "executed_action_name": "south_small",
+      "forced_reference_action": false,
+      "reward": 0.19088947772979736,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.02499997615814209
+      ],
+      "distance_to_target": 0.1339637190103531,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 40,
+      "position": [
+        0.8214386701583862,
+        0.6172215342521667
+      ],
+      "next_position": [
+        0.8214386701583862,
+        0.5572215914726257
+      ],
+      "encoded_observation_sha256": "9f734f8f12dfbc2dd5f7ce40f54d397d8e2cfef0f558d719af1c3e2527b9b4d5",
+      "q_values": [
+        88.67927551269531,
+        98.22842407226562,
+        95.48705291748047,
+        -11.949338912963867,
+        94.86508178710938,
+        99.58076477050781,
+        98.53507232666016,
+        -22.84249496459961
+      ],
+      "policy_action": 5,
+      "policy_action_name": "south_large",
+      "executed_action": 5,
+      "executed_action_name": "south_large",
+      "forced_reference_action": false,
+      "reward": 0.35146466493606565,
+      "terminated": false,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.0,
+        -0.059999942779541016
+      ],
+      "distance_to_target": 0.0976172536611557,
+      "peak_normalized_deformation": 0.0
+    },
+    {
+      "step": 41,
+      "position": [
+        0.8214386701583862,
+        0.5572215914726257
+      ],
+      "next_position": [
+        0.8814386129379272,
+        0.5572215914726257
+      ],
+      "encoded_observation_sha256": "8368b8efde61d46f381b220d47579ead84c1d3114d31f619cf32833432c8e618",
+      "q_values": [
+        92.72038269042969,
+        95.7689437866211,
+        97.96866607666016,
+        -12.156303405761719,
+        95.25999450683594,
+        99.19873046875,
+        100.4682846069336,
+        -22.51795768737793
+      ],
+      "policy_action": 6,
+      "policy_action_name": "east_large",
+      "executed_action": 6,
+      "executed_action_name": "east_large",
+      "forced_reference_action": false,
+      "reward": 100.46905851960182,
+      "terminated": true,
+      "truncated": false,
+      "stationary": false,
+      "collision_blocked": false,
+      "executed_motion": [
+        0.059999942779541016,
+        0.0
+      ],
+      "distance_to_target": 0.04951140284538269,
+      "peak_normalized_deformation": 0.0
+    }
+  ],
+  "motion_characteristics": {
+    "position_tolerance": 1e-06,
+    "position_quantization_decimals": 6,
+    "unique_quantized_positions": 42,
+    "repeated_position_visits": 0,
+    "maximum_position_visits": 1,
+    "first_repeated_position": null,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": [],
+    "note": "Position recurrence alone does not imply an identical encoded state or a permanent cycle."
+  },
+  "original_greedy_exactly_reproduced": false
+}

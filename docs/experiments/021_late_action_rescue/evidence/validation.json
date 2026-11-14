@@ -1,0 +1,7 @@
+{
+  "focused_tests_passed": 38,
+  "seconds": 4.78,
+  "ruff_passed": true,
+  "scope": "Existing single-action rescue and verification tests; full execution is checked by paired prefixes and a separate transition loop.",
+  "runner_sha256": "35881b593e04dd77d9792bb0ab30d3b21397da854c8ce6955b485c349560dc48"
+}

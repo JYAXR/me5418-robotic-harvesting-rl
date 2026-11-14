@@ -1,0 +1,242 @@
+[
+  {
+    "verification": false,
+    "update": 9955,
+    "mode": "greedy",
+    "record": {
+      "update": 9955,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "verification": false,
+    "update": 9955,
+    "mode": "corrected",
+    "record": {
+      "update": 9955,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "verification": false,
+    "update": 9956,
+    "mode": "greedy",
+    "record": {
+      "update": 9956,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "verification": false,
+    "update": 9956,
+    "mode": "corrected",
+    "record": {
+      "update": 9956,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "verification": true,
+    "update": 9955,
+    "mode": "greedy",
+    "record": {
+      "update": 9955,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "verification": true,
+    "update": 9955,
+    "mode": "corrected",
+    "record": {
+      "update": 9955,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "verification": true,
+    "update": 9956,
+    "mode": "greedy",
+    "record": {
+      "update": 9956,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  },
+  {
+    "verification": true,
+    "update": 9956,
+    "mode": "corrected",
+    "record": {
+      "update": 9956,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  }
+]
