@@ -1,0 +1,14 @@
+{
+  "focused_tests_passed": 53,
+  "focused_seconds": 18.84,
+  "selection_recheck_passed": 5,
+  "selection_recheck_seconds": 7.74,
+  "ruff_passed": true,
+  "code_and_comments_language": "English",
+  "source_sha256": {
+    "docs/experiments/023_neighbor_rollouts/analyze_neighbor_rollouts.py": "b01a762583fd71e2b622fb0a7eb127fb73d58d1ee57f956bbe183e5a2485d217",
+    "docs/experiments/023_neighbor_rollouts/run_neighbor_rollouts.py": "edfcea62c280c961e9360742fd22623a6f065fcf37a4b71580f117628da7346e",
+    "tests/test_neighbor_rollout_selection.py": "e59237a0fbb652b200299db6df212eae27112c0e313ea1cd52b57236d8c1c31f"
+  },
+  "scope": "Targeted selection/reconstruction/reset verification tests; complete run integration checks are recorded separately."
+}

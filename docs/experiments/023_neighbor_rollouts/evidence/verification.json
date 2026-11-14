@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "independent_reconstruction_updates": 600,
+  "main_reconstruction_updates": 600,
+  "matched_selected_full_states": 19,
+  "exact_reloaded_episodes": 12,
+  "all_evaluations_preserve_full_state": true
+}

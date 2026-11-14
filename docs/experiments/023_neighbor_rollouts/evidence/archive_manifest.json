@@ -1,0 +1,58 @@
+{
+  "files": {
+    "accounting.json": {
+      "sha256": "efd30e68a550b441eb395974a5471301dbe3d85c08967a1b9a363789b48be09e",
+      "bytes": 320
+    },
+    "analysis.json": {
+      "sha256": "2dd2f95bf4325186367f448de2df6ac4a10e0962e9fadf9a017574ea6fced364",
+      "bytes": 152722
+    },
+    "model_hashes.json": {
+      "sha256": "59cd1e946351df56eba31c938f94e4df29612dd4c2d3bb1c1607ab7cf4dd17e8",
+      "bytes": 1848
+    },
+    "observations.json": {
+      "sha256": "7feb92378ffda2f82698e06dc53fea917ec08d24d8e8aff73a16fc99a60f29f9",
+      "bytes": 2342278
+    },
+    "provenance.json": {
+      "sha256": "6c15af392af7d9698528a46d91f89d63eb2ac6bf0f41fe8927fd08f7a9c372fd",
+      "bytes": 31041
+    },
+    "reconstruction.json": {
+      "sha256": "4a05b93a20bb83dfc4b01e98a9b27769853716d8b2ded2a63566418edde0c63b",
+      "bytes": 706
+    },
+    "reloads.json": {
+      "sha256": "0f11425d1c6866be90365c26c0ceadedd52e437a816886c2f0134456764a3c28",
+      "bytes": 110865
+    },
+    "reset_certification.json": {
+      "sha256": "32de97f01f850a24156b98b0d66cc897d8762027458e3700401e6951dc27d0fc",
+      "bytes": 40228
+    },
+    "selection.json": {
+      "sha256": "1bbee6099e506c07cfcc4b813587cfd53cb802323f179c58b3cb155b8f5923d5",
+      "bytes": 683
+    },
+    "status.json": {
+      "sha256": "464293816784e75f4384a0d1a50aa812504dbe313b19f3b6cc48a29c693bbb4d",
+      "bytes": 146
+    },
+    "validation.json": {
+      "sha256": "f50e8bc8498233e7aec4ed32b448def30b0625851efafac123206eba5b1d6e36",
+      "bytes": 765
+    },
+    "verification.json": {
+      "sha256": "d72a535443ced325b32e5719b7b1edc840eedcdc64936a94bd4cddfa3c4711ff",
+      "bytes": 230
+    },
+    "verified_source_hashes.json": {
+      "sha256": "4821f5fa8a1b21bce049653cf1c7001bae5fc7c42a8821ec907088a6d56cb670",
+      "bytes": 22933
+    }
+  },
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\neighbor_rollouts_20261114",
+  "excluded": "19 reconstructed model binaries and console/test logs remain local."
+}

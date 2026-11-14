@@ -1,0 +1,12 @@
+{
+  "reconstruction_updates": 1200,
+  "new_remedy_training_updates": 0,
+  "main_episodes": 57,
+  "reload_episodes": 12,
+  "main_policy_actions": 3022,
+  "main_certification_actions": 2223,
+  "reload_policy_actions": 788,
+  "reload_certification_actions": 468,
+  "forced_actions": 0,
+  "held_out_scenes": 0
+}

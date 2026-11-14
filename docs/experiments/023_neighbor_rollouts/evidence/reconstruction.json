@@ -1,0 +1,44 @@
+[
+  {
+    "start": 2000,
+    "end": 2200,
+    "independent": false,
+    "updates": 200,
+    "passed": true
+  },
+  {
+    "start": 2000,
+    "end": 2200,
+    "independent": true,
+    "updates": 200,
+    "passed": true
+  },
+  {
+    "start": 2200,
+    "end": 2400,
+    "independent": false,
+    "updates": 200,
+    "passed": true
+  },
+  {
+    "start": 2200,
+    "end": 2400,
+    "independent": true,
+    "updates": 200,
+    "passed": true
+  },
+  {
+    "start": 9800,
+    "end": 10000,
+    "independent": false,
+    "updates": 200,
+    "passed": true
+  },
+  {
+    "start": 9800,
+    "end": 10000,
+    "independent": true,
+    "updates": 200,
+    "passed": true
+  }
+]

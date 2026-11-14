@@ -1,0 +1,6486 @@
+{
+  "evaluated_models": 19,
+  "successful_episodes": 52,
+  "evaluated_episodes": 57,
+  "all_scene_success_models": 14,
+  "negative_gap_models": 11,
+  "negative_gap_scene10001_successes": 6,
+  "negative_gap_actual_reference_visits": 11,
+  "positive_gap_models": 8,
+  "positive_gap_scene10001_successes": 8,
+  "checkpoints": [
+    {
+      "update": 2030,
+      "reference_step22_gap": 0.10669708251953125,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.28486633300781,
+            84.64115142822266,
+            83.60247802734375,
+            -11.847920417785645,
+            84.66120147705078,
+            76.45645904541016,
+            84.03250122070312,
+            -20.004440307617188
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.42540740966797,
+            85.1196517944336,
+            84.4393081665039,
+            -11.843639373779297,
+            85.5321044921875,
+            76.75399017333984,
+            84.60047912597656,
+            -20.140514373779297
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2031,
+      "reference_step22_gap": -0.0098114013671875,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.33964538574219,
+            84.65623474121094,
+            83.68304443359375,
+            -11.849024772644043,
+            84.60137939453125,
+            76.47930145263672,
+            84.0535888671875,
+            -20.006759643554688
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.48368835449219,
+            85.14268493652344,
+            84.51979064941406,
+            -11.84507942199707,
+            85.473876953125,
+            76.77632904052734,
+            84.61764526367188,
+            -20.14248275756836
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 2
+    },
+    {
+      "update": 2032,
+      "reference_step22_gap": -0.02498626708984375,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.42980194091797,
+            84.63651275634766,
+            83.70214080810547,
+            -11.849807739257812,
+            84.67867279052734,
+            76.56114959716797,
+            83.86279296875,
+            -20.005847930908203
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.57815551757812,
+            85.133056640625,
+            84.53873443603516,
+            -11.846274375915527,
+            85.55316925048828,
+            76.85753631591797,
+            84.4217529296875,
+            -20.141117095947266
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.6253690034151,
+        "steps": 42,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.6332187578082085,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04451509937644005,
+        "stationary_steps": 0,
+        "blocked_steps": 1,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2033,
+      "reference_step22_gap": 0.1367950439453125,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.30973815917969,
+            84.61750030517578,
+            83.67571258544922,
+            -11.84938907623291,
+            84.7203598022461,
+            76.52733612060547,
+            83.8314208984375,
+            -20.004423141479492
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.45884704589844,
+            85.11616516113281,
+            84.51227569580078,
+            -11.845940589904785,
+            85.59564208984375,
+            76.82368469238281,
+            84.38931274414062,
+            -20.13961410522461
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2224,
+      "reference_step22_gap": 0.040557861328125,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.1788101196289,
+            84.37979125976562,
+            83.35647583007812,
+            -11.827990531921387,
+            84.46190643310547,
+            76.5040283203125,
+            83.73136901855469,
+            -19.97948455810547
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.32300567626953,
+            84.8895492553711,
+            84.19892120361328,
+            -11.824492454528809,
+            85.36356353759766,
+            76.80445098876953,
+            84.30564880371094,
+            -20.116153717041016
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2225,
+      "reference_step22_gap": -0.11327362060546875,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.22669982910156,
+            84.41197204589844,
+            83.51078033447266,
+            -11.82960033416748,
+            84.3578109741211,
+            76.56231689453125,
+            83.78520965576172,
+            -19.982742309570312
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.37415313720703,
+            84.92936706542969,
+            84.3531494140625,
+            -11.826416969299316,
+            85.26087951660156,
+            76.86224365234375,
+            84.35570526123047,
+            -20.119068145751953
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.6253690034151,
+        "steps": 42,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.6332187578082085,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04451509937644005,
+        "stationary_steps": 0,
+        "blocked_steps": 1,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2226,
+      "reference_step22_gap": -0.0658721923828125,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.12134552001953,
+            84.50078582763672,
+            83.58930206298828,
+            -11.830842018127441,
+            84.30165100097656,
+            76.51058959960938,
+            83.92227935791016,
+            -19.98290252685547
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.27197265625,
+            85.02574157714844,
+            84.43159484863281,
+            -11.827970504760742,
+            85.20610046386719,
+            76.8099594116211,
+            84.4891357421875,
+            -20.118885040283203
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 2
+    },
+    {
+      "update": 2227,
+      "reference_step22_gap": -0.0130615234375,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.14472198486328,
+            84.50228881835938,
+            83.54560852050781,
+            -11.831652641296387,
+            84.3781509399414,
+            76.51220703125,
+            83.88330841064453,
+            -19.980501174926758
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.29618835449219,
+            85.02960968017578,
+            84.38787841796875,
+            -11.828871726989746,
+            85.28312683105469,
+            76.81137084960938,
+            84.44922637939453,
+            -20.116390228271484
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.6253690034151,
+        "steps": 42,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.6332187578082085,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04451509937644005,
+        "stationary_steps": 0,
+        "blocked_steps": 1,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2228,
+      "reference_step22_gap": -0.02016448974609375,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.30934143066406,
+            84.39310455322266,
+            83.42842102050781,
+            -11.831746101379395,
+            84.53472137451172,
+            76.57003784179688,
+            83.668212890625,
+            -19.977407455444336
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.45954895019531,
+            84.91796875,
+            84.27074432373047,
+            -11.828855514526367,
+            85.43938446044922,
+            76.86933898925781,
+            84.23567199707031,
+            -20.113422393798828
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2229,
+      "reference_step22_gap": -0.0761871337890625,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.36357116699219,
+            84.29422760009766,
+            83.39437103271484,
+            -11.83224105834961,
+            84.53132629394531,
+            76.52290344238281,
+            83.70997619628906,
+            -19.978792190551758
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.51142120361328,
+            84.81410217285156,
+            84.2367935180664,
+            -11.829133987426758,
+            85.43523406982422,
+            76.82252502441406,
+            84.28030395507812,
+            -20.11505889892578
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2230,
+      "reference_step22_gap": 0.05725860595703125,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.23604583740234,
+            84.2461929321289,
+            83.42245483398438,
+            -11.83275318145752,
+            84.5337905883789,
+            76.44702911376953,
+            83.78327178955078,
+            -19.982763290405273
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.37860870361328,
+            84.75444793701172,
+            84.2651596069336,
+            -11.829157829284668,
+            85.43586730957031,
+            76.74747467041016,
+            84.35978698730469,
+            -20.11958885192871
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2343,
+      "reference_step22_gap": 0.09975433349609375,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.02401733398438,
+            84.29402160644531,
+            83.36461639404297,
+            -11.816624641418457,
+            84.33924865722656,
+            76.44588470458984,
+            83.73795318603516,
+            -19.968372344970703
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.14827728271484,
+            84.78374481201172,
+            84.21226501464844,
+            -11.811802864074707,
+            85.24803161621094,
+            76.74735260009766,
+            84.33751678466797,
+            -20.10696029663086
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 2344,
+      "reference_step22_gap": -0.13024139404296875,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.1958236694336,
+            84.4144058227539,
+            83.41334533691406,
+            -11.821085929870605,
+            84.28706359863281,
+            76.50506591796875,
+            83.88313293457031,
+            -19.97222900390625
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.32997131347656,
+            84.92676544189453,
+            84.26046752929688,
+            -11.817200660705566,
+            85.1997299194336,
+            76.80490112304688,
+            84.47119903564453,
+            -20.109766006469727
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 2
+    },
+    {
+      "update": 2345,
+      "reference_step22_gap": -0.31208038330078125,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.39921569824219,
+            84.43328094482422,
+            83.55236053466797,
+            -11.828326225280762,
+            84.31399536132812,
+            76.5942611694336,
+            83.91460418701172,
+            -19.980249404907227
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.54217529296875,
+            84.96589660644531,
+            84.39905548095703,
+            -11.825272560119629,
+            85.23009490966797,
+            76.89259338378906,
+            84.49248504638672,
+            -20.116853713989258
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 2
+    },
+    {
+      "update": 2346,
+      "reference_step22_gap": -0.22211456298828125,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.34669494628906,
+            84.43782043457031,
+            83.65312194824219,
+            -11.831713676452637,
+            84.35263061523438,
+            76.57415771484375,
+            83.92182922363281,
+            -19.983753204345703
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.49176025390625,
+            84.97540283203125,
+            84.4997787475586,
+            -11.828869819641113,
+            85.26964569091797,
+            76.87212371826172,
+            84.49725341796875,
+            -20.120134353637695
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 2
+    },
+    {
+      "update": 2347,
+      "reference_step22_gap": 0.1450042724609375,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            85.07783508300781,
+            84.44743347167969,
+            83.61312103271484,
+            -11.829070091247559,
+            84.44692993164062,
+            76.46630859375,
+            83.82763671875,
+            -19.97863006591797
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            85.21682739257812,
+            84.97124481201172,
+            84.46012115478516,
+            -11.825661659240723,
+            85.36183166503906,
+            76.76528930664062,
+            84.41012573242188,
+            -20.11565399169922
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 9846,
+      "reference_step22_gap": 0.08782196044921875,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            84.6806411743164,
+            83.5504150390625,
+            82.4985580444336,
+            -11.732110023498535,
+            83.7528076171875,
+            76.841796875,
+            82.7372817993164,
+            -19.765344619750977
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            84.8444595336914,
+            84.38191223144531,
+            83.5910415649414,
+            -11.72830867767334,
+            84.93228149414062,
+            77.17839813232422,
+            83.48621368408203,
+            -19.914661407470703
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 9847,
+      "reference_step22_gap": -0.00579071044921875,
+      "reference_step22_action": 0,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            84.74543762207031,
+            83.56693267822266,
+            82.59230041503906,
+            -11.733762741088867,
+            83.7261962890625,
+            76.8938980102539,
+            82.73628234863281,
+            -19.767410278320312
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 0,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            84.91281127929688,
+            84.4066162109375,
+            83.68441009521484,
+            -11.7302885055542,
+            84.90702056884766,
+            77.23006439208984,
+            83.4811782836914,
+            -19.91636848449707
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.6253690034151,
+        "steps": 42,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.6332187578082085,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04451509937644005,
+        "stationary_steps": 0,
+        "blocked_steps": 1,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        }
+      },
+      "scene_success_count": 3
+    },
+    {
+      "update": 9848,
+      "reference_step22_gap": 0.01316070556640625,
+      "reference_step22_action": 4,
+      "actual_decisions": {
+        "21": {
+          "step": 21,
+          "action": 0,
+          "demonstrated_action": 0,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "2c84fe8a6b0ea228a0eb38c5de1ba800e1922c6590130b59c92164463a54addf",
+          "q_values": [
+            84.67575073242188,
+            83.6549301147461,
+            82.67396545410156,
+            -11.736011505126953,
+            83.67750549316406,
+            76.85225677490234,
+            82.93014526367188,
+            -19.771080017089844
+          ]
+        },
+        "22": {
+          "step": 22,
+          "action": 4,
+          "demonstrated_action": 4,
+          "matches_reference_state": true,
+          "reference_prefix_before_action": true,
+          "encoded_observation_sha256": "5e7d772a2d3d7d67f4cdf9df6abde83cb16aec9ac34d6a41270032ea0e795243",
+          "q_values": [
+            84.84648132324219,
+            84.50248718261719,
+            83.76566314697266,
+            -11.732848167419434,
+            84.8596420288086,
+            77.18798065185547,
+            83.67127990722656,
+            -19.919696807861328
+          ]
+        }
+      },
+      "scene10001_outcome": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0,
+        "first_reference_action_divergence": null
+      },
+      "scene_success_count": 3
+    }
+  ],
+  "failures": [
+    {
+      "update": 2031,
+      "seed": 10001,
+      "rollout": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        },
+        "actions": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          6,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "robot_path": [
+          [
+            0.07143927365541458,
+            0.5522215962409973
+          ],
+          [
+            0.09643928706645966,
+            0.5522215962409973
+          ],
+          [
+            0.12143930047750473,
+            0.5522215962409973
+          ],
+          [
+            0.14643928408622742,
+            0.5522215962409973
+          ],
+          [
+            0.1714392602443695,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5272216200828552
+          ],
+          [
+            0.1964392364025116,
+            0.5022216439247131
+          ],
+          [
+            0.1964392364025116,
+            0.47722166776657104
+          ],
+          [
+            0.1964392364025116,
+            0.45222169160842896
+          ],
+          [
+            0.1964392364025116,
+            0.42722171545028687
+          ],
+          [
+            0.1964392364025116,
+            0.4022217392921448
+          ],
+          [
+            0.1964392364025116,
+            0.3772217631340027
+          ],
+          [
+            0.1964392364025116,
+            0.3522217869758606
+          ],
+          [
+            0.1964392364025116,
+            0.3272218108177185
+          ],
+          [
+            0.1964392364025116,
+            0.3022218346595764
+          ],
+          [
+            0.2564391791820526,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3272218108177185
+          ],
+          [
+            0.31643912196159363,
+            0.3522217869758606
+          ],
+          [
+            0.31643912196159363,
+            0.3772217631340027
+          ],
+          [
+            0.31643912196159363,
+            0.4022217392921448
+          ],
+          [
+            0.31643912196159363,
+            0.42722171545028687
+          ],
+          [
+            0.31643912196159363,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ]
+        ]
+      }
+    },
+    {
+      "update": 2226,
+      "seed": 10001,
+      "rollout": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        },
+        "actions": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          6,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "robot_path": [
+          [
+            0.07143927365541458,
+            0.5522215962409973
+          ],
+          [
+            0.09643928706645966,
+            0.5522215962409973
+          ],
+          [
+            0.12143930047750473,
+            0.5522215962409973
+          ],
+          [
+            0.14643928408622742,
+            0.5522215962409973
+          ],
+          [
+            0.1714392602443695,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5272216200828552
+          ],
+          [
+            0.1964392364025116,
+            0.5022216439247131
+          ],
+          [
+            0.1964392364025116,
+            0.47722166776657104
+          ],
+          [
+            0.1964392364025116,
+            0.45222169160842896
+          ],
+          [
+            0.1964392364025116,
+            0.42722171545028687
+          ],
+          [
+            0.1964392364025116,
+            0.4022217392921448
+          ],
+          [
+            0.1964392364025116,
+            0.3772217631340027
+          ],
+          [
+            0.1964392364025116,
+            0.3522217869758606
+          ],
+          [
+            0.1964392364025116,
+            0.3272218108177185
+          ],
+          [
+            0.1964392364025116,
+            0.3022218346595764
+          ],
+          [
+            0.2564391791820526,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3272218108177185
+          ],
+          [
+            0.31643912196159363,
+            0.3522217869758606
+          ],
+          [
+            0.31643912196159363,
+            0.3772217631340027
+          ],
+          [
+            0.31643912196159363,
+            0.4022217392921448
+          ],
+          [
+            0.31643912196159363,
+            0.42722171545028687
+          ],
+          [
+            0.31643912196159363,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ]
+        ]
+      }
+    },
+    {
+      "update": 2344,
+      "seed": 10001,
+      "rollout": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        },
+        "actions": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          6,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "robot_path": [
+          [
+            0.07143927365541458,
+            0.5522215962409973
+          ],
+          [
+            0.09643928706645966,
+            0.5522215962409973
+          ],
+          [
+            0.12143930047750473,
+            0.5522215962409973
+          ],
+          [
+            0.14643928408622742,
+            0.5522215962409973
+          ],
+          [
+            0.1714392602443695,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5272216200828552
+          ],
+          [
+            0.1964392364025116,
+            0.5022216439247131
+          ],
+          [
+            0.1964392364025116,
+            0.47722166776657104
+          ],
+          [
+            0.1964392364025116,
+            0.45222169160842896
+          ],
+          [
+            0.1964392364025116,
+            0.42722171545028687
+          ],
+          [
+            0.1964392364025116,
+            0.4022217392921448
+          ],
+          [
+            0.1964392364025116,
+            0.3772217631340027
+          ],
+          [
+            0.1964392364025116,
+            0.3522217869758606
+          ],
+          [
+            0.1964392364025116,
+            0.3272218108177185
+          ],
+          [
+            0.1964392364025116,
+            0.3022218346595764
+          ],
+          [
+            0.2564391791820526,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3272218108177185
+          ],
+          [
+            0.31643912196159363,
+            0.3522217869758606
+          ],
+          [
+            0.31643912196159363,
+            0.3772217631340027
+          ],
+          [
+            0.31643912196159363,
+            0.4022217392921448
+          ],
+          [
+            0.31643912196159363,
+            0.42722171545028687
+          ],
+          [
+            0.31643912196159363,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ]
+        ]
+      }
+    },
+    {
+      "update": 2345,
+      "seed": 10001,
+      "rollout": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        },
+        "actions": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          6,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "robot_path": [
+          [
+            0.07143927365541458,
+            0.5522215962409973
+          ],
+          [
+            0.09643928706645966,
+            0.5522215962409973
+          ],
+          [
+            0.12143930047750473,
+            0.5522215962409973
+          ],
+          [
+            0.14643928408622742,
+            0.5522215962409973
+          ],
+          [
+            0.1714392602443695,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5272216200828552
+          ],
+          [
+            0.1964392364025116,
+            0.5022216439247131
+          ],
+          [
+            0.1964392364025116,
+            0.47722166776657104
+          ],
+          [
+            0.1964392364025116,
+            0.45222169160842896
+          ],
+          [
+            0.1964392364025116,
+            0.42722171545028687
+          ],
+          [
+            0.1964392364025116,
+            0.4022217392921448
+          ],
+          [
+            0.1964392364025116,
+            0.3772217631340027
+          ],
+          [
+            0.1964392364025116,
+            0.3522217869758606
+          ],
+          [
+            0.1964392364025116,
+            0.3272218108177185
+          ],
+          [
+            0.1964392364025116,
+            0.3022218346595764
+          ],
+          [
+            0.2564391791820526,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3272218108177185
+          ],
+          [
+            0.31643912196159363,
+            0.3522217869758606
+          ],
+          [
+            0.31643912196159363,
+            0.3772217631340027
+          ],
+          [
+            0.31643912196159363,
+            0.4022217392921448
+          ],
+          [
+            0.31643912196159363,
+            0.42722171545028687
+          ],
+          [
+            0.31643912196159363,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ]
+        ]
+      }
+    },
+    {
+      "update": 2346,
+      "seed": 10001,
+      "rollout": {
+        "training_scene_only": true,
+        "seed": 10001,
+        "return": 2.443243916332722,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6932196244597435,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.581527590751648,
+        "stationary_steps": 176,
+        "blocked_steps": 177,
+        "first_reference_action_divergence": {
+          "step": 22,
+          "predicted_action": 0,
+          "demonstrated_action": 4
+        },
+        "actions": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          6,
+          6,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          2,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "robot_path": [
+          [
+            0.07143927365541458,
+            0.5522215962409973
+          ],
+          [
+            0.09643928706645966,
+            0.5522215962409973
+          ],
+          [
+            0.12143930047750473,
+            0.5522215962409973
+          ],
+          [
+            0.14643928408622742,
+            0.5522215962409973
+          ],
+          [
+            0.1714392602443695,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5522215962409973
+          ],
+          [
+            0.1964392364025116,
+            0.5272216200828552
+          ],
+          [
+            0.1964392364025116,
+            0.5022216439247131
+          ],
+          [
+            0.1964392364025116,
+            0.47722166776657104
+          ],
+          [
+            0.1964392364025116,
+            0.45222169160842896
+          ],
+          [
+            0.1964392364025116,
+            0.42722171545028687
+          ],
+          [
+            0.1964392364025116,
+            0.4022217392921448
+          ],
+          [
+            0.1964392364025116,
+            0.3772217631340027
+          ],
+          [
+            0.1964392364025116,
+            0.3522217869758606
+          ],
+          [
+            0.1964392364025116,
+            0.3272218108177185
+          ],
+          [
+            0.1964392364025116,
+            0.3022218346595764
+          ],
+          [
+            0.2564391791820526,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3022218346595764
+          ],
+          [
+            0.31643912196159363,
+            0.3272218108177185
+          ],
+          [
+            0.31643912196159363,
+            0.3522217869758606
+          ],
+          [
+            0.31643912196159363,
+            0.3772217631340027
+          ],
+          [
+            0.31643912196159363,
+            0.4022217392921448
+          ],
+          [
+            0.31643912196159363,
+            0.42722171545028687
+          ],
+          [
+            0.31643912196159363,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ],
+          [
+            0.3296593129634857,
+            0.4872216582298279
+          ]
+        ]
+      }
+    }
+  ],
+  "adjacent_mixed_outcomes": [
+    {
+      "updates": [
+        2031,
+        2032
+      ],
+      "successes": [
+        false,
+        true
+      ],
+      "first_executed_action_difference_step": 25,
+      "decision_pair": [
+        {
+          "step": 25,
+          "action": 6,
+          "demonstrated_action": 6,
+          "matches_reference_state": false,
+          "reference_prefix_before_action": false,
+          "encoded_observation_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+          "q_values": [
+            86.6607666015625,
+            83.88185119628906,
+            87.2870101928711,
+            -11.884772300720215,
+            87.64282989501953,
+            77.79769897460938,
+            87.81180572509766,
+            -20.646991729736328
+          ]
+        },
+        {
+          "step": 25,
+          "action": 4,
+          "demonstrated_action": 6,
+          "matches_reference_state": false,
+          "reference_prefix_before_action": false,
+          "encoded_observation_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+          "q_values": [
+            86.72763061523438,
+            83.8964614868164,
+            87.3092269897461,
+            -11.885396003723145,
+            87.72570037841797,
+            77.87694549560547,
+            87.62257385253906,
+            -20.645959854125977
+          ]
+        }
+      ]
+    },
+    {
+      "updates": [
+        2225,
+        2226
+      ],
+      "successes": [
+        true,
+        false
+      ],
+      "first_executed_action_difference_step": 25,
+      "decision_pair": [
+        {
+          "step": 25,
+          "action": 4,
+          "demonstrated_action": 6,
+          "matches_reference_state": false,
+          "reference_prefix_before_action": false,
+          "encoded_observation_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+          "q_values": [
+            86.65889739990234,
+            83.73799133300781,
+            87.19593811035156,
+            -11.869994163513184,
+            87.62384033203125,
+            77.95326232910156,
+            87.49488067626953,
+            -20.62865447998047
+          ]
+        },
+        {
+          "step": 25,
+          "action": 6,
+          "demonstrated_action": 6,
+          "matches_reference_state": false,
+          "reference_prefix_before_action": false,
+          "encoded_observation_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+          "q_values": [
+            86.5395278930664,
+            83.82218933105469,
+            87.27810668945312,
+            -11.871748924255371,
+            87.56735229492188,
+            77.89938354492188,
+            87.6307601928711,
+            -20.628963470458984
+          ]
+        }
+      ]
+    },
+    {
+      "updates": [
+        2226,
+        2227
+      ],
+      "successes": [
+        false,
+        true
+      ],
+      "first_executed_action_difference_step": 25,
+      "decision_pair": [
+        {
+          "step": 25,
+          "action": 6,
+          "demonstrated_action": 6,
+          "matches_reference_state": false,
+          "reference_prefix_before_action": false,
+          "encoded_observation_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+          "q_values": [
+            86.5395278930664,
+            83.82218933105469,
+            87.27810668945312,
+            -11.871748924255371,
+            87.56735229492188,
+            77.89938354492188,
+            87.6307601928711,
+            -20.628963470458984
+          ]
+        },
+        {
+          "step": 25,
+          "action": 4,
+          "demonstrated_action": 6,
+          "matches_reference_state": false,
+          "reference_prefix_before_action": false,
+          "encoded_observation_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+          "q_values": [
+            86.52666473388672,
+            83.81416320800781,
+            87.22271728515625,
+            -11.872220993041992,
+            87.6197280883789,
+            77.88533782958984,
+            87.61724090576172,
+            -20.626344680786133
+          ]
+        }
+      ]
+    }
+  ],
+  "analysis_script_sha256": "b01a762583fd71e2b622fb0a7eb127fb73d58d1ee57f956bbe183e5a2485d217",
+  "scope": "Four intervals chosen from existing Q diagnostics, covering 11/690 negative models. No forced action, isolated-action rescue, or held-out evaluation; outcomes cannot be extrapolated to every reversal."
+}
