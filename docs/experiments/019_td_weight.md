@@ -150,3 +150,177 @@ Adam step 22000, the historical 3711 policy actions, 52 production/configuration
 hashes and 14 helper hashes. It performed no optimizer updates or environment
 actions. The independent verifier and its tests are developed separately and
 must pass before accepting the completed experiment.
+
+## Completed results: 14 November 2026
+
+The pending status above records the pre-execution protocol. The single formal
+run subsequently completed TD 2001--10000 without an execution failure, from
+05:19:41 to 05:24:49 UTC (307.24 seconds). Its launch commit was
+`ea2ce1077d94069aaf662ca5a3b7ae673dbd4240`. Provenance records a dirty working tree,
+so the captured script, helper and production/configuration hashes identify the
+executed inputs in addition to Git HEAD. The original control was reused from
+attempt 016; no new main control training or episodes were run.
+
+Halving the TD coefficient improved the final outcome and the overall sampled
+retention count, but **did not achieve uninterrupted retention**. The treatment
+introduced an earlier transient failure at TD 2003. Both arms passed nine of the
+first ten all-scene checks, so this experiment does not establish an improvement
+in that immediate-transition measure.
+
+| Measured outcome | Historical TD weight 1 | New TD weight 0.5 |
+| --- | ---: | ---: |
+| All three scenes succeed at a physical checkpoint | 27/29 | 28/29 |
+| Successful individual scene episodes | 85/87 | 86/87 |
+| All-scene success during TD 2001--2010 | 9/10 | 9/10 |
+| Failed scene-10001 checkpoints | 2009, 10000 | 2003 |
+| Final autonomous scene successes | 2/3 | 3/3 |
+| Final full-batch demonstration agreement | 115/117 | 117/117 |
+| Final actual-return calibration RMSE | 0.499196 | 0.660312 |
+
+Scenes 10000 and 10002 succeeded at all 29 physical checkpoints in both arms.
+The treatment recovered at the next sampled checkpoint, TD 2004, and succeeded
+at every remaining scheduled check through TD 10000. Its final three episodes
+took 35, 41 and 41 actions, with returns 107.610812, 107.585050 and 107.643380.
+No final action overrides or checkpoint selection were used. These observations
+do not establish success at the unsampled updates between physical checks.
+
+### The retained failure
+
+At TD 2003, scene 10001 first diverged at step 6: the policy selected
+`east_small` instead of demonstrated `south_small`. Their Q values were
+75.360214 and 75.335625, respectively, giving a demonstration gap of
+**-0.024590**. The episode exhausted its 200-action budget without damage;
+return was -104.706068, with 171 blocked and 170 stationary steps. Recorded states
+matched the reference prefix up to the decision at step 6. This locates the first
+changed decision; an isolated-action rescue
+was not performed here, so it does not prove that this decision alone caused
+the failed continuation.
+
+The historical first sampled failure was later, at TD 2009, and began at step
+21. Therefore, the higher aggregate count must not be described as eliminating
+early degradation. The preserved treatment failure is a substantive outcome,
+even though the experiment process itself completed successfully.
+
+### Dense reference-state rankings
+
+Each arm has 8001 recorded update states: the shared TD-2000 boundary and all
+8000 continuation updates. At each state, seven fixed scene-10001 observations
+were evaluated. The following counts exclude the shared boundary and measure
+negative demonstration Q gaps, not failed physical episodes.
+
+| Demonstrated step | Negative-gap updates, weight 1 | Negative-gap updates, weight 0.5 | Final gap, weight 1 | Final gap, weight 0.5 |
+| --- | ---: | ---: | ---: | ---: |
+| 6 | 394 | 18 | 0.255623 | 0.611160 |
+| 18 | 0 | 0 | 0.700241 | 0.649956 |
+| 20 | 0 | 0 | 0.689560 | 0.952202 |
+| 21 | 627 | 153 | -0.059891 | 0.153618 |
+| 22 | 0 | 0 | 0.807518 | 0.738251 |
+| 23 | 0 | 0 | 0.922073 | 0.891678 |
+| 24 | 102 | 5 | 0.802681 | 0.657944 |
+
+The earlier fragile step 6 reversed on 18 treatment updates in 15 intervals,
+first at TD 2003 and last at 3866. Step 21 reversed on 153 updates in 127
+intervals, first at TD 2717 and last at 9956. All 127 step-21 intervals lay
+between the scheduled physical checks. Its minimum gap was -0.189919 at TD
+7337, compared with the control minimum of -0.223328. Thus, the final positive
+gap does not imply a permanently stable ranking. Steps 20, 22 and 23 retained
+the demonstrated greedy action at every dense check in both arms; no new
+neighboring action reversals were observed on these monitored inputs.
+
+Rankings were not uniformly better at matched updates: step 21 disagreed with
+the demonstration on 143 updates where the historical control agreed. Counts
+fell overall because more disagreements disappeared elsewhere in the timeline.
+Step 24 was already negative at the shared boundary, adding one negative record
+to each arm if that boundary is included. Its known successful deviations also
+illustrate why reference agreement and task success are separate measurements.
+For example, treatment TD 2005 selected `east_large` instead of `east_small` at
+step 24, with gap -0.002548, yet succeeded in 42 actions with return 98.391647.
+There were no exact zero-gap ties among the seven monitored inputs in either arm.
+
+### Loss trade-off and optimizer continuity
+
+The restored Q vectors matched the source exactly on all 117 inputs. Before the
+first update, both arms had TD loss 0.079081811 and supervised loss 0.063221075.
+The weighted objective difference was -0.039540902, consistent with halving only
+the TD component under float32 arithmetic. No MC objective was constructed,
+sample weight changed or total-loss normalization added.
+
+Across all 8000 updates, mean unweighted TD loss increased from 0.075954 in the
+control to 0.099838 in the treatment, while mean supervised margin loss decreased
+from 0.049829 to 0.035582. These are pre-update diagnostics; after-update TD
+diagnostics use the same frozen targets for that update. Final calibration RMSE
+also increased, as shown above. The outcome is consistent with giving action
+supervision greater relative influence, with a trade-off in TD and actual-return
+fit. It does not show that the lower weighted total loss is directly comparable
+between arms or that every update better preserves behavior.
+
+All 8000 treatment parameter updates were nonzero. Both arms retained Adam's
+inherited state, advanced its parameter clocks from 22000 to 30000, and performed
+40 scheduled target synchronizations. Treatment mean pre-clipping gradient norm
+was 15.037230 versus 17.855495; clipping was active on 6426 versus 7149 updates.
+Mean parameter displacement per update was 0.002025 versus 0.001959. A smaller
+TD coefficient therefore did not simply produce a proportionally smaller Adam
+step, and should not be interpreted as another learning-rate reduction.
+The first pre-clipping gradient norm actually increased from 11.97046 to
+16.00118 despite halving the TD coefficient, consistent with changing the
+balance of opposing component gradients rather than uniformly scaling them.
+
+### Verification and actual work
+
+The independent verifier passed on its first execution. It replayed the first
+201 continuation updates for each arm using a separate objective implementation,
+including target synchronization at TD 2200. It checked matching logs, dense
+probes and available full states. All 67 saved model files per arm, later target
+lineage, counters and raw evidence were audited; later updates were not all
+numerically replayed. Fifteen treatment reload episodes at the five declared
+checkpoints reproduced their recorded outcomes and reset-certification records.
+The full test suite passed **838 tests in 90.10 seconds**, and Ruff passed.
+
+| Newly executed work | Main treatment | Independent verification | Total |
+| --- | ---: | ---: | ---: |
+| Optimizer updates | 8000 | 402 | 8402 |
+| Policy episodes / environment resets | 87 | 15 | 102 |
+| Autonomous policy actions | 3553 | 585 | 4138 |
+| Reset certification checks | 87 | 15 | 102 |
+| Copied-simulation certification actions | 3393 | 585 | 3978 |
+| Total simulator actions | 6946 | 1170 | 8116 |
+
+Reset accounting was complete, with no reset failures or missing diagnostic
+records. The main run's 56007 dense probe forwards added no environment actions;
+analysis and plotting added no optimizer updates or physical episodes. Unit-test
+execution is separate from this work table. The inherited 42000 updates and
+historical control's 8000 updates, 87 episodes and 3711 policy actions were reused
+and are not included in these newly executed totals. The control's internal
+reset-certification action total was not retrospectively invented.
+
+### Interpretation and retained evidence
+
+The coefficient-0.5 treatment is a useful improvement for this long continuation:
+it retains all three final routes and reduces the monitored ranking reversals
+without introducing reversals at steps 20, 22 or 23. It remains a failed strict
+retention test because of the TD-2003 episode, and dense reversals persist late
+in training. This evidence covers only three known training scenes and one
+inherited initialization. There was no online training, new demonstration
+collection or held-out evaluation, and no production default was changed.
+
+The [compact evidence manifest](019_td_weight/evidence/archive_manifest.json)
+indexes 24 evidence files, with 25 files and 7753852 bytes including the manifest.
+It retains all sampled outcomes, both complete dense series, provenance, source
+hashes, reset accounting, verification, validation and figures. Raw update and
+probe logs are represented by 170/8000 and 171/8001 sampled records, respectively;
+both compact dense analysis series retain all 8001 update states. The archive's
+copied bytes, hashes and sample coverage were independently checked. Full raw
+update/probe logs and 67 binary model files remain under
+`results/training/td_weight_20261114`; the historical control remains in its
+original location. The two figures distinguish sampled physical outcomes from
+dense reference-state gaps. Both received visual checks. The run, independent
+verification and analysis each executed once, with no formal execution failure.
+
+Key records are the [paired analysis](019_td_weight/evidence/q_analysis.json),
+[independent verification](019_td_weight/evidence/reload_checks.json),
+[work accounting](019_td_weight/evidence/accounting.json) and
+[validation record](019_td_weight/evidence/validation.json).
+
+![All 29 sampled physical checkpoints for both arms](019_td_weight/evidence/td_weight_outcomes.png)
+
+![Dense reference-state Q gaps for the seven monitored decisions](019_td_weight/evidence/neighbor_q_gaps.png)

@@ -1,0 +1,659 @@
+{
+  "passed": true,
+  "attempt": 19,
+  "verifier_sha256": "6d8f410f83b1b363176e9345f622ad77efc75cdcf1b0d6781dc2590456ebfb22",
+  "prior_verifier_sha256": "b12a67dd00dd1579c7264b4333aeb1bacb584ca45d19907305507aa39e133beb",
+  "input_manifest_sha256": "e4dc63759a02b1858e821905670afa5e6c77b186d60ffba273129e7a00182fce",
+  "reference_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\local_supervision_20261112",
+  "reference_014_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_extension_10000_20261112",
+  "reference_013_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_learning_rate_preserved_20261112",
+  "original_data_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\multiscene_retention_20261112",
+  "source_snapshot_sha256": "d80a39676dbe1a5f63e8f4d8a0cca0f43c8e4db0c06a8c31846a22257efb4576",
+  "independent_return_checks": {
+    "episodes": [
+      {
+        "seed": 10000,
+        "transitions": 35,
+        "initial_discounted_return": 77.45508575439453,
+        "maximum_float64_difference": 2.135436027117521e-05
+      },
+      {
+        "seed": 10001,
+        "transitions": 41,
+        "initial_discounted_return": 72.81232452392578,
+        "maximum_float64_difference": 2.0148591573843078e-05
+      },
+      {
+        "seed": 10002,
+        "transitions": 41,
+        "initial_discounted_return": 73.20426177978516,
+        "maximum_float64_difference": 2.5402124634865686e-05
+      }
+    ],
+    "maximum_float64_difference": 2.5402124634865686e-05,
+    "transitions": 117
+  },
+  "historical_baseline_equivalence": {
+    "passed": true,
+    "exact_updates": 8000,
+    "exact_observations": 29,
+    "exact_legacy_sentinel_rows": 8001,
+    "exact_model_payloads": 67
+  },
+  "verified_new_raw_updates": 8000,
+  "verified_historical_raw_updates": 8000,
+  "verified_new_sentinel_rows": 8001,
+  "verified_historical_sentinel_rows": 8001,
+  "verified_new_physical_checkpoints": 29,
+  "verified_historical_physical_checkpoints": 29,
+  "verified_new_model_files": 67,
+  "verified_historical_control_model_files": 67,
+  "independent_replays": [
+    {
+      "arm": "historical_control",
+      "td_weight": 1.0,
+      "first_update": 2001,
+      "last_update": 2201,
+      "additional_optimizer_updates": 201,
+      "full_snapshot_updates_compared": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2200,
+        2201
+      ],
+      "sentinel_rows_compared": 202,
+      "additional_environment_steps": 0,
+      "additional_environment_resets": 0,
+      "independent_math": "Separate unweighted TD Huber and per-row margin means; only the TD coefficient changes.",
+      "logs_sentinels_and_full_snapshots_match_exactly": true
+    },
+    {
+      "arm": "treatment",
+      "td_weight": 0.5,
+      "first_update": 2001,
+      "last_update": 2201,
+      "additional_optimizer_updates": 201,
+      "full_snapshot_updates_compared": [
+        2001,
+        2002,
+        2003,
+        2004,
+        2005,
+        2006,
+        2007,
+        2008,
+        2009,
+        2010,
+        2200,
+        2201
+      ],
+      "sentinel_rows_compared": 202,
+      "additional_environment_steps": 0,
+      "additional_environment_resets": 0,
+      "independent_math": "Separate unweighted TD Huber and per-row margin means; only the TD coefficient changes.",
+      "logs_sentinels_and_full_snapshots_match_exactly": true
+    }
+  ],
+  "policy_reloads": [
+    {
+      "directory": "treatment/td",
+      "update": 2000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "2df42b8d7c2d2ab542e6b935384fcb0a246f609a64ec5100f45dbabc21ff3679",
+      "reset_certification": [
+        {
+          "update": 2000,
+          "seed": 10000,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 35,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 35,
+              "planned_actions": 35,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5399986431002617,
+              "return": 107.61081182360648,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2000,
+          "seed": 10001,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5849986001849174,
+              "return": 107.58505000025033,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2000,
+          "seed": 10002,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.584998570382595,
+              "return": 107.64338030368089,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2009,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "fa19323f9d0f19ce9b99b47b4c968674b1d47f215f6d79786201fcfa52477ba9",
+      "reset_certification": [
+        {
+          "update": 2009,
+          "seed": 10000,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 35,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 35,
+              "planned_actions": 35,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5399986431002617,
+              "return": 107.61081182360648,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2009,
+          "seed": 10001,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5849986001849174,
+              "return": 107.58505000025033,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2009,
+          "seed": 10002,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.584998570382595,
+              "return": 107.64338030368089,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2200,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "bf83ce182c660ee1db50ebf51c1823426cb393058acd320fe28cef0d4d3ae64a",
+      "reset_certification": [
+        {
+          "update": 2200,
+          "seed": 10000,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 35,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 35,
+              "planned_actions": 35,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5399986431002617,
+              "return": 107.61081182360648,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2200,
+          "seed": 10001,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5849986001849174,
+              "return": 107.58505000025033,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2200,
+          "seed": 10002,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.584998570382595,
+              "return": 107.64338030368089,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "directory": "treatment/td",
+      "update": 2201,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "631cf2a6c047e4d34f282ae67f39a0afea16faf6e22da0843e9301621e1bbb92",
+      "reset_certification": [
+        {
+          "update": 2201,
+          "seed": 10000,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 35,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 35,
+              "planned_actions": 35,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5399986431002617,
+              "return": 107.61081182360648,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2201,
+          "seed": 10001,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5849986001849174,
+              "return": 107.58505000025033,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 2201,
+          "seed": 10002,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.584998570382595,
+              "return": 107.64338030368089,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "directory": "treatment/td",
+      "update": 10000,
+      "scenes": [
+        {
+          "seed": 10000,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 35
+        },
+        {
+          "seed": 10001,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        },
+        {
+          "seed": 10002,
+          "full_rollout_matches_exactly": true,
+          "fit_and_return_metrics_match_exactly": true,
+          "success": true,
+          "damage": false,
+          "reload_environment_steps": 41
+        }
+      ],
+      "checkpoint_sha256": "3c3fdaac22a91b083cd44680c2e0c606fc34b6439a5ced11cb63aba0a2cf8402",
+      "reset_certification": [
+        {
+          "update": 10000,
+          "seed": 10000,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 35,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 35,
+              "planned_actions": 35,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5399986431002617,
+              "return": 107.61081182360648,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 10000,
+          "seed": 10001,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.5849986001849174,
+              "return": 107.58505000025033,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        },
+        {
+          "update": 10000,
+          "seed": 10002,
+          "certification_enabled": true,
+          "certification_attempts": 1,
+          "certification_environment_steps": 41,
+          "reference_route_checks": [
+            {
+              "reference": "collision_free_astar",
+              "success": true,
+              "damage": false,
+              "budget_exhausted": false,
+              "planning_failure": false,
+              "reason": "success",
+              "steps": 41,
+              "planned_actions": 41,
+              "initial_step_count": 0,
+              "remaining_budget": 200,
+              "travel_distance": 1.584998570382595,
+              "return": 107.64338030368089,
+              "contact_steps": 0,
+              "peak_normalized_deformation": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "additional_optimizer_updates": 402,
+  "additional_environment_resets": 15,
+  "additional_evaluation_episodes": 15,
+  "additional_environment_steps": 585,
+  "additional_reset_certification_attempts": 15,
+  "additional_reset_certification_environment_steps": 585,
+  "additional_total_simulator_environment_steps": 1170,
+  "historical_control_evaluations_rerun": false,
+  "scope": "Each arm independently replays only TD 2001-2201. All later saved states, logs and target lineage are audited without replaying every main update. Only treatment policies receive 15 reload episodes.",
+  "loss_semantics": "Only the TD Huber mean coefficient changes from 1 to 0.5. Every supervised coefficient remains one; no MC objective or total-loss rescaling is present.",
+  "physical_accounting": "Policy evaluation actions and reset-time copied-environment certification actions are separate. Certification is preserved and observed without extra resets or planning.",
+  "sentinel_interpretation": "Reference-state rankings do not establish physical success at unsampled updates."
+}

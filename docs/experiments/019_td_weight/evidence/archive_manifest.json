@@ -1,0 +1,120 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\td_weight_20261114",
+  "status": "completed",
+  "files": {
+    "accounting.json": {
+      "sha256": "a425543e6b4a1640641bbaf086cd8530f5676c72b3e1961173b0e367c1d747a3",
+      "bytes": 1158
+    },
+    "baseline_reference.json": {
+      "sha256": "0274a9892fe6e6240b9da725e6b6a321ad34fcbd8b0e4a27da0c0e125fb808f2",
+      "bytes": 7803
+    },
+    "dataset.json": {
+      "sha256": "eeca314e59fce96bdd522338a742f13a18ad409e3f41c9cade0904322675b069",
+      "bytes": 2250
+    },
+    "initial_q_equivalence.json": {
+      "sha256": "3780df81f0e021e6c6ab15e240254aa56726fe67ead4849b096a6ccf328f960e",
+      "bytes": 26497
+    },
+    "input_manifest.json": {
+      "sha256": "e4dc63759a02b1858e821905670afa5e6c77b186d60ffba273129e7a00182fce",
+      "bytes": 99445
+    },
+    "mc_targets.json": {
+      "sha256": "913677678e647a5bd80054edc621940a418b197dd3c2605af57922cbe2bf5305",
+      "bytes": 20188
+    },
+    "neighbor_q_gaps.png": {
+      "sha256": "e8a149ca64c29279e276258081542f47d40e3a55500612076d89b8b130088ef1",
+      "bytes": 730855
+    },
+    "provenance.json": {
+      "sha256": "51ee0fe5f5e9c7443ed34e8a874058f33d0ed2604c316989ed22b44e297b7bc1",
+      "bytes": 6655
+    },
+    "q_analysis.json": {
+      "sha256": "701dec231378feacf99edca567cd1d9ba3feb32d8b88e75e559824c030f5f0bc",
+      "bytes": 1661943
+    },
+    "q_analysis_baseline_dense.json": {
+      "sha256": "362bd0254e52f0029c4384e9a0dfc348ed78e726e884cf879461a2e2bee96690",
+      "bytes": 1273942
+    },
+    "q_analysis_treatment_dense.json": {
+      "sha256": "c62b70bf94e3a1c8bb276f3e943662dd6a9afcd3335c80aa3d496bfdb655c35e",
+      "bytes": 1213250
+    },
+    "reload_checks.json": {
+      "sha256": "7e43aba28654e3197ee447aa7fbb8c090abbc4da77654fa018c6e1e34ab963bf",
+      "bytes": 22740
+    },
+    "reset_certification.json": {
+      "sha256": "d912db5fa36f41fe45ebc7bacfa8dbdef1914d479605b391e3c60cc8ff03df3f",
+      "bytes": 66147
+    },
+    "run_status.json": {
+      "sha256": "6d3734257a9ff6a959bbc9c4cc352e7b8a3e032fc0e0ad240897b607cc396928",
+      "bytes": 166
+    },
+    "settings.json": {
+      "sha256": "d285c11a34a09061b62d37611f376bf0f9dd180cb106ccd1725fd0fbce3495f7",
+      "bytes": 6122
+    },
+    "summary.json": {
+      "sha256": "c3e21fe1d940cddab91668e4c28352c3453f2a6c57763beb64ef234bbe0ed45f",
+      "bytes": 187681
+    },
+    "td_weight_outcomes.png": {
+      "sha256": "a296c35b12d610156d012b3563c0107d1943f9f6b37f383414a9fc0f71d5134f",
+      "bytes": 611657
+    },
+    "treatment/initial_equivalence.json": {
+      "sha256": "2d142602bd15653a3010b708aa3bf5c6394275f901589076af4969dbf3439d60",
+      "bytes": 133
+    },
+    "treatment/restore_checks.json": {
+      "sha256": "d64256f60fd0455a66d73e379baf32978cdbe4c83045dd045a8129a33bb49137",
+      "bytes": 1359
+    },
+    "treatment/td/observations.json": {
+      "sha256": "ff2d05f4fda042f2a61e617ebeff71d744b883dd3b13c71d40d89696e17211ac",
+      "bytes": 1174825
+    },
+    "treatment/td/summary.json": {
+      "sha256": "ce0bb827aaa934145aed9c06b3975bd2a78188b1a58a7100ca2a3ab78c19604d",
+      "bytes": 159398
+    },
+    "validation.json": {
+      "sha256": "57ab6f9faea70a102a427c2df91188f85f6b677f96f4343e4db0fb751db89bba",
+      "bytes": 4460
+    },
+    "treatment/td/update_samples.jsonl": {
+      "sha256": "dfbe722f81c46e0d21a9b93e53ca02bffe544c7d00b9c079666418ec6760717b",
+      "bytes": 78364
+    },
+    "treatment/td/sentinel_q_samples.jsonl": {
+      "sha256": "994311b036f39d3b8854896ade91580e57d3c0272753a0290ee2a4976dc4b093",
+      "bytes": 391977
+    }
+  },
+  "raw_log_coverage": {
+    "treatment/td/updates.jsonl": {
+      "raw_sha256": "992a9570598e2c183013547b8a5ea12da5717801c9403e39ee6abfc91f0378d4",
+      "raw_records": 8000,
+      "archived_records": 170,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    },
+    "treatment/td/sentinel_q.jsonl": {
+      "raw_sha256": "94df1c229799ed278cf36efcf6635c1a682538211b9051c1b44adf8839211380",
+      "raw_records": 8001,
+      "archived_records": 171,
+      "sampling": "Initial probe if present, first ten new updates, every 50th absolute update and last."
+    }
+  },
+  "archive_script_sha256": "f8f91cf16a397c8c7fbfaa5d179942f7abe9600f85830227c8fec556d69dc774",
+  "historical_control": "Reused attempt-016 baseline; original control evidence remains in its committed archive.",
+  "excluded": "Model binaries, full raw logs and console output remain in ignored results.",
+  "note": "All measured treatment outcomes and failures, complete compact paired dense traces, and independent verification are retained."
+}

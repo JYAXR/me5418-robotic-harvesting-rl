@@ -1,0 +1,51 @@
+{
+  "exact_full_snapshot": true,
+  "target_synchronized_at_restore": false,
+  "optimizer_reset_at_restore": false,
+  "td_counter_reset_at_restore": false,
+  "absolute_td_update": 2000,
+  "optimizer_state": {
+    "sha256": "b5b78dae60099a88c8b45fd2c7f42ff63237c0cdf0e8c373181ebae546b460e9",
+    "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0001,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 6,
+    "steps": {
+      "0.weight": 22000.0,
+      "0.bias": 22000.0,
+      "2.weight": 22000.0,
+      "2.bias": 22000.0,
+      "4.weight": 22000.0,
+      "4.bias": 22000.0
+    },
+    "step_min": 22000.0,
+    "step_max": 22000.0,
+    "first_moment_l2": 0.7187822719272727,
+    "second_moment_l2": 2.6938680600761558
+  }
+}

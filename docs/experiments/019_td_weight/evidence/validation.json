@@ -1,0 +1,95 @@
+{
+  "created_at_utc": "2026-11-14T05:28:52.079835+00:00",
+  "attempt": 19,
+  "protocol_git_commit": "ea2ce1077d94069aaf662ca5a3b7ae673dbd4240",
+  "formal_main_executions": 1,
+  "formal_independent_verification_executions": 1,
+  "formal_analysis_executions": 1,
+  "formal_execution_failures": [],
+  "focused_prelaunch_gate": {
+    "passed": 53,
+    "duration_seconds": 5.68
+  },
+  "full_pytest": {
+    "command": ".venv/Scripts/python.exe -m pytest -q",
+    "passed": 838,
+    "duration_seconds": 90.1,
+    "exit_code": 0,
+    "console_sha256": "5f63ef77ddbcc0ec2546f927d9656093ca16f19198ff01b497d71c0b20c7ca37"
+  },
+  "ruff": {
+    "passed": true,
+    "exit_code": 0
+  },
+  "experiment_source_sha256": {
+    "docs/experiments/019_td_weight/analyze_td_weight.py": "eaf2eecd0bfa0ead40751ee011fc2d0713cecea937258932b818e16bf09ed73e",
+    "docs/experiments/019_td_weight/archive_td_weight.py": "f8f91cf16a397c8c7fbfaa5d179942f7abe9600f85830227c8fec556d69dc774",
+    "docs/experiments/019_td_weight/plot_td_weight.py": "9e60cc68739c50a11a292ba42566374359e1ee79ca7ef43de8de31eedfd6bf5c",
+    "docs/experiments/019_td_weight/run_td_weight.py": "c20b50bca1076c56a9fbc1e23fffa573f446cd49b489073bf4a7e1f251dc0ad6",
+    "docs/experiments/019_td_weight/verify_td_weight.py": "6d8f410f83b1b363176e9345f622ad77efc75cdcf1b0d6781dc2590456ebfb22",
+    "tests/test_td_weight_analysis.py": "f504606d05ad5997dde21d33acf335c6e4c55988166e4859f412188c5481f764",
+    "tests/test_td_weight_experiment.py": "f61319d9dcdfc8b8358564e65bdd6709f13962a20b1e762e0b8a8ad7eb5da9b3",
+    "tests/test_td_weight_verification.py": "cbaa2b26f3cd05a12e0c3e3decc97e1170a89056f7bbe609ccfbb5741eb89b99"
+  },
+  "new_experiment_code_and_comments_language": "English; no CJK characters in the eight new Python files.",
+  "independent_verification": {
+    "passed": true,
+    "result_sha256": "7e43aba28654e3197ee447aa7fbb8c090abbc4da77654fa018c6e1e34ab963bf",
+    "additional_optimizer_updates": 402,
+    "additional_episodes": 15,
+    "additional_policy_actions": 585,
+    "additional_reset_certification_actions": 585,
+    "additional_total_simulator_actions": 1170
+  },
+  "main_work": {
+    "optimizer_updates_total": 8000,
+    "inherited_shared_optimizer_updates": 42000,
+    "absolute_td_update": 10000,
+    "total_updates_on_treatment_branch": 50000,
+    "scheduled_evaluation_episodes": 87,
+    "evaluation_environment_steps": 3553,
+    "environment_resets": 87,
+    "reset_certification_attempts": 87,
+    "reset_certification_environment_steps": 3393,
+    "total_simulator_environment_steps": 6946,
+    "reset_accounting_complete": true,
+    "incomplete_resets": [],
+    "sentinel_records": 8001,
+    "sentinel_forward_passes": 56007,
+    "sentinel_environment_steps": 0,
+    "online_training_steps": 0,
+    "demonstration_collection_steps": 0,
+    "held_out_scenes_accessed": 0,
+    "reused_historical_control": {
+      "optimizer_updates": 8000,
+      "scheduled_evaluation_episodes": 87,
+      "evaluation_environment_steps": 3711,
+      "new_optimizer_updates": 0,
+      "new_evaluation_episodes": 0,
+      "new_environment_steps": 0
+    },
+    "note": "Completed new treatment work only. Policy actions and reset-time certification on simulator copies are separate; inherited and historical control work are reused. Independent verification is separate."
+  },
+  "main_and_verification_totals": {
+    "new_optimizer_updates": 8402,
+    "new_evaluation_episodes": 102,
+    "new_policy_actions": 4138,
+    "new_reset_certification_actions": 3978,
+    "new_total_simulator_actions": 8116,
+    "scope": "Formal experiment and independent verification only; unit-test execution is separate. Historical control and inherited work are reused."
+  },
+  "plot_visual_qa": {
+    "passed": true,
+    "files": [
+      "td_weight_outcomes.png",
+      "neighbor_q_gaps.png"
+    ],
+    "review": "All 29 sampled outcomes and all seven paired dense reference traces are readable; monochrome; outcome tables have three horizontal rules and no body or vertical rules."
+  },
+  "limits": [
+    "Three known training scenes and one inherited initialization.",
+    "Only 29 physical checkpoints per arm; dense reference-state rankings do not establish outcomes at unsampled updates.",
+    "Historical control is reused; no new main control training or episodes.",
+    "No production default or report was changed."
+  ]
+}
