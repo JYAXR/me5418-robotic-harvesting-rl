@@ -1,0 +1,78 @@
+{
+  "files": {
+    "analysis.json": {
+      "sha256": "b01c7f7d93aba151ddaab62505d2630a6d38510fc190af98c1f1a8581e88d319",
+      "bytes": 263777
+    },
+    "dense.json": {
+      "sha256": "8f84928051a1dd1313863b81559a1a781feb73da4a3fa77def0b37e6e6b65c8b",
+      "bytes": 2876883
+    },
+    "historical_dense.json": {
+      "sha256": "b2262fccbeed8dfb0be6a6d677231789bf20a08a16e00dbc97d875b81602d543",
+      "bytes": 1285212
+    },
+    "initial_q.json": {
+      "sha256": "3780df81f0e021e6c6ab15e240254aa56726fe67ead4849b096a6ccf328f960e",
+      "bytes": 26497
+    },
+    "main_completed.json": {
+      "sha256": "a804200ace5329b76ac61289ec0a60a94d8f3d60d88241fa9140e4c70001b0d0",
+      "bytes": 81
+    },
+    "model_hashes.json": {
+      "sha256": "c1f0ca1cf453f6a56f1e8744aafe29979e8c7d478a16e5b2b25a0d040d1c9fc5",
+      "bytes": 12314
+    },
+    "observations.json": {
+      "sha256": "ce21914e345c0dcdb73d7e15b7f0d59689fe09944fa8e8fa30727126b77e2b8b",
+      "bytes": 2011413
+    },
+    "protocol.json": {
+      "sha256": "6ad45cdd9a86eae346a2f31479e2c98cde8dfc9a5a4ddf57886f49dacde6ee73",
+      "bytes": 7506
+    },
+    "provenance.json": {
+      "sha256": "280eaeaabfa0641d17f5f43900f842e5de7d6e1c4c9dce4d4fc37345238054ba",
+      "bytes": 112466
+    },
+    "reset_certification.json": {
+      "sha256": "4e5d466caa43efbf98001ccb23347a6494074a33bd262e94edd4ed12a4782935",
+      "bytes": 113756
+    },
+    "status.json": {
+      "sha256": "e117cdc6059b3bdd5735fb54e5b35cf4bd34869904db238097b41a60aae5b59c",
+      "bytes": 146
+    },
+    "validation.json": {
+      "sha256": "43911ab0a7ad5ac6739e7815a9900cf316a19e168a751f452027c9641a01b483",
+      "bytes": 836
+    },
+    "verification.json": {
+      "sha256": "746624140059e368ce9193df2ae55776f0792957d3a04118f026ba4cf5054bdf",
+      "bytes": 128875
+    },
+    "updates_samples.jsonl": {
+      "sha256": "cdb74e028f8592efda3671dde6f4b5ee35d854d35bb2adedfeadd45b5a511f11",
+      "bytes": 78621
+    },
+    "sentinels_samples.jsonl": {
+      "sha256": "6b1995cfb5809c9024f0f0318209d685143fdccf136ed9a633054b40863a8a54",
+      "bytes": 391829
+    }
+  },
+  "raw_log_coverage": {
+    "updates.jsonl": {
+      "sha256": "f89bc02ef466bbddcab03d1a2b004e47f26a194ce22cac1d0d0be88173bdde21",
+      "records": 8000,
+      "sampled_records": 171
+    },
+    "sentinels.jsonl": {
+      "sha256": "b0926c488a9c5adea6c971803049165bd56904cd622996428f9a3b0c1e01b91f",
+      "records": 8001,
+      "sampled_records": 171
+    }
+  },
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\half_td_local_supervision_20261114",
+  "excluded": "All model binaries and full raw logs remain local; compact dense records retain all updates."
+}

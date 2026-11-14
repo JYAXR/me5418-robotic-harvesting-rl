@@ -1,0 +1,18 @@
+{
+  "focused_tests": {
+    "passed": 46,
+    "seconds": 10.64
+  },
+  "full_tests": {
+    "passed": 846,
+    "seconds": 145.89
+  },
+  "ruff_passed": true,
+  "source_sha256": {
+    "docs/experiments/022_half_td_local_supervision/analyze_local_supervision.py": "4579de162c45f68da8cd0af71328559d9565898c1233b5ac7c7879787a82b222",
+    "docs/experiments/022_half_td_local_supervision/run_local_supervision.py": "935eccc86ae0804ce21a42093b54302a3fb526d4590bf5330930ff56beaa38d6",
+    "tests/test_half_td_local_supervision.py": "f24e9cb1662c3ebf860be847bd90efb6e75fafc8d6b0ec06d4ab82ff6ee88a21"
+  },
+  "code_and_comments_language": "English",
+  "execution_notes": "Only one predeclared coefficient-2 treatment. No forced evaluation actions or report changes. Test execution work is separate from the formal run accounting."
+}
