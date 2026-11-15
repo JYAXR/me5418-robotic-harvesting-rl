@@ -35,6 +35,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [025: supervise one off-reference recovery state](025_recovery_supervision/RESULTS.md) | Can one added north_large label make recovery autonomous and preserve three known scenes through TD 10000? | Recovery stays greedy across all 8000 updates; all 68 post-start conditional probes succeed and six full episodes recover autonomously. Matched all-scene retention improves from 63/69 to 67/69, with all five targeted failures removed. New early failures at TD 2004 and 2009 occur at step 6; the first ten-update window worsens from 9/10 to 8/10. All 59 sampled checkpoints from TD 2010 onward succeed, but uninterrupted retention and generalization remain unproven. |
 
+| [026: single-action rescue at step 6](026_step6_rescue/RESULTS.md) | Does correcting only scene 10001 step 6 to south_small rescue TD 2004 and 2009 from attempt 025? | Both frozen controls fail at 200 steps; one correction restores 41-step success with no blocking or stationary steps and return 107.585050. All later actions remain autonomous and match the reference sequence. Four independent reloads match every transition. This establishes intervention sufficiency for the two failures without changing the learned policy. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

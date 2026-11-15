@@ -1,0 +1,30 @@
+[
+  {
+    "update": 2004,
+    "mode": "greedy",
+    "all_decisions_and_trajectory_match": true,
+    "all_transitions_match": true,
+    "steps": 200
+  },
+  {
+    "update": 2004,
+    "mode": "corrected",
+    "all_decisions_and_trajectory_match": true,
+    "all_transitions_match": true,
+    "steps": 41
+  },
+  {
+    "update": 2009,
+    "mode": "greedy",
+    "all_decisions_and_trajectory_match": true,
+    "all_transitions_match": true,
+    "steps": 200
+  },
+  {
+    "update": 2009,
+    "mode": "corrected",
+    "all_decisions_and_trajectory_match": true,
+    "all_transitions_match": true,
+    "steps": 41
+  }
+]

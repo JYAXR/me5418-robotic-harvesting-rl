@@ -1,0 +1,66 @@
+{
+  "models": [
+    {
+      "update": 2004,
+      "fork": {
+        "step": 6,
+        "identical_prefix": true,
+        "identical_fork_input_and_q": true,
+        "policy_action": 2,
+        "corrected_action": 1,
+        "q_south_small_minus_east_small": -0.0227813720703125
+      },
+      "fork_encoded_observation_sha256": "ea01a93886770a01530e178c920fd505233ba4268b188ec14ecc1e2cda94cea0",
+      "fork_position": [
+        0.1964392364025116,
+        0.5522215962409973
+      ],
+      "greedy_next_position": [
+        0.21706421673297882,
+        0.5522215962409973
+      ],
+      "corrected_next_position": [
+        0.1964392364025116,
+        0.5272216200828552
+      ],
+      "corrected_follows_reference_actions_throughout": true,
+      "return_improvement": 212.30050875579474,
+      "exactly_one_intervention_verified": true
+    },
+    {
+      "update": 2009,
+      "fork": {
+        "step": 6,
+        "identical_prefix": true,
+        "identical_fork_input_and_q": true,
+        "policy_action": 2,
+        "corrected_action": 1,
+        "q_south_small_minus_east_small": -0.00713348388671875
+      },
+      "fork_encoded_observation_sha256": "ea01a93886770a01530e178c920fd505233ba4268b188ec14ecc1e2cda94cea0",
+      "fork_position": [
+        0.1964392364025116,
+        0.5522215962409973
+      ],
+      "greedy_next_position": [
+        0.21706421673297882,
+        0.5522215962409973
+      ],
+      "corrected_next_position": [
+        0.1964392364025116,
+        0.5272216200828552
+      ],
+      "corrected_follows_reference_actions_throughout": true,
+      "return_improvement": 212.28172731500513,
+      "exactly_one_intervention_verified": true
+    }
+  ],
+  "same_encoded_fork_state_across_models": true,
+  "unassisted_successes": 0,
+  "corrected_successes": 2,
+  "verified_full_transitions": 482,
+  "total_executed_actions": 964,
+  "total_certification_actions": 328,
+  "total_simulator_actions": 1292,
+  "interpretation": "One external south_small correction at step 6 is sufficient for both frozen failures. It does not train the policy or establish a unique cause, uninterrupted retention or generalization."
+}
