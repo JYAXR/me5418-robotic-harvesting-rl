@@ -82,3 +82,20 @@ corrects step 28 to north_large, keeping the step-23/27 corrections fixed. This
 restores assisted success in 42 steps, verified by an independent reload. All
 other actions are autonomous, including a harmless reference disagreement at
 step 33. The model itself remains unchanged; autonomous repair is not established.
+
+## Attempt 034 autonomous supervision candidates
+
+`supervision_034_targeted.pt` and `supervision_034_control.pt` are matched fixed
+2000-update continuations of the final attempt-030 policy. Only three existing
+scene-10002 supervision weights differ (2 versus 1). Targeted final success is
+3/3 on original scenes, in 40/47/43 steps; control achieves 2/3. Both arms have
+intermediate 10002 failures, and targeted 10000 needs two extra final steps.
+This is known-scene recovery, not continuous retention or verified generalization.
+
+See [attempt 034](../docs/experiments/034_scene10002_supervision/RESULTS.md).
+Adjacent JSON files contain hashes and outcomes. Full final Adam-resume states
+are tracked in the experiment's `checkpoints/` directory. Prior models are unchanged.
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/supervision_034_targeted.pt --episodes 3 --seed 10000
+```

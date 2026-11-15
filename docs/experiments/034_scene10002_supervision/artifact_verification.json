@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "protocol_commit": "119f647ff20802eb1a00f47b0dfd96965acd92d8",
+  "raw_evidence_files": 47,
+  "raw_evidence_bytes": 5680586,
+  "source_hashes_unchanged": 133,
+  "git_index_byte_exact_artifacts": 55,
+  "all_archives_match_run": true,
+  "inference_and_resume_models_retained": true,
+  "tests_passed": 2,
+  "ruff_passed": true,
+  "main_updates": 4000,
+  "independent_updates": 40,
+  "unit_test_updates": 4,
+  "action_overrides": 0
+}

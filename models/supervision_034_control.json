@@ -1,0 +1,51 @@
+{
+  "attempt": 34,
+  "arm": "control",
+  "inference_sha256": "a8a519b1944afec3bd5ac063b34db6c75136c1661c3c4f8fbc3412859e58e018",
+  "resume_snapshot": "docs/experiments/034_scene10002_supervision/checkpoints/control_state_12000.pt",
+  "resume_sha256": "14890dacfbcce701e265d709857c5443bdd862f9b3682e624183913669f8d3f0",
+  "td_clock": 12000,
+  "adam_clock": 32000.0,
+  "metrics": [
+    {
+      "seed": 10000,
+      "return": 107.5899344369769,
+      "steps": 38,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.6849985048174858,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.04908003658056259,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    {
+      "seed": 10001,
+      "return": 107.28292228005579,
+      "steps": 47,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.699998490512371,
+      "peak_deformation": 0.1013333188043193,
+      "distance_to_target": 0.011549167335033417,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    {
+      "seed": 10002,
+      "return": -41.614793912821334,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.0917855724692345,
+      "peak_deformation": 0.2954973685440172,
+      "distance_to_target": 0.21267832815647125,
+      "stationary_steps": 171,
+      "blocked_steps": 174
+    }
+  ],
+  "selection": "Fixed 2000-update continuation endpoint; experimental, no holdout selection."
+}

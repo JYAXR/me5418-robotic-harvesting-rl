@@ -51,6 +51,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [033: step-28 correction with steps 23/27 fixed](033_scene10002_step28/RESULTS.md) | Does additionally correcting step 28 to north_large restore scene 10002 while the final model stays frozen? | Yes, conditionally: control repeats 58-step damage failure; treatment reaches the target in 42 steps with return 107.957262 and zero deformation/blocking. A later step-33 reference disagreement does not prevent success. Two independent reloads match every transition. Four episodes, 364 simulator actions including certification, zero training updates. This is assisted rescue, not learned repair. |
 
+| [034: targeted supervision of scene-10002 states](034_scene10002_supervision/RESULTS.md) | Does doubling step-23/27/28 supervision restore autonomous success while retaining the other two scenes under matched 2000-update continuation? | Final targeted success is 3/3 versus control 2/3; 10002 succeeds autonomously in 43 steps. Both arms fail 10002 at updates 100/500/1000, so retention is not continuous. 10000/10001 retain sampled success, but targeted 10000 needs two extra final steps. The policy uses an alternative turn rather than all three literal reference labels. Forty independent updates and six endpoint reloads pass; both inference candidates and final full states are retained. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

@@ -1,0 +1,12 @@
+[
+  {
+    "arm": "control",
+    "passed": true,
+    "independent_updates": 20
+  },
+  {
+    "arm": "targeted",
+    "passed": true,
+    "independent_updates": 20
+  }
+]
