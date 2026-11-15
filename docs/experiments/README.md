@@ -33,6 +33,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [024: off-reference step-25 rescue](024_step25_rescue/RESULTS.md) | Does replacing only step 25 with north_large rescue the five attempt-023 failures while preserving step 22? | All five frozen controls fail at 200 steps; all five corrected episodes succeed in 42 steps. Return rises from 2.443244 to 107.625369, blocking falls from 177 to 1, and step 22 remains unchanged. Ten independent reloads match decisions and trajectories. The intervention is sufficient for these selected failures, but the policy has not learned the recovery action. |
 
+| [025: supervise one off-reference recovery state](025_recovery_supervision/RESULTS.md) | Can one added north_large label make recovery autonomous and preserve three known scenes through TD 10000? | Recovery stays greedy across all 8000 updates; all 68 post-start conditional probes succeed and six full episodes recover autonomously. Matched all-scene retention improves from 63/69 to 67/69, with all five targeted failures removed. New early failures at TD 2004 and 2009 occur at step 6; the first ten-update window worsens from 9/10 to 8/10. All 59 sampled checkpoints from TD 2010 onward succeed, but uninterrupted retention and generalization remain unproven. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

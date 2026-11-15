@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "optimizer_updates": 4,
+  "control": {
+    "loss_before": 0.10806284844875336,
+    "loss_after": 0.10605891048908234,
+    "gradient_norm": 16.810400009155273,
+    "parameter_delta_norm": 0.00182232481893152,
+    "target_synchronized": false,
+    "td_loss_before": 0.07908181101083755,
+    "td_loss_after": 0.09434343874454498,
+    "demonstration_loss_before": 0.06852193921804428,
+    "demonstration_loss_after": 0.058887187391519547,
+    "demonstration_action_accuracy": 0.9914529919624329,
+    "td_weight": 0.5,
+    "selected_weight": 2.0
+  },
+  "treatment": {
+    "loss_before": 0.11626698821783066,
+    "loss_after": 0.11226654052734375,
+    "gradient_norm": 19.197389602661133,
+    "parameter_delta_norm": 0.0036244152579456568,
+    "target_synchronized": false,
+    "td_loss_before": 0.07908181101083755,
+    "td_loss_after": 0.09486624598503113,
+    "demonstration_loss_before": 0.06852193921804428,
+    "demonstration_loss_after": 0.059465065598487854,
+    "demonstration_action_accuracy": 0.9914529919624329,
+    "td_weight": 0.5,
+    "selected_weight": 2.0,
+    "recovery_weight": 1.0,
+    "recovery_loss_before": 0.008204142563045025,
+    "recovery_loss_after": 0.005368355195969343
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "resets_by_phase": {
+    "collection": 1,
+    "baseline_conditional": 7,
+    "treatment_full": 207,
+    "treatment_conditional": 69,
+    "verification_full": 21,
+    "verification_conditional": 7,
+    "posthoc_verification_full": 6,
+    "posthoc_verification_conditional": 2
+  },
+  "actions_by_phase": {
+    "collection": 24,
+    "baseline_conditional": 1242,
+    "treatment_full": 8397,
+    "treatment_conditional": 3056,
+    "verification_full": 820,
+    "verification_conditional": 452,
+    "posthoc_verification_full": 552,
+    "posthoc_verification_conditional": 84
+  },
+  "certification_actions_by_phase": {
+    "collection": 41,
+    "baseline_conditional": 287,
+    "treatment_full": 8073,
+    "treatment_conditional": 2829,
+    "verification_full": 819,
+    "verification_conditional": 287,
+    "posthoc_verification_full": 234,
+    "posthoc_verification_conditional": 82
+  },
+  "total_resets": 320,
+  "total_executed_actions": 14627,
+  "total_certification_actions": 12652,
+  "total_simulator_actions": 27279,
+  "main_optimizer_updates": 8000,
+  "gate_optimizer_updates": 4,
+  "independent_optimizer_updates": 401,
+  "total_new_optimizer_updates": 8405,
+  "scripted_prefix_actions_included": 2040,
+  "forced_recovery_actions": 0,
+  "held_out_scenes": 0,
+  "historical_baseline_episodes_not_new_work": 207,
+  "note": "Collection uses the frozen policy for 24 actions; conditional probes have 24 scripted prefix actions each. Unit tests are outside formal counts."
+}
