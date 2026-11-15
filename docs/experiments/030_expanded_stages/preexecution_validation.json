@@ -1,0 +1,17 @@
+{
+  "attempt": 30,
+  "stage": "before_main_execution",
+  "tests": {
+    "command": "python -m pytest tests/test_expanded_stages.py tests/test_training_coverage.py tests/test_optimizer_transition.py tests/test_multiscene_demonstrations.py -q",
+    "initial_result": "55 passed, 1 failed in 20.11 seconds",
+    "initial_failure": "The independent calibration oracle assembled equivalent gather/max nodes in a different order. Scalar metrics matched but exact online-state comparison failed from floating-point gradient accumulation order.",
+    "fix": "Align the independently written oracle's node-construction order with the objective. Keep the training objective and exact tensor equality unchanged.",
+    "final_result": "56 passed in 21.23 seconds"
+  },
+  "lint": "Ruff passed for all attempt-030 Python files and its tests.",
+  "independent_float64_return_max_error": 0.00006095317237964082,
+  "main_training_updates_at_validation": 0,
+  "fresh_test_episodes_at_validation": 0,
+  "test_optimizer_operations_excluded_from_main_accounting": true,
+  "source_full_snapshot_sha256": "8890fea9630badb438c0e8a380f64c9f1dddfa7d5911361b0bdeb2835503b559"
+}

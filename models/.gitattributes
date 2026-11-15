@@ -2,3 +2,5 @@ step6_repair_027.pt binary
 step6_repair_027.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 coverage_029_*.pt binary
 coverage_029_*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+stages_030_*.pt binary
+stages_030_*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
