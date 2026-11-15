@@ -1,0 +1,102 @@
+[
+  {
+    "arm": "expanded",
+    "relative_update": 0,
+    "rows": 1440,
+    "correct": 605,
+    "original_correct": 117,
+    "new_correct": 488,
+    "recovery_action": 4,
+    "recovery_gap": 1.3038177490234375
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 1,
+    "rows": 1440,
+    "correct": 603,
+    "original_correct": 116,
+    "new_correct": 487,
+    "recovery_action": 4,
+    "recovery_gap": 1.1390380859375
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 10,
+    "rows": 1440,
+    "correct": 525,
+    "original_correct": 63,
+    "new_correct": 462,
+    "recovery_action": 1,
+    "recovery_gap": -1.1920700073242188
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 100,
+    "rows": 1440,
+    "correct": 682,
+    "original_correct": 64,
+    "new_correct": 618,
+    "recovery_action": 0,
+    "recovery_gap": -0.5680999755859375
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 500,
+    "rows": 1440,
+    "correct": 771,
+    "original_correct": 70,
+    "new_correct": 701,
+    "recovery_action": 4,
+    "recovery_gap": 1.1493682861328125
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 1000,
+    "rows": 1440,
+    "correct": 833,
+    "original_correct": 80,
+    "new_correct": 753,
+    "recovery_action": 4,
+    "recovery_gap": 2.2459869384765625
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 2000,
+    "rows": 1440,
+    "correct": 892,
+    "original_correct": 86,
+    "new_correct": 806,
+    "recovery_action": 4,
+    "recovery_gap": 2.3720245361328125
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 4000,
+    "rows": 1440,
+    "correct": 918,
+    "original_correct": 83,
+    "new_correct": 835,
+    "recovery_action": 4,
+    "recovery_gap": 1.8099212646484375
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 6000,
+    "rows": 1440,
+    "correct": 969,
+    "original_correct": 85,
+    "new_correct": 884,
+    "recovery_action": 4,
+    "recovery_gap": 1.8139495849609375
+  },
+  {
+    "arm": "expanded",
+    "relative_update": 8000,
+    "rows": 1440,
+    "correct": 995,
+    "original_correct": 85,
+    "new_correct": 910,
+    "recovery_action": 4,
+    "recovery_gap": 1.7845306396484375
+  }
+]

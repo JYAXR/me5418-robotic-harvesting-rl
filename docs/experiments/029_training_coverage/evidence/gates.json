@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "optimizer_updates": 4,
+  "control": {
+    "loss_before": 0.07802370935678482,
+    "loss_after": 0.07913194596767426,
+    "gradient_norm": 18.54814910888672,
+    "parameter_delta_norm": 0.001901174196973443,
+    "target_synchronized": false,
+    "td_loss_before": 0.10296991467475891,
+    "td_loss_after": 0.10862718522548676,
+    "demonstration_loss_before": 0.026538750156760216,
+    "demonstration_loss_after": 0.024818355217576027,
+    "demonstration_action_accuracy": 1.0,
+    "td_weight": 0.5,
+    "selected_weight": 2.0,
+    "step6_weight": 2.0,
+    "recovery_weight": 1.0,
+    "recovery_loss_before": 0.0,
+    "recovery_loss_after": 0.0
+  },
+  "expanded": {
+    "loss_before": 6.882711410522461,
+    "loss_after": 6.825607776641846,
+    "gradient_norm": 42.01360321044922,
+    "parameter_delta_norm": 0.02055429108440876,
+    "target_synchronized": false,
+    "td_loss_before": 4.210599422454834,
+    "td_loss_after": 4.141118049621582,
+    "demonstration_loss_before": 4.777411937713623,
+    "demonstration_loss_after": 4.755048751831055,
+    "demonstration_action_accuracy": 0.4201388955116272,
+    "td_weight": 0.5,
+    "selected_weight": 2.0,
+    "step6_weight": 2.0,
+    "recovery_weight": 1.0,
+    "recovery_loss_before": 0.0,
+    "recovery_loss_after": 0.0
+  }
+}

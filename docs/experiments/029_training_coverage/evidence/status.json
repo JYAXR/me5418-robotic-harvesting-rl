@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "finished_at_utc": "2026-11-15T09:19:04.210831+00:00",
+  "sources_and_frozen_policies_unchanged": true,
+  "training_optimizer_updates": 16000,
+  "gate_optimizer_updates": 4,
+  "independent_optimizer_updates": 40
+}

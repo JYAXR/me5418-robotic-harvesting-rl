@@ -1,0 +1,42 @@
+{
+  "phases": {
+    "collection": {
+      "resets": 30,
+      "executed_actions": 1323,
+      "certification_actions": 1323
+    },
+    "retention": {
+      "resets": 60,
+      "executed_actions": 4451,
+      "certification_actions": 2340
+    },
+    "acquisition": {
+      "resets": 30,
+      "executed_actions": 3199,
+      "certification_actions": 1323
+    },
+    "holdout": {
+      "resets": 200,
+      "executed_actions": 22843,
+      "certification_actions": 8310
+    },
+    "reloads": {
+      "resets": 18,
+      "executed_actions": 2198,
+      "certification_actions": 750
+    }
+  },
+  "resets": 338,
+  "executed_actions": 34014,
+  "certification_actions": 14046,
+  "training_optimizer_updates": 16000,
+  "gate_optimizer_updates": 4,
+  "independent_optimizer_updates": 40,
+  "total_optimizer_updates": 16044,
+  "main_holdout_scenes": 100,
+  "main_holdout_policy_episodes": 200,
+  "online_training_steps": 0,
+  "scripted_collection_actions": 1323,
+  "forced_evaluation_actions": 0,
+  "unit_tests_excluded": true
+}

@@ -41,6 +41,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [028: frozen-policy generalization](028_frozen_generalization/RESULTS.md) | Does the repaired policy work on 100 predeclared unseen scenes without tuning? | Only 1/100 succeeds: 50 damage failures and 49 budget failures, all with substantial blocking. All three training scenes still succeed before and after testing; seven normal-evaluator reloads reproduce their metrics. Model/source hashes stay unchanged, with zero training updates. Known-scene repair does not provide reliable unseen-scene competence. |
 
+| [029: expanded training coverage](029_training_coverage/RESULTS.md) | Does appending 30 training scenes improve generalization under a matched 8000-update continuation budget while retaining original skills? | Both final arms succeed on 4/100 paired unseen scenes, with three gained and three lost successes. Expanded training retains only 1/3 original scenes versus control 3/3, and succeeds on 2/30 added training scenes. Original retention across checkpoints is 9/30 versus 30/30 episodes. Independent updates and 18 reloads pass; both final experimental candidates are archived without replacing the prior policy. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

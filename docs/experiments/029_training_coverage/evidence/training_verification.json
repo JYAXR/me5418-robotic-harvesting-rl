@@ -1,0 +1,12 @@
+[
+  {
+    "arm": "control",
+    "passed": true,
+    "independent_optimizer_updates": 20
+  },
+  {
+    "arm": "expanded",
+    "passed": true,
+    "independent_optimizer_updates": 20
+  }
+]

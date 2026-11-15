@@ -1,0 +1,1159 @@
+{
+  "holdout": {
+    "control": {
+      "requested_scenes": 100,
+      "valid_scenes": 100,
+      "successes": 4,
+      "success_rate_requested": 0.04,
+      "success_rate_valid": 0.04,
+      "wilson95_requested": [
+        0.01566330399154762,
+        0.0983707143588792
+      ],
+      "wilson95_valid": [
+        0.01566330399154762,
+        0.0983707143588792
+      ],
+      "categories": {
+        "damage": 49,
+        "budget_while_moving": 5,
+        "budget_blocked_stall": 42,
+        "success": 4
+      },
+      "mean_return": -50.85261024455869,
+      "mean_steps": 116.52,
+      "mean_success_steps": 38.75,
+      "policy_actions": 11652,
+      "certification_actions": 4155,
+      "certification_attempts": 100
+    },
+    "expanded": {
+      "requested_scenes": 100,
+      "valid_scenes": 100,
+      "successes": 4,
+      "success_rate_requested": 0.04,
+      "success_rate_valid": 0.04,
+      "wilson95_requested": [
+        0.01566330399154762,
+        0.0983707143588792
+      ],
+      "wilson95_valid": [
+        0.01566330399154762,
+        0.0983707143588792
+      ],
+      "categories": {
+        "damage": 53,
+        "budget_while_moving": 1,
+        "budget_blocked_stall": 42,
+        "success": 4
+      },
+      "mean_return": -43.98852475327067,
+      "mean_steps": 111.91,
+      "mean_success_steps": 49.25,
+      "policy_actions": 11191,
+      "certification_actions": 4155,
+      "certification_attempts": 100
+    }
+  },
+  "retention": {
+    "control": {
+      "by_update": [
+        {
+          "relative_update": 0,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 1,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 10,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 100,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 500,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 1000,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 2000,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 4000,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 6000,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 8000,
+          "successes": 3,
+          "failures": []
+        }
+      ],
+      "summary": {
+        "requested_scenes": 30,
+        "valid_scenes": 30,
+        "successes": 30,
+        "success_rate_requested": 1.0,
+        "success_rate_valid": 1.0,
+        "wilson95_requested": [
+          0.8864866068260312,
+          0.9999999999999999
+        ],
+        "wilson95_valid": [
+          0.8864866068260312,
+          0.9999999999999999
+        ],
+        "categories": {
+          "success": 30
+        },
+        "mean_return": 107.61308070917921,
+        "mean_steps": 39.0,
+        "mean_success_steps": 39.0,
+        "policy_actions": 1170,
+        "certification_actions": 1170,
+        "certification_attempts": 30
+      }
+    },
+    "expanded": {
+      "by_update": [
+        {
+          "relative_update": 0,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 1,
+          "successes": 3,
+          "failures": []
+        },
+        {
+          "relative_update": 10,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10001,
+              "category": "budget_stationary_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "relative_update": 100,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "damage"
+            },
+            {
+              "seed": 10001,
+              "category": "budget_stationary_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "relative_update": 500,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "damage"
+            },
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "relative_update": 1000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "damage"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "relative_update": 2000,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "damage"
+            },
+            {
+              "seed": 10001,
+              "category": "damage"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "relative_update": 4000,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "damage"
+            },
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "relative_update": 6000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "damage"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "relative_update": 8000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "requested_scenes": 30,
+        "valid_scenes": 30,
+        "successes": 9,
+        "success_rate_requested": 0.3,
+        "success_rate_valid": 0.3,
+        "wilson95_requested": [
+          0.16664748268243793,
+          0.47875787458714947
+        ],
+        "wilson95_valid": [
+          0.16664748268243793,
+          0.47875787458714947
+        ],
+        "categories": {
+          "success": 9,
+          "budget_blocked_stall": 12,
+          "budget_stationary_stall": 2,
+          "damage": 7
+        },
+        "mean_return": 4.315473486284797,
+        "mean_steps": 109.36666666666666,
+        "mean_success_steps": 39.0,
+        "policy_actions": 3281,
+        "certification_actions": 1170,
+        "certification_attempts": 30
+      }
+    }
+  },
+  "new_training_acquisition": {
+    "requested_scenes": 30,
+    "valid_scenes": 30,
+    "successes": 2,
+    "success_rate_requested": 0.06666666666666667,
+    "success_rate_valid": 0.06666666666666667,
+    "wilson95_requested": [
+      0.018477023791270378,
+      0.2132345836261692
+    ],
+    "wilson95_valid": [
+      0.018477023791270378,
+      0.2132345836261692
+    ],
+    "categories": {
+      "damage": 16,
+      "budget_blocked_stall": 10,
+      "success": 2,
+      "budget_stationary_stall": 2
+    },
+    "mean_return": -42.248746717171215,
+    "mean_steps": 106.63333333333334,
+    "mean_success_steps": 42.5,
+    "policy_actions": 3199,
+    "certification_actions": 1323,
+    "certification_attempts": 30
+  },
+  "paired_counts": {
+    "neither_success": 93,
+    "control_only": 3,
+    "expanded_only": 3,
+    "both_success": 1
+  },
+  "pairs": [
+    {
+      "seed": 390000,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390001,
+      "control_category": "budget_while_moving",
+      "expanded_category": "budget_while_moving",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390002,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390003,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390004,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390005,
+      "control_category": "success",
+      "expanded_category": "damage",
+      "control_success": true,
+      "expanded_success": false
+    },
+    {
+      "seed": 390006,
+      "control_category": "budget_while_moving",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390007,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390008,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390009,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390010,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390011,
+      "control_category": "budget_while_moving",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390012,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390013,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390014,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390015,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390016,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390017,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390018,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390019,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390020,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390021,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390022,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390023,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390024,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390025,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390026,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390027,
+      "control_category": "budget_while_moving",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390028,
+      "control_category": "success",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": true,
+      "expanded_success": false
+    },
+    {
+      "seed": 390029,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390030,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390031,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390032,
+      "control_category": "success",
+      "expanded_category": "damage",
+      "control_success": true,
+      "expanded_success": false
+    },
+    {
+      "seed": 390033,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390034,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390035,
+      "control_category": "budget_while_moving",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390036,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390037,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390038,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390039,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390040,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390041,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390042,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390043,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390044,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390045,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390046,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390047,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390048,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390049,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390050,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390051,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390052,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390053,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390054,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390055,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390056,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390057,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390058,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390059,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390060,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390061,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390062,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "success",
+      "control_success": false,
+      "expanded_success": true
+    },
+    {
+      "seed": 390063,
+      "control_category": "success",
+      "expanded_category": "success",
+      "control_success": true,
+      "expanded_success": true
+    },
+    {
+      "seed": 390064,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390065,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390066,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390067,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390068,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390069,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390070,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390071,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "success",
+      "control_success": false,
+      "expanded_success": true
+    },
+    {
+      "seed": 390072,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390073,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390074,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390075,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390076,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390077,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390078,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390079,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390080,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390081,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390082,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390083,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390084,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390085,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390086,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390087,
+      "control_category": "damage",
+      "expanded_category": "success",
+      "control_success": false,
+      "expanded_success": true
+    },
+    {
+      "seed": 390088,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390089,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390090,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390091,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390092,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390093,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390094,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390095,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390096,
+      "control_category": "damage",
+      "expanded_category": "budget_blocked_stall",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390097,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390098,
+      "control_category": "budget_blocked_stall",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    },
+    {
+      "seed": 390099,
+      "control_category": "damage",
+      "expanded_category": "damage",
+      "control_success": false,
+      "expanded_success": false
+    }
+  ],
+  "original_sample_fraction": 0.08125,
+  "training_rows": 1440,
+  "final_fit": {
+    "control": {
+      "arm": "control",
+      "relative_update": 8000,
+      "rows": 1440,
+      "correct": 610,
+      "original_correct": 117,
+      "new_correct": 493,
+      "recovery_action": 4,
+      "recovery_gap": 1.506072998046875
+    },
+    "expanded": {
+      "arm": "expanded",
+      "relative_update": 8000,
+      "rows": 1440,
+      "correct": 995,
+      "original_correct": 85,
+      "new_correct": 910,
+      "recovery_action": 4,
+      "recovery_gap": 1.7845306396484375
+    }
+  },
+  "exports": {
+    "control": {
+      "path": "models/coverage_029_control.pt",
+      "sha256": "399e4ccb10356936d96499ec460799661dc77ee0ac78cdc4f769573ef764b109",
+      "scope": "Predeclared final experimental candidate; not a replacement for the previous policy.",
+      "holdout": {
+        "requested_scenes": 100,
+        "valid_scenes": 100,
+        "successes": 4,
+        "success_rate_requested": 0.04,
+        "success_rate_valid": 0.04,
+        "wilson95_requested": [
+          0.01566330399154762,
+          0.0983707143588792
+        ],
+        "wilson95_valid": [
+          0.01566330399154762,
+          0.0983707143588792
+        ],
+        "categories": {
+          "damage": 49,
+          "budget_while_moving": 5,
+          "budget_blocked_stall": 42,
+          "success": 4
+        },
+        "mean_return": -50.85261024455869,
+        "mean_steps": 116.52,
+        "mean_success_steps": 38.75,
+        "policy_actions": 11652,
+        "certification_actions": 4155,
+        "certification_attempts": 100
+      },
+      "final_original_scenes": {
+        "relative_update": 8000,
+        "successes": 3,
+        "failures": []
+      }
+    },
+    "expanded": {
+      "path": "models/coverage_029_expanded.pt",
+      "sha256": "5b8e66c22d51915771f89ad6a7c81ed8749725f426f62d322e5353cdfbbaaa18",
+      "scope": "Predeclared final experimental candidate; not a replacement for the previous policy.",
+      "holdout": {
+        "requested_scenes": 100,
+        "valid_scenes": 100,
+        "successes": 4,
+        "success_rate_requested": 0.04,
+        "success_rate_valid": 0.04,
+        "wilson95_requested": [
+          0.01566330399154762,
+          0.0983707143588792
+        ],
+        "wilson95_valid": [
+          0.01566330399154762,
+          0.0983707143588792
+        ],
+        "categories": {
+          "damage": 53,
+          "budget_while_moving": 1,
+          "budget_blocked_stall": 42,
+          "success": 4
+        },
+        "mean_return": -43.98852475327067,
+        "mean_steps": 111.91,
+        "mean_success_steps": 49.25,
+        "policy_actions": 11191,
+        "certification_actions": 4155,
+        "certification_attempts": 100
+      },
+      "final_original_scenes": {
+        "relative_update": 8000,
+        "successes": 1,
+        "failures": [
+          {
+            "seed": 10000,
+            "category": "budget_blocked_stall"
+          },
+          {
+            "seed": 10002,
+            "category": "budget_blocked_stall"
+          }
+        ]
+      }
+    }
+  },
+  "all_trace_audits_passed": true,
+  "sources_unchanged": true,
+  "analysis_source_sha256": "c4348d86d517d3eb12ea8c88d1c3c865abfd2f25e6c7501df3270188a207ed99",
+  "interpretation": "Matched fixed-data continuation; no retraining of supervised/calibration stages. Old-sample dilution follows the unchanged full-data mean rule."
+}

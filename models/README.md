@@ -27,3 +27,16 @@ the generic trainer uses its existing defaults; it does not automatically
 reproduce the staged calibration and per-observation supervision of this repair.
 
 SHA-256: `06733fccb5422d10ad7246e5368bbd5ed9cc3367f0b413847544ec26a96b0c88`.
+
+## Attempt 029 experimental candidates
+
+`coverage_029_control.pt` and `coverage_029_expanded.pt` are paired final
+TD-18000 inference candidates from [attempt 029](../docs/experiments/029_training_coverage/RESULTS.md).
+Both achieve 4/100 on test seeds 390000--390099. The control retains 3/3 original
+scenes; the expanded candidate retains 1/3 and is not a recommended replacement.
+Adjacent JSON files record hashes and outcomes. The original attempt-027 file
+is unchanged. These are inference files, not Adam-resume snapshots.
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/coverage_029_expanded.pt --episodes 100 --seed 390000
+```

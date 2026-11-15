@@ -1,0 +1,102 @@
+[
+  {
+    "arm": "control",
+    "relative_update": 0,
+    "rows": 1440,
+    "correct": 605,
+    "original_correct": 117,
+    "new_correct": 488,
+    "recovery_action": 4,
+    "recovery_gap": 1.3038177490234375
+  },
+  {
+    "arm": "control",
+    "relative_update": 1,
+    "rows": 1440,
+    "correct": 604,
+    "original_correct": 117,
+    "new_correct": 487,
+    "recovery_action": 4,
+    "recovery_gap": 1.3361968994140625
+  },
+  {
+    "arm": "control",
+    "relative_update": 10,
+    "rows": 1440,
+    "correct": 602,
+    "original_correct": 117,
+    "new_correct": 485,
+    "recovery_action": 4,
+    "recovery_gap": 1.2327423095703125
+  },
+  {
+    "arm": "control",
+    "relative_update": 100,
+    "rows": 1440,
+    "correct": 603,
+    "original_correct": 117,
+    "new_correct": 486,
+    "recovery_action": 4,
+    "recovery_gap": 1.1499404907226562
+  },
+  {
+    "arm": "control",
+    "relative_update": 500,
+    "rows": 1440,
+    "correct": 608,
+    "original_correct": 117,
+    "new_correct": 491,
+    "recovery_action": 4,
+    "recovery_gap": 1.2440948486328125
+  },
+  {
+    "arm": "control",
+    "relative_update": 1000,
+    "rows": 1440,
+    "correct": 605,
+    "original_correct": 117,
+    "new_correct": 488,
+    "recovery_action": 4,
+    "recovery_gap": 1.2163619995117188
+  },
+  {
+    "arm": "control",
+    "relative_update": 2000,
+    "rows": 1440,
+    "correct": 609,
+    "original_correct": 117,
+    "new_correct": 492,
+    "recovery_action": 4,
+    "recovery_gap": 1.022613525390625
+  },
+  {
+    "arm": "control",
+    "relative_update": 4000,
+    "rows": 1440,
+    "correct": 606,
+    "original_correct": 117,
+    "new_correct": 489,
+    "recovery_action": 4,
+    "recovery_gap": 1.2463226318359375
+  },
+  {
+    "arm": "control",
+    "relative_update": 6000,
+    "rows": 1440,
+    "correct": 606,
+    "original_correct": 117,
+    "new_correct": 489,
+    "recovery_action": 4,
+    "recovery_gap": 1.4664688110351562
+  },
+  {
+    "arm": "control",
+    "relative_update": 8000,
+    "rows": 1440,
+    "correct": 610,
+    "original_correct": 117,
+    "new_correct": 493,
+    "recovery_action": 4,
+    "recovery_gap": 1.506072998046875
+  }
+]

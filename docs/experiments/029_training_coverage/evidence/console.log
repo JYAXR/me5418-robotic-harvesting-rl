@@ -1,0 +1,298 @@
+Collected training seed 290000: 41 transitions.
+Collected training seed 290001: 48 transitions.
+Collected training seed 290002: 45 transitions.
+Collected training seed 290003: 37 transitions.
+Collected training seed 290004: 41 transitions.
+Collected training seed 290005: 40 transitions.
+Collected training seed 290006: 54 transitions.
+Collected training seed 290007: 45 transitions.
+Collected training seed 290008: 39 transitions.
+Collected training seed 290009: 37 transitions.
+Collected training seed 290010: 49 transitions.
+Collected training seed 290011: 42 transitions.
+Collected training seed 290012: 61 transitions.
+Collected training seed 290013: 47 transitions.
+Collected training seed 290014: 47 transitions.
+Collected training seed 290015: 44 transitions.
+Collected training seed 290016: 50 transitions.
+Collected training seed 290017: 42 transitions.
+Collected training seed 290018: 40 transitions.
+Collected training seed 290019: 36 transitions.
+Collected training seed 290020: 39 transitions.
+Collected training seed 290021: 41 transitions.
+Collected training seed 290022: 50 transitions.
+Collected training seed 290023: 42 transitions.
+Collected training seed 290024: 44 transitions.
+Collected training seed 290025: 52 transitions.
+Collected training seed 290026: 41 transitions.
+Collected training seed 290027: 53 transitions.
+Collected training seed 290028: 35 transitions.
+Collected training seed 290029: 41 transitions.
+control update 0: original success 3/3, original fit 117/117.
+control update 1: original success 3/3, original fit 117/117.
+control update 10: original success 3/3, original fit 117/117.
+control update 100: original success 3/3, original fit 117/117.
+control update 500: original success 3/3, original fit 117/117.
+control update 1000: original success 3/3, original fit 117/117.
+control update 2000: original success 3/3, original fit 117/117.
+control update 4000: original success 3/3, original fit 117/117.
+control update 6000: original success 3/3, original fit 117/117.
+control update 8000: original success 3/3, original fit 117/117.
+expanded update 0: original success 3/3, original fit 117/117.
+expanded update 1: original success 3/3, original fit 116/117.
+expanded update 10: original success 0/3, original fit 63/117.
+expanded update 100: original success 0/3, original fit 64/117.
+expanded update 500: original success 0/3, original fit 70/117.
+expanded update 1000: original success 1/3, original fit 80/117.
+expanded update 2000: original success 0/3, original fit 86/117.
+expanded update 4000: original success 0/3, original fit 83/117.
+expanded update 6000: original success 1/3, original fit 85/117.
+expanded update 8000: original success 1/3, original fit 85/117.
+Training acquisition 290000: damage
+Training acquisition 290001: damage
+Training acquisition 290002: damage
+Training acquisition 290003: damage
+Training acquisition 290004: damage
+Training acquisition 290005: damage
+Training acquisition 290006: damage
+Training acquisition 290007: damage
+Training acquisition 290008: budget_blocked_stall
+Training acquisition 290009: damage
+Training acquisition 290010: success
+Training acquisition 290011: budget_blocked_stall
+Training acquisition 290012: budget_blocked_stall
+Training acquisition 290013: budget_stationary_stall
+Training acquisition 290014: budget_blocked_stall
+Training acquisition 290015: damage
+Training acquisition 290016: budget_blocked_stall
+Training acquisition 290017: budget_blocked_stall
+Training acquisition 290018: damage
+Training acquisition 290019: damage
+Training acquisition 290020: damage
+Training acquisition 290021: success
+Training acquisition 290022: budget_stationary_stall
+Training acquisition 290023: damage
+Training acquisition 290024: damage
+Training acquisition 290025: budget_blocked_stall
+Training acquisition 290026: budget_blocked_stall
+Training acquisition 290027: damage
+Training acquisition 290028: budget_blocked_stall
+Training acquisition 290029: budget_blocked_stall
+Holdout control 1/100: seed 390000, damage, successes 0.
+Holdout control 2/100: seed 390001, budget_while_moving, successes 0.
+Holdout control 3/100: seed 390002, budget_blocked_stall, successes 0.
+Holdout control 4/100: seed 390003, budget_blocked_stall, successes 0.
+Holdout control 5/100: seed 390004, budget_blocked_stall, successes 0.
+Holdout control 6/100: seed 390005, success, successes 1.
+Holdout control 7/100: seed 390006, budget_while_moving, successes 1.
+Holdout control 8/100: seed 390007, budget_blocked_stall, successes 1.
+Holdout control 9/100: seed 390008, budget_blocked_stall, successes 1.
+Holdout control 10/100: seed 390009, budget_blocked_stall, successes 1.
+Holdout control 11/100: seed 390010, damage, successes 1.
+Holdout control 12/100: seed 390011, budget_while_moving, successes 1.
+Holdout control 13/100: seed 390012, budget_blocked_stall, successes 1.
+Holdout control 14/100: seed 390013, budget_blocked_stall, successes 1.
+Holdout control 15/100: seed 390014, budget_blocked_stall, successes 1.
+Holdout control 16/100: seed 390015, damage, successes 1.
+Holdout control 17/100: seed 390016, damage, successes 1.
+Holdout control 18/100: seed 390017, damage, successes 1.
+Holdout control 19/100: seed 390018, damage, successes 1.
+Holdout control 20/100: seed 390019, damage, successes 1.
+Holdout control 21/100: seed 390020, damage, successes 1.
+Holdout control 22/100: seed 390021, budget_blocked_stall, successes 1.
+Holdout control 23/100: seed 390022, damage, successes 1.
+Holdout control 24/100: seed 390023, budget_blocked_stall, successes 1.
+Holdout control 25/100: seed 390024, budget_blocked_stall, successes 1.
+Holdout control 26/100: seed 390025, damage, successes 1.
+Holdout control 27/100: seed 390026, damage, successes 1.
+Holdout control 28/100: seed 390027, budget_while_moving, successes 1.
+Holdout control 29/100: seed 390028, success, successes 2.
+Holdout control 30/100: seed 390029, damage, successes 2.
+Holdout control 31/100: seed 390030, damage, successes 2.
+Holdout control 32/100: seed 390031, budget_blocked_stall, successes 2.
+Holdout control 33/100: seed 390032, success, successes 3.
+Holdout control 34/100: seed 390033, budget_blocked_stall, successes 3.
+Holdout control 35/100: seed 390034, budget_blocked_stall, successes 3.
+Holdout control 36/100: seed 390035, budget_while_moving, successes 3.
+Holdout control 37/100: seed 390036, budget_blocked_stall, successes 3.
+Holdout control 38/100: seed 390037, budget_blocked_stall, successes 3.
+Holdout control 39/100: seed 390038, budget_blocked_stall, successes 3.
+Holdout control 40/100: seed 390039, damage, successes 3.
+Holdout control 41/100: seed 390040, damage, successes 3.
+Holdout control 42/100: seed 390041, budget_blocked_stall, successes 3.
+Holdout control 43/100: seed 390042, damage, successes 3.
+Holdout control 44/100: seed 390043, budget_blocked_stall, successes 3.
+Holdout control 45/100: seed 390044, damage, successes 3.
+Holdout control 46/100: seed 390045, budget_blocked_stall, successes 3.
+Holdout control 47/100: seed 390046, budget_blocked_stall, successes 3.
+Holdout control 48/100: seed 390047, damage, successes 3.
+Holdout control 49/100: seed 390048, budget_blocked_stall, successes 3.
+Holdout control 50/100: seed 390049, damage, successes 3.
+Holdout control 51/100: seed 390050, damage, successes 3.
+Holdout control 52/100: seed 390051, damage, successes 3.
+Holdout control 53/100: seed 390052, budget_blocked_stall, successes 3.
+Holdout control 54/100: seed 390053, budget_blocked_stall, successes 3.
+Holdout control 55/100: seed 390054, budget_blocked_stall, successes 3.
+Holdout control 56/100: seed 390055, damage, successes 3.
+Holdout control 57/100: seed 390056, damage, successes 3.
+Holdout control 58/100: seed 390057, budget_blocked_stall, successes 3.
+Holdout control 59/100: seed 390058, damage, successes 3.
+Holdout control 60/100: seed 390059, damage, successes 3.
+Holdout control 61/100: seed 390060, damage, successes 3.
+Holdout control 62/100: seed 390061, damage, successes 3.
+Holdout control 63/100: seed 390062, budget_blocked_stall, successes 3.
+Holdout control 64/100: seed 390063, success, successes 4.
+Holdout control 65/100: seed 390064, budget_blocked_stall, successes 4.
+Holdout control 66/100: seed 390065, damage, successes 4.
+Holdout control 67/100: seed 390066, damage, successes 4.
+Holdout control 68/100: seed 390067, budget_blocked_stall, successes 4.
+Holdout control 69/100: seed 390068, damage, successes 4.
+Holdout control 70/100: seed 390069, budget_blocked_stall, successes 4.
+Holdout control 71/100: seed 390070, damage, successes 4.
+Holdout control 72/100: seed 390071, budget_blocked_stall, successes 4.
+Holdout control 73/100: seed 390072, budget_blocked_stall, successes 4.
+Holdout control 74/100: seed 390073, damage, successes 4.
+Holdout control 75/100: seed 390074, budget_blocked_stall, successes 4.
+Holdout control 76/100: seed 390075, budget_blocked_stall, successes 4.
+Holdout control 77/100: seed 390076, damage, successes 4.
+Holdout control 78/100: seed 390077, budget_blocked_stall, successes 4.
+Holdout control 79/100: seed 390078, damage, successes 4.
+Holdout control 80/100: seed 390079, budget_blocked_stall, successes 4.
+Holdout control 81/100: seed 390080, damage, successes 4.
+Holdout control 82/100: seed 390081, damage, successes 4.
+Holdout control 83/100: seed 390082, budget_blocked_stall, successes 4.
+Holdout control 84/100: seed 390083, damage, successes 4.
+Holdout control 85/100: seed 390084, damage, successes 4.
+Holdout control 86/100: seed 390085, damage, successes 4.
+Holdout control 87/100: seed 390086, damage, successes 4.
+Holdout control 88/100: seed 390087, damage, successes 4.
+Holdout control 89/100: seed 390088, damage, successes 4.
+Holdout control 90/100: seed 390089, damage, successes 4.
+Holdout control 91/100: seed 390090, budget_blocked_stall, successes 4.
+Holdout control 92/100: seed 390091, damage, successes 4.
+Holdout control 93/100: seed 390092, budget_blocked_stall, successes 4.
+Holdout control 94/100: seed 390093, budget_blocked_stall, successes 4.
+Holdout control 95/100: seed 390094, damage, successes 4.
+Holdout control 96/100: seed 390095, damage, successes 4.
+Holdout control 97/100: seed 390096, damage, successes 4.
+Holdout control 98/100: seed 390097, damage, successes 4.
+Holdout control 99/100: seed 390098, budget_blocked_stall, successes 4.
+Holdout control 100/100: seed 390099, damage, successes 4.
+Verified control final reload seed 10000.
+Verified control final reload seed 10001.
+Verified control final reload seed 10002.
+Verified control final reload seed 390000.
+Verified control final reload seed 390001.
+Verified control final reload seed 390002.
+Verified control final reload seed 390003.
+Verified control final reload seed 390004.
+Verified control final reload seed 390005.
+Holdout expanded 1/100: seed 390000, damage, successes 0.
+Holdout expanded 2/100: seed 390001, budget_while_moving, successes 0.
+Holdout expanded 3/100: seed 390002, damage, successes 0.
+Holdout expanded 4/100: seed 390003, budget_blocked_stall, successes 0.
+Holdout expanded 5/100: seed 390004, budget_blocked_stall, successes 0.
+Holdout expanded 6/100: seed 390005, damage, successes 0.
+Holdout expanded 7/100: seed 390006, budget_blocked_stall, successes 0.
+Holdout expanded 8/100: seed 390007, damage, successes 0.
+Holdout expanded 9/100: seed 390008, budget_blocked_stall, successes 0.
+Holdout expanded 10/100: seed 390009, budget_blocked_stall, successes 0.
+Holdout expanded 11/100: seed 390010, budget_blocked_stall, successes 0.
+Holdout expanded 12/100: seed 390011, damage, successes 0.
+Holdout expanded 13/100: seed 390012, budget_blocked_stall, successes 0.
+Holdout expanded 14/100: seed 390013, budget_blocked_stall, successes 0.
+Holdout expanded 15/100: seed 390014, damage, successes 0.
+Holdout expanded 16/100: seed 390015, budget_blocked_stall, successes 0.
+Holdout expanded 17/100: seed 390016, damage, successes 0.
+Holdout expanded 18/100: seed 390017, damage, successes 0.
+Holdout expanded 19/100: seed 390018, budget_blocked_stall, successes 0.
+Holdout expanded 20/100: seed 390019, budget_blocked_stall, successes 0.
+Holdout expanded 21/100: seed 390020, budget_blocked_stall, successes 0.
+Holdout expanded 22/100: seed 390021, budget_blocked_stall, successes 0.
+Holdout expanded 23/100: seed 390022, damage, successes 0.
+Holdout expanded 24/100: seed 390023, damage, successes 0.
+Holdout expanded 25/100: seed 390024, budget_blocked_stall, successes 0.
+Holdout expanded 26/100: seed 390025, budget_blocked_stall, successes 0.
+Holdout expanded 27/100: seed 390026, damage, successes 0.
+Holdout expanded 28/100: seed 390027, damage, successes 0.
+Holdout expanded 29/100: seed 390028, budget_blocked_stall, successes 0.
+Holdout expanded 30/100: seed 390029, budget_blocked_stall, successes 0.
+Holdout expanded 31/100: seed 390030, damage, successes 0.
+Holdout expanded 32/100: seed 390031, damage, successes 0.
+Holdout expanded 33/100: seed 390032, damage, successes 0.
+Holdout expanded 34/100: seed 390033, budget_blocked_stall, successes 0.
+Holdout expanded 35/100: seed 390034, damage, successes 0.
+Holdout expanded 36/100: seed 390035, damage, successes 0.
+Holdout expanded 37/100: seed 390036, budget_blocked_stall, successes 0.
+Holdout expanded 38/100: seed 390037, damage, successes 0.
+Holdout expanded 39/100: seed 390038, damage, successes 0.
+Holdout expanded 40/100: seed 390039, damage, successes 0.
+Holdout expanded 41/100: seed 390040, damage, successes 0.
+Holdout expanded 42/100: seed 390041, budget_blocked_stall, successes 0.
+Holdout expanded 43/100: seed 390042, budget_blocked_stall, successes 0.
+Holdout expanded 44/100: seed 390043, budget_blocked_stall, successes 0.
+Holdout expanded 45/100: seed 390044, budget_blocked_stall, successes 0.
+Holdout expanded 46/100: seed 390045, damage, successes 0.
+Holdout expanded 47/100: seed 390046, budget_blocked_stall, successes 0.
+Holdout expanded 48/100: seed 390047, budget_blocked_stall, successes 0.
+Holdout expanded 49/100: seed 390048, budget_blocked_stall, successes 0.
+Holdout expanded 50/100: seed 390049, budget_blocked_stall, successes 0.
+Holdout expanded 51/100: seed 390050, damage, successes 0.
+Holdout expanded 52/100: seed 390051, damage, successes 0.
+Holdout expanded 53/100: seed 390052, budget_blocked_stall, successes 0.
+Holdout expanded 54/100: seed 390053, damage, successes 0.
+Holdout expanded 55/100: seed 390054, damage, successes 0.
+Holdout expanded 56/100: seed 390055, budget_blocked_stall, successes 0.
+Holdout expanded 57/100: seed 390056, budget_blocked_stall, successes 0.
+Holdout expanded 58/100: seed 390057, damage, successes 0.
+Holdout expanded 59/100: seed 390058, damage, successes 0.
+Holdout expanded 60/100: seed 390059, damage, successes 0.
+Holdout expanded 61/100: seed 390060, damage, successes 0.
+Holdout expanded 62/100: seed 390061, budget_blocked_stall, successes 0.
+Holdout expanded 63/100: seed 390062, success, successes 1.
+Holdout expanded 64/100: seed 390063, success, successes 2.
+Holdout expanded 65/100: seed 390064, damage, successes 2.
+Holdout expanded 66/100: seed 390065, damage, successes 2.
+Holdout expanded 67/100: seed 390066, damage, successes 2.
+Holdout expanded 68/100: seed 390067, damage, successes 2.
+Holdout expanded 69/100: seed 390068, budget_blocked_stall, successes 2.
+Holdout expanded 70/100: seed 390069, damage, successes 2.
+Holdout expanded 71/100: seed 390070, budget_blocked_stall, successes 2.
+Holdout expanded 72/100: seed 390071, success, successes 3.
+Holdout expanded 73/100: seed 390072, budget_blocked_stall, successes 3.
+Holdout expanded 74/100: seed 390073, budget_blocked_stall, successes 3.
+Holdout expanded 75/100: seed 390074, damage, successes 3.
+Holdout expanded 76/100: seed 390075, damage, successes 3.
+Holdout expanded 77/100: seed 390076, budget_blocked_stall, successes 3.
+Holdout expanded 78/100: seed 390077, damage, successes 3.
+Holdout expanded 79/100: seed 390078, damage, successes 3.
+Holdout expanded 80/100: seed 390079, budget_blocked_stall, successes 3.
+Holdout expanded 81/100: seed 390080, damage, successes 3.
+Holdout expanded 82/100: seed 390081, damage, successes 3.
+Holdout expanded 83/100: seed 390082, budget_blocked_stall, successes 3.
+Holdout expanded 84/100: seed 390083, damage, successes 3.
+Holdout expanded 85/100: seed 390084, damage, successes 3.
+Holdout expanded 86/100: seed 390085, budget_blocked_stall, successes 3.
+Holdout expanded 87/100: seed 390086, damage, successes 3.
+Holdout expanded 88/100: seed 390087, success, successes 4.
+Holdout expanded 89/100: seed 390088, damage, successes 4.
+Holdout expanded 90/100: seed 390089, damage, successes 4.
+Holdout expanded 91/100: seed 390090, damage, successes 4.
+Holdout expanded 92/100: seed 390091, damage, successes 4.
+Holdout expanded 93/100: seed 390092, damage, successes 4.
+Holdout expanded 94/100: seed 390093, budget_blocked_stall, successes 4.
+Holdout expanded 95/100: seed 390094, budget_blocked_stall, successes 4.
+Holdout expanded 96/100: seed 390095, damage, successes 4.
+Holdout expanded 97/100: seed 390096, budget_blocked_stall, successes 4.
+Holdout expanded 98/100: seed 390097, damage, successes 4.
+Holdout expanded 99/100: seed 390098, damage, successes 4.
+Holdout expanded 100/100: seed 390099, damage, successes 4.
+Verified expanded final reload seed 10000.
+Verified expanded final reload seed 10001.
+Verified expanded final reload seed 10002.
+Verified expanded final reload seed 390000.
+Verified expanded final reload seed 390001.
+Verified expanded final reload seed 390002.
+Verified expanded final reload seed 390003.
+Verified expanded final reload seed 390004.
+Verified expanded final reload seed 390062.

@@ -1,0 +1,1442 @@
+[
+  {
+    "seed": 290000,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290000,
+      "successful_episodes": 1,
+      "collection_environment_steps": 41,
+      "accepted_transitions": 41,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290000,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 41,
+          "return": 107.52213836312293,
+          "accepted_transitions": 41,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 41,
+          "travel_distance": 1.6199985221028328,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 41,
+        "planned_actions": 41,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.6199985221028328,
+        "return": 107.52213836312293,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290001,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290001,
+      "successful_episodes": 1,
+      "collection_environment_steps": 48,
+      "accepted_transitions": 48,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290001,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 48,
+          "return": 107.63036690950393,
+          "accepted_transitions": 48,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 48,
+          "travel_distance": 2.0049981623888016,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 48,
+        "planned_actions": 48,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 2.0049981623888016,
+        "return": 107.63036690950393,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290002,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290002,
+      "successful_episodes": 1,
+      "collection_environment_steps": 45,
+      "accepted_transitions": 45,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290002,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 45,
+          "return": 107.52823229581116,
+          "accepted_transitions": 45,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 45,
+          "travel_distance": 1.9299982264637947,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 45,
+        "planned_actions": 45,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9299982264637947,
+        "return": 107.52823229581116,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290003,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290003,
+      "successful_episodes": 1,
+      "collection_environment_steps": 37,
+      "accepted_transitions": 37,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290003,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 37,
+          "return": 107.59977008104323,
+          "accepted_transitions": 37,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 37,
+          "travel_distance": 1.5549986213445663,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 37,
+        "planned_actions": 37,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5549986213445663,
+        "return": 107.59977008104323,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290004,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290004,
+      "successful_episodes": 1,
+      "collection_environment_steps": 41,
+      "accepted_transitions": 41,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290004,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 41,
+          "return": 107.68223242461681,
+          "accepted_transitions": 41,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 41,
+          "travel_distance": 1.5499985963106155,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 41,
+        "planned_actions": 41,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5499985963106155,
+        "return": 107.68223242461681,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290005,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290005,
+      "successful_episodes": 1,
+      "collection_environment_steps": 40,
+      "accepted_transitions": 40,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290005,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 40,
+          "return": 107.54136822372675,
+          "accepted_transitions": 40,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 40,
+          "travel_distance": 1.5249986574053764,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 40,
+        "planned_actions": 40,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5249986574053764,
+        "return": 107.54136822372675,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290006,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290006,
+      "successful_episodes": 1,
+      "collection_environment_steps": 54,
+      "accepted_transitions": 54,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290006,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 54,
+          "return": 107.45216123908757,
+          "accepted_transitions": 54,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 54,
+          "travel_distance": 2.0149981528520584,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 54,
+        "planned_actions": 54,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 2.0149981528520584,
+        "return": 107.45216123908757,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290007,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290007,
+      "successful_episodes": 1,
+      "collection_environment_steps": 45,
+      "accepted_transitions": 45,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290007,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 45,
+          "return": 107.63363033384084,
+          "accepted_transitions": 45,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 45,
+          "travel_distance": 1.9299982190132141,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 45,
+        "planned_actions": 45,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9299982190132141,
+        "return": 107.63363033384084,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290008,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290008,
+      "successful_episodes": 1,
+      "collection_environment_steps": 39,
+      "accepted_transitions": 39,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290008,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 39,
+          "return": 107.68822384476661,
+          "accepted_transitions": 39,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 39,
+          "travel_distance": 1.5699985697865486,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 39,
+        "planned_actions": 39,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5699985697865486,
+        "return": 107.68822384476661,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290009,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290009,
+      "successful_episodes": 1,
+      "collection_environment_steps": 37,
+      "accepted_transitions": 37,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290009,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 37,
+          "return": 107.57180834561586,
+          "accepted_transitions": 37,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 37,
+          "travel_distance": 1.5549986436963081,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 37,
+        "planned_actions": 37,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5549986436963081,
+        "return": 107.57180834561586,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290010,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290010,
+      "successful_episodes": 1,
+      "collection_environment_steps": 49,
+      "accepted_transitions": 49,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290010,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 49,
+          "return": 107.5537028864026,
+          "accepted_transitions": 49,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 49,
+          "travel_distance": 1.8899983018636703,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 49,
+        "planned_actions": 49,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.8899983018636703,
+        "return": 107.5537028864026,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290011,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290011,
+      "successful_episodes": 1,
+      "collection_environment_steps": 42,
+      "accepted_transitions": 42,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290011,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 42,
+          "return": 107.56255638599396,
+          "accepted_transitions": 42,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 42,
+          "travel_distance": 1.609998531639576,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 42,
+        "planned_actions": 42,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.609998531639576,
+        "return": 107.56255638599396,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290012,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290012,
+      "successful_episodes": 1,
+      "collection_environment_steps": 61,
+      "accepted_transitions": 61,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290012,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 61,
+          "return": 107.50460817217827,
+          "accepted_transitions": 61,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 61,
+          "travel_distance": 2.0849981009960175,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 61,
+        "planned_actions": 61,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 2.0849981009960175,
+        "return": 107.50460817217827,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290013,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290013,
+      "successful_episodes": 1,
+      "collection_environment_steps": 47,
+      "accepted_transitions": 47,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290013,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 47,
+          "return": 107.48806671202182,
+          "accepted_transitions": 47,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 47,
+          "travel_distance": 1.5599986091256142,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 47,
+        "planned_actions": 47,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5599986091256142,
+        "return": 107.48806671202182,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290014,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290014,
+      "successful_episodes": 1,
+      "collection_environment_steps": 47,
+      "accepted_transitions": 47,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290014,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 47,
+          "return": 107.39904095828533,
+          "accepted_transitions": 47,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 47,
+          "travel_distance": 1.9799982458353043,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 47,
+        "planned_actions": 47,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9799982458353043,
+        "return": 107.39904095828533,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290015,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290015,
+      "successful_episodes": 1,
+      "collection_environment_steps": 44,
+      "accepted_transitions": 44,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290015,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 44,
+          "return": 107.72376912236213,
+          "accepted_transitions": 44,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 44,
+          "travel_distance": 1.6599985510110855,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 44,
+        "planned_actions": 44,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.6599985510110855,
+        "return": 107.72376912236213,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290016,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290016,
+      "successful_episodes": 1,
+      "collection_environment_steps": 50,
+      "accepted_transitions": 50,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290016,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 50,
+          "return": 107.64960781484842,
+          "accepted_transitions": 50,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 50,
+          "travel_distance": 1.9149982929229736,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 50,
+        "planned_actions": 50,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9149982929229736,
+        "return": 107.64960781484842,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290017,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290017,
+      "successful_episodes": 1,
+      "collection_environment_steps": 42,
+      "accepted_transitions": 42,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290017,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 42,
+          "return": 107.53594485670328,
+          "accepted_transitions": 42,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 42,
+          "travel_distance": 1.4699987322092056,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 42,
+        "planned_actions": 42,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.4699987322092056,
+        "return": 107.53594485670328,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290018,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290018,
+      "successful_episodes": 1,
+      "collection_environment_steps": 40,
+      "accepted_transitions": 40,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290018,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 40,
+          "return": 107.82123358100652,
+          "accepted_transitions": 40,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 40,
+          "travel_distance": 1.4549986869096756,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 40,
+        "planned_actions": 40,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.4549986869096756,
+        "return": 107.82123358100652,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290019,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290019,
+      "successful_episodes": 1,
+      "collection_environment_steps": 36,
+      "accepted_transitions": 36,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290019,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 36,
+          "return": 107.50877262949943,
+          "accepted_transitions": 36,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 36,
+          "travel_distance": 1.6349985301494598,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 36,
+        "planned_actions": 36,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.6349985301494598,
+        "return": 107.50877262949943,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290020,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290020,
+      "successful_episodes": 1,
+      "collection_environment_steps": 39,
+      "accepted_transitions": 39,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290020,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 39,
+          "return": 107.57888207286595,
+          "accepted_transitions": 39,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 39,
+          "travel_distance": 1.4999986588954926,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 39,
+        "planned_actions": 39,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.4999986588954926,
+        "return": 107.57888207286595,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290021,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290021,
+      "successful_episodes": 1,
+      "collection_environment_steps": 41,
+      "accepted_transitions": 41,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290021,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 41,
+          "return": 107.57151161730289,
+          "accepted_transitions": 41,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 41,
+          "travel_distance": 1.86499834805727,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 41,
+        "planned_actions": 41,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.86499834805727,
+        "return": 107.57151161730289,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290022,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290022,
+      "successful_episodes": 1,
+      "collection_environment_steps": 50,
+      "accepted_transitions": 50,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290022,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 50,
+          "return": 107.52961077988147,
+          "accepted_transitions": 50,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 50,
+          "travel_distance": 1.6349985599517822,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 50,
+        "planned_actions": 50,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.6349985599517822,
+        "return": 107.52961077988147,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290023,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290023,
+      "successful_episodes": 1,
+      "collection_environment_steps": 42,
+      "accepted_transitions": 42,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290023,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 42,
+          "return": 107.43305835425853,
+          "accepted_transitions": 42,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 42,
+          "travel_distance": 1.5749985575675964,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 42,
+        "planned_actions": 42,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5749985575675964,
+        "return": 107.43305835425853,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290024,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290024,
+      "successful_episodes": 1,
+      "collection_environment_steps": 44,
+      "accepted_transitions": 44,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290024,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 44,
+          "return": 107.67625866830348,
+          "accepted_transitions": 44,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 44,
+          "travel_distance": 1.8349983543157578,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 44,
+        "planned_actions": 44,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.8349983543157578,
+        "return": 107.67625866830348,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290025,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290025,
+      "successful_episodes": 1,
+      "collection_environment_steps": 52,
+      "accepted_transitions": 52,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290025,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 52,
+          "return": 107.39828923493623,
+          "accepted_transitions": 52,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 52,
+          "travel_distance": 1.9999981969594955,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 52,
+        "planned_actions": 52,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9999981969594955,
+        "return": 107.39828923493623,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290026,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290026,
+      "successful_episodes": 1,
+      "collection_environment_steps": 41,
+      "accepted_transitions": 41,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290026,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 41,
+          "return": 107.7753580674529,
+          "accepted_transitions": 41,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 41,
+          "travel_distance": 1.5149986669421196,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 41,
+        "planned_actions": 41,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5149986669421196,
+        "return": 107.7753580674529,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290027,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290027,
+      "successful_episodes": 1,
+      "collection_environment_steps": 53,
+      "accepted_transitions": 53,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290027,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 53,
+          "return": 107.32255711108445,
+          "accepted_transitions": 53,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 53,
+          "travel_distance": 1.9899981617927551,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 53,
+        "planned_actions": 53,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9899981617927551,
+        "return": 107.32255711108445,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290028,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290028,
+      "successful_episodes": 1,
+      "collection_environment_steps": 35,
+      "accepted_transitions": 35,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290028,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 35,
+          "return": 107.73583021610975,
+          "accepted_transitions": 35,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 35,
+          "travel_distance": 1.5399986580014229,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 35,
+        "planned_actions": 35,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.5399986580014229,
+        "return": 107.73583021610975,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  },
+  {
+    "seed": 290029,
+    "collection": {
+      "method": "collision_free_astar_replay_initialization",
+      "requested_episodes": 1,
+      "seed": 290029,
+      "successful_episodes": 1,
+      "collection_environment_steps": 41,
+      "accepted_transitions": 41,
+      "optimizer_updates": 0,
+      "records": [
+        {
+          "seed": 290029,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "steps": 41,
+          "return": 107.53275330662727,
+          "accepted_transitions": 41,
+          "reason": "success",
+          "scene_generation_attempts": 1,
+          "reference_route_attempts": 1,
+          "planned_actions": 41,
+          "travel_distance": 1.514998659491539,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "accounting_note": "Collection steps exclude planner search and reset feasibility probes. Demonstrations use privileged geometry and are additional training data."
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 41,
+        "planned_actions": 41,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.514998659491539,
+        "return": 107.53275330662727,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ]
+  }
+]
