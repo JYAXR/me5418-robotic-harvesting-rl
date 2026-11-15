@@ -47,6 +47,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [031: frozen scene-10002 first-action correction](031_scene10002_rescue/RESULTS.md) | Does replacing only the final attempt-030 model's first reference disagreement restore scene 10002? | Step 23 chooses north_small over north_large by 0.041626. One correction changes 58-step damage failure into 200-step blocked budget failure; it does not rescue success. A later disagreement appears at corrected step 27, east_large over north_small by 0.033241. The full reference succeeds in 41 steps; two independent replays match every transition. Five episodes, 762 total simulation actions including certification, zero training updates; complete model/Adam/RNG states remain unchanged. |
 
+| [032: step-27 correction with step 23 fixed](032_scene10002_step27/RESULTS.md) | With the final attempt-030 policy frozen and step 23 corrected in both arms, does additionally correcting step 27 to north_small restore scene 10002? | No: the control exactly repeats the 200-step blocked budget failure, while the treatment fails by damage at step 58, return -62.610496 versus -41.612027. The next reference disagreement is step 28: east_large over north_large by 0.462166. Two independent reloads match all transitions. Four episodes, 680 simulator actions including certification, zero training updates; full model/Adam/RNG state unchanged. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

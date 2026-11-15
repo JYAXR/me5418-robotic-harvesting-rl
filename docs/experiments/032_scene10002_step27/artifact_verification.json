@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "protocol_commit": "6ac5943467d64df6c63244cfd236eba69a0e3128",
+  "raw_archive_files_verified": 11,
+  "raw_archive_bytes": 341756,
+  "archive_matches_run_byte_for_byte": true,
+  "source_hashes_unchanged": 142,
+  "git_index_raw_artifacts_byte_exact": 14,
+  "control_trace_byte_exact_to_attempt031": true,
+  "treatment_overrides": [
+    [
+      23,
+      4
+    ],
+    [
+      27,
+      0
+    ]
+  ],
+  "east_large_from_step28_through_58": true,
+  "final_contact_steps": 31,
+  "new_python_files_ascii_english": true,
+  "diagnostic_tests_passed": 20,
+  "ruff_passed": true,
+  "simulator_runs": 1,
+  "optimizer_updates": 0
+}

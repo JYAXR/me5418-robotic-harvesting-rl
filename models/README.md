@@ -69,3 +69,10 @@ damage failure becomes a 200-step blocked budget failure, with a later reference
 disagreement at step 27. No training or policy replacement occurred. Its complete
 final Adam-resume snapshot is now tracked at
 `docs/experiments/031_scene10002_rescue/inputs/final_td_state.pt`.
+
+[Attempt 032](../docs/experiments/032_scene10002_step27/RESULTS.md) holds that
+step-23 correction fixed and additionally replaces step 27 with `north_small`.
+This also fails: the 200-step blocked control becomes a 58-step damage failure,
+with a further reference disagreement at step 28. Independent reloads reproduce
+both trajectories; model parameters, Adam state and all training settings remain
+unchanged. These are assisted diagnostic interventions, not a repaired policy.
