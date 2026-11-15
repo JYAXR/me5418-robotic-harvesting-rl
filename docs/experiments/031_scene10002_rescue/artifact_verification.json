@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "protocol_commit": "44e667bc22a1a5a70977de4d077cb4cb81c7aa9a",
+  "raw_archive_files_verified": 13,
+  "raw_archive_bytes": 396282,
+  "archive_matches_run_byte_for_byte": true,
+  "source_hashes_unchanged": 129,
+  "git_index_raw_artifacts_byte_exact": 16,
+  "source_snapshot_unchanged": true,
+  "new_python_files_ascii_english": true,
+  "diagnostic_tests_passed": 16,
+  "ruff_passed": true,
+  "simulator_runs": 1,
+  "optimizer_updates": 0
+}

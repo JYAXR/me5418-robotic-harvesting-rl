@@ -45,6 +45,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [030: expanded supervised/calibrated stages](030_expanded_stages/RESULTS.md) | Can 20000 supervised and 20000 actual-return updates before 10000 Adam-preserving TD updates restore the original scenes and improve fresh generalization on unchanged architecture? | Phase endpoints succeed on 4/33, 9/33 and 7/33 training scenes; final original recovery is 2/3, with 10002 still failing from damage. Calibration-to-TD loses four successes and gains two. Fresh paired success is 13/100 versus source 9/100, with eleven gains, seven losses and damage failures 50 versus 47. Exact post-hoc paired p=0.481; robust improvement is unproven. All 60 independent updates, 344 trace audits and 14 reloads pass. Three inference endpoints and complete evidence are archived. |
 
+| [031: frozen scene-10002 first-action correction](031_scene10002_rescue/RESULTS.md) | Does replacing only the final attempt-030 model's first reference disagreement restore scene 10002? | Step 23 chooses north_small over north_large by 0.041626. One correction changes 58-step damage failure into 200-step blocked budget failure; it does not rescue success. A later disagreement appears at corrected step 27, east_large over north_small by 0.033241. The full reference succeeds in 41 steps; two independent replays match every transition. Five episodes, 762 total simulation actions including certification, zero training updates; complete model/Adam/RNG states remain unchanged. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

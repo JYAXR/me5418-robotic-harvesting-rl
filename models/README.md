@@ -61,3 +61,11 @@ and intermediate/final resume states remain in its local run directory.
 ```bash
 python scripts/evaluate_dqn.py --checkpoint models/stages_030_td.pt --episodes 3 --seed 10000
 ```
+
+[Attempt 031](../docs/experiments/031_scene10002_rescue/RESULTS.md) freezes this
+same final TD policy and diagnoses scene 10002. Replacing only its step-23
+`north_small` with `north_large` does not restore success: the original 58-step
+damage failure becomes a 200-step blocked budget failure, with a later reference
+disagreement at step 27. No training or policy replacement occurred. Its complete
+final Adam-resume snapshot is now tracked at
+`docs/experiments/031_scene10002_rescue/inputs/final_td_state.pt`.

@@ -1,0 +1,115 @@
+{
+  "first_fork": {
+    "step": 23,
+    "policy_action": 0,
+    "policy_action_name": "north_small",
+    "reference_action": 4,
+    "reference_action_name": "north_large",
+    "policy_q": 80.40086364746094,
+    "reference_q": 80.35923767089844,
+    "policy_minus_reference": 0.0416259765625,
+    "q_values": [
+      80.40086364746094,
+      77.05838012695312,
+      79.87879943847656,
+      -8.701590538024902,
+      80.35923767089844,
+      77.56924438476562,
+      80.1744613647461,
+      -15.698809623718262
+    ],
+    "encoded_observation_sha256": "af016f86d119be16532cb6c9321a19ffa38dda5d1c6c3f612b477e53729a8eea",
+    "identical_prefix_steps": 22
+  },
+  "pair_audit": {
+    "identical_prefix_steps": 22,
+    "identical_fork_input_and_q": true,
+    "baseline_overrides": 0,
+    "corrected_overrides": 1,
+    "all_other_actions_autonomous": true
+  },
+  "metrics": {
+    "baseline": {
+      "seed": 10002,
+      "return": -62.168229881803754,
+      "steps": 58,
+      "success": false,
+      "damage": true,
+      "budget_exhausted": false,
+      "travel_distance": 1.182816468179226,
+      "peak_deformation": 1.0004928547960457,
+      "distance_to_target": 0.16444115340709686,
+      "stationary_steps": 0,
+      "blocked_steps": 1
+    },
+    "corrected": {
+      "seed": 10002,
+      "return": -41.61202685545457,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.0917855724692345,
+      "peak_deformation": 0.2952399325836786,
+      "distance_to_target": 0.21267832815647125,
+      "stationary_steps": 171,
+      "blocked_steps": 174
+    },
+    "reference": {
+      "seed": 10002,
+      "return": 107.64338030368089,
+      "steps": 41,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.584998570382595,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.047610849142074585,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    }
+  },
+  "correction_restores_success": false,
+  "next_reference_disagreement": {
+    "step": 27,
+    "policy_action": 6,
+    "policy_action_name": "east_large",
+    "reference_action": 0,
+    "reference_action_name": "north_small",
+    "policy_q": 87.21077728271484,
+    "reference_q": 87.17753601074219,
+    "policy_minus_reference": 0.03324127197265625,
+    "q_values": [
+      87.17753601074219,
+      84.02177429199219,
+      85.9679183959961,
+      -8.677807807922363,
+      87.03572082519531,
+      82.2126235961914,
+      87.21077728271484,
+      -16.40605354309082
+    ],
+    "encoded_observation_sha256": "6a0620d269328ea3ed349aad2afb8c3d40bd1cbd07e608fa026b87ce187811c0",
+    "identical_prefix_steps": 26
+  },
+  "optimizer_updates": 0,
+  "main_diagnostic_episodes": 2,
+  "reference_episodes": 1,
+  "verification_episodes": 2,
+  "main_executed_actions": 258,
+  "scripted_reference_actions": 41,
+  "verification_executed_actions": 258,
+  "main_forced_actions": 1,
+  "verification_forced_actions": 1,
+  "certification_actions_by_main_mode": {
+    "baseline": 41,
+    "corrected": 41,
+    "reference": 41
+  },
+  "verification_certification_actions": 82,
+  "total_simulator_actions": 762,
+  "all_full_states_unchanged": true,
+  "all_inputs_unchanged": true,
+  "independent_verification_passed": true,
+  "scope": "One frozen model and known scene; assisted diagnostic, not learned repair."
+}
