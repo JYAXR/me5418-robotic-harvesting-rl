@@ -1,0 +1,62 @@
+[
+  {
+    "update": 2031,
+    "mode": "greedy",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 200
+  },
+  {
+    "update": 2031,
+    "mode": "corrected",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 42
+  },
+  {
+    "update": 2226,
+    "mode": "greedy",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 200
+  },
+  {
+    "update": 2226,
+    "mode": "corrected",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 42
+  },
+  {
+    "update": 2344,
+    "mode": "greedy",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 200
+  },
+  {
+    "update": 2344,
+    "mode": "corrected",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 42
+  },
+  {
+    "update": 2345,
+    "mode": "greedy",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 200
+  },
+  {
+    "update": 2345,
+    "mode": "corrected",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 42
+  },
+  {
+    "update": 2346,
+    "mode": "greedy",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 200
+  },
+  {
+    "update": 2346,
+    "mode": "corrected",
+    "all_decisions_and_trajectory_match": true,
+    "steps": 42
+  }
+]

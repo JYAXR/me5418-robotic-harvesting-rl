@@ -1,0 +1,28 @@
+{
+  "preexecution_commit": "ecc89e4532f0f575aaff930d74ed9244237b6a6d",
+  "commands": [
+    {
+      "command": ".venv/Scripts/python.exe -m pytest -q tests/test_step25_rescue.py tests/test_single_action_rescue.py tests/test_single_action_rescue_verification.py tests/test_reference_reset.py",
+      "passed": 55,
+      "seconds": 9.9
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m pytest -q tests/test_step25_rescue.py",
+      "passed": 12,
+      "seconds": 3.87,
+      "reason": "Recheck after explicit reset equality, unchanged step-22 guard, source binding and failure-status additions."
+    },
+    {
+      "command": ".venv/Scripts/ruff.exe check docs/experiments/024_step25_rescue/run_step25_rescue.py tests/test_step25_rescue.py",
+      "passed": true
+    }
+  ],
+  "final_script_sha256": "376f3eb198349f51b5c6559487791494eb53c28c3c777c5fad9d4a33f0e08200",
+  "test_sha256": "5daebb4290fd0a6cca814df32188ef4db1e0a44c41ed5fa5a2c967b1acdcec70",
+  "formal_runs_started": 1,
+  "formal_runs_completed": 1,
+  "formal_runs_failed": 0,
+  "independent_verification_episodes": 10,
+  "post_run_pair_audit_passed": true,
+  "unit_tests_excluded_from_formal_work_counts": true
+}

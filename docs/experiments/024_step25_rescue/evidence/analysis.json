@@ -1,0 +1,128 @@
+{
+  "models": [
+    {
+      "update": 2031,
+      "fork": {
+        "step": 25,
+        "identical_prefix": true,
+        "identical_fork_input_and_q": true,
+        "policy_action": 6,
+        "corrected_action": 4,
+        "q_north_large_minus_east_large": -0.168975830078125
+      },
+      "unchanged_step22_action": 0,
+      "fork_state_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+      "fork_position": [
+        0.3296593129634857,
+        0.4872216582298279
+      ],
+      "corrected_next_position": [
+        0.3296593129634857,
+        0.5472216010093689
+      ],
+      "corrected_step25_reward": -0.01214721202850342,
+      "greedy_stationary_eastward_tail_steps": 176,
+      "single_override_verified": true
+    },
+    {
+      "update": 2226,
+      "fork": {
+        "step": 25,
+        "identical_prefix": true,
+        "identical_fork_input_and_q": true,
+        "policy_action": 6,
+        "corrected_action": 4,
+        "q_north_large_minus_east_large": -0.06340789794921875
+      },
+      "unchanged_step22_action": 0,
+      "fork_state_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+      "fork_position": [
+        0.3296593129634857,
+        0.4872216582298279
+      ],
+      "corrected_next_position": [
+        0.3296593129634857,
+        0.5472216010093689
+      ],
+      "corrected_step25_reward": -0.01214721202850342,
+      "greedy_stationary_eastward_tail_steps": 176,
+      "single_override_verified": true
+    },
+    {
+      "update": 2344,
+      "fork": {
+        "step": 25,
+        "identical_prefix": true,
+        "identical_fork_input_and_q": true,
+        "policy_action": 6,
+        "corrected_action": 4,
+        "q_north_large_minus_east_large": -0.04474639892578125
+      },
+      "unchanged_step22_action": 0,
+      "fork_state_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+      "fork_position": [
+        0.3296593129634857,
+        0.4872216582298279
+      ],
+      "corrected_next_position": [
+        0.3296593129634857,
+        0.5472216010093689
+      ],
+      "corrected_step25_reward": -0.01214721202850342,
+      "greedy_stationary_eastward_tail_steps": 176,
+      "single_override_verified": true
+    },
+    {
+      "update": 2345,
+      "fork": {
+        "step": 25,
+        "identical_prefix": true,
+        "identical_fork_input_and_q": true,
+        "policy_action": 6,
+        "corrected_action": 4,
+        "q_north_large_minus_east_large": -0.081451416015625
+      },
+      "unchanged_step22_action": 0,
+      "fork_state_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+      "fork_position": [
+        0.3296593129634857,
+        0.4872216582298279
+      ],
+      "corrected_next_position": [
+        0.3296593129634857,
+        0.5472216010093689
+      ],
+      "corrected_step25_reward": -0.01214721202850342,
+      "greedy_stationary_eastward_tail_steps": 176,
+      "single_override_verified": true
+    },
+    {
+      "update": 2346,
+      "fork": {
+        "step": 25,
+        "identical_prefix": true,
+        "identical_fork_input_and_q": true,
+        "policy_action": 6,
+        "corrected_action": 4,
+        "q_north_large_minus_east_large": -0.0930328369140625
+      },
+      "unchanged_step22_action": 0,
+      "fork_state_sha256": "8e27f43ffd9ba9234be3a6c894dff2d62fae2c9a2efe4e5c8b75541cffdca8d8",
+      "fork_position": [
+        0.3296593129634857,
+        0.4872216582298279
+      ],
+      "corrected_next_position": [
+        0.3296593129634857,
+        0.5472216010093689
+      ],
+      "corrected_step25_reward": -0.01214721202850342,
+      "greedy_stationary_eastward_tail_steps": 176,
+      "single_override_verified": true
+    }
+  ],
+  "all_five_share_same_encoded_fork_state": true,
+  "unassisted_successes": 0,
+  "assisted_successes": 5,
+  "interpretation": "A single off-reference recovery action is sufficient for these five frozen failures, with step 22 unchanged. This is not an autonomously learned repair, a unique-cause proof, or a generalization result."
+}
