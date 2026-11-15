@@ -1,0 +1,5 @@
+{
+  "optimizer_updates": 8000,
+  "full_episodes": 315,
+  "conditional_episodes": 105
+}

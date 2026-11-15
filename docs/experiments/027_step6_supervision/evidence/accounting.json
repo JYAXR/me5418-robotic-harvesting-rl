@@ -1,0 +1,44 @@
+{
+  "resets_by_phase": {
+    "treatment_full": 315,
+    "treatment_conditional": 105,
+    "verification_full": 21,
+    "verification_conditional": 7,
+    "posthoc_verification_full": 0,
+    "posthoc_verification_conditional": 0,
+    "delivery_full": 3
+  },
+  "actions_by_phase": {
+    "treatment_full": 12295,
+    "treatment_conditional": 4568,
+    "verification_full": 819,
+    "verification_conditional": 452,
+    "posthoc_verification_full": 0,
+    "posthoc_verification_conditional": 0,
+    "delivery_full": 117
+  },
+  "certification_actions_by_phase": {
+    "treatment_full": 12285,
+    "treatment_conditional": 4305,
+    "verification_full": 819,
+    "verification_conditional": 287,
+    "posthoc_verification_full": 0,
+    "posthoc_verification_conditional": 0,
+    "delivery_full": 117
+  },
+  "total_resets": 451,
+  "total_executed_actions": 18251,
+  "total_certification_actions": 17813,
+  "total_simulator_actions": 36064,
+  "main_optimizer_updates": 8000,
+  "gate_optimizer_updates": 4,
+  "independent_optimizer_updates": 401,
+  "total_new_optimizer_updates": 8405,
+  "scripted_prefix_actions_included": 2688,
+  "forced_recovery_actions": 0,
+  "held_out_scenes": 0,
+  "historical_baseline_full_episodes_not_new_work": 207,
+  "historical_baseline_conditional_episodes_not_new_work": 69,
+  "new_collection_actions": 0,
+  "note": "The recovery sample is reused with zero collection actions; conditional probes have 24 scripted prefix actions each. Unit tests are outside formal counts."
+}

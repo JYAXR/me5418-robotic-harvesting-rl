@@ -6,10 +6,26 @@ fruit while choosing between detours and controlled contact with flexible
 branches. The same environment supports deterministic transitions and bounded
 execution noise.
 
+## Verified policy for three known scenes
+
+The [attempt-027 policy](models/README.md) repairs the diagnosed early-turn
+failures while retaining learned recovery. Its final checkpoint can be evaluated
+in the configured project environment:
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/step6_repair_027.pt --episodes 3 --seed 10000
+```
+
+The three known training scenes succeed in 35, 41 and 41 steps. This is a
+training-scene result; unseen-scene generalization has not been established.
+The [experiment record](docs/experiments/027_step6_supervision/RESULTS.md)
+contains the controlled comparison, full traces, limitations and verification.
+
 ## Clean submission
 
-Run outputs are generated locally and are not included in the repository or
-submission archive. The tracked `results/` directory contains only `.gitkeep`.
+Routine run outputs are generated locally and excluded from the submission
+archive. Audited experiment records are tracked under `docs/experiments/`, and
+the verified final inference policy is tracked under `models/`. The tracked `results/` directory contains only `.gitkeep`.
 Running a demo creates its output directory and files as needed.
 
 To build a submission containing source, configuration, tests, and the current

@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "selection": "All autonomous treatment failures after the primary run; none were found.",
+  "optimizer_updates": 0,
+  "episodes": 0,
+  "results": [],
+  "script_sha256": "e6e57ad817bd2c371c697d4bb1bbd9c4ebac027e5554f57246a723b545fbec3b",
+  "scope": "No failed-model replay was needed; no additional simulation was performed."
+}

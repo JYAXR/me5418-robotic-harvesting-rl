@@ -1,0 +1,110 @@
+{
+  "source_run": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\step6_supervision_20261115",
+  "files": {
+    "accounting.json": {
+      "sha256": "48f653902abd29c8f3747b470efecd5a17c3a017b88318fe209f0430c31f1556",
+      "bytes": 1541
+    },
+    "analysis.json": {
+      "sha256": "5fc8766d68789d8c0d5cc091c41da95de6f3483a0c8439a545781bb505b9324c",
+      "bytes": 244241
+    },
+    "baseline_conditional.json": {
+      "sha256": "1aa4e5bd112bbc5362e1aa69ec583dfac8b482c7a749f0319ad61f3e963c6855",
+      "bytes": 1087120
+    },
+    "conditional.json": {
+      "sha256": "e74c5014bc450bbcb251ea3316a6915a0c86299eae1b1c88a73e40fa6d972889",
+      "bytes": 1626472
+    },
+    "delivery_verification.json": {
+      "sha256": "bff5db56a4e1ae7be42002f0fbef018e1078a68f498815324d3a189d914eef2e",
+      "bytes": 4622
+    },
+    "dense_compact.json": {
+      "sha256": "093293e46e080230577f90354d985e50beb48a1546751fc9a739479a8999f759",
+      "bytes": 2621701
+    },
+    "failure_reload_verification.json": {
+      "sha256": "a832b8d21bb47f15099af545e8801cde6021c1efee6ab8bc1ea22f4b0c63d926",
+      "bytes": 358
+    },
+    "gates.json": {
+      "sha256": "5b78043815de4e78d12bcef7ab1b1f4993b28902fc8961c9588df8284b6c5a77",
+      "bytes": 1413
+    },
+    "historical_controls.json": {
+      "sha256": "46b4a94266869290a0a8fe332dfaaec477bffe50d629bcc4e9e244b717e6f10d",
+      "bytes": 2788990
+    },
+    "inference_model_hashes.json": {
+      "sha256": "72b1b5452ceae2a075b69731d5f5ccb2fed45fe6f28fae3390fb1ccf435ffdfe",
+      "bytes": 9351
+    },
+    "main_completed.json": {
+      "sha256": "79f52ecf07fa74df36e973f3a810eae8f8837f0b9a492593ef68f981e00f8ca6",
+      "bytes": 92
+    },
+    "model_hashes.json": {
+      "sha256": "88748f590fb065d9acdcd4a739705062da7ed88a4d8fa77665f7f747ebe60549",
+      "bytes": 13198
+    },
+    "observations.json": {
+      "sha256": "feda7fabd7a2111b6267ec5a881dd66f71190e184cbbd5216ef1002368415dc2",
+      "bytes": 4187171
+    },
+    "progress.json": {
+      "sha256": "36b4f293c437d38ecec19de205f350b60252b84f66cac8409372ab908372b775",
+      "bytes": 58
+    },
+    "protocol.json": {
+      "sha256": "a235c3e65db40e708dd5898b58a1d5f07e1278bdb4b20e7e558a3649725fa532",
+      "bytes": 9044
+    },
+    "provenance.json": {
+      "sha256": "ebdfa3aa42f4e182ffb02a980ca7af35eb00e38e4a85192ea013729bca42fdb4",
+      "bytes": 197540
+    },
+    "recovery_sample.json": {
+      "sha256": "ca0774be5a5e886f136b0ce41413562ed4c609ac9c6bede718379be12e7f2ecc",
+      "bytes": 8361
+    },
+    "reloads.json": {
+      "sha256": "b625ddf3e7348dc9ad720d23ea36ddc9afaeb937a806d7b1ffa7339fb79261e1",
+      "bytes": 149482
+    },
+    "reset_certification.json": {
+      "sha256": "d3f6437bc8a86aaca5e348ce8d4652ff362b1d2e94930fa284596af74db49711",
+      "bytes": 382807
+    },
+    "status.json": {
+      "sha256": "6af3906085b4979ffb7ad734b8d65dfd09f4db8e8ed2aefefa1d426addf280cd",
+      "bytes": 146
+    },
+    "validation.json": {
+      "sha256": "f33a63bda36778b042bc2471ca1cd24464e3e0e91c75312ff316f5c5a971edc3",
+      "bytes": 1801
+    },
+    "verification.json": {
+      "sha256": "0082f9298c7e19318b16ff97d858c54ff9f4aa154ee3d766962fd12bbf347b57",
+      "bytes": 163749
+    },
+    "updates_samples.jsonl": {
+      "sha256": "9e61a3c8a1f8e2e5427dda597a58a5ff564c2153987d9a238a6b519a91f6667f",
+      "bytes": 138073
+    }
+  },
+  "raw_log_coverage": {
+    "updates.jsonl": {
+      "sha256": "4ce8fb4555ab75a9016b2b1d65b91f2d7a6d69975653cf4c9116ceb127ac033e",
+      "records": 8000,
+      "sampled_records": 245
+    },
+    "dense.json": {
+      "sha256": "654fcd469411321422abb8000f3bcf24c49755d8553f3ba0f3b791b725c03237",
+      "records": 8001,
+      "coverage": "dense_compact.json retains every update, reference gap/action and recovery Q value"
+    }
+  },
+  "excluded": "Full-resume snapshots, intermediate inference models and full raw logs remain local; paths and hashes are recorded. The final inference checkpoint is separately exported when delivery_verification.json is present."
+}

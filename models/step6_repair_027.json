@@ -1,0 +1,144 @@
+{
+  "passed": true,
+  "checkpoint": "models/step6_repair_027.pt",
+  "sha256": "06733fccb5422d10ad7246e5368bbd5ed9cc3367f0b413847544ec26a96b0c88",
+  "source_checkpoint": "C:\\Users\\29470\\Desktop\\ME5418_Group18_Environment_Submission(1)(1)\\me5418-network-demo\\results\\training\\step6_supervision_20261115\\models\\update_10000.pt",
+  "source_update": 10000,
+  "optimizer_updates": 0,
+  "evaluation": {
+    "episodes": 3,
+    "seed": 10000,
+    "mean_return": 107.61308070917924,
+    "success_rate": 1.0,
+    "damage_rate": 0.0,
+    "budget_exhaustion_rate": 0.0,
+    "mean_success_steps": 39.0,
+    "mean_travel_distance": 1.5699986045559247,
+    "mean_peak_deformation": 0.0,
+    "mean_distance_to_target": 0.049004849046468735,
+    "mean_stationary_fraction": 0.0,
+    "mean_blocked_fraction": 0.0,
+    "records": [
+      {
+        "seed": 10000,
+        "return": 107.61081182360648,
+        "steps": 35,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5399986431002617,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04989229515194893,
+        "stationary_steps": 0,
+        "blocked_steps": 0
+      },
+      {
+        "seed": 10001,
+        "return": 107.58505000025033,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5849986001849174,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.04951140284538269,
+        "stationary_steps": 0,
+        "blocked_steps": 0
+      },
+      {
+        "seed": 10002,
+        "return": 107.64338030368089,
+        "steps": 41,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.584998570382595,
+        "peak_deformation": 0.0,
+        "distance_to_target": 0.047610849142074585,
+        "stationary_steps": 0,
+        "blocked_steps": 0
+      }
+    ]
+  },
+  "reset_certification": [
+    {
+      "update": 10000,
+      "seed": 10000,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 35,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 35,
+          "planned_actions": 35,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5399986431002617,
+          "return": 107.61081182360648,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    },
+    {
+      "update": 10000,
+      "seed": 10001,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5849986001849174,
+          "return": 107.58505000025033,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    },
+    {
+      "update": 10000,
+      "seed": 10002,
+      "certification_enabled": true,
+      "certification_attempts": 1,
+      "certification_environment_steps": 41,
+      "reference_route_checks": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.584998570382595,
+          "return": 107.64338030368089,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ]
+    }
+  ],
+  "policy_actions": 117,
+  "certification_actions": 117,
+  "script_sha256": "778aa319a461349fe0c09fc6f8bc8f237ad8f685a7384fb6042f8c67e67fa618",
+  "scope": "Verified on three known training scenes only. No held-out generalization claim. This is an inference checkpoint, not an Adam-resume snapshot."
+}

@@ -1,0 +1,33 @@
+{
+  "preexecution_commit": "a546fa43fa642c6756ac6c8f76791b93585b391c",
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m pytest -q tests/test_step6_supervision.py tests/test_recovery_supervision.py tests/test_step6_rescue.py tests/test_reference_reset.py",
+    "passed": 41,
+    "seconds": 34.35
+  },
+  "ruff": {
+    "command": ".venv/Scripts/ruff.exe check docs/experiments/027_step6_supervision tests/test_step6_supervision.py",
+    "passed": true,
+    "includes_postrun_helpers": true
+  },
+  "source_sha256": {
+    "docs\\experiments\\027_step6_supervision\\focused_update.py": "2c260a8cb43a9306c2cf8671800ce315d77660d3dfd4bdfefe06555131b6e970",
+    "docs\\experiments\\027_step6_supervision\\run_step6_supervision.py": "a9a1da1660fe118ae5befe209f85b83a32976c4493a7c9ce4312f839dc96eb38",
+    "tests\\test_step6_supervision.py": "01e0e8801afa324362599f36b19d5fdd477682df94a7d80b07061c7a653175f4",
+    "docs/experiments/027_step6_supervision/analyze_step6_supervision.py": "1e1456050d74959cc1c09357a7ae9569263f7ccfa80f8fd5fb7356cc3f778abf",
+    "docs/experiments/027_step6_supervision/verify_failure_reloads.py": "e6e57ad817bd2c371c697d4bb1bbd9c4ebac027e5554f57246a723b545fbec3b",
+    "docs/experiments/027_step6_supervision/export_verified_policy.py": "778aa319a461349fe0c09fc6f8bc8f237ad8f685a7384fb6042f8c67e67fa618"
+  },
+  "unit_test_work_excluded_from_formal_counters": true,
+  "formal_training_status": "completed",
+  "independent_updates": 401,
+  "predeclared_reload_episodes": 28,
+  "posthoc_failure_reload_episodes": 0,
+  "final_inference_delivery": {
+    "passed": true,
+    "episodes": 3,
+    "success_rate": 1.0,
+    "checkpoint": "models/step6_repair_027.pt",
+    "sha256": "06733fccb5422d10ad7246e5368bbd5ed9cc3367f0b413847544ec26a96b0c88"
+  }
+}

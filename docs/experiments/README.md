@@ -37,6 +37,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [026: single-action rescue at step 6](026_step6_rescue/RESULTS.md) | Does correcting only scene 10001 step 6 to south_small rescue TD 2004 and 2009 from attempt 025? | Both frozen controls fail at 200 steps; one correction restores 41-step success with no blocking or stationary steps and return 107.585050. All later actions remain autonomous and match the reference sequence. Four independent reloads match every transition. This establishes intervention sufficiency for the two failures without changing the learned policy. |
 
+| [027: repair step six while retaining recovery](027_step6_supervision/RESULTS.md) | Does doubling only the existing step-six supervision weight remove the residual early failures without losing recovery? | Matched all-scene checks improve from 67/69 to 69/69; all 105 treatment checkpoints and 315 autonomous episodes succeed. Step-six and recovery choices remain correct after all 8000 updates. All 104 post-start conditional probes succeed; 401 independent updates and 28 reloads reproduce the run. Final inference model exported and independently evaluated. Neighboring ranking changes remain; generalization and untested intermediate episodes are not established. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.
