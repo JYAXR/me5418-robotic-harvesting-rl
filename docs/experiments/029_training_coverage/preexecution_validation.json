@@ -1,0 +1,17 @@
+{
+  "tests": {
+    "command": ".venv/Scripts/python.exe -m pytest -q tests/test_training_coverage.py tests/test_frozen_generalization.py",
+    "passed": 13,
+    "seconds": 44.12
+  },
+  "ruff": {
+    "passed": true,
+    "initial_findings": "Two import-only style findings were automatically fixed; no training logic changed."
+  },
+  "test_work_excluded_from_formal_counts": true,
+  "source_sha256": {
+    "docs\\experiments\\029_training_coverage\\coverage_update.py": "7048bbc40054de77a5d0d08bd4271151688a795e779a496a7865e58c6b12c2bd",
+    "docs\\experiments\\029_training_coverage\\run_coverage.py": "068bb78cf7c58f007d6c741627e0cb7cab2d3b02256c27a66c2e223c0867cea9",
+    "tests\\test_training_coverage.py": "ca0d7e4f33ccfd438eec5e049eb139a84fdd553a9ff17344027a955d7667a9ac"
+  }
+}
