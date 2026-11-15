@@ -1,0 +1,8 @@
+{
+  "model_hashes": {
+    "baseline": "5b8e66c22d51915771f89ad6a7c81ed8749725f426f62d322e5353cdfbbaaa18",
+    "staged": "e236374791ce5b7bb59c00d6e99c3ab557821fc06ccddbcbed6686b638b67868"
+  },
+  "frozen_at_utc": "2026-11-15T12:16:24.558713+00:00",
+  "holdout_episodes_started": 0
+}

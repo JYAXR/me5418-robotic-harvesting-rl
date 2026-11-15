@@ -1,0 +1,266 @@
+[
+  {
+    "phase": "supervised",
+    "update": 0,
+    "rows": 1440,
+    "correct": 995,
+    "original_correct": 85,
+    "new_correct": 910,
+    "recovery_action": 4,
+    "recovery_gap": 1.7845306396484375,
+    "return_mae": 4.291624069213867,
+    "return_rmse": 5.3382649421691895,
+    "minimum_q": -23.24327850341797,
+    "maximum_q": 99.18299102783203,
+    "probes": [
+      {
+        "row": 39,
+        "scene": 10001,
+        "step": 5,
+        "demonstrated_action": 2,
+        "greedy_action": 2,
+        "gap": 0.35057830810546875
+      },
+      {
+        "row": 40,
+        "scene": 10001,
+        "step": 6,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 0.9107742309570312
+      },
+      {
+        "row": 41,
+        "scene": 10001,
+        "step": 7,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.1551437377929688
+      },
+      {
+        "row": 54,
+        "scene": 10001,
+        "step": 20,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 0.8707809448242188
+      },
+      {
+        "row": 55,
+        "scene": 10001,
+        "step": 21,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 0.8930282592773438
+      },
+      {
+        "row": 56,
+        "scene": 10001,
+        "step": 22,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.7019882202148438
+      },
+      {
+        "row": 57,
+        "scene": 10001,
+        "step": 23,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.5411376953125
+      },
+      {
+        "row": 58,
+        "scene": 10001,
+        "step": 24,
+        "demonstrated_action": 2,
+        "greedy_action": 0,
+        "gap": -0.2938232421875
+      },
+      {
+        "row": 59,
+        "scene": 10001,
+        "step": 25,
+        "demonstrated_action": 6,
+        "greedy_action": 6,
+        "gap": 0.6291580200195312
+      }
+    ]
+  },
+  {
+    "phase": "supervised",
+    "update": 5000,
+    "rows": 1440,
+    "correct": 1075,
+    "original_correct": 89,
+    "new_correct": 986,
+    "recovery_action": 4,
+    "recovery_gap": 1.7992935180664062,
+    "return_mae": 4.3598246574401855,
+    "return_rmse": 5.386016845703125,
+    "minimum_q": -22.92321014404297,
+    "maximum_q": 97.73207092285156,
+    "probes": [
+      {
+        "row": 39,
+        "scene": 10001,
+        "step": 5,
+        "demonstrated_action": 2,
+        "greedy_action": 2,
+        "gap": 0.791351318359375
+      },
+      {
+        "row": 40,
+        "scene": 10001,
+        "step": 6,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 0.8764877319335938
+      },
+      {
+        "row": 41,
+        "scene": 10001,
+        "step": 7,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.30438232421875
+      },
+      {
+        "row": 54,
+        "scene": 10001,
+        "step": 20,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 1.2989959716796875
+      },
+      {
+        "row": 55,
+        "scene": 10001,
+        "step": 21,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 0.9568939208984375
+      },
+      {
+        "row": 56,
+        "scene": 10001,
+        "step": 22,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.6386795043945312
+      },
+      {
+        "row": 57,
+        "scene": 10001,
+        "step": 23,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.37957763671875
+      },
+      {
+        "row": 58,
+        "scene": 10001,
+        "step": 24,
+        "demonstrated_action": 2,
+        "greedy_action": 0,
+        "gap": -0.586639404296875
+      },
+      {
+        "row": 59,
+        "scene": 10001,
+        "step": 25,
+        "demonstrated_action": 6,
+        "greedy_action": 6,
+        "gap": 0.6821975708007812
+      }
+    ]
+  },
+  {
+    "phase": "supervised",
+    "update": 20000,
+    "rows": 1440,
+    "correct": 1170,
+    "original_correct": 95,
+    "new_correct": 1075,
+    "recovery_action": 4,
+    "recovery_gap": 2.2863082885742188,
+    "return_mae": 6.249736785888672,
+    "return_rmse": 7.509478569030762,
+    "minimum_q": -22.04092025756836,
+    "maximum_q": 94.15103149414062,
+    "probes": [
+      {
+        "row": 39,
+        "scene": 10001,
+        "step": 5,
+        "demonstrated_action": 2,
+        "greedy_action": 2,
+        "gap": 1.03271484375
+      },
+      {
+        "row": 40,
+        "scene": 10001,
+        "step": 6,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.4052658081054688
+      },
+      {
+        "row": 41,
+        "scene": 10001,
+        "step": 7,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.995147705078125
+      },
+      {
+        "row": 54,
+        "scene": 10001,
+        "step": 20,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 1.372711181640625
+      },
+      {
+        "row": 55,
+        "scene": 10001,
+        "step": 21,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 0.8072509765625
+      },
+      {
+        "row": 56,
+        "scene": 10001,
+        "step": 22,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.22589874267578125
+      },
+      {
+        "row": 57,
+        "scene": 10001,
+        "step": 23,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.2209625244140625
+      },
+      {
+        "row": 58,
+        "scene": 10001,
+        "step": 24,
+        "demonstrated_action": 2,
+        "greedy_action": 0,
+        "gap": -0.44606781005859375
+      },
+      {
+        "row": 59,
+        "scene": 10001,
+        "step": 25,
+        "demonstrated_action": 6,
+        "greedy_action": 6,
+        "gap": 0.86370849609375
+      }
+    ]
+  }
+]

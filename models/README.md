@@ -40,3 +40,24 @@ is unchanged. These are inference files, not Adam-resume snapshots.
 ```bash
 python scripts/evaluate_dqn.py --checkpoint models/coverage_029_expanded.pt --episodes 100 --seed 390000
 ```
+
+## Attempt 030 staged-training endpoints
+
+`stages_030_supervised.pt`, `stages_030_calibration.pt` and `stages_030_td.pt`
+are the fixed phase endpoints from [attempt 030](../docs/experiments/030_expanded_stages/RESULTS.md).
+The network is unchanged. Training across 33 scenes uses 20000 supervised,
+20000 actual-return calibration and 10000 TD updates; calibration Adam state
+is retained exactly into TD.
+
+Final TD restores two of three original scenes (10000 and 10001); 10002 fails
+from damage. It succeeds on 5/30 added training scenes and 13/100 fresh test
+scenes, versus 9/100 for the frozen attempt-029 source on the same test set.
+Eleven test successes are gained and seven are lost; reliable generalization
+has not been established. The pre-TD endpoints have no fresh holdout score.
+Adjacent JSON files contain hashes and measured scope. These are inference
+files; the portable full starting state is in the attempt's `inputs/` folder,
+and intermediate/final resume states remain in its local run directory.
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/stages_030_td.pt --episodes 3 --seed 10000
+```

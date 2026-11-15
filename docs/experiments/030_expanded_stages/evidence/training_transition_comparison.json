@@ -1,0 +1,96 @@
+{
+  "scope": "Post-hoc paired comparison of predeclared 33 training-scene endpoint evaluations. No additional simulation or training.",
+  "success_seeds": {
+    "source_029": [
+      10001,
+      290010,
+      290021
+    ],
+    "supervised": [
+      290004,
+      290008,
+      290010,
+      290023
+    ],
+    "calibration": [
+      10000,
+      290003,
+      290006,
+      290008,
+      290011,
+      290013,
+      290022,
+      290023,
+      290026
+    ],
+    "td": [
+      10000,
+      10001,
+      290003,
+      290008,
+      290011,
+      290017,
+      290022
+    ]
+  },
+  "comparisons": [
+    {
+      "from": "source_029",
+      "to": "supervised",
+      "retained_success_seeds": [
+        290010
+      ],
+      "lost_success_seeds": [
+        10001,
+        290021
+      ],
+      "gained_success_seeds": [
+        290004,
+        290008,
+        290023
+      ]
+    },
+    {
+      "from": "supervised",
+      "to": "calibration",
+      "retained_success_seeds": [
+        290008,
+        290023
+      ],
+      "lost_success_seeds": [
+        290004,
+        290010
+      ],
+      "gained_success_seeds": [
+        10000,
+        290003,
+        290006,
+        290011,
+        290013,
+        290022,
+        290026
+      ]
+    },
+    {
+      "from": "calibration",
+      "to": "td",
+      "retained_success_seeds": [
+        10000,
+        290003,
+        290008,
+        290011,
+        290022
+      ],
+      "lost_success_seeds": [
+        290006,
+        290013,
+        290023,
+        290026
+      ],
+      "gained_success_seeds": [
+        10001,
+        290017
+      ]
+    }
+  ]
+}

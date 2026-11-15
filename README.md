@@ -24,6 +24,20 @@ succeeds in only 1/100 cases
 The [experiment record](docs/experiments/027_step6_supervision/RESULTS.md)
 contains the controlled comparison, full traces, limitations and verification.
 
+## Latest experiment: staged learning on 33 scenes
+
+[Attempt 030](docs/experiments/030_expanded_stages/RESULTS.md) repeats supervised
+fitting and actual-return calibration on the expanded dataset, then preserves
+Adam state into 10000 TD updates without changing the network. Final original
+scene recovery is 2/3; total training success is 7/33. On 100 fresh paired test
+scenes, success is 13/100 versus the frozen attempt-029 source's 9/100, with
+eleven gained and seven lost successes. Reliable generalization is not established.
+The [model notes](models/README.md) describe all three saved phase endpoints.
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/stages_030_td.pt --episodes 3 --seed 10000
+```
+
 ## Clean submission
 
 Routine run outputs are generated locally and excluded from the submission

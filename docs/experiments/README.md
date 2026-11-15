@@ -43,6 +43,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [029: expanded training coverage](029_training_coverage/RESULTS.md) | Does appending 30 training scenes improve generalization under a matched 8000-update continuation budget while retaining original skills? | Both final arms succeed on 4/100 paired unseen scenes, with three gained and three lost successes. Expanded training retains only 1/3 original scenes versus control 3/3, and succeeds on 2/30 added training scenes. Original retention across checkpoints is 9/30 versus 30/30 episodes. Independent updates and 18 reloads pass; both final experimental candidates are archived without replacing the prior policy. |
 
+| [030: expanded supervised/calibrated stages](030_expanded_stages/RESULTS.md) | Can 20000 supervised and 20000 actual-return updates before 10000 Adam-preserving TD updates restore the original scenes and improve fresh generalization on unchanged architecture? | Phase endpoints succeed on 4/33, 9/33 and 7/33 training scenes; final original recovery is 2/3, with 10002 still failing from damage. Calibration-to-TD loses four successes and gains two. Fresh paired success is 13/100 versus source 9/100, with eleven gains, seven losses and damage failures 50 versus 47. Exact post-hoc paired p=0.481; robust improvement is unproven. All 60 independent updates, 344 trace audits and 14 reloads pass. Three inference endpoints and complete evidence are archived. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

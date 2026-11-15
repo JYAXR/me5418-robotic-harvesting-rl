@@ -1,0 +1,85 @@
+{
+  "path": "models/stages_030_td.pt",
+  "sha256": "e236374791ce5b7bb59c00d6e99c3ab557821fc06ccddbcbed6686b638b67868",
+  "phase": "td",
+  "selection": "Fixed endpoint; no best-checkpoint or holdout selection.",
+  "training_scenes": {
+    "requested_scenes": 33,
+    "valid_scenes": 33,
+    "successes": 7,
+    "success_rate_requested": 0.21212121212121213,
+    "success_rate_valid": 0.21212121212121213,
+    "wilson95_requested": [
+      0.10676021533020799,
+      0.3775164499215069
+    ],
+    "wilson95_valid": [
+      0.10676021533020799,
+      0.3775164499215069
+    ],
+    "categories": {
+      "success": 7,
+      "damage": 17,
+      "budget_blocked_stall": 9
+    },
+    "mean_return": -17.28869638732522,
+    "mean_steps": 88.18181818181819,
+    "mean_success_steps": 43.57142857142857,
+    "policy_actions": 2910,
+    "certification_actions": 1440,
+    "certification_attempts": 33
+  },
+  "original_scenes": {
+    "requested_scenes": 3,
+    "valid_scenes": 3,
+    "successes": 2,
+    "success_rate_requested": 0.6666666666666666,
+    "success_rate_valid": 0.6666666666666666,
+    "wilson95_requested": [
+      0.2076596008020477,
+      0.9385080552796037
+    ],
+    "wilson95_valid": [
+      0.2076596008020477,
+      0.9385080552796037
+    ],
+    "categories": {
+      "success": 2,
+      "damage": 1
+    },
+    "mean_return": 50.901542278409636,
+    "mean_steps": 47.666666666666664,
+    "mean_success_steps": 42.5,
+    "policy_actions": 143,
+    "certification_actions": 117,
+    "certification_attempts": 3
+  },
+  "holdout": {
+    "requested_scenes": 100,
+    "valid_scenes": 100,
+    "successes": 13,
+    "success_rate_requested": 0.13,
+    "success_rate_valid": 0.13,
+    "wilson95_requested": [
+      0.07757167427240512,
+      0.20980351440076428
+    ],
+    "wilson95_valid": [
+      0.07757167427240512,
+      0.20980351440076428
+    ],
+    "categories": {
+      "success": 13,
+      "damage": 50,
+      "budget_blocked_stall": 33,
+      "budget_while_moving": 4
+    },
+    "mean_return": -34.774915642081695,
+    "mean_steps": 104.81,
+    "mean_success_steps": 59.23076923076923,
+    "policy_actions": 10481,
+    "certification_actions": 4146,
+    "certification_attempts": 100
+  },
+  "scope": "Experimental inference checkpoint; no Adam resume state."
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "Post-hoc descriptive paired test, not a preregistered component ablation or evidence of multi-seed robustness.",
+  "method": "Two-sided exact binomial test of gain/loss symmetry among discordant pairs (exact McNemar test).",
+  "baseline_successes": 9,
+  "staged_successes": 13,
+  "both_success": 2,
+  "gained_successes": 11,
+  "lost_successes": 7,
+  "neither_success": 80,
+  "gained_seeds": [
+    490000,
+    490002,
+    490004,
+    490006,
+    490011,
+    490018,
+    490035,
+    490037,
+    490049,
+    490050,
+    490099
+  ],
+  "lost_seeds": [
+    490046,
+    490056,
+    490071,
+    490077,
+    490083,
+    490093,
+    490095
+  ],
+  "both_success_seeds": [
+    490048,
+    490055
+  ],
+  "two_sided_p": 0.480682373046875,
+  "evaluations_sha256": "96fb065bf9ca97bc2e4f65ae04f2270604141bb870ed77b640819f31afd2e865"
+}

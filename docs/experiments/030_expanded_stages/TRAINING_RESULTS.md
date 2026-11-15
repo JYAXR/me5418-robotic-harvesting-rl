@@ -4,7 +4,7 @@ These are the predeclared training-scene checks, recorded after all 50000 main
 updates and before completion of the fresh holdout comparison. They do not
 establish generalization. See [protocol](../030_expanded_stages.md) and
 [raw stage summary](stage_summary.json). The final holdout and artifact audit
-will be reported separately in RESULTS.md.
+are now available in [RESULTS.md](RESULTS.md).
 
 ## Stage endpoints
 

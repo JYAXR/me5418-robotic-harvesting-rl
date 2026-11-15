@@ -1,0 +1,62 @@
+{
+  "phases": {
+    "supervised": {
+      "resets": 9,
+      "executed_actions": 1159,
+      "certification_actions": 351
+    },
+    "supervised_acquisition": {
+      "resets": 30,
+      "executed_actions": 3754,
+      "certification_actions": 1323
+    },
+    "calibration": {
+      "resets": 9,
+      "executed_actions": 1329,
+      "certification_actions": 351
+    },
+    "calibration_acquisition": {
+      "resets": 30,
+      "executed_actions": 3197,
+      "certification_actions": 1323
+    },
+    "td": {
+      "resets": 33,
+      "executed_actions": 4067,
+      "certification_actions": 1287
+    },
+    "td_acquisition": {
+      "resets": 30,
+      "executed_actions": 2767,
+      "certification_actions": 1323
+    },
+    "original": {
+      "resets": 3,
+      "executed_actions": 445,
+      "certification_actions": 117
+    },
+    "holdout": {
+      "resets": 200,
+      "executed_actions": 21991,
+      "certification_actions": 8292
+    },
+    "reloads": {
+      "resets": 14,
+      "executed_actions": 1623,
+      "certification_actions": 555
+    }
+  },
+  "resets": 358,
+  "executed_actions": 40332,
+  "certification_actions": 14922,
+  "training_optimizer_updates": 50000,
+  "independent_optimizer_updates": 60,
+  "total_optimizer_updates": 50060,
+  "unit_tests_excluded": true,
+  "new_collection_actions": 0,
+  "reused_demonstration_rows": 1440,
+  "online_training_actions": 0,
+  "forced_evaluation_actions": 0,
+  "holdout_requested_scenes": 100,
+  "holdout_episodes": 200
+}

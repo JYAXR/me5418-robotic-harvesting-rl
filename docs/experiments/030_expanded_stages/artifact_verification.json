@@ -1,0 +1,20 @@
+{
+  "attempt": 30,
+  "main_run_status": "completed",
+  "archive_files_excluding_manifest": 373,
+  "archive_bytes_excluding_manifest": 71822016,
+  "every_archive_sha256_and_size_matches_manifest": true,
+  "every_archive_file_matches_original_run_bytes": true,
+  "all_bound_source_hashes_match_launch_provenance": true,
+  "all_three_exported_models_match_original_inference_bytes_and_hashes": true,
+  "posthoc_statistics_match_the_final_evaluation_file_hash": true,
+  "previously_published_training_summary_matches_final_run": true,
+  "main_trajectories_audited": 344,
+  "normal_evaluator_reload_episodes": 14,
+  "independently_replayed_optimizer_updates": 60,
+  "preexecution_tests_passed": 56,
+  "ruff_attempt_code_and_tests": "passed",
+  "source_resume_sha256": "8890fea9630badb438c0e8a380f64c9f1dddfa7d5911361b0bdeb2835503b559",
+  "final_td_inference_sha256": "e236374791ce5b7bb59c00d6e99c3ab557821fc06ccddbcbed6686b638b67868",
+  "scope": "Post-run artifact checks; no extra training, collection or policy evaluation."
+}

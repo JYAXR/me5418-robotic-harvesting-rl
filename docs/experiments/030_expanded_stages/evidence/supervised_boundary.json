@@ -1,0 +1,87 @@
+{
+  "previous_phase_updates": 18000,
+  "phase_updates": 0,
+  "optimizer_reset": true,
+  "target_synchronized": true,
+  "optimizer_before": {
+    "sha256": "9c9276490a2b4567504cc6fff23a460e04cb2f8aeee8235fc6b1fc11888481ab",
+    "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0001,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 6,
+    "steps": {
+      "0.weight": 38000.0,
+      "0.bias": 38000.0,
+      "2.weight": 38000.0,
+      "2.bias": 38000.0,
+      "4.weight": 38000.0,
+      "4.bias": 38000.0
+    },
+    "step_min": 38000.0,
+    "step_max": 38000.0,
+    "first_moment_l2": 1.0965854921752232,
+    "second_moment_l2": 3.5120173480699304
+  },
+  "optimizer_after": {
+    "sha256": "ecc26da8d23c7c5c98bb8dc4f1279466ab390109d544ad01e321b7f839b3c787",
+    "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0001,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 0,
+    "steps": {},
+    "step_min": null,
+    "step_max": null,
+    "first_moment_l2": 0.0,
+    "second_moment_l2": 0.0
+  }
+}

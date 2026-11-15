@@ -1,0 +1,23 @@
+[
+  {
+    "phase": "supervised",
+    "passed": true,
+    "independent_optimizer_updates": 20,
+    "final_adam_clock": 20000,
+    "target_syncs": 0
+  },
+  {
+    "phase": "calibration",
+    "passed": true,
+    "independent_optimizer_updates": 20,
+    "final_adam_clock": 20000,
+    "target_syncs": 0
+  },
+  {
+    "phase": "td",
+    "passed": true,
+    "independent_optimizer_updates": 20,
+    "final_adam_clock": 30000,
+    "target_syncs": 50
+  }
+]

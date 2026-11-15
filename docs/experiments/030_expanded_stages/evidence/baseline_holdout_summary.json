@@ -1,0 +1,27 @@
+{
+  "requested_scenes": 100,
+  "valid_scenes": 100,
+  "successes": 9,
+  "success_rate_requested": 0.09,
+  "success_rate_valid": 0.09,
+  "wilson95_requested": [
+    0.04807254000256516,
+    0.1622621285271631
+  ],
+  "wilson95_valid": [
+    0.04807254000256516,
+    0.1622621285271631
+  ],
+  "categories": {
+    "budget_blocked_stall": 39,
+    "damage": 47,
+    "budget_while_moving": 5,
+    "success": 9
+  },
+  "mean_return": -42.44914772089263,
+  "mean_steps": 115.1,
+  "mean_success_steps": 39.111111111111114,
+  "policy_actions": 11510,
+  "certification_actions": 4146,
+  "certification_attempts": 100
+}

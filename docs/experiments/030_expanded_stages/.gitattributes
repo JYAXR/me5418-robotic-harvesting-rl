@@ -1,3 +1,4 @@
 inputs/*.pt binary
 stage_summary.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifact_verification.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

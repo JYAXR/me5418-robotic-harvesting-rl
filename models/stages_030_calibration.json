@@ -1,0 +1,61 @@
+{
+  "path": "models/stages_030_calibration.pt",
+  "sha256": "1341863f8989ac1ac023c90e8d37a35fe8e34b8b6cfb140ab431cb9510c59541",
+  "phase": "calibration",
+  "selection": "Fixed endpoint; no best-checkpoint or holdout selection.",
+  "training_scenes": {
+    "requested_scenes": 33,
+    "valid_scenes": 33,
+    "successes": 9,
+    "success_rate_requested": 0.2727272727272727,
+    "success_rate_valid": 0.2727272727272727,
+    "wilson95_requested": [
+      0.1506744088542064,
+      0.44217559002872625
+    ],
+    "wilson95_valid": [
+      0.1506744088542064,
+      0.44217559002872625
+    ],
+    "categories": {
+      "success": 9,
+      "budget_blocked_stall": 12,
+      "damage": 10,
+      "budget_stationary_stall": 1,
+      "budget_while_moving": 1
+    },
+    "mean_return": -5.940602981702821,
+    "mean_steps": 110.15151515151516,
+    "mean_success_steps": 48.0,
+    "policy_actions": 3635,
+    "certification_actions": 1440,
+    "certification_attempts": 33
+  },
+  "original_scenes": {
+    "requested_scenes": 3,
+    "valid_scenes": 3,
+    "successes": 1,
+    "success_rate_requested": 0.3333333333333333,
+    "success_rate_valid": 0.3333333333333333,
+    "wilson95_requested": [
+      0.06149194472039621,
+      0.7923403991979522
+    ],
+    "wilson95_valid": [
+      0.06149194472039621,
+      0.7923403991979522
+    ],
+    "categories": {
+      "success": 1,
+      "budget_blocked_stall": 2
+    },
+    "mean_return": 34.811054247179186,
+    "mean_steps": 146.0,
+    "mean_success_steps": 38.0,
+    "policy_actions": 438,
+    "certification_actions": 117,
+    "certification_attempts": 3
+  },
+  "holdout": null,
+  "scope": "Experimental inference checkpoint; no Adam resume state."
+}

@@ -1,0 +1,266 @@
+[
+  {
+    "phase": "calibration",
+    "update": 0,
+    "rows": 1440,
+    "correct": 1170,
+    "original_correct": 95,
+    "new_correct": 1075,
+    "recovery_action": 4,
+    "recovery_gap": 2.2863082885742188,
+    "return_mae": 6.249736785888672,
+    "return_rmse": 7.509478569030762,
+    "minimum_q": -22.04092025756836,
+    "maximum_q": 94.15103149414062,
+    "probes": [
+      {
+        "row": 39,
+        "scene": 10001,
+        "step": 5,
+        "demonstrated_action": 2,
+        "greedy_action": 2,
+        "gap": 1.03271484375
+      },
+      {
+        "row": 40,
+        "scene": 10001,
+        "step": 6,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.4052658081054688
+      },
+      {
+        "row": 41,
+        "scene": 10001,
+        "step": 7,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.995147705078125
+      },
+      {
+        "row": 54,
+        "scene": 10001,
+        "step": 20,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 1.372711181640625
+      },
+      {
+        "row": 55,
+        "scene": 10001,
+        "step": 21,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 0.8072509765625
+      },
+      {
+        "row": 56,
+        "scene": 10001,
+        "step": 22,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.22589874267578125
+      },
+      {
+        "row": 57,
+        "scene": 10001,
+        "step": 23,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.2209625244140625
+      },
+      {
+        "row": 58,
+        "scene": 10001,
+        "step": 24,
+        "demonstrated_action": 2,
+        "greedy_action": 0,
+        "gap": -0.44606781005859375
+      },
+      {
+        "row": 59,
+        "scene": 10001,
+        "step": 25,
+        "demonstrated_action": 6,
+        "greedy_action": 6,
+        "gap": 0.86370849609375
+      }
+    ]
+  },
+  {
+    "phase": "calibration",
+    "update": 5000,
+    "rows": 1440,
+    "correct": 1072,
+    "original_correct": 98,
+    "new_correct": 974,
+    "recovery_action": 4,
+    "recovery_gap": 0.93292236328125,
+    "return_mae": 1.8954050540924072,
+    "return_rmse": 2.6489522457122803,
+    "minimum_q": -21.952442169189453,
+    "maximum_q": 102.9024658203125,
+    "probes": [
+      {
+        "row": 39,
+        "scene": 10001,
+        "step": 5,
+        "demonstrated_action": 2,
+        "greedy_action": 2,
+        "gap": 0.13637542724609375
+      },
+      {
+        "row": 40,
+        "scene": 10001,
+        "step": 6,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 0.776641845703125
+      },
+      {
+        "row": 41,
+        "scene": 10001,
+        "step": 7,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.18292236328125
+      },
+      {
+        "row": 54,
+        "scene": 10001,
+        "step": 20,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 0.8011932373046875
+      },
+      {
+        "row": 55,
+        "scene": 10001,
+        "step": 21,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 0.894439697265625
+      },
+      {
+        "row": 56,
+        "scene": 10001,
+        "step": 22,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.5893020629882812
+      },
+      {
+        "row": 57,
+        "scene": 10001,
+        "step": 23,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.9112701416015625
+      },
+      {
+        "row": 58,
+        "scene": 10001,
+        "step": 24,
+        "demonstrated_action": 2,
+        "greedy_action": 0,
+        "gap": -0.655517578125
+      },
+      {
+        "row": 59,
+        "scene": 10001,
+        "step": 25,
+        "demonstrated_action": 6,
+        "greedy_action": 6,
+        "gap": 0.7405014038085938
+      }
+    ]
+  },
+  {
+    "phase": "calibration",
+    "update": 20000,
+    "rows": 1440,
+    "correct": 1185,
+    "original_correct": 104,
+    "new_correct": 1081,
+    "recovery_action": 4,
+    "recovery_gap": 2.889556884765625,
+    "return_mae": 0.7745375037193298,
+    "return_rmse": 1.117807149887085,
+    "minimum_q": -18.299699783325195,
+    "maximum_q": 102.74198150634766,
+    "probes": [
+      {
+        "row": 39,
+        "scene": 10001,
+        "step": 5,
+        "demonstrated_action": 2,
+        "greedy_action": 2,
+        "gap": 0.11856842041015625
+      },
+      {
+        "row": 40,
+        "scene": 10001,
+        "step": 6,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 0.8134765625
+      },
+      {
+        "row": 41,
+        "scene": 10001,
+        "step": 7,
+        "demonstrated_action": 1,
+        "greedy_action": 1,
+        "gap": 1.1520538330078125
+      },
+      {
+        "row": 54,
+        "scene": 10001,
+        "step": 20,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 1.6736831665039062
+      },
+      {
+        "row": 55,
+        "scene": 10001,
+        "step": 21,
+        "demonstrated_action": 0,
+        "greedy_action": 0,
+        "gap": 1.4172821044921875
+      },
+      {
+        "row": 56,
+        "scene": 10001,
+        "step": 22,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -1.0699462890625
+      },
+      {
+        "row": 57,
+        "scene": 10001,
+        "step": 23,
+        "demonstrated_action": 4,
+        "greedy_action": 0,
+        "gap": -0.16442108154296875
+      },
+      {
+        "row": 58,
+        "scene": 10001,
+        "step": 24,
+        "demonstrated_action": 2,
+        "greedy_action": 6,
+        "gap": -1.0910415649414062
+      },
+      {
+        "row": 59,
+        "scene": 10001,
+        "step": 25,
+        "demonstrated_action": 6,
+        "greedy_action": 6,
+        "gap": 1.3138961791992188
+      }
+    ]
+  }
+]

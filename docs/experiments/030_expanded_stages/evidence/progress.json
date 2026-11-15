@@ -1,0 +1,6 @@
+{
+  "phase": "holdout",
+  "arm": "staged",
+  "completed": 100,
+  "successes": 13
+}

@@ -1,0 +1,1952 @@
+{
+  "phases": {
+    "supervised": {
+      "original_by_update": [
+        {
+          "update": 0,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 5000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "damage"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 20000,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10001,
+              "category": "damage"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        }
+      ],
+      "original_all_checks": {
+        "requested_scenes": 9,
+        "valid_scenes": 9,
+        "successes": 2,
+        "success_rate_requested": 0.2222222222222222,
+        "success_rate_valid": 0.2222222222222222,
+        "wilson95_requested": [
+          0.06322510711784671,
+          0.5474110308930111
+        ],
+        "wilson95_valid": [
+          0.06322510711784671,
+          0.5474110308930111
+        ],
+        "categories": {
+          "budget_blocked_stall": 5,
+          "success": 2,
+          "damage": 2
+        },
+        "mean_return": -5.286467491167506,
+        "mean_steps": 128.77777777777777,
+        "mean_success_steps": 45.5,
+        "policy_actions": 1159,
+        "certification_actions": 351,
+        "certification_attempts": 9
+      },
+      "original_final": {
+        "requested_scenes": 3,
+        "valid_scenes": 3,
+        "successes": 0,
+        "success_rate_requested": 0.0,
+        "success_rate_valid": 0.0,
+        "wilson95_requested": [
+          5.551115123125783e-17,
+          0.5614970317550454
+        ],
+        "wilson95_valid": [
+          5.551115123125783e-17,
+          0.5614970317550454
+        ],
+        "categories": {
+          "budget_blocked_stall": 2,
+          "damage": 1
+        },
+        "mean_return": -27.405198974999305,
+        "mean_steps": 150.66666666666666,
+        "mean_success_steps": null,
+        "policy_actions": 452,
+        "certification_actions": 117,
+        "certification_attempts": 3
+      },
+      "added_training_final": {
+        "requested_scenes": 30,
+        "valid_scenes": 30,
+        "successes": 4,
+        "success_rate_requested": 0.13333333333333333,
+        "success_rate_valid": 0.13333333333333333,
+        "wilson95_requested": [
+          0.053096554840547455,
+          0.296813266820363
+        ],
+        "wilson95_valid": [
+          0.053096554840547455,
+          0.296813266820363
+        ],
+        "categories": {
+          "damage": 11,
+          "success": 4,
+          "budget_blocked_stall": 14,
+          "budget_stationary_stall": 1
+        },
+        "mean_return": -30.248185703845937,
+        "mean_steps": 125.13333333333334,
+        "mean_success_steps": 65.5,
+        "policy_actions": 3754,
+        "certification_actions": 1323,
+        "certification_attempts": 30
+      },
+      "all_training_final": {
+        "requested_scenes": 33,
+        "valid_scenes": 33,
+        "successes": 4,
+        "success_rate_requested": 0.12121212121212122,
+        "success_rate_valid": 0.12121212121212122,
+        "wilson95_requested": [
+          0.04816161309413558,
+          0.2732550517107523
+        ],
+        "wilson95_valid": [
+          0.04816161309413558,
+          0.2732550517107523
+        ],
+        "categories": {
+          "budget_blocked_stall": 16,
+          "damage": 12,
+          "success": 4,
+          "budget_stationary_stall": 1
+        },
+        "mean_return": -29.989732364859883,
+        "mean_steps": 127.45454545454545,
+        "mean_success_steps": 65.5,
+        "policy_actions": 4206,
+        "certification_actions": 1440,
+        "certification_attempts": 33
+      },
+      "final_fit": {
+        "phase": "supervised",
+        "update": 20000,
+        "rows": 1440,
+        "correct": 1170,
+        "original_correct": 95,
+        "new_correct": 1075,
+        "recovery_action": 4,
+        "recovery_gap": 2.2863082885742188,
+        "return_mae": 6.249736785888672,
+        "return_rmse": 7.509478569030762,
+        "minimum_q": -22.04092025756836,
+        "maximum_q": 94.15103149414062,
+        "probes": [
+          {
+            "row": 39,
+            "scene": 10001,
+            "step": 5,
+            "demonstrated_action": 2,
+            "greedy_action": 2,
+            "gap": 1.03271484375
+          },
+          {
+            "row": 40,
+            "scene": 10001,
+            "step": 6,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.4052658081054688
+          },
+          {
+            "row": 41,
+            "scene": 10001,
+            "step": 7,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.995147705078125
+          },
+          {
+            "row": 54,
+            "scene": 10001,
+            "step": 20,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.372711181640625
+          },
+          {
+            "row": 55,
+            "scene": 10001,
+            "step": 21,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 0.8072509765625
+          },
+          {
+            "row": 56,
+            "scene": 10001,
+            "step": 22,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.22589874267578125
+          },
+          {
+            "row": 57,
+            "scene": 10001,
+            "step": 23,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.2209625244140625
+          },
+          {
+            "row": 58,
+            "scene": 10001,
+            "step": 24,
+            "demonstrated_action": 2,
+            "greedy_action": 0,
+            "gap": -0.44606781005859375
+          },
+          {
+            "row": 59,
+            "scene": 10001,
+            "step": 25,
+            "demonstrated_action": 6,
+            "greedy_action": 6,
+            "gap": 0.86370849609375
+          }
+        ]
+      },
+      "final_adam": {
+        "sha256": "a753fa0c44506373f2c2bcbd777a6ae06888aee8231bb1efccbe17e91213c6de",
+        "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+        "parameter_groups": [
+          {
+            "amsgrad": false,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "capturable": false,
+            "decoupled_weight_decay": false,
+            "differentiable": false,
+            "eps": 1e-08,
+            "foreach": null,
+            "fused": null,
+            "lr": 0.0001,
+            "maximize": false,
+            "weight_decay": 0,
+            "parameters": [
+              "0.weight",
+              "0.bias",
+              "2.weight",
+              "2.bias",
+              "4.weight",
+              "4.bias"
+            ]
+          }
+        ],
+        "parameter_count": 6,
+        "initialized_parameter_count": 6,
+        "steps": {
+          "0.weight": 20000.0,
+          "0.bias": 20000.0,
+          "2.weight": 20000.0,
+          "2.bias": 20000.0,
+          "4.weight": 20000.0,
+          "4.bias": 20000.0
+        },
+        "step_min": 20000.0,
+        "step_max": 20000.0,
+        "first_moment_l2": 1.0269684920831115,
+        "second_moment_l2": 3.051527568822317
+      },
+      "update_rows": 20000,
+      "zero_parameter_changes": 0
+    },
+    "calibration": {
+      "original_by_update": [
+        {
+          "update": 0,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10001,
+              "category": "damage"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 5000,
+          "successes": 0,
+          "failures": [
+            {
+              "seed": 10000,
+              "category": "budget_stationary_stall"
+            },
+            {
+              "seed": 10001,
+              "category": "damage"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 20000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        }
+      ],
+      "original_all_checks": {
+        "requested_scenes": 9,
+        "valid_scenes": 9,
+        "successes": 1,
+        "success_rate_requested": 0.1111111111111111,
+        "success_rate_valid": 0.1111111111111111,
+        "wilson95_requested": [
+          0.019890887638544907,
+          0.434999705576656
+        ],
+        "wilson95_valid": [
+          0.019890887638544907,
+          0.434999705576656
+        ],
+        "categories": {
+          "budget_blocked_stall": 5,
+          "damage": 2,
+          "budget_stationary_stall": 1,
+          "success": 1
+        },
+        "mean_return": -4.799934292210561,
+        "mean_steps": 147.66666666666666,
+        "mean_success_steps": 38.0,
+        "policy_actions": 1329,
+        "certification_actions": 351,
+        "certification_attempts": 9
+      },
+      "original_final": {
+        "requested_scenes": 3,
+        "valid_scenes": 3,
+        "successes": 1,
+        "success_rate_requested": 0.3333333333333333,
+        "success_rate_valid": 0.3333333333333333,
+        "wilson95_requested": [
+          0.06149194472039621,
+          0.7923403991979522
+        ],
+        "wilson95_valid": [
+          0.06149194472039621,
+          0.7923403991979522
+        ],
+        "categories": {
+          "success": 1,
+          "budget_blocked_stall": 2
+        },
+        "mean_return": 34.811054247179186,
+        "mean_steps": 146.0,
+        "mean_success_steps": 38.0,
+        "policy_actions": 438,
+        "certification_actions": 117,
+        "certification_attempts": 3
+      },
+      "added_training_final": {
+        "requested_scenes": 30,
+        "valid_scenes": 30,
+        "successes": 8,
+        "success_rate_requested": 0.26666666666666666,
+        "success_rate_valid": 0.26666666666666666,
+        "wilson95_requested": [
+          0.14182663319596317,
+          0.4444796169518888
+        ],
+        "wilson95_valid": [
+          0.14182663319596317,
+          0.4444796169518888
+        ],
+        "categories": {
+          "damage": 10,
+          "budget_blocked_stall": 10,
+          "success": 8,
+          "budget_stationary_stall": 1,
+          "budget_while_moving": 1
+        },
+        "mean_return": -10.015768704591027,
+        "mean_steps": 106.56666666666666,
+        "mean_success_steps": 49.25,
+        "policy_actions": 3197,
+        "certification_actions": 1323,
+        "certification_attempts": 30
+      },
+      "all_training_final": {
+        "requested_scenes": 33,
+        "valid_scenes": 33,
+        "successes": 9,
+        "success_rate_requested": 0.2727272727272727,
+        "success_rate_valid": 0.2727272727272727,
+        "wilson95_requested": [
+          0.1506744088542064,
+          0.44217559002872625
+        ],
+        "wilson95_valid": [
+          0.1506744088542064,
+          0.44217559002872625
+        ],
+        "categories": {
+          "success": 9,
+          "budget_blocked_stall": 12,
+          "damage": 10,
+          "budget_stationary_stall": 1,
+          "budget_while_moving": 1
+        },
+        "mean_return": -5.940602981702821,
+        "mean_steps": 110.15151515151516,
+        "mean_success_steps": 48.0,
+        "policy_actions": 3635,
+        "certification_actions": 1440,
+        "certification_attempts": 33
+      },
+      "final_fit": {
+        "phase": "calibration",
+        "update": 20000,
+        "rows": 1440,
+        "correct": 1185,
+        "original_correct": 104,
+        "new_correct": 1081,
+        "recovery_action": 4,
+        "recovery_gap": 2.889556884765625,
+        "return_mae": 0.7745375037193298,
+        "return_rmse": 1.117807149887085,
+        "minimum_q": -18.299699783325195,
+        "maximum_q": 102.74198150634766,
+        "probes": [
+          {
+            "row": 39,
+            "scene": 10001,
+            "step": 5,
+            "demonstrated_action": 2,
+            "greedy_action": 2,
+            "gap": 0.11856842041015625
+          },
+          {
+            "row": 40,
+            "scene": 10001,
+            "step": 6,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 0.8134765625
+          },
+          {
+            "row": 41,
+            "scene": 10001,
+            "step": 7,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.1520538330078125
+          },
+          {
+            "row": 54,
+            "scene": 10001,
+            "step": 20,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.6736831665039062
+          },
+          {
+            "row": 55,
+            "scene": 10001,
+            "step": 21,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.4172821044921875
+          },
+          {
+            "row": 56,
+            "scene": 10001,
+            "step": 22,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -1.0699462890625
+          },
+          {
+            "row": 57,
+            "scene": 10001,
+            "step": 23,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.16442108154296875
+          },
+          {
+            "row": 58,
+            "scene": 10001,
+            "step": 24,
+            "demonstrated_action": 2,
+            "greedy_action": 6,
+            "gap": -1.0910415649414062
+          },
+          {
+            "row": 59,
+            "scene": 10001,
+            "step": 25,
+            "demonstrated_action": 6,
+            "greedy_action": 6,
+            "gap": 1.3138961791992188
+          }
+        ]
+      },
+      "final_adam": {
+        "sha256": "4dd8e318100f6b6841a68c4fd03db164937530ea422596214b702431b496d00d",
+        "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+        "parameter_groups": [
+          {
+            "amsgrad": false,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "capturable": false,
+            "decoupled_weight_decay": false,
+            "differentiable": false,
+            "eps": 1e-08,
+            "foreach": null,
+            "fused": null,
+            "lr": 0.0001,
+            "maximize": false,
+            "weight_decay": 0,
+            "parameters": [
+              "0.weight",
+              "0.bias",
+              "2.weight",
+              "2.bias",
+              "4.weight",
+              "4.bias"
+            ]
+          }
+        ],
+        "parameter_count": 6,
+        "initialized_parameter_count": 6,
+        "steps": {
+          "0.weight": 20000.0,
+          "0.bias": 20000.0,
+          "2.weight": 20000.0,
+          "2.bias": 20000.0,
+          "4.weight": 20000.0,
+          "4.bias": 20000.0
+        },
+        "step_min": 20000.0,
+        "step_max": 20000.0,
+        "first_moment_l2": 1.0280184755131518,
+        "second_moment_l2": 2.801365341382912
+      },
+      "update_rows": 20000,
+      "zero_parameter_changes": 0
+    },
+    "td": {
+      "original_by_update": [
+        {
+          "update": 0,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 1,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "damage"
+            }
+          ]
+        },
+        {
+          "update": 10,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 100,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 500,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "damage"
+            }
+          ]
+        },
+        {
+          "update": 1000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 2000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 4000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 6000,
+          "successes": 1,
+          "failures": [
+            {
+              "seed": 10001,
+              "category": "budget_blocked_stall"
+            },
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 8000,
+          "successes": 2,
+          "failures": [
+            {
+              "seed": 10002,
+              "category": "budget_blocked_stall"
+            }
+          ]
+        },
+        {
+          "update": 10000,
+          "successes": 2,
+          "failures": [
+            {
+              "seed": 10002,
+              "category": "damage"
+            }
+          ]
+        }
+      ],
+      "original_all_checks": {
+        "requested_scenes": 33,
+        "valid_scenes": 33,
+        "successes": 13,
+        "success_rate_requested": 0.3939393939393939,
+        "success_rate_valid": 0.3939393939393939,
+        "wilson95_requested": [
+          0.2468310743447709,
+          0.5631655918005977
+        ],
+        "wilson95_valid": [
+          0.2468310743447709,
+          0.5631655918005977
+        ],
+        "categories": {
+          "success": 13,
+          "budget_blocked_stall": 17,
+          "damage": 3
+        },
+        "mean_return": 21.243154568122407,
+        "mean_steps": 123.24242424242425,
+        "mean_success_steps": 39.61538461538461,
+        "policy_actions": 4067,
+        "certification_actions": 1287,
+        "certification_attempts": 33
+      },
+      "original_final": {
+        "requested_scenes": 3,
+        "valid_scenes": 3,
+        "successes": 2,
+        "success_rate_requested": 0.6666666666666666,
+        "success_rate_valid": 0.6666666666666666,
+        "wilson95_requested": [
+          0.2076596008020477,
+          0.9385080552796037
+        ],
+        "wilson95_valid": [
+          0.2076596008020477,
+          0.9385080552796037
+        ],
+        "categories": {
+          "success": 2,
+          "damage": 1
+        },
+        "mean_return": 50.901542278409636,
+        "mean_steps": 47.666666666666664,
+        "mean_success_steps": 42.5,
+        "policy_actions": 143,
+        "certification_actions": 117,
+        "certification_attempts": 3
+      },
+      "added_training_final": {
+        "requested_scenes": 30,
+        "valid_scenes": 30,
+        "successes": 5,
+        "success_rate_requested": 0.16666666666666666,
+        "success_rate_valid": 0.16666666666666666,
+        "wilson95_requested": [
+          0.0733654237184855,
+          0.3356435050641603
+        ],
+        "wilson95_valid": [
+          0.0733654237184855,
+          0.3356435050641603
+        ],
+        "categories": {
+          "damage": 16,
+          "budget_blocked_stall": 9,
+          "success": 5
+        },
+        "mean_return": -24.107720253898712,
+        "mean_steps": 92.23333333333333,
+        "mean_success_steps": 44.0,
+        "policy_actions": 2767,
+        "certification_actions": 1323,
+        "certification_attempts": 30
+      },
+      "all_training_final": {
+        "requested_scenes": 33,
+        "valid_scenes": 33,
+        "successes": 7,
+        "success_rate_requested": 0.21212121212121213,
+        "success_rate_valid": 0.21212121212121213,
+        "wilson95_requested": [
+          0.10676021533020799,
+          0.3775164499215069
+        ],
+        "wilson95_valid": [
+          0.10676021533020799,
+          0.3775164499215069
+        ],
+        "categories": {
+          "success": 7,
+          "damage": 17,
+          "budget_blocked_stall": 9
+        },
+        "mean_return": -17.28869638732522,
+        "mean_steps": 88.18181818181819,
+        "mean_success_steps": 43.57142857142857,
+        "policy_actions": 2910,
+        "certification_actions": 1440,
+        "certification_attempts": 33
+      },
+      "final_fit": {
+        "phase": "td",
+        "update": 10000,
+        "rows": 1440,
+        "correct": 1227,
+        "original_correct": 103,
+        "new_correct": 1124,
+        "recovery_action": 4,
+        "recovery_gap": 3.3769302368164062,
+        "return_mae": 2.0481789112091064,
+        "return_rmse": 2.6804206371307373,
+        "minimum_q": -17.813241958618164,
+        "maximum_q": 104.82706451416016,
+        "probes": [
+          {
+            "row": 39,
+            "scene": 10001,
+            "step": 5,
+            "demonstrated_action": 2,
+            "greedy_action": 2,
+            "gap": 0.17935943603515625
+          },
+          {
+            "row": 40,
+            "scene": 10001,
+            "step": 6,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 0.73980712890625
+          },
+          {
+            "row": 41,
+            "scene": 10001,
+            "step": 7,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.1091690063476562
+          },
+          {
+            "row": 54,
+            "scene": 10001,
+            "step": 20,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.3819656372070312
+          },
+          {
+            "row": 55,
+            "scene": 10001,
+            "step": 21,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.0423812866210938
+          },
+          {
+            "row": 56,
+            "scene": 10001,
+            "step": 22,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.72845458984375
+          },
+          {
+            "row": 57,
+            "scene": 10001,
+            "step": 23,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.2079925537109375
+          },
+          {
+            "row": 58,
+            "scene": 10001,
+            "step": 24,
+            "demonstrated_action": 2,
+            "greedy_action": 6,
+            "gap": -0.5015106201171875
+          },
+          {
+            "row": 59,
+            "scene": 10001,
+            "step": 25,
+            "demonstrated_action": 6,
+            "greedy_action": 6,
+            "gap": 0.9360504150390625
+          }
+        ]
+      },
+      "final_adam": {
+        "sha256": "9c7c925e8f35e69c579570d6b433a558f5aac345bd5935d8205a47b9de0a706e",
+        "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+        "parameter_groups": [
+          {
+            "amsgrad": false,
+            "betas": [
+              0.9,
+              0.999
+            ],
+            "capturable": false,
+            "decoupled_weight_decay": false,
+            "differentiable": false,
+            "eps": 1e-08,
+            "foreach": null,
+            "fused": null,
+            "lr": 0.0001,
+            "maximize": false,
+            "weight_decay": 0,
+            "parameters": [
+              "0.weight",
+              "0.bias",
+              "2.weight",
+              "2.bias",
+              "4.weight",
+              "4.bias"
+            ]
+          }
+        ],
+        "parameter_count": 6,
+        "initialized_parameter_count": 6,
+        "steps": {
+          "0.weight": 30000.0,
+          "0.bias": 30000.0,
+          "2.weight": 30000.0,
+          "2.bias": 30000.0,
+          "4.weight": 30000.0,
+          "4.bias": 30000.0
+        },
+        "step_min": 30000.0,
+        "step_max": 30000.0,
+        "first_moment_l2": 0.9107709048167262,
+        "second_moment_l2": 2.9118401391208817
+      },
+      "update_rows": 10000,
+      "zero_parameter_changes": 0
+    }
+  },
+  "holdout": {
+    "baseline": {
+      "requested_scenes": 100,
+      "valid_scenes": 100,
+      "successes": 9,
+      "success_rate_requested": 0.09,
+      "success_rate_valid": 0.09,
+      "wilson95_requested": [
+        0.04807254000256516,
+        0.1622621285271631
+      ],
+      "wilson95_valid": [
+        0.04807254000256516,
+        0.1622621285271631
+      ],
+      "categories": {
+        "budget_blocked_stall": 39,
+        "damage": 47,
+        "budget_while_moving": 5,
+        "success": 9
+      },
+      "mean_return": -42.44914772089263,
+      "mean_steps": 115.1,
+      "mean_success_steps": 39.111111111111114,
+      "policy_actions": 11510,
+      "certification_actions": 4146,
+      "certification_attempts": 100
+    },
+    "staged": {
+      "requested_scenes": 100,
+      "valid_scenes": 100,
+      "successes": 13,
+      "success_rate_requested": 0.13,
+      "success_rate_valid": 0.13,
+      "wilson95_requested": [
+        0.07757167427240512,
+        0.20980351440076428
+      ],
+      "wilson95_valid": [
+        0.07757167427240512,
+        0.20980351440076428
+      ],
+      "categories": {
+        "success": 13,
+        "damage": 50,
+        "budget_blocked_stall": 33,
+        "budget_while_moving": 4
+      },
+      "mean_return": -34.774915642081695,
+      "mean_steps": 104.81,
+      "mean_success_steps": 59.23076923076923,
+      "policy_actions": 10481,
+      "certification_actions": 4146,
+      "certification_attempts": 100
+    }
+  },
+  "paired_counts": {
+    "staged_only": 11,
+    "neither_success": 80,
+    "baseline_only": 7,
+    "both_success": 2
+  },
+  "pairs": [
+    {
+      "seed": 490000,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490001,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490002,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490003,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490004,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490005,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490006,
+      "baseline_category": "damage",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490007,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490008,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490009,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490010,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490011,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490012,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490013,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490014,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490015,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490016,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490017,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490018,
+      "baseline_category": "damage",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490019,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490020,
+      "baseline_category": "budget_while_moving",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490021,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490022,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490023,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490024,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490025,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490026,
+      "baseline_category": "budget_while_moving",
+      "staged_category": "budget_while_moving",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490027,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490028,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490029,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490030,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490031,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490032,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490033,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490034,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490035,
+      "baseline_category": "damage",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490036,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490037,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490038,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490039,
+      "baseline_category": "budget_while_moving",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490040,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490041,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490042,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490043,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490044,
+      "baseline_category": "budget_while_moving",
+      "staged_category": "budget_while_moving",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490045,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490046,
+      "baseline_category": "success",
+      "staged_category": "damage",
+      "baseline_success": true,
+      "staged_success": false
+    },
+    {
+      "seed": 490047,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490048,
+      "baseline_category": "success",
+      "staged_category": "success",
+      "baseline_success": true,
+      "staged_success": true
+    },
+    {
+      "seed": 490049,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490050,
+      "baseline_category": "damage",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    },
+    {
+      "seed": 490051,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490052,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490053,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490054,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490055,
+      "baseline_category": "success",
+      "staged_category": "success",
+      "baseline_success": true,
+      "staged_success": true
+    },
+    {
+      "seed": 490056,
+      "baseline_category": "success",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": true,
+      "staged_success": false
+    },
+    {
+      "seed": 490057,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490058,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490059,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490060,
+      "baseline_category": "budget_while_moving",
+      "staged_category": "budget_while_moving",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490061,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490062,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490063,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490064,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490065,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490066,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490067,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490068,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490069,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_while_moving",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490070,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490071,
+      "baseline_category": "success",
+      "staged_category": "damage",
+      "baseline_success": true,
+      "staged_success": false
+    },
+    {
+      "seed": 490072,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490073,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490074,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490075,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490076,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490077,
+      "baseline_category": "success",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": true,
+      "staged_success": false
+    },
+    {
+      "seed": 490078,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490079,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490080,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490081,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490082,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490083,
+      "baseline_category": "success",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": true,
+      "staged_success": false
+    },
+    {
+      "seed": 490084,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490085,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490086,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490087,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490088,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490089,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490090,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490091,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490092,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490093,
+      "baseline_category": "success",
+      "staged_category": "damage",
+      "baseline_success": true,
+      "staged_success": false
+    },
+    {
+      "seed": 490094,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490095,
+      "baseline_category": "success",
+      "staged_category": "damage",
+      "baseline_success": true,
+      "staged_success": false
+    },
+    {
+      "seed": 490096,
+      "baseline_category": "damage",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490097,
+      "baseline_category": "damage",
+      "staged_category": "budget_blocked_stall",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490098,
+      "baseline_category": "budget_blocked_stall",
+      "staged_category": "damage",
+      "baseline_success": false,
+      "staged_success": false
+    },
+    {
+      "seed": 490099,
+      "baseline_category": "damage",
+      "staged_category": "success",
+      "baseline_success": false,
+      "staged_success": true
+    }
+  ],
+  "exports": {
+    "supervised": {
+      "path": "models/stages_030_supervised.pt",
+      "sha256": "e42480a9efdc02aa01682d25b956a11f97193334334dc120413afb4825b63717",
+      "phase": "supervised",
+      "selection": "Fixed endpoint; no best-checkpoint or holdout selection.",
+      "training_scenes": {
+        "requested_scenes": 33,
+        "valid_scenes": 33,
+        "successes": 4,
+        "success_rate_requested": 0.12121212121212122,
+        "success_rate_valid": 0.12121212121212122,
+        "wilson95_requested": [
+          0.04816161309413558,
+          0.2732550517107523
+        ],
+        "wilson95_valid": [
+          0.04816161309413558,
+          0.2732550517107523
+        ],
+        "categories": {
+          "budget_blocked_stall": 16,
+          "damage": 12,
+          "success": 4,
+          "budget_stationary_stall": 1
+        },
+        "mean_return": -29.989732364859883,
+        "mean_steps": 127.45454545454545,
+        "mean_success_steps": 65.5,
+        "policy_actions": 4206,
+        "certification_actions": 1440,
+        "certification_attempts": 33
+      },
+      "original_scenes": {
+        "requested_scenes": 3,
+        "valid_scenes": 3,
+        "successes": 0,
+        "success_rate_requested": 0.0,
+        "success_rate_valid": 0.0,
+        "wilson95_requested": [
+          5.551115123125783e-17,
+          0.5614970317550454
+        ],
+        "wilson95_valid": [
+          5.551115123125783e-17,
+          0.5614970317550454
+        ],
+        "categories": {
+          "budget_blocked_stall": 2,
+          "damage": 1
+        },
+        "mean_return": -27.405198974999305,
+        "mean_steps": 150.66666666666666,
+        "mean_success_steps": null,
+        "policy_actions": 452,
+        "certification_actions": 117,
+        "certification_attempts": 3
+      },
+      "holdout": null,
+      "scope": "Experimental inference checkpoint; no Adam resume state."
+    },
+    "calibration": {
+      "path": "models/stages_030_calibration.pt",
+      "sha256": "1341863f8989ac1ac023c90e8d37a35fe8e34b8b6cfb140ab431cb9510c59541",
+      "phase": "calibration",
+      "selection": "Fixed endpoint; no best-checkpoint or holdout selection.",
+      "training_scenes": {
+        "requested_scenes": 33,
+        "valid_scenes": 33,
+        "successes": 9,
+        "success_rate_requested": 0.2727272727272727,
+        "success_rate_valid": 0.2727272727272727,
+        "wilson95_requested": [
+          0.1506744088542064,
+          0.44217559002872625
+        ],
+        "wilson95_valid": [
+          0.1506744088542064,
+          0.44217559002872625
+        ],
+        "categories": {
+          "success": 9,
+          "budget_blocked_stall": 12,
+          "damage": 10,
+          "budget_stationary_stall": 1,
+          "budget_while_moving": 1
+        },
+        "mean_return": -5.940602981702821,
+        "mean_steps": 110.15151515151516,
+        "mean_success_steps": 48.0,
+        "policy_actions": 3635,
+        "certification_actions": 1440,
+        "certification_attempts": 33
+      },
+      "original_scenes": {
+        "requested_scenes": 3,
+        "valid_scenes": 3,
+        "successes": 1,
+        "success_rate_requested": 0.3333333333333333,
+        "success_rate_valid": 0.3333333333333333,
+        "wilson95_requested": [
+          0.06149194472039621,
+          0.7923403991979522
+        ],
+        "wilson95_valid": [
+          0.06149194472039621,
+          0.7923403991979522
+        ],
+        "categories": {
+          "success": 1,
+          "budget_blocked_stall": 2
+        },
+        "mean_return": 34.811054247179186,
+        "mean_steps": 146.0,
+        "mean_success_steps": 38.0,
+        "policy_actions": 438,
+        "certification_actions": 117,
+        "certification_attempts": 3
+      },
+      "holdout": null,
+      "scope": "Experimental inference checkpoint; no Adam resume state."
+    },
+    "td": {
+      "path": "models/stages_030_td.pt",
+      "sha256": "e236374791ce5b7bb59c00d6e99c3ab557821fc06ccddbcbed6686b638b67868",
+      "phase": "td",
+      "selection": "Fixed endpoint; no best-checkpoint or holdout selection.",
+      "training_scenes": {
+        "requested_scenes": 33,
+        "valid_scenes": 33,
+        "successes": 7,
+        "success_rate_requested": 0.21212121212121213,
+        "success_rate_valid": 0.21212121212121213,
+        "wilson95_requested": [
+          0.10676021533020799,
+          0.3775164499215069
+        ],
+        "wilson95_valid": [
+          0.10676021533020799,
+          0.3775164499215069
+        ],
+        "categories": {
+          "success": 7,
+          "damage": 17,
+          "budget_blocked_stall": 9
+        },
+        "mean_return": -17.28869638732522,
+        "mean_steps": 88.18181818181819,
+        "mean_success_steps": 43.57142857142857,
+        "policy_actions": 2910,
+        "certification_actions": 1440,
+        "certification_attempts": 33
+      },
+      "original_scenes": {
+        "requested_scenes": 3,
+        "valid_scenes": 3,
+        "successes": 2,
+        "success_rate_requested": 0.6666666666666666,
+        "success_rate_valid": 0.6666666666666666,
+        "wilson95_requested": [
+          0.2076596008020477,
+          0.9385080552796037
+        ],
+        "wilson95_valid": [
+          0.2076596008020477,
+          0.9385080552796037
+        ],
+        "categories": {
+          "success": 2,
+          "damage": 1
+        },
+        "mean_return": 50.901542278409636,
+        "mean_steps": 47.666666666666664,
+        "mean_success_steps": 42.5,
+        "policy_actions": 143,
+        "certification_actions": 117,
+        "certification_attempts": 3
+      },
+      "holdout": {
+        "requested_scenes": 100,
+        "valid_scenes": 100,
+        "successes": 13,
+        "success_rate_requested": 0.13,
+        "success_rate_valid": 0.13,
+        "wilson95_requested": [
+          0.07757167427240512,
+          0.20980351440076428
+        ],
+        "wilson95_valid": [
+          0.07757167427240512,
+          0.20980351440076428
+        ],
+        "categories": {
+          "success": 13,
+          "damage": 50,
+          "budget_blocked_stall": 33,
+          "budget_while_moving": 4
+        },
+        "mean_return": -34.774915642081695,
+        "mean_steps": 104.81,
+        "mean_success_steps": 59.23076923076923,
+        "policy_actions": 10481,
+        "certification_actions": 4146,
+        "certification_attempts": 100
+      },
+      "scope": "Experimental inference checkpoint; no Adam resume state."
+    }
+  },
+  "all_trace_audits_passed": true,
+  "sources_unchanged": true,
+  "analysis_source_sha256": "c4d30cbe5b17860497bb8de647084816c0fea2003c4f9c4dea12430b0c1cfef7",
+  "interpretation": "Paired frozen inference comparison after an additional fixed 50000-update staged procedure; not a matched-compute or individual-component ablation."
+}
