@@ -39,6 +39,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [027: repair step six while retaining recovery](027_step6_supervision/RESULTS.md) | Does doubling only the existing step-six supervision weight remove the residual early failures without losing recovery? | Matched all-scene checks improve from 67/69 to 69/69; all 105 treatment checkpoints and 315 autonomous episodes succeed. Step-six and recovery choices remain correct after all 8000 updates. All 104 post-start conditional probes succeed; 401 independent updates and 28 reloads reproduce the run. Final inference model exported and independently evaluated. Neighboring ranking changes remain; generalization and untested intermediate episodes are not established. |
 
+| [028: frozen-policy generalization](028_frozen_generalization/RESULTS.md) | Does the repaired policy work on 100 predeclared unseen scenes without tuning? | Only 1/100 succeeds: 50 damage failures and 49 budget failures, all with substantial blocking. All three training scenes still succeed before and after testing; seven normal-evaluator reloads reproduce their metrics. Model/source hashes stay unchanged, with zero training updates. Known-scene repair does not provide reliable unseen-scene competence. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

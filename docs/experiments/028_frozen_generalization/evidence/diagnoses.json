@@ -1,0 +1,6895 @@
+[
+  {
+    "seed": 280000,
+    "category": "damage",
+    "return": -50.827820941818466,
+    "steps": 12,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.46874964982271194,
+    "peak_deformation": 1.04768048217359,
+    "distance_to_target": 0.6572096347808838,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 3.8701629638671875,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "south_large",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.30355337262153625,
+      0.21199831366539001
+    ],
+    "distance_reduction": 0.1798455048106914
+  },
+  {
+    "seed": 280001,
+    "category": "budget_blocked_stall",
+    "return": -121.81912405876064,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6820309460163116,
+    "peak_deformation": 0.6362182020030969,
+    "distance_to_target": 0.5411306619644165,
+    "stationary_steps": 175,
+    "blocked_steps": 176,
+    "first_events": {
+      "blocked": 25,
+      "stationary": 26,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 175,
+    "longest_stationary_run": 175,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 25,
+      "position": [
+        0.39096564054489136,
+        0.48163649439811707
+      ],
+      "next_position": [
+        0.39096564054489136,
+        0.48175370693206787
+      ],
+      "encoded_observation_sha256": "d7620531086fe00bf856cd8bcf597c8a30a98081babd517e5ab6b645c9a87f1c",
+      "next_encoded_observation_sha256": "0726596a9de59abb068488bf24d363aea51742beab4db2fc48471942f030a257",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        87.68513488769531,
+        80.80767822265625,
+        80.50863647460938,
+        -11.764876365661621,
+        87.00801086425781,
+        86.04522705078125,
+        80.97683715820312,
+        -20.68686294555664
+      ],
+      "q_top_gap": 0.6771240234375,
+      "reward": -0.6559668559234986,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5411306619644165,
+        "travel_distance": 0.6820309460163116,
+        "max_normalized_deformation": 0.40388800052297424,
+        "peak_normalized_deformation": 0.6362182020030969,
+        "contact_steps": 8,
+        "minimum_substep_clearance": 0.03499996289610863,
+        "minimum_clearance": 0.03499996289610863,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.00011721253395080566
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 2.7389907836914062,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.39096564054489136,
+      0.48175370693206787
+    ],
+    "distance_reduction": 0.305131859746103
+  },
+  {
+    "seed": 280002,
+    "category": "damage",
+    "return": -75.69159091830018,
+    "steps": 56,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.29000096023082733,
+    "peak_deformation": 1.0003459281628382,
+    "distance_to_target": 0.6382220387458801,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.38904571533203125,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.307158887386322,
+      0.6251885890960693
+    ],
+    "distance_reduction": 0.2174282083052198
+  },
+  {
+    "seed": 280003,
+    "category": "damage",
+    "return": -61.62376241121345,
+    "steps": 27,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3940630480647087,
+    "peak_deformation": 1.0018883019856653,
+    "distance_to_target": 0.6477547883987427,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.5011825561523438,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2853747308254242,
+      0.3906775712966919
+    ],
+    "distance_reduction": 0.19559143204750928
+  },
+  {
+    "seed": 280004,
+    "category": "damage",
+    "return": -48.5272613245096,
+    "steps": 44,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.6709125638008118,
+    "peak_deformation": 1.02431606026316,
+    "distance_to_target": 0.4102790355682373,
+    "stationary_steps": 25,
+    "blocked_steps": 26,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 25,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20822635293006897,
+        0.4779759347438812
+      ],
+      "next_position": [
+        0.20913943648338318,
+        0.4779759347438812
+      ],
+      "encoded_observation_sha256": "b609ed3bb9604bcdbf26347f14e7ab77d77b6d5bab48d3614e3018ae0b4ae194",
+      "next_encoded_observation_sha256": "405d4f829306a86a5dfdf10c618a8ce046bc140546309bc9c1cd771daa3fae44",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        77.02507781982422,
+        60.65817642211914,
+        77.51123046875,
+        -11.33095645904541,
+        75.79364013671875,
+        76.5296630859375,
+        75.29029083251953,
+        -19.903610229492188
+      ],
+      "q_top_gap": 0.48615264892578125,
+      "reward": 0.008932609608622757,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7099584341049194,
+        "travel_distance": 0.12591302394866943,
+        "max_normalized_deformation": 7.080526626439856e-07,
+        "peak_normalized_deformation": 7.080526626439856e-07,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499116003513336,
+        "minimum_clearance": 0.03499116003513336,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.000913083553314209,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.0589828491210938,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.5441391468048096,
+      0.6879757642745972
+    ],
+    "distance_reduction": 0.4254153170048096
+  },
+  {
+    "seed": 280005,
+    "category": "damage",
+    "return": -52.09477934000643,
+    "steps": 15,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.44937480986118317,
+    "peak_deformation": 1.0608880530820444,
+    "distance_to_target": 0.6637627482414246,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.6187667846679688,
+    "final_ten_actions": [
+      "south_large",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2987934947013855,
+      0.32018840312957764
+    ],
+    "distance_reduction": 0.17417976606983
+  },
+  {
+    "seed": 280006,
+    "category": "budget_blocked_stall",
+    "return": -9.515633804662565,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 2.2711429819464684,
+    "peak_deformation": 0.8110697810493589,
+    "distance_to_target": 0.17967461049556732,
+    "stationary_steps": 127,
+    "blocked_steps": 128,
+    "first_events": {
+      "blocked": 73,
+      "stationary": 74,
+      "contact": 31
+    },
+    "trailing_stationary_steps": 127,
+    "longest_stationary_run": 127,
+    "two_step_position_returns": 30,
+    "first_blocked_transition": {
+      "step": 73,
+      "position": [
+        0.725323498249054,
+        0.5012446045875549
+      ],
+      "next_position": [
+        0.7414684891700745,
+        0.5012446045875549
+      ],
+      "encoded_observation_sha256": "809113e391013c9c8434b8a7512d5f15f236d3f3c890296411b6aca036b084b1",
+      "next_encoded_observation_sha256": "5851b0cff3ea6bd894f84d7cd12b58b6951a322d23f6989b9a36f892c6cefc60",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        94.87582397460938,
+        94.8115234375,
+        96.50546264648438,
+        -12.121291160583496,
+        92.33949279785156,
+        92.18036651611328,
+        92.68019104003906,
+        -22.368392944335938
+      ],
+      "q_top_gap": 1.629638671875,
+      "reward": 0.06934984076927195,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.17967461049556732,
+        "travel_distance": 2.2711429819464684,
+        "max_normalized_deformation": 0.0819162512927245,
+        "peak_normalized_deformation": 0.8110697810493589,
+        "contact_steps": 4,
+        "minimum_substep_clearance": 0.034990981221199036,
+        "minimum_clearance": 0.034990981221199036,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.016144990921020508,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.3847808837890625,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.7414684891700745,
+      0.5012446045875549
+    ],
+    "distance_reduction": 0.6628691407452191
+  },
+  {
+    "seed": 280007,
+    "category": "damage",
+    "return": -93.61020320387287,
+    "steps": 123,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.5857936069369316,
+    "peak_deformation": 1.000234186506217,
+    "distance_to_target": 0.42982664704322815,
+    "stationary_steps": 71,
+    "blocked_steps": 74,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 14,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 71,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.19708290696144104,
+        0.5429397821426392
+      ],
+      "next_position": [
+        0.2190140336751938,
+        0.5429397821426392
+      ],
+      "encoded_observation_sha256": "1028f2faaa7ee89d425474e1aa09a2842bd90db0a1fcbf63864fae2bb9f99999",
+      "next_encoded_observation_sha256": "17a3659292c7360f41149d369a8d86182a127c8ceb7af50b24a7ecc7166bd567",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        55.899723052978516,
+        68.07304382324219,
+        76.49241638183594,
+        -11.129592895507812,
+        68.01044464111328,
+        73.68669128417969,
+        66.06067657470703,
+        -20.553848266601562
+      ],
+      "q_top_gap": 2.80572509765625,
+      "reward": 0.17937491349504442,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7085282802581787,
+        "travel_distance": 0.14693108946084976,
+        "max_normalized_deformation": 0.03426251896097212,
+        "peak_normalized_deformation": 0.03426251896097212,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990474581718445,
+        "minimum_clearance": 0.034990474581718445,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.021931126713752747,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 4.7038116455078125,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.5403766632080078,
+      0.660439670085907
+    ],
+    "distance_reduction": 0.4248958942133808
+  },
+  {
+    "seed": 280008,
+    "category": "damage",
+    "return": -61.25096273203566,
+    "steps": 23,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3246881067752838,
+    "peak_deformation": 1.0015320356534327,
+    "distance_to_target": 0.6609516143798828,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.6679306030273438,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2862665355205536,
+      0.34873995184898376
+    ],
+    "distance_reduction": 0.17793163922238264
+  },
+  {
+    "seed": 280009,
+    "category": "budget_blocked_stall",
+    "return": -10.444074491585424,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.1413390412926674,
+    "peak_deformation": 0.10501517108939373,
+    "distance_to_target": 0.7118620872497559,
+    "stationary_steps": 194,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 194,
+    "longest_stationary_run": 194,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.2021760791540146,
+        0.5192850828170776
+      ],
+      "next_position": [
+        0.21851517260074615,
+        0.5192850828170776
+      ],
+      "encoded_observation_sha256": "f0cb9dce2432d98bc4ab2b7068ec1af245b0892aae0ff5dfcb0cae6b659333e9",
+      "next_encoded_observation_sha256": "887bf1cba64c60b8a95ceab75b5608605d986f3e67754d0861e1e1395a397392",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        63.034061431884766,
+        73.43567657470703,
+        75.94830322265625,
+        -11.040446281433105,
+        62.58655548095703,
+        70.79795837402344,
+        70.96165466308594,
+        -20.663585662841797
+      ],
+      "q_top_gap": 2.5126266479492188,
+      "reward": 0.08654857458526287,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7118620872497559,
+        "travel_distance": 0.1413390412926674,
+        "max_normalized_deformation": 0.07305031834190694,
+        "peak_normalized_deformation": 0.07451594440632482,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034991130232810974,
+        "minimum_clearance": 0.034991130232810974,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.016339093446731567,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.7633819580078125,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.21851517260074615,
+      0.5192850828170776
+    ],
+    "distance_reduction": 0.140952400352918
+  },
+  {
+    "seed": 280010,
+    "category": "budget_blocked_stall",
+    "return": -217.0882358929547,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.9664443582296371,
+    "peak_deformation": 0.6672247799233937,
+    "distance_to_target": 0.30099645256996155,
+    "stationary_steps": 154,
+    "blocked_steps": 154,
+    "first_events": {
+      "blocked": 47,
+      "stationary": 47,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 154,
+    "longest_stationary_run": 154,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 47,
+      "position": [
+        0.6147350668907166,
+        0.5315428376197815
+      ],
+      "next_position": [
+        0.6147350668907166,
+        0.5315428376197815
+      ],
+      "encoded_observation_sha256": "c4ad18ef8be0b599d75d14c554d466745269f7c238398cb011772226c98bad60",
+      "next_encoded_observation_sha256": "88845652e4babf056977213405e108ab1593881bc6d79ff95efdbf995f2930fa",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        90.6341552734375,
+        86.47537231445312,
+        86.22575378417969,
+        -11.912678718566895,
+        87.17432403564453,
+        72.93290710449219,
+        88.44486999511719,
+        -21.973894119262695
+      ],
+      "q_top_gap": 2.1892852783203125,
+      "reward": -1.2212735886121495,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.30099645256996155,
+        "travel_distance": 0.9664443582296371,
+        "max_normalized_deformation": 0.6672247799233937,
+        "peak_normalized_deformation": 0.6672247799233937,
+        "contact_steps": 28,
+        "minimum_substep_clearance": 0.034999966621398926,
+        "minimum_clearance": 0.034999966621398926,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.2022705078125,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.6147350668907166,
+      0.5315428376197815
+    ],
+    "distance_reduction": 0.5240374893839358
+  },
+  {
+    "seed": 280011,
+    "category": "damage",
+    "return": -56.583317962089325,
+    "steps": 23,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.41781357675790787,
+    "peak_deformation": 1.0009443295930576,
+    "distance_to_target": 0.6276165246963501,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.3555450439453125,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.31346040964126587,
+      0.374981164932251
+    ],
+    "distance_reduction": 0.2122344324633737
+  },
+  {
+    "seed": 280012,
+    "category": "damage",
+    "return": -57.25790949098683,
+    "steps": 30,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.6945305094122887,
+    "peak_deformation": 1.0009905000001518,
+    "distance_to_target": 0.5376261472702026,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 19
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "north_small",
+    "terminal_q_gap": 0.38629150390625,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.3737907111644745,
+      0.5238772034645081
+    ],
+    "distance_reduction": 0.30267911487658206
+  },
+  {
+    "seed": 280013,
+    "category": "damage",
+    "return": -50.48782385926841,
+    "steps": 11,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.339999757707119,
+    "peak_deformation": 1.0450494525545475,
+    "distance_to_target": 0.660345196723938,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.337615966796875,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.29173606634140015,
+      0.3065569996833801
+    ],
+    "distance_reduction": 0.19358945391374272
+  },
+  {
+    "seed": 280014,
+    "category": "budget_blocked_stall",
+    "return": -100.10908552777869,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 2.583146721124649,
+    "peak_deformation": 0.780731906375285,
+    "distance_to_target": 0.39194318652153015,
+    "stationary_steps": 106,
+    "blocked_steps": 113,
+    "first_events": {
+      "blocked": 26,
+      "stationary": 27,
+      "contact": 13
+    },
+    "trailing_stationary_steps": 22,
+    "longest_stationary_run": 84,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 26,
+      "position": [
+        0.5229032635688782,
+        0.4526563286781311
+      ],
+      "next_position": [
+        0.5229032635688782,
+        0.4538611173629761
+      ],
+      "encoded_observation_sha256": "0eed1f341dc49808f351c47361950eec628b295eae8205762217ee6e2830e1b9",
+      "next_encoded_observation_sha256": "527dbbb01f6c1091b64827b50906085a46a7b242e50cc2613649b279bf198d4b",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        92.57994079589844,
+        85.37206268310547,
+        84.18777465820312,
+        -12.02004623413086,
+        89.14634704589844,
+        92.15206146240234,
+        81.45268249511719,
+        -21.123443603515625
+      ],
+      "q_top_gap": 0.42787933349609375,
+      "reward": -0.7461102533948675,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.3919419050216675,
+        "travel_distance": 0.9031571447849274,
+        "max_normalized_deformation": 0.3849090476800326,
+        "peak_normalized_deformation": 0.780731906375285,
+        "contact_steps": 13,
+        "minimum_substep_clearance": 0.03499044105410576,
+        "minimum_clearance": 0.03499044105410576,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0012047886848449707
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 0.1449432373046875,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.5229032635688782,
+      0.4538522958755493
+    ],
+    "distance_reduction": 0.43211877825645184
+  },
+  {
+    "seed": 280015,
+    "category": "budget_blocked_stall",
+    "return": -170.02962765288268,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 1.021559402346611,
+    "peak_deformation": 0.9108805513210168,
+    "distance_to_target": 0.5460150837898254,
+    "stationary_steps": 167,
+    "blocked_steps": 169,
+    "first_events": {
+      "blocked": 28,
+      "stationary": 34,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 167,
+    "longest_stationary_run": 167,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 28,
+      "position": [
+        0.3774590790271759,
+        0.5285996198654175
+      ],
+      "next_position": [
+        0.3774590790271759,
+        0.5370348691940308
+      ],
+      "encoded_observation_sha256": "81217063b355f4af33259e1750fbc6735789d68679c73556151562606f96bfca",
+      "next_encoded_observation_sha256": "2f744668bc04e4d35c250c2af0bf1be36dde6e3a5251b2a7a06f334798fc5479",
+      "action": 4,
+      "action_name": "north_large",
+      "q_values": [
+        88.49876403808594,
+        75.6136245727539,
+        82.17715454101562,
+        -11.69517993927002,
+        90.34931945800781,
+        80.03369903564453,
+        82.07154846191406,
+        -21.382625579833984
+      ],
+      "q_top_gap": 1.850555419921875,
+      "reward": -0.7499497360502195,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5438244938850403,
+        "travel_distance": 1.0096844881772995,
+        "max_normalized_deformation": 0.6587753552715258,
+        "peak_normalized_deformation": 0.6587753552715258,
+        "contact_steps": 3,
+        "minimum_substep_clearance": 0.03499013930559158,
+        "minimum_clearance": 0.03500000014901161,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          0.008435249328613281
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.6106109619140625,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.3774590790271759,
+      0.5489097833633423
+    ],
+    "distance_reduction": 0.29458172261946525
+  },
+  {
+    "seed": 280016,
+    "category": "budget_blocked_stall",
+    "return": -47.06397260584608,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.1336648091673851,
+    "peak_deformation": 0.2734599688216069,
+    "distance_to_target": 0.7243412733078003,
+    "stationary_steps": 193,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 8,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 193,
+    "longest_stationary_run": 193,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.19947734475135803,
+        0.5325575470924377
+      ],
+      "next_position": [
+        0.20798349380493164,
+        0.5325575470924377
+      ],
+      "encoded_observation_sha256": "1ef06864fa4b5e9911631d98574ab5fd3c0925e761c483cb21da1cec62ebb2f2",
+      "next_encoded_observation_sha256": "2cefc1aa756f248c1f5fd40985027b05231f9e7782a15a065fe25b6f3de8013d",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        58.14955520629883,
+        70.93020629882812,
+        76.25091552734375,
+        -10.875956535339355,
+        60.60786819458008,
+        67.48956298828125,
+        69.03848266601562,
+        -20.66605567932129
+      ],
+      "q_top_gap": 5.320709228515625,
+      "reward": -0.06946171149562769,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7244988679885864,
+        "travel_distance": 0.13350611180067062,
+        "max_normalized_deformation": 0.15222860798191004,
+        "peak_normalized_deformation": 0.15222860798191004,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499006852507591,
+        "minimum_clearance": 0.03500000759959221,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.008506149053573608,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.6481552124023438,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.20814219117164612,
+      0.5325575470924377
+    ],
+    "distance_reduction": 0.13286780098646533
+  },
+  {
+    "seed": 280017,
+    "category": "damage",
+    "return": -55.59701309812522,
+    "steps": 34,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 1.207498960196972,
+    "peak_deformation": 1.0275092880218901,
+    "distance_to_target": 0.3847878873348236,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 11
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 4.064811706542969,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.556563138961792,
+      0.692805290222168
+    ],
+    "distance_reduction": 0.45773527656009305
+  },
+  {
+    "seed": 280018,
+    "category": "damage",
+    "return": -69.00560150123334,
+    "steps": 111,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 2.7309376299381256,
+    "peak_deformation": 1.0434314384803474,
+    "distance_to_target": 0.11592859029769897,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 56,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.29638671875,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.820984959602356,
+      0.6266353726387024
+    ],
+    "distance_reduction": 0.7395799291352622
+  },
+  {
+    "seed": 280019,
+    "category": "damage",
+    "return": -97.35135475116459,
+    "steps": 89,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.176791749894619,
+    "peak_deformation": 1.000292901234845,
+    "distance_to_target": 0.6550489664077759,
+    "stationary_steps": 0,
+    "blocked_steps": 1,
+    "first_events": {
+      "blocked": 5,
+      "stationary": null,
+      "contact": 5
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 5,
+      "position": [
+        0.18976718187332153,
+        0.5550819039344788
+      ],
+      "next_position": [
+        0.20163576304912567,
+        0.5550819039344788
+      ],
+      "encoded_observation_sha256": "6fb93d5a670b38fd5d7aa10e9a273c01ad71c152cb4adb262e5818654413d5b7",
+      "next_encoded_observation_sha256": "64a6df4960fb8180a608da4ab52ee934950488bf1f5c7a8baa7a9adca566d8ed",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        57.10404586791992,
+        70.50586700439453,
+        74.70761108398438,
+        -10.760735511779785,
+        58.52096939086914,
+        67.23187255859375,
+        67.39152526855469,
+        -20.376110076904297
+      ],
+      "q_top_gap": 4.201744079589844,
+      "reward": 0.017337964064339455,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7196559906005859,
+        "travel_distance": 0.11186853796243668,
+        "max_normalized_deformation": 0.09845691215350265,
+        "peak_normalized_deformation": 0.09845691215350265,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499021381139755,
+        "minimum_clearance": 0.034999996423721313,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.011868581175804138,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.171142578125,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.266558974981308,
+      0.5550819039344788
+    ],
+    "distance_reduction": 0.17604650954008205
+  },
+  {
+    "seed": 280020,
+    "category": "damage",
+    "return": -62.50964887795924,
+    "steps": 76,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3428414314985275,
+    "peak_deformation": 1.012965862103725,
+    "distance_to_target": 0.631503701210022,
+    "stationary_steps": 46,
+    "blocked_steps": 47,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 46,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.21170778572559357,
+        0.5222840309143066
+      ],
+      "next_position": [
+        0.22798584401607513,
+        0.5222840309143066
+      ],
+      "encoded_observation_sha256": "8c3fa3477d703127a0d04362072a4530eae6d8b0884cbe345488520e397e03bb",
+      "next_encoded_observation_sha256": "472ca0e7fe1f7ad007196e3d2de39532b02fc3bcfd6a812fcf5b01c138966069",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        62.93418884277344,
+        71.39395141601562,
+        79.10671997070312,
+        -11.409862518310547,
+        74.09664916992188,
+        75.00235748291016,
+        73.16935729980469,
+        -20.957307815551758
+      ],
+      "q_top_gap": 4.104362487792969,
+      "reward": 0.07355732903760921,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.6892112493515015,
+        "travel_distance": 0.1412779986858368,
+        "max_normalized_deformation": 0.08497552289682377,
+        "peak_normalized_deformation": 0.08600803448101514,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499038890004158,
+        "minimum_clearance": 0.03499038890004158,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.016278058290481567,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 5.436607360839844,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "north_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.31204938888549805,
+      0.6397839188575745
+    ],
+    "distance_reduction": 0.19825374105969573
+  },
+  {
+    "seed": 280021,
+    "category": "budget_blocked_stall",
+    "return": -45.269186229464864,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.13202478736639023,
+    "peak_deformation": 0.26297518159838207,
+    "distance_to_target": 0.7219477295875549,
+    "stationary_steps": 194,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 194,
+    "longest_stationary_run": 194,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20032021403312683,
+        0.5329488515853882
+      ],
+      "next_position": [
+        0.20734505355358124,
+        0.5329488515853882
+      ],
+      "encoded_observation_sha256": "05a1576240a84e9879f1640ec5be3541fb79e0cdd5ee0a7cb51b0c4bcc33d22e",
+      "next_encoded_observation_sha256": "61371e00695fd881d161875d5aab9b27364ae2ed8ab6ee24e276459362ce71c6",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        58.47823715209961,
+        71.3306655883789,
+        75.16384887695312,
+        -10.820115089416504,
+        59.90513229370117,
+        67.62162017822266,
+        68.75433349609375,
+        -20.45311737060547
+      ],
+      "q_top_gap": 3.8331832885742188,
+      "reward": -0.14298226632390365,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7219477295875549,
+        "travel_distance": 0.13202478736639023,
+        "max_normalized_deformation": 0.21149354674134596,
+        "peak_normalized_deformation": 0.21149354674134596,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990064799785614,
+        "minimum_clearance": 0.03499086946249008,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.007024839520454407,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.8502197265625,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.20734505355358124,
+      0.5329488515853882
+    ],
+    "distance_reduction": 0.1314906994356072
+  },
+  {
+    "seed": 280022,
+    "category": "budget_blocked_stall",
+    "return": -53.55270141296621,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6488605290651321,
+    "peak_deformation": 0.9402450828928259,
+    "distance_to_target": 0.5357304811477661,
+    "stationary_steps": 180,
+    "blocked_steps": 181,
+    "first_events": {
+      "blocked": 20,
+      "stationary": 21,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 180,
+    "longest_stationary_run": 180,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 20,
+      "position": [
+        0.3842896819114685,
+        0.48903965950012207
+      ],
+      "next_position": [
+        0.3842896819114685,
+        0.4904007315635681
+      ],
+      "encoded_observation_sha256": "8511ae0ec81f67921aebe0e23c9b5b761d00c818b7f20438aa32d4d3e2f6f3e3",
+      "next_encoded_observation_sha256": "a88da2eab90c1934750c9cfb96a98447255f02109038359cd1ca7abee8b9a9a3",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        88.64373779296875,
+        85.97877502441406,
+        87.66836547851562,
+        -11.787747383117676,
+        87.64136505126953,
+        80.03546142578125,
+        87.75233459472656,
+        -20.413820266723633
+      ],
+      "q_top_gap": 0.8914031982421875,
+      "reward": -0.7545251205082797,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5357304811477661,
+        "travel_distance": 0.6488605290651321,
+        "max_normalized_deformation": 0.5349508005310113,
+        "peak_normalized_deformation": 0.9402450828928259,
+        "contact_steps": 5,
+        "minimum_substep_clearance": 0.03499005362391472,
+        "minimum_clearance": 0.034990254789590836,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.001361072063446045
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.0504074096679688,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.3842896819114685,
+      0.4904007315635681
+    ],
+    "distance_reduction": 0.3032545643084963
+  },
+  {
+    "seed": 280023,
+    "category": "damage",
+    "return": -49.365307176718794,
+    "steps": 11,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3699997365474701,
+    "peak_deformation": 1.0302816060258828,
+    "distance_to_target": 0.6184073090553284,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.4306869506835938,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "south_small",
+      "south_small",
+      "south_small",
+      "south_small",
+      "south_small",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.32274848222732544,
+      0.3099920451641083
+    ],
+    "distance_reduction": 0.21889366709149138
+  },
+  {
+    "seed": 280024,
+    "category": "budget_blocked_stall",
+    "return": -116.08980665726385,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6353120282292366,
+    "peak_deformation": 0.5376139359758662,
+    "distance_to_target": 0.4912237823009491,
+    "stationary_steps": 184,
+    "blocked_steps": 185,
+    "first_events": {
+      "blocked": 16,
+      "stationary": 17,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 184,
+    "longest_stationary_run": 184,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 16,
+      "position": [
+        0.5113385319709778,
+        0.26628193259239197
+      ],
+      "next_position": [
+        0.5113385319709778,
+        0.2669069468975067
+      ],
+      "encoded_observation_sha256": "4bec9ae8b7ce4b153e9da38b935754187fd2bb197862e92e589ee627cf6bd45c",
+      "next_encoded_observation_sha256": "2f3496aef37b63386c38699b5f709080467d8ad220126bc641a81e971e78c5c7",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        89.40508270263672,
+        68.02436828613281,
+        79.13685607910156,
+        -11.865702629089355,
+        76.37895202636719,
+        85.80894470214844,
+        85.83560180664062,
+        -19.874765396118164
+      ],
+      "q_top_gap": 3.5694808959960938,
+      "reward": -0.6290266089108651,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.4912237823009491,
+        "travel_distance": 0.6353120282292366,
+        "max_normalized_deformation": 0.49719651283391875,
+        "peak_normalized_deformation": 0.5376139359758662,
+        "contact_steps": 5,
+        "minimum_substep_clearance": 0.03500000014901161,
+        "minimum_clearance": 0.03500000387430191,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0006250143051147461
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 2.7210006713867188,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.5113385319709778,
+      0.2669069468975067
+    ],
+    "distance_reduction": 0.35155637519910854
+  },
+  {
+    "seed": 280025,
+    "category": "damage",
+    "return": -53.76250763178352,
+    "steps": 17,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.5900006368756294,
+    "peak_deformation": 1.0263177543463449,
+    "distance_to_target": 0.4414132833480835,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 3.2477798461914062,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.549399197101593,
+      0.6875948309898376
+    ],
+    "distance_reduction": 0.409340141070176
+  },
+  {
+    "seed": 280026,
+    "category": "budget_blocked_stall",
+    "return": -118.06279697636809,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.8571306094527245,
+    "peak_deformation": 0.5391358113005488,
+    "distance_to_target": 0.31345200538635254,
+    "stationary_steps": 180,
+    "blocked_steps": 182,
+    "first_events": {
+      "blocked": 19,
+      "stationary": 20,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 31,
+    "longest_stationary_run": 149,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 19,
+      "position": [
+        0.598761796951294,
+        0.5129274129867554
+      ],
+      "next_position": [
+        0.598761796951294,
+        0.45579734444618225
+      ],
+      "encoded_observation_sha256": "dbc68b5f2ffb9842eed6f780fd7cf57eea7f0d8e2a37bcd1f700d6fa6c3a4735",
+      "next_encoded_observation_sha256": "18d5ffb29c54045881b92e06e27907d139b7c31ce7f7d4f359a78feb8f0f2fe5",
+      "action": 5,
+      "action_name": "south_large",
+      "q_values": [
+        84.89762115478516,
+        84.06965637207031,
+        86.13720703125,
+        -11.821742057800293,
+        81.62760925292969,
+        91.38848876953125,
+        87.78276062011719,
+        -21.93077850341797
+      ],
+      "q_top_gap": 3.6057281494140625,
+      "reward": -0.6465152845565204,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.31345319747924805,
+        "travel_distance": 0.857129417359829,
+        "max_normalized_deformation": 0.37335004007445544,
+        "peak_normalized_deformation": 0.5391358113005488,
+        "contact_steps": 5,
+        "minimum_substep_clearance": 0.034990325570106506,
+        "minimum_clearance": 0.034990325570106506,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          -0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          -0.05713006854057312
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.955474853515625,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.5987629890441895,
+      0.45579734444618225
+    ],
+    "distance_reduction": 0.5271765085097033
+  },
+  {
+    "seed": 280027,
+    "category": "budget_blocked_stall",
+    "return": -81.40263841974678,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 1.8477217331528664,
+    "peak_deformation": 0.49660203632071415,
+    "distance_to_target": 0.45559927821159363,
+    "stationary_steps": 136,
+    "blocked_steps": 137,
+    "first_events": {
+      "blocked": 64,
+      "stationary": 65,
+      "contact": 13
+    },
+    "trailing_stationary_steps": 136,
+    "longest_stationary_run": 136,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 64,
+      "position": [
+        0.4711344242095947,
+        0.45050927996635437
+      ],
+      "next_position": [
+        0.4711344242095947,
+        0.4513576626777649
+      ],
+      "encoded_observation_sha256": "08d40091969e7daca5fe90ca6aafecf0c12987ee33c8e7d53c78eba4e4a601b0",
+      "next_encoded_observation_sha256": "de5596b4587452ad731db2d3183c4ac927eae4499bb3b2587fe3e4a6ad6b2d54",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        91.00101470947266,
+        85.26725769042969,
+        82.66154479980469,
+        -11.903401374816895,
+        89.70097351074219,
+        90.93693542480469,
+        80.57958984375,
+        -21.038984298706055
+      ],
+      "q_top_gap": 0.06407928466796875,
+      "reward": -0.5038848481829911,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.45559927821159363,
+        "travel_distance": 1.8477217331528664,
+        "max_normalized_deformation": 0.49660203632071415,
+        "peak_normalized_deformation": 0.49660203632071415,
+        "contact_steps": 38,
+        "minimum_substep_clearance": 0.03499090299010277,
+        "minimum_clearance": 0.03499090299010277,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0008483827114105225
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 0.648040771484375,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.4711344242095947,
+      0.4513576626777649
+    ],
+    "distance_reduction": 0.3996569120791035
+  },
+  {
+    "seed": 280028,
+    "category": "budget_blocked_stall",
+    "return": -144.63120562266548,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.7932380810379982,
+    "peak_deformation": 0.830761318819718,
+    "distance_to_target": 0.3811575174331665,
+    "stationary_steps": 160,
+    "blocked_steps": 162,
+    "first_events": {
+      "blocked": 23,
+      "stationary": 41,
+      "contact": 17
+    },
+    "trailing_stationary_steps": 160,
+    "longest_stationary_run": 160,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 23,
+      "position": [
+        0.5388585925102234,
+        0.6009888052940369
+      ],
+      "next_position": [
+        0.5388585925102234,
+        0.5623586773872375
+      ],
+      "encoded_observation_sha256": "b84855c49b003925018de53edf7856472ef3d241383dfd2b36aab87fa514724f",
+      "next_encoded_observation_sha256": "e87485b7aa8a53fc685ea74a00cd68c5de1ff64f24b625d3ac6a8fa9589b62d5",
+      "action": 5,
+      "action_name": "south_large",
+      "q_values": [
+        85.62754821777344,
+        86.0311508178711,
+        85.1291275024414,
+        -11.99303150177002,
+        81.77473449707031,
+        90.36026763916016,
+        88.38916015625,
+        -22.09180450439453
+      ],
+      "q_top_gap": 1.9711074829101562,
+      "reward": -0.6007676934651497,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.38249996304512024,
+        "travel_distance": 0.7798802629113197,
+        "max_normalized_deformation": 0.6575046872548226,
+        "peak_normalized_deformation": 0.6904320986194586,
+        "contact_steps": 7,
+        "minimum_substep_clearance": 0.0349901057779789,
+        "minimum_clearance": 0.03500001132488251,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          -0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          -0.038630127906799316
+        ]
+      }
+    },
+    "terminal_action": "south_large",
+    "terminal_q_gap": 0.350311279296875,
+    "final_ten_actions": [
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large"
+    ],
+    "final_position": [
+      0.5388585925102234,
+      0.5490008592605591
+    ],
+    "distance_reduction": 0.46500603064166746
+  },
+  {
+    "seed": 280029,
+    "category": "budget_blocked_stall",
+    "return": -69.50799213561321,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.14437126368284225,
+    "peak_deformation": 0.36570745169743135,
+    "distance_to_target": 0.6846057176589966,
+    "stationary_steps": 190,
+    "blocked_steps": 191,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 11,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 190,
+    "longest_stationary_run": 190,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.2147781252861023,
+        0.5407794117927551
+      ],
+      "next_position": [
+        0.23172757029533386,
+        0.5407794117927551
+      ],
+      "encoded_observation_sha256": "60a69a890adfd5cc76505b9689a824c15adf4bd4e4d856d2bc7a389e15d1ea3e",
+      "next_encoded_observation_sha256": "95bdbcd922ba7bd529874cf1fcefdc9f6115b8f5da3dc5ec0d2535060db47c3e",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        66.5130844116211,
+        76.26699829101562,
+        77.07181549072266,
+        -11.189435005187988,
+        65.717529296875,
+        72.58116912841797,
+        72.82403564453125,
+        -20.835773468017578
+      ],
+      "q_top_gap": 0.8048171997070312,
+      "reward": -0.013962325899595401,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.6870207786560059,
+        "travel_distance": 0.1419493779540062,
+        "max_normalized_deformation": 0.17959869250535407,
+        "peak_normalized_deformation": 0.17959869250535407,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499007225036621,
+        "minimum_clearance": 0.03499007225036621,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.016949445009231567,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.7989425659179688,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.23414945602416992,
+      0.5407794117927551
+    ],
+    "distance_reduction": 0.14403160220260425
+  },
+  {
+    "seed": 280030,
+    "category": "budget_blocked_stall",
+    "return": -16.080775476730498,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.13576043397188187,
+    "peak_deformation": 0.12971156670698197,
+    "distance_to_target": 0.6992912292480469,
+    "stationary_steps": 194,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 194,
+    "longest_stationary_run": 194,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20789287984371185,
+        0.5251061916351318
+      ],
+      "next_position": [
+        0.2186533659696579,
+        0.5251061916351318
+      ],
+      "encoded_observation_sha256": "0b966fd4d3d1d2939e2317277e2e0e728c710279a4ece9c7a2af6808e3344b21",
+      "next_encoded_observation_sha256": "2b956b6cb7297f5d809d7913539fada6b83b44389f83f7f7752e62b24999e218",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        66.12826538085938,
+        75.06515502929688,
+        75.11287689208984,
+        -11.090577125549316,
+        63.47774124145508,
+        73.32100677490234,
+        70.62085723876953,
+        -20.488649368286133
+      ],
+      "q_top_gap": 0.04772186279296875,
+      "reward": 0.03190333974659201,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.6992912292480469,
+        "travel_distance": 0.13576043397188187,
+        "max_normalized_deformation": 0.0735059128969932,
+        "peak_normalized_deformation": 0.0751774925036496,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499112278223038,
+        "minimum_clearance": 0.03499112278223038,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.010760486125946045,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.3089141845703125,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2186533659696579,
+      0.5251061916351318
+    ],
+    "distance_reduction": 0.13571375103544792
+  },
+  {
+    "seed": 280031,
+    "category": "budget_blocked_stall",
+    "return": -130.88674502686175,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6478512212634087,
+    "peak_deformation": 0.7296149490641712,
+    "distance_to_target": 0.40585944056510925,
+    "stationary_steps": 177,
+    "blocked_steps": 178,
+    "first_events": {
+      "blocked": 23,
+      "stationary": 24,
+      "contact": 15
+    },
+    "trailing_stationary_steps": 177,
+    "longest_stationary_run": 177,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 23,
+      "position": [
+        0.5175976753234863,
+        0.3988039493560791
+      ],
+      "next_position": [
+        0.5175976753234863,
+        0.39899930357933044
+      ],
+      "encoded_observation_sha256": "c36fb1684ef974dcb17bf4de68b27565f09141215f306a7a592b6c77016d773f",
+      "next_encoded_observation_sha256": "b3fdead3db64e52b090a66d216f09d74ccafb76d4affca5a7d97783e047bd74b",
+      "action": 4,
+      "action_name": "north_large",
+      "q_values": [
+        82.88854217529297,
+        80.18472290039062,
+        78.97705078125,
+        -11.594517707824707,
+        85.76565551757812,
+        82.70947265625,
+        79.73091888427734,
+        -20.86248207092285
+      ],
+      "q_top_gap": 2.8771133422851562,
+      "reward": -0.7279532372210424,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.40585944056510925,
+        "travel_distance": 0.6478512212634087,
+        "max_normalized_deformation": 0.7281245707724493,
+        "peak_normalized_deformation": 0.7296149490641712,
+        "contact_steps": 9,
+        "minimum_substep_clearance": 0.03500000014901161,
+        "minimum_clearance": 0.03500000014901161,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          0.00019535422325134277
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 4.3965606689453125,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.5175976753234863,
+      0.39899930357933044
+    ],
+    "distance_reduction": 0.4279235469445142
+  },
+  {
+    "seed": 280032,
+    "category": "damage",
+    "return": -54.031247612444645,
+    "steps": 21,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.48062580823898315,
+    "peak_deformation": 1.011205225609207,
+    "distance_to_target": 0.6269913911819458,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.5828704833984375,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.3300054967403412,
+      0.3202940821647644
+    ],
+    "distance_reduction": 0.20605194916457792
+  },
+  {
+    "seed": 280033,
+    "category": "damage",
+    "return": -82.5080985436517,
+    "steps": 75,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.23406191915273666,
+    "peak_deformation": 1.0011538131276942,
+    "distance_to_target": 0.6032853126525879,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.85302734375,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.3191494345664978,
+      0.5719395875930786
+    ],
+    "distance_reduction": 0.23354731364569892
+  },
+  {
+    "seed": 280034,
+    "category": "budget_blocked_stall",
+    "return": -146.339987168254,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.9732021391391754,
+    "peak_deformation": 0.6949769382530874,
+    "distance_to_target": 0.4456835091114044,
+    "stationary_steps": 149,
+    "blocked_steps": 150,
+    "first_events": {
+      "blocked": 51,
+      "stationary": 52,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 149,
+    "longest_stationary_run": 149,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 51,
+      "position": [
+        0.47449222207069397,
+        0.41286593675613403
+      ],
+      "next_position": [
+        0.47449222207069397,
+        0.41294407844543457
+      ],
+      "encoded_observation_sha256": "b59ecd2b5cb2596aa282bfa7446bb7b213615e720ca7164b20a0e9807677bdd7",
+      "next_encoded_observation_sha256": "c9f7af3112109861cb43ece406b318b69669fe9bc3f0362fbc691a03f11b66ec",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        92.26615905761719,
+        84.7496566772461,
+        84.11499786376953,
+        -11.950116157531738,
+        89.6951675415039,
+        90.65138244628906,
+        81.56948852539062,
+        -21.219247817993164
+      ],
+      "q_top_gap": 1.614776611328125,
+      "reward": -0.8019434468085659,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.4456835091114044,
+        "travel_distance": 0.9732021391391754,
+        "max_normalized_deformation": 0.4889289017623951,
+        "peak_normalized_deformation": 0.6949769382530874,
+        "contact_steps": 36,
+        "minimum_substep_clearance": 0.034999992698431015,
+        "minimum_clearance": 0.034999996423721313,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          7.814168930053711e-05
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.1165084838867188,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.47449222207069397,
+      0.41294407844543457
+    ],
+    "distance_reduction": 0.3997309239230371
+  },
+  {
+    "seed": 280035,
+    "category": "damage",
+    "return": -64.54380291848119,
+    "steps": 29,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.4109382629394531,
+    "peak_deformation": 1.0010431859702944,
+    "distance_to_target": 0.6297014951705933,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.9764633178710938,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.309538334608078,
+      0.3435550332069397
+    ],
+    "distance_reduction": 0.20695602192154905
+  },
+  {
+    "seed": 280036,
+    "category": "damage",
+    "return": -51.11743768276758,
+    "steps": 12,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3899996876716614,
+    "peak_deformation": 1.0262564218100003,
+    "distance_to_target": 0.653821587562561,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.9136276245117188,
+    "final_ten_actions": [
+      "south_large",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.29798611998558044,
+      0.35430264472961426
+    ],
+    "distance_reduction": 0.17911861918830319
+  },
+  {
+    "seed": 280037,
+    "category": "budget_blocked_stall",
+    "return": -14.03142226664233,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.9331095293164253,
+    "peak_deformation": 0.7168492265166001,
+    "distance_to_target": 0.4967133700847626,
+    "stationary_steps": 175,
+    "blocked_steps": 176,
+    "first_events": {
+      "blocked": 25,
+      "stationary": 26,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 175,
+    "longest_stationary_run": 175,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 25,
+      "position": [
+        0.44716358184814453,
+        0.6681777834892273
+      ],
+      "next_position": [
+        0.465273916721344,
+        0.6681777834892273
+      ],
+      "encoded_observation_sha256": "b5f5c2c357c26e4b58557ca5026d85f7ad49c376fe1b3d86ec6e2fa6fbcaa1c0",
+      "next_encoded_observation_sha256": "f73fcc3331132acb313cc38a612a5f33e033ba82fa834dbc33829f460071b380",
+      "action": 6,
+      "action_name": "east_large",
+      "q_values": [
+        75.81474304199219,
+        72.81529998779297,
+        81.8265609741211,
+        -11.665005683898926,
+        84.03776550292969,
+        67.47850799560547,
+        90.39196014404297,
+        -21.936582565307617
+      ],
+      "q_top_gap": 6.354194641113281,
+      "reward": -0.2163338102914999,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.4967133700847626,
+        "travel_distance": 0.9331095293164253,
+        "max_normalized_deformation": 0.382142416439266,
+        "peak_normalized_deformation": 0.7168492265166001,
+        "contact_steps": 3,
+        "minimum_substep_clearance": 0.03499114140868187,
+        "minimum_clearance": 0.03499114140868187,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.05999999865889549,
+          0.0
+        ],
+        "executed_motion": [
+          0.018110334873199463,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 6.114013671875,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.465273916721344,
+      0.6681777834892273
+    ],
+    "distance_reduction": 0.3500439612503603
+  },
+  {
+    "seed": 280038,
+    "category": "damage",
+    "return": -50.46448831853189,
+    "steps": 11,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3962496817111969,
+    "peak_deformation": 1.0458675290110153,
+    "distance_to_target": 0.6580632328987122,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.859375,
+    "final_ten_actions": [
+      "east_small",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2991066873073578,
+      0.32782185077667236
+    ],
+    "distance_reduction": 0.18782643048821535
+  },
+  {
+    "seed": 280039,
+    "category": "budget_blocked_stall",
+    "return": 1.3621512904763222,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.13930904120206833,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.7081481218338013,
+    "stationary_steps": 193,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 186,
+    "longest_stationary_run": 186,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.2081569880247116,
+        0.5815088152885437
+      ],
+      "next_position": [
+        0.222413569688797,
+        0.5815088152885437
+      ],
+      "encoded_observation_sha256": "959d272cfba64dc7d6140b29bddc4fdb30dc96d68311726b018779de7fb00965",
+      "next_encoded_observation_sha256": "2dafe0b2cb566cf2477fae2486703d3463fe6238a8a4b9e73069eefb0df9f08f",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        26.39430046081543,
+        74.1934585571289,
+        75.20779418945312,
+        -11.03299617767334,
+        50.05826950073242,
+        72.62191772460938,
+        69.71465301513672,
+        -20.573328018188477
+      ],
+      "q_top_gap": 1.0143356323242188,
+      "reward": 0.1394035130739212,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7081515789031982,
+        "travel_distance": 0.1392565295100212,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499076887965202,
+        "minimum_clearance": 0.03499076887965202,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.014256581664085388,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.7854156494140625,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.222413569688797,
+      0.5814563035964966
+    ],
+    "distance_reduction": 0.13900134027658184
+  },
+  {
+    "seed": 280040,
+    "category": "damage",
+    "return": -81.05025404294656,
+    "steps": 57,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3034386783838272,
+    "peak_deformation": 1.0000678164243115,
+    "distance_to_target": 0.6404984593391418,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.5934829711914062,
+    "final_ten_actions": [
+      "north_large",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2961455285549164,
+      0.6457368731498718
+    ],
+    "distance_reduction": 0.19774137413172088
+  },
+  {
+    "seed": 280041,
+    "category": "damage",
+    "return": -66.10633407967894,
+    "steps": 31,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.4565633460879326,
+    "peak_deformation": 1.0015319084502934,
+    "distance_to_target": 0.6677001118659973,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 3.3418960571289062,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2961822748184204,
+      0.19145724177360535
+    ],
+    "distance_reduction": 0.16694040096351992
+  },
+  {
+    "seed": 280042,
+    "category": "budget_blocked_stall",
+    "return": 2.4790317729115485,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6685163006186485,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.5738093256950378,
+    "stationary_steps": 179,
+    "blocked_steps": 180,
+    "first_events": {
+      "blocked": 21,
+      "stationary": 22,
+      "contact": 21
+    },
+    "trailing_stationary_steps": 179,
+    "longest_stationary_run": 179,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 21,
+      "position": [
+        0.34263303875923157,
+        0.41171643137931824
+      ],
+      "next_position": [
+        0.34263303875923157,
+        0.4402332603931427
+      ],
+      "encoded_observation_sha256": "447cb29f850272a2e7b52b16c39b73d08fb5bd58b9f0a09e864dedaa376309d2",
+      "next_encoded_observation_sha256": "d36217c09c0677a7683e6f21c9f7b27295886e59a7ecabc266e97b22de38bf53",
+      "action": 4,
+      "action_name": "north_large",
+      "q_values": [
+        85.2798843383789,
+        85.10868835449219,
+        84.66560363769531,
+        -11.653254508972168,
+        85.32572937011719,
+        77.79875183105469,
+        84.07585144042969,
+        -19.918062210083008
+      ],
+      "q_top_gap": 0.04584503173828125,
+      "reward": 0.03482242822647095,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5738093256950378,
+        "travel_distance": 0.6685163006186485,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990616142749786,
+        "minimum_clearance": 0.034990616142749786,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          0.028516829013824463
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 0.8846435546875,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.34263303875923157,
+      0.4402332603931427
+    ],
+    "distance_reduction": 0.2612734985350619
+  },
+  {
+    "seed": 280043,
+    "category": "damage",
+    "return": -49.66977563173933,
+    "steps": 9,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3949997052550316,
+    "peak_deformation": 1.018494318571602,
+    "distance_to_target": 0.6680608987808228,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.9983062744140625,
+    "final_ten_actions": [
+      "east_small",
+      "south_large",
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.29176315665245056,
+      0.31444698572158813
+    ],
+    "distance_reduction": 0.1741017255425652
+  },
+  {
+    "seed": 280044,
+    "category": "damage",
+    "return": -48.08196130958372,
+    "steps": 32,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 1.369998998939991,
+    "peak_deformation": 1.0012463303293273,
+    "distance_to_target": 0.20169049501419067,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 12
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.1402664184570312,
+    "final_ten_actions": [
+      "south_large",
+      "south_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "south_large",
+      "south_large",
+      "east_large",
+      "east_large",
+      "north_small"
+    ],
+    "final_position": [
+      0.8084243535995483,
+      0.3833698034286499
+    ],
+    "distance_reduction": 0.6458317159258663
+  },
+  {
+    "seed": 280045,
+    "category": "damage",
+    "return": -51.13457565077269,
+    "steps": 11,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3412497639656067,
+    "peak_deformation": 1.0232512330260548,
+    "distance_to_target": 0.66969233751297,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.9154052734375,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.29534250497817993,
+      0.35223329067230225
+    ],
+    "distance_reduction": 0.19038400580153791
+  },
+  {
+    "seed": 280046,
+    "category": "success",
+    "return": 107.33783594300628,
+    "steps": 36,
+    "success": true,
+    "damage": false,
+    "budget_exhausted": false,
+    "travel_distance": 1.5999985411763191,
+    "peak_deformation": 0.054817857534894224,
+    "distance_to_target": 0.04837192967534065,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 28
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.575286865234375,
+    "final_ten_actions": [
+      "south_large",
+      "east_large",
+      "east_large",
+      "north_small",
+      "north_small",
+      "north_small",
+      "east_small",
+      "north_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.9461928009986877,
+      0.4448721408843994
+    ],
+    "distance_reduction": 0.8031516815956069
+  },
+  {
+    "seed": 280047,
+    "category": "damage",
+    "return": -70.57597924738941,
+    "steps": 60,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.35859527438879013,
+    "peak_deformation": 1.0000528198157372,
+    "distance_to_target": 0.6360039114952087,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.287200927734375,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.309775173664093,
+      0.4083942770957947
+    ],
+    "distance_reduction": 0.21773455997715052
+  },
+  {
+    "seed": 280048,
+    "category": "damage",
+    "return": -59.84904256719233,
+    "steps": 27,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.47453198581933975,
+    "peak_deformation": 1.0002700048230853,
+    "distance_to_target": 0.6301853656768799,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 13
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "north_large",
+    "terminal_q_gap": 0.7977828979492188,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "north_small",
+      "north_small",
+      "north_large",
+      "north_large",
+      "north_large",
+      "north_large",
+      "north_large"
+    ],
+    "final_position": [
+      0.2918313443660736,
+      0.4390982985496521
+    ],
+    "distance_reduction": 0.20822013228717118
+  },
+  {
+    "seed": 280049,
+    "category": "budget_blocked_stall",
+    "return": -7.424407064922038,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.1726757138967514,
+    "peak_deformation": 0.128282695048511,
+    "distance_to_target": 0.6991479396820068,
+    "stationary_steps": 192,
+    "blocked_steps": 194,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 9,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 192,
+    "longest_stationary_run": 192,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20895220339298248,
+        0.4825766384601593
+      ],
+      "next_position": [
+        0.22177812457084656,
+        0.4825766384601593
+      ],
+      "encoded_observation_sha256": "dd1f4a4c44a8972527218ead966336f868192c09b86b8034f22ec951c1b0ab7d",
+      "next_encoded_observation_sha256": "23334e5d7fd5673d3ac7b60ed0a6138e34040595e211346d97e017a0f705205f",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        77.7121810913086,
+        61.170257568359375,
+        78.28248596191406,
+        -11.438544273376465,
+        76.38711547851562,
+        77.57757568359375,
+        75.83099365234375,
+        -20.084976196289062
+      ],
+      "q_top_gap": 0.5703048706054688,
+      "reward": 0.1254340022802353,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7005231380462646,
+        "travel_distance": 0.1378258615732193,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990303218364716,
+        "minimum_clearance": 0.034990303218364716,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.012825921177864075,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.8242111206054688,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.22177812457084656,
+      0.5174264907836914
+    ],
+    "distance_reduction": 0.13896276588345213
+  },
+  {
+    "seed": 280050,
+    "category": "budget_blocked_stall",
+    "return": 2.4815486416220662,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6765790060162544,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.5782804489135742,
+    "stationary_steps": 178,
+    "blocked_steps": 179,
+    "first_events": {
+      "blocked": 22,
+      "stationary": 23,
+      "contact": 22
+    },
+    "trailing_stationary_steps": 178,
+    "longest_stationary_run": 178,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 22,
+      "position": [
+        0.34479570388793945,
+        0.48775792121887207
+      ],
+      "next_position": [
+        0.34479570388793945,
+        0.49933749437332153
+      ],
+      "encoded_observation_sha256": "ff30c26bea0bd4943f1cbc9e3de88fdc8bee945f86293d55241124adb1076730",
+      "next_encoded_observation_sha256": "af5cdf3a5aca7c0a44f58266bf2f1636653d0c118cced2c12835f2bf4c3a657f",
+      "action": 4,
+      "action_name": "north_large",
+      "q_values": [
+        87.70126342773438,
+        86.43504333496094,
+        87.56094360351562,
+        -11.90686321258545,
+        87.79856872558594,
+        79.84098815917969,
+        86.87689971923828,
+        -20.49383544921875
+      ],
+      "q_top_gap": 0.0973052978515625,
+      "reward": 0.012011253833770752,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5782804489135742,
+        "travel_distance": 0.6765790060162544,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990161657333374,
+        "minimum_clearance": 0.034990161657333374,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          0.011579573154449463
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 0.8309173583984375,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.34479570388793945,
+      0.49933749437332153
+    ],
+    "distance_reduction": 0.2616864537239607
+  },
+  {
+    "seed": 280051,
+    "category": "damage",
+    "return": -49.97990708725658,
+    "steps": 10,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.38499972969293594,
+    "peak_deformation": 1.001441523484422,
+    "distance_to_target": 0.6280340552330017,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.0965805053710938,
+    "final_ten_actions": [
+      "south_small",
+      "south_small",
+      "south_small",
+      "south_small",
+      "south_small",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.33094072341918945,
+      0.30267828702926636
+    ],
+    "distance_reduction": 0.22171038862592318
+  },
+  {
+    "seed": 280052,
+    "category": "damage",
+    "return": -50.159086587825044,
+    "steps": 10,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.37999970465898514,
+    "peak_deformation": 1.01547020852227,
+    "distance_to_target": 0.6546099185943604,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.4422836303710938,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_small",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.28929105401039124,
+      0.29814350605010986
+    ],
+    "distance_reduction": 0.17343750139373915
+  },
+  {
+    "seed": 280053,
+    "category": "damage",
+    "return": -50.0468111589766,
+    "steps": 11,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.449999637901783,
+    "peak_deformation": 1.0007602100334874,
+    "distance_to_target": 0.6502593755722046,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 4.441444396972656,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "south_large",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.29839587211608887,
+      0.21807140111923218
+    ],
+    "distance_reduction": 0.1748205945615653
+  },
+  {
+    "seed": 280054,
+    "category": "budget_blocked_stall",
+    "return": 1.4588505148887636,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.21881455183029175,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.7073400020599365,
+    "stationary_steps": 191,
+    "blocked_steps": 193,
+    "first_events": {
+      "blocked": 7,
+      "stationary": 10,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 191,
+    "longest_stationary_run": 191,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 7,
+      "position": [
+        0.2229222059249878,
+        0.4260201156139374
+      ],
+      "next_position": [
+        0.23163557052612305,
+        0.4260201156139374
+      ],
+      "encoded_observation_sha256": "9524cb2308d161202e7f6382fb03f89ae593cf2dffa1f5c8ad2ab4e7d6d3d340",
+      "next_encoded_observation_sha256": "17db34b8370eb37859a7d324508d795803174242734c1dc47141fae7852d27b0",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        77.7355728149414,
+        59.88039779663086,
+        78.2433853149414,
+        -11.479640007019043,
+        75.30807495117188,
+        78.0816650390625,
+        77.74411010742188,
+        -20.14362335205078
+      ],
+      "q_top_gap": 0.16172027587890625,
+      "reward": 0.08503096103668213,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.699429452419281,
+        "travel_distance": 0.15871329605579376,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.0349910631775856,
+        "minimum_clearance": 0.0349910631775856,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.008713364601135254,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 10.21826171875,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.23173688352108002,
+      0.36602017283439636
+    ],
+    "distance_reduction": 0.1502613738272709
+  },
+  {
+    "seed": 280055,
+    "category": "budget_blocked_stall",
+    "return": -159.35823640867235,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6801239997148514,
+    "peak_deformation": 0.682409099213016,
+    "distance_to_target": 0.45657673478126526,
+    "stationary_steps": 179,
+    "blocked_steps": 180,
+    "first_events": {
+      "blocked": 21,
+      "stationary": 22,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 179,
+    "longest_stationary_run": 179,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 21,
+      "position": [
+        0.45548030734062195,
+        0.4572107195854187
+      ],
+      "next_position": [
+        0.45548030734062195,
+        0.45796021819114685
+      ],
+      "encoded_observation_sha256": "ef22530df7ca7f69d9cfd15cd27501f73984b73f996d941a8c8ea48c1c27df70",
+      "next_encoded_observation_sha256": "fde72c7e915e210a2d5c4de841962434b9cd0b2900530e0614cb41c9b4b4d005",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        89.28105163574219,
+        83.52922058105469,
+        80.49005126953125,
+        -11.754311561584473,
+        88.97502899169922,
+        89.26783752441406,
+        79.91337585449219,
+        -20.88776397705078
+      ],
+      "q_top_gap": 0.013214111328125,
+      "reward": -0.8493222174488851,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.45657673478126526,
+        "travel_distance": 0.6801239997148514,
+        "max_normalized_deformation": 0.38476876846537517,
+        "peak_normalized_deformation": 0.682409099213016,
+        "contact_steps": 12,
+        "minimum_substep_clearance": 0.034990016371011734,
+        "minimum_clearance": 0.034990016371011734,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0007494986057281494
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 0.46734619140625,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.45548030734062195,
+      0.45796021819114685
+    ],
+    "distance_reduction": 0.38786432903390866
+  },
+  {
+    "seed": 280056,
+    "category": "damage",
+    "return": -52.8688082124603,
+    "steps": 20,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.434375561773777,
+    "peak_deformation": 1.0398505701086673,
+    "distance_to_target": 0.6344042420387268,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 13
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.18456268310546875,
+    "final_ten_actions": [
+      "south_small",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.3224712610244751,
+      0.33402299880981445
+    ],
+    "distance_reduction": 0.19737723179317268
+  },
+  {
+    "seed": 280057,
+    "category": "damage",
+    "return": -65.82598431309668,
+    "steps": 40,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 1.1109381690621376,
+    "peak_deformation": 1.0014102988208171,
+    "distance_to_target": 0.38879042863845825,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 3.1077346801757812,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.5552895665168762,
+      0.6201402544975281
+    ],
+    "distance_reduction": 0.446863795820998
+  },
+  {
+    "seed": 280058,
+    "category": "damage",
+    "return": -56.47620618765604,
+    "steps": 19,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.5837507396936417,
+    "peak_deformation": 1.0094357564262566,
+    "distance_to_target": 0.4398554861545563,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.3091888427734375,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.5518036484718323,
+      0.6845638751983643
+    ],
+    "distance_reduction": 0.40476151602308397
+  },
+  {
+    "seed": 280059,
+    "category": "budget_blocked_stall",
+    "return": 1.22411527633667,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.12679803371429443,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.7044140696525574,
+    "stationary_steps": 194,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 194,
+    "longest_stationary_run": 194,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20996369421482086,
+        0.5022276639938354
+      ],
+      "next_position": [
+        0.20996369421482086,
+        0.5040257573127747
+      ],
+      "encoded_observation_sha256": "e1dd066287bdaea718c4f095464cc8456c9efac3614088bd623d7dbc0e02af36",
+      "next_encoded_observation_sha256": "3b6cdf36d1ae90ddc3a32480beb1a21f5ca4dbf161bd19752d1b395dcba26fd2",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        78.62748718261719,
+        62.864952087402344,
+        78.50834655761719,
+        -11.472640991210938,
+        77.43949890136719,
+        77.57164001464844,
+        76.8951644897461,
+        -20.194360733032227
+      ],
+      "q_top_gap": 0.119140625,
+      "reward": 0.0005529284477233886,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7044140696525574,
+        "travel_distance": 0.12679803371429443,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990210086107254,
+        "minimum_clearance": 0.034990210086107254,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.001798093318939209
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 5.3931732177734375,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.20996369421482086,
+      0.5040257573127747
+    ],
+    "distance_reduction": 0.12494745433416887
+  },
+  {
+    "seed": 280060,
+    "category": "damage",
+    "return": -57.799571594989246,
+    "steps": 22,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.6481263861060143,
+    "peak_deformation": 1.0131685936059787,
+    "distance_to_target": 0.4445968270301819,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 4.49200439453125,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.5493065714836121,
+      0.6678671836853027
+    ],
+    "distance_reduction": 0.38916253302994164
+  },
+  {
+    "seed": 280061,
+    "category": "budget_blocked_stall",
+    "return": -3.561968750482793,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.5566584393382072,
+    "peak_deformation": 0.5346002181576887,
+    "distance_to_target": 0.5917083621025085,
+    "stationary_steps": 184,
+    "blocked_steps": 185,
+    "first_events": {
+      "blocked": 16,
+      "stationary": 17,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 184,
+    "longest_stationary_run": 184,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 16,
+      "position": [
+        0.3272816240787506,
+        0.517646074295044
+      ],
+      "next_position": [
+        0.3272816240787506,
+        0.524304986000061
+      ],
+      "encoded_observation_sha256": "35f89398c0d090b095005d2062dda05664ac5524487ee58cfffb52deb2405c4b",
+      "next_encoded_observation_sha256": "50f2fd0867822d5652e098c25026283ee3091e17b58b216ba0f1de1cc48d024e",
+      "action": 4,
+      "action_name": "north_large",
+      "q_values": [
+        86.55809783935547,
+        84.10206604003906,
+        87.12242889404297,
+        -11.851682662963867,
+        87.74592590332031,
+        79.13093566894531,
+        86.80136108398438,
+        -20.58846092224121
+      ],
+      "q_top_gap": 0.6234970092773438,
+      "reward": -0.25423911207424665,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5917083621025085,
+        "travel_distance": 0.5566584393382072,
+        "max_normalized_deformation": 0.2579916059325841,
+        "peak_normalized_deformation": 0.5346002181576887,
+        "contact_steps": 5,
+        "minimum_substep_clearance": 0.034990038722753525,
+        "minimum_clearance": 0.034990038722753525,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          0.00665891170501709
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.23492431640625,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.3272816240787506,
+      0.524304986000061
+    ],
+    "distance_reduction": 0.245579924112857
+  },
+  {
+    "seed": 280062,
+    "category": "damage",
+    "return": -73.124193810147,
+    "steps": 59,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.2703132778406143,
+    "peak_deformation": 1.0253817558416507,
+    "distance_to_target": 0.6553248763084412,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.025146484375,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "north_large",
+      "east_small"
+    ],
+    "final_position": [
+      0.29808881878852844,
+      0.6231057643890381
+    ],
+    "distance_reduction": 0.19313711157998492
+  },
+  {
+    "seed": 280063,
+    "category": "budget_blocked_stall",
+    "return": 1.2322491441486518,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.1280297264456749,
+    "peak_deformation": 0.0001414293341508534,
+    "distance_to_target": 0.7144347429275513,
+    "stationary_steps": 193,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 133,
+    "longest_stationary_run": 133,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20822034776210785,
+        0.5233814716339111
+      ],
+      "next_position": [
+        0.21124890446662903,
+        0.5233814716339111
+      ],
+      "encoded_observation_sha256": "ae43de4256e467f372fe400669aa275e83ae241ab16727a0bdc409aa5cb313a9",
+      "next_encoded_observation_sha256": "014506106840c37597b30f62466fca408535a9f208871dc35d81e97aed458efc",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        21.912019729614258,
+        72.46127319335938,
+        75.62899017333984,
+        -11.012775421142578,
+        49.39508819580078,
+        68.8816146850586,
+        68.39433288574219,
+        -20.558006286621094
+      ],
+      "q_top_gap": 3.1677169799804688,
+      "reward": 0.02944086085818126,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7144359350204468,
+        "travel_distance": 0.128028504550457,
+        "max_normalized_deformation": 7.252786366710431e-07,
+        "peak_normalized_deformation": 7.252786366710431e-07,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990694373846054,
+        "minimum_clearance": 0.034990694373846054,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.003028556704521179,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 2.4740829467773438,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.21125012636184692,
+      0.5233814716339111
+    ],
+    "distance_reduction": 0.12717154716997425
+  },
+  {
+    "seed": 280064,
+    "category": "budget_while_moving",
+    "return": 1.1033136932580085,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.11502803862094879,
+    "peak_deformation": 0.00014480305695392963,
+    "distance_to_target": 0.7159145474433899,
+    "stationary_steps": 183,
+    "blocked_steps": 196,
+    "first_events": {
+      "blocked": 5,
+      "stationary": 6,
+      "contact": 5
+    },
+    "trailing_stationary_steps": 3,
+    "longest_stationary_run": 16,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 5,
+      "position": [
+        0.1880318820476532,
+        0.5758674144744873
+      ],
+      "next_position": [
+        0.2030452936887741,
+        0.5758674144744873
+      ],
+      "encoded_observation_sha256": "f0b5ac4a58404d4ea2a5c066dec411a7f06f3a5e80b03a703f9a6bd7fe7ea8b6",
+      "next_encoded_observation_sha256": "2a5ca30da0c5b35817c038757ad1b6e3117b4cace739b364964d7d5498300118",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        18.47260093688965,
+        70.82528686523438,
+        75.84849548339844,
+        -10.973896980285645,
+        47.85565948486328,
+        67.12591552734375,
+        67.86099243164062,
+        -20.52943229675293
+      ],
+      "q_top_gap": 5.0232086181640625,
+      "reward": 0.14568617205815476,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7159290313720703,
+        "travel_distance": 0.11501337587833405,
+        "max_normalized_deformation": 2.9642386275113535e-07,
+        "peak_normalized_deformation": 2.9642386275113535e-07,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499041497707367,
+        "minimum_clearance": 0.03499042987823486,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.01501341164112091,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 2.30987548828125,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.20305995643138885,
+      0.5758674144744873
+    ],
+    "distance_reduction": 0.11405387960739
+  },
+  {
+    "seed": 280065,
+    "category": "damage",
+    "return": -56.74803343964694,
+    "steps": 26,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.28203144669532776,
+    "peak_deformation": 1.0273713205506443,
+    "distance_to_target": 0.6384202241897583,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_small",
+    "terminal_q_gap": 1.6025161743164062,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "north_large",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.2931903302669525,
+      0.6239641904830933
+    ],
+    "distance_reduction": 0.2124311882171228
+  },
+  {
+    "seed": 280066,
+    "category": "damage",
+    "return": -80.24349807865363,
+    "steps": 68,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.24476347118616104,
+    "peak_deformation": 1.0016304654035124,
+    "distance_to_target": 0.6064758896827698,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.0152587890625,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.3153029680252075,
+      0.5677558779716492
+    ],
+    "distance_reduction": 0.24378863336166146
+  },
+  {
+    "seed": 280067,
+    "category": "damage",
+    "return": -76.52142026480199,
+    "steps": 58,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 1.0601577907800674,
+    "peak_deformation": 1.0058290273165083,
+    "distance_to_target": 0.3824506998062134,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.2657623291015625,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.5616955161094666,
+      0.6679111123085022
+    ],
+    "distance_reduction": 0.46354367890494774
+  },
+  {
+    "seed": 280068,
+    "category": "budget_blocked_stall",
+    "return": -164.82790445127202,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 1.4964829608798027,
+    "peak_deformation": 0.8893718163817812,
+    "distance_to_target": 0.5360838174819946,
+    "stationary_steps": 159,
+    "blocked_steps": 160,
+    "first_events": {
+      "blocked": 41,
+      "stationary": 42,
+      "contact": 10
+    },
+    "trailing_stationary_steps": 159,
+    "longest_stationary_run": 159,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 41,
+      "position": [
+        0.39225566387176514,
+        0.5284925103187561
+      ],
+      "next_position": [
+        0.39225566387176514,
+        0.5412268042564392
+      ],
+      "encoded_observation_sha256": "6d339726041888c634dd7d841580e15a0c86e9612e4519f7529887e42ef5309f",
+      "next_encoded_observation_sha256": "3282f434b44b47f1bd4b39b55cb51c89fadbeb590a8635083e7a29df0ff17478",
+      "action": 4,
+      "action_name": "north_large",
+      "q_values": [
+        89.61000061035156,
+        76.8591537475586,
+        84.04334259033203,
+        -11.880897521972656,
+        90.72647094726562,
+        80.31137084960938,
+        84.50213623046875,
+        -21.743698120117188
+      ],
+      "q_top_gap": 1.1164703369140625,
+      "reward": -1.0131033562610456,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5360838174819946,
+        "travel_distance": 1.4964829608798027,
+        "max_normalized_deformation": 0.8893718163817812,
+        "peak_normalized_deformation": 0.8893718163817812,
+        "contact_steps": 4,
+        "minimum_substep_clearance": 0.034999970346689224,
+        "minimum_clearance": 0.0350000225007534,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          0.012734293937683105
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 0.6481781005859375,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.39225566387176514,
+      0.5412268042564392
+    ],
+    "distance_reduction": 0.2933964097421976
+  },
+  {
+    "seed": 280069,
+    "category": "damage",
+    "return": -102.9747883063848,
+    "steps": 181,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.33697518706321716,
+    "peak_deformation": 1.003248553039354,
+    "distance_to_target": 0.6356414556503296,
+    "stationary_steps": 138,
+    "blocked_steps": 140,
+    "first_events": {
+      "blocked": 5,
+      "stationary": 7,
+      "contact": 5
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 138,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 5,
+      "position": [
+        0.1798628717660904,
+        0.5306499600410461
+      ],
+      "next_position": [
+        0.2022005021572113,
+        0.5306499600410461
+      ],
+      "encoded_observation_sha256": "a85c8fa9afc4bfc6296c1d93e3ebbed8c76a94881d7079822ab92e26bb418da6",
+      "next_encoded_observation_sha256": "dcaba92a0362b6d72b7daf7b4ff2bdba1c221a997566969a2564d3a32e4f0ab9",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        58.78093338012695,
+        68.40597534179688,
+        76.39899444580078,
+        -11.033514976501465,
+        64.99140167236328,
+        76.06480407714844,
+        64.74534606933594,
+        -20.44586753845215
+      ],
+      "q_top_gap": 0.33419036865234375,
+      "reward": 0.13446655298478338,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7096892595291138,
+        "travel_distance": 0.12233760952949524,
+        "max_normalized_deformation": 0.08398490821116236,
+        "peak_normalized_deformation": 0.08398490821116236,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499038144946098,
+        "minimum_clearance": 0.03499038144946098,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.02233763039112091,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.7687835693359375,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2968381941318512,
+      0.6506498456001282
+    ],
+    "distance_reduction": 0.19616485611323098
+  },
+  {
+    "seed": 280070,
+    "category": "budget_blocked_stall",
+    "return": -79.08275605550347,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6757025644183159,
+    "peak_deformation": 0.4535840402382338,
+    "distance_to_target": 0.5409947633743286,
+    "stationary_steps": 179,
+    "blocked_steps": 180,
+    "first_events": {
+      "blocked": 21,
+      "stationary": 22,
+      "contact": 19
+    },
+    "trailing_stationary_steps": 179,
+    "longest_stationary_run": 179,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 21,
+      "position": [
+        0.38033193349838257,
+        0.4284156560897827
+      ],
+      "next_position": [
+        0.38033193349838257,
+        0.4291187822818756
+      ],
+      "encoded_observation_sha256": "833e5cbf7f6289fa7c369293dc7b122e332895d50f45298181d96b7bb8ecb3f7",
+      "next_encoded_observation_sha256": "9c5391b0cd2a70b935bc759ca2bd68b9d6b85a12068bf8678367fefe46c8aa13",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        88.65994262695312,
+        87.58168029785156,
+        86.71345520019531,
+        -11.780699729919434,
+        87.31163024902344,
+        79.38623046875,
+        86.76668548583984,
+        -20.13395118713379
+      ],
+      "q_top_gap": 1.0782623291015625,
+      "reward": -0.4514081464047042,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5409947633743286,
+        "travel_distance": 0.6757025644183159,
+        "max_normalized_deformation": 0.45225815036245265,
+        "peak_normalized_deformation": 0.4535840402382338,
+        "contact_steps": 3,
+        "minimum_substep_clearance": 0.035000018775463104,
+        "minimum_clearance": 0.035000018775463104,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0007031261920928955
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 2.52587890625,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.38033193349838257,
+      0.4291187822818756
+    ],
+    "distance_reduction": 0.29624386461818986
+  },
+  {
+    "seed": 280071,
+    "category": "budget_blocked_stall",
+    "return": -56.61889562975092,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.1446514129638672,
+    "peak_deformation": 0.30223029257624234,
+    "distance_to_target": 0.6841437816619873,
+    "stationary_steps": 183,
+    "blocked_steps": 185,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 18,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 183,
+    "longest_stationary_run": 183,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.21123310923576355,
+        0.54661625623703
+      ],
+      "next_position": [
+        0.22553303837776184,
+        0.54661625623703
+      ],
+      "encoded_observation_sha256": "136951cec5141aba8830d92417a9ae96a653a85eae4f13cf7d4ce6830863dbac",
+      "next_encoded_observation_sha256": "8b849e390a19a4371f58e9e4bb0dd958ad7026299a20ff0ab47bf82976b41e20",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        63.677913665771484,
+        74.43567657470703,
+        76.17367553710938,
+        -11.051323890686035,
+        63.6369514465332,
+        70.97928619384766,
+        71.39569091796875,
+        -20.71062660217285
+      ],
+      "q_top_gap": 1.7379989624023438,
+      "reward": 0.03838484378904352,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.6894779801368713,
+        "travel_distance": 0.13929986953735352,
+        "max_normalized_deformation": 0.10130265859514227,
+        "peak_normalized_deformation": 0.10130265859514227,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990161657333374,
+        "minimum_clearance": 0.03500001132488251,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.014299929141998291,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.4211883544921875,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2308845818042755,
+      0.54661625623703
+    ],
+    "distance_reduction": 0.1442603202511079
+  },
+  {
+    "seed": 280072,
+    "category": "budget_while_moving",
+    "return": 5.8588458308616564,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.9184644371271133,
+    "peak_deformation": 0.19840033262577786,
+    "distance_to_target": 0.22085152566432953,
+    "stationary_steps": 178,
+    "blocked_steps": 180,
+    "first_events": {
+      "blocked": 19,
+      "stationary": 20,
+      "contact": 19
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 178,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 19,
+      "position": [
+        0.6071094870567322,
+        0.5834622979164124
+      ],
+      "next_position": [
+        0.6071094870567322,
+        0.5424625873565674
+      ],
+      "encoded_observation_sha256": "8429a4451d779e747f9c059ee27889873f8ca5ffa933944230233107eb474ac9",
+      "next_encoded_observation_sha256": "f09a76fdd03d891b79280fda30a6b7d52207ce6cb141c0ff78dcd15c68ad37f6",
+      "action": 5,
+      "action_name": "south_large",
+      "q_values": [
+        82.92510986328125,
+        90.58079528808594,
+        85.75582885742188,
+        -11.869515419006348,
+        80.40960693359375,
+        91.96332550048828,
+        88.20796966552734,
+        -22.419231414794922
+      ],
+      "q_top_gap": 1.3825302124023438,
+      "reward": 0.12858318090438842,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.3266666531562805,
+        "travel_distance": 0.8059990555047989,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499068319797516,
+        "minimum_clearance": 0.03499068319797516,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          -0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          -0.04099971055984497
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 4.382011413574219,
+    "final_ten_actions": [
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "east_small",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.7195748686790466,
+      0.5424625873565674
+    ],
+    "distance_reduction": 0.6240938952066006
+  },
+  {
+    "seed": 280073,
+    "category": "damage",
+    "return": -73.1308874554088,
+    "steps": 61,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3326577767729759,
+    "peak_deformation": 1.0046689920411496,
+    "distance_to_target": 0.6441684365272522,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.0030288696289062,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.3002351224422455,
+      0.4024587869644165
+    ],
+    "distance_reduction": 0.1892203303818164
+  },
+  {
+    "seed": 280074,
+    "category": "budget_blocked_stall",
+    "return": 4.644544476270675,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.8802873194217682,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.3494623303413391,
+    "stationary_steps": 178,
+    "blocked_steps": 179,
+    "first_events": {
+      "blocked": 22,
+      "stationary": 23,
+      "contact": 22
+    },
+    "trailing_stationary_steps": 178,
+    "longest_stationary_run": 178,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 22,
+      "position": [
+        0.5724515914916992,
+        0.5492533445358276
+      ],
+      "next_position": [
+        0.5724515914916992,
+        0.5089653134346008
+      ],
+      "encoded_observation_sha256": "6a7549bd5fe38cb71a66c17e3efb33d4a39eb0d93d012087fef226de2f3c9ada",
+      "next_encoded_observation_sha256": "b6e0407eb2a4d29eb9f2cb1a7c512fd6ba4c7b045ce06c9845e6604c25fd91b9",
+      "action": 5,
+      "action_name": "south_large",
+      "q_values": [
+        87.99586486816406,
+        76.8714599609375,
+        87.32046508789062,
+        -12.008682250976562,
+        82.66207885742188,
+        91.90252685546875,
+        90.93255615234375,
+        -21.775108337402344
+      ],
+      "q_top_gap": 0.969970703125,
+      "reward": -0.03966386318206787,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.3494623303413391,
+        "travel_distance": 0.8802873194217682,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499053046107292,
+        "minimum_clearance": 0.03499053046107292,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          -0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          -0.04028803110122681
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.06964111328125,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.5724515914916992,
+      0.5089653134346008
+    ],
+    "distance_reduction": 0.4820602369137147
+  },
+  {
+    "seed": 280075,
+    "category": "damage",
+    "return": -80.77611565923438,
+    "steps": 129,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.2976911962032318,
+    "peak_deformation": 1.0018755596001123,
+    "distance_to_target": 0.6229745745658875,
+    "stationary_steps": 89,
+    "blocked_steps": 91,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 8,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 89,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20075558125972748,
+        0.5378928184509277
+      ],
+      "next_position": [
+        0.22215022146701813,
+        0.5378928184509277
+      ],
+      "encoded_observation_sha256": "8ecc1e5fb51705385ad5999e6cac1fd264f7a9fba5fb7b3771cb1c6be0b45dbf",
+      "next_encoded_observation_sha256": "184a819d1feed0361a8207fb40db9b6e21229bb9262f097181f26929447c453a",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        57.43994903564453,
+        68.46829223632812,
+        78.8790283203125,
+        -11.337364196777344,
+        71.595703125,
+        72.33821105957031,
+        69.108642578125,
+        -20.90911102294922
+      ],
+      "q_top_gap": 6.5408172607421875,
+      "reward": 0.15099900337367103,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.70009845495224,
+        "travel_distance": 0.14639459550380707,
+        "max_normalized_deformation": 0.05637637404293969,
+        "peak_normalized_deformation": 0.05637637404293969,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990038722753525,
+        "minimum_clearance": 0.034990038722753525,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.02139464020729065,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.9776382446289062,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.31344687938690186,
+      0.5978927612304688
+    ],
+    "distance_reduction": 0.2221811526982791
+  },
+  {
+    "seed": 280076,
+    "category": "budget_while_moving",
+    "return": 1.2100751679755173,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.12737911194562912,
+    "peak_deformation": 0.00018873637771026332,
+    "distance_to_target": 0.739020824432373,
+    "stationary_steps": 184,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 4,
+    "longest_stationary_run": 20,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20115886628627777,
+        0.5662358999252319
+      ],
+      "next_position": [
+        0.20352581143379211,
+        0.5662358999252319
+      ],
+      "encoded_observation_sha256": "00522291c8f39fba6e25452a85d2bd23625db55952bcea1c06cbda6abda5f89f",
+      "next_encoded_observation_sha256": "fdf682c24943120689b14c15e1485159bdf1dc3361f6bb37e1fe4d5e00130b6a",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        14.215271949768066,
+        68.99624633789062,
+        76.89848327636719,
+        -10.974186897277832,
+        46.672149658203125,
+        62.84477233886719,
+        68.77144622802734,
+        -20.595035552978516
+      ],
+      "q_top_gap": 7.9022369384765625,
+      "reward": 0.02276668618245739,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7390328049659729,
+        "travel_distance": 0.12736689299345016,
+        "max_normalized_deformation": 9.678788600526326e-07,
+        "peak_normalized_deformation": 9.678788600526326e-07,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499087318778038,
+        "minimum_clearance": 0.03499092161655426,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.0023669451475143433,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 2.1750106811523438,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.20353803038597107,
+      0.5662358999252319
+    ],
+    "distance_reduction": 0.12540474957130288
+  },
+  {
+    "seed": 280077,
+    "category": "budget_blocked_stall",
+    "return": 1.1688641189649531,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.120002381503582,
+    "peak_deformation": 0.00013810192668582008,
+    "distance_to_target": 0.7190971970558167,
+    "stationary_steps": 194,
+    "blocked_steps": 196,
+    "first_events": {
+      "blocked": 5,
+      "stationary": 7,
+      "contact": 5
+    },
+    "trailing_stationary_steps": 194,
+    "longest_stationary_run": 194,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 5,
+      "position": [
+        0.18944546580314636,
+        0.4750594198703766
+      ],
+      "next_position": [
+        0.20944666862487793,
+        0.4750594198703766
+      ],
+      "encoded_observation_sha256": "d695e6fff8eae32f3ed74fbe7bf2fd45dc557f90b74102c0134314738744b24e",
+      "next_encoded_observation_sha256": "8fcf01cab85f20bbb26e77bed9f0303d0be471b3ab463e55be389b2c07df5fcf",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        77.8152847290039,
+        62.537147521972656,
+        78.62527465820312,
+        -11.440306663513184,
+        78.50270080566406,
+        74.29608917236328,
+        75.32218933105469,
+        -20.04465103149414
+      ],
+      "q_top_gap": 0.1225738525390625,
+      "reward": 0.19562672436974174,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7190971374511719,
+        "travel_distance": 0.1200011596083641,
+        "max_normalized_deformation": 3.153012024790413e-07,
+        "peak_normalized_deformation": 3.153012024790413e-07,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499007225036621,
+        "minimum_clearance": 0.03499007225036621,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.020001202821731567,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.30364227294921875,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.20944666862487793,
+      0.4750606417655945
+    ],
+    "distance_reduction": 0.11979746806486169
+  },
+  {
+    "seed": 280078,
+    "category": "damage",
+    "return": -50.364883702041304,
+    "steps": 9,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.3449997678399086,
+    "peak_deformation": 1.0637577234655566,
+    "distance_to_target": 0.6572257280349731,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.19062042236328125,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.2974355220794678,
+      0.29638195037841797
+    ],
+    "distance_reduction": 0.19006744757892546
+  },
+  {
+    "seed": 280079,
+    "category": "budget_blocked_stall",
+    "return": -11.786129705515442,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.9167167469859123,
+    "peak_deformation": 0.5745380929177654,
+    "distance_to_target": 0.3361947536468506,
+    "stationary_steps": 175,
+    "blocked_steps": 177,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 26,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 175,
+    "longest_stationary_run": 175,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.2004801481962204,
+        0.43105125427246094
+      ],
+      "next_position": [
+        0.21661172807216644,
+        0.43105125427246094
+      ],
+      "encoded_observation_sha256": "4b1a5a3e5b67c9b7155f0490147a2d2d767b040fd14fd041d9005556fb1bf1e3",
+      "next_encoded_observation_sha256": "55f29f3ee52607a2b9c03a1a7f6c9411b7abc0d87c12982ff282acbba8b71fd9",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        76.46443176269531,
+        58.69526672363281,
+        77.48491668701172,
+        -11.335784912109375,
+        74.58361053466797,
+        76.32755279541016,
+        75.49879455566406,
+        -19.86322593688965
+      ],
+      "q_top_gap": 1.0204849243164062,
+      "reward": 0.1576645016670227,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.6980607509613037,
+        "travel_distance": 0.14113152772188187,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499004617333412,
+        "minimum_clearance": 0.03499004617333412,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.016131579875946045,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "south_large",
+    "terminal_q_gap": 0.057830810546875,
+    "final_ten_actions": [
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large",
+      "south_large"
+    ],
+    "final_position": [
+      0.5766113996505737,
+      0.48546525835990906
+    ],
+    "distance_reduction": 0.5026810438174754
+  },
+  {
+    "seed": 280080,
+    "category": "budget_blocked_stall",
+    "return": 1.3158579349517823,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.13704216480255127,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.7087371349334717,
+    "stationary_steps": 194,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 194,
+    "longest_stationary_run": 194,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.2109852433204651,
+        0.566165566444397
+      ],
+      "next_position": [
+        0.22302746772766113,
+        0.566165566444397
+      ],
+      "encoded_observation_sha256": "fe50e8bbe0d8ba6d98969e02bf70d19c32fda2989f7dddc5f6c6f6d0154575fd",
+      "next_encoded_observation_sha256": "ac436569da5d48220c78a48dd16834a8e4ae653c0e1ea664c45ff2a438ec30a8",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        17.297582626342773,
+        69.13102722167969,
+        78.5600357055664,
+        -11.134998321533203,
+        48.79120635986328,
+        62.64556121826172,
+        70.61283111572266,
+        -20.857269287109375
+      ],
+      "q_top_gap": 7.94720458984375,
+      "reward": 0.11521774530410767,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.7087371349334717,
+        "travel_distance": 0.13704216480255127,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034991130232810974,
+        "minimum_clearance": 0.034991130232810974,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.012042224407196045,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 1.7243194580078125,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.22302746772766113,
+      0.566165566444397
+    ],
+    "distance_reduction": 0.13432661077259112
+  },
+  {
+    "seed": 280081,
+    "category": "budget_blocked_stall",
+    "return": 2.732001581788063,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6940362900495529,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.552638590335846,
+    "stationary_steps": 177,
+    "blocked_steps": 178,
+    "first_events": {
+      "blocked": 23,
+      "stationary": 24,
+      "contact": 23
+    },
+    "trailing_stationary_steps": 177,
+    "longest_stationary_run": 177,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 23,
+      "position": [
+        0.36781537532806396,
+        0.4630146622657776
+      ],
+      "next_position": [
+        0.36781537532806396,
+        0.46705153584480286
+      ],
+      "encoded_observation_sha256": "c388a5cfea235a23a48e18c39266712b06b915ed9cb25d24052601fc7032a73c",
+      "next_encoded_observation_sha256": "27dc26532dfdc660b91579f53fbbda43fb9d65ff938a447a3fe4e0405de7007c",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        89.28533172607422,
+        88.11997985839844,
+        88.83861541748047,
+        -11.969369888305664,
+        88.56922149658203,
+        80.74478149414062,
+        88.84381103515625,
+        -20.616369247436523
+      ],
+      "q_top_gap": 0.44152069091796875,
+      "reward": 0.003537207841873169,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.552638590335846,
+        "travel_distance": 0.6940362900495529,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.034990280866622925,
+        "minimum_clearance": 0.034990280866622925,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0040368735790252686
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.5362319946289062,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.36781537532806396,
+      0.46705153584480286
+    ],
+    "distance_reduction": 0.28708086510336883
+  },
+  {
+    "seed": 280082,
+    "category": "damage",
+    "return": -75.08783037737325,
+    "steps": 56,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.22156374156475067,
+    "peak_deformation": 1.0016241607268854,
+    "distance_to_target": 0.6249791383743286,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.2975311279296875,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.294975608587265,
+      0.5780534148216248
+    ],
+    "distance_reduction": 0.2203723805487937
+  },
+  {
+    "seed": 280083,
+    "category": "budget_blocked_stall",
+    "return": -112.46879494631278,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.7068353891372681,
+    "peak_deformation": 0.6105800932457567,
+    "distance_to_target": 0.4681060314178467,
+    "stationary_steps": 181,
+    "blocked_steps": 182,
+    "first_events": {
+      "blocked": 19,
+      "stationary": 20,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 181,
+    "longest_stationary_run": 181,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 19,
+      "position": [
+        0.49614426493644714,
+        0.315437912940979
+      ],
+      "next_position": [
+        0.49614426493644714,
+        0.3155550956726074
+      ],
+      "encoded_observation_sha256": "7cf0bd1e8d99f0013e3509258f85e4caacd115571dd6d5734c77a4de1f3980e8",
+      "next_encoded_observation_sha256": "5ed6b661e8d08f1439c6893549cda3402b7638638b7b0cf15629b86278fe86cc",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        87.69633483886719,
+        75.07081604003906,
+        79.83467864990234,
+        -11.810933113098145,
+        81.46883392333984,
+        86.51704406738281,
+        83.26216125488281,
+        -20.396337509155273
+      ],
+      "q_top_gap": 1.179290771484375,
+      "reward": -0.604034043037958,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.4681060314178467,
+        "travel_distance": 0.7068353891372681,
+        "max_normalized_deformation": 0.3926799466145451,
+        "peak_normalized_deformation": 0.6105800932457567,
+        "contact_steps": 7,
+        "minimum_substep_clearance": 0.03499998524785042,
+        "minimum_clearance": 0.034999996423721313,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.00011718273162841797
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 4.1438140869140625,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.49614426493644714,
+      0.3155550956726074
+    ],
+    "distance_reduction": 0.38371533502386945
+  },
+  {
+    "seed": 280084,
+    "category": "damage",
+    "return": -51.938223984519276,
+    "steps": 12,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.2912497967481613,
+    "peak_deformation": 1.0022696841678616,
+    "distance_to_target": 0.6259961128234863,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.20175933837890625,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large"
+    ],
+    "final_position": [
+      0.3185597062110901,
+      0.360480397939682
+    ],
+    "distance_reduction": 0.21744529253088607
+  },
+  {
+    "seed": 280085,
+    "category": "damage",
+    "return": -88.9711370497132,
+    "steps": 52,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.6797658503055573,
+    "peak_deformation": 1.0316716866893612,
+    "distance_to_target": 0.47424861788749695,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 7
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "north_small",
+    "terminal_q_gap": 2.8532333374023438,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.5180294513702393,
+      0.338726669549942
+    ],
+    "distance_reduction": 0.38028821760230536
+  },
+  {
+    "seed": 280086,
+    "category": "budget_blocked_stall",
+    "return": -104.34063792590159,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.7568743526935577,
+    "peak_deformation": 0.8464205451827712,
+    "distance_to_target": 0.4991706907749176,
+    "stationary_steps": 174,
+    "blocked_steps": 175,
+    "first_events": {
+      "blocked": 26,
+      "stationary": 27,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 174,
+    "longest_stationary_run": 174,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 26,
+      "position": [
+        0.42235317826271057,
+        0.46769285202026367
+      ],
+      "next_position": [
+        0.42235317826271057,
+        0.46773192286491394
+      ],
+      "encoded_observation_sha256": "53a024369a9c9ad853fde9890d5426affa57cbaec9bc31479f227a7b6af1064b",
+      "next_encoded_observation_sha256": "9f6d2f63d1287afead8e14427e0334ca648c23717d376cf725ba0c748dcebc3f",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        88.93310546875,
+        81.25303649902344,
+        82.01026916503906,
+        -11.907785415649414,
+        85.90403747558594,
+        87.74343872070312,
+        82.24031066894531,
+        -20.749954223632812
+      ],
+      "q_top_gap": 1.189666748046875,
+      "reward": -0.5611696922066113,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.4991706907749176,
+        "travel_distance": 0.7568743526935577,
+        "max_normalized_deformation": 0.32679050800615583,
+        "peak_normalized_deformation": 0.8464205451827712,
+        "contact_steps": 10,
+        "minimum_substep_clearance": 0.03499998897314072,
+        "minimum_clearance": 0.03500001132488251,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          3.9070844650268555e-05
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 3.2522430419921875,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.42235317826271057,
+      0.46773192286491394
+    ],
+    "distance_reduction": 0.3302815380245029
+  },
+  {
+    "seed": 280087,
+    "category": "budget_blocked_stall",
+    "return": -19.343404934492614,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.9110343605279922,
+    "peak_deformation": 0.7876772356333296,
+    "distance_to_target": 0.4795762002468109,
+    "stationary_steps": 176,
+    "blocked_steps": 177,
+    "first_events": {
+      "blocked": 24,
+      "stationary": 25,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 176,
+    "longest_stationary_run": 176,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 24,
+      "position": [
+        0.4394385814666748,
+        0.6530213356018066
+      ],
+      "next_position": [
+        0.4604737162590027,
+        0.6530213356018066
+      ],
+      "encoded_observation_sha256": "7576824a002ee8fa5c6804638b3b3fd2f51e2079b5261b6c3178b64867bcf0a6",
+      "next_encoded_observation_sha256": "eca27a8d7a521142eff682ef94c407899146c6940f620481f8b4975b645b060d",
+      "action": 6,
+      "action_name": "east_large",
+      "q_values": [
+        78.91199493408203,
+        73.76654052734375,
+        80.81842041015625,
+        -11.566483497619629,
+        84.08575439453125,
+        69.61998748779297,
+        88.04106140136719,
+        -21.637287139892578
+      ],
+      "q_top_gap": 3.9553070068359375,
+      "reward": -0.29480108217946654,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.4795762002468109,
+        "travel_distance": 0.9110343605279922,
+        "max_normalized_deformation": 0.4899546046709216,
+        "peak_normalized_deformation": 0.7876772356333296,
+        "contact_steps": 4,
+        "minimum_substep_clearance": 0.03499101102352142,
+        "minimum_clearance": 0.03499101102352142,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.05999999865889549,
+          0.0
+        ],
+        "executed_motion": [
+          0.02103513479232788,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 5.254859924316406,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.4604737162590027,
+      0.6530213356018066
+    ],
+    "distance_reduction": 0.3599529062969117
+  },
+  {
+    "seed": 280088,
+    "category": "budget_blocked_stall",
+    "return": -58.47655193272311,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 1.1003518849611282,
+    "peak_deformation": 0.34647904576347377,
+    "distance_to_target": 0.4698169529438019,
+    "stationary_steps": 167,
+    "blocked_steps": 168,
+    "first_events": {
+      "blocked": 33,
+      "stationary": 34,
+      "contact": 11
+    },
+    "trailing_stationary_steps": 167,
+    "longest_stationary_run": 167,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 33,
+      "position": [
+        0.4624328911304474,
+        0.4554790258407593
+      ],
+      "next_position": [
+        0.4624328911304474,
+        0.4564568102359772
+      ],
+      "encoded_observation_sha256": "d843630a76aca2d4f27d58b82a1d6ffad712c39abe9ab3fcd8b441019046b7d2",
+      "next_encoded_observation_sha256": "57f3bc4e0376a0cad0613ed785ecfdc7a8b8f1786d9a28671b0e0bcf088d7d4e",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        88.77587890625,
+        81.99459838867188,
+        80.40704345703125,
+        -11.784504890441895,
+        87.45280456542969,
+        88.67723083496094,
+        79.36134338378906,
+        -20.671878814697266
+      ],
+      "q_top_gap": 0.0986480712890625,
+      "reward": -0.34482685865448026,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.4698169529438019,
+        "travel_distance": 1.1003518849611282,
+        "max_normalized_deformation": 0.34647904576347377,
+        "peak_normalized_deformation": 0.34647904576347377,
+        "contact_steps": 18,
+        "minimum_substep_clearance": 0.03499060869216919,
+        "minimum_clearance": 0.03499060869216919,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          0.0009777843952178955
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.5922393798828125,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.4624328911304474,
+      0.4564568102359772
+    ],
+    "distance_reduction": 0.3718536844861342
+  },
+  {
+    "seed": 280089,
+    "category": "budget_blocked_stall",
+    "return": 2.3197918832302094,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.667804628610611,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.6124787926673889,
+    "stationary_steps": 178,
+    "blocked_steps": 179,
+    "first_events": {
+      "blocked": 22,
+      "stationary": 23,
+      "contact": 22
+    },
+    "trailing_stationary_steps": 178,
+    "longest_stationary_run": 178,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 22,
+      "position": [
+        0.31679731607437134,
+        0.4361228942871094
+      ],
+      "next_position": [
+        0.31679731607437134,
+        0.4739280343055725
+      ],
+      "encoded_observation_sha256": "981354f13ad5286866a7f7cfdd8a818e8315c868896258855fc4290aa52e3404",
+      "next_encoded_observation_sha256": "773102112f8def17471472ab16534fdadc9e630bbbe6d02a7161d28fcfa019b7",
+      "action": 4,
+      "action_name": "north_large",
+      "q_values": [
+        84.37832641601562,
+        82.50390625,
+        85.75888061523438,
+        -11.739486694335938,
+        85.79833984375,
+        78.02794647216797,
+        85.11399841308594,
+        -20.416976928710938
+      ],
+      "q_top_gap": 0.039459228515625,
+      "reward": 0.0059143900871276855,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.6124787926673889,
+        "travel_distance": 0.667804628610611,
+        "max_normalized_deformation": 0.0,
+        "peak_normalized_deformation": 0.0,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499016910791397,
+        "minimum_clearance": 0.03499016910791397,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          0.037805140018463135
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.0801849365234375,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.31679731607437134,
+      0.4739280343055725
+    ],
+    "distance_reduction": 0.24533530296631212
+  },
+  {
+    "seed": 280090,
+    "category": "budget_blocked_stall",
+    "return": -3.8974554972197972,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.8752104267477989,
+    "peak_deformation": 0.6814689072646188,
+    "distance_to_target": 0.47947466373443604,
+    "stationary_steps": 178,
+    "blocked_steps": 179,
+    "first_events": {
+      "blocked": 22,
+      "stationary": 23,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 178,
+    "longest_stationary_run": 178,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 22,
+      "position": [
+        0.4375695586204529,
+        0.6572567820549011
+      ],
+      "next_position": [
+        0.472780704498291,
+        0.6572567820549011
+      ],
+      "encoded_observation_sha256": "c2f5200e80cc4741761cabbbba53c6ab0c4b3d60d3a142a9c3f157377b0f2c59",
+      "next_encoded_observation_sha256": "8b7b4a1182f6282a2e7742afc83384315bb2f65062c5ee6c13ea2303acea212c",
+      "action": 6,
+      "action_name": "east_large",
+      "q_values": [
+        80.10462951660156,
+        74.67686462402344,
+        81.96536254882812,
+        -11.732006072998047,
+        85.27479553222656,
+        70.76513671875,
+        89.01365661621094,
+        -21.90134048461914
+      ],
+      "q_top_gap": 3.738861083984375,
+      "reward": 0.14302567557854906,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.47947466373443604,
+        "travel_distance": 0.8752104267477989,
+        "max_normalized_deformation": 0.18352379484610304,
+        "peak_normalized_deformation": 0.6814689072646188,
+        "contact_steps": 3,
+        "minimum_substep_clearance": 0.034990500658750534,
+        "minimum_clearance": 0.034990500658750534,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.05999999865889549,
+          0.0
+        ],
+        "executed_motion": [
+          0.035211145877838135,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 4.94879150390625,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.472780704498291,
+      0.6572567820549011
+    ],
+    "distance_reduction": 0.37659653452126074
+  },
+  {
+    "seed": 280091,
+    "category": "budget_blocked_stall",
+    "return": -18.88325090868083,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.13536004722118378,
+    "peak_deformation": 0.16389721986898714,
+    "distance_to_target": 0.6997693777084351,
+    "stationary_steps": 194,
+    "blocked_steps": 195,
+    "first_events": {
+      "blocked": 6,
+      "stationary": 7,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 194,
+    "longest_stationary_run": 194,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 6,
+      "position": [
+        0.20440717041492462,
+        0.5233917832374573
+      ],
+      "next_position": [
+        0.21476726233959198,
+        0.5233917832374573
+      ],
+      "encoded_observation_sha256": "25b692a253a18a18b701f0380da4a67e26493358b566e5ffc4e493f3aecf52d0",
+      "next_encoded_observation_sha256": "11778f3111e311f11c8da42573cfa2310acdc023a55cc6d95807bdf66a06a25a",
+      "action": 2,
+      "action_name": "east_small",
+      "q_values": [
+        61.6522102355957,
+        73.25505065917969,
+        75.67889404296875,
+        -10.949490547180176,
+        61.99256134033203,
+        69.93085479736328,
+        70.02201843261719,
+        -20.58681297302246
+      ],
+      "q_top_gap": 2.4238433837890625,
+      "reward": -0.001776971575791739,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.6997693777084351,
+        "travel_distance": 0.13536004722118378,
+        "max_normalized_deformation": 0.10291576003747692,
+        "peak_normalized_deformation": 0.10503693338243088,
+        "contact_steps": 1,
+        "minimum_substep_clearance": 0.03499069809913635,
+        "minimum_clearance": 0.03499069809913635,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.02500000037252903,
+          0.0
+        ],
+        "executed_motion": [
+          0.010360091924667358,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.9722442626953125,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.21476726233959198,
+      0.5233917832374573
+    ],
+    "distance_reduction": 0.13492652917437287
+  },
+  {
+    "seed": 280092,
+    "category": "budget_blocked_stall",
+    "return": -119.48058996018881,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.6131243035197258,
+    "peak_deformation": 0.6690082292485844,
+    "distance_to_target": 0.5433904528617859,
+    "stationary_steps": 166,
+    "blocked_steps": 167,
+    "first_events": {
+      "blocked": 34,
+      "stationary": 35,
+      "contact": 16
+    },
+    "trailing_stationary_steps": 166,
+    "longest_stationary_run": 166,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 34,
+      "position": [
+        0.38312584161758423,
+        0.4488009810447693
+      ],
+      "next_position": [
+        0.38312584161758423,
+        0.4488791227340698
+      ],
+      "encoded_observation_sha256": "6c3b658b367b1124522f1e07852f076f3a65c7e09e44bc35cc4cf5e4564d975d",
+      "next_encoded_observation_sha256": "03d34010c305d73c5f45d1513428935cb018be903e2f2f8c870c134b578fede8",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        90.7506332397461,
+        88.15284729003906,
+        87.28170776367188,
+        -11.967000007629395,
+        87.24467468261719,
+        80.53388977050781,
+        87.68365478515625,
+        -20.23275375366211
+      ],
+      "q_top_gap": 2.5977859497070312,
+      "reward": -0.6688587527204166,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5433904528617859,
+        "travel_distance": 0.6131243035197258,
+        "max_normalized_deformation": 0.6690082292485844,
+        "peak_normalized_deformation": 0.6690082292485844,
+        "contact_steps": 19,
+        "minimum_substep_clearance": 0.03499998897314072,
+        "minimum_clearance": 0.03500000759959221,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          7.814168930053711e-05
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 3.8973770141601562,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.38312584161758423,
+      0.4488791227340698
+    ],
+    "distance_reduction": 0.29139867769600036
+  },
+  {
+    "seed": 280093,
+    "category": "damage",
+    "return": -50.84820776766694,
+    "steps": 11,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.43499963730573654,
+    "peak_deformation": 1.0684777700534887,
+    "distance_to_target": 0.6764801740646362,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 2.6339797973632812,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "south_large",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_small",
+      "south_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.28373876214027405,
+      0.20860281586647034
+    ],
+    "distance_reduction": 0.15657578785040316
+  },
+  {
+    "seed": 280094,
+    "category": "budget_while_moving",
+    "return": -67.43093292237215,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.919594332575798,
+    "peak_deformation": 0.6034604050870076,
+    "distance_to_target": 0.30446508526802063,
+    "stationary_steps": 165,
+    "blocked_steps": 168,
+    "first_events": {
+      "blocked": 23,
+      "stationary": 24,
+      "contact": 20
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 165,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 23,
+      "position": [
+        0.6014837026596069,
+        0.48125627636909485
+      ],
+      "next_position": [
+        0.6014837026596069,
+        0.48084521293640137
+      ],
+      "encoded_observation_sha256": "7cecb990b911b1fdf29e1f45b3fd898473eb5c8215a2bd4355cfc528a1d70922",
+      "next_encoded_observation_sha256": "a2ac72cd01b91b7c8d42ac87a82c7842421ad8b2b2a0a5fea4322d108c51533f",
+      "action": 5,
+      "action_name": "south_large",
+      "q_values": [
+        86.3604507446289,
+        82.83425903320312,
+        87.22332000732422,
+        -11.900508880615234,
+        82.9225845336914,
+        92.12024688720703,
+        87.83317565917969,
+        -22.001245498657227
+      ],
+      "q_top_gap": 4.287071228027344,
+      "reward": -0.3929850106731739,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.318779855966568,
+        "travel_distance": 0.9049806445837021,
+        "max_normalized_deformation": 0.3937137191788044,
+        "peak_normalized_deformation": 0.39599379818889013,
+        "contact_steps": 4,
+        "minimum_substep_clearance": 0.03499026596546173,
+        "minimum_clearance": 0.03499026596546173,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          -0.05999999865889549
+        ],
+        "executed_motion": [
+          0.0,
+          -0.00041106343269348145
+        ]
+      }
+    },
+    "terminal_action": "east_small",
+    "terminal_q_gap": 0.753204345703125,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small"
+    ],
+    "final_position": [
+      0.6160973906517029,
+      0.48084521293640137
+    ],
+    "distance_reduction": 0.5326931392924517
+  },
+  {
+    "seed": 280095,
+    "category": "budget_blocked_stall",
+    "return": -69.0928131108102,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.7923825979232788,
+    "peak_deformation": 0.3105041033835584,
+    "distance_to_target": 0.5139142870903015,
+    "stationary_steps": 173,
+    "blocked_steps": 174,
+    "first_events": {
+      "blocked": 27,
+      "stationary": 28,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 173,
+    "longest_stationary_run": 173,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 27,
+      "position": [
+        0.4126134514808655,
+        0.4823256731033325
+      ],
+      "next_position": [
+        0.4126134514808655,
+        0.4823647439479828
+      ],
+      "encoded_observation_sha256": "315d33105cbeacdb75ed86cac3b7f29f6b27d2d8108cc3ff642332df508feb99",
+      "next_encoded_observation_sha256": "e679bbee964b2a7374216f32dff6ff6b7ae77c0a8e5a3ad85d41daf38d30eb24",
+      "action": 0,
+      "action_name": "north_small",
+      "q_values": [
+        90.17282104492188,
+        81.57330322265625,
+        81.31287384033203,
+        -11.904158592224121,
+        90.12388610839844,
+        88.21105194091797,
+        81.0804214477539,
+        -21.134553909301758
+      ],
+      "q_top_gap": 0.0489349365234375,
+      "reward": -0.37333553987319656,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.5139142870903015,
+        "travel_distance": 0.7923825979232788,
+        "max_normalized_deformation": 0.1995639343057319,
+        "peak_normalized_deformation": 0.3105041033835584,
+        "contact_steps": 10,
+        "minimum_substep_clearance": 0.03499998524785042,
+        "minimum_clearance": 0.035000015050172806,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.0,
+          0.02500000037252903
+        ],
+        "executed_motion": [
+          0.0,
+          3.9070844650268555e-05
+        ]
+      }
+    },
+    "terminal_action": "north_small",
+    "terminal_q_gap": 3.0988693237304688,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.4126134514808655,
+      0.4823647439479828
+    ],
+    "distance_reduction": 0.32369057341584695
+  },
+  {
+    "seed": 280096,
+    "category": "damage",
+    "return": -67.23405743878261,
+    "steps": 40,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.21531356871128082,
+    "peak_deformation": 1.001674009238002,
+    "distance_to_target": 0.6389285922050476,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 6
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 0.3394927978515625,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.29039472341537476,
+      0.5960858464241028
+    ],
+    "distance_reduction": 0.2139543357634045
+  },
+  {
+    "seed": 280097,
+    "category": "damage",
+    "return": -49.7663020089089,
+    "steps": 22,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.6628900766372681,
+    "peak_deformation": 1.0676599035478682,
+    "distance_to_target": 0.5346606373786926,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 18
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "north_small",
+    "terminal_q_gap": 1.2924957275390625,
+    "final_ten_actions": [
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small",
+      "north_small"
+    ],
+    "final_position": [
+      0.38717764616012573,
+      0.4822358191013336
+    ],
+    "distance_reduction": 0.29951156770756027
+  },
+  {
+    "seed": 280098,
+    "category": "damage",
+    "return": -58.44593609437973,
+    "steps": 23,
+    "success": false,
+    "damage": true,
+    "budget_exhausted": false,
+    "travel_distance": 0.33468837291002274,
+    "peak_deformation": 1.0007700710374694,
+    "distance_to_target": 0.6470240950584412,
+    "stationary_steps": 0,
+    "blocked_steps": 0,
+    "first_events": {
+      "blocked": null,
+      "stationary": null,
+      "contact": 8
+    },
+    "trailing_stationary_steps": 0,
+    "longest_stationary_run": 0,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": null,
+    "terminal_action": "east_large",
+    "terminal_q_gap": 1.5640182495117188,
+    "final_ten_actions": [
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_small",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.29812246561050415,
+      0.37393978238105774
+    ],
+    "distance_reduction": 0.1847994058652549
+  },
+  {
+    "seed": 280099,
+    "category": "budget_blocked_stall",
+    "return": -3.012666743153028,
+    "steps": 200,
+    "success": false,
+    "damage": false,
+    "budget_exhausted": true,
+    "travel_distance": 0.9588321670889854,
+    "peak_deformation": 0.5853853519440659,
+    "distance_to_target": 0.46829017996788025,
+    "stationary_steps": 172,
+    "blocked_steps": 173,
+    "first_events": {
+      "blocked": 28,
+      "stationary": 29,
+      "contact": 9
+    },
+    "trailing_stationary_steps": 172,
+    "longest_stationary_run": 172,
+    "two_step_position_returns": 0,
+    "first_blocked_transition": {
+      "step": 28,
+      "position": [
+        0.4636273682117462,
+        0.6767319440841675
+      ],
+      "next_position": [
+        0.46746036410331726,
+        0.6767319440841675
+      ],
+      "encoded_observation_sha256": "5ad4f4631f9c4eab5651c936c7091a75e479f2ef9c6abd551d7ddb7da8992644",
+      "next_encoded_observation_sha256": "4555787a7b129bd3648ad286fb3dfe0f5a7dc3fba7ba4feab99aab639c230f6f",
+      "action": 6,
+      "action_name": "east_large",
+      "q_values": [
+        86.30899047851562,
+        78.81566619873047,
+        83.1380615234375,
+        -11.754533767700195,
+        86.45647430419922,
+        76.88929748535156,
+        86.8331298828125,
+        -21.717174530029297
+      ],
+      "q_top_gap": 0.37665557861328125,
+      "reward": -0.07579347298826576,
+      "terminated": false,
+      "truncated": false,
+      "info": {
+        "success": false,
+        "damage": false,
+        "budget_exhausted": false,
+        "distance_to_target": 0.46829017996788025,
+        "travel_distance": 0.9588321670889854,
+        "max_normalized_deformation": 0.11236948178495766,
+        "peak_normalized_deformation": 0.5853853519440659,
+        "contact_steps": 5,
+        "minimum_substep_clearance": 0.0349910631775856,
+        "minimum_clearance": 0.0349910631775856,
+        "collision_blocked": true,
+        "commanded_motion": [
+          0.05999999865889549,
+          0.0
+        ],
+        "executed_motion": [
+          0.003832995891571045,
+          0.0
+        ]
+      }
+    },
+    "terminal_action": "east_large",
+    "terminal_q_gap": 3.3343887329101562,
+    "final_ten_actions": [
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large",
+      "east_large"
+    ],
+    "final_position": [
+      0.46746036410331726,
+      0.6767319440841675
+    ],
+    "distance_reduction": 0.3819339426429623
+  }
+]

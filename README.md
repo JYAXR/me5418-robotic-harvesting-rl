@@ -17,7 +17,10 @@ python scripts/evaluate_dqn.py --checkpoint models/step6_repair_027.pt --episode
 ```
 
 The three known training scenes succeed in 35, 41 and 41 steps. This is a
-training-scene result; unseen-scene generalization has not been established.
+training-scene result. A subsequent
+[frozen evaluation on 100 unseen scenes](docs/experiments/028_frozen_generalization/RESULTS.md)
+succeeds in only 1/100 cases
+(50 damage and 49 budget failures), so reliable generalization has not been achieved.
 The [experiment record](docs/experiments/027_step6_supervision/RESULTS.md)
 contains the controlled comparison, full traces, limitations and verification.
 

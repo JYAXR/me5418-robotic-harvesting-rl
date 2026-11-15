@@ -1,0 +1,258 @@
+{
+  "passed": true,
+  "records": [
+    {
+      "seed": 280000,
+      "metrics": {
+        "seed": 280000,
+        "return": -50.827820941818466,
+        "steps": 12,
+        "success": false,
+        "damage": true,
+        "budget_exhausted": false,
+        "travel_distance": 0.46874964982271194,
+        "peak_deformation": 1.04768048217359,
+        "distance_to_target": 0.6572096347808838,
+        "stationary_steps": 0,
+        "blocked_steps": 0
+      },
+      "certification": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 35,
+          "planned_actions": 35,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.5399986580014229,
+          "return": 107.57928096354007,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "policy_actions": 12,
+      "passed": true
+    },
+    {
+      "seed": 280001,
+      "metrics": {
+        "seed": 280001,
+        "return": -121.81912405876064,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.6820309460163116,
+        "peak_deformation": 0.6362182020030969,
+        "distance_to_target": 0.5411306619644165,
+        "stationary_steps": 175,
+        "blocked_steps": 176
+      },
+      "certification": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 42,
+          "planned_actions": 42,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.504998654127121,
+          "return": 107.66897778958082,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "policy_actions": 200,
+      "passed": true
+    },
+    {
+      "seed": 280002,
+      "metrics": {
+        "seed": 280002,
+        "return": -75.69159091830018,
+        "steps": 56,
+        "success": false,
+        "damage": true,
+        "budget_exhausted": false,
+        "travel_distance": 0.29000096023082733,
+        "peak_deformation": 1.0003459281628382,
+        "distance_to_target": 0.6382220387458801,
+        "stationary_steps": 0,
+        "blocked_steps": 0
+      },
+      "certification": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 38,
+          "planned_actions": 38,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.6499985307455063,
+          "return": 107.75027762502431,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "policy_actions": 56,
+      "passed": true
+    },
+    {
+      "seed": 280003,
+      "metrics": {
+        "seed": 280003,
+        "return": -61.62376241121345,
+        "steps": 27,
+        "success": false,
+        "damage": true,
+        "budget_exhausted": false,
+        "travel_distance": 0.3940630480647087,
+        "peak_deformation": 1.0018883019856653,
+        "distance_to_target": 0.6477547883987427,
+        "stationary_steps": 0,
+        "blocked_steps": 0
+      },
+      "certification": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 58,
+          "planned_actions": 58,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 2.0799980983138084,
+          "return": 107.53592525571584,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "policy_actions": 27,
+      "passed": true
+    },
+    {
+      "seed": 280004,
+      "metrics": {
+        "seed": 280004,
+        "return": -48.5272613245096,
+        "steps": 44,
+        "success": false,
+        "damage": true,
+        "budget_exhausted": false,
+        "travel_distance": 0.6709125638008118,
+        "peak_deformation": 1.02431606026316,
+        "distance_to_target": 0.4102790355682373,
+        "stationary_steps": 25,
+        "blocked_steps": 26
+      },
+      "certification": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.619998574256897,
+          "return": 107.55567911565304,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "policy_actions": 44,
+      "passed": true
+    },
+    {
+      "seed": 280046,
+      "metrics": {
+        "seed": 280046,
+        "return": 107.33783594300628,
+        "steps": 36,
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "travel_distance": 1.5999985411763191,
+        "peak_deformation": 0.054817857534894224,
+        "distance_to_target": 0.04837192967534065,
+        "stationary_steps": 0,
+        "blocked_steps": 0
+      },
+      "certification": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.549998588860035,
+          "return": 107.73117622137069,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "policy_actions": 36,
+      "passed": true
+    },
+    {
+      "seed": 280064,
+      "metrics": {
+        "seed": 280064,
+        "return": 1.1033136932580085,
+        "steps": 200,
+        "success": false,
+        "damage": false,
+        "budget_exhausted": true,
+        "travel_distance": 0.11502803862094879,
+        "peak_deformation": 0.00014480305695392963,
+        "distance_to_target": 0.7159145474433899,
+        "stationary_steps": 183,
+        "blocked_steps": 196
+      },
+      "certification": [
+        {
+          "reference": "collision_free_astar",
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "planning_failure": false,
+          "reason": "success",
+          "steps": 41,
+          "planned_actions": 41,
+          "initial_step_count": 0,
+          "remaining_budget": 200,
+          "travel_distance": 1.934998244047165,
+          "return": 107.419987629354,
+          "contact_steps": 0,
+          "peak_normalized_deformation": 0.0
+        }
+      ],
+      "policy_actions": 200,
+      "passed": true
+    }
+  ],
+  "optimizer_updates": 0
+}

@@ -13,8 +13,12 @@ python scripts/evaluate_dqn.py --checkpoint models/step6_repair_027.pt --episode
 
 This evaluates known training scenes 10000, 10001 and 10002. The verified
 results are success in 35, 41 and 41 steps, respectively. No inference-time
-correction or scripted prefix is used by this command. Unseen-scene performance
-has not been measured for this candidate.
+correction or scripted prefix is used by this command. A subsequent frozen
+evaluation on 100 unseen scenes (seeds 280000--280099)
+succeeded in only 1/100 cases, with 50 damage and 49 budget failures. See
+[attempt 028](../docs/experiments/028_frozen_generalization/RESULTS.md). This
+checkpoint demonstrates known-scene retention, not reliable generalization; its
+weights are unchanged by that evaluation.
 
 `step6_repair_027.json` records the SHA-256, source update, independent normal
 evaluation and scope. The checkpoint is for inference, not resuming Adam state.

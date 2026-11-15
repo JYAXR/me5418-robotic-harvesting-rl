@@ -1,0 +1,28 @@
+{
+  "phases": {
+    "main": {
+      "resets": 100,
+      "policy_actions": 11852,
+      "certification_actions": 4304,
+      "certification_attempts": 100
+    },
+    "controls": {
+      "resets": 6,
+      "policy_actions": 234,
+      "certification_actions": 234,
+      "certification_attempts": 6
+    },
+    "verification": {
+      "resets": 7,
+      "policy_actions": 575,
+      "certification_actions": 296,
+      "certification_attempts": 7
+    }
+  },
+  "optimizer_updates": 0,
+  "total_resets": 113,
+  "total_policy_actions": 12661,
+  "total_certification_actions": 4834,
+  "scripted_actions": 0,
+  "training_data_added": 0
+}
