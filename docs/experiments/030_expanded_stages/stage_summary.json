@@ -1,0 +1,680 @@
+{
+  "scope": "Completed fixed-budget training stages. Holdout evaluation remains pending at this checkpoint.",
+  "protocol_commit": "6ea5d8e",
+  "phase_budgets": {
+    "supervised": 20000,
+    "calibration": 20000,
+    "td": 10000
+  },
+  "independent_verification": [
+    {
+      "phase": "supervised",
+      "passed": true,
+      "independent_optimizer_updates": 20,
+      "final_adam_clock": 20000,
+      "target_syncs": 0
+    },
+    {
+      "phase": "calibration",
+      "passed": true,
+      "independent_optimizer_updates": 20,
+      "final_adam_clock": 20000,
+      "target_syncs": 0
+    },
+    {
+      "phase": "td",
+      "passed": true,
+      "independent_optimizer_updates": 20,
+      "final_adam_clock": 30000,
+      "target_syncs": 50
+    }
+  ],
+  "td_boundary": {
+    "previous_phase_updates": 20000,
+    "phase_updates": 0,
+    "optimizer_reset": false,
+    "target_synchronized": true,
+    "optimizer_before": {
+      "sha256": "4dd8e318100f6b6841a68c4fd03db164937530ea422596214b702431b496d00d",
+      "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+      "parameter_groups": [
+        {
+          "amsgrad": false,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "capturable": false,
+          "decoupled_weight_decay": false,
+          "differentiable": false,
+          "eps": 1e-08,
+          "foreach": null,
+          "fused": null,
+          "lr": 0.0001,
+          "maximize": false,
+          "weight_decay": 0,
+          "parameters": [
+            "0.weight",
+            "0.bias",
+            "2.weight",
+            "2.bias",
+            "4.weight",
+            "4.bias"
+          ]
+        }
+      ],
+      "parameter_count": 6,
+      "initialized_parameter_count": 6,
+      "steps": {
+        "0.weight": 20000.0,
+        "0.bias": 20000.0,
+        "2.weight": 20000.0,
+        "2.bias": 20000.0,
+        "4.weight": 20000.0,
+        "4.bias": 20000.0
+      },
+      "step_min": 20000.0,
+      "step_max": 20000.0,
+      "first_moment_l2": 1.0280184755131518,
+      "second_moment_l2": 2.801365341382912
+    },
+    "optimizer_after": {
+      "sha256": "4dd8e318100f6b6841a68c4fd03db164937530ea422596214b702431b496d00d",
+      "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+      "parameter_groups": [
+        {
+          "amsgrad": false,
+          "betas": [
+            0.9,
+            0.999
+          ],
+          "capturable": false,
+          "decoupled_weight_decay": false,
+          "differentiable": false,
+          "eps": 1e-08,
+          "foreach": null,
+          "fused": null,
+          "lr": 0.0001,
+          "maximize": false,
+          "weight_decay": 0,
+          "parameters": [
+            "0.weight",
+            "0.bias",
+            "2.weight",
+            "2.bias",
+            "4.weight",
+            "4.bias"
+          ]
+        }
+      ],
+      "parameter_count": 6,
+      "initialized_parameter_count": 6,
+      "steps": {
+        "0.weight": 20000.0,
+        "0.bias": 20000.0,
+        "2.weight": 20000.0,
+        "2.bias": 20000.0,
+        "4.weight": 20000.0,
+        "4.bias": 20000.0
+      },
+      "step_min": 20000.0,
+      "step_max": 20000.0,
+      "first_moment_l2": 1.0280184755131518,
+      "second_moment_l2": 2.801365341382912
+    }
+  },
+  "frozen_test_boundary": {
+    "model_hashes": {
+      "baseline": "5b8e66c22d51915771f89ad6a7c81ed8749725f426f62d322e5353cdfbbaaa18",
+      "staged": "e236374791ce5b7bb59c00d6e99c3ab557821fc06ccddbcbed6686b638b67868"
+    },
+    "frozen_at_utc": "2026-11-15T12:16:24.558713+00:00",
+    "holdout_episodes_started": 0
+  },
+  "training_transitions": {
+    "scope": "Post-hoc paired comparison of predeclared 33 training-scene endpoint evaluations. No additional simulation or training.",
+    "success_seeds": {
+      "source_029": [
+        10001,
+        290010,
+        290021
+      ],
+      "supervised": [
+        290004,
+        290008,
+        290010,
+        290023
+      ],
+      "calibration": [
+        10000,
+        290003,
+        290006,
+        290008,
+        290011,
+        290013,
+        290022,
+        290023,
+        290026
+      ],
+      "td": [
+        10000,
+        10001,
+        290003,
+        290008,
+        290011,
+        290017,
+        290022
+      ]
+    },
+    "comparisons": [
+      {
+        "from": "source_029",
+        "to": "supervised",
+        "retained_success_seeds": [
+          290010
+        ],
+        "lost_success_seeds": [
+          10001,
+          290021
+        ],
+        "gained_success_seeds": [
+          290004,
+          290008,
+          290023
+        ]
+      },
+      {
+        "from": "supervised",
+        "to": "calibration",
+        "retained_success_seeds": [
+          290008,
+          290023
+        ],
+        "lost_success_seeds": [
+          290004,
+          290010
+        ],
+        "gained_success_seeds": [
+          10000,
+          290003,
+          290006,
+          290011,
+          290013,
+          290022,
+          290026
+        ]
+      },
+      {
+        "from": "calibration",
+        "to": "td",
+        "retained_success_seeds": [
+          10000,
+          290003,
+          290008,
+          290011,
+          290022
+        ],
+        "lost_success_seeds": [
+          290006,
+          290013,
+          290023,
+          290026
+        ],
+        "gained_success_seeds": [
+          10001,
+          290017
+        ]
+      }
+    ]
+  },
+  "phases": {
+    "supervised": {
+      "final_fit": {
+        "phase": "supervised",
+        "update": 20000,
+        "rows": 1440,
+        "correct": 1170,
+        "original_correct": 95,
+        "new_correct": 1075,
+        "recovery_action": 4,
+        "recovery_gap": 2.2863082885742188,
+        "return_mae": 6.249736785888672,
+        "return_rmse": 7.509478569030762,
+        "minimum_q": -22.04092025756836,
+        "maximum_q": 94.15103149414062,
+        "probes": [
+          {
+            "row": 39,
+            "scene": 10001,
+            "step": 5,
+            "demonstrated_action": 2,
+            "greedy_action": 2,
+            "gap": 1.03271484375
+          },
+          {
+            "row": 40,
+            "scene": 10001,
+            "step": 6,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.4052658081054688
+          },
+          {
+            "row": 41,
+            "scene": 10001,
+            "step": 7,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.995147705078125
+          },
+          {
+            "row": 54,
+            "scene": 10001,
+            "step": 20,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.372711181640625
+          },
+          {
+            "row": 55,
+            "scene": 10001,
+            "step": 21,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 0.8072509765625
+          },
+          {
+            "row": 56,
+            "scene": 10001,
+            "step": 22,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.22589874267578125
+          },
+          {
+            "row": 57,
+            "scene": 10001,
+            "step": 23,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.2209625244140625
+          },
+          {
+            "row": 58,
+            "scene": 10001,
+            "step": 24,
+            "demonstrated_action": 2,
+            "greedy_action": 0,
+            "gap": -0.44606781005859375
+          },
+          {
+            "row": 59,
+            "scene": 10001,
+            "step": 25,
+            "demonstrated_action": 6,
+            "greedy_action": 6,
+            "gap": 0.86370849609375
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "seed": 10000,
+          "return": -23.912057753728387,
+          "steps": 200,
+          "success": false,
+          "damage": false,
+          "budget_exhausted": true,
+          "travel_distance": 0.690718375146389,
+          "peak_deformation": 0.619961399301999,
+          "distance_to_target": 0.4580244719982147,
+          "stationary_steps": 182,
+          "blocked_steps": 184
+        },
+        {
+          "seed": 10001,
+          "return": -59.7738605806738,
+          "steps": 52,
+          "success": false,
+          "damage": true,
+          "budget_exhausted": false,
+          "travel_distance": 1.854998342692852,
+          "peak_deformation": 1.014917480981047,
+          "distance_to_target": 0.13373354077339172,
+          "stationary_steps": 0,
+          "blocked_steps": 0
+        },
+        {
+          "seed": 10002,
+          "return": 1.4703214094042778,
+          "steps": 200,
+          "success": false,
+          "damage": false,
+          "budget_exhausted": true,
+          "travel_distance": 0.15976432710886002,
+          "peak_deformation": 0.0,
+          "distance_to_target": 0.6934214234352112,
+          "stationary_steps": 193,
+          "blocked_steps": 194
+        }
+      ],
+      "original_successes": 0,
+      "added_successes": 4,
+      "training_categories": {
+        "budget_blocked_stall": 16,
+        "damage": 12,
+        "success": 4,
+        "budget_stationary_stall": 1
+      },
+      "model_hashes": {
+        "state_0.pt": "2c5c4467d47ef4d21dcfd6c0721e36a469ad1384ecd04def5106165f4dd35729",
+        "state_10.pt": "e13aca8d8cee5ef46617baf89c8abac87ae6a1a8adc37f473643d109e00c2468",
+        "state_5000.pt": "3e40fd536f802948412b9dc59bf2fa31cfc8a3f5dbe03f159c064006d3a2c8be",
+        "state_19990.pt": "1c8a4ec8847cc69d9a0075bbb5a765157eb13a9baaed3aa410b178ea288efd12",
+        "state_20000.pt": "9b2cad88d661da1c2e227bda309cd482fca037122be7e41d273a1226115723ea",
+        "final.pt": "e42480a9efdc02aa01682d25b956a11f97193334334dc120413afb4825b63717"
+      }
+    },
+    "calibration": {
+      "final_fit": {
+        "phase": "calibration",
+        "update": 20000,
+        "rows": 1440,
+        "correct": 1185,
+        "original_correct": 104,
+        "new_correct": 1081,
+        "recovery_action": 4,
+        "recovery_gap": 2.889556884765625,
+        "return_mae": 0.7745375037193298,
+        "return_rmse": 1.117807149887085,
+        "minimum_q": -18.299699783325195,
+        "maximum_q": 102.74198150634766,
+        "probes": [
+          {
+            "row": 39,
+            "scene": 10001,
+            "step": 5,
+            "demonstrated_action": 2,
+            "greedy_action": 2,
+            "gap": 0.11856842041015625
+          },
+          {
+            "row": 40,
+            "scene": 10001,
+            "step": 6,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 0.8134765625
+          },
+          {
+            "row": 41,
+            "scene": 10001,
+            "step": 7,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.1520538330078125
+          },
+          {
+            "row": 54,
+            "scene": 10001,
+            "step": 20,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.6736831665039062
+          },
+          {
+            "row": 55,
+            "scene": 10001,
+            "step": 21,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.4172821044921875
+          },
+          {
+            "row": 56,
+            "scene": 10001,
+            "step": 22,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -1.0699462890625
+          },
+          {
+            "row": 57,
+            "scene": 10001,
+            "step": 23,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.16442108154296875
+          },
+          {
+            "row": 58,
+            "scene": 10001,
+            "step": 24,
+            "demonstrated_action": 2,
+            "greedy_action": 6,
+            "gap": -1.0910415649414062
+          },
+          {
+            "row": 59,
+            "scene": 10001,
+            "step": 25,
+            "demonstrated_action": 6,
+            "greedy_action": 6,
+            "gap": 1.3138961791992188
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "seed": 10000,
+          "return": 107.5899344369769,
+          "steps": 38,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "travel_distance": 1.6849985048174858,
+          "peak_deformation": 0.0,
+          "distance_to_target": 0.04908003658056259,
+          "stationary_steps": 0,
+          "blocked_steps": 0
+        },
+        {
+          "seed": 10001,
+          "return": -4.6523800147814915,
+          "steps": 200,
+          "success": false,
+          "damage": false,
+          "budget_exhausted": true,
+          "travel_distance": 1.0464456006884575,
+          "peak_deformation": 0.04913524415308397,
+          "distance_to_target": 0.45366016030311584,
+          "stationary_steps": 167,
+          "blocked_steps": 169
+        },
+        {
+          "seed": 10002,
+          "return": 1.4956083193421363,
+          "steps": 200,
+          "success": false,
+          "damage": false,
+          "budget_exhausted": true,
+          "travel_distance": 0.1527208611369133,
+          "peak_deformation": 0.0,
+          "distance_to_target": 0.6910336017608643,
+          "stationary_steps": 193,
+          "blocked_steps": 194
+        }
+      ],
+      "original_successes": 1,
+      "added_successes": 8,
+      "training_categories": {
+        "success": 9,
+        "budget_blocked_stall": 12,
+        "damage": 10,
+        "budget_stationary_stall": 1,
+        "budget_while_moving": 1
+      },
+      "model_hashes": {
+        "state_0.pt": "e8fda33bcac11965d82deb8d5e30f4a04445c5f7da37e45484ba03013a8f9368",
+        "state_10.pt": "111b781a400911b97298844fb25004fa6e6f98e1390c90908f2f9b7275491c0f",
+        "state_5000.pt": "550b0c0a365b1472e117182088f101a1052237314895190003033cb2faea6984",
+        "state_19990.pt": "41949bd680f0f8ac33b3a907ec0ba244d6e8dffc4041c1c71c54ed45073e4240",
+        "state_20000.pt": "c16d82e8a5ec2de9c256ef24e385074bb7300c115687e3a9641d73ff9eed3fe1",
+        "final.pt": "1341863f8989ac1ac023c90e8d37a35fe8e34b8b6cfb140ab431cb9510c59541"
+      }
+    },
+    "td": {
+      "final_fit": {
+        "phase": "td",
+        "update": 10000,
+        "rows": 1440,
+        "correct": 1227,
+        "original_correct": 103,
+        "new_correct": 1124,
+        "recovery_action": 4,
+        "recovery_gap": 3.3769302368164062,
+        "return_mae": 2.0481789112091064,
+        "return_rmse": 2.6804206371307373,
+        "minimum_q": -17.813241958618164,
+        "maximum_q": 104.82706451416016,
+        "probes": [
+          {
+            "row": 39,
+            "scene": 10001,
+            "step": 5,
+            "demonstrated_action": 2,
+            "greedy_action": 2,
+            "gap": 0.17935943603515625
+          },
+          {
+            "row": 40,
+            "scene": 10001,
+            "step": 6,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 0.73980712890625
+          },
+          {
+            "row": 41,
+            "scene": 10001,
+            "step": 7,
+            "demonstrated_action": 1,
+            "greedy_action": 1,
+            "gap": 1.1091690063476562
+          },
+          {
+            "row": 54,
+            "scene": 10001,
+            "step": 20,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.3819656372070312
+          },
+          {
+            "row": 55,
+            "scene": 10001,
+            "step": 21,
+            "demonstrated_action": 0,
+            "greedy_action": 0,
+            "gap": 1.0423812866210938
+          },
+          {
+            "row": 56,
+            "scene": 10001,
+            "step": 22,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.72845458984375
+          },
+          {
+            "row": 57,
+            "scene": 10001,
+            "step": 23,
+            "demonstrated_action": 4,
+            "greedy_action": 0,
+            "gap": -0.2079925537109375
+          },
+          {
+            "row": 58,
+            "scene": 10001,
+            "step": 24,
+            "demonstrated_action": 2,
+            "greedy_action": 6,
+            "gap": -0.5015106201171875
+          },
+          {
+            "row": 59,
+            "scene": 10001,
+            "step": 25,
+            "demonstrated_action": 6,
+            "greedy_action": 6,
+            "gap": 0.9360504150390625
+          }
+        ]
+      },
+      "original_records": [
+        {
+          "seed": 10000,
+          "return": 107.5899344369769,
+          "steps": 38,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "travel_distance": 1.6849985048174858,
+          "peak_deformation": 0.0,
+          "distance_to_target": 0.04908003658056259,
+          "stationary_steps": 0,
+          "blocked_steps": 0
+        },
+        {
+          "seed": 10001,
+          "return": 107.28292228005579,
+          "steps": 47,
+          "success": true,
+          "damage": false,
+          "budget_exhausted": false,
+          "travel_distance": 1.699998490512371,
+          "peak_deformation": 0.1013333188043193,
+          "distance_to_target": 0.011549167335033417,
+          "stationary_steps": 0,
+          "blocked_steps": 0
+        },
+        {
+          "seed": 10002,
+          "return": -62.168229881803754,
+          "steps": 58,
+          "success": false,
+          "damage": true,
+          "budget_exhausted": false,
+          "travel_distance": 1.182816468179226,
+          "peak_deformation": 1.0004928547960457,
+          "distance_to_target": 0.16444115340709686,
+          "stationary_steps": 0,
+          "blocked_steps": 1
+        }
+      ],
+      "original_successes": 2,
+      "added_successes": 5,
+      "training_categories": {
+        "success": 7,
+        "damage": 17,
+        "budget_blocked_stall": 9
+      },
+      "model_hashes": {
+        "state_0.pt": "d8d63d7547e4eab78ab3935ab0c0a9d741c4291d1925d2002e6b14a22be6da30",
+        "state_1.pt": "a96494bcbe06a08e6900f040255f154ca084b9e4e488d5a68ca6981ece27cb77",
+        "state_10.pt": "299f120f0df7b9b6e0a548f9341886991f565fde1dc202f18a3abedea9728140",
+        "state_100.pt": "825e17b1253334ecdc095d2fdb7470ec6456fdd5d1ab7467ce1bebf51fb8174d",
+        "state_500.pt": "c3530b1fb7e8f90964c254112b0fd181f042eb8f30b0c009ae57abbcb3645bfe",
+        "state_1000.pt": "ddff0c6e370378977bc917498acfb4bdc2460395744b706b1160e3e02ea0c0af",
+        "state_2000.pt": "da83bc19d3dd89d5589507750db8ad77e1383279d030db35422bf5eb23b5e182",
+        "state_4000.pt": "b6f2e2f3b858027bca1dbd6c0cd4626b144f229c0ac0060495cc515393b68f02",
+        "state_6000.pt": "df52155a043b482c6092bf85879893c3b841fce32796860ca94e2a63baa67171",
+        "state_8000.pt": "e6ec22c55030c07eaddd7ba42d51485a30f002a163abc537aae2cbc3b8aa4fbb",
+        "state_9990.pt": "ce7702d57d1df7dc800048fd8c923b62a973bd93a56878df2a7d3c0cbb625030",
+        "state_10000.pt": "1a63fba8f5c12b8cf13129b6dc290264c709d639e9a2b435d502d87d31ae7394",
+        "final.pt": "e236374791ce5b7bb59c00d6e99c3ab557821fc06ccddbcbed6686b638b67868"
+      }
+    }
+  }
+}
