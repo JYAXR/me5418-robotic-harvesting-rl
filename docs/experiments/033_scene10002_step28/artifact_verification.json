@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "protocol_commit": "b72c9ae879a5e4c0c9d1c9fac6ac34188ea9dfd0",
+  "raw_archive_files_verified": 11,
+  "raw_archive_bytes": 163599,
+  "source_hashes_unchanged": 141,
+  "git_index_byte_exact_artifacts": 14,
+  "control_matches_attempt032_byte_for_byte": true,
+  "exact_treatment_overrides": [
+    [
+      23,
+      4
+    ],
+    [
+      27,
+      0
+    ],
+    [
+      28,
+      4
+    ]
+  ],
+  "all_actions_after_step28_autonomous": true,
+  "diagnostic_tests_passed": 22,
+  "ruff_passed": true,
+  "simulator_runs": 1,
+  "optimizer_updates": 0
+}

@@ -1,0 +1,22 @@
+{
+  "step": 28,
+  "policy_action": 6,
+  "policy_action_name": "east_large",
+  "reference_action": 4,
+  "reference_action_name": "north_large",
+  "policy_q": 87.39217376708984,
+  "reference_q": 86.93000793457031,
+  "policy_minus_reference": 0.46216583251953125,
+  "q_values": [
+    87.16753387451172,
+    84.164794921875,
+    85.99884796142578,
+    -8.65654468536377,
+    86.93000793457031,
+    81.49373626708984,
+    87.39217376708984,
+    -16.490163803100586
+  ],
+  "encoded_observation_sha256": "7fc10800982884e02f22de0c0c1314eb6f6db65f7539c34042c1d45cbb382c08",
+  "identical_prefix_steps": 27
+}

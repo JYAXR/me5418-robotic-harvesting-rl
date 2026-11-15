@@ -1,0 +1,115 @@
+{
+  "additional_fork": {
+    "step": 28,
+    "policy_action": 6,
+    "policy_action_name": "east_large",
+    "reference_action": 4,
+    "reference_action_name": "north_large",
+    "policy_q": 87.39217376708984,
+    "reference_q": 86.93000793457031,
+    "policy_minus_reference": 0.46216583251953125,
+    "q_values": [
+      87.16753387451172,
+      84.164794921875,
+      85.99884796142578,
+      -8.65654468536377,
+      86.93000793457031,
+      81.49373626708984,
+      87.39217376708984,
+      -16.490163803100586
+    ],
+    "encoded_observation_sha256": "7fc10800982884e02f22de0c0c1314eb6f6db65f7539c34042c1d45cbb382c08",
+    "identical_prefix_steps": 27
+  },
+  "pair_audit": {
+    "identical_prefix_steps": 27,
+    "identical_fork_input_and_q": true,
+    "fixed_corrections": [
+      {
+        "step": 23,
+        "action": 4
+      },
+      {
+        "step": 27,
+        "action": 0
+      }
+    ],
+    "additional_correction": {
+      "step": 28,
+      "action": 4
+    },
+    "override_counts": {
+      "baseline": 2,
+      "corrected": 3
+    },
+    "all_other_actions_autonomous": true
+  },
+  "metrics": {
+    "baseline": {
+      "seed": 10002,
+      "return": -62.610496377387236,
+      "steps": 58,
+      "success": false,
+      "damage": true,
+      "budget_exhausted": false,
+      "travel_distance": 1.182805560529232,
+      "peak_deformation": 1.0003185207573846,
+      "distance_to_target": 0.16445013880729675,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "corrected": {
+      "seed": 10002,
+      "return": 107.95726199559867,
+      "steps": 42,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.644998513162136,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.015022681094706059,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    }
+  },
+  "additional_correction_restores_success": true,
+  "next_reference_disagreement": {
+    "step": 33,
+    "policy_action": 1,
+    "policy_action_name": "south_small",
+    "reference_action": 2,
+    "reference_action_name": "east_small",
+    "policy_q": 90.50450134277344,
+    "reference_q": 90.4862289428711,
+    "policy_minus_reference": 0.01827239990234375,
+    "q_values": [
+      71.84716033935547,
+      90.50450134277344,
+      90.4862289428711,
+      -8.615188598632812,
+      79.51347351074219,
+      76.76436614990234,
+      88.72270965576172,
+      -16.917129516601562
+    ],
+    "encoded_observation_sha256": "ac94ca011a55fe7c397dd997d849d2eafa77fb651e7d57c1eea9a2f0b133f90d",
+    "identical_prefix_steps": 32
+  },
+  "optimizer_updates": 0,
+  "main_diagnostic_episodes": 2,
+  "verification_episodes": 2,
+  "main_executed_actions": 100,
+  "verification_executed_actions": 100,
+  "main_forced_actions": 5,
+  "verification_forced_actions": 5,
+  "certification_actions_by_main_mode": {
+    "baseline": 41,
+    "corrected": 41
+  },
+  "verification_certification_actions": 82,
+  "total_simulator_actions": 364,
+  "all_full_states_unchanged": true,
+  "all_inputs_unchanged": true,
+  "independent_verification_passed": true,
+  "scope": "One known scene; step-28 contrast conditional on fixed steps 23 and 27; no learning."
+}

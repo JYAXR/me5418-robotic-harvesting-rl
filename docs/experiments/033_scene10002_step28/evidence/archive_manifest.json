@@ -1,0 +1,49 @@
+{
+  "source_run": "results/evaluation/scene10002_step28_033_20261116",
+  "files": {
+    "additional_fork.json": {
+      "sha256": "da23c1c683a6d6d171e635d810f3d6b5d8b578f2094a4f50af212ea492c3f44d",
+      "bytes": 620
+    },
+    "baseline.json": {
+      "sha256": "02d2b62e2497ee82374f5049fa47d2def046a382b9aab28f89f36b111c19f78c",
+      "bytes": 10925
+    },
+    "baseline.jsonl": {
+      "sha256": "a31adeba588d0f08bd7559ca0c4789ff1dccfcc067e32d06098b2b03e8647c22",
+      "bytes": 65236
+    },
+    "corrected.json": {
+      "sha256": "b990291e857c28e12a8fa5a5c4a08444deaccc9473bb2541702b12610b16ee95",
+      "bytes": 10912
+    },
+    "corrected.jsonl": {
+      "sha256": "f47f9105205ae57d1001c3c13a2c06aad03b177d3643480c733d7bddae05ce22",
+      "bytes": 46565
+    },
+    "pair_audit.json": {
+      "sha256": "c05455e42bc62760c0d0cee0e5f067957854fa86f9586663b1174ceca2a1dbd3",
+      "bytes": 1092
+    },
+    "provenance.json": {
+      "sha256": "f44de13c8e24fe624b78e48d275192914cb3cb686cec7dde8c74e39618dd2490",
+      "bytes": 22871
+    },
+    "status.json": {
+      "sha256": "fe55e540cdd747aa04a7b66682f1b88f30f5f384ba1d2f7c061dde67662e525a",
+      "bytes": 146
+    },
+    "summary.json": {
+      "sha256": "3429ba22066d37cc0948e2d85f71a6d42441ea582ea8bf13635bd1947227bb0b",
+      "bytes": 3292
+    },
+    "verification_baseline.json": {
+      "sha256": "6ec9b7291ed4c40ba072ac8e128b1424be5b412d9c3c85bd7f769e118eef5b9d",
+      "bytes": 977
+    },
+    "verification_corrected.json": {
+      "sha256": "972f62bc83185c919e8474df03e21216bbf2635a3eb6b32645f0767ee6f6506e",
+      "bytes": 963
+    }
+  }
+}

@@ -76,3 +76,9 @@ This also fails: the 200-step blocked control becomes a 58-step damage failure,
 with a further reference disagreement at step 28. Independent reloads reproduce
 both trajectories; model parameters, Adam state and all training settings remain
 unchanged. These are assisted diagnostic interventions, not a repaired policy.
+
+[Attempt 033](../docs/experiments/033_scene10002_step28/RESULTS.md) additionally
+corrects step 28 to north_large, keeping the step-23/27 corrections fixed. This
+restores assisted success in 42 steps, verified by an independent reload. All
+other actions are autonomous, including a harmless reference disagreement at
+step 33. The model itself remains unchanged; autonomous repair is not established.

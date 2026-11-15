@@ -49,6 +49,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [032: step-27 correction with step 23 fixed](032_scene10002_step27/RESULTS.md) | With the final attempt-030 policy frozen and step 23 corrected in both arms, does additionally correcting step 27 to north_small restore scene 10002? | No: the control exactly repeats the 200-step blocked budget failure, while the treatment fails by damage at step 58, return -62.610496 versus -41.612027. The next reference disagreement is step 28: east_large over north_large by 0.462166. Two independent reloads match all transitions. Four episodes, 680 simulator actions including certification, zero training updates; full model/Adam/RNG state unchanged. |
 
+| [033: step-28 correction with steps 23/27 fixed](033_scene10002_step28/RESULTS.md) | Does additionally correcting step 28 to north_large restore scene 10002 while the final model stays frozen? | Yes, conditionally: control repeats 58-step damage failure; treatment reaches the target in 42 steps with return 107.957262 and zero deformation/blocking. A later step-33 reference disagreement does not prevent success. Two independent reloads match every transition. Four episodes, 364 simulator actions including certification, zero training updates. This is assisted rescue, not learned repair. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

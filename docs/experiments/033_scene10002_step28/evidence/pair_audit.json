@@ -1,0 +1,45 @@
+{
+  "identical_prefix_steps": 27,
+  "identical_fork_input_and_q": true,
+  "fixed_corrections": [
+    {
+      "step": 23,
+      "action": 4
+    },
+    {
+      "step": 27,
+      "action": 0
+    }
+  ],
+  "additional_correction": {
+    "step": 28,
+    "action": 4
+  },
+  "override_counts": {
+    "baseline": 2,
+    "corrected": 3
+  },
+  "all_other_actions_autonomous": true,
+  "next_reference_disagreement": {
+    "step": 33,
+    "policy_action": 1,
+    "policy_action_name": "south_small",
+    "reference_action": 2,
+    "reference_action_name": "east_small",
+    "policy_q": 90.50450134277344,
+    "reference_q": 90.4862289428711,
+    "policy_minus_reference": 0.01827239990234375,
+    "q_values": [
+      71.84716033935547,
+      90.50450134277344,
+      90.4862289428711,
+      -8.615188598632812,
+      79.51347351074219,
+      76.76436614990234,
+      88.72270965576172,
+      -16.917129516601562
+    ],
+    "encoded_observation_sha256": "ac94ca011a55fe7c397dd997d849d2eafa77fb651e7d57c1eea9a2f0b133f90d",
+    "identical_prefix_steps": 32
+  }
+}
