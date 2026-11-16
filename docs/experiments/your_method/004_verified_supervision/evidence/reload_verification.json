@@ -1,0 +1,482 @@
+[
+  {
+    "arm": "control",
+    "seed": 10000,
+    "metrics": {
+      "seed": 10000,
+      "return": 107.5899344369769,
+      "steps": 38,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.6849985048174858,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.04908003658056259,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "timing": {
+      "seed": 10000,
+      "episode_seconds": 2.232986599992728,
+      "reset_seconds": 1.4266838999901665,
+      "policy_seconds": 0.014398800005437806,
+      "physics_seconds": 0.7916579000011552,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.008972100011305884,
+        "certification_seconds": 1.4176226999989012,
+        "certification_actions": 35,
+        "certification_calls": 1,
+        "total_seconds": 1.426681600001757
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.008972100011305884,
+      "certification_seconds": 1.4176226999989012,
+      "certification_actions": 35,
+      "certification_calls": 1,
+      "total_seconds": 1.426681600001757
+    }
+  },
+  {
+    "arm": "control",
+    "seed": 10001,
+    "metrics": {
+      "seed": 10001,
+      "return": 107.74346906989813,
+      "steps": 43,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.6072617694735527,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.033224232494831085,
+      "stationary_steps": 0,
+      "blocked_steps": 1
+    },
+    "timing": {
+      "seed": 10001,
+      "episode_seconds": 2.066880200000014,
+      "reset_seconds": 1.339316300000064,
+      "policy_seconds": 0.014364800023031421,
+      "physics_seconds": 0.7129697999771452,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.008884700000635348,
+        "certification_seconds": 1.3303393999958644,
+        "certification_actions": 41,
+        "certification_calls": 1,
+        "total_seconds": 1.3393139999971027
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.008884700000635348,
+      "certification_seconds": 1.3303393999958644,
+      "certification_actions": 41,
+      "certification_calls": 1,
+      "total_seconds": 1.3393139999971027
+    }
+  },
+  {
+    "arm": "control",
+    "seed": 10002,
+    "metrics": {
+      "seed": 10002,
+      "return": -41.614793912821334,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.0917855724692345,
+      "peak_deformation": 0.2954973685440172,
+      "distance_to_target": 0.21267832815647125,
+      "stationary_steps": 171,
+      "blocked_steps": 174
+    },
+    "timing": {
+      "seed": 10002,
+      "episode_seconds": 11.309137299991562,
+      "reset_seconds": 1.3563827000034507,
+      "policy_seconds": 0.07653800003754441,
+      "physics_seconds": 9.87508600007277,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.009103100004722364,
+        "certification_seconds": 1.3471922000026098,
+        "certification_actions": 41,
+        "certification_calls": 1,
+        "total_seconds": 1.3563807000027737
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.009103100004722364,
+      "certification_seconds": 1.3471922000026098,
+      "certification_actions": 41,
+      "certification_calls": 1,
+      "total_seconds": 1.3563807000027737
+    }
+  },
+  {
+    "arm": "control",
+    "seed": 290007,
+    "metrics": {
+      "seed": 290007,
+      "return": 101.64662056146281,
+      "steps": 30,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.4449986815452576,
+      "peak_deformation": 0.9647418398950336,
+      "distance_to_target": 0.031168445944786072,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "timing": {
+      "seed": 290007,
+      "episode_seconds": 2.18545359998825,
+      "reset_seconds": 1.5259237999998732,
+      "policy_seconds": 0.009304599996539764,
+      "physics_seconds": 0.6500679999735439,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.008325099988724105,
+        "certification_seconds": 1.5175148999987869,
+        "certification_actions": 45,
+        "certification_calls": 1,
+        "total_seconds": 1.5259215999976732
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.008325099988724105,
+      "certification_seconds": 1.5175148999987869,
+      "certification_actions": 45,
+      "certification_calls": 1,
+      "total_seconds": 1.5259215999976732
+    }
+  },
+  {
+    "arm": "control",
+    "seed": 290012,
+    "metrics": {
+      "seed": 290012,
+      "return": -23.945133409986024,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.2484962046146393,
+      "peak_deformation": 0.4458388737053564,
+      "distance_to_target": 0.34076327085494995,
+      "stationary_steps": 162,
+      "blocked_steps": 163
+    },
+    "timing": {
+      "seed": 290012,
+      "episode_seconds": 11.34552970000368,
+      "reset_seconds": 1.5937384999997448,
+      "policy_seconds": 0.07165000008535571,
+      "physics_seconds": 9.679003399898647,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.00837709999177605,
+        "certification_seconds": 1.5852777999971295,
+        "certification_actions": 61,
+        "certification_calls": 1,
+        "total_seconds": 1.5937364999990677
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.00837709999177605,
+      "certification_seconds": 1.5852777999971295,
+      "certification_actions": 61,
+      "certification_calls": 1,
+      "total_seconds": 1.5937364999990677
+    }
+  },
+  {
+    "arm": "control",
+    "seed": 290021,
+    "metrics": {
+      "seed": 290021,
+      "return": 100.37286817302139,
+      "steps": 39,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.8149983957409859,
+      "peak_deformation": 0.5177354954958016,
+      "distance_to_target": 0.0050207446329295635,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "timing": {
+      "seed": 290021,
+      "episode_seconds": 2.4243155000003753,
+      "reset_seconds": 1.4975218000035966,
+      "policy_seconds": 0.013824199981172569,
+      "physics_seconds": 0.9127545000519603,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.008314799997606315,
+        "certification_seconds": 1.4891055000043707,
+        "certification_actions": 41,
+        "certification_calls": 1,
+        "total_seconds": 1.4975192999991123
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.008314799997606315,
+      "certification_seconds": 1.4891055000043707,
+      "certification_actions": 41,
+      "certification_calls": 1,
+      "total_seconds": 1.4975192999991123
+    }
+  },
+  {
+    "arm": "targeted",
+    "seed": 10000,
+    "metrics": {
+      "seed": 10000,
+      "return": 107.5899344369769,
+      "steps": 38,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.6849985048174858,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.04908003658056259,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "timing": {
+      "seed": 10000,
+      "episode_seconds": 2.025889800002915,
+      "reset_seconds": 1.340512700000545,
+      "policy_seconds": 0.012173099996289238,
+      "physics_seconds": 0.6730163999454817,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.00765539999702014,
+        "certification_seconds": 1.3327637000038521,
+        "certification_actions": 35,
+        "certification_calls": 1,
+        "total_seconds": 1.3405101999960607
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.00765539999702014,
+      "certification_seconds": 1.3327637000038521,
+      "certification_actions": 35,
+      "certification_calls": 1,
+      "total_seconds": 1.3405101999960607
+    }
+  },
+  {
+    "arm": "targeted",
+    "seed": 10001,
+    "metrics": {
+      "seed": 10001,
+      "return": 107.37772035218934,
+      "steps": 46,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.709998480975628,
+      "peak_deformation": 0.1013333188043193,
+      "distance_to_target": 0.006020338274538517,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "timing": {
+      "seed": 10001,
+      "episode_seconds": 1.938858599998639,
+      "reset_seconds": 1.190990299990517,
+      "policy_seconds": 0.014924899922334589,
+      "physics_seconds": 0.7327105999866035,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.007678300011320971,
+        "certification_seconds": 1.183228899986716,
+        "certification_actions": 41,
+        "certification_calls": 1,
+        "total_seconds": 1.1909882000036305
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.007678300011320971,
+      "certification_seconds": 1.183228899986716,
+      "certification_actions": 41,
+      "certification_calls": 1,
+      "total_seconds": 1.1909882000036305
+    }
+  },
+  {
+    "arm": "targeted",
+    "seed": 10002,
+    "metrics": {
+      "seed": 10002,
+      "return": 107.8615333430469,
+      "steps": 44,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.6949984654784203,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.023595547303557396,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "timing": {
+      "seed": 10002,
+      "episode_seconds": 2.188194200003636,
+      "reset_seconds": 1.4159967000014149,
+      "policy_seconds": 0.01596199999039527,
+      "physics_seconds": 0.755988700024318,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.009061199991265312,
+        "certification_seconds": 1.4068185999931302,
+        "certification_actions": 41,
+        "certification_calls": 1,
+        "total_seconds": 1.4159934999916004
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.009061199991265312,
+      "certification_seconds": 1.4068185999931302,
+      "certification_actions": 41,
+      "certification_calls": 1,
+      "total_seconds": 1.4159934999916004
+    }
+  },
+  {
+    "arm": "targeted",
+    "seed": 290007,
+    "metrics": {
+      "seed": 290007,
+      "return": 101.64662056146281,
+      "steps": 30,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.4449986815452576,
+      "peak_deformation": 0.9647418398950336,
+      "distance_to_target": 0.031168445944786072,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "timing": {
+      "seed": 290007,
+      "episode_seconds": 2.165899300001911,
+      "reset_seconds": 1.530471399993985,
+      "policy_seconds": 0.008471799970720895,
+      "physics_seconds": 0.6268251000001328,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.009367999999085441,
+        "certification_seconds": 1.5210065999999642,
+        "certification_actions": 45,
+        "certification_calls": 1,
+        "total_seconds": 1.530469000004814
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.009367999999085441,
+      "certification_seconds": 1.5210065999999642,
+      "certification_actions": 45,
+      "certification_calls": 1,
+      "total_seconds": 1.530469000004814
+    }
+  },
+  {
+    "arm": "targeted",
+    "seed": 290012,
+    "metrics": {
+      "seed": 290012,
+      "return": -24.19466973260145,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.2484962046146393,
+      "peak_deformation": 0.4458388737053564,
+      "distance_to_target": 0.34076327085494995,
+      "stationary_steps": 162,
+      "blocked_steps": 163
+    },
+    "timing": {
+      "seed": 290012,
+      "episode_seconds": 10.97816490000696,
+      "reset_seconds": 1.5586186000000453,
+      "policy_seconds": 0.07035519993223716,
+      "physics_seconds": 9.34815790002176,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.007687999997870065,
+        "certification_seconds": 1.5508425000007264,
+        "certification_actions": 61,
+        "certification_calls": 1,
+        "total_seconds": 1.5586163999978453
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.007687999997870065,
+      "certification_seconds": 1.5508425000007264,
+      "certification_actions": 61,
+      "certification_calls": 1,
+      "total_seconds": 1.5586163999978453
+    }
+  },
+  {
+    "arm": "targeted",
+    "seed": 290021,
+    "metrics": {
+      "seed": 290021,
+      "return": -50.75132563997703,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.370792306959629,
+      "peak_deformation": 0.36052979217083164,
+      "distance_to_target": 0.20841874182224274,
+      "stationary_steps": 170,
+      "blocked_steps": 172
+    },
+    "timing": {
+      "seed": 290021,
+      "episode_seconds": 6.363463599991519,
+      "reset_seconds": 1.4610094000090612,
+      "policy_seconds": 0.06180219976522494,
+      "physics_seconds": 4.839669900145964,
+      "reset": {
+        "cache_status": "disabled",
+        "generation_seconds": 0.00816800000029616,
+        "certification_seconds": 1.4527533999935258,
+        "certification_actions": 41,
+        "certification_calls": 1,
+        "total_seconds": 1.4610070999915479
+      }
+    },
+    "reset_profile": {
+      "cache_status": "disabled",
+      "generation_seconds": 0.00816800000029616,
+      "certification_seconds": 1.4527533999935258,
+      "certification_actions": 41,
+      "certification_calls": 1,
+      "total_seconds": 1.4610070999915479
+    }
+  }
+]

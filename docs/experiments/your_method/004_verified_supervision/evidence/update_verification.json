@@ -1,0 +1,26 @@
+[
+  {
+    "arm": "control",
+    "start": 0,
+    "updates": 10,
+    "exact": true
+  },
+  {
+    "arm": "control",
+    "start": 1990,
+    "updates": 10,
+    "exact": true
+  },
+  {
+    "arm": "targeted",
+    "start": 0,
+    "updates": 10,
+    "exact": true
+  },
+  {
+    "arm": "targeted",
+    "start": 1990,
+    "updates": 10,
+    "exact": true
+  }
+]

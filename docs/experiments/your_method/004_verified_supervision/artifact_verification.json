@@ -1,0 +1,605 @@
+{
+  "manifest_files_verified": 132,
+  "primary_traces_verified": 120,
+  "export_files_verified": 4,
+  "reload_metrics_verified": 12,
+  "review_script_sha256": "3187bb326b0fe61e96b1b33f174f6767d2f6aff191465f13d5b13a671043aabf",
+  "additional_optimizer_updates": 0,
+  "additional_simulator_actions": 0,
+  "per_scene_changes": [
+    {
+      "arm": "control",
+      "seed": 10000,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.023999977111813564,
+      "step_change": -2,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 10001,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.4605467898423399,
+      "step_change": -4,
+      "peak_deformation_change": -0.1013333188043193
+    },
+    {
+      "arm": "control",
+      "seed": 10002,
+      "source_success": true,
+      "final_success": false,
+      "return_change": -149.5727607057773,
+      "step_change": 157,
+      "peak_deformation_change": 0.2954973685440172
+    },
+    {
+      "arm": "control",
+      "seed": 290000,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290001,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 3.181938682478936,
+      "step_change": -178,
+      "peak_deformation_change": 0.10176220812765424
+    },
+    {
+      "arm": "control",
+      "seed": 290002,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -0.006579660015205491,
+      "step_change": -2,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290003,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290004,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 43.45250454303667,
+      "step_change": 125,
+      "peak_deformation_change": -0.30921444416556887
+    },
+    {
+      "arm": "control",
+      "seed": 290005,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -14.909832765700003,
+      "step_change": 0,
+      "peak_deformation_change": 0.520773842569655
+    },
+    {
+      "arm": "control",
+      "seed": 290006,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 11.775437255284452,
+      "step_change": -15,
+      "peak_deformation_change": 0.050038187728977945
+    },
+    {
+      "arm": "control",
+      "seed": 290007,
+      "source_success": false,
+      "final_success": true,
+      "return_change": 231.6949140420438,
+      "step_change": -94,
+      "peak_deformation_change": -0.03711268334971152
+    },
+    {
+      "arm": "control",
+      "seed": 290008,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290009,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290010,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -11.75663074408677,
+      "step_change": -1,
+      "peak_deformation_change": 0.002451702512767495
+    },
+    {
+      "arm": "control",
+      "seed": 290011,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.6626778389355508,
+      "step_change": -2,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290012,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 5.223117545228,
+      "step_change": 0,
+      "peak_deformation_change": -0.33148173491197525
+    },
+    {
+      "arm": "control",
+      "seed": 290013,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -0.12735944672892963,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290014,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.04799995422364134,
+      "step_change": -4,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290015,
+      "source_success": false,
+      "final_success": true,
+      "return_change": 150.6567870028481,
+      "step_change": 11,
+      "peak_deformation_change": -0.6348851447257748
+    },
+    {
+      "arm": "control",
+      "seed": 290016,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 14.970805564202948,
+      "step_change": -130,
+      "peak_deformation_change": 0.5356139990238182
+    },
+    {
+      "arm": "control",
+      "seed": 290017,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 4.114422063171546,
+      "step_change": 6,
+      "peak_deformation_change": -0.7253904114453187
+    },
+    {
+      "arm": "control",
+      "seed": 290018,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -0.0002872491688536982,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290019,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -23.528592150614827,
+      "step_change": 105,
+      "peak_deformation_change": -0.3246506839715846
+    },
+    {
+      "arm": "control",
+      "seed": 290020,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -18.688410685454258,
+      "step_change": 173,
+      "peak_deformation_change": -0.5433257684422387
+    },
+    {
+      "arm": "control",
+      "seed": 290021,
+      "source_success": false,
+      "final_success": true,
+      "return_change": 148.18879306437822,
+      "step_change": -7,
+      "peak_deformation_change": -0.5088952386828094
+    },
+    {
+      "arm": "control",
+      "seed": 290022,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.19784104461702157,
+      "step_change": -5,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290023,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290024,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -9.024672502978419,
+      "step_change": 0,
+      "peak_deformation_change": 0.021833166168821583
+    },
+    {
+      "arm": "control",
+      "seed": 290025,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 2.0605345515803037,
+      "step_change": -2,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "control",
+      "seed": 290026,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 1.117668437996798,
+      "step_change": -1,
+      "peak_deformation_change": -0.02294651502961792
+    },
+    {
+      "arm": "control",
+      "seed": 290027,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 20.651451381828487,
+      "step_change": -32,
+      "peak_deformation_change": 0.020526839394186203
+    },
+    {
+      "arm": "control",
+      "seed": 290028,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -55.5893164775733,
+      "step_change": -161,
+      "peak_deformation_change": 0.8524990239097783
+    },
+    {
+      "arm": "control",
+      "seed": 290029,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 1.5631942816865632,
+      "step_change": -3,
+      "peak_deformation_change": -0.011009514616092009
+    },
+    {
+      "arm": "targeted",
+      "seed": 10000,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.023999977111813564,
+      "step_change": -2,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 10001,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.09479807213355684,
+      "step_change": -1,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 10002,
+      "source_success": true,
+      "final_success": true,
+      "return_change": -0.09643344990908531,
+      "step_change": 1,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290000,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290001,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 3.181938682478936,
+      "step_change": -178,
+      "peak_deformation_change": 0.10176220812765424
+    },
+    {
+      "arm": "targeted",
+      "seed": 290002,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -6.171612184721681,
+      "step_change": 104,
+      "peak_deformation_change": -0.3416711550748347
+    },
+    {
+      "arm": "targeted",
+      "seed": 290003,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290004,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 43.47931634261549,
+      "step_change": 125,
+      "peak_deformation_change": -0.30921444416556887
+    },
+    {
+      "arm": "targeted",
+      "seed": 290005,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290006,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 36.72347728043001,
+      "step_change": 124,
+      "peak_deformation_change": -0.7450313419833137
+    },
+    {
+      "arm": "targeted",
+      "seed": 290007,
+      "source_success": false,
+      "final_success": true,
+      "return_change": 231.6949140420438,
+      "step_change": -94,
+      "peak_deformation_change": -0.03711268334971152
+    },
+    {
+      "arm": "targeted",
+      "seed": 290008,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290009,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290010,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -17.275314307850444,
+      "step_change": 15,
+      "peak_deformation_change": -0.0010027822746523363
+    },
+    {
+      "arm": "targeted",
+      "seed": 290011,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 0.6626778389355508,
+      "step_change": -2,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290012,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 4.973581222612573,
+      "step_change": 0,
+      "peak_deformation_change": -0.33148173491197525
+    },
+    {
+      "arm": "targeted",
+      "seed": 290013,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -0.023193061737340148,
+      "step_change": 0,
+      "peak_deformation_change": -1.0223614832216565e-06
+    },
+    {
+      "arm": "targeted",
+      "seed": 290014,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.04799995422364134,
+      "step_change": -4,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290015,
+      "source_success": false,
+      "final_success": true,
+      "return_change": 144.87577586565482,
+      "step_change": 11,
+      "peak_deformation_change": -0.1873627044034959
+    },
+    {
+      "arm": "targeted",
+      "seed": 290016,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -2.0234181965823694,
+      "step_change": 0,
+      "peak_deformation_change": 0.009173890951383545
+    },
+    {
+      "arm": "targeted",
+      "seed": 290017,
+      "source_success": true,
+      "final_success": false,
+      "return_change": -110.34332878705035,
+      "step_change": 165,
+      "peak_deformation_change": -0.6204387119937077
+    },
+    {
+      "arm": "targeted",
+      "seed": 290018,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -0.000254885784388037,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290019,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": -2,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290020,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -0.9533018233763073,
+      "step_change": 1,
+      "peak_deformation_change": 6.756779926719858e-05
+    },
+    {
+      "arm": "targeted",
+      "seed": 290021,
+      "source_success": false,
+      "final_success": false,
+      "return_change": -2.935400748620218,
+      "step_change": 154,
+      "peak_deformation_change": -0.6661009420077793
+    },
+    {
+      "arm": "targeted",
+      "seed": 290022,
+      "source_success": true,
+      "final_success": false,
+      "return_change": -114.14700248072597,
+      "step_change": 137,
+      "peak_deformation_change": 0.13043892528155043
+    },
+    {
+      "arm": "targeted",
+      "seed": 290023,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290024,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290025,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290026,
+      "source_success": true,
+      "final_success": true,
+      "return_change": 1.117668437996798,
+      "step_change": -1,
+      "peak_deformation_change": -0.02294651502961792
+    },
+    {
+      "arm": "targeted",
+      "seed": 290027,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.0,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290028,
+      "source_success": false,
+      "final_success": false,
+      "return_change": 0.2343006261072207,
+      "step_change": 0,
+      "peak_deformation_change": 0.0
+    },
+    {
+      "arm": "targeted",
+      "seed": 290029,
+      "source_success": true,
+      "final_success": true,
+      "return_change": -10.081248956220847,
+      "step_change": 2,
+      "peak_deformation_change": 0.5183295773851139
+    }
+  ]
+}

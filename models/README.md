@@ -99,3 +99,23 @@ are tracked in the experiment's `checkpoints/` directory. Prior models are uncha
 ```bash
 python scripts/evaluate_dqn.py --checkpoint models/supervision_034_targeted.pt --episodes 3 --seed 10000
 ```
+
+## Own-route attempt 004: experimental five-label continuations
+
+`your_method_004_control.pt` and `your_method_004_targeted.pt` are fixed endpoints
+after 2000 additional updates from the attempt-034 targeted full snapshot. Only
+five existing verified-action supervision weights differ (1 versus 2). Control
+achieves 12/33 training successes and 2/3 targeted-scene successes; treatment
+achieves 10/33 and 1/3. Treatment retains the original three scenes but loses
+source successes on 290017/290022. These are experimental candidates, not a
+validated replacement or a generalization result.
+
+See [own-route attempt 004](../docs/experiments/your_method/004_verified_supervision/RESULTS.md)
+for all failures, update history and checks. Full Adam-resume states are retained
+in that attempt's `resume/` directory, with final TD/Adam clocks 14000/34000.
+Model hashes are recorded in its `evidence/model_exports.json`. Prior models
+remain available.
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/your_method_004_targeted.pt --episodes 3 --seed 10000
+```
