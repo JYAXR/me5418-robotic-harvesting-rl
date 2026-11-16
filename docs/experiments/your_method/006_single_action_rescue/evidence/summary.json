@@ -1,0 +1,15 @@
+{
+  "episodes": 8,
+  "pairs": 4,
+  "baseline_successes": 0,
+  "corrected_successes": 3,
+  "episode_actions": 1161,
+  "certification_actions": 388,
+  "certification_calls": 8,
+  "action_overrides": 4,
+  "optimizer_updates": 0,
+  "full_snapshot_unchanged": true,
+  "all_historical_baselines_exact": true,
+  "elapsed_seconds": 300.3539305999875,
+  "scope": "Assisted single-action rescue of four development scenes, not learned recovery or generalization."
+}

@@ -1,0 +1,11 @@
+{
+  "manifest_files_verified": 13,
+  "pinned_inputs_verified": 156,
+  "complete_traces_verified": 8,
+  "actions_audited": 1161,
+  "exact_overrides": 4,
+  "historical_baselines_exact": 4,
+  "paired_prefix_and_fork_input_checks": 4,
+  "returns_and_final_outcomes_exact": true,
+  "verification_failures": 0
+}
