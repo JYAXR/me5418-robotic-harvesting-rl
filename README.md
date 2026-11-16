@@ -24,7 +24,27 @@ succeeds in only 1/100 cases
 The [experiment record](docs/experiments/027_step6_supervision/RESULTS.md)
 contains the controlled comparison, full traces, limitations and verification.
 
-## Latest experiment: staged learning on 33 scenes
+## Current progress and teammate handoff (16 November 2026)
+
+Start with the [team handoff](docs/TEAM_HANDOFF.md) for the latest model, exact
+limitations, reproducible commands and parallel branch workflow.
+
+[Attempt 034](docs/experiments/034_scene10002_supervision/RESULTS.md) restores
+autonomous success on the three original scenes in 40/47/43 steps. Intermediate
+failures remain, scene 10000 needs two extra steps, and the latest model has not
+been tested on the full 33-scene training set or a fresh independent test set.
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/supervision_034_targeted.pt --episodes 3 --seed 10000
+```
+
+[Attempt 035](docs/experiments/035_scene_cache/RESULTS.md) adds optional certified
+scene caching and separate evaluation timing. All tested trajectories remain
+exactly identical. Warm repeated evaluation measured 2.84x speedup; the complete
+three-pass workload including cache population measured 1.80x. These are evaluation
+measurements, not end-to-end training speedups. Caching is disabled by default.
+
+## Earlier baseline: staged learning on 33 scenes
 
 [Attempt 030](docs/experiments/030_expanded_stages/RESULTS.md) repeats supervised
 fitting and actual-return calibration on the expanded dataset, then preserves
