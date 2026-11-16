@@ -55,6 +55,11 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [035: certified scene cache and segmented timing](035_scene_cache/RESULTS.md) | Can repeated scene certification be cached without changing evaluation behavior, and how much time does it save? | All nine paired comparisons and 18 historical trajectories match exactly, including raw observations, Q values and RNG states. Warm repeated evaluation is 2.8374x faster; the three-pass workload including cache population is 1.7955x faster. Reset accounts for about 64% of uncached evaluation time. Forty-nine tests pass; no training updates or changed conditions. Benefit is measured for repeated evaluation, not end-to-end training. |
 
+Independent development after the shared baseline is tracked in the
+[own-route experiment index](your_method/README.md). These attempts belong to
+`experiment/your-method`; they are not the teammate's experiments or final
+head-to-head test results.
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

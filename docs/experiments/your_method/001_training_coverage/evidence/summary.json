@@ -1,0 +1,162 @@
+{
+  "groups": {
+    "targeted": {
+      "original": {
+        "episodes": 3,
+        "successes": 3,
+        "success_rate": 1.0,
+        "damage_failures": 0,
+        "budget_failures": 0,
+        "mean_return": 107.60227451095896,
+        "mean_success_steps": 43.333333333333336,
+        "failure_signatures": {
+          "success": 3
+        },
+        "success_seeds": [
+          10000,
+          10001,
+          10002
+        ]
+      },
+      "added": {
+        "episodes": 30,
+        "successes": 7,
+        "success_rate": 0.23333333333333334,
+        "damage_failures": 16,
+        "budget_failures": 7,
+        "mean_return": -17.72203956172683,
+        "mean_success_steps": 50.0,
+        "failure_signatures": {
+          "damage": 16,
+          "budget_blocked_stall": 6,
+          "success": 7,
+          "budget_while_moving": 1
+        },
+        "success_seeds": [
+          290003,
+          290008,
+          290011,
+          290017,
+          290022,
+          290026,
+          290029
+        ]
+      },
+      "all": {
+        "episodes": 33,
+        "successes": 10,
+        "success_rate": 0.30303030303030304,
+        "damage_failures": 16,
+        "budget_failures": 7,
+        "mean_return": -6.328920100573579,
+        "mean_success_steps": 48.0,
+        "failure_signatures": {
+          "success": 10,
+          "damage": 16,
+          "budget_blocked_stall": 6,
+          "budget_while_moving": 1
+        },
+        "success_seeds": [
+          10000,
+          10001,
+          10002,
+          290003,
+          290008,
+          290011,
+          290017,
+          290022,
+          290026,
+          290029
+        ]
+      }
+    },
+    "control": {
+      "original": {
+        "episodes": 3,
+        "successes": 2,
+        "success_rate": 0.6666666666666666,
+        "damage_failures": 0,
+        "budget_failures": 1,
+        "mean_return": 57.752687601403785,
+        "mean_success_steps": 42.5,
+        "failure_signatures": {
+          "success": 2,
+          "budget_blocked_stall": 1
+        },
+        "success_seeds": [
+          10000,
+          10001
+        ]
+      },
+      "added": {
+        "episodes": 30,
+        "successes": 7,
+        "success_rate": 0.23333333333333334,
+        "damage_failures": 17,
+        "budget_failures": 6,
+        "mean_return": -11.353363945542336,
+        "mean_success_steps": 48.285714285714285,
+        "failure_signatures": {
+          "damage": 17,
+          "success": 7,
+          "budget_blocked_stall": 6
+        },
+        "success_seeds": [
+          290003,
+          290007,
+          290008,
+          290012,
+          290021,
+          290022,
+          290029
+        ]
+      },
+      "all": {
+        "episodes": 33,
+        "successes": 9,
+        "success_rate": 0.2727272727272727,
+        "damage_failures": 17,
+        "budget_failures": 7,
+        "mean_return": -5.0709956230926885,
+        "mean_success_steps": 47.0,
+        "failure_signatures": {
+          "success": 9,
+          "budget_blocked_stall": 7,
+          "damage": 17
+        },
+        "success_seeds": [
+          10000,
+          10001,
+          290003,
+          290007,
+          290008,
+          290012,
+          290021,
+          290022,
+          290029
+        ]
+      }
+    }
+  },
+  "gained_seeds": [
+    10002,
+    290011,
+    290017,
+    290026
+  ],
+  "lost_seeds": [
+    290007,
+    290012,
+    290021
+  ],
+  "episodes": 66,
+  "optimizer_updates": 0,
+  "action_overrides": 0,
+  "episode_actions": 5438,
+  "certification_actions": 1440,
+  "certification_calls": 33,
+  "cache_hits": 33,
+  "elapsed_seconds": 427.74981330000446,
+  "verification": "All 33 reset pairs, six historical metrics, 66 frozen-state checks, greedy actions and input hashes passed.",
+  "scope": "Complete training-bank audit; no unseen-scene or teammate comparison."
+}

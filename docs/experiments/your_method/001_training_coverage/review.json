@@ -1,0 +1,1595 @@
+{
+  "episodes_verified": 66,
+  "manifest_files_verified": 71,
+  "dataset_sha256": "1dcdf0fdf1b1962f7c74936df48d1ed8a06113920579406c5bd96dd47e678eec",
+  "review_script_sha256": "db02eaa318b83aac488a7c88a970b030b4cc597e2254d860fb3d67b0c25e240f",
+  "optimizer_updates": 0,
+  "simulator_actions": 0,
+  "interpretation": "Post-hoc description only; first disagreements may be valid alternative actions.",
+  "diagnostics": [
+    {
+      "arm": "control",
+      "seed": 10000,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 24,
+        "dataset_row": 23,
+        "policy_action": 5,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.452239990234375,
+        "q_values": [
+          86.7361068725586,
+          88.01345825195312,
+          87.89128112792969,
+          -8.94678020477295,
+          87.5520248413086,
+          89.10110473632812,
+          88.64886474609375,
+          -16.503257751464844
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 10000,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 24,
+        "dataset_row": 23,
+        "policy_action": 5,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.6523590087890625,
+        "q_values": [
+          86.82704162597656,
+          88.13923645019531,
+          87.877685546875,
+          -8.947638511657715,
+          87.66217803955078,
+          89.2198257446289,
+          88.56746673583984,
+          -16.50901985168457
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 10001,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 22,
+        "dataset_row": 56,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.4863128662109375,
+        "q_values": [
+          88.23846435546875,
+          83.86238098144531,
+          87.3458251953125,
+          -9.487215995788574,
+          87.75215148925781,
+          84.51214599609375,
+          85.23684692382812,
+          -16.287288665771484
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 10001,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 22,
+        "dataset_row": 56,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.51922607421875,
+        "q_values": [
+          88.16419219970703,
+          83.83245849609375,
+          87.44595336914062,
+          -9.488686561584473,
+          87.64496612548828,
+          84.48236083984375,
+          85.38440704345703,
+          -16.288414001464844
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 10002,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 27,
+        "dataset_row": 102,
+        "policy_action": 6,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.23789215087890625,
+        "q_values": [
+          86.88739776611328,
+          83.82002258300781,
+          85.9468765258789,
+          -8.642755508422852,
+          86.92292022705078,
+          81.90142059326172,
+          87.12528991699219,
+          -16.27054214477539
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 10002,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 27,
+        "dataset_row": 102,
+        "policy_action": 4,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.0451812744140625,
+        "q_values": [
+          86.964111328125,
+          83.8728256225586,
+          85.84695434570312,
+          -8.6370267868042,
+          87.00929260253906,
+          81.93629455566406,
+          86.90701293945312,
+          -16.263015747070312
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290000,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 13,
+        "dataset_row": 129,
+        "policy_action": 2,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.0199432373046875,
+        "q_values": [
+          71.25196838378906,
+          83.6769027709961,
+          83.80093383789062,
+          -8.818524360656738,
+          70.38681030273438,
+          83.78099060058594,
+          82.49059295654297,
+          -15.558513641357422
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290000,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 13,
+        "dataset_row": 129,
+        "policy_action": 2,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.1086883544921875,
+        "q_values": [
+          71.05768585205078,
+          83.58241271972656,
+          83.79846954345703,
+          -8.81515121459961,
+          70.19580841064453,
+          83.68978118896484,
+          82.60404205322266,
+          -15.548785209655762
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290001,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 15,
+        "dataset_row": 172,
+        "policy_action": 6,
+        "reference_action": 1,
+        "reference_minus_best_other_q": -0.419921875,
+        "q_values": [
+          74.2241439819336,
+          75.56951141357422,
+          73.97994232177734,
+          -7.9601545333862305,
+          73.17285919189453,
+          75.97044372558594,
+          75.98943328857422,
+          -15.942200660705566
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290001,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 15,
+        "dataset_row": 172,
+        "policy_action": 5,
+        "reference_action": 1,
+        "reference_minus_best_other_q": -0.357177734375,
+        "q_values": [
+          74.32289123535156,
+          75.68208312988281,
+          73.97598266601562,
+          -7.959383487701416,
+          73.30815124511719,
+          76.03926086425781,
+          75.89689636230469,
+          -15.944746971130371
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290002,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 7,
+        "dataset_row": 212,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.05951690673828125,
+        "q_values": [
+          73.68089294433594,
+          64.58460235595703,
+          72.93753814697266,
+          -8.262431144714355,
+          73.62137603759766,
+          69.52719116210938,
+          71.06217193603516,
+          -15.834161758422852
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290002,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 7,
+        "dataset_row": 212,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.11141204833984375,
+        "q_values": [
+          73.56884765625,
+          64.47792053222656,
+          72.96638488769531,
+          -8.260318756103516,
+          73.45743560791016,
+          69.42643737792969,
+          71.20157623291016,
+          -15.823113441467285
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290003,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 22,
+        "dataset_row": 272,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.40239715576171875,
+        "q_values": [
+          83.81537628173828,
+          86.58910369873047,
+          85.5199966430664,
+          -8.918538093566895,
+          83.30077362060547,
+          86.18670654296875,
+          86.01407623291016,
+          -16.845264434814453
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290003,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 22,
+        "dataset_row": 272,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.41573333740234375,
+        "q_values": [
+          83.88581848144531,
+          86.66951751708984,
+          85.44767761230469,
+          -8.915721893310547,
+          83.40180969238281,
+          86.2537841796875,
+          85.87577819824219,
+          -16.842405319213867
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290004,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 7,
+        "dataset_row": 294,
+        "policy_action": 4,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.18259429931640625,
+        "q_values": [
+          79.35427856445312,
+          75.66582489013672,
+          78.63601684570312,
+          -9.064831733703613,
+          79.53687286376953,
+          75.79499816894531,
+          75.50728607177734,
+          -16.803836822509766
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290004,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 7,
+        "dataset_row": 294,
+        "policy_action": 4,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.130706787109375,
+        "q_values": [
+          79.2410888671875,
+          75.62061309814453,
+          78.71187591552734,
+          -9.06568431854248,
+          79.37179565429688,
+          75.73886108398438,
+          75.73932647705078,
+          -16.80034637451172
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290005,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 3,
+        "dataset_row": 331,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.05744171142578125,
+        "q_values": [
+          51.76572799682617,
+          70.73110961914062,
+          72.44627380371094,
+          -8.627989768981934,
+          45.359336853027344,
+          70.33030700683594,
+          72.38883209228516,
+          -16.153268814086914
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290005,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 3,
+        "dataset_row": 331,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.138580322265625,
+        "q_values": [
+          51.900108337402344,
+          70.87113189697266,
+          72.42033386230469,
+          -8.627589225769043,
+          45.53175735473633,
+          70.46028137207031,
+          72.28175354003906,
+          -16.159454345703125
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290006,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 11,
+        "dataset_row": 379,
+        "policy_action": 2,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.9598388671875,
+        "q_values": [
+          71.27261352539062,
+          65.3543472290039,
+          72.23245239257812,
+          -7.825557231903076,
+          71.67253875732422,
+          67.26025390625,
+          71.0461654663086,
+          -15.50696849822998
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290006,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 8,
+        "dataset_row": 376,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.0028228759765625,
+        "q_values": [
+          69.09061431884766,
+          58.31367874145508,
+          67.9716796875,
+          -7.933483600616455,
+          69.0877914428711,
+          63.01140594482422,
+          65.05162811279297,
+          -15.08655834197998
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290007,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 14,
+        "dataset_row": 436,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.21173858642578125,
+        "q_values": [
+          71.81714630126953,
+          69.6645278930664,
+          70.314697265625,
+          -8.299798011779785,
+          71.60540771484375,
+          70.17509460449219,
+          69.86750030517578,
+          -14.508491516113281
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290007,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 8,
+        "dataset_row": 430,
+        "policy_action": 0,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.08986663818359375,
+        "q_values": [
+          69.46145629882812,
+          67.7256851196289,
+          68.34846496582031,
+          -8.204214096069336,
+          65.978515625,
+          67.4837646484375,
+          69.37158966064453,
+          -13.739900588989258
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290008,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 30,
+        "dataset_row": 497,
+        "policy_action": 1,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.284088134765625,
+        "q_values": [
+          64.599609375,
+          89.64590454101562,
+          89.36181640625,
+          -8.379677772521973,
+          74.82952880859375,
+          68.45623779296875,
+          85.02938079833984,
+          -16.69915008544922
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290008,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 30,
+        "dataset_row": 497,
+        "policy_action": 1,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.112945556640625,
+        "q_values": [
+          64.81806945800781,
+          89.66758728027344,
+          89.55464172363281,
+          -8.387397766113281,
+          75.02201080322266,
+          68.46813201904297,
+          85.32328033447266,
+          -16.70758056640625
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290009,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 12,
+        "dataset_row": 518,
+        "policy_action": 6,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.994232177734375,
+        "q_values": [
+          84.66387176513672,
+          75.19730377197266,
+          84.75062561035156,
+          -9.09022045135498,
+          83.85694885253906,
+          77.99559783935547,
+          84.85118103027344,
+          -17.542390823364258
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290009,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 12,
+        "dataset_row": 518,
+        "policy_action": 6,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.7574234008789062,
+        "q_values": [
+          84.74800872802734,
+          75.30245971679688,
+          84.73493194580078,
+          -9.089605331420898,
+          83.99496459960938,
+          78.09842681884766,
+          84.75238800048828,
+          -17.544376373291016
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290010,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 8,
+        "dataset_row": 551,
+        "policy_action": 4,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.0245361328125,
+        "q_values": [
+          71.73504638671875,
+          68.73236846923828,
+          67.91629791259766,
+          -8.109416007995605,
+          71.75958251953125,
+          67.7799301147461,
+          71.21537017822266,
+          -15.229294776916504
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290010,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 9,
+        "dataset_row": 552,
+        "policy_action": 6,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.3699188232421875,
+        "q_values": [
+          72.20053100585938,
+          69.4946517944336,
+          68.98619079589844,
+          -8.102604866027832,
+          72.28417205810547,
+          68.25216674804688,
+          72.57044982910156,
+          -15.322432518005371
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290011,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 5,
+        "dataset_row": 597,
+        "policy_action": 0,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.3408050537109375,
+        "q_values": [
+          77.89755249023438,
+          71.45025634765625,
+          77.55674743652344,
+          -8.779537200927734,
+          76.32013702392578,
+          73.87323760986328,
+          75.90047454833984,
+          -15.906184196472168
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290011,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 5,
+        "dataset_row": 597,
+        "policy_action": 0,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.5205612182617188,
+        "q_values": [
+          78.04730224609375,
+          71.5491714477539,
+          77.52674102783203,
+          -8.780447959899902,
+          76.50130462646484,
+          73.97212219238281,
+          75.72928619384766,
+          -15.913885116577148
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290012,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 19,
+        "dataset_row": 653,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.5931625366210938,
+        "q_values": [
+          61.15862274169922,
+          67.97921752929688,
+          68.595703125,
+          -8.103339195251465,
+          57.574493408203125,
+          66.85059356689453,
+          68.0025405883789,
+          -13.86228084564209
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290012,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 19,
+        "dataset_row": 653,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.5542221069335938,
+        "q_values": [
+          61.02783203125,
+          67.89112854003906,
+          68.63360595703125,
+          -8.103484153747559,
+          57.491546630859375,
+          66.78258514404297,
+          68.07938385009766,
+          -13.859784126281738
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290013,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 9,
+        "dataset_row": 704,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.5819931030273438,
+        "q_values": [
+          74.43185424804688,
+          61.33286666870117,
+          73.63349914550781,
+          -8.235873222351074,
+          73.84986114501953,
+          66.33241271972656,
+          68.8882064819336,
+          -15.819153785705566
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290013,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 9,
+        "dataset_row": 704,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.5322265625,
+        "q_values": [
+          74.53187561035156,
+          61.421634674072266,
+          73.6197738647461,
+          -8.23768138885498,
+          73.99964904785156,
+          66.4347152709961,
+          68.7658920288086,
+          -15.830117225646973
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290014,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 13,
+        "dataset_row": 755,
+        "policy_action": 6,
+        "reference_action": 1,
+        "reference_minus_best_other_q": -0.17806243896484375,
+        "q_values": [
+          76.07776641845703,
+          76.5875015258789,
+          75.52262878417969,
+          -8.30124568939209,
+          75.58460998535156,
+          76.59326171875,
+          76.76556396484375,
+          -16.102149963378906
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290014,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 13,
+        "dataset_row": 755,
+        "policy_action": 6,
+        "reference_action": 1,
+        "reference_minus_best_other_q": -0.3986663818359375,
+        "q_values": [
+          75.97126007080078,
+          76.47168731689453,
+          75.54176330566406,
+          -8.302022933959961,
+          75.46344757080078,
+          76.53425598144531,
+          76.87035369873047,
+          -16.10175895690918
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290015,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 11,
+        "dataset_row": 800,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.2602996826171875,
+        "q_values": [
+          78.09661102294922,
+          66.93697357177734,
+          76.7678451538086,
+          -8.78258991241455,
+          77.83631134033203,
+          69.53470611572266,
+          75.38910675048828,
+          -16.42646598815918
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290015,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 11,
+        "dataset_row": 800,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.19106292724609375,
+        "q_values": [
+          78.16114044189453,
+          67.03691864013672,
+          76.72205352783203,
+          -8.782758712768555,
+          77.97007751464844,
+          69.63900756835938,
+          75.2591552734375,
+          -16.4318904876709
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290016,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 4,
+        "dataset_row": 837,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.1696929931640625,
+        "q_values": [
+          69.70805358886719,
+          66.39925384521484,
+          65.58369445800781,
+          -8.073224067687988,
+          69.53836059570312,
+          64.52499389648438,
+          68.43962860107422,
+          -14.893437385559082
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290016,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 4,
+        "dataset_row": 837,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.21856689453125,
+        "q_values": [
+          69.60667419433594,
+          66.28606414794922,
+          65.5836410522461,
+          -8.07149600982666,
+          69.38810729980469,
+          64.41700744628906,
+          68.5490493774414,
+          -14.88406753540039
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290017,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 5,
+        "dataset_row": 888,
+        "policy_action": 5,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.28897857666015625,
+        "q_values": [
+          60.050167083740234,
+          70.264404296875,
+          70.03208923339844,
+          -8.36922836303711,
+          50.5462760925293,
+          70.3210678100586,
+          67.81278228759766,
+          -15.824786186218262
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290017,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 5,
+        "dataset_row": 888,
+        "policy_action": 5,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.38726806640625,
+        "q_values": [
+          60.22795104980469,
+          70.34918975830078,
+          69.98666381835938,
+          -8.367108345031738,
+          50.75484848022461,
+          70.37393188476562,
+          67.67051696777344,
+          -15.826885223388672
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290018,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 8,
+        "dataset_row": 933,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -1.3042449951171875,
+        "q_values": [
+          50.839073181152344,
+          72.13885498046875,
+          70.51284790039062,
+          -8.237635612487793,
+          45.5239372253418,
+          70.83460998535156,
+          68.53925323486328,
+          -14.835708618164062
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290018,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 8,
+        "dataset_row": 933,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -1.2564163208007812,
+        "q_values": [
+          50.65681457519531,
+          72.04241180419922,
+          70.5576400756836,
+          -8.239052772521973,
+          45.36309814453125,
+          70.78599548339844,
+          68.65436553955078,
+          -14.833362579345703
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290019,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 13,
+        "dataset_row": 978,
+        "policy_action": 6,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -1.0740585327148438,
+        "q_values": [
+          85.11531829833984,
+          84.84825897216797,
+          84.7690658569336,
+          -9.016104698181152,
+          84.25145721435547,
+          84.43302917480469,
+          85.32551574707031,
+          -15.191035270690918
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290019,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 13,
+        "dataset_row": 978,
+        "policy_action": 6,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.8037872314453125,
+        "q_values": [
+          85.18309020996094,
+          84.96784973144531,
+          84.7142562866211,
+          -9.015121459960938,
+          84.3856201171875,
+          84.55999755859375,
+          85.18940734863281,
+          -15.195535659790039
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290020,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 11,
+        "dataset_row": 1012,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.5111770629882812,
+        "q_values": [
+          80.57502746582031,
+          75.55976104736328,
+          81.83451843261719,
+          -8.484552383422852,
+          79.53215026855469,
+          77.62471771240234,
+          81.3233413696289,
+          -16.7799015045166
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290020,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 11,
+        "dataset_row": 1012,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.43271636962890625,
+        "q_values": [
+          80.4979019165039,
+          75.41722106933594,
+          81.87513732910156,
+          -8.486796379089355,
+          79.42073822021484,
+          77.53932189941406,
+          81.44242095947266,
+          -16.780075073242188
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290021,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 17,
+        "dataset_row": 1057,
+        "policy_action": 5,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -1.03326416015625,
+        "q_values": [
+          82.58614349365234,
+          82.56891632080078,
+          83.2381591796875,
+          -8.844928741455078,
+          81.18231964111328,
+          84.27142333984375,
+          83.19307708740234,
+          -16.40746307373047
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290021,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 12,
+        "dataset_row": 1052,
+        "policy_action": 0,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.09554290771484375,
+        "q_values": [
+          80.28837585449219,
+          70.43434143066406,
+          80.27195739746094,
+          -8.496493339538574,
+          80.26416015625,
+          74.92231750488281,
+          80.19283294677734,
+          -16.84017562866211
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290022,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 9,
+        "dataset_row": 1090,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.00494384765625,
+        "q_values": [
+          72.74185180664062,
+          70.00145721435547,
+          71.90225219726562,
+          -8.63805103302002,
+          72.73690795898438,
+          70.23594665527344,
+          66.94255828857422,
+          -15.694578170776367
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290022,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 9,
+        "dataset_row": 1090,
+        "policy_action": 0,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.068817138671875,
+        "q_values": [
+          72.67818450927734,
+          69.96011352539062,
+          71.9642562866211,
+          -8.638102531433105,
+          72.60936737060547,
+          70.1661376953125,
+          67.11424255371094,
+          -15.690902709960938
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290023,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 9,
+        "dataset_row": 1140,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.087982177734375,
+        "q_values": [
+          70.7547378540039,
+          78.13568115234375,
+          76.85784912109375,
+          -8.82932186126709,
+          76.11170196533203,
+          78.04769897460938,
+          74.7150650024414,
+          -15.721282005310059
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290023,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 9,
+        "dataset_row": 1140,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.0873870849609375,
+        "q_values": [
+          70.90463256835938,
+          78.2350082397461,
+          76.86509704589844,
+          -8.8334379196167,
+          76.27995300292969,
+          78.14762115478516,
+          74.64856719970703,
+          -15.732085227966309
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290024,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 3,
+        "dataset_row": 1176,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.463348388671875,
+        "q_values": [
+          60.74690246582031,
+          70.16349792480469,
+          73.33045196533203,
+          -8.868901252746582,
+          60.75145721435547,
+          71.2188491821289,
+          72.86710357666016,
+          -15.98950481414795
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290024,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 3,
+        "dataset_row": 1176,
+        "policy_action": 2,
+        "reference_action": 6,
+        "reference_minus_best_other_q": -0.3880462646484375,
+        "q_values": [
+          60.581756591796875,
+          70.05316162109375,
+          73.36363983154297,
+          -8.866931915283203,
+          60.59912872314453,
+          71.11450958251953,
+          72.97559356689453,
+          -15.980721473693848
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290025,
+      "outcome": "budget_blocked_stall",
+      "first_reference_disagreement": {
+        "step": 5,
+        "dataset_row": 1222,
+        "policy_action": 2,
+        "reference_action": 1,
+        "reference_minus_best_other_q": -0.28586578369140625,
+        "q_values": [
+          53.414024353027344,
+          64.29295349121094,
+          64.57881927490234,
+          -8.1146821975708,
+          46.504310607910156,
+          64.565185546875,
+          61.04466247558594,
+          -15.013727188110352
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290025,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 5,
+        "dataset_row": 1222,
+        "policy_action": 5,
+        "reference_action": 1,
+        "reference_minus_best_other_q": -0.2411956787109375,
+        "q_values": [
+          53.48053741455078,
+          64.41197967529297,
+          64.49405670166016,
+          -8.111308097839355,
+          46.58283615112305,
+          64.6531753540039,
+          60.85984802246094,
+          -15.01536750793457
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290026,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 26,
+        "dataset_row": 1295,
+        "policy_action": 4,
+        "reference_action": 0,
+        "reference_minus_best_other_q": -0.04680633544921875,
+        "q_values": [
+          80.95856475830078,
+          78.23966979980469,
+          80.38017272949219,
+          -8.611207008361816,
+          81.00537109375,
+          79.0036849975586,
+          80.30997467041016,
+          -15.510689735412598
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290026,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 28,
+        "dataset_row": 1297,
+        "policy_action": 6,
+        "reference_action": 4,
+        "reference_minus_best_other_q": -0.22855377197265625,
+        "q_values": [
+          81.37952423095703,
+          79.74778747558594,
+          81.3293228149414,
+          -8.576674461364746,
+          81.96781158447266,
+          77.999267578125,
+          82.19636535644531,
+          -15.900954246520996
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290027,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 11,
+        "dataset_row": 1321,
+        "policy_action": 4,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.1334075927734375,
+        "q_values": [
+          72.59469604492188,
+          68.35548400878906,
+          72.67350006103516,
+          -7.992833614349365,
+          72.8069076538086,
+          67.79508209228516,
+          70.26172637939453,
+          -15.507974624633789
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290027,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 11,
+        "dataset_row": 1321,
+        "policy_action": 4,
+        "reference_action": 2,
+        "reference_minus_best_other_q": -0.250457763671875,
+        "q_values": [
+          72.6587905883789,
+          68.46800994873047,
+          72.64128112792969,
+          -7.98933744430542,
+          72.89173889160156,
+          67.87074279785156,
+          70.13932800292969,
+          -15.50515079498291
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290028,
+      "outcome": "budget_while_moving",
+      "first_reference_disagreement": {
+        "step": 21,
+        "dataset_row": 1384,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.1065673828125,
+        "q_values": [
+          85.46794128417969,
+          88.14994812011719,
+          86.75121307373047,
+          -8.783510208129883,
+          85.09797668457031,
+          88.04338073730469,
+          87.99207305908203,
+          -17.070539474487305
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290028,
+      "outcome": "damage",
+      "first_reference_disagreement": {
+        "step": 21,
+        "dataset_row": 1384,
+        "policy_action": 6,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.15944671630859375,
+        "q_values": [
+          85.3726577758789,
+          88.03010559082031,
+          86.77391815185547,
+          -8.784476280212402,
+          84.96990203857422,
+          87.92398071289062,
+          88.08342742919922,
+          -17.066158294677734
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "control",
+      "seed": 290029,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 8,
+        "dataset_row": 1406,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.2570037841796875,
+        "q_values": [
+          68.41869354248047,
+          77.49911499023438,
+          76.78679656982422,
+          -8.632002830505371,
+          69.52112579345703,
+          77.24211120605469,
+          75.26871490478516,
+          -15.211992263793945
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    },
+    {
+      "arm": "targeted",
+      "seed": 290029,
+      "outcome": "success",
+      "first_reference_disagreement": {
+        "step": 8,
+        "dataset_row": 1406,
+        "policy_action": 1,
+        "reference_action": 5,
+        "reference_minus_best_other_q": -0.25330352783203125,
+        "q_values": [
+          68.56244659423828,
+          77.59133911132812,
+          76.78881072998047,
+          -8.636000633239746,
+          69.69141387939453,
+          77.3380355834961,
+          75.18892669677734,
+          -15.2222261428833
+        ],
+        "same_encoded_state": true
+      },
+      "prefix_end_reason": "action_disagreement"
+    }
+  ]
+}
