@@ -1,0 +1,29 @@
+[
+  {
+    "seed": 290007,
+    "identical_prefix_steps": 7,
+    "identical_fork_input_and_q": true,
+    "baseline_overrides": 0,
+    "corrected_overrides": 1,
+    "all_other_actions_autonomous": true,
+    "historical_baseline_exact": true
+  },
+  {
+    "seed": 290012,
+    "identical_prefix_steps": 18,
+    "identical_fork_input_and_q": true,
+    "baseline_overrides": 0,
+    "corrected_overrides": 1,
+    "all_other_actions_autonomous": true,
+    "historical_baseline_exact": true
+  },
+  {
+    "seed": 290021,
+    "identical_prefix_steps": 11,
+    "identical_fork_input_and_q": true,
+    "baseline_overrides": 0,
+    "corrected_overrides": 1,
+    "all_other_actions_autonomous": true,
+    "historical_baseline_exact": true
+  }
+]

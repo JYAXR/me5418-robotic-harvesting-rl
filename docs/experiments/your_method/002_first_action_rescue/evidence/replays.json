@@ -1,0 +1,230 @@
+[
+  {
+    "seed": 290007,
+    "mode": "baseline",
+    "metrics": {
+      "seed": 290007,
+      "return": -130.04829348058098,
+      "steps": 124,
+      "success": false,
+      "damage": true,
+      "budget_exhausted": false,
+      "travel_distance": 0.6959517002105713,
+      "peak_deformation": 1.001854523244745,
+      "distance_to_target": 0.4036751687526703,
+      "stationary_steps": 87,
+      "blocked_steps": 90
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 45,
+        "planned_actions": 45,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9299982190132141,
+        "return": 107.63363033384084,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ],
+    "full_trace_matches": true,
+    "frozen_full_state_verified": true,
+    "forced_actions": 0
+  },
+  {
+    "seed": 290007,
+    "mode": "corrected",
+    "metrics": {
+      "seed": 290007,
+      "return": 101.6468373302644,
+      "steps": 30,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.4449986815452576,
+      "peak_deformation": 0.9647418398950336,
+      "distance_to_target": 0.031168445944786072,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 45,
+        "planned_actions": 45,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.9299982190132141,
+        "return": 107.63363033384084,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ],
+    "full_trace_matches": true,
+    "frozen_full_state_verified": true,
+    "forced_actions": 1
+  },
+  {
+    "seed": 290012,
+    "mode": "baseline",
+    "metrics": {
+      "seed": 290012,
+      "return": -29.168250955214024,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.2645536363124847,
+      "peak_deformation": 0.7773206086173317,
+      "distance_to_target": 0.3489239513874054,
+      "stationary_steps": 159,
+      "blocked_steps": 161
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 61,
+        "planned_actions": 61,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 2.0849981009960175,
+        "return": 107.50460817217827,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ],
+    "full_trace_matches": true,
+    "frozen_full_state_verified": true,
+    "forced_actions": 0
+  },
+  {
+    "seed": 290012,
+    "mode": "corrected",
+    "metrics": {
+      "seed": 290012,
+      "return": -24.294699412790088,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.2484962046146393,
+      "peak_deformation": 0.4458388737053564,
+      "distance_to_target": 0.34076327085494995,
+      "stationary_steps": 162,
+      "blocked_steps": 163
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 61,
+        "planned_actions": 61,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 2.0849981009960175,
+        "return": 107.50460817217827,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ],
+    "full_trace_matches": true,
+    "frozen_full_state_verified": true,
+    "forced_actions": 1
+  },
+  {
+    "seed": 290021,
+    "mode": "baseline",
+    "metrics": {
+      "seed": 290021,
+      "return": -47.815924891356815,
+      "steps": 46,
+      "success": false,
+      "damage": true,
+      "budget_exhausted": false,
+      "travel_distance": 2.321528621017933,
+      "peak_deformation": 1.026630734178611,
+      "distance_to_target": 0.3896331489086151,
+      "stationary_steps": 0,
+      "blocked_steps": 1
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 41,
+        "planned_actions": 41,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.86499834805727,
+        "return": 107.57151161730289,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ],
+    "full_trace_matches": true,
+    "frozen_full_state_verified": true,
+    "forced_actions": 0
+  },
+  {
+    "seed": 290021,
+    "mode": "corrected",
+    "metrics": {
+      "seed": 290021,
+      "return": -48.75951570312257,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.370792306959629,
+      "peak_deformation": 0.36052979217083164,
+      "distance_to_target": 0.20841874182224274,
+      "stationary_steps": 170,
+      "blocked_steps": 172
+    },
+    "certification": [
+      {
+        "reference": "collision_free_astar",
+        "success": true,
+        "damage": false,
+        "budget_exhausted": false,
+        "planning_failure": false,
+        "reason": "success",
+        "steps": 41,
+        "planned_actions": 41,
+        "initial_step_count": 0,
+        "remaining_budget": 200,
+        "travel_distance": 1.86499834805727,
+        "return": 107.57151161730289,
+        "contact_steps": 0,
+        "peak_normalized_deformation": 0.0
+      }
+    ],
+    "full_trace_matches": true,
+    "frozen_full_state_verified": true,
+    "forced_actions": 1
+  }
+]
