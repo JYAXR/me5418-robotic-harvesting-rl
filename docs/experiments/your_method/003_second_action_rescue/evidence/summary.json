@@ -1,0 +1,72 @@
+{
+  "primary_episodes": 4,
+  "verification_episodes": 4,
+  "outcomes": [
+    {
+      "seed": 290012,
+      "mode": "baseline",
+      "return": -24.294699412790088,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.2484962046146393,
+      "peak_deformation": 0.4458388737053564,
+      "distance_to_target": 0.34076327085494995,
+      "stationary_steps": 162,
+      "blocked_steps": 163
+    },
+    {
+      "seed": 290012,
+      "mode": "corrected",
+      "return": 107.90926225148141,
+      "steps": 62,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 2.2149979770183563,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.005871945060789585,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    {
+      "seed": 290021,
+      "mode": "baseline",
+      "return": -48.75951570312257,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 1.370792306959629,
+      "peak_deformation": 0.36052979217083164,
+      "distance_to_target": 0.20841874182224274,
+      "stationary_steps": 170,
+      "blocked_steps": 172
+    },
+    {
+      "seed": 290021,
+      "mode": "corrected",
+      "return": 93.78402260916081,
+      "steps": 46,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.9162488654255867,
+      "peak_deformation": 0.8322818887552371,
+      "distance_to_target": 0.048067592084407806,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    }
+  ],
+  "primary_forced_actions": 6,
+  "verification_forced_actions": 6,
+  "episode_actions": 1016,
+  "certification_actions": 408,
+  "certification_calls": 8,
+  "optimizer_updates": 0,
+  "new_training_samples": 0,
+  "all_checks_passed": true,
+  "elapsed_seconds": 69.29690539999865,
+  "scope": "Second-action intervention conditional on the first; not learned or generalized recovery."
+}

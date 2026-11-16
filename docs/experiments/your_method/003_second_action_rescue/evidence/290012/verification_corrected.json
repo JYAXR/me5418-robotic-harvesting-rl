@@ -1,0 +1,38 @@
+{
+  "seed": 290012,
+  "mode": "corrected",
+  "metrics": {
+    "seed": 290012,
+    "return": 107.90926225148141,
+    "steps": 62,
+    "success": true,
+    "damage": false,
+    "budget_exhausted": false,
+    "travel_distance": 2.2149979770183563,
+    "peak_deformation": 0.0,
+    "distance_to_target": 0.005871945060789585,
+    "stationary_steps": 0,
+    "blocked_steps": 0
+  },
+  "certification": [
+    {
+      "reference": "collision_free_astar",
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "planning_failure": false,
+      "reason": "success",
+      "steps": 61,
+      "planned_actions": 61,
+      "initial_step_count": 0,
+      "remaining_budget": 200,
+      "travel_distance": 2.0849981009960175,
+      "return": 107.50460817217827,
+      "contact_steps": 0,
+      "peak_normalized_deformation": 0.0
+    }
+  ],
+  "full_trace_matches": true,
+  "frozen_full_state_verified": true,
+  "forced_actions": 2
+}

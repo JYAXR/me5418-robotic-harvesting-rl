@@ -1,0 +1,51 @@
+{
+  "manifest_files_verified": 18,
+  "primary_episodes_verified": 4,
+  "review_script_sha256": "84892522b7cdcc0d5792baebc1d413d817f1cb4a9dd072a7a994674c6225d9b5",
+  "records": [
+    {
+      "seed": 290012,
+      "mode": "baseline",
+      "forced_steps": [
+        19
+      ],
+      "metrics_verified": true,
+      "steps": 200,
+      "success": false
+    },
+    {
+      "seed": 290012,
+      "mode": "corrected",
+      "forced_steps": [
+        19,
+        26
+      ],
+      "metrics_verified": true,
+      "steps": 62,
+      "success": true
+    },
+    {
+      "seed": 290021,
+      "mode": "baseline",
+      "forced_steps": [
+        12
+      ],
+      "metrics_verified": true,
+      "steps": 200,
+      "success": false
+    },
+    {
+      "seed": 290021,
+      "mode": "corrected",
+      "forced_steps": [
+        12,
+        17
+      ],
+      "metrics_verified": true,
+      "steps": 46,
+      "success": true
+    }
+  ],
+  "simulator_actions": 0,
+  "optimizer_updates": 0
+}
