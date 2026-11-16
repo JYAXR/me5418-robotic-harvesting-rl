@@ -1,39 +1,28 @@
-# Team handoff: 16 November 2026
+# 队友交接说明：2026 年 11 月 16 日
 
-## Shared baseline and independent work
+## 共同起点与分支协作
 
-The shared baseline includes attempt 034's trained candidates and attempt 035's
-verified scene cache. The pre-handoff code/results commit is `c52016a`.
-The teammate branch `collab/teammate-20261116` starts at the commit containing this
-handoff. Work on that branch rather than directly changing main. The original
-checkout remains on main; each teammate should use their own clone/worktree.
+当前共同起点包含实验 034 的候选模型，以及实验 035 已验证的场景缓存功能。交接前的代码与结果提交为 `c52016a`。队友分支 `collab/teammate-20261116` 从包含本交接说明的提交建立。队友在该分支上开展工作，当前工作目录继续使用 `main`；每人使用自己的克隆目录或工作树。
 
-Existing clone, first checkout of the teammate branch:
+已经克隆仓库、首次切换到队友分支时，执行：
 
 ```bash
 git fetch origin
 git switch --track origin/collab/teammate-20261116
 ```
 
-New clone:
+尚未克隆仓库时，执行：
 
 ```bash
 git clone --branch collab/teammate-20261116 https://github.com/JYAXR/me5418-robotic-harvesting-rl.git
 cd me5418-robotic-harvesting-rl
 ```
 
-Commit and push changes on the teammate branch, then open a PR into main. Before
-starting overlapping work, agree on experiment ownership and reserve a unique
-experiment/output directory. Do not overwrite earlier runs or force-push main.
-Use ordinary merges from origin/main when updating a shared working branch;
-do not rewrite commits already used by another teammate. Code, comments and
-experiment records should remain in English.
+在队友分支上提交并推送修改，完成后创建合并到 `main` 的 PR。开始可能重叠的工作前，先商定实验分工，并为各自实验保留独立的编号和输出目录。不要覆盖已有实验或强制推送 `main`。需要同步主分支时，通过普通合并引入 `origin/main` 的更新，不要改写其他队友已经使用的提交历史。代码、代码注释和实验记录继续使用英文，本交接说明使用中文。
 
-## Environment and quick checks
+## 环境配置与快速检查
 
-The exact existing dependency specification is environment.yml. It includes an
-editable install of this repository; do not silently upgrade packages during a
-reproduction run.
+现有依赖版本由 `environment.yml` 明确指定，其中包含本仓库的可编辑安装。复现实验时不要自行升级依赖。
 
 ```bash
 conda env create -f environment.yml
@@ -42,85 +31,48 @@ python -m pytest tests/test_scene_cache.py tests/test_scene_feasibility.py tests
 python scripts/evaluate_dqn.py --checkpoint models/supervision_034_targeted.pt --episodes 3 --seed 10000 --timings results/teammate_evaluation_timing.json
 ```
 
-The relevant regression suite passed 49 tests before attempt 035. Frozen evaluation
-should reproduce successful 40/47/43-step episodes on seeds 10000/10001/10002.
-Evaluation can create local output files, which should not be confused with new
-training data or final submission artifacts.
+实验 035 运行前，相关回归测试共通过 49 项。冻结模型评估应能复现场景种子 `10000/10001/10002` 分别在 `40/47/43` 步成功的结果。评估可能生成本地输出文件，这些文件需要与新增训练数据、最终提交材料区分开。
 
-## Latest model and limits
+## 最新模型与已知局限
 
-- Inference candidate: models/supervision_034_targeted.pt.
-  SHA-256: 202fd8d4f6929da61e991962c6f667dd80a9cbcc330b1b744434230f140f8b8b.
-- Matched control: models/supervision_034_control.pt.
-- Full targeted resume state:
-  docs/experiments/034_scene10002_supervision/checkpoints/targeted_state_12000.pt.
-- Full control resume state:
-  docs/experiments/034_scene10002_supervision/checkpoints/control_state_12000.pt.
-- TD clock 12000; retained Adam clock 32000. Use full snapshots for continuation;
-  inference files do not contain the historical optimizer state.
+- 用于推理的候选模型：`models/supervision_034_targeted.pt`。SHA-256：`202fd8d4f6929da61e991962c6f667dd80a9cbcc330b1b744434230f140f8b8b`。
+- 对应的对照模型：`models/supervision_034_control.pt`。
+- 针对性监督组的完整续训快照：`docs/experiments/034_scene10002_supervision/checkpoints/targeted_state_12000.pt`。
+- 对照组的完整续训快照：`docs/experiments/034_scene10002_supervision/checkpoints/control_state_12000.pt`。
+- 当前 TD 更新计数为 `12000`，保留的 Adam 更新计数为 `32000`。继续训练时应加载完整快照；仅用于推理的模型文件不包含历史优化器状态。
 
-Attempt 034 doubled only the existing supervised weights at dataset rows
-98/102/103 (scene 10002 steps 23/27/28, labels 4/0/4). Both arms continued the same
-source for 2000 TD updates. The targeted endpoint achieved 3/3 original-scene
-success; the control achieved 2/3, timing out on 10002. All evaluations used zero
-action overrides. Forty independent update checks and six endpoint reloads passed.
+实验 034 只将数据集第 `98/102/103` 行已有的监督权重加倍，对应场景 `10002` 第 `23/27/28` 步，动作标签为 `4/0/4`。两组从同一个起点继续进行 `2000` 次 TD 更新。最终，针对性监督组在原三个场景中成功 `3/3`，对照组成功 `2/3`，在场景 `10002` 达到步数上限。所有评估均未强制替换动作。另有 40 次独立更新核验和 6 次最终模型重新加载核验通过。
 
-Do not overstate these results:
+解读结果时需要保留以下限制：
 
-- Both arms failed 10002 at updates 100/500/1000. Continuous retention is unproven.
-- Targeted 10000 takes 40 steps versus 38 for source/control; success is retained
-  with a small efficiency loss. Scene 10001's final metrics are unchanged.
-- Targeted 10002 succeeds in 43 steps by an alternative valid turn, not by exactly
-  reproducing all three reference actions.
-- The latest model has not been evaluated on all 33 training scenes or fresh
-  unseen scenes. The 13/100 independent-test result belongs to attempt 030,
-  not the latest model.
-- Earlier reports and submission archives have not been updated for this latest
-  experimental state. They are not a final-project-ready handoff package.
+- 两组在新增更新次数为 `100/500/1000` 时，均未完成场景 `10002`，因此尚不能证明训练过程中能力始终稳定。
+- 针对性监督组在场景 `10000` 用了 40 步，起点模型和对照组为 38 步。成功能力得到保留，但效率略有下降。场景 `10001` 的最终指标未变。
+- 针对性监督组在场景 `10002` 通过另一种有效转向，在 43 步内完成任务，并非完整复现三个参考动作。
+- 最新模型尚未完成全部 33 个训练场景或全新未见场景的评估。此前独立测试的 `13/100` 属于实验 030，不能作为最新模型的泛化结果。
+- 早期报告和提交压缩包尚未更新到当前实验状态，不能直接视为最终项目提交包。
 
-## Cache and timing
+## 场景缓存与分段计时
 
-The optional CertifiedSceneCache stores accepted seeded initial states and RNG
-state. It preserves returned reset information. last_reset_profile separately
-records actual executed certification work; a cache hit has zero new certificate
-calls/actions even though historical reference_route_checks are retained.
+可选的 `CertifiedSceneCache` 保存通过有效性检查的、由种子确定的场景初始状态及随机数生成器状态，并保留原始 `reset` 返回信息。`last_reset_profile` 单独记录本次实际执行的有效性检查工作；缓存命中时，新增检查调用次数和动作数均为零，但返回信息中的历史 `reference_route_checks` 仍保留。
 
-Reuse one cache object across repeated evaluations in the same process. A single
-CLI run with distinct seeds does not benefit from hits, and separate processes
-do not share this cache. See attempt 035's RESULTS.md for API examples and limits.
-The measured 2.84x warm / 1.80x cold-inclusive gains apply only to repeated
-evaluation. Physics is the main remaining warm-evaluation cost.
+同一进程中重复评估时，需要复用同一个缓存对象。单次命令行运行若每个种子都不同，就不会获得缓存命中的收益；不同进程之间也不共享此缓存。接口示例和限制见实验 035 的 `RESULTS.md`。实测缓存已填充后的重复评估提速约 `2.84` 倍，计入首次填充成本后约 `1.80` 倍；这些数字仅适用于重复评估。缓存命中后，物理仿真是剩余耗时的主要来源。
 
-Default evaluation and environment interfaces remain uncached. Historical runners
-that require a fresh certification call every reset should remain uncached.
-Hash-pinned historical experiments should be reproduced at their original Git
-commits; current source includes the later caching/timing changes.
+评估和环境接口默认不开启缓存。要求每次重置都重新进行有效性检查的历史实验脚本，应继续关闭缓存。对于通过文件哈希固定版本的历史实验，应检出其原始 Git 提交进行复现，因为当前代码已经加入后续的缓存和计时修改。
 
-## Suggested next experiment, not yet performed
+## 建议的下一项实验（尚未执行）
 
-Freeze both attempt-034 inference candidates. Evaluate all 33 training scenes,
-then a predeclared fresh independent test bank using matched scenes for both
-models. No tuning, online learning or action replacement during evaluation.
+冻结实验 034 的两个候选模型，先评估全部 33 个训练场景，再使用事先确定的全新独立测试集评估泛化。两个模型使用相同场景进行配对比较；评估期间不调参、不在线学习，也不替换模型选择的动作。
 
-Training seeds are 10000/10001/10002 and 290000--290029. Previously observed test
-banks include 280000--280099, 390000--390099 and 490000--490099. Check the complete
-experiment index before choosing any new test bank; do not reuse observed seeds
-as a fresh holdout. Keep reset errors and all failure outcomes without replacement.
-Reserve the next experiment number with the teammate before implementation.
+训练种子为 `10000/10001/10002` 和 `290000–290029`。此前已经观察过的测试集包括 `280000–280099`、`390000–390099` 和 `490000–490099`。选择新测试集前，应检查完整实验索引，不要将已经观察过的种子作为全新留出测试集。重置报错和所有失败结果均应保留，不得通过替换场景将其排除。实施前，先与队友确认下一项实验的编号。
 
-Retain protocol, source/model hashes, settings, every outcome, actual simulation
-cost, timing and validation evidence. Compare full training-state preservation
-or trajectory equivalence as appropriate. Commit the protocol before execution,
-then record/push all results, including unsuccessful attempts.
+每项实验需要保存实验方案、代码和模型哈希、参数配置、每次运行结果、实际仿真工作量、计时数据及验证证据。根据实验目的检查完整训练状态是否保持一致，或比较轨迹是否等价。先提交实验方案再执行，完成后记录并推送全部结果，包括未成功的尝试。
 
-## Reading order
+## 建议阅读顺序
 
-1. [Experiment index](experiments/README.md).
-2. [Latest learning result](experiments/034_scene10002_supervision/RESULTS.md).
-3. [Cache benchmark and usage](experiments/035_scene_cache/RESULTS.md).
-4. [Model catalog](../models/README.md).
-5. Attempts 030--033 for the expanded-data baseline and causal action diagnostics.
+1. [实验索引](experiments/README.md)。
+2. [最新策略训练结果](experiments/034_scene10002_supervision/RESULTS.md)。
+3. [缓存性能测试与使用方法](experiments/035_scene_cache/RESULTS.md)。
+4. [模型目录说明](../models/README.md)。
+5. 实验 030–033：了解扩展训练集的基线，以及动作纠正对失败原因的诊断过程。
 
-Tracked evidence and final models are already in Git. Local .venv directories,
-routine results directories and submission ZIP files are intentionally not
-synchronized. Do not commit another teammate's unrelated local documents.
+已纳入版本管理的实验依据和最终模型均已同步到 Git。本地 `.venv`、日常运行的 `results` 目录和提交 ZIP 文件不参与同步。不要提交其他队友无关的本地文档。
