@@ -126,18 +126,30 @@ def episode_metrics(
     }
 
 
-def evaluate(agent: DQNAgent, env: HarvestingEnv, episodes: int, seed: int) -> dict:
+def evaluate(agent: DQNAgent, env: HarvestingEnv, episodes: int, seed: int, *, timings=None) -> dict:
     """Run greedy episodes without replay writes, exploration, or weight updates."""
     if episodes <= 0 or seed < 0:
         raise ValueError("Evaluation episodes must be positive and seed nonnegative.")
+    from time import perf_counter
+
     records = []
     for index in range(episodes):
+        started = perf_counter() if timings is not None else 0.0
+        reset_started = perf_counter() if timings is not None else 0.0
         observation, _ = env.reset(seed=seed + index)
+        reset_seconds = perf_counter() - reset_started if timings is not None else 0.0
+        policy_seconds = physics_seconds = 0.0
         total_reward, steps = 0.0, 0
         stationary_steps, blocked_steps = 0, 0
         while True:
+            stage_started = perf_counter() if timings is not None else 0.0
             action = agent.act(observation)
+            if timings is not None:
+                policy_seconds += perf_counter() - stage_started
+                stage_started = perf_counter()
             observation, reward, terminated, truncated, info = env.step(action)
+            if timings is not None:
+                physics_seconds += perf_counter() - stage_started
             total_reward += reward
             steps += 1
             stationary_steps += int(np.linalg.norm(info["executed_motion"]) <= 1e-6)
@@ -148,6 +160,10 @@ def evaluate(agent: DQNAgent, env: HarvestingEnv, episodes: int, seed: int) -> d
             "seed": seed + index,
             **episode_metrics(total_reward, steps, info, stationary_steps, blocked_steps),
         })
+        if timings is not None:
+            timings.append({"seed": seed + index, "episode_seconds": perf_counter() - started,
+                            "reset_seconds": reset_seconds, "policy_seconds": policy_seconds,
+                            "physics_seconds": physics_seconds, "reset": dict(env.last_reset_profile)})
     successful_steps = [row["steps"] for row in records if row["success"]]
     return {
         "episodes": episodes, "seed": seed,

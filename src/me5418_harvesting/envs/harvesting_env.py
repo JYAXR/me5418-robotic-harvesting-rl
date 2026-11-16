@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from time import perf_counter
 from typing import Any, ClassVar
 
 import gymnasium as gym
@@ -34,7 +35,8 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         [[0, 1], [0, -1], [1, 0], [-1, 0]], dtype=np.float32
     )
 
-    def __init__(self, config: dict[str, Any] | None = None, render_mode: str | None = None):
+    def __init__(self, config: dict[str, Any] | None = None, render_mode: str | None = None,
+                 *, scene_cache=None, profile_reset: bool = False):
         super().__init__()
         cfg = config or {}
         self.max_branches = int(cfg.get("max_branches", 5))
@@ -81,34 +83,64 @@ class HarvestingEnv(gym.Env[np.ndarray, int]):
         self._figure: Any | None = None
         self._axes: Any | None = None
         self.demo_policy = ""
+        self.scene_cache = scene_cache
+        self.profile_reset = profile_reset
+        self.last_reset_profile: dict[str, Any] = {}
 
     def reset(
         self, *, seed: int | None = None, options: dict[str, Any] | None = None
     ) -> tuple[np.ndarray, dict[str, Any]]:
+        started = perf_counter() if self.profile_reset else 0.0
+        self.last_reset_profile = {"cache_status": "disabled", "generation_seconds": 0.0,
+                                   "certification_seconds": 0.0, "certification_actions": 0,
+                                   "certification_calls": 0}
         super().reset(seed=seed)
+        key = self.scene_cache.key(self, seed, options) if self.scene_cache is not None else None
+        if self.scene_cache is not None:
+            info = self.scene_cache.restore(key, self)
+            if info is not None:
+                self.last_reset_profile["cache_status"] = "hit"
+                observation = self._observation()
+                if self.profile_reset:
+                    self.last_reset_profile["total_seconds"] = perf_counter() - started
+                return observation, info
+            self.last_reset_profile["cache_status"] = "miss" if key is not None else "bypass"
         reference_checks = []
         attempts = self.reference_max_attempts if self.verify_reference_route else 1
         self.scene = None
         for _ in range(attempts):
+            stage_started = perf_counter() if self.profile_reset else 0.0
             self.scene = generate_scene(
                 self.np_random, self.max_branches, self.nodes_per_branch,
                 workspace_low=self.workspace_low, workspace_high=self.workspace_high,
                 contact_radius=self.contact_radius, target_radius=self.target_radius,
                 **self.scene_parameters,
             )
+            if self.profile_reset:
+                self.last_reset_profile["generation_seconds"] += perf_counter() - stage_started
             self._initialize_episode()
             info = {"seed": seed, "scene_generation_attempts": self.scene.generation_attempts}
             if self.verify_reference_route:
                 # The probe executes physics on a separate copy, without consuming this RNG.
                 from me5418_harvesting.evaluation.scene_feasibility import verify_reference_route
 
+                stage_started = perf_counter() if self.profile_reset else 0.0
                 check = verify_reference_route(self)
+                if self.profile_reset:
+                    self.last_reset_profile["certification_seconds"] += perf_counter() - stage_started
+                self.last_reset_profile["certification_calls"] += 1
+                self.last_reset_profile["certification_actions"] += check["steps"]
                 reference_checks.append(check)
                 if not check["success"]:
                     continue
                 info.update(reference_route=check, reference_route_checks=reference_checks,
                             reference_route_attempts=len(reference_checks))
-            return self._observation(), info
+            if self.scene_cache is not None:
+                self.scene_cache.store(key, self, info)
+            observation = self._observation()
+            if self.profile_reset:
+                self.last_reset_profile["total_seconds"] = perf_counter() - started
+            return observation, info
         self.scene = None
         raise ValueError(
             f"Could not certify a reference route after {attempts} candidates. "
