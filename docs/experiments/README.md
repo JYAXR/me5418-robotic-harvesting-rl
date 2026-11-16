@@ -53,6 +53,8 @@ evidence for the final report, not a claim that a final trained model is ready.
 
 | [034: targeted supervision of scene-10002 states](034_scene10002_supervision/RESULTS.md) | Does doubling step-23/27/28 supervision restore autonomous success while retaining the other two scenes under matched 2000-update continuation? | Final targeted success is 3/3 versus control 2/3; 10002 succeeds autonomously in 43 steps. Both arms fail 10002 at updates 100/500/1000, so retention is not continuous. 10000/10001 retain sampled success, but targeted 10000 needs two extra final steps. The policy uses an alternative turn rather than all three literal reference labels. Forty independent updates and six endpoint reloads pass; both inference candidates and final full states are retained. |
 
+| [035: certified scene cache and segmented timing](035_scene_cache/RESULTS.md) | Can repeated scene certification be cached without changing evaluation behavior, and how much time does it save? | All nine paired comparisons and 18 historical trajectories match exactly, including raw observations, Q values and RNG states. Warm repeated evaluation is 2.8374x faster; the three-pass workload including cache population is 1.7955x faster. Reset accounts for about 64% of uncached evaluation time. Forty-nine tests pass; no training updates or changed conditions. Benefit is measured for repeated evaluation, not end-to-end training. |
+
 For each new attempt, retain the motivation, exact commands, resolved settings,
 training and validation seed ranges, source hashes, resource/data budget,
 metrics, failure cases and interpretation. Keep failed attempts in the index.

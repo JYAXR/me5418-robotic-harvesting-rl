@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "protocol_commit": "c8012e85337c12b644f7e842985897d8c6a42e07",
+  "raw_files": 23,
+  "raw_bytes": 10814164,
+  "source_hashes_unchanged": 34,
+  "git_index_byte_exact_files": 24,
+  "tests_passed": 49,
+  "ruff_passed": true,
+  "paired_comparisons": 9,
+  "historical_trace_matches": 18,
+  "model_unchanged": true,
+  "optimizer_updates": 0
+}

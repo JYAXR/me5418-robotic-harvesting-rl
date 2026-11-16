@@ -1,0 +1,47 @@
+[
+  {
+    "pass": 0,
+    "seed": 10000,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 0,
+    "seed": 10001,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 0,
+    "seed": 10002,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 1,
+    "seed": 10000,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 1,
+    "seed": 10001,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 1,
+    "seed": 10002,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 2,
+    "seed": 10000,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 2,
+    "seed": 10001,
+    "all_transitions_exact": true
+  },
+  {
+    "pass": 2,
+    "seed": 10002,
+    "all_transitions_exact": true
+  }
+]

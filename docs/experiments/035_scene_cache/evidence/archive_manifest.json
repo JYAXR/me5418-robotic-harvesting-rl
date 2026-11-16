@@ -1,0 +1,97 @@
+{
+  "source_run": "results/evaluation/scene_cache_035_20261116",
+  "files": {
+    "cached_0_10000.jsonl": {
+      "sha256": "07d99630c0e947dd26218d67e8421cb88a65f865328d5883126c010e4b322c46",
+      "bytes": 533366
+    },
+    "cached_0_10001.jsonl": {
+      "sha256": "4509761e0dd32f56c6bcd965227c03a5f0d87a60d311250c5ba70515741897c1",
+      "bytes": 626969
+    },
+    "cached_0_10002.jsonl": {
+      "sha256": "465471ee845573ef331193e0d39f4a30d181175f602f8dd8a1bb2302dc0e1186",
+      "bytes": 572571
+    },
+    "cached_1_10000.jsonl": {
+      "sha256": "07d99630c0e947dd26218d67e8421cb88a65f865328d5883126c010e4b322c46",
+      "bytes": 533366
+    },
+    "cached_1_10001.jsonl": {
+      "sha256": "4509761e0dd32f56c6bcd965227c03a5f0d87a60d311250c5ba70515741897c1",
+      "bytes": 626969
+    },
+    "cached_1_10002.jsonl": {
+      "sha256": "465471ee845573ef331193e0d39f4a30d181175f602f8dd8a1bb2302dc0e1186",
+      "bytes": 572571
+    },
+    "cached_2_10000.jsonl": {
+      "sha256": "07d99630c0e947dd26218d67e8421cb88a65f865328d5883126c010e4b322c46",
+      "bytes": 533366
+    },
+    "cached_2_10001.jsonl": {
+      "sha256": "4509761e0dd32f56c6bcd965227c03a5f0d87a60d311250c5ba70515741897c1",
+      "bytes": 626969
+    },
+    "cached_2_10002.jsonl": {
+      "sha256": "465471ee845573ef331193e0d39f4a30d181175f602f8dd8a1bb2302dc0e1186",
+      "bytes": 572571
+    },
+    "episodes.json": {
+      "sha256": "3f9ff5488c96016275da3b3bdef2c271962e67c299ba3e4beb079a57cc88da1f",
+      "bytes": 409765
+    },
+    "pair_verification.json": {
+      "sha256": "e386b15a5731f7c78af911fc83515715d99c1205289d1099117984e7fee0c251",
+      "bytes": 743
+    },
+    "provenance.json": {
+      "sha256": "c89b5d6c65abd5b0748b7e8938108efb67c70b2e47a3ce3f3b4dbe30a694235a",
+      "bytes": 4523
+    },
+    "status.json": {
+      "sha256": "93a9d6f795289bdab75ac55dc073142fb778bc66b8067c69509f6e3d85e7785c",
+      "bytes": 146
+    },
+    "summary.json": {
+      "sha256": "2c896c84aa404f3c94d04e3320001e83e209a71fd1ef1e91fc1c94f922cb7af2",
+      "bytes": 1551
+    },
+    "uncached_0_10000.jsonl": {
+      "sha256": "07d99630c0e947dd26218d67e8421cb88a65f865328d5883126c010e4b322c46",
+      "bytes": 533366
+    },
+    "uncached_0_10001.jsonl": {
+      "sha256": "4509761e0dd32f56c6bcd965227c03a5f0d87a60d311250c5ba70515741897c1",
+      "bytes": 626969
+    },
+    "uncached_0_10002.jsonl": {
+      "sha256": "465471ee845573ef331193e0d39f4a30d181175f602f8dd8a1bb2302dc0e1186",
+      "bytes": 572571
+    },
+    "uncached_1_10000.jsonl": {
+      "sha256": "07d99630c0e947dd26218d67e8421cb88a65f865328d5883126c010e4b322c46",
+      "bytes": 533366
+    },
+    "uncached_1_10001.jsonl": {
+      "sha256": "4509761e0dd32f56c6bcd965227c03a5f0d87a60d311250c5ba70515741897c1",
+      "bytes": 626969
+    },
+    "uncached_1_10002.jsonl": {
+      "sha256": "465471ee845573ef331193e0d39f4a30d181175f602f8dd8a1bb2302dc0e1186",
+      "bytes": 572571
+    },
+    "uncached_2_10000.jsonl": {
+      "sha256": "07d99630c0e947dd26218d67e8421cb88a65f865328d5883126c010e4b322c46",
+      "bytes": 533366
+    },
+    "uncached_2_10001.jsonl": {
+      "sha256": "4509761e0dd32f56c6bcd965227c03a5f0d87a60d311250c5ba70515741897c1",
+      "bytes": 626969
+    },
+    "uncached_2_10002.jsonl": {
+      "sha256": "465471ee845573ef331193e0d39f4a30d181175f602f8dd8a1bb2302dc0e1186",
+      "bytes": 572571
+    }
+  }
+}

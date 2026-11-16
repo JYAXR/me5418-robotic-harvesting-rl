@@ -1,0 +1,44 @@
+{
+  "all_pairs_exact": true,
+  "all_historical_traces_exact": true,
+  "optimizer_updates": 0,
+  "episodes": 18,
+  "action_overrides": 0,
+  "episode_actions": 780,
+  "actual_certification_actions": 468,
+  "actual_certification_calls": 12,
+  "cold_cache_episode_seconds": 7.757836899996619,
+  "cold_uncached_episode_seconds": 7.765366500010714,
+  "uncached_total_seconds": 24.55271050000738,
+  "cached_total_seconds_including_population": 13.674212900004932,
+  "whole_workload_speedup": 1.7955483565711137,
+  "warm_episode_speedup": 2.8374369715469534,
+  "warm_reset_speedup": 3104.241398879426,
+  "segments": {
+    "uncached": {
+      "episode_seconds": 24.55271050000738,
+      "reset_seconds": 15.715277199997217,
+      "policy_seconds": 0.2404488000611309,
+      "physics_seconds": 8.594027699960861
+    },
+    "cached": {
+      "episode_seconds": 13.674212900004932,
+      "reset_seconds": 5.07611010002438,
+      "policy_seconds": 0.22844080004142597,
+      "physics_seconds": 8.36686910026765
+    },
+    "warm_cached": {
+      "episode_seconds": 5.916376000008313,
+      "reset_seconds": 0.0034779000125126913,
+      "policy_seconds": 0.15900810006132815,
+      "physics_seconds": 5.751936300221132
+    },
+    "matched_uncached": {
+      "episode_seconds": 16.787343999996665,
+      "reset_seconds": 10.79624120000517,
+      "policy_seconds": 0.16092829999979585,
+      "physics_seconds": 5.82811769998807
+    }
+  },
+  "scope": "Single-process frozen evaluation; not an end-to-end training speedup."
+}
