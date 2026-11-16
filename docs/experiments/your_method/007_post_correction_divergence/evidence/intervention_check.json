@@ -1,0 +1,16 @@
+{
+  "seed": 290017,
+  "step": 5,
+  "replacement_action": 5,
+  "replacement_name": "south_large",
+  "policy_action": 1,
+  "policy_name": "south_small",
+  "policy_q": 69.67401123046875,
+  "replacement_q": 69.59439086914062,
+  "policy_minus_replacement_q": 0.079620361328125,
+  "identical_prefix_steps": 4,
+  "identical_fork_input_and_q": true,
+  "baseline_overrides": 0,
+  "corrected_overrides": 1,
+  "all_other_actions_autonomous": true
+}

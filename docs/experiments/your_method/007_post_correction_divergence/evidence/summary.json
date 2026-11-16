@@ -1,0 +1,13 @@
+{
+  "episodes": 1,
+  "episode_actions": 200,
+  "certification_actions": 42,
+  "certification_calls": 1,
+  "action_overrides": 1,
+  "additional_action_overrides": 0,
+  "optimizer_updates": 0,
+  "full_snapshot_unchanged": true,
+  "historical_replay_exact": true,
+  "elapsed_seconds": 52.53517620000639,
+  "scope": "First post-correction disagreements only; no extra rescue or training."
+}

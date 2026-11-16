@@ -1,0 +1,13 @@
+{
+  "manifest_files_verified": 7,
+  "pinned_inputs_verified": 166,
+  "actions_verified": 200,
+  "forced_steps": [
+    5
+  ],
+  "historical_replay_exact": true,
+  "successful_policy_common_prefixes_verified": 2,
+  "first_fork_step_both_baselines": 6,
+  "full_q_vectors_and_gap_signs_verified": true,
+  "verification_failures": 0
+}

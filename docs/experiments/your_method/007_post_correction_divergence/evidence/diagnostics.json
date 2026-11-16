@@ -1,0 +1,130 @@
+{
+  "source": {
+    "current_metrics": {
+      "seed": 290017,
+      "return": -6.644137217155494,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 0.8617912977933884,
+      "peak_deformation": 0.10495169945161095,
+      "distance_to_target": 0.33592212200164795,
+      "stationary_steps": 172,
+      "blocked_steps": 174
+    },
+    "baseline_metrics": {
+      "seed": 290017,
+      "return": 103.70319156608016,
+      "steps": 35,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.3999987989664078,
+      "peak_deformation": 0.7253904114453187,
+      "distance_to_target": 0.03327641636133194,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "first_fork": {
+      "step": 6,
+      "common_prefix_steps": 5,
+      "encoded_observation_sha256": "720120f526104a9dbe6b4be51f59330061eaec8f587355a13867f48811d5c51e",
+      "current_action": 1,
+      "current_action_name": "south_small",
+      "comparison_action": 5,
+      "comparison_action_name": "south_large",
+      "current_chosen_q": 71.1566390991211,
+      "current_comparison_q": 71.10206604003906,
+      "current_chosen_minus_comparison_q": 0.05457305908203125,
+      "current_q_values": [
+        56.50263214111328,
+        71.1566390991211,
+        70.96031188964844,
+        -8.359461784362793,
+        48.579139709472656,
+        71.10206604003906,
+        69.52162170410156,
+        -15.429380416870117
+      ],
+      "baseline_chosen_q": 72.14492797851562,
+      "baseline_current_action_q": 72.05928802490234,
+      "baseline_chosen_minus_current_action_q": 0.08563995361328125,
+      "baseline_q_values": [
+        57.34725570678711,
+        72.05928802490234,
+        71.87236022949219,
+        -8.422223091125488,
+        49.460784912109375,
+        72.14492797851562,
+        70.39334869384766,
+        -15.630352020263672
+      ],
+      "identical_input_verified": true
+    }
+  },
+  "control": {
+    "current_metrics": {
+      "seed": 290017,
+      "return": -6.644137217155494,
+      "steps": 200,
+      "success": false,
+      "damage": false,
+      "budget_exhausted": true,
+      "travel_distance": 0.8617912977933884,
+      "peak_deformation": 0.10495169945161095,
+      "distance_to_target": 0.33592212200164795,
+      "stationary_steps": 172,
+      "blocked_steps": 174
+    },
+    "baseline_metrics": {
+      "seed": 290017,
+      "return": 107.81761362925171,
+      "steps": 41,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.5849986225366592,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.01864406280219555,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    "first_fork": {
+      "step": 6,
+      "common_prefix_steps": 5,
+      "encoded_observation_sha256": "720120f526104a9dbe6b4be51f59330061eaec8f587355a13867f48811d5c51e",
+      "current_action": 1,
+      "current_action_name": "south_small",
+      "comparison_action": 5,
+      "comparison_action_name": "south_large",
+      "current_chosen_q": 71.1566390991211,
+      "current_comparison_q": 71.10206604003906,
+      "current_chosen_minus_comparison_q": 0.05457305908203125,
+      "current_q_values": [
+        56.50263214111328,
+        71.1566390991211,
+        70.96031188964844,
+        -8.359461784362793,
+        48.579139709472656,
+        71.10206604003906,
+        69.52162170410156,
+        -15.429380416870117
+      ],
+      "baseline_chosen_q": 71.2372055053711,
+      "baseline_current_action_q": 71.15137481689453,
+      "baseline_chosen_minus_current_action_q": 0.0858306884765625,
+      "baseline_q_values": [
+        56.379032135009766,
+        71.15137481689453,
+        71.09812927246094,
+        -8.356186866760254,
+        48.36687088012695,
+        71.2372055053711,
+        69.72022247314453,
+        -15.428801536560059
+      ],
+      "identical_input_verified": true
+    }
+  }
+}
