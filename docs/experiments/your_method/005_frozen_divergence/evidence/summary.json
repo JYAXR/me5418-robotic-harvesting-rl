@@ -1,0 +1,12 @@
+{
+  "episodes": 4,
+  "optimizer_updates": 0,
+  "action_overrides": 0,
+  "episode_actions": 800,
+  "certification_actions": 194,
+  "certification_calls": 4,
+  "full_snapshot_unchanged": true,
+  "all_historical_replays_exact": true,
+  "elapsed_seconds": 188.89095600001747,
+  "scope": "First disagreements only; no corrective replay, learning or causal-failure proof."
+}

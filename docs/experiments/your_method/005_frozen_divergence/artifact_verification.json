@@ -1,0 +1,9 @@
+{
+  "manifest_files_verified": 9,
+  "pinned_inputs_verified": 166,
+  "complete_traces_verified": 4,
+  "greedy_actions_verified": 800,
+  "episode_returns_exact": true,
+  "all_local_document_links_valid": true,
+  "verification_note": "An initial read-only assertion incorrectly expected budget exhaustion to set truncated. Source confirms intrinsic finite-horizon termination (terminated true, truncated false); the assertion was corrected. No simulation was repeated and no evidence or training code was changed."
+}
