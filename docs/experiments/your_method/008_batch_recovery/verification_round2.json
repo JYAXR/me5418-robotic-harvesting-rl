@@ -1,0 +1,14 @@
+{
+  "round": 2,
+  "manifest_files": 231,
+  "pinned_inputs": 296,
+  "fresh_evaluation_episodes": 63,
+  "greedy_actions_verified": 6829,
+  "recovery_actions_verified": 2132,
+  "accepted_labels_verified": 2132,
+  "supervised_updates_verified": 6000,
+  "td_and_target_unchanged": true,
+  "resume_and_inference_weights_equal": true,
+  "validation_labels_in_training": 0,
+  "verification_failures": 0
+}

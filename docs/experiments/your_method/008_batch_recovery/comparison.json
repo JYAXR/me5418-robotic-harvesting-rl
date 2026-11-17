@@ -1,0 +1,272 @@
+{
+  "status": "completed_at_two_round_limit",
+  "selected_candidate": "source",
+  "selected_model": "models/your_method_004_targeted.pt",
+  "selection_rule": "Require original 3/3 and training >= source; then maximize validation, training, lower damage, earlier endpoint.",
+  "candidates": [
+    {
+      "name": "source",
+      "model": "models/your_method_004_targeted.pt",
+      "original_three": 3,
+      "training": {
+        "episodes": 33,
+        "successes": 10,
+        "success_seeds": [
+          10000,
+          10001,
+          10002,
+          290003,
+          290007,
+          290008,
+          290011,
+          290015,
+          290026,
+          290029
+        ],
+        "damage": 11,
+        "budget_failures": 12,
+        "reset_errors": 0,
+        "mean_return": -0.17558860179281702
+      },
+      "validation": {
+        "episodes": 30,
+        "successes": 3,
+        "success_seeds": [
+          590017,
+          590021,
+          590024
+        ],
+        "damage": 14,
+        "budget_failures": 13,
+        "reset_errors": 0,
+        "mean_return": -31.086666848013536
+      },
+      "eligible": true,
+      "model_sha256": "ea42fd1a2d23317c9e15a960c58d90970a38edbcfb7724308a845ead92f6119f",
+      "selection_score": [
+        3,
+        10,
+        -25,
+        0
+      ],
+      "gains_and_losses_vs_source": {
+        "training": {
+          "gains": [],
+          "losses": []
+        },
+        "validation": {
+          "gains": [],
+          "losses": []
+        }
+      }
+    },
+    {
+      "name": "round_1",
+      "model": "models/your_method_008_round1.pt",
+      "original_three": 3,
+      "training": {
+        "episodes": 33,
+        "successes": 9,
+        "success_seeds": [
+          10000,
+          10001,
+          10002,
+          290005,
+          290015,
+          290017,
+          290023,
+          290025,
+          290028
+        ],
+        "damage": 8,
+        "budget_failures": 16,
+        "reset_errors": 0,
+        "mean_return": -2.4152121818834975
+      },
+      "validation": {
+        "episodes": 30,
+        "successes": 5,
+        "success_seeds": [
+          590010,
+          590016,
+          590017,
+          590018,
+          590020
+        ],
+        "damage": 12,
+        "budget_failures": 13,
+        "reset_errors": 0,
+        "mean_return": -27.5240956474157
+      },
+      "eligible": false,
+      "model_sha256": "7c6967e1d303bb293d563452caed2da93492d16792f9a907d356faa6f9caeec8",
+      "selection_score": [
+        5,
+        9,
+        -20,
+        -1
+      ],
+      "gains_and_losses_vs_source": {
+        "training": {
+          "gains": [
+            290005,
+            290017,
+            290023,
+            290025,
+            290028
+          ],
+          "losses": [
+            290003,
+            290007,
+            290008,
+            290011,
+            290026,
+            290029
+          ]
+        },
+        "validation": {
+          "gains": [
+            590010,
+            590016,
+            590018,
+            590020
+          ],
+          "losses": [
+            590021,
+            590024
+          ]
+        }
+      }
+    },
+    {
+      "name": "round_2",
+      "model": "models/your_method_008_round2.pt",
+      "original_three": 2,
+      "training": {
+        "episodes": 33,
+        "successes": 11,
+        "success_seeds": [
+          10001,
+          10002,
+          290005,
+          290008,
+          290014,
+          290017,
+          290018,
+          290019,
+          290021,
+          290028,
+          290029
+        ],
+        "damage": 10,
+        "budget_failures": 12,
+        "reset_errors": 0,
+        "mean_return": 3.637901616319127
+      },
+      "validation": {
+        "episodes": 30,
+        "successes": 5,
+        "success_seeds": [
+          590016,
+          590017,
+          590018,
+          590026,
+          590028
+        ],
+        "damage": 15,
+        "budget_failures": 10,
+        "reset_errors": 0,
+        "mean_return": -33.10681728464544
+      },
+      "eligible": false,
+      "model_sha256": "bc528df6b98f8c3634093ad09e2ca778980089c1dbdda30315067a1fc600749c",
+      "selection_score": [
+        5,
+        11,
+        -25,
+        -2
+      ],
+      "gains_and_losses_vs_source": {
+        "training": {
+          "gains": [
+            290005,
+            290014,
+            290017,
+            290018,
+            290019,
+            290021,
+            290028
+          ],
+          "losses": [
+            10000,
+            290003,
+            290007,
+            290011,
+            290015,
+            290026
+          ]
+        },
+        "validation": {
+          "gains": [
+            590016,
+            590018,
+            590026,
+            590028
+          ],
+          "losses": [
+            590021,
+            590024
+          ]
+        }
+      }
+    }
+  ],
+  "resource_totals": {
+    "collection_policy_actions": 2369,
+    "recovery_physics_actions": 4103,
+    "evaluation_actions": 14283,
+    "fresh_baseline_actions": 3324,
+    "certification_actions": 8369,
+    "certification_calls": 198,
+    "cache_hits": 24,
+    "supervised_updates": 12000,
+    "new_td_updates": 0,
+    "elapsed_seconds": 470.863571599999,
+    "total_simulator_actions": 32448,
+    "fresh_evaluation_episodes": 156,
+    "accepted_routes": 140,
+    "queried_routes": 178,
+    "new_recovery_samples": 4103
+  },
+  "collection_outcomes": [
+    {
+      "round": 1,
+      "query_outcomes": {
+        "success": 70,
+        "planner_found_no_route": 17
+      },
+      "scenes_without_accepted_recovery": [
+        290024
+      ],
+      "skipped_queries": 12
+    },
+    {
+      "round": 2,
+      "query_outcomes": {
+        "success": 70,
+        "planner_found_no_route": 21
+      },
+      "scenes_without_accepted_recovery": [
+        290020
+      ],
+      "skipped_queries": 8
+    }
+  ],
+  "third_round_executed": false,
+  "final_test_used": false,
+  "limitations": [
+    "One training random seed, 30 development-validation scenes, no final untouched test.",
+    "Neither supervised endpoint meets the predeclared retention rule.",
+    "Supervised outputs are action scores, not calibrated Q values."
+  ]
+}

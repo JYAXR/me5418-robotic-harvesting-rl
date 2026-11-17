@@ -1,0 +1,99 @@
+{
+  "round": 2,
+  "training": {
+    "episodes": 33,
+    "successes": 11,
+    "success_seeds": [
+      10001,
+      10002,
+      290005,
+      290008,
+      290014,
+      290017,
+      290018,
+      290019,
+      290021,
+      290028,
+      290029
+    ],
+    "damage": 10,
+    "budget_failures": 12,
+    "reset_errors": 0,
+    "mean_return": 3.637901616319127
+  },
+  "original_three": {
+    "episodes": 3,
+    "successes": 2,
+    "success_seeds": [
+      10001,
+      10002
+    ],
+    "damage": 0,
+    "budget_failures": 1,
+    "reset_errors": 0,
+    "mean_return": 48.00479602801514
+  },
+  "validation": {
+    "episodes": 30,
+    "successes": 5,
+    "success_seeds": [
+      590016,
+      590017,
+      590018,
+      590026,
+      590028
+    ],
+    "damage": 15,
+    "budget_failures": 10,
+    "reset_errors": 0,
+    "mean_return": -33.10681728464544
+  },
+  "baseline_training": {
+    "episodes": 33,
+    "successes": 10,
+    "success_seeds": [
+      10000,
+      10001,
+      10002,
+      290003,
+      290007,
+      290008,
+      290011,
+      290015,
+      290026,
+      290029
+    ],
+    "damage": 11,
+    "budget_failures": 12,
+    "reset_errors": 0,
+    "mean_return": -0.17558860179281702
+  },
+  "baseline_validation": {
+    "episodes": 30,
+    "successes": 3,
+    "success_seeds": [
+      590017,
+      590021,
+      590024
+    ],
+    "damage": 14,
+    "budget_failures": 13,
+    "reset_errors": 0,
+    "mean_return": -31.086666848013536
+  },
+  "accepted_routes": 70,
+  "queried_routes": 91,
+  "new_recovery_samples": 2132,
+  "collection_policy_actions": 1187,
+  "recovery_physics_actions": 2132,
+  "evaluation_actions": 6829,
+  "fresh_baseline_actions": 0,
+  "certification_actions": 3740,
+  "certification_calls": 88,
+  "cache_hits": 8,
+  "supervised_updates": 6000,
+  "new_td_updates": 0,
+  "evaluation_action_overrides": 0,
+  "elapsed_seconds": 195.44768670000485,
+  "early_stop_target_met": false
+}

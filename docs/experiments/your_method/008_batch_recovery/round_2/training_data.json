@@ -1,0 +1,339 @@
+{
+  "base_rows": 1441,
+  "recovery_rows": 4103,
+  "sources": [
+    {
+      "round": 1,
+      "seed": 10000,
+      "samples": 40
+    },
+    {
+      "round": 1,
+      "seed": 10001,
+      "samples": 52
+    },
+    {
+      "round": 1,
+      "seed": 10002,
+      "samples": 57
+    },
+    {
+      "round": 1,
+      "seed": 290000,
+      "samples": 34
+    },
+    {
+      "round": 1,
+      "seed": 290001,
+      "samples": 41
+    },
+    {
+      "round": 1,
+      "seed": 290002,
+      "samples": 44
+    },
+    {
+      "round": 1,
+      "seed": 290003,
+      "samples": 52
+    },
+    {
+      "round": 1,
+      "seed": 290004,
+      "samples": 89
+    },
+    {
+      "round": 1,
+      "seed": 290005,
+      "samples": 98
+    },
+    {
+      "round": 1,
+      "seed": 290006,
+      "samples": 76
+    },
+    {
+      "round": 1,
+      "seed": 290007,
+      "samples": 38
+    },
+    {
+      "round": 1,
+      "seed": 290008,
+      "samples": 51
+    },
+    {
+      "round": 1,
+      "seed": 290009,
+      "samples": 30
+    },
+    {
+      "round": 1,
+      "seed": 290010,
+      "samples": 42
+    },
+    {
+      "round": 1,
+      "seed": 290011,
+      "samples": 73
+    },
+    {
+      "round": 1,
+      "seed": 290012,
+      "samples": 119
+    },
+    {
+      "round": 1,
+      "seed": 290013,
+      "samples": 93
+    },
+    {
+      "round": 1,
+      "seed": 290014,
+      "samples": 106
+    },
+    {
+      "round": 1,
+      "seed": 290015,
+      "samples": 66
+    },
+    {
+      "round": 1,
+      "seed": 290016,
+      "samples": 83
+    },
+    {
+      "round": 1,
+      "seed": 290017,
+      "samples": 71
+    },
+    {
+      "round": 1,
+      "seed": 290018,
+      "samples": 72
+    },
+    {
+      "round": 1,
+      "seed": 290019,
+      "samples": 83
+    },
+    {
+      "round": 1,
+      "seed": 290020,
+      "samples": 32
+    },
+    {
+      "round": 1,
+      "seed": 290021,
+      "samples": 70
+    },
+    {
+      "round": 1,
+      "seed": 290022,
+      "samples": 43
+    },
+    {
+      "round": 1,
+      "seed": 290023,
+      "samples": 57
+    },
+    {
+      "round": 1,
+      "seed": 290024,
+      "samples": 0
+    },
+    {
+      "round": 1,
+      "seed": 290025,
+      "samples": 45
+    },
+    {
+      "round": 1,
+      "seed": 290026,
+      "samples": 61
+    },
+    {
+      "round": 1,
+      "seed": 290027,
+      "samples": 46
+    },
+    {
+      "round": 1,
+      "seed": 290028,
+      "samples": 55
+    },
+    {
+      "round": 1,
+      "seed": 290029,
+      "samples": 52
+    },
+    {
+      "round": 2,
+      "seed": 10000,
+      "samples": 33
+    },
+    {
+      "round": 2,
+      "seed": 10001,
+      "samples": 60
+    },
+    {
+      "round": 2,
+      "seed": 10002,
+      "samples": 69
+    },
+    {
+      "round": 2,
+      "seed": 290000,
+      "samples": 34
+    },
+    {
+      "round": 2,
+      "seed": 290001,
+      "samples": 41
+    },
+    {
+      "round": 2,
+      "seed": 290002,
+      "samples": 130
+    },
+    {
+      "round": 2,
+      "seed": 290003,
+      "samples": 86
+    },
+    {
+      "round": 2,
+      "seed": 290004,
+      "samples": 90
+    },
+    {
+      "round": 2,
+      "seed": 290005,
+      "samples": 70
+    },
+    {
+      "round": 2,
+      "seed": 290006,
+      "samples": 130
+    },
+    {
+      "round": 2,
+      "seed": 290007,
+      "samples": 38
+    },
+    {
+      "round": 2,
+      "seed": 290008,
+      "samples": 36
+    },
+    {
+      "round": 2,
+      "seed": 290009,
+      "samples": 30
+    },
+    {
+      "round": 2,
+      "seed": 290010,
+      "samples": 49
+    },
+    {
+      "round": 2,
+      "seed": 290011,
+      "samples": 99
+    },
+    {
+      "round": 2,
+      "seed": 290012,
+      "samples": 54
+    },
+    {
+      "round": 2,
+      "seed": 290013,
+      "samples": 91
+    },
+    {
+      "round": 2,
+      "seed": 290014,
+      "samples": 92
+    },
+    {
+      "round": 2,
+      "seed": 290015,
+      "samples": 65
+    },
+    {
+      "round": 2,
+      "seed": 290016,
+      "samples": 99
+    },
+    {
+      "round": 2,
+      "seed": 290017,
+      "samples": 62
+    },
+    {
+      "round": 2,
+      "seed": 290018,
+      "samples": 72
+    },
+    {
+      "round": 2,
+      "seed": 290019,
+      "samples": 94
+    },
+    {
+      "round": 2,
+      "seed": 290020,
+      "samples": 0
+    },
+    {
+      "round": 2,
+      "seed": 290021,
+      "samples": 34
+    },
+    {
+      "round": 2,
+      "seed": 290022,
+      "samples": 98
+    },
+    {
+      "round": 2,
+      "seed": 290023,
+      "samples": 55
+    },
+    {
+      "round": 2,
+      "seed": 290024,
+      "samples": 48
+    },
+    {
+      "round": 2,
+      "seed": 290025,
+      "samples": 98
+    },
+    {
+      "round": 2,
+      "seed": 290026,
+      "samples": 34
+    },
+    {
+      "round": 2,
+      "seed": 290027,
+      "samples": 46
+    },
+    {
+      "round": 2,
+      "seed": 290028,
+      "samples": 61
+    },
+    {
+      "round": 2,
+      "seed": 290029,
+      "samples": 34
+    }
+  ],
+  "sha256": "4f1638a82c9d73b78054f690ebe0e4a8f5b447f1dd17edee61f23d9812b8e908",
+  "validation_samples": 0,
+  "sampling": "128 base plus 128 recovery with replacement; 256 base if recovery is empty"
+}

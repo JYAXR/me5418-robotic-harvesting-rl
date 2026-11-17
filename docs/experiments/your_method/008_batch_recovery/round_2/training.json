@@ -1,0 +1,120 @@
+{
+  "optimizer_before": {
+    "sha256": "5d31ce4c2b4567f0b7f117147e41c52130bc09b4c3a4f817d670297ea9b61922",
+    "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0001,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 6,
+    "steps": {
+      "0.weight": 6000.0,
+      "0.bias": 6000.0,
+      "2.weight": 6000.0,
+      "2.bias": 6000.0,
+      "4.weight": 6000.0,
+      "4.bias": 6000.0
+    },
+    "step_min": 6000.0,
+    "step_max": 6000.0,
+    "first_moment_l2": 1.427896295932381,
+    "second_moment_l2": 2.0815516558113782
+  },
+  "optimizer_after": {
+    "sha256": "a85da55722954d534816f6aa3d5c979619b6d1abd55315f0cc85c39766cd8b8d",
+    "settings_sha256": "9577d84ec2b38dbd48afd0eada7b51110b9aa8b47e49f2b1a03e38e4f3629b52",
+    "parameter_groups": [
+      {
+        "amsgrad": false,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "capturable": false,
+        "decoupled_weight_decay": false,
+        "differentiable": false,
+        "eps": 1e-08,
+        "foreach": null,
+        "fused": null,
+        "lr": 0.0001,
+        "maximize": false,
+        "weight_decay": 0,
+        "parameters": [
+          "0.weight",
+          "0.bias",
+          "2.weight",
+          "2.bias",
+          "4.weight",
+          "4.bias"
+        ]
+      }
+    ],
+    "parameter_count": 6,
+    "initialized_parameter_count": 6,
+    "steps": {
+      "0.weight": 12000.0,
+      "0.bias": 12000.0,
+      "2.weight": 12000.0,
+      "2.bias": 12000.0,
+      "4.weight": 12000.0,
+      "4.bias": 12000.0
+    },
+    "step_min": 12000.0,
+    "step_max": 12000.0,
+    "first_moment_l2": 1.4092711728982916,
+    "second_moment_l2": 2.09403233825917
+  },
+  "fit": [
+    {
+      "update": 6001,
+      "base_accuracy": 0.8036085963249207,
+      "recovery_accuracy": 0.6612234711647034
+    },
+    {
+      "update": 7000,
+      "base_accuracy": 0.7973629236221313,
+      "recovery_accuracy": 0.6729222536087036
+    },
+    {
+      "update": 9000,
+      "base_accuracy": 0.8154059648513794,
+      "recovery_accuracy": 0.6773092746734619
+    },
+    {
+      "update": 12000,
+      "base_accuracy": 0.7959750294685364,
+      "recovery_accuracy": 0.6812088489532471
+    }
+  ],
+  "elapsed_seconds": 20.66667370000505,
+  "updates": 6000,
+  "new_td_updates": 0,
+  "target_unchanged": true,
+  "model": "models\\your_method_008_round2.pt",
+  "model_sha256": "bc528df6b98f8c3634093ad09e2ca778980089c1dbdda30315067a1fc600749c",
+  "resume_sha256": "8f3ba6f091d18211d69d8435681227c553e1aa43d4576f2da22f5ee2f652afec",
+  "reload_weights_exact": true
+}

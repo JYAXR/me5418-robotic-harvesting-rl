@@ -119,3 +119,32 @@ remain available.
 ```bash
 python scripts/evaluate_dqn.py --checkpoint models/your_method_004_targeted.pt --episodes 3 --seed 10000
 ```
+
+## Own-route attempt 008: bounded batch-recovery supervision
+
+`your_method_008_round1.pt` and `your_method_008_round2.pt` are experimental
+supervised-only endpoints after 6000 and 12000 cumulative updates. They use the
+same network/encoder/environment as `your_method_004_targeted.pt`, with 4103
+successful recovery-route labels collected in two rounds. No new TD updates
+were performed; their outputs are action scores, not calibrated Q estimates.
+
+| Endpoint | Original scenes | Training scenes | Development validation |
+| --- | --- | --- | --- |
+| Source attempt-004 targeted | 3/3 | 10/33 | 3/30 |
+| Attempt-008 round 1 | 3/3 | 9/33 | 5/30 |
+| Attempt-008 round 2 | 2/3 | 11/33 | 5/30 |
+
+Neither new endpoint satisfies the predeclared retention rule. Round 1 loses
+training coverage; round 2 times out on 10000. Retain the source as the current
+baseline; both experimental checkpoints remain available for reproducibility.
+The 30 validation scenes were excluded from training but used for development
+selection. No final untouched test set was used.
+
+See [attempt 008](../docs/experiments/your_method/008_batch_recovery/RESULTS.md)
+and its [model hashes and selection record](../docs/experiments/your_method/008_batch_recovery/comparison.json).
+Each round directory contains an optimizer/RNG resume checkpoint, full training
+data and evaluation traces. The run is stopped at the two-round limit.
+
+```bash
+python scripts/evaluate_dqn.py --checkpoint models/your_method_008_round2.pt --episodes 3 --seed 10000
+```
