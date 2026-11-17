@@ -1,0 +1,942 @@
+{
+  "round_1": {
+    "training": {
+      "action_histogram": [
+        498,
+        337,
+        1201,
+        0,
+        111,
+        293,
+        1640,
+        0
+      ],
+      "failure_count": 24,
+      "timeout_count": 16,
+      "timeouts_at_least_100_blocked_steps": 16,
+      "timeouts_with_longest_block_run_ge_50": 16,
+      "failures": [
+        {
+          "seed": 290000,
+          "steps": 15,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290001,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 21,
+          "blocked_steps": 180,
+          "longest_blocked_run": 180
+        },
+        {
+          "seed": 290002,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 17,
+          "blocked_steps": 172,
+          "longest_blocked_run": 171
+        },
+        {
+          "seed": 290003,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 18,
+          "blocked_steps": 177,
+          "longest_blocked_run": 176
+        },
+        {
+          "seed": 290004,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 21,
+          "blocked_steps": 159,
+          "longest_blocked_run": 154
+        },
+        {
+          "seed": 290006,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 22,
+          "blocked_steps": 168,
+          "longest_blocked_run": 98
+        },
+        {
+          "seed": 290007,
+          "steps": 43,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 20,
+          "blocked_steps": 10,
+          "longest_blocked_run": 8
+        },
+        {
+          "seed": 290008,
+          "steps": 121,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 22,
+          "blocked_steps": 94,
+          "longest_blocked_run": 94
+        },
+        {
+          "seed": 290009,
+          "steps": 15,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290010,
+          "steps": 91,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 20,
+          "blocked_steps": 32,
+          "longest_blocked_run": 32
+        },
+        {
+          "seed": 290011,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 6,
+          "blocked_steps": 195,
+          "longest_blocked_run": 195
+        },
+        {
+          "seed": 290012,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 30,
+          "blocked_steps": 171,
+          "longest_blocked_run": 171
+        },
+        {
+          "seed": 290013,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 28,
+          "blocked_steps": 173,
+          "longest_blocked_run": 173
+        },
+        {
+          "seed": 290014,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 46,
+          "blocked_steps": 155,
+          "longest_blocked_run": 155
+        },
+        {
+          "seed": 290016,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 28,
+          "blocked_steps": 173,
+          "longest_blocked_run": 173
+        },
+        {
+          "seed": 290018,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 24,
+          "blocked_steps": 177,
+          "longest_blocked_run": 177
+        },
+        {
+          "seed": 290019,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 18,
+          "blocked_steps": 144,
+          "longest_blocked_run": 132
+        },
+        {
+          "seed": 290020,
+          "steps": 11,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290021,
+          "steps": 139,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 17,
+          "blocked_steps": 43,
+          "longest_blocked_run": 42
+        },
+        {
+          "seed": 290022,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 27,
+          "blocked_steps": 174,
+          "longest_blocked_run": 174
+        },
+        {
+          "seed": 290024,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 13,
+          "blocked_steps": 188,
+          "longest_blocked_run": 188
+        },
+        {
+          "seed": 290026,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 22,
+          "blocked_steps": 179,
+          "longest_blocked_run": 179
+        },
+        {
+          "seed": 290027,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 21,
+          "blocked_steps": 155,
+          "longest_blocked_run": 130
+        },
+        {
+          "seed": 290029,
+          "steps": 15,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        }
+      ]
+    },
+    "validation": {
+      "action_histogram": [
+        341,
+        322,
+        945,
+        0,
+        211,
+        45,
+        1510,
+        0
+      ],
+      "failure_count": 25,
+      "timeout_count": 13,
+      "timeouts_at_least_100_blocked_steps": 12,
+      "timeouts_with_longest_block_run_ge_50": 12,
+      "failures": [
+        {
+          "seed": 590000,
+          "steps": 64,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 24,
+          "blocked_steps": 28,
+          "longest_blocked_run": 14
+        },
+        {
+          "seed": 590001,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 30,
+          "blocked_steps": 171,
+          "longest_blocked_run": 171
+        },
+        {
+          "seed": 590002,
+          "steps": 47,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 23,
+          "blocked_steps": 13,
+          "longest_blocked_run": 13
+        },
+        {
+          "seed": 590003,
+          "steps": 46,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590004,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 16,
+          "blocked_steps": 24,
+          "longest_blocked_run": 24
+        },
+        {
+          "seed": 590005,
+          "steps": 106,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 26,
+          "blocked_steps": 50,
+          "longest_blocked_run": 50
+        },
+        {
+          "seed": 590006,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 4,
+          "blocked_steps": 197,
+          "longest_blocked_run": 197
+        },
+        {
+          "seed": 590007,
+          "steps": 21,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590008,
+          "steps": 15,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590009,
+          "steps": 13,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590011,
+          "steps": 89,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590012,
+          "steps": 70,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590013,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 4,
+          "blocked_steps": 197,
+          "longest_blocked_run": 197
+        },
+        {
+          "seed": 590014,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 28,
+          "blocked_steps": 173,
+          "longest_blocked_run": 173
+        },
+        {
+          "seed": 590015,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 7,
+          "blocked_steps": 186,
+          "longest_blocked_run": 185
+        },
+        {
+          "seed": 590019,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 18,
+          "blocked_steps": 183,
+          "longest_blocked_run": 183
+        },
+        {
+          "seed": 590021,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 24,
+          "blocked_steps": 177,
+          "longest_blocked_run": 177
+        },
+        {
+          "seed": 590022,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 6,
+          "blocked_steps": 195,
+          "longest_blocked_run": 195
+        },
+        {
+          "seed": 590023,
+          "steps": 23,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590024,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 30,
+          "blocked_steps": 171,
+          "longest_blocked_run": 171
+        },
+        {
+          "seed": 590025,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 34,
+          "blocked_steps": 152,
+          "longest_blocked_run": 124
+        },
+        {
+          "seed": 590026,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 26,
+          "blocked_steps": 162,
+          "longest_blocked_run": 87
+        },
+        {
+          "seed": 590027,
+          "steps": 28,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590028,
+          "steps": 16,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590029,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 53,
+          "blocked_steps": 148,
+          "longest_blocked_run": 148
+        }
+      ]
+    }
+  },
+  "round_2": {
+    "training": {
+      "action_histogram": [
+        473,
+        700,
+        1209,
+        12,
+        89,
+        185,
+        962,
+        0
+      ],
+      "failure_count": 22,
+      "timeout_count": 12,
+      "timeouts_at_least_100_blocked_steps": 10,
+      "timeouts_with_longest_block_run_ge_50": 10,
+      "failures": [
+        {
+          "seed": 10000,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 20,
+          "blocked_steps": 181,
+          "longest_blocked_run": 181
+        },
+        {
+          "seed": 290000,
+          "steps": 96,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 26,
+          "blocked_steps": 24,
+          "longest_blocked_run": 1
+        },
+        {
+          "seed": 290001,
+          "steps": 65,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 39,
+          "blocked_steps": 5,
+          "longest_blocked_run": 1
+        },
+        {
+          "seed": 290002,
+          "steps": 104,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 62,
+          "blocked_steps": 1,
+          "longest_blocked_run": 1
+        },
+        {
+          "seed": 290003,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 21,
+          "blocked_steps": 179,
+          "longest_blocked_run": 121
+        },
+        {
+          "seed": 290004,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 21,
+          "blocked_steps": 147,
+          "longest_blocked_run": 145
+        },
+        {
+          "seed": 290006,
+          "steps": 126,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 22,
+          "blocked_steps": 27,
+          "longest_blocked_run": 1
+        },
+        {
+          "seed": 290007,
+          "steps": 13,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290009,
+          "steps": 14,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290010,
+          "steps": 71,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 20,
+          "blocked_steps": 26,
+          "longest_blocked_run": 26
+        },
+        {
+          "seed": 290011,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 21,
+          "blocked_steps": 169,
+          "longest_blocked_run": 158
+        },
+        {
+          "seed": 290012,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 38,
+          "blocked_steps": 163,
+          "longest_blocked_run": 163
+        },
+        {
+          "seed": 290013,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 29,
+          "blocked_steps": 156,
+          "longest_blocked_run": 155
+        },
+        {
+          "seed": 290015,
+          "steps": 35,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290016,
+          "steps": 142,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 27,
+          "blocked_steps": 31,
+          "longest_blocked_run": 27
+        },
+        {
+          "seed": 290020,
+          "steps": 32,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290022,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 29,
+          "blocked_steps": 10,
+          "longest_blocked_run": 8
+        },
+        {
+          "seed": 290023,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 38,
+          "blocked_steps": 163,
+          "longest_blocked_run": 163
+        },
+        {
+          "seed": 290024,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 15,
+          "blocked_steps": 186,
+          "longest_blocked_run": 186
+        },
+        {
+          "seed": 290025,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 290026,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 59,
+          "blocked_steps": 140,
+          "longest_blocked_run": 138
+        },
+        {
+          "seed": 290027,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 83,
+          "blocked_steps": 117,
+          "longest_blocked_run": 116
+        }
+      ]
+    },
+    "validation": {
+      "action_histogram": [
+        477,
+        505,
+        839,
+        9,
+        167,
+        91,
+        1111,
+        0
+      ],
+      "failure_count": 25,
+      "timeout_count": 10,
+      "timeouts_at_least_100_blocked_steps": 9,
+      "timeouts_with_longest_block_run_ge_50": 10,
+      "failures": [
+        {
+          "seed": 590000,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 12,
+          "blocked_steps": 189,
+          "longest_blocked_run": 189
+        },
+        {
+          "seed": 590001,
+          "steps": 49,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590002,
+          "steps": 65,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 23,
+          "blocked_steps": 27,
+          "longest_blocked_run": 27
+        },
+        {
+          "seed": 590003,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 25,
+          "blocked_steps": 176,
+          "longest_blocked_run": 176
+        },
+        {
+          "seed": 590004,
+          "steps": 35,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590005,
+          "steps": 50,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590006,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 4,
+          "blocked_steps": 197,
+          "longest_blocked_run": 197
+        },
+        {
+          "seed": 590007,
+          "steps": 20,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590008,
+          "steps": 71,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 28,
+          "blocked_steps": 20,
+          "longest_blocked_run": 3
+        },
+        {
+          "seed": 590009,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 17,
+          "blocked_steps": 126,
+          "longest_blocked_run": 108
+        },
+        {
+          "seed": 590010,
+          "steps": 188,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 30,
+          "blocked_steps": 59,
+          "longest_blocked_run": 59
+        },
+        {
+          "seed": 590011,
+          "steps": 137,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 30,
+          "blocked_steps": 21,
+          "longest_blocked_run": 1
+        },
+        {
+          "seed": 590012,
+          "steps": 97,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590013,
+          "steps": 55,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590014,
+          "steps": 18,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590015,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 28,
+          "blocked_steps": 54,
+          "longest_blocked_run": 53
+        },
+        {
+          "seed": 590019,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 17,
+          "blocked_steps": 184,
+          "longest_blocked_run": 184
+        },
+        {
+          "seed": 590020,
+          "steps": 84,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 53,
+          "blocked_steps": 10,
+          "longest_blocked_run": 10
+        },
+        {
+          "seed": 590021,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 24,
+          "blocked_steps": 175,
+          "longest_blocked_run": 174
+        },
+        {
+          "seed": 590022,
+          "steps": 14,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": 6,
+          "blocked_steps": 1,
+          "longest_blocked_run": 1
+        },
+        {
+          "seed": 590023,
+          "steps": 22,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590024,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 31,
+          "blocked_steps": 170,
+          "longest_blocked_run": 170
+        },
+        {
+          "seed": 590025,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 51,
+          "blocked_steps": 150,
+          "longest_blocked_run": 150
+        },
+        {
+          "seed": 590027,
+          "steps": 17,
+          "damage": true,
+          "budget": false,
+          "first_blocked_step": null,
+          "blocked_steps": 0,
+          "longest_blocked_run": 0
+        },
+        {
+          "seed": 590029,
+          "steps": 200,
+          "damage": false,
+          "budget": true,
+          "first_blocked_step": 21,
+          "blocked_steps": 180,
+          "longest_blocked_run": 180
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "your_method_004_targeted": {
+    "base": {
+      "gradient_norm": 11.175800323486328,
+      "median_top_two_gap": 0.8300704956054688,
+      "fraction_top_two_gap_lt_0_1": 0.07217210531234741,
+      "correct_label_margin_median": 0.8781661987304688
+    },
+    "recovery": {
+      "gradient_norm": 18.721302032470703,
+      "median_top_two_gap": 0.7710037231445312,
+      "fraction_top_two_gap_lt_0_1": 0.07726053893566132,
+      "correct_label_margin_median": 0.8529510498046875
+    },
+    "gradient_cosine_base_recovery": 0.7171413898468018,
+    "base_directional_derivative_under_negative_mixed_gradient": -137.47146606445312,
+    "recovery_directional_derivative_under_negative_mixed_gradient": -250.26577758789062,
+    "weights_and_model_file_unchanged": true,
+    "optimizer_steps": 0
+  },
+  "your_method_008_round1": {
+    "base": {
+      "gradient_norm": 7.245825290679932,
+      "median_top_two_gap": 1.33245849609375,
+      "fraction_top_two_gap_lt_0_1": 0.044413600116968155,
+      "correct_label_margin_median": 1.6177215576171875
+    },
+    "recovery": {
+      "gradient_norm": 8.40956974029541,
+      "median_top_two_gap": 1.101593017578125,
+      "fraction_top_two_gap_lt_0_1": 0.056300267577171326,
+      "correct_label_margin_median": 1.3786697387695312
+    },
+    "gradient_cosine_base_recovery": 0.04149476811289787,
+    "base_directional_derivative_under_negative_mixed_gradient": -27.515281677246094,
+    "recovery_directional_derivative_under_negative_mixed_gradient": -36.62472152709961,
+    "weights_and_model_file_unchanged": true,
+    "optimizer_steps": 0
+  },
+  "your_method_008_round2": {
+    "base": {
+      "gradient_norm": 11.018199920654297,
+      "median_top_two_gap": 1.535430908203125,
+      "fraction_top_two_gap_lt_0_1": 0.03400416299700737,
+      "correct_label_margin_median": 1.8520240783691406
+    },
+    "recovery": {
+      "gradient_norm": 8.17226505279541,
+      "median_top_two_gap": 1.2301788330078125,
+      "fraction_top_two_gap_lt_0_1": 0.044114064425230026,
+      "correct_label_margin_median": 1.6116943359375
+    },
+    "gradient_cosine_base_recovery": 0.44951188564300537,
+    "base_directional_derivative_under_negative_mixed_gradient": -80.93834686279297,
+    "recovery_directional_derivative_under_negative_mixed_gradient": -53.630828857421875,
+    "weights_and_model_file_unchanged": true,
+    "optimizer_steps": 0
+  }
+}
