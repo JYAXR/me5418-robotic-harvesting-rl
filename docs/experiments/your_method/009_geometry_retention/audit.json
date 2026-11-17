@@ -1,0 +1,198 @@
+{
+  "manifest_files_verified": 306,
+  "pinned_inputs_verified": 47,
+  "queries_verified": 167,
+  "verified_root_labels": 108,
+  "unknown_root_labels": 59,
+  "query_categories": {
+    "risk": 84,
+    "coverage": 83
+  },
+  "query_steps": {
+    "12": 6,
+    "13": 33,
+    "35": 1,
+    "38": 21,
+    "17": 2,
+    "40": 1,
+    "26": 4,
+    "16": 1,
+    "18": 5,
+    "100": 10,
+    "57": 1,
+    "34": 1,
+    "21": 1,
+    "29": 3,
+    "75": 11,
+    "200": 6,
+    "150": 5,
+    "25": 6,
+    "50": 10,
+    "41": 1,
+    "30": 1,
+    "11": 2,
+    "31": 1,
+    "24": 4,
+    "48": 1,
+    "51": 1,
+    "15": 2,
+    "44": 1,
+    "7": 1,
+    "28": 4,
+    "19": 2,
+    "49": 1,
+    "56": 2,
+    "33": 1,
+    "74": 1,
+    "146": 1,
+    "86": 1,
+    "27": 1,
+    "23": 1,
+    "63": 1,
+    "46": 1,
+    "123": 1,
+    "37": 1,
+    "53": 1,
+    "52": 1,
+    "110": 1,
+    "36": 1,
+    "68": 1
+  },
+  "queries_after_step_40": 60,
+  "queries_after_step_100": 14,
+  "retention_actions": 454,
+  "evaluation_episodes": 63,
+  "greedy_decisions_recomputed": 6709,
+  "accepted_scale_counts": {
+    "0.125": 1,
+    "0.0": 19
+  },
+  "attempted_updates_verified": 400,
+  "surviving_optimizer_steps": [
+    20
+  ],
+  "new_training_updates_during_audit": 0,
+  "new_environment_steps_during_audit": 0,
+  "source_weights_unchanged": true,
+  "validation_samples_in_training": 0,
+  "query_inputs_also_in_retention_bank": 42,
+  "planner_labels_conflicting_with_exact_retention": [
+    {
+      "query_index": 3,
+      "seed": 10000,
+      "planner_action": 2,
+      "retained_successful_action": 6
+    },
+    {
+      "query_index": 7,
+      "seed": 10001,
+      "planner_action": 2,
+      "retained_successful_action": 1
+    },
+    {
+      "query_index": 10,
+      "seed": 10002,
+      "planner_action": 2,
+      "retained_successful_action": 6
+    },
+    {
+      "query_index": 11,
+      "seed": 10002,
+      "planner_action": 2,
+      "retained_successful_action": 1
+    },
+    {
+      "query_index": 25,
+      "seed": 290003,
+      "planner_action": 2,
+      "retained_successful_action": 0
+    },
+    {
+      "query_index": 50,
+      "seed": 290007,
+      "planner_action": 0,
+      "retained_successful_action": 6
+    },
+    {
+      "query_index": 55,
+      "seed": 290008,
+      "planner_action": 6,
+      "retained_successful_action": 2
+    },
+    {
+      "query_index": 66,
+      "seed": 290011,
+      "planner_action": 2,
+      "retained_successful_action": 6
+    },
+    {
+      "query_index": 89,
+      "seed": 290015,
+      "planner_action": 2,
+      "retained_successful_action": 1
+    },
+    {
+      "query_index": 90,
+      "seed": 290015,
+      "planner_action": 0,
+      "retained_successful_action": 4
+    },
+    {
+      "query_index": 145,
+      "seed": 290026,
+      "planner_action": 0,
+      "retained_successful_action": 4
+    },
+    {
+      "query_index": 161,
+      "seed": 290029,
+      "planner_action": 2,
+      "retained_successful_action": 6
+    },
+    {
+      "query_index": 162,
+      "seed": 290029,
+      "planner_action": 2,
+      "retained_successful_action": 6
+    },
+    {
+      "query_index": 166,
+      "seed": 290029,
+      "planner_action": 2,
+      "retained_successful_action": 6
+    }
+  ],
+  "adverse_masks_conflicting_with_retained_actions": 1,
+  "training_rollouts_identical_to_source": [
+    10000,
+    10001,
+    10002,
+    290000,
+    290001,
+    290003,
+    290004,
+    290005,
+    290006,
+    290007,
+    290008,
+    290009,
+    290010,
+    290011,
+    290012,
+    290013,
+    290014,
+    290015,
+    290016,
+    290017,
+    290018,
+    290019,
+    290020,
+    290021,
+    290022,
+    290024,
+    290025,
+    290026,
+    290027,
+    290029
+  ]
+}

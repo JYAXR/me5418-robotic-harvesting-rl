@@ -148,3 +148,26 @@ data and evaluation traces. The run is stopped at the two-round limit.
 ```bash
 python scripts/evaluate_dqn.py --checkpoint models/your_method_008_round2.pt --episodes 3 --seed 10000
 ```
+
+## Own-route attempt 009: geometry correction with retained behavior
+
+`your_method_009_geometry.pt` is a format-2 experimental policy combining the
+immutable attempt-004 source network with a geometry-aware residual policy.
+Use the separate loader below; its outputs are policy scores, not calibrated
+Q values. No new TD updates were performed. The source file remains intact.
+
+It retains all ten source training successes (10/33 overall, original 3/3) and
+improves development validation from 3/30 to 4/30, meeting the declared candidate
+eligibility rule. Training damage nevertheless increases from 11 to 12 scenes.
+The pilot stopped at 400 attempted updates: one 20-update block was accepted at
+scale 0.125 and 19 blocks were rolled back. The surviving Adam clock is 20.
+This is a provisional own-route candidate, not evidence of reliable generalization.
+
+See [attempt 009](../docs/experiments/your_method/009_geometry_retention/RESULTS.md)
+for the data, objective conflicts, complete evaluation, and model hashes.
+Optimizer/RNG state is in that attempt's `evidence/resume.pt`. Its 30 development
+validation scenes remain separate from training but are not an untouched final test.
+
+```bash
+python scripts/evaluate_recovery_policy.py --checkpoint models/your_method_009_geometry.pt --episodes 3 --seed 10000
+```

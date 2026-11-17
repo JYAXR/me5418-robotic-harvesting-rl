@@ -1,1 +1,5 @@
 evidence/** -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+audit.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+cli_verification.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+run.log -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+selection.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

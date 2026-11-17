@@ -1,0 +1,270 @@
+evidence: 1/33 collection seed 290000: False
+evidence: 2/33 collection seed 10000: True
+evidence: 3/33 collection seed 10001: True
+evidence: 4/33 collection seed 10002: True
+evidence: 5/33 collection seed 290001: False
+evidence: 6/33 collection seed 290003: True
+evidence: 7/33 collection seed 290002: False
+evidence: 8/33 collection seed 290007: True
+evidence: 9/33 collection seed 290004: False
+evidence: 10/33 collection seed 290006: False
+evidence: 11/33 collection seed 290009: False
+evidence: 12/33 collection seed 290008: True
+evidence: 13/33 collection seed 290005: False
+evidence: 14/33 collection seed 290011: True
+evidence: 15/33 collection seed 290010: False
+evidence: 16/33 collection seed 290015: True
+evidence: 17/33 collection seed 290013: False
+evidence: 18/33 collection seed 290012: False
+evidence: 19/33 collection seed 290014: False
+evidence: 20/33 collection seed 290016: False
+evidence: 21/33 collection seed 290020: False
+evidence: 22/33 collection seed 290019: False
+evidence: 23/33 collection seed 290018: False
+evidence: 24/33 collection seed 290017: False
+evidence: 25/33 collection seed 290024: False
+evidence: 26/33 collection seed 290023: False
+evidence: 27/33 collection seed 290021: False
+evidence: 28/33 collection seed 290026: True
+evidence: 29/33 collection seed 290025: False
+evidence: 30/33 collection seed 290022: False
+evidence: 31/33 collection seed 290028: False
+evidence: 32/33 collection seed 290029: True
+evidence: 33/33 collection seed 290027: False
+fit 100: root accuracy=0.2870, accepted blocks=1, scale=0.0
+fit 200: root accuracy=0.2870, accepted blocks=1, scale=0.0
+fit 300: root accuracy=0.2870, accepted blocks=1, scale=0.0
+fit 400: root accuracy=0.2870, accepted blocks=1, scale=0.0
+evidence: 1/63 evaluation seed 290000: False
+evidence: 2/63 evaluation seed 10001: True
+evidence: 3/63 evaluation seed 10000: True
+evidence: 4/63 evaluation seed 10002: True
+evidence: 5/63 evaluation seed 290003: True
+evidence: 6/63 evaluation seed 290001: False
+evidence: 7/63 evaluation seed 290004: False
+evidence: 8/63 evaluation seed 290007: True
+evidence: 9/63 evaluation seed 290002: False
+evidence: 10/63 evaluation seed 290006: False
+evidence: 11/63 evaluation seed 290009: False
+evidence: 12/63 evaluation seed 290008: True
+evidence: 13/63 evaluation seed 290005: False
+evidence: 14/63 evaluation seed 290011: True
+evidence: 15/63 evaluation seed 290010: False
+evidence: 16/63 evaluation seed 290015: True
+evidence: 17/63 evaluation seed 290013: False
+evidence: 18/63 evaluation seed 290012: False
+evidence: 19/63 evaluation seed 290014: False
+evidence: 20/63 evaluation seed 290016: False
+evidence: 21/63 evaluation seed 290020: False
+evidence: 22/63 evaluation seed 290021: False
+evidence: 23/63 evaluation seed 290018: False
+evidence: 24/63 evaluation seed 290017: False
+evidence: 25/63 evaluation seed 290019: False
+evidence: 26/63 evaluation seed 290024: False
+evidence: 27/63 evaluation seed 290023: False
+evidence: 28/63 evaluation seed 290026: True
+evidence: 29/63 evaluation seed 290025: False
+evidence: 30/63 evaluation seed 290022: False
+evidence: 31/63 evaluation seed 290028: False
+evidence: 32/63 evaluation seed 290029: True
+evidence: 33/63 evaluation seed 590001: False
+evidence: 34/63 evaluation seed 590002: False
+evidence: 35/63 evaluation seed 290027: False
+evidence: 36/63 evaluation seed 590000: False
+evidence: 37/63 evaluation seed 590003: False
+evidence: 38/63 evaluation seed 590005: False
+evidence: 39/63 evaluation seed 590006: False
+evidence: 40/63 evaluation seed 590007: False
+evidence: 41/63 evaluation seed 590004: False
+evidence: 42/63 evaluation seed 590010: False
+evidence: 43/63 evaluation seed 590012: False
+evidence: 44/63 evaluation seed 590008: False
+evidence: 45/63 evaluation seed 590009: False
+evidence: 46/63 evaluation seed 590014: True
+evidence: 47/63 evaluation seed 590011: False
+evidence: 48/63 evaluation seed 590013: False
+evidence: 49/63 evaluation seed 590017: True
+evidence: 50/63 evaluation seed 590018: False
+evidence: 51/63 evaluation seed 590015: False
+evidence: 52/63 evaluation seed 590016: False
+evidence: 53/63 evaluation seed 590021: True
+evidence: 54/63 evaluation seed 590022: False
+evidence: 55/63 evaluation seed 590023: False
+evidence: 56/63 evaluation seed 590024: True
+evidence: 57/63 evaluation seed 590019: False
+evidence: 58/63 evaluation seed 590020: False
+evidence: 59/63 evaluation seed 590025: False
+evidence: 60/63 evaluation seed 590027: False
+evidence: 61/63 evaluation seed 590026: False
+evidence: 62/63 evaluation seed 590029: False
+evidence: 63/63 evaluation seed 590028: False
+{
+  "training": {
+    "episodes": 33,
+    "successes": 10,
+    "success_seeds": [
+      10000,
+      10001,
+      10002,
+      290003,
+      290007,
+      290008,
+      290011,
+      290015,
+      290026,
+      290029
+    ],
+    "damage": 12,
+    "budget_failures": 11,
+    "reset_errors": 0,
+    "mean_return": -0.2799872016708332
+  },
+  "original_three": {
+    "episodes": 3,
+    "successes": 3,
+    "success_seeds": [
+      10000,
+      10001,
+      10002
+    ],
+    "damage": 0,
+    "budget_failures": 0,
+    "reset_errors": 0,
+    "mean_return": 107.60972937740439
+  },
+  "validation": {
+    "episodes": 30,
+    "successes": 4,
+    "success_seeds": [
+      590014,
+      590017,
+      590021,
+      590024
+    ],
+    "damage": 12,
+    "budget_failures": 14,
+    "reset_errors": 0,
+    "mean_return": -24.820316855944977
+  },
+  "baseline_training": {
+    "episodes": 33,
+    "successes": 10,
+    "success_seeds": [
+      10000,
+      10001,
+      10002,
+      290003,
+      290007,
+      290008,
+      290011,
+      290015,
+      290026,
+      290029
+    ],
+    "damage": 11,
+    "budget_failures": 12,
+    "reset_errors": 0,
+    "mean_return": -0.17558860179281702
+  },
+  "baseline_validation": {
+    "episodes": 30,
+    "successes": 3,
+    "success_seeds": [
+      590017,
+      590021,
+      590024
+    ],
+    "damage": 14,
+    "budget_failures": 13,
+    "reset_errors": 0,
+    "mean_return": -31.086666848013536
+  },
+  "fit": {
+    "method": "geometry_residual_retention",
+    "attempted_updates": 400,
+    "accepted_blocks": 1,
+    "new_td_updates": 0,
+    "historical_td_clock": 14000,
+    "training_seeds": [
+      10000,
+      10001,
+      10002,
+      290000,
+      290001,
+      290002,
+      290003,
+      290004,
+      290005,
+      290006,
+      290007,
+      290008,
+      290009,
+      290010,
+      290011,
+      290012,
+      290013,
+      290014,
+      290015,
+      290016,
+      290017,
+      290018,
+      290019,
+      290020,
+      290021,
+      290022,
+      290023,
+      290024,
+      290025,
+      290026,
+      290027,
+      290028,
+      290029
+    ],
+    "outputs_are_calibrated_q_values": false,
+    "initial_root_accuracy": 0.28703704476356506,
+    "final_root_accuracy": 0.28703704476356506,
+    "pilot_passed": false,
+    "retention_actions": 454,
+    "retention_seeds": [
+      10000,
+      10001,
+      10002,
+      290003,
+      290007,
+      290008,
+      290011,
+      290015,
+      290026,
+      290029
+    ],
+    "query_states": 167,
+    "verified_root_labels": 108,
+    "risk_labeled_states": 75,
+    "base_rows": 1440,
+    "model_sha256": "7a4100d51d1df74f25081593407683e6d637a0654ebeba82925d5ae60326d969",
+    "resume_sha256": "75744f01d89cd239335456d2925401bbd77c5a9d5e3817268f8713b440b5ba53",
+    "training_data_sha256": "95885fbf0aea1ce7018c9a372b4aba2f5b903d00f87b47cf064e83d2ce49ccb8",
+    "elapsed_seconds": 44.19021000000066,
+    "inherited_weights_unchanged": true,
+    "target_unchanged": true,
+    "all_anchor_actions_retained": true,
+    "optimizer_steps": [
+      20
+    ]
+  },
+  "query_count": 167,
+  "successful_routes": 108,
+  "policy_collection_actions": 3343,
+  "recovery_witness_actions": 2656,
+  "action_probe_steps": 1336,
+  "evaluation_actions": 6709,
+  "certification_actions": 3779,
+  "certification_calls": 89,
+  "cache_hits": 7,
+  "evaluation_overrides": 0,
+  "new_td_updates": 0,
+  "elapsed_seconds": 752.5233196999761,
+  "scope": "Single bounded multi-component intervention; not a component ablation or final held-out test.",
+  "all_source_successes_preserved": true,
+  "replacement_eligible": true
+}

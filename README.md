@@ -26,6 +26,14 @@ contains the controlled comparison, full traces, limitations and verification.
 
 ## Current progress and teammate handoff (16 November 2026)
 
+Own-branch update (17 November): [attempt 009](docs/experiments/your_method/009_geometry_retention/RESULTS.md)
+adds geometry features, full-trajectory recovery queries, and protected old
+actions. Its bounded pilot retains 10/33 training successes and original 3/3,
+with development validation 4/30 versus 3/30. Most proposed updates were rejected;
+the run stopped after 400 attempts, and reliable generalization remains unsolved.
+See the [independent experiment index](docs/experiments/your_method/README.md)
+and [candidate loader](models/README.md) before using the experimental checkpoint.
+
 Start with the [team handoff](docs/TEAM_HANDOFF.md) for the latest model, exact
 limitations, reproducible commands and parallel branch workflow.
 

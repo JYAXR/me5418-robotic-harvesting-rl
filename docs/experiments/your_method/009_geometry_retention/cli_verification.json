@@ -1,0 +1,55 @@
+{
+  "episodes": 3,
+  "seed": 10000,
+  "mean_return": 107.60972937740439,
+  "success_rate": 1.0,
+  "damage_rate": 0.0,
+  "budget_exhaustion_rate": 0.0,
+  "mean_success_steps": 42.666666666666664,
+  "mean_travel_distance": 1.6966651504238446,
+  "mean_peak_deformation": 0.0337777729347731,
+  "mean_distance_to_target": 0.02623197405288617,
+  "mean_stationary_fraction": 0.0,
+  "mean_blocked_fraction": 0.0,
+  "records": [
+    {
+      "seed": 10000,
+      "return": 107.5899344369769,
+      "steps": 38,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.6849985048174858,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.04908003658056259,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    {
+      "seed": 10001,
+      "return": 107.37772035218934,
+      "steps": 46,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.709998480975628,
+      "peak_deformation": 0.1013333188043193,
+      "distance_to_target": 0.006020338274538517,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    },
+    {
+      "seed": 10002,
+      "return": 107.8615333430469,
+      "steps": 44,
+      "success": true,
+      "damage": false,
+      "budget_exhausted": false,
+      "travel_distance": 1.6949984654784203,
+      "peak_deformation": 0.0,
+      "distance_to_target": 0.023595547303557396,
+      "stationary_steps": 0,
+      "blocked_steps": 0
+    }
+  ]
+}

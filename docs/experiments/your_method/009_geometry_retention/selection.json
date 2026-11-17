@@ -1,0 +1,18 @@
+{
+  "provisional_candidate": "models/your_method_009_geometry.pt",
+  "candidate_sha256": "7a4100d51d1df74f25081593407683e6d637a0654ebeba82925d5ae60326d969",
+  "source_comparator": "models/your_method_004_targeted.pt",
+  "eligible_by_predeclared_rule": true,
+  "pilot_continuation_allowed": false,
+  "all_source_successes_preserved": true,
+  "training_successes": 10,
+  "validation_successes": 4,
+  "tradeoff": "Training damage increases from 11 to 12; training mean return slightly decreases. Validation gains one scene.",
+  "scope": "Development selection only; final held-out test bank unused. No additional training round.",
+  "cli_verification": {
+    "episodes": 3,
+    "episode_actions": 128,
+    "all_metrics_match_main_evaluation": true,
+    "certification_cost": "Not profiled in this separate CLI smoke check."
+  }
+}
