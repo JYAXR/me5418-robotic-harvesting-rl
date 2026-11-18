@@ -27,6 +27,10 @@ where = ["src"]
 [tool.pytest.ini_options]
 pythonpath = ["src"]
 testpaths = ["tests"]
+addopts = "-m 'not historical_replay'"
+markers = [
+  "historical_replay: replays a frozen experiment using its original source and assets",
+]
 
 [tool.ruff]
 line-length = 100

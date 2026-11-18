@@ -35,6 +35,7 @@ def test_expanded_margin_preserves_weights_and_data_mean():
     assert float(r.core.recovery_term(recovery).detach()) == pytest.approx(0.8 / 117)
 
 
+@pytest.mark.historical_replay
 def test_exact_old_control_and_independent_expanded_step():
     torch.set_num_threads(1)
     source, batch, recovery, _ = r.source_inputs()
