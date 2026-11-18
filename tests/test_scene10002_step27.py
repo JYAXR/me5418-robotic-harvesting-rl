@@ -72,6 +72,7 @@ def test_rejects_removing_shared_step23_correction_from_both_arms():
         m.audit_pair(*pair)
 
 
+@pytest.mark.historical_replay
 def test_frozen_inputs_and_optimizer_guard():
     m.torch.set_num_threads(1)
     source, _, history, result, fork = m.inputs()

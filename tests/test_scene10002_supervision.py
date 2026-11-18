@@ -2,6 +2,7 @@
 import importlib.util
 from pathlib import Path
 
+import pytest
 import torch
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +24,7 @@ def test_only_three_margin_rows_change():
     assert changed == [98, 102, 103]
 
 
+@pytest.mark.historical_replay
 def test_control_and_independent_updates_preserve_exact_recipe():
     torch.set_num_threads(1)
     source, batch, recovery, _ = m.inputs()
