@@ -1,0 +1,602 @@
+[
+  {
+    "uploaded_path": "ARCHIVE_VALIDATION.json",
+    "archive_path": "research_results/20261118_generalization/ARCHIVE_VALIDATION.json",
+    "bytes": 2241,
+    "sha256": "b5b68dfa17a57c076a6f89f865696d515a39ad302ae6dca5e0a58c405d9b0fdc"
+  },
+  {
+    "uploaded_path": "coordinate_policy.py",
+    "archive_path": "research_results/20261118_generalization/coordinate_policy.py",
+    "bytes": 2924,
+    "sha256": "a5d41a8b1873876de3e34c6ad868555df9c8c298e49fef76223e43274525c86c"
+  },
+  {
+    "uploaded_path": "evaluate_model.py",
+    "archive_path": "research_results/20261118_generalization/evaluate_model.py",
+    "bytes": 2590,
+    "sha256": "06ede3a7564d310e5ad7514a5a9f4e42b10cc437bf4b2b782c3e98978f193c52"
+  },
+  {
+    "uploaded_path": "models.json",
+    "archive_path": "research_results/20261118_generalization/models.json",
+    "bytes": 2179,
+    "sha256": "00ac8e6960b14470006e01b8b04836879ec7807e96fd8a798cfeca211c47372e"
+  },
+  {
+    "uploaded_path": "models/control.pt",
+    "archive_path": "research_results/20261118_generalization/models/control.pt",
+    "bytes": 625597,
+    "sha256": "319ab3c5508ebc08c2eb396fc3f8aeb2e48705c7151cb8089a2afa24b97cf869"
+  },
+  {
+    "uploaded_path": "models/damage.pt",
+    "archive_path": "research_results/20261118_generalization/models/damage.pt",
+    "bytes": 625597,
+    "sha256": "beded89b1270a252ff05e5a77cfca47abb8e3b955bf1f9df68e58ff648d1121d"
+  },
+  {
+    "uploaded_path": "models/noise.pt",
+    "archive_path": "research_results/20261118_generalization/models/noise.pt",
+    "bytes": 625597,
+    "sha256": "f116acb76f1a04c32989f5afc12814128d9f8e7ec982ace1c3cba856aaf0305f"
+  },
+  {
+    "uploaded_path": "models/prepared.pt",
+    "archive_path": "research_results/20261118_generalization/models/prepared.pt",
+    "bytes": 625889,
+    "sha256": "1e37ec748d5244acbc394f5d6cf86068583eb18d242dfbc203c3c418021dd94f"
+  },
+  {
+    "uploaded_path": "models/retention_joint.pt",
+    "archive_path": "research_results/20261118_generalization/models/retention_joint.pt",
+    "bytes": 625597,
+    "sha256": "95476183a7c25b9897c626d763c945201ae48db4d12140f99ac79eef9ff00237"
+  },
+  {
+    "uploaded_path": "models/retention_staged.pt",
+    "archive_path": "research_results/20261118_generalization/models/retention_staged.pt",
+    "bytes": 625597,
+    "sha256": "81a21a94607218508f467e851283c360cf1602edd1164a2d72fd1ff503afb67a"
+  },
+  {
+    "uploaded_path": "models/stagnation.pt",
+    "archive_path": "research_results/20261118_generalization/models/stagnation.pt",
+    "bytes": 625597,
+    "sha256": "a45d2146bf5ceaa2cb691e9fe3f14ab0005ad9d094ce6f02d8f81257378897be"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__DOWNLOAD.md",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/DOWNLOAD.md",
+    "bytes": 2640,
+    "sha256": "d203c75dea0aadc89cd2db7ac86f1b4511408fb0faff63c0d4d9cbc75415edf7"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__README.md",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/README.md",
+    "bytes": 2535,
+    "sha256": "b3c02f5364e8da74ae36f5f7feb1b062d42e298ed8a219df0a95dbd893215928"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__RESULTS.md",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/RESULTS.md",
+    "bytes": 5272,
+    "sha256": "963481312fc5717ffd07a85923bf65341cbf688c35c62fa9d35962634721a471"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__SIMPLE_RESULTS.md",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/SIMPLE_RESULTS.md",
+    "bytes": 6037,
+    "sha256": "fd230eb6b766b264b1e9813aa1ba408f289bda215ae1af04d64a7b3f398600a2"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__TESTING.md",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/TESTING.md",
+    "bytes": 1184,
+    "sha256": "8ec4e3221aab00815ee9b6d81b2c49fad58c4ac8ff42d2f30c690f6569bc5a00"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__audit_and_summarize.py",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/audit_and_summarize.py",
+    "bytes": 10812,
+    "sha256": "287912437789f0d63916bef65ab03d1ee386cc5eb0f0838d4df3b01d8667ca90"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__catalogue.py",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/catalogue.py",
+    "bytes": 5039,
+    "sha256": "876d1473b7493d460de8808e00de63cf3297dfffe62f16a79b82a59233dc6dee"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__environment-evaluation.yml",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/environment-evaluation.yml",
+    "bytes": 348,
+    "sha256": "a475a2194053364a3076beffe09006f0c57273dd410db365b8beb1cd9e1218e9"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__package.py",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/package.py",
+    "bytes": 1842,
+    "sha256": "053ae51bc8ea4c7a2752d136296100be48e3ee5c04743d55d9212a0500781ac5"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__audit.json",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/audit.json",
+    "bytes": 1146,
+    "sha256": "c749a5bc091a124b47d9be2bf63f29a3e81276a2a80394cda66c23a8c7db4a76"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__comparison.csv",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/comparison.csv",
+    "bytes": 3105,
+    "sha256": "4b54f3a0af9a9c84c1abe9f5b63097412feafee67f5cae76854b01e471a1724c"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__controlled_comparisons.json",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/controlled_comparisons.json",
+    "bytes": 18554,
+    "sha256": "0ac55f521b51b5718a3b9319e38393fd5745381f6d44b688451be5f028d94f33"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__paired_vs_original034.json",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/paired_vs_original034.json",
+    "bytes": 28847,
+    "sha256": "d0210e350bde1347a28522569356f14be673c1b461d6fbe3ec2d51932aea0ba2"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__per_episode.csv",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/per_episode.csv",
+    "bytes": 580255,
+    "sha256": "b955067a966bc2a162f6dd66711aeb3f01b572aec4e6aa8b134bb2e49f237080"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__protocol.json",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/protocol.json",
+    "bytes": 18109,
+    "sha256": "78f380346e9a83c585b3e2593ef559f5c9b10747a638293112fc4039c9a20498"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/status.json",
+    "bytes": 63,
+    "sha256": "475e7907ed7567450584b1e7f81cdebab6b77e3c663343f4bdc2673a5e6b383d"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__results__run01__summary.json",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/results/run01/summary.json",
+    "bytes": 22426,
+    "sha256": "8291ce2ebdcd690cb72ed863a0a5fa63ce3411313e285fce7f06361dee1e131e"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__run.py",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/run.py",
+    "bytes": 11362,
+    "sha256": "b76ed44d0094c2e600788fa836d88b23ddd4680f7206b492dd2e85be193f7533"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__test_comparison.py",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/test_comparison.py",
+    "bytes": 1983,
+    "sha256": "8704cef66e16a76ce811c04d39f15c2d99605e0f182e870a57abe5fa07f1530e"
+  },
+  {
+    "uploaded_path": "history/final24_comparison__test_summary.py",
+    "archive_path": "research_results/20261118_generalization/studies/final24_comparison/test_summary.py",
+    "bytes": 1649,
+    "sha256": "5e6a191bcaef494986d82c93014ea3f233adff439dfe421ed6d2b5e346512ac0"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__README.md",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/README.md",
+    "bytes": 4404,
+    "sha256": "33593d45df95255520240047f26ec58cee6bb14f19fedf45fca674dc28e18a37"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__RESULTS.md",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/RESULTS.md",
+    "bytes": 4911,
+    "sha256": "e53bcf636da53ff3cc42b202e0d7c2b947e174e2d63acd32bd0b85fcf2107b0d"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__artifact_manifest.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/artifact_manifest.json",
+    "bytes": 234911,
+    "sha256": "2f402f8b0a81f072fe49eb701b238597fe2e8640c997e8f00df0f49aabeec6c2"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__audit.py",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/audit.py",
+    "bytes": 6732,
+    "sha256": "ab4c51cc207531a056040482eae4ef15ef7670ea2a3a93946c45c5b2e454e934"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__comparison.csv",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/comparison.csv",
+    "bytes": 539,
+    "sha256": "d2a70ed8ca04513f0ed89c5dd2ed3de3aa3ca815c3b3865980d3b1bf93b25f09"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__evaluate.py",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/evaluate.py",
+    "bytes": 7511,
+    "sha256": "d94f5894b412422eea97cea2fb719771a1ecff8f169315b487abe2285e3bc650"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__report.py",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/report.py",
+    "bytes": 7049,
+    "sha256": "f3eb6784a57c8c07497ee38fffdf94cab729f931563a6d10185a257dca06f217"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__audit.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/audit.json",
+    "bytes": 1079,
+    "sha256": "23a60e8283a41066e239edabea90cdc4559902a623810cf1cc7b2f1433bf46af"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__control__done.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/control/done.json",
+    "bytes": 353,
+    "sha256": "4e0ba9f8b8f90ef7164bf9d491be0926a5d95e3ed70f1c8a3b17fda343105040"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__control__latest.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/control/latest.json",
+    "bytes": 396,
+    "sha256": "b599a33441f2692aa1f07c91a328a81f6d442d267cde485182f372808576cf2c"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__control__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/control/status.json",
+    "bytes": 80,
+    "sha256": "031a89304d3ebbf60f15c1d7426ed342585181a0180ffda13b09f298e403c6c4"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__control__training.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/control/training.json",
+    "bytes": 9503,
+    "sha256": "b0975c995208971f0a1397f3a48eaa939dbafe0145b1d880463d585f272d3883"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__control__updates.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/control/updates.json",
+    "bytes": 611390,
+    "sha256": "fbf2730cc872af0d1359a2c366033609b0f0a917172b0b3f4f5d22655e2499e0"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__damage__done.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/damage/done.json",
+    "bytes": 352,
+    "sha256": "b9cb8b0d087741576e0e5d1d9b62ddc8e74314964bba8519d8f288c4d6eca380"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__damage__latest.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/damage/latest.json",
+    "bytes": 396,
+    "sha256": "12108ccda23873f63fa26f2972745b506d4363c34bc9a2222b3c07d8fef8062c"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__damage__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/damage/status.json",
+    "bytes": 80,
+    "sha256": "031a89304d3ebbf60f15c1d7426ed342585181a0180ffda13b09f298e403c6c4"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__damage__training.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/damage/training.json",
+    "bytes": 9503,
+    "sha256": "b0975c995208971f0a1397f3a48eaa939dbafe0145b1d880463d585f272d3883"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__damage__updates.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/damage/updates.json",
+    "bytes": 611216,
+    "sha256": "483a5e899474a5277f6eba25ee6128a3a88807421a04c06d0ec14e7f1f6384e9"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__damage_penalty_diagnostic.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/damage_penalty_diagnostic.json",
+    "bytes": 366,
+    "sha256": "497e2abbbeb4f6b616b53785dbef9a3cecd6026f1695cf8ee599e5c27f4c4003"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__evaluation__per_episode.csv",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/evaluation/per_episode.csv",
+    "bytes": 169009,
+    "sha256": "6b31c755f8e0245aa50a4c09c0581c028a7e4b9fcb63c7958f4662c74d5aae7b"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__evaluation__protocol.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/evaluation/protocol.json",
+    "bytes": 4013,
+    "sha256": "4c7fb68ac6b88b783732b4407c899dcd24f06480a8240a7c6e7c4642a61696ad"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__evaluation__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/evaluation/status.json",
+    "bytes": 62,
+    "sha256": "22756efce2d69f5a495c07f55820005ddbc047e7ddafb292459b56132c276c7d"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__evaluation__summary.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/evaluation/summary.json",
+    "bytes": 11239,
+    "sha256": "c845f9a9d1dd7c162865021e7aaec8fd54b52c52047a20d48ef657275d888c0c"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__noise__done.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/noise/done.json",
+    "bytes": 351,
+    "sha256": "335fc527539f4922ff2a5e8fa9bd6f644e60699a7ffd0c20bd2b913b39ac9801"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__noise__latest.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/noise/latest.json",
+    "bytes": 396,
+    "sha256": "323e8a1aae8a6e999f125559f17ba6a9294a909e19aac4fa933392cc3f0d6b09"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__noise__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/noise/status.json",
+    "bytes": 80,
+    "sha256": "031a89304d3ebbf60f15c1d7426ed342585181a0180ffda13b09f298e403c6c4"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__noise__training.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/noise/training.json",
+    "bytes": 9503,
+    "sha256": "94abab64d0a75e43745ce87b52e633f1bb3f15a6a49c21ae2fef732712b7ed91"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__noise__updates.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/noise/updates.json",
+    "bytes": 606115,
+    "sha256": "d8ecb74694455a5fcb3b379adb4fd92f2c2d53d368cede4a167401b05cc3a6df"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__noise_pairing.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/noise_pairing.json",
+    "bytes": 17030,
+    "sha256": "666d03a23ac31a96b495d6c281005fd949378f384b86dd2ffb1ad0187540886a"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__protocol.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/protocol.json",
+    "bytes": 12302,
+    "sha256": "8a4f1b8b7485af58f6abcb668f7affddc7236d7a9ee68327fe2a12e43c6b7f1f"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__stagnation__done.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/stagnation/done.json",
+    "bytes": 352,
+    "sha256": "99b320920046709c43b8e6aec699471c8f2758a435a362e3d6aaa870ee79a190"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__stagnation__latest.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/stagnation/latest.json",
+    "bytes": 396,
+    "sha256": "23fccff2d5190583dd9e9abf27d8e855dd5d9e700bb89512f27179199277fe3d"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__stagnation__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/stagnation/status.json",
+    "bytes": 80,
+    "sha256": "031a89304d3ebbf60f15c1d7426ed342585181a0180ffda13b09f298e403c6c4"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__stagnation__training.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/stagnation/training.json",
+    "bytes": 9504,
+    "sha256": "cfe149eba8510622c7a7fbae706be18d35c5bdc5bbc06fb92e9c404418313692"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__stagnation__updates.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/stagnation/updates.json",
+    "bytes": 610884,
+    "sha256": "dfa1eec6ff9206bf8e0a4538d65bd152d51273ea1aba97ee07ee20834189b810"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__results__training_complete.json",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/results/training_complete.json",
+    "bytes": 1558,
+    "sha256": "f4f8b533c8342a7e0c034ee18aef2988ee57ebb5e38577b3ba707e23fd918660"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__study.py",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/study.py",
+    "bytes": 13457,
+    "sha256": "1f80ff654da70e32c28fb06c88545301fbdb403e895060d9c5886249e0dbed32"
+  },
+  {
+    "uploaded_path": "history/four_arm_rl__test_study.py",
+    "archive_path": "research_results/20261118_generalization/studies/four_arm_rl/test_study.py",
+    "bytes": 2978,
+    "sha256": "a3aff14b8d4491edc1665522ef25554e2b9146e3fb198d92cd8b7c75e019bb91"
+  },
+  {
+    "uploaded_path": "history/prepared_confirmation__README.md",
+    "archive_path": "research_results/20261118_generalization/studies/prepared_confirmation/README.md",
+    "bytes": 2312,
+    "sha256": "d7f7c73450a4bf4328f0fa9bddca47b9a36348e5a27ce6e8be18719647d10e25"
+  },
+  {
+    "uploaded_path": "history/prepared_confirmation__RESULTS.md",
+    "archive_path": "research_results/20261118_generalization/studies/prepared_confirmation/RESULTS.md",
+    "bytes": 2408,
+    "sha256": "276844f201ad1170ff5feed78bc7c2dc56ac20f668cc5a154215d9a6df0705b6"
+  },
+  {
+    "uploaded_path": "history/prepared_confirmation__results__per_episode.csv",
+    "archive_path": "research_results/20261118_generalization/studies/prepared_confirmation/results/per_episode.csv",
+    "bytes": 15924,
+    "sha256": "4c8b135e85384f526acc93b317851515fd89db6e72491cc04777b3170fc86cda"
+  },
+  {
+    "uploaded_path": "history/prepared_confirmation__results__protocol.json",
+    "archive_path": "research_results/20261118_generalization/studies/prepared_confirmation/results/protocol.json",
+    "bytes": 6874,
+    "sha256": "2675cf09737842e132c994e4213ab7db382c704c5975eaf87852656090643849"
+  },
+  {
+    "uploaded_path": "history/prepared_confirmation__results__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/prepared_confirmation/results/status.json",
+    "bytes": 9262,
+    "sha256": "bfaa72f80149489e52d804b0be3991775472d1d801e693317298a1bce5d59570"
+  },
+  {
+    "uploaded_path": "history/prepared_confirmation__results__summary.json",
+    "archive_path": "research_results/20261118_generalization/studies/prepared_confirmation/results/summary.json",
+    "bytes": 8961,
+    "sha256": "c7c66fa7a1db2e9dc61e97f721544441b9460d6db96acc43f30cda944096b441"
+  },
+  {
+    "uploaded_path": "history/prepared_confirmation__run.py",
+    "archive_path": "research_results/20261118_generalization/studies/prepared_confirmation/run.py",
+    "bytes": 6782,
+    "sha256": "3c647bdd19296e661c83ad2b7bab6f0a15a0535f64e491a7e1fc40846969b4c8"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__DOWNLOAD.md",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/DOWNLOAD.md",
+    "bytes": 3113,
+    "sha256": "de9888460d9a6b2c0d4ac589bfdf746ea3ccf2b6a6fa06a41f41aa5ea9ba856e"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__README.md",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/README.md",
+    "bytes": 2859,
+    "sha256": "7ec216657321e9740bc83e74eecd6bf265467675d49786be49375b686886b94d"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__RESULTS.md",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/RESULTS.md",
+    "bytes": 5791,
+    "sha256": "c313e3406897e64e0f73b368fd694be4c28d9cffcc1492df38933a066787edd1"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__TESTING.md",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/TESTING.md",
+    "bytes": 1034,
+    "sha256": "bc8c77644c6f7147f9a6f54b088dfef339088e9ec1bcc9f1d9d8a5f013622312"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__audit.py",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/audit.py",
+    "bytes": 6962,
+    "sha256": "c6dd6287061e632a7d19b9c2834a37045fda3dfdcde6d9552457bd4f1f9bc15f"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__common.py",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/common.py",
+    "bytes": 7918,
+    "sha256": "23cb06bcf13f2e24075fed9ce69de898f4dc92d6614c720927cbe6a0191dbfd0"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__package.py",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/package.py",
+    "bytes": 3471,
+    "sha256": "73244be149ddc0e15924f140c65fbf7b5bb742ea51244cd44d3bc59a921ce2a8"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__results__run01__audit.json",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/results/run01/audit.json",
+    "bytes": 1391,
+    "sha256": "1f8c9a6dd764034e7350e8ddb15ef023cb8382366394a463a33244f69bdd655a"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__results__run01__full_joint__selection.json",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/results/run01/full_joint/selection.json",
+    "bytes": 1235,
+    "sha256": "bae458f79d83f280074f56468f3f231147b7d90d9f7d07f9bd77bfd31177c202"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__results__run01__full_staged__selection.json",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/results/run01/full_staged/selection.json",
+    "bytes": 1230,
+    "sha256": "37adc0ba4e692f7152606e039cd1d47156283e0bf64a7572487ad980b2222c4e"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__results__run01__preparation__done.json",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/results/run01/preparation/done.json",
+    "bytes": 539,
+    "sha256": "8d4844f9d6af975fb412782670e636d372bd28135248dcd30ff980ddec94474c"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__results__run01__protocol.json",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/results/run01/protocol.json",
+    "bytes": 9195,
+    "sha256": "22a46d396a4c50e82df0080c18f81346d6e7fd4d63bcffb471576f2d446506e4"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__results__run01__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/results/run01/status.json",
+    "bytes": 26,
+    "sha256": "ae79c92e86bbcea5e9d1b2fd201de9c35c5ce93d1c1ecac55d88ccc5de9f046f"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__results__run01__summary.json",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/results/run01/summary.json",
+    "bytes": 31413,
+    "sha256": "65e81627e648ee9c2ee39e8ba38b30aefffe94bf49d5185e52f7e23de4cb4d11"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__run.py",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/run.py",
+    "bytes": 15902,
+    "sha256": "97cbd22ffd4ed0c0000e52aa1a8a23dbb5c313c073a2ec88eef6c353f6e7b624"
+  },
+  {
+    "uploaded_path": "history/retention_rebuild__test_rebuild.py",
+    "archive_path": "research_results/20261118_generalization/studies/retention_rebuild/test_rebuild.py",
+    "bytes": 4343,
+    "sha256": "4c6391026bfc59ef1b344103cd7f0dc8a5a25053ebdd70b5279b67b18e9b63fd"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__README.md",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/README.md",
+    "bytes": 2950,
+    "sha256": "771f2147f9d669f9ee17d13203b24fee749c2d9bd4b7c0c7ede4d92fe5ef9395"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__RESULTS.md",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/RESULTS.md",
+    "bytes": 2976,
+    "sha256": "42ff700a250af0160e2cba223fb1f33bbaf0941b3eb12c57d9ca3f3876ed5c0b"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__results__known_three_reproduction.json",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/results/known_three_reproduction.json",
+    "bytes": 64203,
+    "sha256": "79492c14b982e34309127eb6d8cdf38a1a34c3cab14c22fe96b6f5daef835b7f"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__results__paired_comparison.csv",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/results/paired_comparison.csv",
+    "bytes": 5541,
+    "sha256": "2ee2a20e186bfd21dec5aaa2fcce8030cff3e9580ebbf7fedafe2b1cb99ae90d"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__results__protocol.json",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/results/protocol.json",
+    "bytes": 30522,
+    "sha256": "d05afaabc107d3c8303c733fbf96e2f7f1369771a823ccdfbf7944ccfd7e5f30"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__results__status.json",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/results/status.json",
+    "bytes": 46,
+    "sha256": "c13220dc6f563acccc9eb8a4d4a0b35bc1ff95f047d8437c37a0d0c078d97b8a"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__results__summary.json",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/results/summary.json",
+    "bytes": 9439,
+    "sha256": "d82c0cdc4e3fa9a77836baa84f435acd0dfb832cd8f134beba26076905fb9d1b"
+  },
+  {
+    "uploaded_path": "history/teammate009_comparison__run.py",
+    "archive_path": "research_results/20261118_generalization/studies/teammate009_comparison/run.py",
+    "bytes": 8832,
+    "sha256": "0ee8902a1c69f84ee473aa1c6aae14ed416fe17100201c58a34a67afcbb474fc"
+  }
+]

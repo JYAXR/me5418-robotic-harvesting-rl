@@ -1,0 +1,44 @@
+{
+  "prepared": {
+    "file": "models/prepared.pt",
+    "sha256": "1e37ec748d5244acbc394f5d6cf86068583eb18d242dfbc203c3c418021dd94f",
+    "source": "experiments/retention_rebuild_20261118/results/run01/preparation/prepared.pt",
+    "note": "Original prepared relative-coordinate policy; not promoted."
+  },
+  "retention_joint": {
+    "file": "models/retention_joint.pt",
+    "sha256": "95476183a7c25b9897c626d763c945201ae48db4d12140f99ac79eef9ff00237",
+    "source": "experiments/retention_rebuild_20261118/results/run01/full_joint/checkpoint_006000/model.pt",
+    "note": "Earlier selected joint-continuation endpoint; not the latest control."
+  },
+  "retention_staged": {
+    "file": "models/retention_staged.pt",
+    "sha256": "81a21a94607218508f467e851283c360cf1602edd1164a2d72fd1ff503afb67a",
+    "source": "experiments/retention_rebuild_20261118/results/run01/full_staged/checkpoint_003000/model.pt",
+    "note": "Earlier selected 3000-update supervision-stage endpoint; not the latest stagnation arm."
+  },
+  "control": {
+    "file": "models/control.pt",
+    "sha256": "319ab3c5508ebc08c2eb396fc3f8aeb2e48705c7151cb8089a2afa24b97cf869",
+    "source": "experiments/prepared_rl_four_arms_20261118/results/control/final.pt",
+    "note": "Latest fixed final online RL arm: control; not promoted."
+  },
+  "stagnation": {
+    "file": "models/stagnation.pt",
+    "sha256": "a45d2146bf5ceaa2cb691e9fe3f14ab0005ad9d094ce6f02d8f81257378897be",
+    "source": "experiments/prepared_rl_four_arms_20261118/results/stagnation/final.pt",
+    "note": "Latest fixed final online RL arm: stagnation; not promoted."
+  },
+  "damage": {
+    "file": "models/damage.pt",
+    "sha256": "beded89b1270a252ff05e5a77cfca47abb8e3b955bf1f9df68e58ff648d1121d",
+    "source": "experiments/prepared_rl_four_arms_20261118/results/damage/final.pt",
+    "note": "Latest fixed final online RL arm: damage; not promoted."
+  },
+  "noise": {
+    "file": "models/noise.pt",
+    "sha256": "f116acb76f1a04c32989f5afc12814128d9f8e7ec982ace1c3cba856aaf0305f",
+    "source": "experiments/prepared_rl_four_arms_20261118/results/noise/final.pt",
+    "note": "Latest fixed final online RL arm: noise; not promoted."
+  }
+}

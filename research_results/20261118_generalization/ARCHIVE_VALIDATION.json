@@ -1,0 +1,91 @@
+{
+  "purpose": "Read-only post-copy smoke check, not a new generalization study.",
+  "checks": [
+    {
+      "model": "prepared",
+      "matched_saved_metrics": true,
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "steps": 35,
+      "raw_return": 107.61081182360648,
+      "travel": 1.5399986431002617,
+      "peak_deformation": 0.0
+    },
+    {
+      "model": "retention_joint",
+      "matched_saved_metrics": true,
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "steps": 35,
+      "raw_return": 107.61081182360648,
+      "travel": 1.5399986431002617,
+      "peak_deformation": 0.0
+    },
+    {
+      "model": "retention_staged",
+      "matched_saved_metrics": true,
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "steps": 35,
+      "raw_return": 107.61081182360648,
+      "travel": 1.5399986431002617,
+      "peak_deformation": 0.0
+    },
+    {
+      "model": "control",
+      "matched_saved_metrics": true,
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "steps": 35,
+      "raw_return": 107.61081182360648,
+      "travel": 1.5399986431002617,
+      "peak_deformation": 0.0
+    },
+    {
+      "model": "stagnation",
+      "matched_saved_metrics": true,
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "steps": 35,
+      "raw_return": 107.78825944662093,
+      "travel": 1.5749986097216606,
+      "peak_deformation": 0.0
+    },
+    {
+      "model": "damage",
+      "matched_saved_metrics": true,
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "steps": 35,
+      "raw_return": 107.61081182360648,
+      "travel": 1.5399986431002617,
+      "peak_deformation": 0.0
+    },
+    {
+      "model": "noise",
+      "matched_saved_metrics": true,
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "steps": 35,
+      "raw_return": 107.61081182360648,
+      "travel": 1.5399986431002617,
+      "peak_deformation": 0.0
+    }
+  ],
+  "copied_files_hash_verified": 1936,
+  "historical_per_episode_rows": 3192
+}
