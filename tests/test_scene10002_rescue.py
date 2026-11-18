@@ -64,6 +64,7 @@ def test_first_fork_requires_identical_state_but_ignores_later_trajectory():
         m.first_fork(rows, reference)
 
 
+@pytest.mark.historical_replay
 def test_full_snapshot_matches_policy_and_rejects_optimizer_steps():
     # Match the source run's reduction order for exact optimizer-summary norms.
     m.torch.set_num_threads(1)

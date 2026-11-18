@@ -718,3 +718,16 @@ behaviour of natural openings versus soft gaps.
 The comparison scripts can generate paired diagnostics across matched seeds.
 Final experiments still require a trained DQN, held-out seeds, noise tests, and
 sensitivity to gap width, stiffness, and damage thresholds.
+
+### Historical replay tests
+
+The five tests marked `historical_replay` run separately from the default suite.
+Prepare an isolated replay checkout with the source snapshot recorded in attempt
+030's provenance and the original experiment assets at the paths declared by the
+replay scripts. These include the full Step 6 training checkpoint and the
+original demonstration dataset. The replay scripts verify the recorded SHA-256
+digests before using these inputs.
+
+```bash
+python -m pytest -m historical_replay
+```

@@ -12,8 +12,8 @@ from me5418_harvesting.evaluation import scene_feasibility
 
 def test_reset_keeps_all_reference_checks_and_retries(monkeypatch):
     results = iter([
-        {"success": False, "reason": "planner_found_no_route"},
-        {"success": True, "reason": "success"},
+        {"success": False, "reason": "planner_found_no_route", "steps": 0},
+        {"success": True, "reason": "success", "steps": 3},
     ])
     monkeypatch.setattr(scene_feasibility, "verify_reference_route", lambda env: next(results))
     env = HarvestingEnv({"verify_reference_route": True, "reference_max_attempts": 2})
@@ -21,6 +21,7 @@ def test_reset_keeps_all_reference_checks_and_retries(monkeypatch):
     assert info["reference_route_attempts"] == 2
     assert not info["reference_route_checks"][0]["success"]
     assert info["reference_route"]["success"]
+    assert env.last_reset_profile["certification_actions"] == 3
     assert env.step_count == 0 and observation[-1] == 1
     env.close()
 
@@ -30,7 +31,7 @@ def test_reference_retry_exhaustion_does_not_leave_a_usable_scene(monkeypatch):
 
     def fail(env):
         calls.append(1)
-        return {"success": False, "reason": "planner_found_no_route"}
+        return {"success": False, "reason": "planner_found_no_route", "steps": 0}
 
     monkeypatch.setattr(scene_feasibility, "verify_reference_route", fail)
     env = HarvestingEnv({"verify_reference_route": True, "reference_max_attempts": 2})
