@@ -1,0 +1,6 @@
+{
+  "final_network_exact_equal": true,
+  "control_damage_transitions": 52,
+  "final_network_huber_derivatives_equal_on_control_damage_rows": 52,
+  "interpretation": "Post-hoc derivative check on final-network terminal damage predictions. Huber derivative is capped outside absolute TD error1. This does not independently replay every historical training gradient."
+}

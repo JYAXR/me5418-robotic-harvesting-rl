@@ -1,0 +1,54 @@
+{
+  "selected": {
+    "label": "checkpoint_006000",
+    "path": "experiments/retention_rebuild_20261118/results/run01/full_joint/checkpoint_006000/model.pt",
+    "score": [
+      4,
+      -6,
+      -1583
+    ],
+    "new_td_updates": 6000
+  },
+  "candidates": [
+    {
+      "label": "baseline",
+      "path": "experiments/retention_rebuild_20261118/results/run01/preparation/prepared.pt",
+      "score": [
+        2,
+        -5,
+        -2036
+      ],
+      "new_td_updates": 0
+    },
+    {
+      "label": "checkpoint_003000",
+      "path": "experiments/retention_rebuild_20261118/results/run01/full_joint/checkpoint_003000/model.pt",
+      "score": [
+        0,
+        -4,
+        -2516
+      ],
+      "new_td_updates": 3000
+    },
+    {
+      "label": "checkpoint_005000",
+      "path": "experiments/retention_rebuild_20261118/results/run01/full_joint/checkpoint_005000/model.pt",
+      "score": [
+        2,
+        -6,
+        -2021
+      ],
+      "new_td_updates": 5000
+    },
+    {
+      "label": "checkpoint_006000",
+      "path": "experiments/retention_rebuild_20261118/results/run01/full_joint/checkpoint_006000/model.pt",
+      "score": [
+        4,
+        -6,
+        -1583
+      ],
+      "new_td_updates": 6000
+    }
+  ]
+}

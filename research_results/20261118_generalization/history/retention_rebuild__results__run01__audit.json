@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "preparation_updates": 52000,
+  "followup_updates": 12000,
+  "total_new_gradient_updates": 64000,
+  "final_rollouts": 195,
+  "reload_checks": [
+    {
+      "name": "full_joint",
+      "seed": 1182000,
+      "exact_trace_match": true
+    },
+    {
+      "name": "full_staged",
+      "seed": 1182000,
+      "exact_trace_match": true
+    }
+  ],
+  "historical_model_hash_comparison": {
+    "prepared": {
+      "actual": "1e37ec748d5244acbc394f5d6cf86068583eb18d242dfbc203c3c418021dd94f",
+      "historical": "b849bacf5ed5261c8bffeca6aab5982f5690c11297810f05335b22980a5e8ef2",
+      "exact_file_match": false
+    },
+    "full_joint": {
+      "actual": "95476183a7c25b9897c626d763c945201ae48db4d12140f99ac79eef9ff00237",
+      "historical": "caca5ed74fb71a3e2a106da6856c1ccf876b91c2077af708900c0db633b7fba7",
+      "exact_file_match": false
+    },
+    "full_staged": {
+      "actual": "81a21a94607218508f467e851283c360cf1602edd1164a2d72fd1ff503afb67a",
+      "historical": "5bc1df2d00088abc8da3366a729c1a97188a9528b55c06405cf4d4210c2ba830",
+      "exact_file_match": false
+    }
+  },
+  "scope": "Checks source/input/checkpoint hashes, data continuity/returns, clocks, recorded objectives, selection and trajectories; reloads two episodes. Does not independently rerun all training.",
+  "evaluation_role": "Reproduction on previously used seeds, not new independent evidence"
+}

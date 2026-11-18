@@ -1,0 +1,12 @@
+{
+  "arm": "noise",
+  "model_sha256": "f116acb76f1a04c32989f5afc12814128d9f8e7ec982ace1c3cba856aaf0305f",
+  "interactions": 13200,
+  "updates": 3285,
+  "total_td_counter": 15285,
+  "random_actions": 1615,
+  "training_success_episodes": 97,
+  "training_damage_episodes": 62,
+  "stagnant_transitions": 2780,
+  "seconds_this_process": 692.1045000600006
+}

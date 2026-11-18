@@ -1,0 +1,14 @@
+{
+  "model_sha256": "1e37ec748d5244acbc394f5d6cf86068583eb18d242dfbc203c3c418021dd94f",
+  "state_sha256": "e20bad927a4f2d1bf478b3a790d8dca2a4731741ffe8be104652560dce4f1cf5",
+  "historical_model_sha256": "b849bacf5ed5261c8bffeca6aab5982f5690c11297810f05335b22980a5e8ef2",
+  "training_probe": {
+    "rows": 1440,
+    "action_agreement": 1440,
+    "margin_loss": 0.004995393566787243,
+    "chosen_q_mean": 84.36911010742188,
+    "return_mae": 0.7244947552680969
+  },
+  "gradient_updates": 52000,
+  "historical_model_exact_file_match": false
+}

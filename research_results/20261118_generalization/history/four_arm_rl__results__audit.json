@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "training": {
+    "control": {
+      "transitions": 13200,
+      "updates": 3285,
+      "random_actions": 1615,
+      "damage_transitions": 52,
+      "stagnant_transitions": 2890
+    },
+    "stagnation": {
+      "transitions": 13200,
+      "updates": 3285,
+      "random_actions": 1615,
+      "damage_transitions": 78,
+      "stagnant_transitions": 2705
+    },
+    "damage": {
+      "transitions": 13200,
+      "updates": 3285,
+      "random_actions": 1615,
+      "damage_transitions": 52,
+      "stagnant_transitions": 2890
+    },
+    "noise": {
+      "transitions": 13200,
+      "updates": 3285,
+      "random_actions": 1615,
+      "damage_transitions": 62,
+      "stagnant_transitions": 2780
+    }
+  },
+  "evaluation_episodes": 965,
+  "paired_initial_states": true,
+  "frozen_inputs": true,
+  "trajectory_and_reward_accounting": true,
+  "original_optimizer_preserved_and_advanced": true,
+  "limitation": "Offline audit plus ten fresh evaluation reloads. Does not independently replay every training optimizer step or every training physics transition."
+}

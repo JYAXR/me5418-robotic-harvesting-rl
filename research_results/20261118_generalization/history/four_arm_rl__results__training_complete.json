@@ -1,0 +1,50 @@
+{
+  "control": {
+    "arm": "control",
+    "model_sha256": "319ab3c5508ebc08c2eb396fc3f8aeb2e48705c7151cb8089a2afa24b97cf869",
+    "interactions": 13200,
+    "updates": 3285,
+    "total_td_counter": 15285,
+    "random_actions": 1615,
+    "training_success_episodes": 97,
+    "training_damage_episodes": 52,
+    "stagnant_transitions": 2890,
+    "seconds_this_process": 721.6420978570004
+  },
+  "stagnation": {
+    "arm": "stagnation",
+    "model_sha256": "a45d2146bf5ceaa2cb691e9fe3f14ab0005ad9d094ce6f02d8f81257378897be",
+    "interactions": 13200,
+    "updates": 3285,
+    "total_td_counter": 15285,
+    "random_actions": 1615,
+    "training_success_episodes": 89,
+    "training_damage_episodes": 78,
+    "stagnant_transitions": 2705,
+    "seconds_this_process": 697.588258627
+  },
+  "damage": {
+    "arm": "damage",
+    "model_sha256": "beded89b1270a252ff05e5a77cfca47abb8e3b955bf1f9df68e58ff648d1121d",
+    "interactions": 13200,
+    "updates": 3285,
+    "total_td_counter": 15285,
+    "random_actions": 1615,
+    "training_success_episodes": 97,
+    "training_damage_episodes": 52,
+    "stagnant_transitions": 2890,
+    "seconds_this_process": 713.9766156399983
+  },
+  "noise": {
+    "arm": "noise",
+    "model_sha256": "f116acb76f1a04c32989f5afc12814128d9f8e7ec982ace1c3cba856aaf0305f",
+    "interactions": 13200,
+    "updates": 3285,
+    "total_td_counter": 15285,
+    "random_actions": 1615,
+    "training_success_episodes": 97,
+    "training_damage_episodes": 62,
+    "stagnant_transitions": 2780,
+    "seconds_this_process": 692.1045000600006
+  }
+}

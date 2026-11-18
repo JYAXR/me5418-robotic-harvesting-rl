@@ -1,0 +1,596 @@
+[
+  {
+    "slot": 0,
+    "seed": 290021,
+    "steps": 200,
+    "success": 1,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 39
+  },
+  {
+    "slot": 1,
+    "seed": 290020,
+    "steps": 400,
+    "success": 1,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 43
+  },
+  {
+    "slot": 2,
+    "seed": 290023,
+    "steps": 600,
+    "success": 2,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 42
+  },
+  {
+    "slot": 3,
+    "seed": 290027,
+    "steps": 800,
+    "success": 0,
+    "damage": 0,
+    "timeout": 1,
+    "random_actions": 32
+  },
+  {
+    "slot": 4,
+    "seed": 290028,
+    "steps": 1000,
+    "success": 3,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 39
+  },
+  {
+    "slot": 5,
+    "seed": 2026113003,
+    "steps": 1200,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 27
+  },
+  {
+    "slot": 6,
+    "seed": 2026113024,
+    "steps": 1400,
+    "success": 0,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 41
+  },
+  {
+    "slot": 7,
+    "seed": 10002,
+    "steps": 1600,
+    "success": 3,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 36
+  },
+  {
+    "slot": 8,
+    "seed": 2026113012,
+    "steps": 1800,
+    "success": 5,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 30
+  },
+  {
+    "slot": 9,
+    "seed": 290022,
+    "steps": 2000,
+    "success": 2,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 36
+  },
+  {
+    "slot": 10,
+    "seed": 2026113031,
+    "steps": 2200,
+    "success": 3,
+    "damage": 12,
+    "timeout": 0,
+    "random_actions": 32
+  },
+  {
+    "slot": 11,
+    "seed": 2026113018,
+    "steps": 2400,
+    "success": 0,
+    "damage": 7,
+    "timeout": 0,
+    "random_actions": 40
+  },
+  {
+    "slot": 12,
+    "seed": 2026113017,
+    "steps": 2600,
+    "success": 0,
+    "damage": 0,
+    "timeout": 1,
+    "random_actions": 30
+  },
+  {
+    "slot": 13,
+    "seed": 2026113021,
+    "steps": 2800,
+    "success": 0,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 27
+  },
+  {
+    "slot": 14,
+    "seed": 290004,
+    "steps": 3000,
+    "success": 2,
+    "damage": 3,
+    "timeout": 0,
+    "random_actions": 30
+  },
+  {
+    "slot": 15,
+    "seed": 290018,
+    "steps": 3200,
+    "success": 0,
+    "damage": 3,
+    "timeout": 0,
+    "random_actions": 34
+  },
+  {
+    "slot": 16,
+    "seed": 290008,
+    "steps": 3400,
+    "success": 2,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 31
+  },
+  {
+    "slot": 17,
+    "seed": 2026113015,
+    "steps": 3600,
+    "success": 3,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 32
+  },
+  {
+    "slot": 18,
+    "seed": 2026113032,
+    "steps": 3800,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 32
+  },
+  {
+    "slot": 19,
+    "seed": 2026113007,
+    "steps": 4000,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 30
+  },
+  {
+    "slot": 20,
+    "seed": 290014,
+    "steps": 4200,
+    "success": 0,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 31
+  },
+  {
+    "slot": 21,
+    "seed": 2026113027,
+    "steps": 4400,
+    "success": 0,
+    "damage": 7,
+    "timeout": 0,
+    "random_actions": 31
+  },
+  {
+    "slot": 22,
+    "seed": 290026,
+    "steps": 4600,
+    "success": 2,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 24
+  },
+  {
+    "slot": 23,
+    "seed": 2026113020,
+    "steps": 4800,
+    "success": 0,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 34
+  },
+  {
+    "slot": 24,
+    "seed": 290006,
+    "steps": 5000,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 30
+  },
+  {
+    "slot": 25,
+    "seed": 2026113023,
+    "steps": 5200,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 29
+  },
+  {
+    "slot": 26,
+    "seed": 2026113019,
+    "steps": 5400,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 27
+  },
+  {
+    "slot": 27,
+    "seed": 2026113011,
+    "steps": 5600,
+    "success": 0,
+    "damage": 3,
+    "timeout": 0,
+    "random_actions": 21
+  },
+  {
+    "slot": 28,
+    "seed": 290013,
+    "steps": 5800,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 27
+  },
+  {
+    "slot": 29,
+    "seed": 290010,
+    "steps": 6000,
+    "success": 0,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 26
+  },
+  {
+    "slot": 30,
+    "seed": 2026113000,
+    "steps": 6200,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 38
+  },
+  {
+    "slot": 31,
+    "seed": 10000,
+    "steps": 6400,
+    "success": 1,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 27
+  },
+  {
+    "slot": 32,
+    "seed": 290001,
+    "steps": 6600,
+    "success": 1,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 17
+  },
+  {
+    "slot": 33,
+    "seed": 2026113001,
+    "steps": 6800,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 33
+  },
+  {
+    "slot": 34,
+    "seed": 290000,
+    "steps": 7000,
+    "success": 1,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 33
+  },
+  {
+    "slot": 35,
+    "seed": 290024,
+    "steps": 7200,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 29
+  },
+  {
+    "slot": 36,
+    "seed": 2026113004,
+    "steps": 7400,
+    "success": 1,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 28
+  },
+  {
+    "slot": 37,
+    "seed": 290011,
+    "steps": 7600,
+    "success": 3,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 22
+  },
+  {
+    "slot": 38,
+    "seed": 2026113006,
+    "steps": 7800,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 16
+  },
+  {
+    "slot": 39,
+    "seed": 290012,
+    "steps": 8000,
+    "success": 4,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 22
+  },
+  {
+    "slot": 40,
+    "seed": 290017,
+    "steps": 8200,
+    "success": 2,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 22
+  },
+  {
+    "slot": 41,
+    "seed": 2026113009,
+    "steps": 8400,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 16
+  },
+  {
+    "slot": 42,
+    "seed": 290003,
+    "steps": 8600,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 19
+  },
+  {
+    "slot": 43,
+    "seed": 2026113028,
+    "steps": 8800,
+    "success": 3,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 13
+  },
+  {
+    "slot": 44,
+    "seed": 2026113022,
+    "steps": 9000,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 20
+  },
+  {
+    "slot": 45,
+    "seed": 290015,
+    "steps": 9200,
+    "success": 0,
+    "damage": 0,
+    "timeout": 1,
+    "random_actions": 18
+  },
+  {
+    "slot": 46,
+    "seed": 2026113025,
+    "steps": 9400,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 19
+  },
+  {
+    "slot": 47,
+    "seed": 10001,
+    "steps": 9600,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 18
+  },
+  {
+    "slot": 48,
+    "seed": 2026113030,
+    "steps": 9800,
+    "success": 0,
+    "damage": 0,
+    "timeout": 1,
+    "random_actions": 20
+  },
+  {
+    "slot": 49,
+    "seed": 2026113013,
+    "steps": 10000,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 16
+  },
+  {
+    "slot": 50,
+    "seed": 2026113026,
+    "steps": 10200,
+    "success": 5,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 11
+  },
+  {
+    "slot": 51,
+    "seed": 2026113008,
+    "steps": 10400,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 18
+  },
+  {
+    "slot": 52,
+    "seed": 290029,
+    "steps": 10600,
+    "success": 3,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 15
+  },
+  {
+    "slot": 53,
+    "seed": 290007,
+    "steps": 10800,
+    "success": 0,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 18
+  },
+  {
+    "slot": 54,
+    "seed": 290025,
+    "steps": 11000,
+    "success": 0,
+    "damage": 2,
+    "timeout": 0,
+    "random_actions": 16
+  },
+  {
+    "slot": 55,
+    "seed": 2026113014,
+    "steps": 11200,
+    "success": 0,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 15
+  },
+  {
+    "slot": 56,
+    "seed": 2026113005,
+    "steps": 11400,
+    "success": 0,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 14
+  },
+  {
+    "slot": 57,
+    "seed": 2026113010,
+    "steps": 11600,
+    "success": 1,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 10
+  },
+  {
+    "slot": 58,
+    "seed": 290002,
+    "steps": 11800,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 11
+  },
+  {
+    "slot": 59,
+    "seed": 2026113029,
+    "steps": 12000,
+    "success": 0,
+    "damage": 8,
+    "timeout": 0,
+    "random_actions": 11
+  },
+  {
+    "slot": 60,
+    "seed": 290009,
+    "steps": 12200,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 14
+  },
+  {
+    "slot": 61,
+    "seed": 290016,
+    "steps": 12400,
+    "success": 0,
+    "damage": 0,
+    "timeout": 1,
+    "random_actions": 8
+  },
+  {
+    "slot": 62,
+    "seed": 2026113016,
+    "steps": 12600,
+    "success": 2,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 9
+  },
+  {
+    "slot": 63,
+    "seed": 290005,
+    "steps": 12800,
+    "success": 4,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 9
+  },
+  {
+    "slot": 64,
+    "seed": 2026113002,
+    "steps": 13000,
+    "success": 1,
+    "damage": 0,
+    "timeout": 0,
+    "random_actions": 16
+  },
+  {
+    "slot": 65,
+    "seed": 290019,
+    "steps": 13200,
+    "success": 0,
+    "damage": 1,
+    "timeout": 0,
+    "random_actions": 11
+  }
+]

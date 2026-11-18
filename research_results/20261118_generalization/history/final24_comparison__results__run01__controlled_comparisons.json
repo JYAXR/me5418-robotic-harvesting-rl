@@ -1,0 +1,871 @@
+{
+  "pilot_control__pilot_penalty": {
+    "left": "pilot_control",
+    "right": "pilot_penalty",
+    "old": {
+      "gained": [
+        10000,
+        290000,
+        290001,
+        290007,
+        290014,
+        290017,
+        290029
+      ],
+      "lost": [
+        290003,
+        290008,
+        290011,
+        290013,
+        290026
+      ],
+      "net_success": 2,
+      "common_success": 3,
+      "mean_step_difference_right_minus_left": -1,
+      "mean_travel_difference_right_minus_left": -0.09931041797002156
+    },
+    "new": {
+      "gained": [
+        2026111857,
+        2026111858,
+        2026111867,
+        2026111869
+      ],
+      "lost": [
+        2026111800,
+        2026111801,
+        2026111876,
+        2026111887,
+        2026111894
+      ],
+      "net_success": -1,
+      "common_success": 3,
+      "mean_step_difference_right_minus_left": -5.666666666666667,
+      "mean_travel_difference_right_minus_left": 0.01947885751724243
+    }
+  },
+  "lr_1e4__lr_3e5": {
+    "left": "lr_1e4",
+    "right": "lr_3e5",
+    "old": {
+      "gained": [
+        10001,
+        10002,
+        290005,
+        290008,
+        290015,
+        290019,
+        290029
+      ],
+      "lost": [
+        290002,
+        290004,
+        290007,
+        290016,
+        290017,
+        290022,
+        290023
+      ],
+      "net_success": 0,
+      "common_success": 3,
+      "mean_step_difference_right_minus_left": 3.6666666666666665,
+      "mean_travel_difference_right_minus_left": 0.10505031545956929
+    },
+    "new": {
+      "gained": [
+        2026111800,
+        2026111807,
+        2026111811,
+        2026111831,
+        2026111847,
+        2026111852,
+        2026111857,
+        2026111878
+      ],
+      "lost": [
+        2026111801,
+        2026111859,
+        2026111869,
+        2026111887,
+        2026111892
+      ],
+      "net_success": 3,
+      "common_success": 5,
+      "mean_step_difference_right_minus_left": -6.4,
+      "mean_travel_difference_right_minus_left": 0.08391110301017761
+    }
+  },
+  "lr_1e4__lr_1e5": {
+    "left": "lr_1e4",
+    "right": "lr_1e5",
+    "old": {
+      "gained": [
+        10000,
+        290005,
+        290008,
+        290015,
+        290026,
+        290029
+      ],
+      "lost": [
+        290002,
+        290004,
+        290007,
+        290016,
+        290024
+      ],
+      "net_success": 1,
+      "common_success": 5,
+      "mean_step_difference_right_minus_left": 0,
+      "mean_travel_difference_right_minus_left": 0.009768033027648925
+    },
+    "new": {
+      "gained": [
+        2026111807,
+        2026111830,
+        2026111857,
+        2026111895
+      ],
+      "lost": [
+        2026111801,
+        2026111815,
+        2026111859,
+        2026111866,
+        2026111869,
+        2026111887
+      ],
+      "net_success": -2,
+      "common_success": 4,
+      "mean_step_difference_right_minus_left": 1.5,
+      "mean_travel_difference_right_minus_left": -0.011328205466270447
+    }
+  },
+  "lr_1e4__stagnation": {
+    "left": "lr_1e4",
+    "right": "stagnation",
+    "old": {
+      "gained": [
+        290008,
+        290013,
+        290015,
+        290018,
+        290020
+      ],
+      "lost": [
+        290004,
+        290007,
+        290011,
+        290016,
+        290017,
+        290023
+      ],
+      "net_success": -1,
+      "common_success": 4,
+      "mean_step_difference_right_minus_left": -3.25,
+      "mean_travel_difference_right_minus_left": 0.1808323636651039
+    },
+    "new": {
+      "gained": [
+        2026111803,
+        2026111806,
+        2026111818,
+        2026111823,
+        2026111824,
+        2026111832,
+        2026111843,
+        2026111844,
+        2026111878,
+        2026111895,
+        2026111899
+      ],
+      "lost": [
+        2026111801,
+        2026111815,
+        2026111842,
+        2026111859,
+        2026111866,
+        2026111869,
+        2026111887
+      ],
+      "net_success": 4,
+      "common_success": 3,
+      "mean_step_difference_right_minus_left": -7,
+      "mean_travel_difference_right_minus_left": -0.26031237840652466
+    }
+  },
+  "lr_1e4__recovery": {
+    "left": "lr_1e4",
+    "right": "recovery",
+    "old": {
+      "gained": [
+        290005
+      ],
+      "lost": [
+        290007,
+        290016,
+        290017,
+        290024
+      ],
+      "net_success": -3,
+      "common_success": 6,
+      "mean_step_difference_right_minus_left": 12.166666666666666,
+      "mean_travel_difference_right_minus_left": -0.10900294284025829
+    },
+    "new": {
+      "gained": [
+        2026111803,
+        2026111843,
+        2026111847,
+        2026111881,
+        2026111898
+      ],
+      "lost": [
+        2026111801,
+        2026111815,
+        2026111842,
+        2026111848,
+        2026111859,
+        2026111866,
+        2026111887
+      ],
+      "net_success": -2,
+      "common_success": 3,
+      "mean_step_difference_right_minus_left": -1,
+      "mean_travel_difference_right_minus_left": -0.1371873070796331
+    }
+  },
+  "fresh_abs__fresh_abs_penalty": {
+    "left": "fresh_abs",
+    "right": "fresh_abs_penalty",
+    "old": {
+      "gained": [
+        290018
+      ],
+      "lost": [],
+      "net_success": 1,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    },
+    "new": {
+      "gained": [],
+      "lost": [],
+      "net_success": 0,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    }
+  },
+  "fresh_rel__fresh_rel_penalty": {
+    "left": "fresh_rel",
+    "right": "fresh_rel_penalty",
+    "old": {
+      "gained": [
+        290003
+      ],
+      "lost": [
+        290004,
+        290023,
+        290026
+      ],
+      "net_success": -2,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    },
+    "new": {
+      "gained": [
+        2026111801,
+        2026111803,
+        2026111871,
+        2026111875,
+        2026111896
+      ],
+      "lost": [
+        2026111833
+      ],
+      "net_success": 4,
+      "common_success": 1,
+      "mean_step_difference_right_minus_left": 0,
+      "mean_travel_difference_right_minus_left": 0.0
+    }
+  },
+  "fresh_abs__fresh_rel": {
+    "left": "fresh_abs",
+    "right": "fresh_rel",
+    "old": {
+      "gained": [
+        290004,
+        290023,
+        290026
+      ],
+      "lost": [],
+      "net_success": 3,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    },
+    "new": {
+      "gained": [
+        2026111833,
+        2026111891
+      ],
+      "lost": [],
+      "net_success": 2,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    }
+  },
+  "fresh_abs_penalty__fresh_rel_penalty": {
+    "left": "fresh_abs_penalty",
+    "right": "fresh_rel_penalty",
+    "old": {
+      "gained": [
+        290003
+      ],
+      "lost": [
+        290018
+      ],
+      "net_success": 0,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    },
+    "new": {
+      "gained": [
+        2026111801,
+        2026111803,
+        2026111871,
+        2026111875,
+        2026111891,
+        2026111896
+      ],
+      "lost": [],
+      "net_success": 6,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    }
+  },
+  "rebuilt_prepared__rebuilt_joint": {
+    "left": "rebuilt_prepared",
+    "right": "rebuilt_joint",
+    "old": {
+      "gained": [],
+      "lost": [
+        290002,
+        290005,
+        290006,
+        290010,
+        290012,
+        290013,
+        290016,
+        290018,
+        290019,
+        290023,
+        290024,
+        290025,
+        290026,
+        290027,
+        290029
+      ],
+      "net_success": -15,
+      "common_success": 18,
+      "mean_step_difference_right_minus_left": 2.6666666666666665,
+      "mean_travel_difference_right_minus_left": 0.03477215766906738
+    },
+    "new": {
+      "gained": [
+        2026111800,
+        2026111803,
+        2026111805,
+        2026111808,
+        2026111831,
+        2026111839,
+        2026111840,
+        2026111847,
+        2026111863,
+        2026111867,
+        2026111869,
+        2026111876,
+        2026111880
+      ],
+      "lost": [
+        2026111804,
+        2026111810,
+        2026111813,
+        2026111825,
+        2026111826,
+        2026111830,
+        2026111832,
+        2026111838,
+        2026111842,
+        2026111850,
+        2026111857,
+        2026111859,
+        2026111866,
+        2026111872,
+        2026111881,
+        2026111886,
+        2026111898,
+        2026111899
+      ],
+      "net_success": -5,
+      "common_success": 7,
+      "mean_step_difference_right_minus_left": 3.5714285714285716,
+      "mean_travel_difference_right_minus_left": 0.11428088801247734
+    }
+  },
+  "rebuilt_prepared__rebuilt_staged": {
+    "left": "rebuilt_prepared",
+    "right": "rebuilt_staged",
+    "old": {
+      "gained": [],
+      "lost": [
+        290001,
+        290002,
+        290008,
+        290015,
+        290016
+      ],
+      "net_success": -5,
+      "common_success": 28,
+      "mean_step_difference_right_minus_left": 1.4642857142857142,
+      "mean_travel_difference_right_minus_left": 0.026774549058505466
+    },
+    "new": {
+      "gained": [
+        2026111800,
+        2026111801,
+        2026111803,
+        2026111816,
+        2026111818,
+        2026111823,
+        2026111827,
+        2026111831,
+        2026111852,
+        2026111854,
+        2026111858,
+        2026111861,
+        2026111862,
+        2026111864,
+        2026111865,
+        2026111869,
+        2026111889,
+        2026111891,
+        2026111897
+      ],
+      "lost": [
+        2026111806,
+        2026111807,
+        2026111813,
+        2026111826,
+        2026111832,
+        2026111834,
+        2026111835,
+        2026111842,
+        2026111850,
+        2026111859,
+        2026111872,
+        2026111881,
+        2026111886,
+        2026111898,
+        2026111899
+      ],
+      "net_success": 4,
+      "common_success": 10,
+      "mean_step_difference_right_minus_left": 2.2,
+      "mean_travel_difference_right_minus_left": 0.03520210981369019
+    }
+  },
+  "rebuilt_joint__rebuilt_staged": {
+    "left": "rebuilt_joint",
+    "right": "rebuilt_staged",
+    "old": {
+      "gained": [
+        290005,
+        290006,
+        290010,
+        290012,
+        290013,
+        290018,
+        290019,
+        290023,
+        290024,
+        290025,
+        290026,
+        290027,
+        290029
+      ],
+      "lost": [
+        290001,
+        290008,
+        290015
+      ],
+      "net_success": 10,
+      "common_success": 15,
+      "mean_step_difference_right_minus_left": -1.4,
+      "mean_travel_difference_right_minus_left": -0.0166354497273763
+    },
+    "new": {
+      "gained": [
+        2026111801,
+        2026111804,
+        2026111810,
+        2026111816,
+        2026111818,
+        2026111823,
+        2026111825,
+        2026111827,
+        2026111830,
+        2026111838,
+        2026111852,
+        2026111854,
+        2026111857,
+        2026111858,
+        2026111861,
+        2026111862,
+        2026111864,
+        2026111865,
+        2026111866,
+        2026111889,
+        2026111891,
+        2026111897
+      ],
+      "lost": [
+        2026111805,
+        2026111806,
+        2026111807,
+        2026111808,
+        2026111834,
+        2026111835,
+        2026111839,
+        2026111840,
+        2026111847,
+        2026111863,
+        2026111867,
+        2026111876,
+        2026111880
+      ],
+      "net_success": 9,
+      "common_success": 7,
+      "mean_step_difference_right_minus_left": 3.857142857142857,
+      "mean_travel_difference_right_minus_left": 0.5829904930932182
+    }
+  },
+  "bc33__bc97": {
+    "left": "bc33",
+    "right": "bc97",
+    "old": {
+      "gained": [],
+      "lost": [],
+      "net_success": 0,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    },
+    "new": {
+      "gained": [],
+      "lost": [],
+      "net_success": 0,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    }
+  },
+  "bc97__bc_rel4k": {
+    "left": "bc97",
+    "right": "bc_rel4k",
+    "old": {
+      "gained": [
+        10002,
+        290000,
+        290003,
+        290017,
+        290021,
+        290028
+      ],
+      "lost": [],
+      "net_success": 6,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    },
+    "new": {
+      "gained": [
+        2026111801,
+        2026111803,
+        2026111804,
+        2026111806,
+        2026111807,
+        2026111814,
+        2026111822,
+        2026111823,
+        2026111824,
+        2026111827,
+        2026111830,
+        2026111831,
+        2026111835,
+        2026111836,
+        2026111838,
+        2026111839,
+        2026111852,
+        2026111864,
+        2026111866,
+        2026111869,
+        2026111872,
+        2026111873,
+        2026111875,
+        2026111877,
+        2026111878,
+        2026111880,
+        2026111881,
+        2026111884,
+        2026111889,
+        2026111891,
+        2026111899
+      ],
+      "lost": [],
+      "net_success": 31,
+      "common_success": 0,
+      "mean_step_difference_right_minus_left": null,
+      "mean_travel_difference_right_minus_left": null
+    }
+  },
+  "bc_rel4k__bc_rel20k": {
+    "left": "bc_rel4k",
+    "right": "bc_rel20k",
+    "old": {
+      "gained": [
+        10000,
+        10001,
+        290002,
+        290005,
+        290006,
+        290008,
+        290011,
+        290015,
+        290018,
+        290019,
+        290023,
+        290029
+      ],
+      "lost": [
+        290021
+      ],
+      "net_success": 11,
+      "common_success": 5,
+      "mean_step_difference_right_minus_left": -4.4,
+      "mean_travel_difference_right_minus_left": -0.020328044891357422
+    },
+    "new": {
+      "gained": [
+        2026111802,
+        2026111808,
+        2026111812,
+        2026111816,
+        2026111817,
+        2026111821,
+        2026111825,
+        2026111832,
+        2026111834,
+        2026111837,
+        2026111842,
+        2026111843,
+        2026111844,
+        2026111846,
+        2026111849,
+        2026111853,
+        2026111854,
+        2026111858,
+        2026111861,
+        2026111862,
+        2026111863,
+        2026111867,
+        2026111868,
+        2026111871,
+        2026111876,
+        2026111882,
+        2026111883,
+        2026111886,
+        2026111892,
+        2026111895,
+        2026111897
+      ],
+      "lost": [
+        2026111804,
+        2026111806,
+        2026111831,
+        2026111836,
+        2026111864,
+        2026111869,
+        2026111873,
+        2026111875,
+        2026111881,
+        2026111884,
+        2026111891
+      ],
+      "net_success": 20,
+      "common_success": 20,
+      "mean_step_difference_right_minus_left": -4.35,
+      "mean_travel_difference_right_minus_left": -0.017705197632312774
+    }
+  },
+  "bc_no_mirror__bc_repeat_A": {
+    "left": "bc_no_mirror",
+    "right": "bc_repeat_A",
+    "old": {
+      "gained": [
+        10000,
+        10002,
+        290003,
+        290019,
+        290020,
+        290027,
+        290028,
+        290029
+      ],
+      "lost": [
+        290004,
+        290006,
+        290010,
+        290017,
+        290022,
+        290023,
+        290024,
+        290025
+      ],
+      "net_success": 0,
+      "common_success": 7,
+      "mean_step_difference_right_minus_left": 0.14285714285714285,
+      "mean_travel_difference_right_minus_left": -0.1324440666607448
+    },
+    "new": {
+      "gained": [
+        2026111800,
+        2026111814,
+        2026111817,
+        2026111821,
+        2026111832,
+        2026111839,
+        2026111846,
+        2026111852,
+        2026111880,
+        2026111888,
+        2026111891,
+        2026111895,
+        2026111896
+      ],
+      "lost": [
+        2026111805,
+        2026111809,
+        2026111810,
+        2026111816,
+        2026111818,
+        2026111819,
+        2026111825,
+        2026111831,
+        2026111834,
+        2026111837,
+        2026111841,
+        2026111844,
+        2026111854,
+        2026111861,
+        2026111867,
+        2026111871,
+        2026111877,
+        2026111882,
+        2026111883,
+        2026111892
+      ],
+      "net_success": -7,
+      "common_success": 32,
+      "mean_step_difference_right_minus_left": -0.625,
+      "mean_travel_difference_right_minus_left": -0.007773491553962231
+    }
+  },
+  "bc_no_relative__bc_repeat_A": {
+    "left": "bc_no_relative",
+    "right": "bc_repeat_A",
+    "old": {
+      "gained": [
+        10001,
+        10002,
+        290002,
+        290003,
+        290005,
+        290011,
+        290018,
+        290019,
+        290020,
+        290021,
+        290027,
+        290028,
+        290029
+      ],
+      "lost": [
+        290023
+      ],
+      "net_success": 12,
+      "common_success": 2,
+      "mean_step_difference_right_minus_left": 3,
+      "mean_travel_difference_right_minus_left": 0.026386678218841553
+    },
+    "new": {
+      "gained": [
+        2026111800,
+        2026111801,
+        2026111803,
+        2026111804,
+        2026111806,
+        2026111808,
+        2026111812,
+        2026111817,
+        2026111821,
+        2026111822,
+        2026111823,
+        2026111824,
+        2026111826,
+        2026111829,
+        2026111832,
+        2026111833,
+        2026111838,
+        2026111839,
+        2026111842,
+        2026111843,
+        2026111846,
+        2026111852,
+        2026111857,
+        2026111858,
+        2026111859,
+        2026111864,
+        2026111866,
+        2026111869,
+        2026111872,
+        2026111873,
+        2026111878,
+        2026111880,
+        2026111888,
+        2026111889,
+        2026111891,
+        2026111895,
+        2026111896,
+        2026111899
+      ],
+      "lost": [
+        2026111809,
+        2026111840,
+        2026111853,
+        2026111856,
+        2026111861,
+        2026111870,
+        2026111883
+      ],
+      "net_success": 31,
+      "common_success": 7,
+      "mean_step_difference_right_minus_left": -7.142857142857143,
+      "mean_travel_difference_right_minus_left": -0.09558004992348808
+    }
+  }
+}

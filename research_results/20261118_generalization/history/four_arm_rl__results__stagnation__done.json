@@ -1,0 +1,12 @@
+{
+  "arm": "stagnation",
+  "model_sha256": "a45d2146bf5ceaa2cb691e9fe3f14ab0005ad9d094ce6f02d8f81257378897be",
+  "interactions": 13200,
+  "updates": 3285,
+  "total_td_counter": 15285,
+  "random_actions": 1615,
+  "training_success_episodes": 89,
+  "training_damage_episodes": 78,
+  "stagnant_transitions": 2705,
+  "seconds_this_process": 697.588258627
+}

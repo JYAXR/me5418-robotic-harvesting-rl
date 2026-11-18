@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "models": 24,
+  "old_scenes": 33,
+  "new_scenes": 100,
+  "episodes": 3192,
+  "initial_state_checks": 3192,
+  "reload_checks": [
+    {
+      "model": "original034",
+      "seed": 10000,
+      "exact_trajectory_match": true
+    },
+    {
+      "model": "original034",
+      "seed": 2026111800,
+      "exact_trajectory_match": true
+    },
+    {
+      "model": "fresh_rel_penalty",
+      "seed": 10000,
+      "exact_trajectory_match": true
+    },
+    {
+      "model": "fresh_rel_penalty",
+      "seed": 2026111800,
+      "exact_trajectory_match": true
+    },
+    {
+      "model": "rebuilt_staged",
+      "seed": 10000,
+      "exact_trajectory_match": true
+    },
+    {
+      "model": "rebuilt_staged",
+      "seed": 2026111800,
+      "exact_trajectory_match": true
+    },
+    {
+      "model": "bc_repeat_A",
+      "seed": 10000,
+      "exact_trajectory_match": true
+    },
+    {
+      "model": "bc_repeat_A",
+      "seed": 2026111800,
+      "exact_trajectory_match": true
+    }
+  ],
+  "scope": "All records and frozen hashes checked; eight uncached reload rollouts repeated, not a second run of all3192.",
+  "no_training": true
+}

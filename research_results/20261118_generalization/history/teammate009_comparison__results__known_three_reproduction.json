@@ -1,0 +1,2488 @@
+[
+  {
+    "metrics": {
+      "seed": 10000,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "error": null,
+      "steps": 38,
+      "raw_return": 107.5899344369769,
+      "blocked": 0,
+      "travel": 1.6849985048174858,
+      "peak_deformation": 0.0,
+      "contact_steps": 0,
+      "initial_sha256": "5c4589bc5a30d3110f81e174c42289670223e814b7c08298878154bddb030d4b"
+    },
+    "trace": [
+      {
+        "step": 1,
+        "action": 2,
+        "reward": 0.24482452124357224,
+        "success": false,
+        "damage": false,
+        "distance": 0.8167909979820251,
+        "position": [
+          0.09540580213069916,
+          0.5143703818321228
+        ],
+        "travel": 0.025000013411045074,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 2,
+        "action": 2,
+        "reward": 0.2448131963610649,
+        "success": false,
+        "damage": false,
+        "distance": 0.7918096780776978,
+        "position": [
+          0.12040581554174423,
+          0.5143703818321228
+        ],
+        "travel": 0.05000002682209015,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 3,
+        "action": 2,
+        "reward": 0.24480128139257432,
+        "success": false,
+        "damage": false,
+        "distance": 0.7668295502662659,
+        "position": [
+          0.14540579915046692,
+          0.5143703818321228
+        ],
+        "travel": 0.07500001043081284,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 4,
+        "action": 2,
+        "reward": 0.2447875738143921,
+        "success": false,
+        "damage": false,
+        "distance": 0.7418507933616638,
+        "position": [
+          0.170405775308609,
+          0.5143703818321228
+        ],
+        "travel": 0.09999998658895493,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 5,
+        "action": 2,
+        "reward": 0.24477267265319824,
+        "success": false,
+        "damage": false,
+        "distance": 0.7168735265731812,
+        "position": [
+          0.1954057514667511,
+          0.5143703818321228
+        ],
+        "travel": 0.12499996274709702,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 6,
+        "action": 0,
+        "reward": -0.020177125930786133,
+        "success": false,
+        "damage": false,
+        "distance": 0.7183912396430969,
+        "position": [
+          0.1954057514667511,
+          0.5393703579902649
+        ],
+        "travel": 0.1499999389052391,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 7,
+        "action": 0,
+        "reward": -0.028821587562561035,
+        "success": false,
+        "damage": false,
+        "distance": 0.7207733988761902,
+        "position": [
+          0.1954057514667511,
+          0.564370334148407
+        ],
+        "travel": 0.1749999150633812,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 8,
+        "action": 0,
+        "reward": -0.03738141059875488,
+        "success": false,
+        "damage": false,
+        "distance": 0.7240115404129028,
+        "position": [
+          0.1954057514667511,
+          0.5893703103065491
+        ],
+        "travel": 0.19999989122152328,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 9,
+        "action": 4,
+        "reward": -0.12389578819274902,
+        "success": false,
+        "damage": false,
+        "distance": 0.7352011203765869,
+        "position": [
+          0.1954057514667511,
+          0.6493702530860901
+        ],
+        "travel": 0.2599998340010643,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 10,
+        "action": 4,
+        "reward": -0.17030634880065917,
+        "success": false,
+        "damage": false,
+        "distance": 0.751031756401062,
+        "position": [
+          0.1954057514667511,
+          0.7093701958656311
+        ],
+        "travel": 0.3199997767806053,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 11,
+        "action": 6,
+        "reward": 0.5578222036361694,
+        "success": false,
+        "damage": false,
+        "distance": 0.6940495371818542,
+        "position": [
+          0.2554056942462921,
+          0.7093701958656311
+        ],
+        "travel": 0.37999971956014633,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 12,
+        "action": 6,
+        "reward": 0.5522831439971924,
+        "success": false,
+        "damage": false,
+        "distance": 0.6376212239265442,
+        "position": [
+          0.31540563702583313,
+          0.7093701958656311
+        ],
+        "travel": 0.43999966233968735,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 13,
+        "action": 6,
+        "reward": 0.5451323747634887,
+        "success": false,
+        "damage": false,
+        "distance": 0.5819079875946045,
+        "position": [
+          0.37540557980537415,
+          0.7093701958656311
+        ],
+        "travel": 0.49999960511922836,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 14,
+        "action": 6,
+        "reward": 0.5357142448425293,
+        "success": false,
+        "damage": false,
+        "distance": 0.5271365642547607,
+        "position": [
+          0.43540552258491516,
+          0.7093701958656311
+        ],
+        "travel": 0.5599995478987694,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 15,
+        "action": 6,
+        "reward": 0.5230276942253113,
+        "success": false,
+        "damage": false,
+        "distance": 0.4736337959766388,
+        "position": [
+          0.4954054653644562,
+          0.7093701958656311
+        ],
+        "travel": 0.6199994906783104,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 16,
+        "action": 6,
+        "reward": 0.5055116713047028,
+        "success": false,
+        "damage": false,
+        "distance": 0.42188262939453125,
+        "position": [
+          0.5554054379463196,
+          0.7093701958656311
+        ],
+        "travel": 0.6799994632601738,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 17,
+        "action": 1,
+        "reward": 0.12351328134536743,
+        "success": false,
+        "damage": false,
+        "distance": 0.40903130173683167,
+        "position": [
+          0.5554054379463196,
+          0.684370219707489
+        ],
+        "travel": 0.7049994394183159,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 18,
+        "action": 1,
+        "reward": 0.11192315816879272,
+        "success": false,
+        "damage": false,
+        "distance": 0.39733898639678955,
+        "position": [
+          0.5554054379463196,
+          0.6593702435493469
+        ],
+        "travel": 0.729999415576458,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 19,
+        "action": 1,
+        "reward": 0.09928250312805176,
+        "success": false,
+        "damage": false,
+        "distance": 0.38691073656082153,
+        "position": [
+          0.5554054379463196,
+          0.6343702673912048
+        ],
+        "travel": 0.7549993917346001,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 20,
+        "action": 1,
+        "reward": 0.08559459447860718,
+        "success": false,
+        "damage": false,
+        "distance": 0.377851277589798,
+        "position": [
+          0.5554054379463196,
+          0.6093702912330627
+        ],
+        "travel": 0.7799993678927422,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 21,
+        "action": 5,
+        "reward": 0.14375767707824708,
+        "success": false,
+        "damage": false,
+        "distance": 0.36227551102638245,
+        "position": [
+          0.5554054379463196,
+          0.5493703484535217
+        ],
+        "travel": 0.8399993106722832,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 22,
+        "action": 5,
+        "reward": 0.04823527336120605,
+        "success": false,
+        "damage": false,
+        "distance": 0.356251984834671,
+        "position": [
+          0.5554054379463196,
+          0.4893704056739807
+        ],
+        "travel": 0.8999992534518242,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 23,
+        "action": 5,
+        "reward": -0.05208232402801514,
+        "success": false,
+        "damage": false,
+        "distance": 0.3602602183818817,
+        "position": [
+          0.5554054379463196,
+          0.4293704628944397
+        ],
+        "travel": 0.9599991962313652,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 24,
+        "action": 5,
+        "reward": -0.1491750121116638,
+        "success": false,
+        "damage": false,
+        "distance": 0.3739777207374573,
+        "position": [
+          0.5554054379463196,
+          0.3693705201148987
+        ],
+        "travel": 1.0199991390109062,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 25,
+        "action": 5,
+        "reward": -0.23620107173919677,
+        "success": false,
+        "damage": false,
+        "distance": 0.39639782905578613,
+        "position": [
+          0.5554054379463196,
+          0.30937057733535767
+        ],
+        "travel": 1.0799990817904472,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 26,
+        "action": 5,
+        "reward": -0.30951359272003176,
+        "success": false,
+        "damage": false,
+        "distance": 0.4261491894721985,
+        "position": [
+          0.5554054379463196,
+          0.24937063455581665
+        ],
+        "travel": 1.1399990245699883,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 27,
+        "action": 6,
+        "reward": 0.4751159906387329,
+        "success": false,
+        "damage": false,
+        "distance": 0.3774375915527344,
+        "position": [
+          0.6154053807258606,
+          0.24937063455581665
+        ],
+        "travel": 1.1999989673495293,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 28,
+        "action": 6,
+        "reward": 0.4379945158958435,
+        "success": false,
+        "damage": false,
+        "distance": 0.3324381411075592,
+        "position": [
+          0.6754053235054016,
+          0.24937063455581665
+        ],
+        "travel": 1.2599989101290703,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 29,
+        "action": 6,
+        "reward": 0.38371137380599973,
+        "success": false,
+        "damage": false,
+        "distance": 0.2928670048713684,
+        "position": [
+          0.7354052662849426,
+          0.24937063455581665
+        ],
+        "travel": 1.3199988529086113,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 30,
+        "action": 6,
+        "reward": 0.30463985204696653,
+        "success": false,
+        "damage": false,
+        "distance": 0.26120302081108093,
+        "position": [
+          0.7954052090644836,
+          0.24937063455581665
+        ],
+        "travel": 1.3799987956881523,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 31,
+        "action": 0,
+        "reward": 0.2163105607032776,
+        "success": false,
+        "damage": false,
+        "distance": 0.23907196521759033,
+        "position": [
+          0.7954052090644836,
+          0.27437061071395874
+        ],
+        "travel": 1.4049987718462944,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 32,
+        "action": 0,
+        "reward": 0.21008679270744324,
+        "success": false,
+        "damage": false,
+        "distance": 0.21756328642368317,
+        "position": [
+          0.7954052090644836,
+          0.29937058687210083
+        ],
+        "travel": 1.4299987480044365,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 33,
+        "action": 0,
+        "reward": 0.20182201266288757,
+        "success": false,
+        "damage": false,
+        "distance": 0.19688108563423157,
+        "position": [
+          0.7954052090644836,
+          0.3243705630302429
+        ],
+        "travel": 1.4549987241625786,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 34,
+        "action": 0,
+        "reward": 0.19066298007965088,
+        "success": false,
+        "damage": false,
+        "distance": 0.17731478810310364,
+        "position": [
+          0.7954052090644836,
+          0.349370539188385
+        ],
+        "travel": 1.4799987003207207,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 35,
+        "action": 0,
+        "reward": 0.17538586258888245,
+        "success": false,
+        "damage": false,
+        "distance": 0.15927620232105255,
+        "position": [
+          0.7954052090644836,
+          0.3743705153465271
+        ],
+        "travel": 1.5049986764788628,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 36,
+        "action": 4,
+        "reward": 0.3199294865131378,
+        "success": false,
+        "damage": false,
+        "distance": 0.12608325481414795,
+        "position": [
+          0.7954052090644836,
+          0.4343704581260681
+        ],
+        "travel": 1.5649986192584038,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 37,
+        "action": 6,
+        "reward": 0.5036530554294586,
+        "success": false,
+        "damage": false,
+        "distance": 0.07451795041561127,
+        "position": [
+          0.8554051518440247,
+          0.4343704581260681
+        ],
+        "travel": 1.6249985620379448,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 38,
+        "action": 6,
+        "reward": 100.24237914979457,
+        "success": true,
+        "damage": false,
+        "distance": 0.04908003658056259,
+        "position": [
+          0.9154050946235657,
+          0.4343704581260681
+        ],
+        "travel": 1.6849985048174858,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": true,
+        "truncated": false
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 10001,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "error": null,
+      "steps": 46,
+      "raw_return": 107.37772035218934,
+      "blocked": 0,
+      "travel": 1.709998480975628,
+      "peak_deformation": 0.1013333188043193,
+      "contact_steps": 3,
+      "initial_sha256": "4b73738e13ed3f35394a53895914638bb4e5d470a934fc7315bc2b6f5117fe00"
+    },
+    "trace": [
+      {
+        "step": 1,
+        "action": 2,
+        "reward": 0.24477504938840866,
+        "success": false,
+        "damage": false,
+        "distance": 0.8147388696670532,
+        "position": [
+          0.09643928706645966,
+          0.5522215962409973
+        ],
+        "travel": 0.025000013411045074,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 2,
+        "action": 2,
+        "reward": 0.24475955218076706,
+        "success": false,
+        "damage": false,
+        "distance": 0.7897629141807556,
+        "position": [
+          0.12143930047750473,
+          0.5522215962409973
+        ],
+        "travel": 0.05000002682209015,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 3,
+        "action": 2,
+        "reward": 0.2447446569800377,
+        "success": false,
+        "damage": false,
+        "distance": 0.7647884488105774,
+        "position": [
+          0.14643928408622742,
+          0.5522215962409973
+        ],
+        "travel": 0.07500001043081284,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 4,
+        "action": 2,
+        "reward": 0.2447267770767212,
+        "success": false,
+        "damage": false,
+        "distance": 0.7398157715797424,
+        "position": [
+          0.1714392602443695,
+          0.5522215962409973
+        ],
+        "travel": 0.09999998658895493,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 5,
+        "action": 2,
+        "reward": 0.2447071075439453,
+        "success": false,
+        "damage": false,
+        "distance": 0.7148450613021851,
+        "position": [
+          0.1964392364025116,
+          0.5522215962409973
+        ],
+        "travel": 0.12499996274709702,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 6,
+        "action": 1,
+        "reward": 0.002923250198364258,
+        "success": false,
+        "damage": false,
+        "distance": 0.7140527367591858,
+        "position": [
+          0.1964392364025116,
+          0.5272216200828552
+        ],
+        "travel": 0.1499999389052391,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 7,
+        "action": 1,
+        "reward": -0.005824923515319824,
+        "success": false,
+        "damage": false,
+        "distance": 0.7141352295875549,
+        "position": [
+          0.1964392364025116,
+          0.5022216439247131
+        ],
+        "travel": 0.1749999150633812,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 8,
+        "action": 1,
+        "reward": -0.01457071304321289,
+        "success": false,
+        "damage": false,
+        "distance": 0.7150923013687134,
+        "position": [
+          0.1964392364025116,
+          0.47722166776657104
+        ],
+        "travel": 0.19999989122152328,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 9,
+        "action": 1,
+        "reward": -0.023280739784240723,
+        "success": false,
+        "damage": false,
+        "distance": 0.7169203758239746,
+        "position": [
+          0.1964392364025116,
+          0.45222169160842896
+        ],
+        "travel": 0.22499986737966537,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 10,
+        "action": 1,
+        "reward": -0.031925201416015625,
+        "success": false,
+        "damage": false,
+        "distance": 0.7196128964424133,
+        "position": [
+          0.1964392364025116,
+          0.42722171545028687
+        ],
+        "travel": 0.24999984353780746,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 11,
+        "action": 1,
+        "reward": -0.04047191143035889,
+        "success": false,
+        "damage": false,
+        "distance": 0.7231600880622864,
+        "position": [
+          0.1964392364025116,
+          0.4022217392921448
+        ],
+        "travel": 0.27499981969594955,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 12,
+        "action": 1,
+        "reward": -0.048894643783569336,
+        "success": false,
+        "damage": false,
+        "distance": 0.7275495529174805,
+        "position": [
+          0.1964392364025116,
+          0.3772217631340027
+        ],
+        "travel": 0.29999979585409164,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 13,
+        "action": 1,
+        "reward": -0.05716538429260254,
+        "success": false,
+        "damage": false,
+        "distance": 0.7327660918235779,
+        "position": [
+          0.1964392364025116,
+          0.3522217869758606
+        ],
+        "travel": 0.32499977201223373,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 14,
+        "action": 1,
+        "reward": -0.0652620792388916,
+        "success": false,
+        "damage": false,
+        "distance": 0.7387923002243042,
+        "position": [
+          0.1964392364025116,
+          0.3272218108177185
+        ],
+        "travel": 0.3499997481703758,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 15,
+        "action": 1,
+        "reward": -0.07316088676452637,
+        "success": false,
+        "damage": false,
+        "distance": 0.745608389377594,
+        "position": [
+          0.1964392364025116,
+          0.3022218346595764
+        ],
+        "travel": 0.3749997243285179,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 16,
+        "action": 6,
+        "reward": 0.5603768587112427,
+        "success": false,
+        "damage": false,
+        "distance": 0.6883707046508789,
+        "position": [
+          0.2564391791820526,
+          0.3022218346595764
+        ],
+        "travel": 0.43499966710805893,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 17,
+        "action": 6,
+        "reward": 0.5552478790283203,
+        "success": false,
+        "damage": false,
+        "distance": 0.631645917892456,
+        "position": [
+          0.31643912196159363,
+          0.3022218346595764
+        ],
+        "travel": 0.49499960988759995,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 18,
+        "action": 0,
+        "reward": 0.07560515403747559,
+        "success": false,
+        "damage": false,
+        "distance": 0.6235854029655457,
+        "position": [
+          0.31643912196159363,
+          0.3272218108177185
+        ],
+        "travel": 0.519999586045742,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 19,
+        "action": 0,
+        "reward": 0.06651365756988525,
+        "success": false,
+        "damage": false,
+        "distance": 0.6164340376853943,
+        "position": [
+          0.31643912196159363,
+          0.3522217869758606
+        ],
+        "travel": 0.5449995622038841,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 20,
+        "action": 0,
+        "reward": 0.057102084159851074,
+        "success": false,
+        "damage": false,
+        "distance": 0.6102238297462463,
+        "position": [
+          0.31643912196159363,
+          0.3772217631340027
+        ],
+        "travel": 0.5699995383620262,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 21,
+        "action": 0,
+        "reward": 0.04740142822265625,
+        "success": false,
+        "damage": false,
+        "distance": 0.6049836874008179,
+        "position": [
+          0.31643912196159363,
+          0.4022217392921448
+        ],
+        "travel": 0.5949995145201683,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 22,
+        "action": 0,
+        "reward": 0.03744626045227051,
+        "success": false,
+        "damage": false,
+        "distance": 0.600739061832428,
+        "position": [
+          0.31643912196159363,
+          0.42722171545028687
+        ],
+        "travel": 0.6199994906783104,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 23,
+        "action": 0,
+        "reward": 0.027278900146484375,
+        "success": false,
+        "damage": false,
+        "distance": 0.5975111722946167,
+        "position": [
+          0.31643912196159363,
+          0.45222169160842896
+        ],
+        "travel": 0.6449994668364525,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 24,
+        "action": 4,
+        "reward": 0.023105359077453612,
+        "success": false,
+        "damage": false,
+        "distance": 0.5940006375312805,
+        "position": [
+          0.31643912196159363,
+          0.51222163438797
+        ],
+        "travel": 0.7049994096159935,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 25,
+        "action": 0,
+        "reward": -0.008215665817260742,
+        "success": false,
+        "damage": false,
+        "distance": 0.5943222045898438,
+        "position": [
+          0.31643912196159363,
+          0.5372216105461121
+        ],
+        "travel": 0.7299993857741356,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 26,
+        "action": 6,
+        "reward": 0.5876161813735962,
+        "success": false,
+        "damage": false,
+        "distance": 0.5343605875968933,
+        "position": [
+          0.37643906474113464,
+          0.5372216105461121
+        ],
+        "travel": 0.7899993285536766,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 27,
+        "action": 6,
+        "reward": 0.5875184297561645,
+        "success": false,
+        "damage": false,
+        "distance": 0.47440874576568604,
+        "position": [
+          0.43643900752067566,
+          0.5372216105461121
+        ],
+        "travel": 0.8499992713332176,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 28,
+        "action": 4,
+        "reward": -0.07499911785125732,
+        "success": false,
+        "damage": false,
+        "distance": 0.48070865869522095,
+        "position": [
+          0.43643900752067566,
+          0.5972215533256531
+        ],
+        "travel": 0.9099992141127586,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 29,
+        "action": 4,
+        "reward": -0.14756419658660888,
+        "success": false,
+        "damage": false,
+        "distance": 0.494265079498291,
+        "position": [
+          0.43643900752067566,
+          0.6572214961051941
+        ],
+        "travel": 0.9699991568922997,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 30,
+        "action": 4,
+        "reward": -0.21439590454101562,
+        "success": false,
+        "damage": false,
+        "distance": 0.5145046710968018,
+        "position": [
+          0.43643900752067566,
+          0.7172214388847351
+        ],
+        "travel": 1.0299990996718407,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 31,
+        "action": 6,
+        "reward": 0.5348142147064209,
+        "success": false,
+        "damage": false,
+        "distance": 0.45982325077056885,
+        "position": [
+          0.4964389503002167,
+          0.7172214388847351
+        ],
+        "travel": 1.0899990424513817,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 32,
+        "action": 6,
+        "reward": 0.5197875797748566,
+        "success": false,
+        "damage": false,
+        "distance": 0.4066444933414459,
+        "position": [
+          0.5564389228820801,
+          0.7172214388847351
+        ],
+        "travel": 1.149999015033245,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 33,
+        "action": 6,
+        "reward": 0.49801371097564695,
+        "success": false,
+        "damage": false,
+        "distance": 0.3556431233882904,
+        "position": [
+          0.6164388656616211,
+          0.7172214388847351
+        ],
+        "travel": 1.209998957812786,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 34,
+        "action": 6,
+        "reward": 0.46540013551712034,
+        "success": false,
+        "damage": false,
+        "distance": 0.30790311098098755,
+        "position": [
+          0.6764388084411621,
+          0.7172214388847351
+        ],
+        "travel": 1.2699989005923271,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 35,
+        "action": 6,
+        "reward": 0.41511437892913816,
+        "success": false,
+        "damage": false,
+        "distance": 0.2651916742324829,
+        "position": [
+          0.7364387512207031,
+          0.7172214388847351
+        ],
+        "travel": 1.3299988433718681,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 36,
+        "action": 6,
+        "reward": 0.3366824150085449,
+        "success": false,
+        "damage": false,
+        "distance": 0.2303234338760376,
+        "position": [
+          0.7964386940002441,
+          0.7172214388847351
+        ],
+        "travel": 1.3899987861514091,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 37,
+        "action": 1,
+        "reward": 0.20857521891593933,
+        "success": false,
+        "damage": false,
+        "distance": 0.20896591246128082,
+        "position": [
+          0.7964386940002441,
+          0.692221462726593
+        ],
+        "travel": 1.4149987623095512,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 38,
+        "action": 1,
+        "reward": 0.1995963752269745,
+        "success": false,
+        "damage": false,
+        "distance": 0.18850627541542053,
+        "position": [
+          0.7964386940002441,
+          0.6672214865684509
+        ],
+        "travel": 1.4399987384676933,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 39,
+        "action": 1,
+        "reward": 0.1276693647792058,
+        "success": false,
+        "damage": false,
+        "distance": 0.16927042603492737,
+        "position": [
+          0.7964386940002441,
+          0.6422215104103088
+        ],
+        "travel": 1.4649987146258354,
+        "deformation": 0.059689133794097425,
+        "peak_deformation": 0.059689133794097425,
+        "blocked": false,
+        "contact_steps": 1,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 40,
+        "action": 1,
+        "reward": 0.09701473731927232,
+        "success": false,
+        "damage": false,
+        "distance": 0.15172454714775085,
+        "position": [
+          0.7964386940002441,
+          0.6172215342521667
+        ],
+        "travel": 1.4899986907839775,
+        "deformation": 0.0734440563208644,
+        "peak_deformation": 0.07578046692388547,
+        "blocked": false,
+        "contact_steps": 2,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 41,
+        "action": 1,
+        "reward": 0.04654674751302322,
+        "success": false,
+        "damage": false,
+        "distance": 0.13652175664901733,
+        "position": [
+          0.7964386940002441,
+          0.5922215580940247
+        ],
+        "travel": 1.5149986669421196,
+        "deformation": 0.10048116224268357,
+        "peak_deformation": 0.1013333188043193,
+        "blocked": false,
+        "contact_steps": 3,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 42,
+        "action": 6,
+        "reward": 0.3363848694879959,
+        "success": false,
+        "damage": false,
+        "distance": 0.09252269566059113,
+        "position": [
+          0.8564386367797852,
+          0.5922215580940247
+        ],
+        "travel": 1.5749986097216606,
+        "deformation": 0.09160575184035796,
+        "peak_deformation": 0.1013333188043193,
+        "blocked": false,
+        "contact_steps": 3,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 43,
+        "action": 1,
+        "reward": 0.0999856334039464,
+        "success": false,
+        "damage": false,
+        "distance": 0.07367701083421707,
+        "position": [
+          0.8564386367797852,
+          0.5672215819358826
+        ],
+        "travel": 1.5999985858798027,
+        "deformation": 0.08347121962816573,
+        "peak_deformation": 0.1013333188043193,
+        "blocked": false,
+        "contact_steps": 3,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 44,
+        "action": 1,
+        "reward": 0.06021429481452267,
+        "success": false,
+        "damage": false,
+        "distance": 0.05954958498477936,
+        "position": [
+          0.8564386367797852,
+          0.5422216057777405
+        ],
+        "travel": 1.6249985620379448,
+        "deformation": 0.07605996844822605,
+        "peak_deformation": 0.1013333188043193,
+        "blocked": false,
+        "contact_steps": 3,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 45,
+        "action": 1,
+        "reward": -0.0186250817361282,
+        "success": false,
+        "damage": false,
+        "distance": 0.05398149415850639,
+        "position": [
+          0.8564386367797852,
+          0.5172216296195984
+        ],
+        "travel": 1.6499985381960869,
+        "deformation": 0.06930599476722943,
+        "peak_deformation": 0.1013333188043193,
+        "blocked": false,
+        "contact_steps": 3,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 46,
+        "action": 6,
+        "reward": 100.4044285397141,
+        "success": true,
+        "damage": false,
+        "distance": 0.006020338274538517,
+        "position": [
+          0.9164385795593262,
+          0.5172216296195984
+        ],
+        "travel": 1.709998480975628,
+        "deformation": 0.06318303056966183,
+        "peak_deformation": 0.1013333188043193,
+        "blocked": false,
+        "contact_steps": 3,
+        "terminated": true,
+        "truncated": false
+      }
+    ]
+  },
+  {
+    "metrics": {
+      "seed": 10002,
+      "success": true,
+      "damage": false,
+      "timeout": false,
+      "error": null,
+      "steps": 44,
+      "raw_return": 107.8615333430469,
+      "blocked": 0,
+      "travel": 1.6949984654784203,
+      "peak_deformation": 0.0,
+      "contact_steps": 0,
+      "initial_sha256": "75e74233939502ff5983ee04a65fea48b76e4170c9eb12db6fbbaea6c6ec39db"
+    },
+    "trace": [
+      {
+        "step": 1,
+        "action": 2,
+        "reward": 0.24485372751951218,
+        "success": false,
+        "damage": false,
+        "distance": 0.818663477897644,
+        "position": [
+          0.10222889482975006,
+          0.502055823802948
+        ],
+        "travel": 0.025000013411045074,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 2,
+        "action": 2,
+        "reward": 0.24484538435935974,
+        "success": false,
+        "damage": false,
+        "distance": 0.7936789393424988,
+        "position": [
+          0.12722890079021454,
+          0.502055823802948
+        ],
+        "travel": 0.05000001937150955,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 3,
+        "action": 2,
+        "reward": 0.24483466148376465,
+        "success": false,
+        "damage": false,
+        "distance": 0.7686954736709595,
+        "position": [
+          0.15222887694835663,
+          0.502055823802948
+        ],
+        "travel": 0.07499999552965164,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 4,
+        "action": 2,
+        "reward": 0.24482333660125732,
+        "success": false,
+        "damage": false,
+        "distance": 0.7437131404876709,
+        "position": [
+          0.17722885310649872,
+          0.502055823802948
+        ],
+        "travel": 0.09999997168779373,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 5,
+        "action": 2,
+        "reward": 0.24481141567230225,
+        "success": false,
+        "damage": false,
+        "distance": 0.7187319993972778,
+        "position": [
+          0.2022288292646408,
+          0.502055823802948
+        ],
+        "travel": 0.12499994784593582,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 6,
+        "action": 1,
+        "reward": 0.0005259513854980469,
+        "success": false,
+        "damage": false,
+        "distance": 0.7181794047355652,
+        "position": [
+          0.2022288292646408,
+          0.4770558476448059
+        ],
+        "travel": 0.1499999240040779,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 7,
+        "action": 5,
+        "reward": -0.03420391082763672,
+        "success": false,
+        "damage": false,
+        "distance": 0.720399796962738,
+        "position": [
+          0.2022288292646408,
+          0.4170559048652649
+        ],
+        "travel": 0.20999986678361893,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 8,
+        "action": 5,
+        "reward": -0.08378424644470214,
+        "success": false,
+        "damage": false,
+        "distance": 0.7275782227516174,
+        "position": [
+          0.2022288292646408,
+          0.3570559620857239
+        ],
+        "travel": 0.26999980956315994,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 9,
+        "action": 5,
+        "reward": -0.1319209575653076,
+        "success": false,
+        "damage": false,
+        "distance": 0.7395703196525574,
+        "position": [
+          0.2022288292646408,
+          0.29705601930618286
+        ],
+        "travel": 0.32999975234270096,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 10,
+        "action": 2,
+        "reward": 0.23751699924468994,
+        "success": false,
+        "damage": false,
+        "distance": 0.7153186202049255,
+        "position": [
+          0.2272288054227829,
+          0.29705601930618286
+        ],
+        "travel": 0.35499972850084305,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 11,
+        "action": 2,
+        "reward": 0.23698353469371797,
+        "success": false,
+        "damage": false,
+        "distance": 0.6911202669143677,
+        "position": [
+          0.2522287964820862,
+          0.29705601930618286
+        ],
+        "travel": 0.37999971956014633,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 12,
+        "action": 2,
+        "reward": 0.23639285564422607,
+        "success": false,
+        "damage": false,
+        "distance": 0.6669809818267822,
+        "position": [
+          0.27722877264022827,
+          0.29705601930618286
+        ],
+        "travel": 0.4049996957182884,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 13,
+        "action": 2,
+        "reward": 0.235734224319458,
+        "success": false,
+        "damage": false,
+        "distance": 0.6429075598716736,
+        "position": [
+          0.30222874879837036,
+          0.29705601930618286
+        ],
+        "travel": 0.4299996718764305,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 14,
+        "action": 6,
+        "reward": 0.5625935554504394,
+        "success": false,
+        "damage": false,
+        "distance": 0.5854482054710388,
+        "position": [
+          0.3622286915779114,
+          0.29705601930618286
+        ],
+        "travel": 0.4899996146559715,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 15,
+        "action": 6,
+        "reward": 0.5569448232650757,
+        "success": false,
+        "damage": false,
+        "distance": 0.5285537242889404,
+        "position": [
+          0.4222286343574524,
+          0.29705601930618286
+        ],
+        "travel": 0.5499995574355125,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 16,
+        "action": 6,
+        "reward": 0.5492543339729309,
+        "success": false,
+        "damage": false,
+        "distance": 0.4724282920360565,
+        "position": [
+          0.4822285771369934,
+          0.29705601930618286
+        ],
+        "travel": 0.6099995002150536,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 17,
+        "action": 6,
+        "reward": 0.5384605288505554,
+        "success": false,
+        "damage": false,
+        "distance": 0.41738224029541016,
+        "position": [
+          0.5422285199165344,
+          0.29705601930618286
+        ],
+        "travel": 0.6699994429945946,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 18,
+        "action": 0,
+        "reward": 0.09448760747909546,
+        "success": false,
+        "damage": false,
+        "distance": 0.40743348002433777,
+        "position": [
+          0.5422285199165344,
+          0.32205599546432495
+        ],
+        "travel": 0.6949994191527367,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 19,
+        "action": 0,
+        "reward": 0.08127623796463013,
+        "success": false,
+        "damage": false,
+        "distance": 0.3988058567047119,
+        "position": [
+          0.5422285199165344,
+          0.34705597162246704
+        ],
+        "travel": 0.7199993953108788,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 20,
+        "action": 0,
+        "reward": 0.06719106435775757,
+        "success": false,
+        "damage": false,
+        "distance": 0.3915867507457733,
+        "position": [
+          0.5422285199165344,
+          0.37205594778060913
+        ],
+        "travel": 0.7449993714690208,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 21,
+        "action": 0,
+        "reward": 0.05231523513793945,
+        "success": false,
+        "damage": false,
+        "distance": 0.38585522770881653,
+        "position": [
+          0.5422285199165344,
+          0.3970559239387512
+        ],
+        "travel": 0.7699993476271629,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 22,
+        "action": 0,
+        "reward": 0.03676915168762207,
+        "success": false,
+        "damage": false,
+        "distance": 0.3816783130168915,
+        "position": [
+          0.5422285199165344,
+          0.4220559000968933
+        ],
+        "travel": 0.794999323785305,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 23,
+        "action": 4,
+        "reward": 0.02213708162307739,
+        "success": false,
+        "damage": false,
+        "distance": 0.3782646059989929,
+        "position": [
+          0.5422285199165344,
+          0.4820558428764343
+        ],
+        "travel": 0.854999266564846,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 24,
+        "action": 4,
+        "reward": -0.07239797115325927,
+        "success": false,
+        "damage": false,
+        "distance": 0.384304404258728,
+        "position": [
+          0.5422285199165344,
+          0.5420557856559753
+        ],
+        "travel": 0.914999209344387,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 25,
+        "action": 6,
+        "reward": 0.5766730666160583,
+        "success": false,
+        "damage": false,
+        "distance": 0.32543709874153137,
+        "position": [
+          0.6022284626960754,
+          0.5420557856559753
+        ],
+        "travel": 0.9749991521239281,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 26,
+        "action": 6,
+        "reward": 0.5716275334358215,
+        "success": false,
+        "damage": false,
+        "distance": 0.2670743465423584,
+        "position": [
+          0.6622284054756165,
+          0.5420557856559753
+        ],
+        "travel": 1.034999094903469,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 27,
+        "action": 4,
+        "reward": -0.2245611786842346,
+        "success": false,
+        "damage": false,
+        "distance": 0.28833046555519104,
+        "position": [
+          0.6622284054756165,
+          0.6020557284355164
+        ],
+        "travel": 1.09499903768301,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 28,
+        "action": 4,
+        "reward": -0.3246332049369812,
+        "success": false,
+        "damage": false,
+        "distance": 0.31959378719329834,
+        "position": [
+          0.6622284054756165,
+          0.6620556712150574
+        ],
+        "travel": 1.1549989804625511,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 29,
+        "action": 4,
+        "reward": -0.39860167503356936,
+        "success": false,
+        "damage": false,
+        "distance": 0.35825395584106445,
+        "position": [
+          0.6622284054756165,
+          0.7220556139945984
+        ],
+        "travel": 1.2149989232420921,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 30,
+        "action": 6,
+        "reward": 0.39303592443466184,
+        "success": false,
+        "damage": false,
+        "distance": 0.31775036454200745,
+        "position": [
+          0.7222283482551575,
+          0.7220556139945984
+        ],
+        "travel": 1.2749988660216331,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 31,
+        "action": 2,
+        "reward": 0.14460498094558716,
+        "success": false,
+        "damage": false,
+        "distance": 0.3027898669242859,
+        "position": [
+          0.7472283244132996,
+          0.7220556139945984
+        ],
+        "travel": 1.2999988421797752,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 32,
+        "action": 2,
+        "reward": 0.13070040941238403,
+        "success": false,
+        "damage": false,
+        "distance": 0.28921982645988464,
+        "position": [
+          0.7722283005714417,
+          0.7220556139945984
+        ],
+        "travel": 1.3249988183379173,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 33,
+        "action": 1,
+        "reward": 0.20663732290267944,
+        "success": false,
+        "damage": false,
+        "distance": 0.26805609464645386,
+        "position": [
+          0.7722283005714417,
+          0.6970556378364563
+        ],
+        "travel": 1.3499987944960594,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 34,
+        "action": 2,
+        "reward": 0.12466931343078613,
+        "success": false,
+        "damage": false,
+        "distance": 0.2550891637802124,
+        "position": [
+          0.7972282767295837,
+          0.6970556378364563
+        ],
+        "travel": 1.3749987706542015,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 35,
+        "action": 1,
+        "reward": 0.21080204844474792,
+        "success": false,
+        "damage": false,
+        "distance": 0.23350895941257477,
+        "position": [
+          0.7972282767295837,
+          0.6720556616783142
+        ],
+        "travel": 1.3999987468123436,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 36,
+        "action": 1,
+        "reward": 0.20329901576042175,
+        "success": false,
+        "damage": false,
+        "distance": 0.21267905831336975,
+        "position": [
+          0.7972282767295837,
+          0.6470556855201721
+        ],
+        "travel": 1.4249987229704857,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 37,
+        "action": 1,
+        "reward": 0.19336307048797607,
+        "success": false,
+        "damage": false,
+        "distance": 0.1928427517414093,
+        "position": [
+          0.7972282767295837,
+          0.62205570936203
+        ],
+        "travel": 1.4499986991286278,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 38,
+        "action": 1,
+        "reward": 0.18003219366073608,
+        "success": false,
+        "damage": false,
+        "distance": 0.17433953285217285,
+        "position": [
+          0.7972282767295837,
+          0.5970557332038879
+        ],
+        "travel": 1.4749986752867699,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 39,
+        "action": 1,
+        "reward": 0.16200029850006104,
+        "success": false,
+        "damage": false,
+        "distance": 0.1576395034790039,
+        "position": [
+          0.7972282767295837,
+          0.5720557570457458
+        ],
+        "travel": 1.499998651444912,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 40,
+        "action": 6,
+        "reward": 0.39522512853145597,
+        "success": false,
+        "damage": false,
+        "distance": 0.11691699177026749,
+        "position": [
+          0.8572282195091248,
+          0.5720557570457458
+        ],
+        "travel": 1.559998594224453,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 41,
+        "action": 1,
+        "reward": 0.19589708745479584,
+        "success": false,
+        "damage": false,
+        "distance": 0.09682728350162506,
+        "position": [
+          0.8572282195091248,
+          0.5470557808876038
+        ],
+        "travel": 1.584998570382595,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 42,
+        "action": 1,
+        "reward": 0.1675681173801422,
+        "success": false,
+        "damage": false,
+        "distance": 0.079570472240448,
+        "position": [
+          0.8572282195091248,
+          0.5220558047294617
+        ],
+        "travel": 1.6099985465407372,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 43,
+        "action": 1,
+        "reward": 0.11710287630558014,
+        "success": false,
+        "damage": false,
+        "distance": 0.06736018508672714,
+        "position": [
+          0.8572282195091248,
+          0.4970558285713196
+        ],
+        "travel": 1.6349985226988792,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": false,
+        "truncated": false
+      },
+      {
+        "step": 44,
+        "action": 6,
+        "reward": 100.42564638927578,
+        "success": true,
+        "damage": false,
+        "distance": 0.023595547303557396,
+        "position": [
+          0.9172281622886658,
+          0.4970558285713196
+        ],
+        "travel": 1.6949984654784203,
+        "deformation": 0.0,
+        "peak_deformation": 0.0,
+        "blocked": false,
+        "contact_steps": 0,
+        "terminated": true,
+        "truncated": false
+      }
+    ]
+  }
+]

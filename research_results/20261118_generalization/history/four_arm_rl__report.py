@@ -1,0 +1,70 @@
+"""Create human-readable tables from completed, audited runs only."""
+import csv
+import json
+import study as s
+import evaluate as e
+
+LABELS={'prepared':'原准备模型（不续训）','control':'原奖励续训','stagnation':'增加停滞惩罚','damage':'增加损伤惩罚','noise':'加入执行噪声训练'}
+
+
+def main():
+    assert s.b.read(s.OUT/'audit.json')['passed']
+    result=s.b.read(e.OUT/'summary.json');g=result['groups']
+    noise=s.b.read(s.OUT/'noise_pairing.json')
+    damage=s.b.read(s.OUT/'damage_penalty_diagnostic.json')
+    rows=[]
+    for name,label in LABELS.items():
+        rows.append(dict(model=name,label=label,old_success=g['old'][name]['success'],old_total=33,
+            new_clean_success=g['new_clean'][name]['success'],new_clean_total=100,
+            new_clean_damage=g['new_clean'][name]['damage'],new_clean_timeout=g['new_clean'][name]['timeout'],
+            same20_clean_success=noise[name]['clean_success_20'],noisy_success=g['new_noisy'][name]['success'],
+            noisy_rollouts=60,noisy_unique_layouts=20,noisy_damage=g['new_noisy'][name]['damage'],noisy_timeout=g['new_noisy'][name]['timeout']))
+    with (s.HERE/'comparison.csv').open('w',encoding='utf-8-sig',newline='') as stream:
+        writer=csv.DictWriter(stream,fieldnames=list(rows[0]));writer.writeheader();writer.writerows(rows)
+    text=['# 准备模型四组续训：实际结果','',
+        '本轮只新增独立实验，未修改原环境、原准备模型、默认模型或旧实验，没有推送GitHub。四组均完成预先固定的训练预算；全部最终模型均报告，没有按测试结果挑选中间模型。','',
+        '## 主要结果：原奖励、无噪声、相同任务预算','',
+        '| 版本 | 旧33个成功 | 全新100个成功 | 新场景损伤 | 新场景超时 |',
+        '|---|---:|---:|---:|---:|']
+    for r in rows:text.append(f"| {r['label']} | {r['old_success']}/33 | {r['new_clean_success']}/100 | {r['new_clean_damage']} | {r['new_clean_timeout']} |")
+    text += ['',
+        '这100个场景为2026114000–2026114099，与此前25/100和24/100的两批题均不同。因此原准备模型本轮的成绩变化只表示测试题不同，不是原模型被重新训练。比较四组改动时，应使用本表内的同一批题。','',
+        '## 噪声是否直接帮助脱困？','',
+        '以下仅使用同样的20个新布局。无噪声每个布局测1次；有噪声每个布局使用3份执行随机流，共60次。60次不是60个独立布局，不能直接与上表100场景的百分比解释为噪声收益。','',
+        '| 版本 | 同20场景，无噪声 | 同20场景×3次，有噪声 |',
+        '|---|---:|---:|']
+    for name,label in LABELS.items():
+        a=noise[name]['clean_success_20'];z=noise[name]['noisy_success_60']
+        text.append(f'| {label} | {a}/20（{a*5:.1f}%） | {z}/60（{z/60*100:.1f}%） |')
+    p=noise['prepared']
+    text += ['',f"对完全不再训练的准备模型：原本失败的布局中，有{p['rescued_at_least_once']}个在加噪声后至少成功过一次；原本成功的布局中，有{p['lost_at_least_once']}个在加噪声后至少失败过一次。这是执行扰动的影响，不能等同于策略学会了脱困。",'',
+        '## 如何理解本轮','',
+        '- 先比较每种处理与“原奖励续训”，再比较与“不续训的准备模型”；不能把续训本身的影响全部归因于奖励或噪声。',
+        '- 旧33个成功数降低就是本轮检测到的遗忘。没有自动替换默认模型，也不能因为陌生场景改善就忽略遗忘。',
+        '- 噪声组在无噪声测试下的结果，才用于判断噪声训练是否带来可保留的学习收益；带噪声执行另作诊断。',
+        '- 这是一个共同训练随机种子、固定小规模预算的结果，不能证明某种方法普遍有效或无效。新场景成功数差异不自动等于统计显著。','',
+        '## 损伤惩罚核对','',
+        f"原奖励组和加大损伤惩罚组最终网络参数是否逐元素完全相同：{damage['final_network_exact_equal']}。额外扣50确实写入了损伤经验，并参与TD目标计算；不是忘记启用。",'',
+        f"事后用最终对照网络检查其收集的{damage['control_damage_transitions']}条损伤转移，其中{damage['final_network_huber_derivatives_equal_on_control_damage_rows']}条在两种损伤奖励下的Huber梯度相同。Huber损失对较大TD误差的梯度有限幅，这提供了为何加大数值未改变学习方向的机制解释；未逐步独立重放全部历史梯度，不能称作完整因果证明。",'',
+        '## 实施范围与预算','',
+        '- 同一准备完整状态：网络、目标网络、Adam和计数均恢复。保持相对坐标、256×256 MLP、8动作、200步上限。',
+        '- 原33训练场景＋33个新训练场景，每组13200次实际环境交互、3285次更新；四组共52800次交互、13140次更新。',
+        '- 所有组随机探索动作数相同；探索率20%降至5%。新训练场景只采集自己的经验，不向规划器请求正确动作。',
+        '- 保留原准备模型的旧示范监督约束与旧示范回放；因此仍是示范辅助DQN，不声称彻底去掉模仿学习。',
+        '- 停滞额外扣0.3，仅当机器人与枝条均无有效变化。损伤额外扣50。执行噪声每坐标方向不超过当前动作步长的10%。',
+        '- 保持无噪声场景生成和可行性认证，再对实际执行加噪声，以确保布局可配对；评估的噪声随机流不使用训练随机流。',
+        '- 不包括400步上限试验，不同时放宽任务预算。','',
+        '## 核验与文件','',
+        '- 预执行4项测试通过。核对所有52800条训练经验的奖励、终止、状态衔接、随机动作安排和更新计数。',
+        '- 核对965次主评估的原始记录、相同初始状态及统计；五个模型各额外重载复跑一例无噪声和一例有噪声，共10例，轨迹完全一致。',
+        '- 训练检查点位于results/各组/checkpoint_*，保留完整优化器和经验回放，便于恢复；final.pt是最终推理模型。',
+        '- comparison.csv为简表；results/evaluation/per_episode.csv为逐次结果；results/noise_pairing.json包含噪声20布局配对细节。',
+        '- 新增study.py、evaluate.py、test_study.py、audit.py、report.py及本目录结果。原src、configs、models、docs未修改。',
+        '- audit.py和report.py是在训练期间补充的事后审计/呈现脚本，不参与训练与模型选择；原冻结协议未被修改。','']
+    (s.HERE/'RESULTS.md').write_text('\n'.join(text))
+    manifest={str(p.relative_to(s.HERE)):s.b.sha(p) for p in s.HERE.rglob('*') if p.is_file() and '__pycache__' not in p.parts and p.name!='artifact_manifest.json'}
+    s.b.save(s.HERE/'artifact_manifest.json',manifest)
+    print(json.dumps(rows,ensure_ascii=False,indent=2))
+
+
+if __name__=='__main__':main()

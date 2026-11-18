@@ -1,0 +1,425 @@
+{
+  "created_unix": 1794987047.351506,
+  "base_commit": "115ab95b1fec829b51f52cefea46604cd2f38ddf",
+  "purpose": "Existing frozen endpoints compared on one new paired bank. No training, tuning, budget changes, seed replacement, or checkpoint re-selection.",
+  "models": [
+    {
+      "id": "original034",
+      "family": "dqn",
+      "label": "最初项目034模型",
+      "path": "models/supervision_034_targeted.pt"
+    },
+    {
+      "id": "pilot_control",
+      "family": "dqn",
+      "label": "早期短期在线续训，无新增惩罚",
+      "path": "experiments/online_pilot/results/pilot01/online_control/final.pt"
+    },
+    {
+      "id": "pilot_penalty",
+      "family": "dqn",
+      "label": "早期短期续训，加每步/受阻惩罚",
+      "path": "experiments/online_pilot/results/pilot01/online_penalties/final.pt"
+    },
+    {
+      "id": "lr_1e4",
+      "family": "dqn",
+      "label": "原学习率0.0001续训；也是恢复实验的对照",
+      "path": "experiments/parameter_sweep/results/run01/lr_1e-04/final.pt"
+    },
+    {
+      "id": "lr_3e5",
+      "family": "dqn",
+      "label": "降低学习率至0.00003续训",
+      "path": "experiments/parameter_sweep/results/run01/lr_3e-05/final.pt"
+    },
+    {
+      "id": "lr_1e5",
+      "family": "dqn",
+      "label": "降低学习率至0.00001续训",
+      "path": "experiments/parameter_sweep/results/run01/lr_1e-05/final.pt"
+    },
+    {
+      "id": "stagnation",
+      "family": "dqn",
+      "label": "原模型续训，加物理停滞惩罚",
+      "path": "experiments/recovery_comparison/results/run01/stagnation_cost/final.pt"
+    },
+    {
+      "id": "recovery",
+      "family": "dqn",
+      "label": "原模型续训，补充成功脱困经验",
+      "path": "experiments/recovery_comparison/results/run01/recovery_data/final.pt"
+    },
+    {
+      "id": "fresh_abs",
+      "family": "dqn",
+      "label": "从零重训，绝对位置，无停滞惩罚（匹配V2）",
+      "path": "experiments/fresh_penalty_coordinates/results/run02/absolute_no_penalty/final.pt"
+    },
+    {
+      "id": "fresh_abs_penalty",
+      "family": "dqn",
+      "label": "从零重训，绝对位置，加停滞惩罚（匹配V2）",
+      "path": "experiments/fresh_penalty_coordinates/results/run02/absolute_penalty/final.pt"
+    },
+    {
+      "id": "fresh_rel",
+      "family": "dqn",
+      "label": "从零重训，相对位置，无停滞惩罚（匹配V2）",
+      "path": "experiments/fresh_penalty_coordinates/results/run02/relative_no_penalty/final.pt"
+    },
+    {
+      "id": "fresh_rel_penalty",
+      "family": "dqn",
+      "label": "从零重训，相对位置，加停滞惩罚（匹配V2）",
+      "path": "experiments/fresh_penalty_coordinates/results/run02/relative_penalty/final.pt"
+    },
+    {
+      "id": "rebuilt_prepared",
+      "family": "dqn",
+      "label": "本次重建准备模型，相对位置，原33场景",
+      "path": "experiments/retention_rebuild_20261118/results/run01/preparation/prepared.pt"
+    },
+    {
+      "id": "rebuilt_joint",
+      "family": "dqn",
+      "label": "增加67场景并复习旧场景，联合训练，已选6000次",
+      "path": "experiments/retention_rebuild_20261118/results/run01/full_joint/checkpoint_006000/model.pt"
+    },
+    {
+      "id": "rebuilt_staged",
+      "family": "dqn",
+      "label": "增加67场景并复习旧场景，分阶段组，已选3000次",
+      "path": "experiments/retention_rebuild_20261118/results/run01/full_staged/checkpoint_003000/model.pt"
+    },
+    {
+      "id": "bc33",
+      "family": "imitation",
+      "label": "纯模仿，绝对位置，33场景，4000次",
+      "path": "experiments/imitation_routes/results/run01/ce33/model.pt"
+    },
+    {
+      "id": "bc97",
+      "family": "imitation",
+      "label": "纯模仿，绝对位置，扩至97场景，4000次",
+      "path": "experiments/imitation_routes/results/run01/ce_expanded/model.pt"
+    },
+    {
+      "id": "bc_rel4k",
+      "family": "imitation",
+      "label": "纯模仿，相对位置加镜像，97场景，4000次",
+      "path": "experiments/imitation_routes/results/run01/ce_relative_mirror/model.pt"
+    },
+    {
+      "id": "bc_rel20k",
+      "family": "imitation",
+      "label": "上述模仿模型继续训练至20000次",
+      "path": "experiments/imitation_routes/results/relative_extended/model.pt"
+    },
+    {
+      "id": "bc_repeat_A",
+      "family": "imitation",
+      "label": "相对位置加镜像，独立训练A，20000次",
+      "path": "experiments/generalization_repeats/results/run01/relative_mirror_17/model.pt"
+    },
+    {
+      "id": "bc_repeat_B",
+      "family": "imitation",
+      "label": "相对位置加镜像，独立训练B，20000次",
+      "path": "experiments/generalization_repeats/results/run01/relative_mirror_18/model.pt"
+    },
+    {
+      "id": "bc_repeat_C",
+      "family": "imitation",
+      "label": "相对位置加镜像，独立训练C，20000次",
+      "path": "experiments/generalization_repeats/results/run01/relative_mirror_19/model.pt"
+    },
+    {
+      "id": "bc_no_mirror",
+      "family": "imitation",
+      "label": "匹配模仿对照A：相对位置，不镜像",
+      "path": "experiments/generalization_repeats/results/run01/relative_only_17/model.pt"
+    },
+    {
+      "id": "bc_no_relative",
+      "family": "imitation",
+      "label": "匹配模仿对照A：绝对位置，加镜像",
+      "path": "experiments/generalization_repeats/results/run01/absolute_mirror_17/model.pt"
+    }
+  ],
+  "old_seeds": [
+    10000,
+    10001,
+    10002,
+    290000,
+    290001,
+    290002,
+    290003,
+    290004,
+    290005,
+    290006,
+    290007,
+    290008,
+    290009,
+    290010,
+    290011,
+    290012,
+    290013,
+    290014,
+    290015,
+    290016,
+    290017,
+    290018,
+    290019,
+    290020,
+    290021,
+    290022,
+    290023,
+    290024,
+    290025,
+    290026,
+    290027,
+    290028,
+    290029
+  ],
+  "new_seeds": [
+    2026111800,
+    2026111801,
+    2026111802,
+    2026111803,
+    2026111804,
+    2026111805,
+    2026111806,
+    2026111807,
+    2026111808,
+    2026111809,
+    2026111810,
+    2026111811,
+    2026111812,
+    2026111813,
+    2026111814,
+    2026111815,
+    2026111816,
+    2026111817,
+    2026111818,
+    2026111819,
+    2026111820,
+    2026111821,
+    2026111822,
+    2026111823,
+    2026111824,
+    2026111825,
+    2026111826,
+    2026111827,
+    2026111828,
+    2026111829,
+    2026111830,
+    2026111831,
+    2026111832,
+    2026111833,
+    2026111834,
+    2026111835,
+    2026111836,
+    2026111837,
+    2026111838,
+    2026111839,
+    2026111840,
+    2026111841,
+    2026111842,
+    2026111843,
+    2026111844,
+    2026111845,
+    2026111846,
+    2026111847,
+    2026111848,
+    2026111849,
+    2026111850,
+    2026111851,
+    2026111852,
+    2026111853,
+    2026111854,
+    2026111855,
+    2026111856,
+    2026111857,
+    2026111858,
+    2026111859,
+    2026111860,
+    2026111861,
+    2026111862,
+    2026111863,
+    2026111864,
+    2026111865,
+    2026111866,
+    2026111867,
+    2026111868,
+    2026111869,
+    2026111870,
+    2026111871,
+    2026111872,
+    2026111873,
+    2026111874,
+    2026111875,
+    2026111876,
+    2026111877,
+    2026111878,
+    2026111879,
+    2026111880,
+    2026111881,
+    2026111882,
+    2026111883,
+    2026111884,
+    2026111885,
+    2026111886,
+    2026111887,
+    2026111888,
+    2026111889,
+    2026111890,
+    2026111891,
+    2026111892,
+    2026111893,
+    2026111894,
+    2026111895,
+    2026111896,
+    2026111897,
+    2026111898,
+    2026111899
+  ],
+  "environment": {
+    "max_branches": 14,
+    "nodes_per_branch": 5,
+    "max_steps": 200,
+    "workspace_low": [
+      0.0,
+      0.0
+    ],
+    "workspace_high": [
+      1.0,
+      1.0
+    ],
+    "small_step": 0.025,
+    "large_step": 0.06,
+    "target_radius": 0.05,
+    "contact_radius": 0.035,
+    "relaxation_rate": 0.1,
+    "execution_noise_fraction": 0.0,
+    "show_gate_detail": false,
+    "verify_reference_route": true,
+    "reference_max_attempts": 10,
+    "scene": {
+      "layout": "multi_route",
+      "tip_gap_range": [
+        0.028,
+        0.043
+      ],
+      "stiffness_range": [
+        0.35,
+        1.1
+      ],
+      "safe_limit_range": [
+        0.075,
+        0.11
+      ],
+      "start_jitter": [
+        0.01,
+        0.02
+      ],
+      "target_jitter": [
+        0.01,
+        0.02
+      ],
+      "gate_x_jitter": 0.01,
+      "twig_jitter": [
+        0.005,
+        0.005
+      ]
+    },
+    "reward": {
+      "progress": 10.0,
+      "deformation": 1.0,
+      "travel": 0.2,
+      "damage": 50.0,
+      "success": 100.0
+    }
+  },
+  "excluded": {
+    "recovery_comparison/control": "Equivalent network to lr_1e4; verify equivalence before reusing its row.",
+    "online_pilot/best.pt": "Both selected the unchanged original baseline; show trained final endpoints instead and mark them as previously rejected.",
+    "fresh_coordinate_dqn original two endpoints": "Earlier separate run of the same absolute/relative recipe; use the four-arm, shared-pretraining V2 for matched penalty/coordinate comparisons. Not an exhaustive list of every training attempt.",
+    "fresh_penalty_coordinates/run01": "Aborted before full trial; superseded by matched V2.",
+    "reward_diagnosis": "Read-only diagnostic, no newly trained policy.",
+    "lost restored_stages/generalization_routes/retention_followup": "Original files not present; rebuilt models are explicitly labeled, not claimed identical.",
+    "intermediate training checkpoints": "No re-selection using the new test results; retain previously selected checkpoints or fixed final endpoints."
+  },
+  "prior_text_records_scanned": 3498,
+  "prior_new_seed_matches": [],
+  "sample_size": "100 new scenes is a predeclared practical evaluation budget, not a course requirement or a statistical power calculation.",
+  "metrics": "Success, damage, timeout and errors on all 133 seeds; success-only steps/travel clearly conditional; paired common-success efficiency separately. Retain every failed trajectory.",
+  "limitations": "Same deterministic generator and fixed capacity, no new physical/noise distribution. Unequal historical data/training budgets: cross-family comparisons are descriptive, not single-factor causality. No claim that post-test best seed is independently validated.",
+  "original_model": "models/supervision_034_targeted.pt; not the earlier model associated with historical13/100.",
+  "selected_before_new_test": "rebuilt_joint6000 and rebuilt_staged3000 are from prior validation selection; other variants use frozen final endpoints. Pure imitation kept separate.",
+  "runtime": {
+    "python": "3.12.14",
+    "torch": "2.15.0+cpu",
+    "numpy": "2.5.3",
+    "threads_per_worker": 1
+  },
+  "hashes": {
+    "experiments/final_comparison_20261118/catalogue.py": "876d1473b7493d460de8808e00de63cf3297dfffe62f16a79b82a59233dc6dee",
+    "experiments/final_comparison_20261118/run.py": "b76ed44d0094c2e600788fa836d88b23ddd4680f7206b492dd2e85be193f7533",
+    "experiments/fresh_coordinate_dqn/policy.py": "a5d41a8b1873876de3e34c6ad868555df9c8c298e49fef76223e43274525c86c",
+    "experiments/imitation_routes/run.py": "969dde837e215740c907cfc164ef7da123d1905952774888d40ce6597240ac47",
+    "experiments/online_pilot/run.py": "1dc25f439d877a1ea3220eddc29d9d09881db6b793c65cb9687fa91a900dce98",
+    "src/me5418_harvesting/__init__.py": "fa1ddedf4d0d0baa6ba9f6770108dd3c457867296b6ce947b853da772742151d",
+    "src/me5418_harvesting/planners/receding_horizon.py": "96121451b3f174e2e61512e8a85f41d729a6fd0dd650a93ea4874bc98a449aca",
+    "src/me5418_harvesting/planners/collision_free.py": "63c33e08e33715c951457d85a6a8b92efaafc2ae0238e8c4ace055413d48d95a",
+    "src/me5418_harvesting/planners/__init__.py": "2a3b8fb1f64005f5644a1ee230cf111a17909f452c87d1ab7b1e688168458d7e",
+    "src/me5418_harvesting/envs/scene_generator.py": "f3a3e92014cab747d461d5360b18c012ff38335031de5b6bdc47d609a244a1cb",
+    "src/me5418_harvesting/envs/harvesting_env.py": "9b338fd6da8c1f74c0716ef92e02adc978f0632d57e49f5d703218ed11d060ed",
+    "src/me5418_harvesting/envs/scene_cache.py": "daba161451cde21d827ece3f5e724678f60873bcb68f75159b4f411a917ea802",
+    "src/me5418_harvesting/envs/__init__.py": "5f9c3e87a0fac1958c8b236203af6bd16d377a054f461b0482841effe7dac1dc",
+    "src/me5418_harvesting/envs/scene_validation.py": "bdb851960f7dba0d78daf122f15d06610b8dc1f77c20d17332272a0d478c5e6a",
+    "src/me5418_harvesting/envs/branch_physics.py": "7c9d180f79ae8c6e33bbf8bb8f40444b292416f4c8e26ade86fae5cf1d104669",
+    "src/me5418_harvesting/agents/optimizer_transition.py": "28f2f6cb3030df9a7446557fea8104e05d8eb73e1f5705a72461935247788c65",
+    "src/me5418_harvesting/agents/pretraining.py": "4f1f35cb312d2e800476650fc8627bee8a288e9ca1e015ee631a9d989afd4a8b",
+    "src/me5418_harvesting/agents/dqn_agent.py": "d15b4759810ef8b85808b306fd0b4865393a5b244f207162f15e98cc159ab9d2",
+    "src/me5418_harvesting/agents/training.py": "88de37cae295552b5aaed4fb142ce8abad3471fb464303c9a6c7c18aeecf3264",
+    "src/me5418_harvesting/agents/replay_buffer.py": "c132a373a7886601c4e0becfacf2af8524d8032320d6c71d80a7dceec1632403",
+    "src/me5418_harvesting/agents/run_record.py": "db023b465cd19b797140ddbea47647306fafe7fd6fcc9c5265408c60f66d678f",
+    "src/me5418_harvesting/agents/__init__.py": "a0f11694cd2f9bf2ea58cf398336871e3018835aa61d46c027b82c32ecabfb36",
+    "src/me5418_harvesting/agents/staged_learning.py": "4716a5e32de5605f8a4bbd98ffd31f84cda82e6d8269a0d1e1561285668cdd20",
+    "src/me5418_harvesting/agents/multiscene_demonstrations.py": "d1aa8885de7ce61643ddc5167e2c9a4d03e7eaaba6197b4b89f1844af27af765",
+    "src/me5418_harvesting/agents/dqn_learning.py": "c71fe5fa04016ca7a2b3647e55d65d6ee6a6c3cb857ee433090025703f06833e",
+    "src/me5418_harvesting/agents/return_calibration.py": "623e8f7d3d681ac9c1c08900d92c9fe7b26c5039c7ab72001749f3cf0a710aa3",
+    "src/me5418_harvesting/agents/demonstrations.py": "075166165a75b9d5c1ef3609d2d8808e80aeac7e55d04ab9b85bac44e2acf2a6",
+    "src/me5418_harvesting/agents/dqn.py": "8f916186fc7344c7e0c44993825537e6b42d03d78b690755b358444e2fd81c53",
+    "src/me5418_harvesting/evaluation/scene_feasibility.py": "ee71d01aa43304fca124a532ab05ee2c16d33346041e415b1a203c97b19b79ae",
+    "src/me5418_harvesting/evaluation/__init__.py": "569f99277de84864036de34fee3a8ee9a21fec25fc392d45bbc395ebf335a4e4",
+    "src/me5418_harvesting/evaluation/metrics.py": "10b8ab3d87c77b30d8bc47b592a625e794cab1f0bee20037c80eaa4ced97b119",
+    "models/supervision_034_targeted.pt": "202fd8d4f6929da61e991962c6f667dd80a9cbcc330b1b744434230f140f8b8b",
+    "experiments/online_pilot/results/pilot01/online_control/final.pt": "292b8200f0fa1f3764537d180ff259dad5d3ec03f4857a3da6bffe1ca60fcddc",
+    "experiments/online_pilot/results/pilot01/online_penalties/final.pt": "3e3621c737baf8c1481e169faf7316a41781e25e03c4b620426c4f07a088104e",
+    "experiments/parameter_sweep/results/run01/lr_1e-04/final.pt": "d4f4f7c8e35ff4e67ba91fb2ab048f02d75c7aaddbe8296058573c185f073ad4",
+    "experiments/parameter_sweep/results/run01/lr_3e-05/final.pt": "11450011d1a58578436bff01ad1d076e96aca75196c46273db471aa1d4a7ac5f",
+    "experiments/parameter_sweep/results/run01/lr_1e-05/final.pt": "a6b286a0dac23899ca7f2e9b80860a24972d942a4ef0c73526f8304b9486b0fb",
+    "experiments/recovery_comparison/results/run01/stagnation_cost/final.pt": "822e2f15501c7f3e817c9fb30c50e2c88f376b2fe70caa2d1e2bd2e7aecd0847",
+    "experiments/recovery_comparison/results/run01/recovery_data/final.pt": "8a3db88e8da25ed0f01bc9f8687d07dc3766865c5c81b6935fa4c8d034618b9e",
+    "experiments/fresh_penalty_coordinates/results/run02/absolute_no_penalty/final.pt": "a22beb08f93db38674923748a94e49049ec5fb5a6e7c7ede4a968eb41c9a640b",
+    "experiments/fresh_penalty_coordinates/results/run02/absolute_penalty/final.pt": "7c937d934f8d2056044dbd655b346506cb778135c678df100f1ec0e734563bd3",
+    "experiments/fresh_penalty_coordinates/results/run02/relative_no_penalty/final.pt": "c17035764dc4498271ffc6097441cb73232990e58429cf32d01e53fa26d1262b",
+    "experiments/fresh_penalty_coordinates/results/run02/relative_penalty/final.pt": "08cd4c76f42d14b7627017f6beba8a44d583b3faf03d6bff1207a653cd369123",
+    "experiments/retention_rebuild_20261118/results/run01/preparation/prepared.pt": "1e37ec748d5244acbc394f5d6cf86068583eb18d242dfbc203c3c418021dd94f",
+    "experiments/retention_rebuild_20261118/results/run01/full_joint/checkpoint_006000/model.pt": "95476183a7c25b9897c626d763c945201ae48db4d12140f99ac79eef9ff00237",
+    "experiments/retention_rebuild_20261118/results/run01/full_staged/checkpoint_003000/model.pt": "81a21a94607218508f467e851283c360cf1602edd1164a2d72fd1ff503afb67a",
+    "experiments/imitation_routes/results/run01/ce33/model.pt": "3047f060441854ea88bc68efda88bccac319a9b1b5b67b36febfa7df6f2fdba0",
+    "experiments/imitation_routes/results/run01/ce_expanded/model.pt": "2607119851565d8fcb7e807d03128497196be8434aaed81112600653592dec62",
+    "experiments/imitation_routes/results/run01/ce_relative_mirror/model.pt": "42ee5a6f69f7f8d6c573a1d39944d86db2f1db260f6ef0c2725508a5b24f6464",
+    "experiments/imitation_routes/results/relative_extended/model.pt": "35453ea5135f6ea0b20189815ce127ea8daba97ac2bb2974ee3cf8fc139b1379",
+    "experiments/generalization_repeats/results/run01/relative_mirror_17/model.pt": "10c3816f19ec742321ca89fcb70482a462c56d28b6b0ee5633bcaf8f9257e5df",
+    "experiments/generalization_repeats/results/run01/relative_mirror_18/model.pt": "eb480c2c43aa2e22b8dbc5f901398576b51edde1d0216a10abf28eeef0987016",
+    "experiments/generalization_repeats/results/run01/relative_mirror_19/model.pt": "163665ef7a428b2cbf6913bdf5f1eb6dc36b1fa76387ea55068ae063e9aceefe",
+    "experiments/generalization_repeats/results/run01/relative_only_17/model.pt": "ace7e0d87871c400a3027350b1c69325e711d65d009efb920f44c77bfcf001a1",
+    "experiments/generalization_repeats/results/run01/absolute_mirror_17/model.pt": "cd0e26143750ed3a61f592c7e33d1a44d12b68a293b3cb9229786c29750c0d8e",
+    "experiments/recovery_comparison/results/run01/control/final.pt": "460cdbf070a32e8e68fc8b36129e7439160092a92e91c875fce18e306ce8cc8c"
+  }
+}

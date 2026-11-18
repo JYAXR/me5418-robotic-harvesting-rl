@@ -1,0 +1,6 @@
+﻿model,label,old_success,old_total,new_clean_success,new_clean_total,new_clean_damage,new_clean_timeout,same20_clean_success,noisy_success,noisy_rollouts,noisy_unique_layouts,noisy_damage,noisy_timeout
+prepared,原准备模型（不续训）,33,33,22,100,22,56,7,24,60,20,12,24
+control,原奖励续训,24,33,26,100,21,53,7,20,60,20,8,32
+stagnation,增加停滞惩罚,26,33,31,100,17,52,7,23,60,20,12,25
+damage,增加损伤惩罚,24,33,26,100,21,53,7,20,60,20,8,32
+noise,加入执行噪声训练,27,33,22,100,22,56,5,18,60,20,12,30

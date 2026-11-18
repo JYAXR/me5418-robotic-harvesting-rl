@@ -1,0 +1,12 @@
+{
+  "arm": "damage",
+  "model_sha256": "beded89b1270a252ff05e5a77cfca47abb8e3b955bf1f9df68e58ff648d1121d",
+  "interactions": 13200,
+  "updates": 3285,
+  "total_td_counter": 15285,
+  "random_actions": 1615,
+  "training_success_episodes": 97,
+  "training_damage_episodes": 52,
+  "stagnant_transitions": 2890,
+  "seconds_this_process": 713.9766156399983
+}
