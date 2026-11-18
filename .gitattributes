@@ -2,3 +2,6 @@
 *.pdf binary
 *.png binary
 *.gif binary
+
+# Preserve the recorded bytes of the generalization archive on checkout.
+research_results/20261118_generalization/** -text

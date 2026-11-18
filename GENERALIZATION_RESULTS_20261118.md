@@ -1,10 +1,12 @@
 # 泛化实验成果（2026-11-18）
 
-这是独立成果归档，不替换原项目。上传在 `results/generalization-20261118` 分支，仅新增这个说明和成果压缩包；不修改 `main`、同学分支、原有训练代码或默认模型。
+这是 `results/generalization-20261118` 分支上的独立成果归档，包含可直接浏览的实验材料和原始成果压缩包。
 
 ## 下载与阅读
 
-[下载成果包 ME5418_Results_20261118.zip](ME5418_Results_20261118.zip)。在文件页面点击 Download raw file 即可下载。解压到仓库根目录，会新增 `research_results/20261118_generalization/`，先读其中的 `README.md`。
+在当前分支中，从[已展开的归档目录](research_results/20261118_generalization/README.md)阅读实验材料、校验文件或运行模型评估。
+
+需要原始目录结构和更多逐步轨迹时，在[成果包文件页面](ME5418_Results_20261118.zip)点击 Download raw file，将 ZIP 解压到仓库之外的独立目录，再阅读其中的 `research_results/20261118_generalization/README.md`。
 
 压缩包包含7份关键模型、最新实验的成功与失败记录、旧24模型逐场景统计、实验协议和评估入口。它是研究成果归档，不是最终课程作业完整提交包，也不包含完整训练恢复状态。
 
@@ -44,11 +46,15 @@ ZIP SHA256：`73102a2f7ebde82f545b69f7a594026ed334d1bb1561c26d3088cea408b737a0`�
 
 压缩包内 `studies/` 的程序和文档是原实验快照，可能保留绝对路径、归档前“未上传”说明和未包含的中间文件引用，不应直接当作已经迁移的完整训练入口。
 
-解压后在已安装项目依赖的仓库根目录运行：
+在当前分支的仓库根目录运行以下命令。模型评估需要项目的 `network` 可选依赖。
 
 ```bash
-python research_results/20261118_generalization/verify_archive.py
+python research_results/20261118_generalization/verify_materials.py
 python research_results/20261118_generalization/evaluate_model.py --model prepared --seed 10000 --episodes 3
 ```
+
+如果 Windows 上的旧工作副本更新后仍报哈希不匹配，请在新目录检出当前分支再校验。更新分支时 Git 可能保留旧检出已转换的换行符。
+
+校验原始成果包时，在独立的解压目录中运行 `python research_results/20261118_generalization/verify_archive.py`。
 
 新增评估入口只加载模型进行测试，不训练、不覆盖模型。归档时7份模型已做加载和单场景检查；上传过程没有重新完整训练或评估。
