@@ -1,0 +1,7 @@
+group,training_seed,layouts,td_failure_to_success,td_success_to_failure,success_delta_pp,no_td_success,no_td_damage,no_td_timeout,td_success,td_damage,td_timeout
+range,5418,100,17,9,8.0,78,0,22,86,1,13
+range,5419,100,12,4,8.0,79,1,20,87,0,13
+range,5420,100,6,13,-7.0,88,1,11,81,0,19
+known,5418,33,3,6,-9.090909090909092,30,0,3,27,0,6
+known,5419,33,2,3,-3.0303030303030303,25,0,8,24,0,9
+known,5420,33,0,3,-9.090909090909092,30,0,3,27,0,6

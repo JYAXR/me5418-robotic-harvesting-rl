@@ -1,0 +1,13 @@
+condition,method,replicate,layouts,success,damage,timeout
+clean,dqn,0,6,5,0,1
+clean,h5,0,6,0,0,6
+clean,h5_waypoint,0,6,5,0,1
+noise10,dqn,0,6,5,0,1
+noise10,dqn,1,6,5,0,1
+noise10,dqn,2,6,4,0,2
+noise10,h5,0,6,0,0,6
+noise10,h5,1,6,0,0,6
+noise10,h5,2,6,0,0,6
+noise10,h5_waypoint,0,6,6,0,0
+noise10,h5_waypoint,1,6,6,0,0
+noise10,h5_waypoint,2,6,6,0,0

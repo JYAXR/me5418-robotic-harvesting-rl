@@ -1,0 +1,20 @@
+{
+  "range": {
+    "training_seed_pairs": 3,
+    "layouts_per_pair": 100,
+    "mean_paired_delta_pp": 3.0,
+    "mean_no_td_success_rate": 0.8166666666666667,
+    "mean_td_success_rate": 0.8466666666666667,
+    "failure_to_success": 35,
+    "success_to_failure": 26
+  },
+  "known": {
+    "training_seed_pairs": 3,
+    "layouts_per_pair": 33,
+    "mean_paired_delta_pp": -7.070707070707071,
+    "mean_no_td_success_rate": 0.8585858585858586,
+    "mean_td_success_rate": 0.787878787878788,
+    "failure_to_success": 5,
+    "success_to_failure": 12
+  }
+}

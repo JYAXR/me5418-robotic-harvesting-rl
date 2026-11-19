@@ -1,0 +1,4 @@
+{
+  "exact_network_tensors": true,
+  "exact_final_losses": true
+}

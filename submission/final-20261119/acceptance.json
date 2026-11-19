@@ -1,0 +1,27 @@
+{
+  "archive_sha256": "916883859bf8796f5c968bc63d9f834b6543900ee4edbc669f40b9595e80e671",
+  "python": "3.13.13",
+  "dependencies": {
+    "torch": "2.15.0+cpu",
+    "gymnasium": "1.4.0",
+    "numpy": "2.5.3",
+    "matplotlib": "3.11.2",
+    "Pillow": "12.3.0",
+    "PyYAML": "6.0.3"
+  },
+  "updates": 6000,
+  "local_repeat_exact_network_tensors": true,
+  "validation": {
+    "published": {
+      "success": true,
+      "damage": false,
+      "steps": 46
+    },
+    "retrained": {
+      "success": true,
+      "damage": false,
+      "steps": 46
+    }
+  },
+  "english_text_check": "Passed source, generated artifacts and captured CLI output."
+}

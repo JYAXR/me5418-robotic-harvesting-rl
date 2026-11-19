@@ -1,0 +1,4 @@
+method_a,method_b,layouts,paired_trials,a_only_success,b_only_success,both_success,both_fail,success_delta_b_minus_a_pp
+dqn,h5,6,18,14,0,0,4,-77.77777777777777
+dqn,h5_waypoint,6,18,0,4,14,0,22.22222222222222
+h5,h5_waypoint,6,18,0,18,0,0,100.0

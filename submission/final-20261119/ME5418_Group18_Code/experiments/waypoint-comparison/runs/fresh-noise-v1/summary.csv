@@ -1,0 +1,7 @@
+condition,method,layouts,success,damage,timeout
+clean,dqn,6,5,0,1
+clean,h5,6,0,0,6
+clean,h5_waypoint,6,5,0,1
+noise10,dqn,6,5,0,1
+noise10,h5,6,0,0,6
+noise10,h5_waypoint,6,6,0,0

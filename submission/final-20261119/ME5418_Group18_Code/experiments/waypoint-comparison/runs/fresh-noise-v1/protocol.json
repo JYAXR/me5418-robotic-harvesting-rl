@@ -1,0 +1,28 @@
+{
+  "seeds": [
+    5420100,
+    5420101,
+    5420102,
+    5420103,
+    5420104,
+    5420105
+  ],
+  "noise": {
+    "clean": 0.0,
+    "noise10": 0.1
+  },
+  "noise_seed_prefix": 913714,
+  "noise_replicates": 1,
+  "methods": {
+    "dqn": null,
+    "h5": 0.0,
+    "h5_waypoint": 10.0
+  },
+  "planner_depth": 5,
+  "planner_beam": 32,
+  "planner_prediction_noise": 0.0,
+  "max_steps": 200,
+  "model_sha256": "75d7d7ca728b1c85c8ba6fa226076f85f4f72bdce3cfe4c6c0177946e5fe51e6",
+  "layout": "Certify at zero noise and clone the same initial state for all runs.",
+  "pairing": "NumPy default_rng([prefix, layout_seed]); common draws by step."
+}

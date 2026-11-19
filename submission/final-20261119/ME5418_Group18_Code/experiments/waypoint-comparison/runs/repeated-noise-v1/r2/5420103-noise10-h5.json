@@ -1,0 +1,3024 @@
+{
+  "steps": 200,
+  "success": false,
+  "damage": false,
+  "timeout": true,
+  "travel": 0.21664618013892323,
+  "peak": 0.0,
+  "reward": 1.2046483783749862,
+  "contacts": 196,
+  "trace": [
+    {
+      "step": 1,
+      "action": 6,
+      "xy": [
+        0.1500314325094223,
+        0.5361020565032959
+      ],
+      "waypoint": null,
+      "reward": 0.6341290771961212,
+      "travel": 0.06471261382102966,
+      "peak": 0.0,
+      "contact_steps": 0,
+      "terminal": false,
+      "plan_score": 1.1821941643953324
+    },
+    {
+      "step": 2,
+      "action": 0,
+      "xy": [
+        0.1484355926513672,
+        0.5613505840301514
+      ],
+      "waypoint": null,
+      "reward": -0.02700263597071171,
+      "travel": 0.09001152403652668,
+      "peak": 0.0,
+      "contact_steps": 0,
+      "terminal": false,
+      "plan_score": 0.5784245550632476
+    },
+    {
+      "step": 3,
+      "action": 5,
+      "xy": [
+        0.1506938338279724,
+        0.49918341636657715
+      ],
+      "waypoint": null,
+      "reward": 0.009877920895814895,
+      "travel": 0.15221969597041607,
+      "peak": 0.0,
+      "contact_steps": 0,
+      "terminal": false,
+      "plan_score": 0.603606379032135
+    },
+    {
+      "step": 4,
+      "action": 6,
+      "xy": [
+        0.20954865217208862,
+        0.4981391429901123
+      ],
+      "waypoint": null,
+      "reward": 0.5757656641304493,
+      "travel": 0.21108377911150455,
+      "peak": 0.0,
+      "contact_steps": 0,
+      "terminal": false,
+      "plan_score": 0.5965461134910583
+    },
+    {
+      "step": 5,
+      "action": 2,
+      "xy": [
+        0.21088343858718872,
+        0.49806925654411316
+      ],
+      "waypoint": null,
+      "reward": 0.013034049584530295,
+      "travel": 0.21242039382923394,
+      "peak": 0.0,
+      "contact_steps": 1,
+      "terminal": false,
+      "plan_score": 0.0143504798412323
+    },
+    {
+      "step": 6,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": -0.001155697461217642,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 2,
+      "terminal": false,
+      "plan_score": 0.0009042203426361084
+    },
+    {
+      "step": 7,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 3,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 8,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 4,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 9,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 5,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 10,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 6,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 11,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 7,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 12,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 8,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 13,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 9,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 14,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 10,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 15,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 11,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 16,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 12,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 17,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 13,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 18,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 14,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 19,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 15,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 20,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 16,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 21,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 17,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 22,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 18,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 23,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 19,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 24,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 20,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 25,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 21,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 26,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 22,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 27,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 23,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 28,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 24,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 29,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 25,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 30,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 26,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 31,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 27,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 32,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 28,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 33,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 29,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 34,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 30,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 35,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 31,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 36,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 32,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 37,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 33,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 38,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 34,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 39,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 35,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 40,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 36,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 41,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 37,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 42,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 38,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 43,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 39,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 44,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 40,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 45,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 41,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 46,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 42,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 47,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 43,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 48,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 44,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 49,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 45,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 50,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 46,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 51,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 47,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 52,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 48,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 53,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 49,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 54,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 50,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 55,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 51,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 56,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 52,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 57,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 53,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 58,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 54,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 59,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 55,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 60,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 56,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 61,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 57,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 62,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 58,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 63,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 59,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 64,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 60,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 65,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 61,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 66,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 62,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 67,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 63,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 68,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 64,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 69,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 65,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 70,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 66,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 71,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 67,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 72,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 68,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 73,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 69,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 74,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 70,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 75,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 71,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 76,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 72,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 77,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 73,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 78,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 74,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 79,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 75,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 80,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 76,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 81,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 77,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 82,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 78,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 83,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 79,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 84,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 80,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 85,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 81,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 86,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 82,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 87,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 83,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 88,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 84,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 89,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 85,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 90,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 86,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 91,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 87,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 92,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 88,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 93,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 89,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 94,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 90,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 95,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 91,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 96,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 92,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 97,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 93,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 98,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 94,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 99,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 95,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 100,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 96,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 101,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 97,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 102,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 98,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 103,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 99,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 104,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 100,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 105,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 101,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 106,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 102,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 107,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 103,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 108,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 104,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 109,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 105,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 110,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 106,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 111,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 107,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 112,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 108,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 113,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 109,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 114,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 110,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 115,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 111,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 116,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 112,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 117,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 113,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 118,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 114,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 119,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 115,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 120,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 116,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 121,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 117,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 122,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 118,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 123,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 119,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 124,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 120,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 125,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 121,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 126,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 122,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 127,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 123,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 128,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 124,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 129,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 125,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 130,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 126,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 131,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 127,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 132,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 128,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 133,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 129,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 134,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 130,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 135,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 131,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 136,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 132,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 137,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 133,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 138,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 134,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 139,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 135,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 140,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 136,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 141,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 137,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 142,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 138,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 143,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 139,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 144,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 140,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 145,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 141,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 146,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 142,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 147,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 143,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 148,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 144,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 149,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 145,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 150,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 146,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 151,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 147,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 152,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 148,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 153,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 149,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 154,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 150,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 155,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 151,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 156,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 152,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 157,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 153,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 158,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 154,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 159,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 155,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 160,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 156,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 161,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 157,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 162,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 158,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 163,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 159,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 164,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 160,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 165,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 161,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 166,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 162,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 167,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 163,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 168,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 164,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 169,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 165,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 170,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 166,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 171,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 167,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 172,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 168,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 173,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 169,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 174,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 170,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 175,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 171,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 176,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 172,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 177,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 173,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 178,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 174,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 179,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 175,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 180,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 176,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 181,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 177,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 182,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 178,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 183,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 179,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 184,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 180,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 185,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 181,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 186,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 182,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 187,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 183,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 188,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 184,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 189,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 185,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 190,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 186,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 191,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 187,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 192,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 188,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 193,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 189,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 194,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 190,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 195,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 191,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 196,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 192,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 197,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 193,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 198,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 194,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 199,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 195,
+      "terminal": false,
+      "plan_score": 0.0
+    },
+    {
+      "step": 200,
+      "action": 0,
+      "xy": [
+        0.21067006886005402,
+        0.5022896528244019
+      ],
+      "waypoint": null,
+      "reward": 0.0,
+      "travel": 0.21664618013892323,
+      "peak": 0.0,
+      "contact_steps": 196,
+      "terminal": true,
+      "plan_score": 0.0
+    }
+  ],
+  "seed": 5420103,
+  "condition": "noise10",
+  "method": "h5",
+  "initial_observation_sha256": "5071c1799beba5a40b945244f68850eb8394fb346d6e063a9ab209b874264dcb",
+  "noise_fraction": 0.1,
+  "waypoint_weight": 0.0,
+  "noise_seed": [
+    913714,
+    5420103,
+    2
+  ],
+  "noise_replicate": 2
+}

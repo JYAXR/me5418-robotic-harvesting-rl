@@ -1,0 +1,31 @@
+{
+  "retrained_sha256": "ec0d220e0c4c2ffeabf9eabb2f6f1da19e4fe89f55091712f0dc53f07a11bcb3",
+  "released_sha256": "75d7d7ca728b1c85c8ba6fa226076f85f4f72bdce3cfe4c6c0177946e5fe51e6",
+  "exact_model_tensors": false,
+  "tensors": {
+    "0.weight": {
+      "exact": false,
+      "max_abs_error": 0.3080542981624603
+    },
+    "0.bias": {
+      "exact": false,
+      "max_abs_error": 0.02095312625169754
+    },
+    "2.weight": {
+      "exact": false,
+      "max_abs_error": 0.6414668560028076
+    },
+    "2.bias": {
+      "exact": false,
+      "max_abs_error": 0.04351310431957245
+    },
+    "4.weight": {
+      "exact": false,
+      "max_abs_error": 0.7352351546287537
+    },
+    "4.bias": {
+      "exact": false,
+      "max_abs_error": 0.0013108998537063599
+    }
+  }
+}

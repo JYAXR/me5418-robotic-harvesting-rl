@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "me5418-robotic-harvesting"
+version = "0.1.0"
+description = "Reinforcement learning and planning for robotic harvesting with flexible obstacles"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "gymnasium>=1.0",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "Pillow>=10.0",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.8"]
+network = ["torch==2.15.0"]
+train = ["pandas>=2.2", "torch==2.15.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-m 'not historical_replay'"
+markers = [
+  "historical_replay: replays a frozen experiment using its original source and assets",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+# These source snapshots are checked against the archive manifest.
+extend-exclude = [
+  "research_results/20261118_generalization/coordinate_policy.py",
+  "research_results/20261118_generalization/evaluate_model.py",
+  "research_results/20261118_generalization/history",
+]
